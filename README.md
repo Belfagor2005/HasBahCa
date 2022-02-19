@@ -1,4 +1,10 @@
-HasBahCa from Albatros modded by Lululla
+HasBahCa
+*re-coded by Lululla*
+*skin by MMark*
+*19/02/2022*
+*Thank's*
+*HasBahCa, Levi45, KiddaC, Pcd*
+
 
 <img src="https://github.com/Belfagor2005/HasBahCa/blob/main/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/logo.png">
 
