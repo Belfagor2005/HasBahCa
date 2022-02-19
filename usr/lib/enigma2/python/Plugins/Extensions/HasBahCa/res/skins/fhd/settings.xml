@@ -1,0 +1,21 @@
+<!-- Skin Setting 15/08/2020 -->
+<screen name="MainSetting" position="0,0" size="1920,1080" title="..::HasBahCa::.." backgroundColor="transparent" flags="wfNoBorder">
+	<ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/main2.png" alphatest="blend" zPosition="1" />
+	<ePixmap position="393,802" size="600,80" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/tvs.png" alphatest="blend" scale="1" zPosition="5" />
+	<widget name="title" position="301,55" size="830,40" font="Regular;34" halign="center" valign="center" foregroundColor="#ffff00" backgroundColor="black" transparent="1" zPosition="5" />
+	<ePixmap position="220,110" size="970,8" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/sep.png" alphatest="blend" zPosition="5" />
+	<!-- Menu List -->
+	<widget name="info" position="220,130" size="970,50" font="Regular;30" halign="center" valign="center" foregroundColor="yellow" backgroundColor="#202020" transparent="0" zPosition="5" />
+	<widget name="text" position="220,190" size="970,550" font="Regular;30" scrollbarMode="showOnDemand" transparent="1" zPosition="5" foregroundColor="#00a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="#20000000" backgroundColorSelected="#0b2049" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/sliderb.png" />
+	<ePixmap position="220,760" size="970,5" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/sep.png" alphatest="blend" zPosition="5" />
+  	<!-- Colors 1220 -->
+  	<ePixmap position="220,920" size="970,8" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/sep.png" alphatest="blend" zPosition="5" />
+  	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/key_red.png" position="220,955" size="30,30" alphatest="on" zPosition="5" />
+  	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/key_green.png" position="220,1010" size="30,30" alphatest="on" zPosition="5" />
+  	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/key_yellow.png" position="1155,955" size="30,30" alphatest="on" zPosition="5" />
+  	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/key_blue.png" position="1155,1010" size="30,30" alphatest="on" zPosition="5" />
+  	<widget name="key_red" position="270,950" size="300,40" font="Regular;30" halign="left" valign="center" backgroundColor="#20000000" zPosition="5" transparent="1" />
+  	<widget name="key_green" position="270,1005" size="300,40" font="Regular;30" halign="left" valign="center" backgroundColor="#20000000" zPosition="5" transparent="1" />
+  	<widget name="key_yellow" position="835,950" size="300,40" font="Regular;30" halign="right" valign="center" backgroundColor="#20000000" zPosition="5" transparent="1" />
+  	<widget name="key_blue" position="835,1005" size="300,40" font="Regular;30" halign="right" valign="center" backgroundColor="#20000000" zPosition="5" transparent="1" />
+</screen>
