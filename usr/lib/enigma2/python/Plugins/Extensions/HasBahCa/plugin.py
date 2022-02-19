@@ -433,6 +433,7 @@ class HasBahCa1(Screen):
             regexvideo = 'EXTINF.*?group-title="(.*?)".*?,(.*?)\\n(.*?)\\n'
             match = re.compile(regexvideo, re.DOTALL).findall(content)
             for group, name, url in match:
+                name = name.replace('_', ' ')
                 name1 = group + ' - ' + name
                 print("******** name 2 ******* %s" % name1)
                 name = decodeHtml(name1)
