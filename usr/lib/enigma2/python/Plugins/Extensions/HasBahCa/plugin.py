@@ -4,7 +4,7 @@
 ****************************************
 *        coded by Lululla              *
 *             skin by MMark            *
-*             19/02/2022               *
+*             20/02/2022               *
 *   Thank's                            *
 *      HasBahCa, Levi45, KiddaC, Pcd   *
 ****************************************
@@ -29,6 +29,8 @@ from Plugins.Plugin import PluginDescriptor
 from Screens.Console import Console
 from Screens.InfoBar import InfoBar
 from Screens.InfoBar import MoviePlayer
+from Components.ProgressBar import ProgressBar
+from Components.Sources.Progress import Progress
 from Screens.InfoBarGenerics import InfoBarShowHide, InfoBarSubtitleSupport, InfoBarSummarySupport, \
     InfoBarNumberZap, InfoBarMenu, InfoBarEPG, InfoBarSeek, InfoBarMoviePlayerSummarySupport, \
     InfoBarAudioSelection, InfoBarNotifications, InfoBarServiceNotifications
@@ -68,7 +70,6 @@ try:
     from Plugins.Extensions.HasBahCa.Utils import *
 except:
     from . import Utils
-
 
 global pngs
 global downloadhasba
@@ -123,7 +124,6 @@ if sslverify:
                 ClientTLSOptions(self.hostname, ctx)
             return ctx
 
-
 def ssl_urlopen(url):
     if sslContext:
         return urlopen(url, context=sslContext)
@@ -139,12 +139,15 @@ plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
 pluglogo = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/logo.png".format('HasBahCa'))
 png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/setting.png".format('HasBahCa'))
 path_skin = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/skins/hd/".format('HasBahCa'))
+
+enigma_path = '/etc/enigma2'
 if isFHD():
     path_skin = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/skins/fhd/".format('HasBahCa'))
 if DreamOS():
     path_skin = path_skin + 'dreamOs/'
 print('HasBahCa path_skin: ', path_skin)
-enigma_path = '/etc/enigma2'
+
+
 
 Panel_Dlist = [
     ('FULL LIST'),
@@ -153,7 +156,128 @@ Panel_Dlist = [
     ('RADIO'),
     ('WEBCAM'),
     ('CATEGORY'),
-]
+
+    ('IPTV AFRICA'),
+    ('IPTV ISRAEL'),
+    ('IPTV CANADA'),
+    ('IPTV USA LOCAL'),
+    ('IPTV USA Plex'),
+    ('IPTV USA Pluto'),
+    ('IPTV USA TVplus'),
+    ('IPTV USA xumo'),
+    ('IPTV USA 1'),
+    ('IPTV USA 2'),
+    ('IPTV ARGENTINA'),
+    ('IPTV BRASIL'),
+    ('IPTV BRASIL Pluto'),
+    ('IPTV CANADA ABD'),
+    ('IPTV CHILE'),
+    ('IPTV COLOMBIA'),
+    ('IPTV COSTARICA'),
+    ('IPTV DOMINICAN'),
+    ('IPTV HAITI'),
+    ('IPTV HONDURAS'),
+    ('IPTV LATINO MIX 1'),
+    ('IPTV LATINO MIX 2'),
+    ('IPTV Latino_PLUTOTV'),
+    ('IPTV MEXICO'),
+    ('IPTV MEXICO_PLUTO'),
+    ('IPTV PANAMA'),
+    ('IPTV PERU'),
+    ('IPTV URUGUAY'),
+    ('IPTV ARABIC 1'),
+    ('IPTV ARABIC 2'),
+    ('IPTV Afghanistan'),
+    ('IPTV Bangladesh'),
+    ('IPTV CAMBODIA'),
+    ('IPTV China1'),
+    ('IPTV China2'),
+    ('IPTV INDIA_HINDI_TAMIL'),
+    ('IPTV Indonesia'),
+    ('IPTV JAPAN'),
+    ('IPTV Khusus_MALAZIA'),
+    ('IPTV KOREA'),
+    ('IPTV LAOS'),
+    ('IPTV ASIA_MIX_MNC'),
+    ('IPTV PAKISTAN'),
+    ('IPTV TAIWAN'),
+    ('IPTV THAILAND'),
+    ('IPTV VIETNAM'),
+    ('IPTV AVUSTURALYA_NZeland'),
+    ('IPTV Deutsch_German__PLUTO'),
+    ('IPTV Deutsch_German'),
+    ('IPTV Deutsch_German_LOKAL'),
+    ('IPTV Deutsch_German_TVPLUS'),
+    ('IPTV OSTERREICH_AVUSTURIA'),
+    ('IPTV OSTERREICH_AVUSTURYA_TVPLUS'),
+    ('IPTV SWITZERLAND_SCHWEIZ'),
+    ('IPTV SWITZERLAND_SCHWEIZ_PLUTO'),
+    ('IPTV SWITZERLAND'),
+    ('IPTV Great_Britain_PLUTO'),
+    ('IPTV Great_Britain_TVPLUS'),
+    ('IPTV GreatBritain_England'),
+    ('IPTV Albania_Bosnia_Kosovo'),
+    ('IPTV BALTIC_EST_LIT_LET'),
+    ('IPTV BULGARSAT'),
+    ('IPTV Czech_HU_Polski'),
+    ('IPTV CROATIA'),
+    ('IPTV France'),
+    ('IPTV France_PLUTO'),
+    ('IPTV France_TVPLUS'),
+    ('IPTV GREEK'),
+    ('IPTV Greek_RADIO'),
+    ('IPTV Holland_Belgien'),
+    ('IPTV Holland_PLUTO'),
+    ('IPTV Hungary_Magyar'),
+    ('IPTV Italia'),
+    ('IPTV Italy_PLUTO'),
+    ('IPTV Italy_TVPLUS'),
+    ('IPTV MAKEDONIA'),
+    ('IPTV MALTA'),
+    ('IPTV POLSKI'),
+    ('IPTV PORTUGAL'),
+    ('IPTV ROMANIA_MOLDOVA'),
+    ('IPTV SERBIA'),
+    ('IPTV SKANDINAV_FINLAND'),
+    ('IPTV Slovakia-Sloveina'),
+    ('IPTV SPAIN'),
+    ('IPTV Spain_PLUTO'),
+    ('IPTV RELAX'),
+    ('IPTV RUS_Armenia'),
+    ('IPTV RUS_EX_CCCP1'),
+    ('IPTV RUS_EX_CCCP2'),
+    ('IPTV RUS_EX_CCCP_REGIONAL'),
+    ('IPTV RUS_GEORGIA'),
+    ('IPTV RUS_Kazakhstan'),
+    ('IPTV RUS_Latvia'),
+    ('IPTV Rus_UKRAINA1'),
+    ('IPTV Rus_UKRAINA2'),
+    ('IPTV Turkey_TURKiYE_AVRUPA'),
+    ('IPTV Turkey_TURKiYE_BLUTVGENEL'),
+    ('IPTV Turkey_TURKiYE_DIGER'),
+    ('IPTV Turkey_TURKiYE_DiNi'),
+    ('IPTV Turkey_TURKiYE_GENEL'),
+    ('IPTV Turkey_TURKiYE_MIX'),
+    ('IPTV Turkey_TURKiYE_MUZIK'),
+    ('IPTV Turkey_TURKiYE_RADYO'),
+    ('IPTV Turkey_TURKiYE_SPOR'),
+    ('IPTV Turkey_TURKiYE_YEREL'),
+    # ('IPTV Turkey_WEBCAM'),
+    ('IPTV TURKI STAATEN'),
+    ('IPTV USA_CHINA_ENGLISH'),
+    ('IPTV WORLD_MIXTV'),
+    ('IPTV WORLD_Music'),
+    ('IPTV WORLD_Sports'),
+    ('WEBCAM_China_CiN'),
+    ('WEBCAM_DE_AU_CH'),
+    ('WEBCAM_MIX'),
+    ('WEBCAM_POLSKI'),
+    ('WEBCAM_Portugal'),
+    ('WEBCAM_RUS_EX_CCCP'),
+    ('WEBCAM_RUS_EX_CCCP_SOCHICAM'),
+    ('WEBCAM Turkey'),    
+    ('WEBCAM_USA'),
+    ]
 
 def downloadFile(url, target):
     try:
@@ -162,7 +286,7 @@ def downloadFile(url, target):
             output.write(response.read())
         return True
     except:
-        print("download error")
+        print("downloadFile error")
         return False
 
 
@@ -204,7 +328,6 @@ def hasbaSetListEntry(name):
 
     return res
 
-
 def showlisthasba(data, list):
     icount = 0
     plist = []
@@ -213,7 +336,6 @@ def showlisthasba(data, list):
         plist.append(hasbaSetListEntry(name))
         icount = icount + 1
         list.setList(plist)
-
 
 class MainHasBahCa(Screen):
     def __init__(self, session):
@@ -265,24 +387,400 @@ class MainHasBahCa(Screen):
 
     def keyNumberGlobalCB(self, idx):
         sel = self.menu_list[idx]
-        if sel == _('FULL LIST'):
-            url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_IPTV_FULL.m3u'
-            self.session.open(HasBahCa1, sel, url)
-        elif sel == _('IPTV'):
-            url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/hasbahca_iptv.m3u'
-            self.session.open(HasBahCa1, sel, url)
-        elif sel == _('VOD_FILM'):
-            url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_VOD_MOVIES_FILM.m3u'
-            self.session.open(HasBahCa1, sel, url)
-        elif sel == _('RADIO'):
-            url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_webWORLD_RADIOS.m3u '
-            self.session.open(HasBahCa1, sel, url)
-        elif sel == _('WEBCAM'):
-            url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_WEBCAM.m3u'
-            self.session.open(HasBahCa1, sel, url)
-        elif sel == _('CATEGORY'):
-            url = 'https://github.com/HasBahCa/IPTV-LIST'
-            self.session.open(HasBahCa, sel, url)
+        if sel == ('FULL LIST'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_IPTV_FULL.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/hasbahca_iptv.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('VOD_FILM'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_VOD_MOVIES_FILM.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('RADIO'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_webWORLD_RADIOS.m3u '
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('WEBCAM'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_WEBCAM.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('CATEGORY'):
+                    url = 'https://github.com/HasBahCa/IPTV-LIST'
+                    self.session.open(HasBahCa, sel, url)
+
+        # elif sel == ('IPTV'):
+                    # url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/hasbahca_iptv.m3u'
+                    # self.session.open(HasBahCa1, sel, url)
+        # elif sel == ('FULL LIST'):
+                    # url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_IPTV_FULL.m3u'
+                    # self.session.open(HasBahCa1, sel, url)
+        # elif sel == ('VOD_FILM'):
+                    # url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_VOD_MOVIES_FILM.m3u'
+                    # self.session.open(HasBahCa1, sel, url)
+        # elif sel == ('WEBCAM'):
+                    # url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_WEBCAM.m3u'
+                    # self.session.open(HasBahCa1, sel, url)
+        # elif sel == ('RADIO'):
+                    # url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_webWORLD_RADIOS.m3u'
+                    # self.session.open(HasBahCa1, sel, url)
+
+        elif sel == ('IPTV AFRICA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_AFRICA_AFRIKA_TV.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV ISRAEL'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_AFRICA_ISRAEL_israil_TV.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV CANADA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_America_USA_ABD_CANADA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV USA LOCAL'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_USA_ABD_LOCALS.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV USA Plex'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_USA_ABD_PLEX.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV USA Pluto'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_USA_ABD_PLUTO.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV USA TVplus'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_USA_ABD_TVPLUS.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV USA xumo'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_USA_ABD_XUMO.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV USA 1'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_USA_United_States_Amerika1.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV USA 2'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_USA_United_States_Amerika2.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+
+        elif sel == ('IPTV ARGENTINA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_Argentina_Arjantin.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV BRASIL'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_Brasil_BREZILYA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV BRASIL Pluto'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_Brazil_PLUTO.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV CANADA ABD'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_Canada.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV CHILE'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_CHILE.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV COLOMBIA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_COLOMBIA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV COSTARICA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_COSTARICA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV DOMINICAN'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_DOMINICAN_REPUBLIC.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV HAITI'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_HAITI.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV HONDURAS'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_HONDURAS.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV LATINO MIX 1'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_Latino_MIX1.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV LATINO MIX 2'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_Latino_MIX2.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Latino_PLUTOTV'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_Latino_PLUTOTV.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV MEXICO'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_MEXICO_Meksika.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV MEXICO_PLUTO'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_MEXICO_PLUTO.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV PANAMA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_PANAMA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV PERU'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_PERU.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV URUGUAY'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Amerika_URUGUAY.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV ARABIC 1'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Arabic_ARAPCA1.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV ARABIC 2'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Arabic_ARAPCA2.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Afghanistan'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_Afghanistan.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Bangladesh'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_Bangladesh.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV CAMBODIA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_CAMBODIA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV China1'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_China1.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV China2'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_China2.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV INDIA_HINDI_TAMIL'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_INDIA_HINDI_TAMIL.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Indonesia'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_Indonesia.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV JAPAN'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_Japan_JAPONYA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Khusus_MALAZIA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_Khusus_MALAZIA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV KOREA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_Korea_KORE.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV LAOS'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_Laos.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV ASIA_MIX_MNC'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_MIX_MNC.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV PAKISTAN'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_Pakistan.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV TAIWAN'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_Taiwan.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV THAILAND'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_Thai_TAYLAND.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV VIETNAM'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ASIA_Vietnam.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV AVUSTURALYA_NZeland'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Australia_AVUSTURALYA_NZeland.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Deutsch_German__PLUTO'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_DE_Deutsch_German__PLUTO.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Deutsch_German'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_DE_Deutsch_German_ALMANCA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Deutsch_German_LOKAL'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_DE_Deutsch_German_LOKAL.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Deutsch_German_TVPLUS'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_DE_Deutsch_German_TVPLUS.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV OSTERREICH_AVUSTURIA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_DE_OSTERREICH_AVUSTURYA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV OSTERREICH_AVUSTURYA_TVPLUS'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_DE_OSTERREICH_AVUSTURYA_TVPLUS.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV SWITZERLAND_SCHWEIZ'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_DE_SWITZERLAND_SCHWEIZ.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV SWITZERLAND_SCHWEIZ_PLUTO'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_DE_SWITZERLAND_SCHWEIZ_PLUTO.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV SWITZERLAND'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_DE_SWITZERLAND_SCHWEIZ_TVPLUS.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Great_Britain_PLUTO'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ENG_Great_Britain_PLUTO.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Great_Britain_TVPLUS'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ENG_Great_Britain_TVPLUS.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV GreatBritain_England'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_ENG_GreatBritain_England_Ingiltere.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Albania_Bosnia_Kosovo'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Albania_Bosnia_Kosovo.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV BALTIC_EST_LIT_LET'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_BALTIC_EST_LIT_LET.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV BULGARSAT'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_BULGARSAT.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Czech_HU_Polski'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Czech_HU_Polski.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV CROATIA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_EXYUGOSLAVIA_CROATIA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV France'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_France_FRANSA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV France_PLUTO'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_France_PLUTO.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV France_TVPLUS'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_France_TVPLUS.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV GREEK'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Greek_YUNANCA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Greek_RADIO'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Greek_YUNANCA_RADIO.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Holland_Belgien'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Holland_Belgien.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Holland_PLUTO'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Holland_PLUTO.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Hungary_Magyar'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Hungary_Macar.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Italia'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Italia_ITALYA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Italy_PLUTO'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Italy_PLUTO.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Italy_TVPLUS'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Italy_TVPLUS.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV MAKEDONIA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_MAKEDONIA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV MALTA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Malta.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV POLSKI'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Polski_POLONYA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV PORTUGAL'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Portugal_PORTEKIZ.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV ROMANIA_MOLDOVA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_ROMANYA_MOLDOVA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV SERBIA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Serbia_SIRBISTAN.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV SKANDINAV_FINLAND'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_SKANDINAV_FINLAND.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Slovakia-Sloveina'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Slovakia-Sloveina.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV SPAIN'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Spain_ISPANYOL.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Spain_PLUTO'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_EU_Spain_PLUTO.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV RELAX'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_RELAX.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV RUS_Armenia'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_RUS_Armenia_ERMENISTAN.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV RUS_EX_CCCP1'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_RUS_EX_CCCP_Eski_SSCB1.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV RUS_EX_CCCP2'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_RUS_EX_CCCP_Eski_SSCB2.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV RUS_EX_CCCP_REGIONAL'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_RUS_EX_CCCP_REGIONAL.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV RUS_GEORGIA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_RUS_GEORGIA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV RUS_Kazakhstan'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_RUS_Kazakhstan.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV RUS_Latvia'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_RUS_Latvia_LITVANYA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Rus_UKRAINA1'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Rus_UKRAINA1.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Rus_UKRAINA2'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Rus_UKRAINA2.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Turkey_TURKiYE_AVRUPA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Turkey_TURKiYE_AVRUPA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Turkey_TURKiYE_BLUTVGENEL'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Turkey_TURKiYE_BLUTVGENEL.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Turkey_TURKiYE_DIGER'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Turkey_TURKiYE_DIGER.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Turkey_TURKiYE_DiNi'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Turkey_TURKiYE_DiNi.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Turkey_TURKiYE_GENEL'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Turkey_TURKiYE_GENEL.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Turkey_TURKiYE_MIX'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Turkey_TURKiYE_MIX_KARISIK.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Turkey_TURKiYE_MUZIK'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Turkey_TURKiYE_MUZIK.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Turkey_TURKiYE_RADYO'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Turkey_TURKiYE_RADYO.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Turkey_TURKiYE_SPOR'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Turkey_TURKiYE_SPOR.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV Turkey_TURKiYE_YEREL'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Turkey_TURKiYE_YEREL.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV TURKI STAATEN'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_TURKI_ULKELER.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV USA_CHINA_ENGLISH'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_USA_CHINA_ENGLISH.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV WORLD_MIXTV'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_WORLD_MIXTV.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV WORLD_Music'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_WORLD_Music_MUZIKTV.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('IPTV WORLD_Sports'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_WORLD_Sports_SPOR.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('WEBCAM_China_CiN'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_WEBCAM_China_CiN.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('WEBCAM_DE_AU_CH'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_WEBCAM_DE_AU_CH.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('WEBCAM_MIX'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_WEBCAM_MIX.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('WEBCAM_POLSKI'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_webcam_POLSKI.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('WEBCAM_Portugal'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_WEBCAM_Portugal.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('WEBCAM_RUS_EX_CCCP'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_WEBCAM_RUS_EX_CCCP.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('WEBCAM_RUS_EX_CCCP_SOCHICAM'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_webcam_rus_exCCCP_SOCHICAM_FHD.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('WEBCAM Turkey'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_Turkey_WEBCAM.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+        elif sel == ('WEBCAM_USA'):
+                    url = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_WEBCAM_USA.m3u'
+                    self.session.open(HasBahCa1, sel, url)
+
         else:
             return
 
@@ -405,20 +903,24 @@ class HasBahCa1(Screen):
         self['key_green'].hide()
         self['key_yellow'].hide()
         self['key_blue'].hide()
-        self.timer = eTimer()
-        if DreamOS():
-            self.timer_conn = self.timer.timeout.connect(self._gotPageLoad)
-        else:
-            self.timer.callback.append(self._gotPageLoad)
-        self.timer.start(1500, True)
+        self['progress'] = ProgressBar()
+        self['progresstext'] = StaticText()
+        self["progress"].hide()
         self['actions'] = ActionMap(['SetupActions', 'ColorActions'], {
             'ok': self.okRun,
             'green': self.okRun,
             'red': self.close,
             'yellow': self.convert,
-            'blue': self.deleteBouquets,
+            'blue': self.msgdeleteBouquets,
             'cancel': self.close}, -2)
-
+        self.timer = eTimer()
+        if DreamOS():
+            self.timer_conn = self.timer.timeout.connect(self._gotPageLoad)
+        else:
+            self.timer.callback.append(self._gotPageLoad)
+        self.timer.start(500, True)
+        
+        
     def _gotPageLoad(self):
         url = self.url
         # name = self.name
@@ -433,7 +935,7 @@ class HasBahCa1(Screen):
             regexvideo = 'EXTINF.*?group-title="(.*?)".*?,(.*?)\\n(.*?)\\n'
             match = re.compile(regexvideo, re.DOTALL).findall(content)
             for group, name, url in match:
-                name = name.replace('_', ' ')
+                name = name.replace('_', ' ').replace('-', ' ')
                 name1 = group + ' - ' + name
                 print("******** name 2 ******* %s" % name1)
                 name = decodeHtml(name1)
@@ -461,7 +963,7 @@ class HasBahCa1(Screen):
         self.session.open(Playgo, name, url)
 
     def convert(self):
-        self.session.openWithCallback(self.convert2, MessageBox, _("Do you want to Convert %s to Favorite Bouquet ?\n\nAttention!! Wait while converting !!!") % self.name, MessageBox.TYPE_YESNO, timeout=10, default=True)
+        self.session.openWithCallback(self.convert2, MessageBox, _("Do you want to Convert %s to Favorite Bouquet ?\n\nAttention!! Wait while converting !!!") % self.name, MessageBox.TYPE_YESNO, timeout=5, default=True)
 
     def convert2(self, result):
         if result:
@@ -490,155 +992,206 @@ class HasBahCa1(Screen):
             tmplist.append('#DESCRIPTION --- %s ---' % name_file)
             print("Converting Bouquet %s" % name_file)
 
-            file = "/tmp/%s.m3u" % name_file
-            downloadFile(self.url, file)
+            self.file = "/tmp/%s.m3u" % name_file
+            try:
+                downloadFile(self.url, self.file)
+            except Exceptions as e:
+                print('Error download self m3u: ', str(e))
+            '''
+            # self.download_m3u()
+            # os.system('sleep 3')
+            '''
 
-            # if os.path.isfile(file) and os.stat(file).st_size > 0:
+            '''
+            # with open(file, 'wb') as f:
+                # content = getUrl(self.url)
+                # if six.PY3:
+                    # content = six.ensure_str(content)
+                # print('Resp 1: ', content)
+                # f.write(content)
+                # os.system('sleep 3')
+                # f.close()
+            # # self.download_m3u()
+            # print('Error download : ', str(e))
+            '''
+            if os.path.isfile(self.file) and os.stat(self.file).st_size > 0:
 
-            for line in open(file):
-                # print('line: ', line)
-                if line.startswith('#EXTM3U'):
-                    continue
-                if '#EXTM3U $BorpasFileFormat="1"' in line: #force export bouquet ???
-                    continue
-                if line == '':
-                    continue
-                if line == ' ':
-                    continue                    
-                if line.startswith("#EXTINF"):
-                    # print('line startswith #EXTINF:')
-                    line = '%s' % line.split(',')[-1]
-                    line = line.rstrip()
-                    namel = '%s' % line.split(',')[-1]
-                    self.namel = namel.rstrip()
-                    self.tmpx = '#DESCRIPTION %s\r' % line
-
-                else:
-                    if self.type.upper() == 'TV':
-                        line = line.replace(':', '%3a')
+                for line in open(self.file):
+                    # print('line: ', line)
+                    if line.startswith('#EXTM3U'):
+                        continue
+                    if '#EXTM3U $BorpasFileFormat="1"' in line: #force export bouquet ???
+                        continue
+                    if line == '':
+                        continue
+                    if line == ' ':
+                        continue
+                    if line.startswith("#EXTINF"):
+                        # print('line startswith #EXTINF:')
+                        line = '%s' % line.split(',')[-1]
                         line = line.rstrip()
+                        namel = '%s' % line.split(',')[-1]
+                        self.namel = namel.rstrip()
+                        self.tmpx = '#DESCRIPTION %s\r' % line
 
-                        if line.startswith('rtmp') or line.startswith('rtsp') or line.startswith('mms'):
-                            line = '#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-
-                        if not line.startswith("#SERVICE 4097:0:1:0:0:0:0:0:0:0:rt"):
-                            if line.startswith('http%3a'):
-                                line = '#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-                            if line.startswith('https%3a'):
-                                line = '#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-                            # print('line TV')
-                        tmplist.append(line)
-                        tmplist.append(self.tmpx)
-
-                    elif self.type.upper() == 'RADIO':
-                        line = line.replace(':', '%3a')
-                        line = line.rstrip()
-                        if line.startswith('rtmp') or line.startswith('rtsp') or line.startswith('mms'):
-                            line = '#SERVICE 4097:0:2:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-                        if not line.startswith("#SERVICE 4097:0:2:0:0:0:0:0:0:0:rt"):
-                            if line.startswith('http%3a'):
-                                line = '#SERVICE 4097:0:2:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-                            if line.startswith('https%3a'):
-                                line = '#SERVICE 4097:0:2:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-                        tmplist.append(line)
-                        tmplist.append(self.tmpx)
                     else:
-                        print("UNKNOWN TYPE: %s" % self.type)
+                        if self.type.upper() == 'TV':
+                            line = line.replace(':', '%3a')
+                            line = line.rstrip()
 
-            """
-            in_bouquets = 0
-            f = open('/etc/enigma2/' + bouquetname, 'w')
-            for item in tmplist:
-                f.write("%s\n" % item)
-            f.close()
-            # write bouquet file
-            self.mbox = self.session.open(MessageBox, _('Check out the favorites list ...'), MessageBox.TYPE_INFO, timeout=5)
-            if os.path.isfile('/etc/enigma2/bouquets.tv'):
-                # check if bouquet exists in bouquet file
+                            if line.startswith('rtmp') or line.startswith('rtsp') or line.startswith('mms'):
+                                line = '#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
+
+                            if not line.startswith("#SERVICE 4097:0:1:0:0:0:0:0:0:0:rt"):
+                                if line.startswith('http%3a'):
+                                    line = '#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
+                                if line.startswith('https%3a'):
+                                    line = '#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
+                                # print('line TV')
+                            tmplist.append(line)
+                            tmplist.append(self.tmpx)
+
+                        elif self.type.upper() == 'RADIO':
+                            line = line.replace(':', '%3a')
+                            line = line.rstrip()
+                            if line.startswith('rtmp') or line.startswith('rtsp') or line.startswith('mms'):
+                                line = '#SERVICE 4097:0:2:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
+                            if not line.startswith("#SERVICE 4097:0:2:0:0:0:0:0:0:0:rt"):
+                                if line.startswith('http%3a'):
+                                    line = '#SERVICE 4097:0:2:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
+                                if line.startswith('https%3a'):
+                                    line = '#SERVICE 4097:0:2:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
+                            tmplist.append(line)
+                            tmplist.append(self.tmpx)
+                        else:
+                            print("UNKNOWN TYPE: %s" % self.type)
+
+                """
+                in_bouquets = 0
+                f = open('/etc/enigma2/' + bouquetname, 'w')
+                for item in tmplist:
+                    f.write("%s\n" % item)
+                f.close()
+                # write bouquet file
+                self.mbox = self.session.open(MessageBox, _('Check out the favorites list ...'), MessageBox.TYPE_INFO, timeout=5)
+                if os.path.isfile('/etc/enigma2/bouquets.tv'):
+                    # check if bouquet exists in bouquet file
+                    for line in open('/etc/enigma2/bouquets.%s' % self.type.lower()):
+                        if bouquetname in line:
+                            in_bouquets = 1
+                    if in_bouquets == 0:
+                        path1 = 'etc/enigma2/' + str(bouquetname)
+                        path2 = '/etc/enigma2/bouquets.' + str(self.type.lower())
+                        path3 = '/etc/enigma2/bouquets.' + str(self.type.lower() + '.bak')
+                        if os.path.isfile(path1) and os.path.isfile(path2):
+                            remove_line(path2, bouquetname)
+                        os.rename(path2, path3)
+                        tvfile = open(path2, 'w+')
+                        bakfile = open(path3)
+                        for line in bakfile:
+                            tvfile.write(line)
+                        tvfile.write('#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "%s" ORDER BY bouquet\r\n' % bouquetname)
+                        bakfile.close()
+                        tvfile.close()
+                        in_bouquets = 1
+                self.mbox = self.session.open(MessageBox, _('Shuffle Favorite List in Progress') + '\n' + _('Wait please ...'), MessageBox.TYPE_INFO, timeout=5)
+                ReloadBouquets()
+                """
+
+                path1 = '/etc/enigma2/' + str(bouquetname)
+                path2 = '/etc/enigma2/bouquets.' + str(self.type.lower())
+
+                # create userbouquet
+                with open(path1, 'w+') as f:
+                    for item in tmplist:
+                        f.write("%s\n" % item)
+
+                # write bouquet.tv file
+                in_bouquets = 0
                 for line in open('/etc/enigma2/bouquets.%s' % self.type.lower()):
                     if bouquetname in line:
                         in_bouquets = 1
+                        break
+
                 if in_bouquets == 0:
-                    path1 = 'etc/enigma2/' + str(bouquetname)
-                    path2 = '/etc/enigma2/bouquets.' + str(self.type.lower())
-                    path3 = '/etc/enigma2/bouquets.' + str(self.type.lower() + '.bak')
-                    if os.path.isfile(path1) and os.path.isfile(path2):
-                        remove_line(path2, bouquetname)
-                    os.rename(path2, path3)
-                    tvfile = open(path2, 'w+')
-                    bakfile = open(path3)
-                    for line in bakfile:
-                        tvfile.write(line)
-                    tvfile.write('#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "%s" ORDER BY bouquet\r\n' % bouquetname)
-                    bakfile.close()
-                    tvfile.close()
-                    in_bouquets = 1
-            self.mbox = self.session.open(MessageBox, _('Shuffle Favorite List in Progress') + '\n' + _('Wait please ...'), MessageBox.TYPE_INFO, timeout=5)
-            ReloadBouquets()
-            """
+                    '''
+                    Rename unlinked bouquet file /etc/enigma2/userbouquet.webcam.tv to /etc/enigma2/userbouquet.webcam.tv.del
+                    '''
+                    with open(path2, 'a+') as f:
+                        bouquetTvString = '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "' + str(bouquetname) + '" ORDER BY bouquet\n'
+                        f.write(str(bouquetTvString))
+                    self.mbox = self.session.open(MessageBox, _('Shuffle Favorite List in Progress') + '\n' + _('Wait please ...'), MessageBox.TYPE_INFO, timeout=5)
+                ReloadBouquets()
 
-            path1 = '/etc/enigma2/' + str(bouquetname)
-            path2 = '/etc/enigma2/bouquets.' + str(self.type.lower())
-
-            # create userbouquet
-            with open(path1, 'w+') as f:
-                for item in tmplist:
-                    f.write("%s\n" % item)
-
-            # write bouquet.tv file
-            in_bouquets = 0
-            for line in open('/etc/enigma2/bouquets.%s' % self.type.lower()):
-                if bouquetname in line:
-                    in_bouquets = 1
-                    break
-
-            if in_bouquets == 0:
-
-                with open(path2, 'a+') as f:
-                    bouquetTvString = '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "' + str(bouquetname) + '" ORDER BY bouquet\n'
-                    f.write(str(bouquetTvString))
-                self.mbox = self.session.open(MessageBox, _('Shuffle Favorite List in Progress') + '\n' + _('Wait please ...'), MessageBox.TYPE_INFO, timeout=5)
-            ReloadBouquets()
+            else:
+                self.mbox = self.session.open(MessageBox, _('Download Error'), MessageBox.TYPE_INFO, timeout=5)
 
 
+    '''add for future'''
+    def download_m3u(self):
+        try:
+                self.download = downloadWithProgress(self.url, self.file)
+                self.download.addProgress(self.downloadProgress)
+                self.download.start().addCallback(self.check).addErrback(self.showError)
+        except:
+                self.session.open(MessageBox, _('Download Failed!!!'), MessageBox.TYPE_INFO, timeout=5)
+                pass
 
+    def downloadProgress(self, recvbytes, totalbytes):
+        self["progress"].show()
+        self['progress'].value = int(100 * recvbytes / float(totalbytes))
+        self['progresstext'].text = '%d of %d kBytes (%.2f%%)' % (recvbytes / 1024, totalbytes / 1024, 100 * recvbytes / float(totalbytes))
 
-# Rename unlinked bouquet file /etc/enigma2/userbouquet.webcam.tv to /etc/enigma2/userbouquet.webcam.tv.del
+    def check(self, fplug):
+        if os.path.exists(self.file):
+            self['progresstext'].text = ''
+            self.progclear = 0
+            self['progress'].setValue(self.progclear)
+            self["progress"].hide()
+
+    def showError(self, error):
+        self.session.open(MessageBox, _('Download Failed!!!'), MessageBox.TYPE_INFO, timeout=5)
+
 
 # remove bouquet  'hbc'
-    def deleteBouquets(self):
+    def msgdeleteBouquets(self):
+        self.session.openWithCallback(self.deleteBouquets, MessageBox, _("Remove all HasBahCa Favorite Bouquet ?") % self.name, MessageBox.TYPE_YESNO, timeout=5, default=True)
+        
+    def deleteBouquets(self, result):
         """
         Clean up routine to remove any previously made changes
         """
-        try:
-            for fname in os.listdir(enigma_path):
-                if 'userbouquet.hbc_' in fname:
-                    # os.remove(os.path.join(enigma_path, fname))
-                    purge(enigma_path, fname)
-                elif 'bouquets.tv.bak' in fname:
-                    # os.remove(os.path.join(enigma_path, fname))
-                    purge(enigma_path, fname)
+        if result:
+        
+            try:
+                for fname in os.listdir(enigma_path):
+                    if 'userbouquet.hbc_' in fname:
+                        # os.remove(os.path.join(enigma_path, fname))
+                        purge(enigma_path, fname)
+                    elif 'bouquets.tv.bak' in fname:
+                        # os.remove(os.path.join(enigma_path, fname))
+                        purge(enigma_path, fname)
 
-            """
-            # if os.path.isdir(epgimport_path):
-                # for fname in os.listdir(epgimport_path):
-                    # if 'hbc_' in fname:
-                        # os.remove(os.path.join(epgimport_path, fname))
-                        """
+                """
+                # if os.path.isdir(epgimport_path):
+                    # for fname in os.listdir(epgimport_path):
+                        # if 'hbc_' in fname:
+                            # os.remove(os.path.join(epgimport_path, fname))
+                            """
 
-            os.rename(os.path.join(enigma_path, 'bouquets.tv'), os.path.join(enigma_path, 'bouquets.tv.bak'))
-            tvfile = open(os.path.join(enigma_path, 'bouquets.tv'), 'w+')
-            bakfile = open(os.path.join(enigma_path, 'bouquets.tv.bak'))
-            for line in bakfile:
-                if '.hbc_' not in line:
-                    tvfile.write(line)
-            bakfile.close()
-            tvfile.close()
-            self.mbox = self.session.open(MessageBox, _('HasBahCa Favorites List have been removed'), MessageBox.TYPE_INFO, timeout=5)
-            ReloadBouquets()
-        except Exception as ex:
-            print(str(ex))
-            raise
+                os.rename(os.path.join(enigma_path, 'bouquets.tv'), os.path.join(enigma_path, 'bouquets.tv.bak'))
+                tvfile = open(os.path.join(enigma_path, 'bouquets.tv'), 'w+')
+                bakfile = open(os.path.join(enigma_path, 'bouquets.tv.bak'))
+                for line in bakfile:
+                    if '.hbc_' not in line:
+                        tvfile.write(line)
+                bakfile.close()
+                tvfile.close()
+                self.mbox = self.session.open(MessageBox, _('HasBahCa Favorites List have been removed'), MessageBox.TYPE_INFO, timeout=5)
+                ReloadBouquets()
+            except Exception as ex:
+                print(str(ex))
+                raise
 
 
 class TvInfoBarShowHide():

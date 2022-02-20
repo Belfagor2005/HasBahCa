@@ -18,4 +18,6 @@
   	<widget name="key_green" position="270,1005" size="300,40" font="Regular;30" halign="left" valign="center" backgroundColor="#20000000" zPosition="5" transparent="1" />
   	<widget name="key_yellow" position="835,950" size="300,40" font="Regular;30" halign="right" valign="center" backgroundColor="#20000000" zPosition="5" transparent="1" />
   	<widget name="key_blue" position="835,1005" size="300,40" font="Regular;30" halign="right" valign="center" backgroundColor="#20000000" zPosition="5" transparent="1" />
+	<widget name="progress" position="563,949" size="300,50" foregroundColor="#2a70a4" backgroundColor="#10000000" transparent="1" zPosition="5" />
+	<widget source="progresstext" render="Label" font="Regular;20" position="562,950" size="300,50" backgroundColor="#202020" transparent="1" halign="center" zPosition="6" />	
 </screen>
