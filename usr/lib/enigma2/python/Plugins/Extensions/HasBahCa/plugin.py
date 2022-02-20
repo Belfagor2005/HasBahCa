@@ -1155,7 +1155,7 @@ class HasBahCa1(Screen):
 
 # remove bouquet  'hbc'
     def msgdeleteBouquets(self):
-        self.session.openWithCallback(self.deleteBouquets, MessageBox, _("Remove all HasBahCa Favorite Bouquet ?") % self.name, MessageBox.TYPE_YESNO, timeout=5, default=True)
+        self.session.openWithCallback(self.deleteBouquets, MessageBox, _("Remove all HasBahCa Favorite Bouquet ?") , MessageBox.TYPE_YESNO, timeout=5, default=True)
         
     def deleteBouquets(self, result):
         """
