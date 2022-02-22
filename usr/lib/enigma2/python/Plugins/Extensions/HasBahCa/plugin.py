@@ -4,7 +4,7 @@
 ****************************************
 *        coded by Lululla              *
 *             skin by MMark            *
-*             20/02/2022               *
+*             23/02/2022               *
 *   Thank's                            *
 *      HasBahCa, Levi45, KiddaC, Pcd   *
 ****************************************
@@ -18,7 +18,7 @@ from Components.config import *
 from Components.Label import Label
 from Components.MenuList import MenuList
 from Components.MultiContent import MultiContentEntryText, MultiContentEntryPixmapAlphaTest
-# from Components.Pixmap import Pixmap
+from Components.Pixmap import Pixmap
 from Components.PluginComponent import plugins
 from Components.PluginList import *
 from Components.ScrollLabel import ScrollLabel
@@ -37,7 +37,6 @@ from Screens.InfoBarGenerics import InfoBarShowHide, InfoBarSubtitleSupport, Inf
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Tools.Directories import SCOPE_PLUGINS, resolveFilename
-# from Tools.LoadPixmap import LoadPixmap
 from enigma import *
 from enigma import RT_HALIGN_CENTER, RT_VALIGN_CENTER
 from enigma import RT_HALIGN_LEFT, RT_HALIGN_RIGHT
@@ -45,26 +44,17 @@ from enigma import eListbox, eTimer
 from enigma import eListboxPythonMultiContent, eConsoleAppContainer
 # from enigma import eServiceCenter
 from enigma import eServiceReference
-# from enigma import eSize, ePicLoad
 from enigma import iPlayableService
 from enigma import gFont
 from enigma import iServiceInformation
 from enigma import loadPNG
-# from enigma import quitMainloop
-# from enigma import eDVBDB
-# from os import path, listdir, remove, mkdir, chmod
-# from twisted.web.client import downloadPage, getPage
-# from xml.dom import Node, minidom
 # import base64
 import glob
-# import time
 import os
 import re
-# import shutil
 import six
 import ssl
 import sys
-
 
 try:
     from Plugins.Extensions.HasBahCa.Utils import *
@@ -143,13 +133,8 @@ if DreamOS():
     path_skin = path_skin + 'dreamOs/'
 print('HasBahCa path_skin: ', path_skin)
 
-
-
 Panel_Dlist = [
     ('A-CATEGORY'),
-    ('A-FILMON'),
-    ('A-FULL LIST SIMPLE'),
-    ('A-FULL LIST'),
     ('A-IPTV'),
     ('A-RADIO'),
     ('A-VOD FILM'),
@@ -224,11 +209,9 @@ Panel_Dlist = [
     ('IPTV POLSKI'),
     ('IPTV PORTUGAL'),
     ('IPTV RELAX'),
-    # ('IPTV RELAX TIME'),
     ('IPTV ROMANIA MOLDOVA'),
     ('IPTV RUS ARMENIA'),
     ('IPTV RUS EX CCCP PROSTOTV'),
-    # ('IPTV RUS EX CCCP RADIOS'),
     ('IPTV RUS EX CCCP REGIONAL'),
     ('IPTV RUS EX CCCP1'),
     ('IPTV RUS EX CCCP2'),
@@ -258,7 +241,6 @@ Panel_Dlist = [
     ('IPTV TURKEY TURKIYE FILMER'),
     ('IPTV TURKEY TURKIYE GENEL'),
     ('IPTV TURKEY TURKIYE HABER'),
-    # ('IPTV TURKEY TURKIYE KARISIK MIX'),
     ('IPTV TURKEY TURKIYE MIX'),
     ('IPTV TURKEY TURKIYE MUZIK'),
     ('IPTV TURKEY TURKIYE RADYO'),
@@ -284,7 +266,6 @@ Panel_Dlist = [
     ('WEBCAM MIX'),
     ('WEBCAM POLSKI'),
     ('WEBCAM PORTUGAL'),
-    # ('WEBCAM RUS EX CCCP SOCHICAM'),
     ('WEBCAM RUS EX CCCP'),
     ('WEBCAM TURKEY'),
     ('WEBCAM USA'),
@@ -325,8 +306,6 @@ def hasListEntry(name, idx):
 def hasbaSetListEntry(name):
     res = [name]
     png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/setting.png".format('HasBahCa'))
-    res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 12), size=(34, 25), png=loadPNG(png)))
-    res.append(MultiContentEntryText(pos=(60, 0), size=(1000, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     if isFHD():
         res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 12), size=(34, 25), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(60, 0), size=(1200, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
@@ -350,7 +329,7 @@ class MainHasBahCa(Screen):
         skin = path_skin + 'settings.xml'
         with open(skin, 'r') as f:
             self.skin = f.read()
-        self.setup_title = ('MainHasBahCa')
+        self.setup_title = ('Main HasBahCa')
         Screen.__init__(self, session)
         self.setTitle(title_plug)
         self['text'] = hasList([])
@@ -388,13 +367,10 @@ class MainHasBahCa(Screen):
         list = []
         idx = 0
         for x in Panel_Dlist:
-
             list.append(hasListEntry(x, idx))
             self.menu_list.append(x)
             idx += 1
-
         # self.menu_list.sort()
-
         self["live"].setText('N.' + str(idx) + " CATEGORY")
         self['text'].setList(list)
         self['info'].setText(_('Please select ...'))
@@ -408,14 +384,7 @@ class MainHasBahCa(Screen):
         host = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
         if sel == ('A-CATEGORY'):
                     url = 'https://github.com/HasBahCa/IPTV-LIST'
-                    self.session.open(HasBahCa, sel, url)
-
-        if sel == ('A-FULL LIST'):
-                    url = host + 'HasBahCa_IPTV_FULL.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('A-FULL LIST SIMPLE'):
-                    url = host + 'HasBahCa_IPTV_FULL_simple.m3u'
-                    self.session.open(HasBahCa1, sel, url)
+                    self.session.open(HasBahCaC, sel, url)
         elif sel == ('A-IPTV'):
                     url = host + 'hasbahca_iptv.m3u'
                     self.session.open(HasBahCa1, sel, url)
@@ -427,9 +396,6 @@ class MainHasBahCa(Screen):
                     self.session.open(HasBahCa1, sel, url)
         elif sel == ('A-WEBCAM'):
                     url = host + 'HasBahCa_WEBCAM.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('A-FILMON'):
-                    url = host + 'HasBahCa_FILMon.m3u'
                     self.session.open(HasBahCa1, sel, url)
         elif sel == ('IPTV AFRICA'):
                     url = host + 'HasBahCa_AFRICA_AFRIKA_TV.m3u'
@@ -707,9 +673,6 @@ class MainHasBahCa(Screen):
         elif sel == ('IPTV RELAX'):
                     url = host + 'HasBahCa_RELAX.m3u'
                     self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV RELAX TIME'):
-                    url = host + 'HasBahCa_RELAXTIME.m3u'
-                    self.session.open(HasBahCa1, sel, url)
         elif sel == ('IPTV RUS ARMENIA'):
                     url = host + 'HasBahCa_RUS_Armenia_ERMENISTAN.m3u'
                     self.session.open(HasBahCa1, sel, url)
@@ -718,9 +681,6 @@ class MainHasBahCa(Screen):
                     self.session.open(HasBahCa1, sel, url)
         elif sel == ('IPTV RUS EX CCCP2'):
                     url = host + 'HasBahCa_RUS_EX_CCCP_Eski_SSCB2.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV RUS EX CCCP RADIOS'):
-                    url = host + 'HasBahCa_RUS_EX_CCCP_RADIOS.m3u'
                     self.session.open(HasBahCa1, sel, url)
         elif sel == ('IPTV RUS EX CCCP REGIONAL'):
                     url = host + 'HasBahCa_RUS_EX_CCCP_REGIONAL.m3u'
@@ -773,9 +733,6 @@ class MainHasBahCa(Screen):
         elif sel == ('IPTV TURKEY TURKIYE HABER'):
                     url = host + 'HasBahCa_Turkey_TURKiYE_HABER.m3u'
                     self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKEY TURKIYE KARISIK MIX'):
-                    url = host + 'HasBahCa_Turkey_KARISIK_MIX.m3u'
-                    self.session.open(HasBahCa1, sel, url)
         elif sel == ('IPTV TURKEY TURKIYE MIX'):
                     url = host + 'HasBahCa_Turkey_TURKiYE_MIX_KARISIK.m3u'
                     self.session.open(HasBahCa1, sel, url)
@@ -824,9 +781,6 @@ class MainHasBahCa(Screen):
         elif sel == ('WEBCAM RUS EX CCCP'):
                     url = host + 'HasBahCa_WEBCAM_RUS_EX_CCCP.m3u'
                     self.session.open(HasBahCa1, sel, url)
-        elif sel == ('WEBCAM RUS EX CCCP SOCHICAM'):
-                    url = host + 'HasBahCa_webcam_rus_exCCCP_SOCHICAM_FHD.m3u'
-                    self.session.open(HasBahCa1, sel, url)
         elif sel == ('WEBCAM TURKEY'):
                     url = host + 'HasBahCa_Turkey_WEBCAM.m3u'
                     self.session.open(HasBahCa1, sel, url)
@@ -838,7 +792,7 @@ class MainHasBahCa(Screen):
             return
         return
 
-class HasBahCa(Screen):
+class HasBahCaC(Screen):
     def __init__(self, session, name, url):
         self.session = session
         skin = path_skin + 'settings.xml'
@@ -866,6 +820,7 @@ class HasBahCa(Screen):
             'green': self.okRun,
             'red': self.close,
             # 'yellow': self.convert,
+            # 'back': self.close(),
             'cancel': self.close}, -2)
         self.timer = eTimer()
         if DreamOS():
@@ -888,50 +843,46 @@ class HasBahCa(Screen):
             if six.PY3:
                 content = six.ensure_str(content)
             print("HasBahCa t content =", content)
-            # https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/HasBahCa_03INT_MIXTV.m3u
-            # href="/HasBahCa/IPTV-LIST/blob/main/HasBahCa_AFRICA_ISRAEL_israil.m3u">HasBahCa_AFRICA_ISRAEL_israil.m3u</a>
-            # <div class="sr-only" role="row">
-            # <div id="readme
-            # n1 = content.find('<div class="sr-only" role="row">', 0)
             n1 = content.find('js-permalink-shortcut"', 0)
             n2 = content.find('<div id="readme', n1)
             content2 = content[n1:n2]
             regexvideo = 'title="(.*?).m3u.*?href="/HasBahCa/IPTV-LIST/blob/main/(.*?).m3u">.*?wrap">(.*?)</time'
             match = re.compile(regexvideo, re.DOTALL).findall(content2)
-            print("HasBahCa t match =", match)
+            # print("HasBahCa t match =", match)
             for name, url, date in match:
                 if 'readme' in name.lower():
                     continue
-                print("HasBahCa t name =", name)
-                print("HasBahCa t url =", url)
-                print("HasBahCa t date =", date)
+                # print("HasBahCa t name =", name)
+                # print("HasBahCa t url =", url)
+                # print("HasBahCa t date =", date)
                 url1 = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/' + url + '.m3u'
-                date = date.replace(',', ' ')
-                name1 = name.replace('.m3u', '').replace('-', ' ').replace('_', ' ')
+                date = date.replace(',', '')
+                name1 = name.replace('HasBahCa', '°')
+                name1 = name1.replace('-', ' ').replace('_', ' ')
+                name1 = decodeHtml(name1)
                 name = name1 + ' | ' + date
-                print("******** name 1 ******* %s" % name)
-                name = decodeHtml(name)
-                print("HasBahCa t name =", name)
-                print("HasBahCa t url1 =", url1)
-
+                # print("******** name 1 ******* %s" % name)
+                # print("HasBahCa t name =", name)
+                # print("HasBahCa t url1 =", url1)
                 item = name + "###" + url1
-                print('Webcam4 Items sort: ', item)
+                # print('HasBahCa Items sort: ', item)
                 items.append(item)
             items.sort()
             for item in items:
                 name = item.split('###')[0]
-                url = item.split('###')[1]
-
+                url2 = item.split('###')[1]
                 self.names.append(name)
-                self.urls.append(url)
+                self.urls.append(url2)
             self["live"].setText('N.' + str(len(self.names)) + " CATEGORY")
             self['info'].setText(_('Please select ...'))
             self['key_green'].show()
             showlisthasba(self.names, self['text'])
-            print('-------------HasBahCa-------------')
-
         except Exception as e:
             print('error ', str(e))
+        print('-------------HasBahCa-------------')
+        MemClean()
+        # print('-------------memclean-------------')
+        # self.onLayoutFinish.append(self.__layoutFinished)
 
     def okRun(self):
         idx = self["text"].getSelectionIndex()
@@ -994,11 +945,6 @@ class HasBahCa1(Screen):
             content = getUrl(url)
             if six.PY3:
                 content = six.ensure_str(content)
-            # #EXTINF:-1 group-title="|RADIO|TOP Radio" $ExtFilter="RADIO",WBWB FM - 56 kbit/s
-            #filmon
-            # #EXTM3U
-            # EXTINF:-1 group-title="FILMon TV",A Família Buscapé - The Beverly Hillbillies | Filmon EUA
-            # https://nowontv.info/filmon.php?url=https://www.filmon.com/api-v2/channel/2969&pprotocol=hls
             regexvideo = 'EXTINF.*?,(.*?)\\n(.*?)\\n'
             # regexvideo = 'EXTINF.*?group-title="(.*?)".*?,(.*?)\\n(.*?)\\n'
             match = re.compile(regexvideo, re.DOTALL).findall(content)
@@ -1006,11 +952,8 @@ class HasBahCa1(Screen):
             # for group, name, url in match:
                 # name = name.replace('_', ' ').replace('-', ' ')
                 # name1 = group + ' | ' + name
-
                 name1 = name.replace('_', ' ').replace('-', ' ')
                 # print("******** name 2 ******* %s" % name1)
-                # name1 = name1.replace('United States Amerika', '').replace('+', ' ').replace('HasBhaCa', '')
-                # name1 = name1.replace('AVUSTURALYA', '').replace('Arjantin', '').replace('MK', '')
                 name = decodeHtml(name1)
                 item = name + "###" + url
                 print('Items sort: ', item)
@@ -1027,7 +970,7 @@ class HasBahCa1(Screen):
             self['key_yellow'].show()
             self['key_blue'].show()
             showlisthasba(self.names, self['text'])
-            # MemClean()
+            MemClean()
         except Exception as e:
             print('error HasBahCa', str(e))
 
@@ -1049,24 +992,20 @@ class HasBahCa1(Screen):
                 self.type = "radio"
             else:
                 self.type = "tv"
-            # #EXTINF:-1 group-title="|RADIO|TOP Radio" $ExtFilter="RADIO",WBWB FM - 56 kbit/s
             name_file = self.name.replace('/', '_').replace(',', '').replace('hasbahca', 'hbc')
             cleanName = re.sub(r'[\<\>\:\"\/\\\|\?\*]', '_', str(name_file))
             cleanName = re.sub(r' ', '_', cleanName)
             cleanName = re.sub(r'\d+:\d+:[\d.]+', '_', cleanName)
             name_file = re.sub(r'_+', '_', cleanName)
             bouquetname = 'userbouquet.hbc_%s.%s' % (name_file.lower(), self.type.lower())
-            # nline = '#SERVICE: 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "%s" ORDER BY bouquet\n' % bouquetname
             self.tmpx = ''
             self.namel = ''
-
             tmplist = []
-            # tmplist.append('#NAME HasBahCa IPTV %s (%s)' % (name_file,self.type))
-            tmplist.append('#NAME HASBAHCA IPTV %s' % name_file)
+            tmplist.append('#NAME HasBahCa IPTV %s (%s)' % (name_file, self.type))
+            # tmplist.append('#NAME HASBAHCA IPTV %s' % name_file)
             tmplist.append('#SERVICE 1:64:0:0:0:0:0:0:0:0::%s CHANNELS' % name_file)
             tmplist.append('#DESCRIPTION --- %s ---' % name_file)
             print("Converting Bouquet %s" % name_file)
-
             self.file = "/tmp/%s.m3u" % name_file
             try:
                 downloadFile(self.url, self.file)
@@ -1092,7 +1031,6 @@ class HasBahCa1(Screen):
             if os.path.isfile(self.file) and os.stat(self.file).st_size > 0:
 
                 for line in open(self.file):
-                    # print('line: ', line)
                     if line.startswith('#EXTM3U'):
                         continue
                     if '#EXTM3U $BorpasFileFormat="1"' in line: #force export bouquet ???
@@ -1102,7 +1040,6 @@ class HasBahCa1(Screen):
                     if line == ' ':
                         continue
                     if line.startswith("#EXTINF"):
-                        # print('line startswith #EXTINF:')
                         line = '%s' % line.split(',')[-1]
                         line = line.rstrip()
                         namel = '%s' % line.split(',')[-1]
@@ -1113,16 +1050,13 @@ class HasBahCa1(Screen):
                         if self.type.upper() == 'TV':
                             line = line.replace(':', '%3a')
                             line = line.rstrip()
-
                             if line.startswith('rtmp') or line.startswith('rtsp') or line.startswith('mms'):
                                 line = '#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-
                             if not line.startswith("#SERVICE 4097:0:1:0:0:0:0:0:0:0:rt"):
                                 if line.startswith('http%3a'):
                                     line = '#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
                                 if line.startswith('https%3a'):
                                     line = '#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-                                # print('line TV')
                             tmplist.append(line)
                             tmplist.append(self.tmpx)
 
@@ -1172,22 +1106,18 @@ class HasBahCa1(Screen):
                 self.mbox = self.session.open(MessageBox, _('Shuffle Favorite List in Progress') + '\n' + _('Wait please ...'), MessageBox.TYPE_INFO, timeout=5)
                 ReloadBouquets()
                 """
-
                 path1 = '/etc/enigma2/' + str(bouquetname)
                 path2 = '/etc/enigma2/bouquets.' + str(self.type.lower())
-
                 # create userbouquet
                 with open(path1, 'w+') as f:
                     for item in tmplist:
                         f.write("%s\n" % item)
-
                 # write bouquet.tv file
                 in_bouquets = 0
                 for line in open('/etc/enigma2/bouquets.%s' % self.type.lower()):
                     if bouquetname in line:
                         in_bouquets = 1
                         break
-
                 if in_bouquets == 0:
                     '''
                     Rename unlinked bouquet file /etc/enigma2/userbouquet.webcam.tv to /etc/enigma2/userbouquet.webcam.tv.del
@@ -1197,10 +1127,8 @@ class HasBahCa1(Screen):
                         f.write(str(bouquetTvString))
                     self.mbox = self.session.open(MessageBox, _('Shuffle Favorite List in Progress') + '\n' + _('Wait please ...'), MessageBox.TYPE_INFO, timeout=5)
                 ReloadBouquets()
-
             else:
                 self.mbox = self.session.open(MessageBox, _('Download Error'), MessageBox.TYPE_INFO, timeout=5)
-
 
     '''add for future'''
     def download_m3u(self):
@@ -1375,11 +1303,9 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         _session = session
         self.session = session
         self.skinName = 'MoviePlayer'
-        # title = name
         streaml = False
         self.allowPiP = False
         self.service = None
-        # service = None
         self.url = url
         self.pcip = 'None'
         print("******** name 3 ******* %s" % name)
@@ -1468,7 +1394,6 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         self.setAspect(temp)
 
     def showinfo(self):
-        # debug = True
         sTitle = ''
         sServiceref = ''
         try:
@@ -1522,7 +1447,6 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         name = self.name
         ref = "{0}:0:1:0:0:0:0:0:0:0:{1}:{2}".format(servicetype, url.replace(":", "%3a"), name.replace(":", "%3a"))
         print('reference:   ', ref)
-
         if streaml is True:
             url = 'http://127.0.0.1:8088/' + str(url)
             ref = "{0}:0:1:0:0:0:0:0:0:0:{1}:{2}".format(servicetype, url.replace(":", "%3a"), name.replace(":", "%3a"))
@@ -1606,7 +1530,6 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
     def leavePlayer(self):
         self.close()
 
-
 def checks():
     from Plugins.Extensions.HasBahCa.Utils import checkInternet
     checkInternet()
@@ -1614,7 +1537,6 @@ def checks():
     if checkInternet():
         chekin = True
     return chekin
-
 
 def main(session, **kwargs):
     if checks:
@@ -1627,13 +1549,11 @@ def main(session, **kwargs):
     else:
         session.open(MessageBox, "No Internet", MessageBox.TYPE_INFO)
 
-
 def StartSetup(menuid, **kwargs):
     if menuid == 'mainmenu':
         return [(_('HasBahCa  IPTV'), main, 'HasBahCa  IPTV', 15)]
     else:
         return []
-
 
 def Plugins(**kwargs):
     ico_path = 'logo.png'
