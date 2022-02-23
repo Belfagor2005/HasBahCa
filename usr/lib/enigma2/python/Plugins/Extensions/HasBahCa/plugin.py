@@ -303,9 +303,12 @@ def hasListEntry(name, idx):
     elif 'webcam' in name.lower():    
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/webcam.png".format('HasBahCa'))  
     elif 'music' in name.lower():    
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))         
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa')) 
+    elif 'sport' in name.lower():    
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))         
     else:
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))  
+        
         
     if isFHD():
         res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 12), size=(34, 25), png=loadPNG(png)))
@@ -325,7 +328,9 @@ def hasbaSetListEntry(name):
     elif 'webcam' in name.lower():    
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/webcam.png".format('HasBahCa'))  
     elif 'music' in name.lower():    
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))         
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
+    elif 'sport' in name.lower():    
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa')) 
     else:
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))        
     
@@ -405,9 +410,9 @@ class MainHasBahCa(Screen):
     def keyNumberGlobalCB(self, idx):
         sel = self.menu_list[idx]
         host = github
-        main = 'https://github.com/HasBahCa/IPTV-LIST'
+        main = 'http://github.com/HasBahCa/IPTV-LIST/'
         if sel == ('A-CATEGORY'):
-                    url = main
+                    url = str(main)
                     self.session.open(HasBahCaC, sel, url)
         elif sel == ('A-IPTV'):
                     url = host + 'hasbahca_iptv.m3u'
@@ -851,7 +856,7 @@ class HasBahCaC(Screen):
             self.timer_conn = self.timer.timeout.connect(self._gotPageLoad)
         else:
             self.timer.callback.append(self._gotPageLoad)
-        self.timer.start(500, True)
+        self.timer.start(750, True)
         self.onLayoutFinish.append(self.__layoutFinished)
 
     def __layoutFinished(self):
@@ -864,8 +869,8 @@ class HasBahCaC(Screen):
         items = []
         try:
             content = getUrl(url)
-            if six.PY3:
-                content = six.ensure_str(content)
+            # if six.PY3:
+                # content =six.ensure_str(content)
             print("HasBahCa t content =", content)
             n1 = content.find('js-permalink-shortcut"', 0)
             n2 = content.find('<div id="readme', n1)
