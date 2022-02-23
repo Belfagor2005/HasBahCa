@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: HasBahCa\n"
-"POT-Creation-Date: 2022-02-20 10:41+0100\n"
+"POT-Creation-Date: 2022-02-23 19:18+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13,527 +13,27 @@ msgstr ""
 "X-Poedit-Basepath: ../../../..\n"
 "X-Poedit-SearchPath-0: plugin.py\n"
 
-#: plugin.py:351 plugin.py:801 plugin.py:898
+#: plugin.py:353 plugin.py:825 plugin.py:924
 msgid "Loading data... Please wait"
 msgstr ""
 
-#: plugin.py:352
+#: plugin.py:354
 msgid "Exit"
 msgstr "Uscire"
 
-#: plugin.py:353 plugin.py:803 plugin.py:900
+#: plugin.py:355 plugin.py:827 plugin.py:926
 msgid "Select"
 msgstr "Seleziona"
 
-#: plugin.py:382 plugin.py:868 plugin.py:951
+#: plugin.py:392 plugin.py:894 plugin.py:985
 msgid "Please select ..."
 msgstr "Seleziona Prego ..."
 
-#: plugin.py:390
-msgid "FULL LIST"
-msgstr ""
-
-#: plugin.py:393
-msgid "IPTV"
-msgstr ""
-
-#: plugin.py:396
-msgid "VOD_FILM"
-msgstr ""
-
-#: plugin.py:399
-msgid "RADIO"
-msgstr ""
-
-#: plugin.py:402
-msgid "WEBCAM"
-msgstr ""
-
-#: plugin.py:405
-msgid "CATEGORY"
-msgstr ""
-
-#: plugin.py:425
-msgid "IPTV AFRICA"
-msgstr ""
-
-#: plugin.py:428
-msgid "IPTV ISRAEL"
-msgstr ""
-
-#: plugin.py:431
-msgid "IPTV CANADA"
-msgstr ""
-
-#: plugin.py:434
-msgid "IPTV USA LOCAL"
-msgstr ""
-
-#: plugin.py:437
-msgid "IPTV USA Plex"
-msgstr ""
-
-#: plugin.py:440
-msgid "IPTV USA Pluto"
-msgstr ""
-
-#: plugin.py:443
-msgid "IPTV USA TVplus"
-msgstr ""
-
-#: plugin.py:446
-msgid "IPTV USA xumo"
-msgstr ""
-
-#: plugin.py:449
-msgid "IPTV USA 1"
-msgstr ""
-
-#: plugin.py:452
-msgid "IPTV USA 2"
-msgstr ""
-
-#: plugin.py:456
-msgid "IPTV ARGENTINA"
-msgstr ""
-
-#: plugin.py:459
-msgid "IPTV BRASIL"
-msgstr ""
-
-#: plugin.py:462
-msgid "IPTV BRASIL Pluto"
-msgstr ""
-
-#: plugin.py:465
-msgid "IPTV CANADA ABD"
-msgstr ""
-
-#: plugin.py:468
-msgid "IPTV CHILE"
-msgstr ""
-
-#: plugin.py:471
-msgid "IPTV COLOMBIA"
-msgstr ""
-
-#: plugin.py:474
-msgid "IPTV COSTARICA"
-msgstr ""
-
-#: plugin.py:477
-msgid "IPTV DOMINICAN"
-msgstr ""
-
-#: plugin.py:480
-msgid "IPTV HAITI"
-msgstr ""
-
-#: plugin.py:483
-msgid "IPTV HONDURAS"
-msgstr ""
-
-#: plugin.py:486
-msgid "IPTV LATINO MIX 1"
-msgstr ""
-
-#: plugin.py:489
-msgid "IPTV LATINO MIX 2"
-msgstr ""
-
-#: plugin.py:492
-msgid "IPTV Latino_PLUTOTV"
-msgstr ""
-
-#: plugin.py:495
-msgid "IPTV MEXICO"
-msgstr ""
-
-#: plugin.py:498
-msgid "IPTV MEXICO_PLUTO"
-msgstr ""
-
-#: plugin.py:501
-msgid "IPTV PANAMA"
-msgstr ""
-
-#: plugin.py:504
-msgid "IPTV PERU"
-msgstr ""
-
-#: plugin.py:507
-msgid "IPTV URUGUAY"
-msgstr ""
-
-#: plugin.py:510
-msgid "IPTV ARABIC 1"
-msgstr ""
-
-#: plugin.py:513
-msgid "IPTV ARABIC 2"
-msgstr ""
-
-#: plugin.py:516
-msgid "IPTV Afghanistan"
-msgstr ""
-
-#: plugin.py:519
-msgid "IPTV Bangladesh"
-msgstr ""
-
-#: plugin.py:522
-msgid "IPTV CAMBODIA"
-msgstr ""
-
-#: plugin.py:525
-msgid "IPTV China1"
-msgstr ""
-
-#: plugin.py:528
-msgid "IPTV China2"
-msgstr ""
-
-#: plugin.py:531
-msgid "IPTV INDIA_HINDI_TAMIL"
-msgstr ""
-
-#: plugin.py:534
-msgid "IPTV Indonesia"
-msgstr ""
-
-#: plugin.py:537
-msgid "IPTV JAPAN"
-msgstr ""
-
-#: plugin.py:540
-msgid "IPTV Khusus_MALAZIA"
-msgstr ""
-
-#: plugin.py:543
-msgid "IPTV KOREA"
-msgstr ""
-
-#: plugin.py:546
-msgid "IPTV LAOS"
-msgstr ""
-
-#: plugin.py:549
-msgid "IPTV ASIA_MIX_MNC"
-msgstr ""
-
-#: plugin.py:552
-msgid "IPTV PAKISTAN"
-msgstr ""
-
-#: plugin.py:555
-msgid "IPTV TAIWAN"
-msgstr ""
-
-#: plugin.py:558
-msgid "IPTV THAILAND"
-msgstr ""
-
-#: plugin.py:561
-msgid "IPTV VIETNAM"
-msgstr ""
-
-#: plugin.py:564
-msgid "IPTV AVUSTURALYA_NZeland"
-msgstr ""
-
-#: plugin.py:567
-msgid "IPTV Deutsch_German__PLUTO"
-msgstr ""
-
-#: plugin.py:570
-msgid "IPTV Deutsch_German"
-msgstr ""
-
-#: plugin.py:573
-msgid "IPTV Deutsch_German_LOKAL"
-msgstr ""
-
-#: plugin.py:576
-msgid "IPTV Deutsch_German_TVPLUS"
-msgstr ""
-
-#: plugin.py:579
-msgid "IPTV OSTERREICH_AVUSTURIA"
-msgstr ""
-
-#: plugin.py:582
-msgid "IPTV OSTERREICH_AVUSTURYA_TVPLUS"
-msgstr ""
-
-#: plugin.py:585
-msgid "IPTV SWITZERLAND_SCHWEIZ"
-msgstr ""
-
-#: plugin.py:588
-msgid "IPTV SWITZERLAND_SCHWEIZ_PLUTO"
-msgstr ""
-
-#: plugin.py:591
-msgid "IPTV SWITZERLAND"
-msgstr ""
-
-#: plugin.py:594
-msgid "IPTV Great_Britain_PLUTO"
-msgstr ""
-
-#: plugin.py:597
-msgid "IPTV Great_Britain_TVPLUS"
-msgstr ""
-
-#: plugin.py:600
-msgid "IPTV GreatBritain_England"
-msgstr ""
-
-#: plugin.py:603
-msgid "IPTV Albania_Bosnia_Kosovo"
-msgstr ""
-
-#: plugin.py:606
-msgid "IPTV BALTIC_EST_LIT_LET"
-msgstr ""
-
-#: plugin.py:609
-msgid "IPTV BULGARSAT"
-msgstr ""
-
-#: plugin.py:612
-msgid "IPTV Czech_HU_Polski"
-msgstr ""
-
-#: plugin.py:615
-msgid "IPTV CROATIA"
-msgstr ""
-
-#: plugin.py:618
-msgid "IPTV France"
-msgstr ""
-
-#: plugin.py:621
-msgid "IPTV France_PLUTO"
-msgstr ""
-
-#: plugin.py:624
-msgid "IPTV France_TVPLUS"
-msgstr ""
-
-#: plugin.py:627
-msgid "IPTV GREEK"
-msgstr ""
-
-#: plugin.py:630
-msgid "IPTV Greek_RADIO"
-msgstr ""
-
-#: plugin.py:633
-msgid "IPTV Holland_Belgien"
-msgstr ""
-
-#: plugin.py:636
-msgid "IPTV Holland_PLUTO"
-msgstr ""
-
-#: plugin.py:639
-msgid "IPTV Hungary_Magyar"
-msgstr ""
-
-#: plugin.py:642
-msgid "IPTV Italia"
-msgstr ""
-
-#: plugin.py:645
-msgid "IPTV Italy_PLUTO"
-msgstr ""
-
-#: plugin.py:648
-msgid "IPTV Italy_TVPLUS"
-msgstr ""
-
-#: plugin.py:651
-msgid "IPTV MAKEDONIA"
-msgstr ""
-
-#: plugin.py:654
-msgid "IPTV MALTA"
-msgstr ""
-
-#: plugin.py:657
-msgid "IPTV POLSKI"
-msgstr ""
-
-#: plugin.py:660
-msgid "IPTV PORTUGAL"
-msgstr ""
-
-#: plugin.py:663
-msgid "IPTV ROMANIA_MOLDOVA"
-msgstr ""
-
-#: plugin.py:666
-msgid "IPTV SERBIA"
-msgstr ""
-
-#: plugin.py:669
-msgid "IPTV SKANDINAV_FINLAND"
-msgstr ""
-
-#: plugin.py:672
-msgid "IPTV Slovakia-Sloveina"
-msgstr ""
-
-#: plugin.py:675
-msgid "IPTV SPAIN"
-msgstr ""
-
-#: plugin.py:678
-msgid "IPTV Spain_PLUTO"
-msgstr ""
-
-#: plugin.py:681
-msgid "IPTV RELAX"
-msgstr ""
-
-#: plugin.py:684
-msgid "IPTV RUS_Armenia"
-msgstr ""
-
-#: plugin.py:687
-msgid "IPTV RUS_EX_CCCP1"
-msgstr ""
-
-#: plugin.py:690
-msgid "IPTV RUS_EX_CCCP2"
-msgstr ""
-
-#: plugin.py:693
-msgid "IPTV RUS_EX_CCCP_REGIONAL"
-msgstr ""
-
-#: plugin.py:696
-msgid "IPTV RUS_GEORGIA"
-msgstr ""
-
-#: plugin.py:699
-msgid "IPTV RUS_Kazakhstan"
-msgstr ""
-
-#: plugin.py:702
-msgid "IPTV RUS_Latvia"
-msgstr ""
-
-#: plugin.py:705
-msgid "IPTV Rus_UKRAINA1"
-msgstr ""
-
-#: plugin.py:708
-msgid "IPTV Rus_UKRAINA2"
-msgstr ""
-
-#: plugin.py:711
-msgid "IPTV Turkey_TURKiYE_AVRUPA"
-msgstr ""
-
-#: plugin.py:714
-msgid "IPTV Turkey_TURKiYE_BLUTVGENEL"
-msgstr ""
-
-#: plugin.py:717
-msgid "IPTV Turkey_TURKiYE_DIGER"
-msgstr ""
-
-#: plugin.py:720
-msgid "IPTV Turkey_TURKiYE_DiNi"
-msgstr ""
-
-#: plugin.py:723
-msgid "IPTV Turkey_TURKiYE_GENEL"
-msgstr ""
-
-#: plugin.py:726
-msgid "IPTV Turkey_TURKiYE_MIX"
-msgstr ""
-
-#: plugin.py:729
-msgid "IPTV Turkey_TURKiYE_MUZIK"
-msgstr ""
-
-#: plugin.py:732
-msgid "IPTV Turkey_TURKiYE_RADYO"
-msgstr ""
-
-#: plugin.py:735
-msgid "IPTV Turkey_TURKiYE_SPOR"
-msgstr ""
-
-#: plugin.py:738
-msgid "IPTV Turkey_TURKiYE_YEREL"
-msgstr ""
-
-#: plugin.py:741
-msgid "IPTV TURKI STAATEN"
-msgstr ""
-
-#: plugin.py:744
-msgid "IPTV USA_CHINA_ENGLISH"
-msgstr ""
-
-#: plugin.py:747
-msgid "IPTV WORLD_MIXTV"
-msgstr ""
-
-#: plugin.py:750
-msgid "IPTV WORLD_Music"
-msgstr ""
-
-#: plugin.py:753
-msgid "IPTV WORLD_Sports"
-msgstr ""
-
-#: plugin.py:756
-msgid "WEBCAM_China_CiN"
-msgstr ""
-
-#: plugin.py:759
-msgid "WEBCAM_DE_AU_CH"
-msgstr ""
-
-#: plugin.py:762
-msgid "WEBCAM_MIX"
-msgstr ""
-
-#: plugin.py:765
-msgid "WEBCAM_POLSKI"
-msgstr ""
-
-#: plugin.py:768
-msgid "WEBCAM_Portugal"
-msgstr ""
-
-#: plugin.py:771
-msgid "WEBCAM_RUS_EX_CCCP"
-msgstr ""
-
-#: plugin.py:774
-msgid "WEBCAM_RUS_EX_CCCP_SOCHICAM"
-msgstr ""
-
-#: plugin.py:777
-msgid "WEBCAM Turkey"
-msgstr ""
-
-#: plugin.py:780
-msgid "WEBCAM_USA"
-msgstr ""
-
-#: plugin.py:802 plugin.py:899
+#: plugin.py:826 plugin.py:925
 msgid "Back"
 msgstr "Indietro"
 
-#: plugin.py:966
+#: plugin.py:1001
 #, python-format
 msgid ""
 "Do you want to Convert %s to Favorite Bouquet ?\n"
@@ -544,58 +44,58 @@ msgstr ""
 "\n"
 "Attenzione!! Aspetta durante la conversione !!!"
 
-#: plugin.py:1123
+#: plugin.py:1145
 msgid "Shuffle Favorite List in Progress"
 msgstr "Ricarico l'elenco dei preferiti in corso"
 
-#: plugin.py:1123
+#: plugin.py:1145
 msgid "Wait please ..."
 msgstr "Attendere prego..."
 
-#: plugin.py:1127
+#: plugin.py:1148
 msgid "Download Error"
 msgstr ""
 
-#: plugin.py:1137 plugin.py:1153
+#: plugin.py:1157 plugin.py:1173
 msgid "Download Failed!!!"
 msgstr ""
 
-#: plugin.py:1158
+#: plugin.py:1178
 msgid "Remove all HasBahCa Favorite Bouquet ?"
 msgstr "Rimuovere tutto il bouquet preferito di HasBahCa?"
 
-#: plugin.py:1190
+#: plugin.py:1208
 msgid "HasBahCa Favorites List have been removed"
 msgstr "L'elenco dei preferiti di HasBahCa è stato rimosso"
 
-#: plugin.py:1364
+#: plugin.py:1380
 msgid "4:3 Letterbox"
 msgstr ""
 
-#: plugin.py:1365
+#: plugin.py:1381
 msgid "4:3 PanScan"
 msgstr ""
 
-#: plugin.py:1366
+#: plugin.py:1382
 msgid "16:9"
 msgstr ""
 
-#: plugin.py:1367
+#: plugin.py:1383
 msgid "16:9 always"
 msgstr ""
 
-#: plugin.py:1368
+#: plugin.py:1384
 msgid "16:10 Letterbox"
 msgstr ""
 
-#: plugin.py:1369
+#: plugin.py:1385
 msgid "16:10 PanScan"
 msgstr ""
 
-#: plugin.py:1370
+#: plugin.py:1386
 msgid "16:9 Letterbox"
 msgstr ""
 
-#: plugin.py:1560
+#: plugin.py:1571
 msgid "HasBahCa  IPTV"
 msgstr ""

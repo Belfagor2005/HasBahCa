@@ -1,4 +1,4 @@
-<!-- Skin Setting 15/08/2020 -->
+<!-- Skin Setting 15/02/2022 -->
 <screen name="MainSetting" position="0,0" size="1920,1080" title="..::HasBahCa::.." backgroundColor="transparent" flags="wfNoBorder">
 	<ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/main2.png" alphatest="blend" zPosition="1" />
 	<ePixmap position="393,832" size="600,80" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/tvs.png" alphatest="blend" scale="1" zPosition="5" />

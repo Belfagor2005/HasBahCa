@@ -123,8 +123,9 @@ title_plug = 'HasBahCa '
 desc_plugin = ('..:: HasBahCa by Lululla %s ::.. ' % currversion)
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
 pluglogo = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/logo.png".format('HasBahCa'))
-png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/setting.png".format('HasBahCa'))
+png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 path_skin = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/skins/hd/".format('HasBahCa'))
+github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
 
 enigma_path = '/etc/enigma2'
 if isFHD():
@@ -294,7 +295,18 @@ class hasList(MenuList):
 
 def hasListEntry(name, idx):
     res = [name]
-    png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/setting.png".format('HasBahCa'))
+    # png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
+    if 'radio' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/radio.png".format('HasBahCa'))
+    elif 'radyo' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/radio.png".format('HasBahCa'))        
+    elif 'webcam' in name.lower():    
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/webcam.png".format('HasBahCa'))  
+    elif 'music' in name.lower():    
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))         
+    else:
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))  
+        
     if isFHD():
         res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 12), size=(34, 25), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(60, 0), size=(1900, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
@@ -305,7 +317,18 @@ def hasListEntry(name, idx):
 
 def hasbaSetListEntry(name):
     res = [name]
-    png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/setting.png".format('HasBahCa'))
+
+    if 'radio' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/radio.png".format('HasBahCa'))
+    elif 'radyo' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/radio.png".format('HasBahCa'))        
+    elif 'webcam' in name.lower():    
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/webcam.png".format('HasBahCa'))  
+    elif 'music' in name.lower():    
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))         
+    else:
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))        
+    
     if isFHD():
         res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 12), size=(34, 25), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(60, 0), size=(1200, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
@@ -381,9 +404,10 @@ class MainHasBahCa(Screen):
 
     def keyNumberGlobalCB(self, idx):
         sel = self.menu_list[idx]
-        host = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
+        host = github
+        main = 'https://github.com/HasBahCa/IPTV-LIST'
         if sel == ('A-CATEGORY'):
-                    url = 'https://github.com/HasBahCa/IPTV-LIST'
+                    url = main
                     self.session.open(HasBahCaC, sel, url)
         elif sel == ('A-IPTV'):
                     url = host + 'hasbahca_iptv.m3u'
@@ -855,7 +879,7 @@ class HasBahCaC(Screen):
                 # print("HasBahCa t name =", name)
                 # print("HasBahCa t url =", url)
                 # print("HasBahCa t date =", date)
-                url1 = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/' + url + '.m3u'
+                url1 = github + url + '.m3u'
                 date = date.replace(',', '')
                 name1 = name.replace('HasBahCa', '°')
                 name1 = name1.replace('-', ' ').replace('_', ' ')
@@ -1360,13 +1384,13 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
 
     def getAspectString(self, aspectnum):
         return {
-            0: _('4:3 Letterbox'),
-            1: _('4:3 PanScan'),
-            2: _('16:9'),
-            3: _('16:9 always'),
-            4: _('16:10 Letterbox'),
-            5: _('16:10 PanScan'),
-            6: _('16:9 Letterbox')
+            0: '4:3 Letterbox',
+            1: '4:3 PanScan',
+            2: '16:9',
+            3: '16:9 always',
+            4: '16:10 Letterbox',
+            5: '16:10 PanScan',
+            6: '16:9 Letterbox'
         }[aspectnum]
 
     def setAspect(self, aspect):
