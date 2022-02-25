@@ -294,6 +294,7 @@ def b64decoder(s):
         print('outp1 ', outp)
         if PY3:   
             outp = outp.decode('utf-8')
+
             print('outp2 ', outp)
         return outp
         
@@ -310,6 +311,7 @@ def b64decoder(s):
         print('outp1 ', outp)
         if PY3:   
             outp = outp.decode('utf-8')
+            
             print('outp2 ', outp)
         return outp
 

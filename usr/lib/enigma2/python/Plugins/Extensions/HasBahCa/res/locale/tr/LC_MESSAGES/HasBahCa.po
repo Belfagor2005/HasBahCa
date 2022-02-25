@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HasBahCa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-25 19:48+0100\n"
+"POT-Creation-Date: 2022-02-23 19:20+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ))^^(( <>\n"
 "Language-Team: *\n"
-"Language: de\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,61 +16,61 @@ msgstr ""
 "X-Poedit-Basepath: ../../../..\n"
 "X-Poedit-SearchPath-0: plugin.py\n"
 
-#: plugin.py:360 plugin.py:823 plugin.py:926
+#: plugin.py:353 plugin.py:825 plugin.py:924
 msgid "Loading data... Please wait"
 msgstr "Daten werden geladen... Bitte warten"
 
-#: plugin.py:361
+#: plugin.py:354
 msgid "Exit"
-msgstr "Exit"
+msgstr "ÇIKIŞ"
 
-#: plugin.py:362 plugin.py:825 plugin.py:928
+#: plugin.py:355 plugin.py:827 plugin.py:926
 msgid "Select"
-msgstr "Wählen"
+msgstr "Seç"
 
-#: plugin.py:402 plugin.py:896 plugin.py:987
+#: plugin.py:392 plugin.py:894 plugin.py:985
 msgid "Please select ..."
-msgstr "Bitte auswählen ..."
+msgstr "Lütfen Seçiniz ..."
 
-#: plugin.py:824 plugin.py:927
+#: plugin.py:826 plugin.py:925
 msgid "Back"
-msgstr "Zurück"
+msgstr "Geri"
 
-#: plugin.py:1003
+#: plugin.py:1001
 #, python-format
 msgid ""
 "Do you want to Convert %s to Favorite Bouquet ?\n"
 "\n"
 "Attention!! Wait while converting !!!"
 msgstr ""
-"Möchten Sie %s in einen Favoriten Bouquet umwandeln?\n"
+"%s'i Favori Bukete Dönüştürmek istiyor musunuz?\n"
 "\n"
-"Achtung!! Warten Sie beim Konvertieren !!!"
+"Dikkat!! Dönüştürürken bekleyin !!! "
 
-#: plugin.py:1147
+#: plugin.py:1145
 msgid "Shuffle Favorite List in Progress"
-msgstr "Einrichtung der Favoritenliste läuft"
+msgstr "Favori Listesi kurulumu Devam Ediyor "
 
-#: plugin.py:1147
+#: plugin.py:1145
 msgid "Wait please ..."
-msgstr "Bitte Warten ..."
+msgstr "Lütfen Bekleyin ..."
 
-#: plugin.py:1150
+#: plugin.py:1148
 msgid "Download Error"
-msgstr "Download Fehler"
+msgstr "İndirme hatası"
 
-#: plugin.py:1159 plugin.py:1175
+#: plugin.py:1157 plugin.py:1173
 msgid "Download Failed!!!"
-msgstr "Herunterladen fehlgeschlagen!!!"
+msgstr "Yükleme başarısız!!!"
 
-#: plugin.py:1180
+#: plugin.py:1178
 msgid "Remove all HasBahCa Favorite Bouquet ?"
-msgstr "Alle HasBahCa-Favoriten Bouquets entfernen?"
+msgstr "Tüm HasBahCa Favori Buketlerini kaldırmak istiyormusun? "
 
-#: plugin.py:1210
+#: plugin.py:1208
 msgid "HasBahCa Favorites List have been removed"
-msgstr "Die HasBahCa-Favoritenliste wurde entfernt"
+msgstr "HasBahCa Favoriler Listesi kaldırıldı "
 
-#: plugin.py:1573
+#: plugin.py:1571
 msgid "HasBahCa  IPTV"
 msgstr ""

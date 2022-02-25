@@ -1,10 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+
 '''
 ****************************************
 *        coded by Lululla              *
 *             skin by MMark            *
-*             23/02/2022               *
+*             24/02/2022               *
 *   Thank's                            *
 *      HasBahCa, Levi45, KiddaC, Pcd   *
 ****************************************
@@ -118,18 +119,21 @@ def ssl_urlopen(url):
         return urlopen(url)
 
 global path_skin
-currversion = '1.1'
+currversion = '1.2'
 title_plug = 'HasBahCa '
 desc_plugin = ('..:: HasBahCa by Lululla %s ::.. ' % currversion)
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
 pluglogo = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/logo.png".format('HasBahCa'))
 png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
-path_skin = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/skins/hd/".format('HasBahCa'))
-github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
+# path_skin = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/skins/hd/".format('HasBahCa'))
+github2 = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
+github = 'https://raw.githubusercontent.com/HasBahCa/m3u_Links/main/'
 
 enigma_path = '/etc/enigma2'
 if isFHD():
     path_skin = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/skins/fhd/".format('HasBahCa'))
+else:
+    path_skin = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/skins/hd/".format('HasBahCa'))    
 if DreamOS():
     path_skin = path_skin + 'dreamOs/'
 print('HasBahCa path_skin: ', path_skin)
@@ -137,135 +141,128 @@ print('HasBahCa path_skin: ', path_skin)
 Panel_Dlist = [
     ('A-CATEGORY'),
     ('A-IPTV'),
+    ('A-MOVIE'),   
+    ('A-MUSIC'),    
     ('A-RADIO'),
-    ('A-VOD FILM'),
+    ('A-RELAX'), 
+    ('A-SPORT'),    
     ('A-WEBCAM'),
-    ('IPTV AFGHANISTAN'),
-    ('IPTV AFRICA'),
-    ('IPTV ALBANIA BOSNIA KOSOVO'),
-    ('IPTV ARABIC 1'),
-    ('IPTV ARABIC 2'),
-    ('IPTV ARGENTINA'),
-    ('IPTV ASIA MIX MNC'),
-    ('IPTV AVUSTURALYA NZELAND'),
-    ('IPTV BALTIC EST LIT LET'),
-    ('IPTV BANGLADESH'),
-    ('IPTV BRASIL PLUTO'),
-    ('IPTV BRASIL'),
-    ('IPTV BULGARSAT'),
-    ('IPTV CAMBODIA'),
-    ('IPTV CANADA ABD'),
-    ('IPTV CANADA'),
-    ('IPTV CHILE'),
-    ('IPTV CHINA1'),
-    ('IPTV CHINA2'),
-    ('IPTV COLOMBIA'),
-    ('IPTV COSTARICA'),
-    ('IPTV CROATIA'),
-    ('IPTV CZECH HU POLSKI'),
-    ('IPTV DEUTSCH GERMAN LOKAL'),
-    ('IPTV DEUTSCH GERMAN PLUTO'),
-    ('IPTV DEUTSCH GERMAN TVPLUS'),
-    ('IPTV DEUTSCH GERMAN'),
-    ('IPTV DOMINICAN'),
-    ('IPTV FRANCE PLUTO'),
-    ('IPTV FRANCE TVPLUS'),
-    ('IPTV FRANCE'),
-    ('IPTV GREAT BRITAIN PLUTO'),
-    ('IPTV GREAT BRITAIN TVPLUS'),
-    ('IPTV GREATBRITAIN ENGLAND'),
-    ('IPTV GREEK RADIO'),
-    ('IPTV GREEK'),
-    ('IPTV HAITI'),
-    ('IPTV HOLLAND BELGIEN'),
-    ('IPTV HOLLAND PLUTO'),
-    ('IPTV HONDURAS'),
-    ('IPTV HUNGARY MAGYAR'),
-    ('IPTV ICELAND'),
-    ('IPTV INDIA HINDI TAMIL'),
-    ('IPTV INDONESIA'),
-    ('IPTV ISRAEL'),
-    ('IPTV ITALIA'),
-    ('IPTV ITALY PLUTO'),
-    ('IPTV ITALY TVPLUS'),
-    ('IPTV JAPAN'),
-    ('IPTV KHUSUS MALAZIA'),
-    ('IPTV KOREA'),
-    ('IPTV LAOS'),
-    ('IPTV LATINO MIX 1'),
-    ('IPTV LATINO MIX 2'),
-    ('IPTV LATINO PLUTOTV'),
-    ('IPTV LUXEMBOURG'),
-    ('IPTV MAKEDONIA'),
-    ('IPTV MALTA'),
-    ('IPTV MEXICO PLUTO'),
-    ('IPTV MEXICO'),
-    ('IPTV NORWAY'),
-    ('IPTV OSTERREICH AVUSTURIA'),
-    ('IPTV OSTERREICH AVUSTURYA PLUTOTV TVPLUS'),
-    ('IPTV OSTERREICH AVUSTURYA TVPLUS'),
-    ('IPTV PAKISTAN'),
-    ('IPTV PANAMA'),
-    ('IPTV PERU'),
-    ('IPTV POLSKI'),
-    ('IPTV PORTUGAL'),
-    ('IPTV RELAX'),
-    ('IPTV ROMANIA MOLDOVA'),
-    ('IPTV RUS ARMENIA'),
-    ('IPTV RUS EX CCCP PROSTOTV'),
-    ('IPTV RUS EX CCCP REGIONAL'),
-    ('IPTV RUS EX CCCP1'),
-    ('IPTV RUS EX CCCP2'),
-    ('IPTV RUS GEORGIA'),
-    ('IPTV RUS KAZAKHSTAN'),
-    ('IPTV RUS LATVIA'),
-    ('IPTV RUS UKRAINA1'),
-    ('IPTV RUS UKRAINA2'),
-    ('IPTV RUS VOD MOVIE'),
-    ('IPTV SERBIA'),
-    ('IPTV SERBIA SIRBISTAN'),
-    ('IPTV SKANDINAV FINLAND'),
-    ('IPTV SLOVAKIA SLOVEINA'),
-    ('IPTV SPAIN PLUTO'),
-    ('IPTV SPAIN'),
-    ('IPTV SWITZERLAND SCHWEIZ PLUTO'),
-    ('IPTV SWITZERLAND SCHWEIZ'),
-    ('IPTV SWITZERLAND TVPLUS'),
-    ('IPTV TAIWAN'),
-    ('IPTV THAILAND'),
-    ('IPTV TURKEY TURKIYE AVRUPA'),
-    ('IPTV TURKEY TURKIYE BELGESEL'),
-    ('IPTV TURKEY TURKIYE BLUTVGENEL'),
-    ('IPTV TURKEY TURKIYE COCUK'),
-    ('IPTV TURKEY TURKIYE DIGER'),
-    ('IPTV TURKEY TURKIYE DINI'),
-    ('IPTV TURKEY TURKIYE FILMER'),
-    ('IPTV TURKEY TURKIYE GENEL'),
-    ('IPTV TURKEY TURKIYE HABER'),
-    ('IPTV TURKEY TURKIYE MIX'),
-    ('IPTV TURKEY TURKIYE MUZIK'),
-    ('IPTV TURKEY TURKIYE RADYO'),
-    ('IPTV TURKEY TURKIYE SPOR'),
-    ('IPTV TURKEY TURKIYE YEREL'),
-    ('IPTV TURKI STAATEN'),
-    ('IPTV URUGUAY'),
-    ('IPTV USA 1'),
-    ('IPTV USA 2'),
-    ('IPTV USA CHINA ENGLISH'),
-    ('IPTV USA LOCAL'),
-    ('IPTV USA MYTVTO VELLYTV'),
-    ('IPTV USA PLEX'),
-    ('IPTV USA PLUTO'),
-    ('IPTV USA TVPLUS'),
-    ('IPTV USA XUMO'),
-    ('IPTV VIETNAM'),
-    ('IPTV WORLD MIXTV'),
-    ('IPTV WORLD MUSIC'),
-    ('IPTV WORLD SPORTS'),
+    ('AFGHANISTAN'),
+    ('AFRICA'),
+    ('ALBANIA BOSNIA KOSOVO'),
+    ('ARABIC 1'),
+    ('ARABIC 2'),
+    ('ARGENTINA'),
+    ('ARGENTINA PLUTO'),    
+    ('ASIA MIX'),
+    ('AUSTRIA'),
+    ('AUSTRIA TVPLUS'),
+    ('AVUSTURALIA NZELAND'),
+    ('BALTIC EST LIT LET'),
+    ('BANGLADESH'),
+    ('BRASIL PLUTO'),
+    ('BRASIL'),
+    ('BULGARIA'),
+    ('CAMBODIA'),
+    ('CANADA'),
+    ('CANADA TVPLUS'),
+    ('CHILE'),    
+    ('CHINA1'),
+    ('CHINA2'),
+    ('COLOMBIA'),    
+    ('COSTARICA'),
+    ('CROATIA'),
+    ('CZECH'),    
+    ('DOMINICANRP'),
+    ('ENGLAND'),
+    ('ENGLAND PLUTO'),
+    ('ENGLAND TVPLUS'),
+    ('FRANCE'),
+    ('FRANCE PLUTO'),
+    ('FRANCE TVPLUS'),
+    ('GERMAN'),
+    ('GERMAN LOKAL'),
+    ('GERMAN PLUTO'),
+    ('GERMAN TVPLUS'),
+    ('GREEK'),
+    ('HAITI'),
+    ('HOLLAND BELGIEN'),
+    ('HOLLAND PLUTO'),
+    ('HONDURAS'),
+    ('INDIA TAMIL'),
+    ('INDONESIA'),
+    ('ISRAEL'),
+    ('ITALIA'),
+    ('ITALY PLUTO'),
+    ('ITALY TVPLUS'),
+    ('JAPAN'),
+    ('KHUSUS MALAZIA'),
+    ('KOREA'),
+    ('KURDI'),
+    ('LAOS'),
+    ('LATINO MIX'),
+    ('LATINO PLUTOTV'),
+    ('LUXEMBOURG'),
+    ('MACEDONIA'),    
+    ('MAGYAR'),
+    ('MALTA'),
+    ('MEXICO'),
+    ('MEXICO PLUTO'),
+    ('PAKISTAN'),
+    ('PANAMA'),
+    ('PERU'),
+    ('POLAND'),
+    ('PORTUGAL'),
+    ('ROMANIA MOLDOVA'),
+    ('RUS ARMENIA'),
+    ('RUS EX CCCP1'),
+    ('RUS EX CCCP2'),
+    ('RUS EX CCCP LOCAL'),
+    ('RUS GEORGIA'),
+    ('RUS KAZAKHSTAN'),
+    ('SERBIA'),
+    ('SKANDINAV FINLAND'),
+    ('SLOVAKIA SLOVEINA'),
+    ('SPAIN'),
+    ('SPAIN PLUTO'),
+    ('SPAIN TVPLUS'),
+    ('SWITZERLAND'),
+    ('SWITZERLAND PLUTO'),
+    ('SWITZERLAND TVPLUS'),
+    ('TAIWAN'),
+    ('TURKEY 1TAMLISTE'),
+    ('TURKEY AVRUPA'),    
+    ('TURKEY BLUTV'),
+    ('TURKEY COCUK'),
+    ('TURKEY DINI'),
+    ('TURKEY HABER'),
+    ('TURKEY KARISIK'),
+    ('TURKEY MUZIK'),
+    ('TURKEY OZEL'),
+    ('TURKEY RADYOLAR'),    
+    ('TURKEY ULUSAL'),    
+    ('TURKEY YEREL'),    
+    ('TURKI AZERBAYCAN'),    
+    ('TURKI KKTC'), 
+    ('TURKI TURKMENISTAN'), 
+    ('TURKI ULKELER'),     
+    ('URUGUAY'),   
+    ('USA'),
+    ('USA CHINA ENGLISH'),
+    ('USA LOCAL'),
+    ('USA MYTVTO VELLYTV'),
+    ('USA PLEX'),
+    ('USA PLUTO'),
+    ('USA TVPLUS'),
+    ('USA XUMO'),
+    ('VIETNAM'),
+    ('WORLD OTHERS'),
+    ('WORLD PLUTOTV'),
+    ('WORLD TVPLUS'),
     ('WEBCAM CHINA CIN'),
     ('WEBCAM DE AU CH'),
     ('WEBCAM MIX'),
-    ('WEBCAM POLSKI'),
+    ('WEBCAM POLAND'),
     ('WEBCAM PORTUGAL'),
     ('WEBCAM RUS EX CCCP'),
     ('WEBCAM TURKEY'),
@@ -295,7 +292,6 @@ class hasList(MenuList):
 
 def hasListEntry(name, idx):
     res = [name]
-    # png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
     if 'radio' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/radio.png".format('HasBahCa'))
     elif 'radyo' in name.lower():
@@ -308,7 +304,6 @@ def hasListEntry(name, idx):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))         
     else:
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))  
-        
         
     if isFHD():
         res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 12), size=(34, 25), png=loadPNG(png)))
@@ -353,12 +348,12 @@ def showlisthasba(data, list):
 
 class MainHasBahCa(Screen):
     def __init__(self, session):
+        Screen.__init__(self, session)    
         self.session = session
         skin = path_skin + 'settings.xml'
         with open(skin, 'r') as f:
             self.skin = f.read()
         self.setup_title = ('Main HasBahCa')
-        Screen.__init__(self, session)
         self.setTitle(title_plug)
         self['text'] = hasList([])
         self['title'] = Label(title_plug)
@@ -370,6 +365,9 @@ class MainHasBahCa(Screen):
         self['key_green'].hide()
         self['key_yellow'].hide()
         self['key_blue'].hide()
+        self['progress'] = ProgressBar()
+        self['progresstext'] = StaticText()
+        self["progress"].hide()        
         self['live'] = Label('')
         self['live'].setText('')
         self['actions'] = ActionMap(['SetupActions', 'ColorActions', ], {
@@ -410,424 +408,412 @@ class MainHasBahCa(Screen):
     def keyNumberGlobalCB(self, idx):
         sel = self.menu_list[idx]
         host = github
+        host2 = github2
         main = 'http://github.com/HasBahCa/IPTV-LIST/'
         if sel == ('A-CATEGORY'):
-                    url = str(main)
+                    url = main
                     self.session.open(HasBahCaC, sel, url)
-        elif sel == ('A-IPTV'):
-                    url = host + 'hasbahca_iptv.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('A-VOD FILM'):
-                    url = host + 'HasBahCa_VOD_MOVIES_FILM.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('A-RADIO'):
-                    url = host + 'HasBahCa_webWORLD_RADIOS.m3u '
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('A-WEBCAM'):
-                    url = host + 'HasBahCa_WEBCAM.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV AFRICA'):
-                    url = host + 'HasBahCa_AFRICA_AFRIKA_TV.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV ISRAEL'):
-                    url = host + 'HasBahCa_AFRICA_ISRAEL_israil_TV.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV CANADA'):
-                    url = host + 'HasBahCa_Amerika_Canada.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV USA LOCAL'):
-                    url = host + 'HasBahCa_USA_ABD_LOCALS.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV USA PLEX'):
-                    url = host + 'HasBahCa_USA_ABD_PLEX.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV USA PLUTO'):
-                    url = host + 'HasBahCa_USA_ABD_PLUTO.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV USA MYTVTO VELLYTV'):
-                    url = host + 'HasBahCa_USA_MyTvTo_VellyTV.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV USA TVPLUS'):
-                    url = host + 'HasBahCa_USA_TVPLUS.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV USA XUMO'):
-                    url = host + 'HasBahCa_USA_XUMO.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV USA 1'):
-                    url = host + 'HasBahCa_USA_United_States_Amerika1.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV USA 2'):
-                    url = host + 'HasBahCa_USA_United_States_Amerika2.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV ARGENTINA'):
-                    url = host + 'HasBahCa_Amerika_Argentina_Arjantin.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV BRASIL'):
-                    url = host + 'HasBahCa_Amerika_Brasil_BREZILYA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV BRASIL PLUTO'):
-                    url = host + 'HasBahCa_Amerika_Brazil_PLUTO.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV CANADA ABD'):
-                    url = host + 'HasBahCa_Amerika_Canada.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV CHILE'):
-                    url = host + 'HasBahCa_Amerika_CHILE.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV COLOMBIA'):
-                    url = host + 'HasBahCa_Amerika_COLOMBIA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV COSTARICA'):
-                    url = host + 'HasBahCa_Amerika_COSTARICA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV DOMINICAN'):
-                    url = host + 'HasBahCa_Amerika_DOMINICAN_REPUBLIC.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV HAITI'):
-                    url = host + 'HasBahCa_Amerika_HAITI.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV HONDURAS'):
-                    url = host + 'HasBahCa_Amerika_HONDURAS.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV LATINO MIX 1'):
-                    url = host + 'HasBahCa_Amerika_Latino_MIX1.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV LATINO MIX 2'):
-                    url = host + 'HasBahCa_Amerika_Latino_MIX2.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV LATINO PLUTOTV'):
-                    url = host + 'HasBahCa_Amerika_Latino_PLUTOTV.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV MEXICO'):
-                    url = host + 'HasBahCa_Amerika_MEXICO_Meksika.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV MEXICO PLUTO'):
-                    url = host + 'HasBahCa_Amerika_MEXICO_PLUTO.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV PANAMA'):
-                    url = host + 'HasBahCa_Amerika_PANAMA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV PERU'):
-                    url = host + 'HasBahCa_Amerika_PERU.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV URUGUAY'):
-                    url = host + 'HasBahCa_Amerika_URUGUAY.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV ARABIC 1'):
-                    url = host + 'HasBahCa_Arabic_ARAPCA1.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV ARABIC 2'):
-                    url = host + 'HasBahCa_Arabic_ARAPCA2.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV AFGHANISTAN'):
-                    url = host + 'HasBahCa_ASIA_Afghanistan.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV BANGLADESH'):
-                    url = host + 'HasBahCa_ASIA_Bangladesh.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV CAMBODIA'):
-                    url = host + 'HasBahCa_ASIA_CAMBODIA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV CHINA1'):
-                    url = host + 'HasBahCa_ASIA_China1.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV CHINA2'):
-                    url = host + 'HasBahCa_ASIA_China2.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV INDIA HINDI TAMIL'):
-                    url = host + 'HasBahCa_ASIA_INDIA_HINDI_TAMIL.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV INDONESIA'):
-                    url = host + 'HasBahCa_ASIA_Indonesia.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV JAPAN'):
-                    url = host + 'HasBahCa_ASIA_Japan_JAPONYA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV KHUSUS MALAZIA'):
-                    url = host + 'HasBahCa_ASIA_Khusus_MALAZIA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV KOREA'):
-                    url = host + 'HasBahCa_ASIA_Korea_KORE.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV LAOS'):
-                    url = host + 'HasBahCa_ASIA_Laos.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV ASIA MIX MNC'):
-                    url = host + 'HasBahCa_ASIA_MIX_MNC.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV PAKISTAN'):
-                    url = host + 'HasBahCa_ASIA_Pakistan.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TAIWAN'):
-                    url = host + 'HasBahCa_ASIA_Taiwan.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV THAILAND'):
-                    url = host + 'HasBahCa_ASIA_Thai_TAYLAND.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV VIETNAM'):
-                    url = host + 'HasBahCa_ASIA_Vietnam.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV AVUSTURALYA NZELAND'):
-                    url = host + 'HasBahCa_Australia_AVUSTURALYA_NZeland.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV DEUTSCH GERMAN PLUTO'):
-                    url = host + 'HasBahCa_DE_Deutsch_German_PLUTO.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV DEUTSCH GERMAN'):
-                    url = host + 'HasBahCa_DE_Deutsch_German_ALMANCA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV DEUTSCH GERMAN LOKAL'):
-                    url = host + 'HasBahCa_DE_Deutsch_German_LOKAL.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV DEUTSCH GERMAN TVPLUS'):
-                    url = host + 'HasBahCa_DE_Deutsch_German_TVPLUS.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV OSTERREICH AVUSTURIA'):
-                    url = host + 'HasBahCa_DE_OSTERREICH_AVUSTURYA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV OSTERREICH AVUSTURYA PLUTOTV TVPLUS'):
-                    url = host + 'HasBahCa_DE_OSTERREICH_AVUSTURYA_PLUTOTV_TVPLUS.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV OSTERREICH AVUSTURYA TVPLUS'):
-                    url = host + 'HasBahCa_DE_OSTERREICH_AVUSTURYA_TVPLUS.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV SWITZERLAND SCHWEIZ'):
-                    url = host + 'HasBahCa_DE_SWITZERLAND_SCHWEIZ.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV SWITZERLAND SCHWEIZ PLUTO'):
-                    url = host + 'HasBahCa_DE_SWITZERLAND_SCHWEIZ_PLUTO.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV SWITZERLAND TVPLUS'):
-                    url = host + 'HasBahCa_DE_SWITZERLAND_SCHWEIZ_TVPLUS.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV GREAT BRITAIN PLUTO'):
-                    url = host + 'HasBahCa_ENG_GreatBritain_PLUTO.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV GREAT BRITAIN TVPLUS'):
-                    url = host + 'HasBahCa_ENG_GreatBritain_TVPLUS.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV GREATBRITAIN ENGLAND'):
-                    url = host + 'HasBahCa_ENG_GreatBritain_England_Ingiltere.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV ALBANIA BOSNIA KOSOVO'):
-                    url = host + 'HasBahCa_EU_Albania_Bosnia_Kosovo.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV BALTIC EST LIT LET'):
-                    url = host + 'HasBahCa_EU_BALTIC_EST_LIT_LET.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV BULGARSAT'):
-                    url = host + 'HasBahCa_EU_BULGARSAT.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV CZECH HU POLSKI'):
-                    url = host + 'HasBahCa_EU_Czech_HU_Polski.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV CROATIA'):
-                    url = host + 'HasBahCa_EU_EXYUGOSLAVIA_CROATIA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV FRANCE'):
-                    url = host + 'HasBahCa_EU_France_FRANSA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV FRANCE PLUTO'):
-                    url = host + 'HasBahCa_EU_France_PLUTO.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV FRANCE TVPLUS'):
-                    url = host + 'HasBahCa_EU_France_TVPLUS.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV GREEK'):
-                    url = host + 'HasBahCa_EU_Greek_YUNANCA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV GREEK RADIO'):
-                    url = host + 'HasBahCa_EU_Greek_YUNANCA_RADIO.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV HOLLAND BELGIEN'):
-                    url = host + 'HasBahCa_EU_Holland_Belgien.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV HOLLAND PLUTO'):
-                    url = host + 'HasBahCa_EU_Holland_PLUTO.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV HUNGARY MAGYAR'):
-                    url = host + 'HasBahCa_EU_Hungary_Macar.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV ICELAND'):
-                    url = host + 'HasBahCa_EU_Iceland.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV ITALIA'):
-                    url = host + 'HasBahCa_EU_Italia_ITALYA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV ITALY PLUTO'):
-                    url = host + 'HasBahCa_EU_Italy_PLUTO.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV ITALY TVPLUS'):
-                    url = host + 'HasBahCa_EU_Italy_TVPLUS.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV LUXEMBOURG'):
-                    url = host + 'HasBahCa_EU_Luxembourg.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV MAKEDONIA'):
-                    url = host + 'HasBahCa_EU_MAKEDONIA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV MALTA'):
-                    url = host + 'HasBahCa_EU_Malta.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV NORWAY'):
-                    url = host + 'HasBahCa_EU_Norway_Norvec.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV POLSKI'):
-                    url = host + 'HasBahCa_EU_Polski_POLONYA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV PORTUGAL'):
-                    url = host + 'HasBahCa_EU_Portugal_PORTEKIZ.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV ROMANIA MOLDOVA'):
-                    url = host + 'HasBahCa_EU_ROMANYA_MOLDOVA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV SERBIA'):
-                    url = host + 'HasBahCa_EU_Serbia.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV SERBIA SIRBISTAN'):
-                    url = host + 'HasBahCa_EU_Serbia_SIRBISTAN.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV SKANDINAV FINLAND'):
-                    url = host + 'HasBahCa_EU_SKANDINAV_FINLAND.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV SLOVAKIA SLOVEINA'):
-                    url = host + 'HasBahCa_EU_Slovakia-Sloveina.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV SPAIN'):
-                    url = host + 'HasBahCa_EU_Spain_ISPANYOL.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV SPAIN PLUTO'):
-                    url = host + 'HasBahCa_EU_Spain_PLUTO.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV RELAX'):
-                    url = host + 'HasBahCa_RELAX.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV RUS ARMENIA'):
-                    url = host + 'HasBahCa_RUS_Armenia_ERMENISTAN.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV RUS EX CCCP1'):
-                    url = host + 'HasBahCa_RUS_EX_CCCP_Eski_SSCB1.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV RUS EX CCCP2'):
-                    url = host + 'HasBahCa_RUS_EX_CCCP_Eski_SSCB2.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV RUS EX CCCP REGIONAL'):
-                    url = host + 'HasBahCa_RUS_EX_CCCP_REGIONAL.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV RUS EX CCCP PROSTOTV'):
-                    url = host + 'HasBahCa_RUS_EX_CCCP_prostotv.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV RUS GEORGIA'):
-                    url = host + 'HasBahCa_RUS_GEORGIA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV RUS KAZAKHSTAN'):
-                    url = host + 'HasBahCa_RUS_Kazakhstan.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV RUS LATVIA'):
-                    url = host + 'HasBahCa_RUS_Latvia_LITVANYA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV RUS VOD MOVIE'):
-                    url = host + 'HasBahCa_RUS_VOD_MOVIES.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV RUS UKRAINA1'):
-                    url = host + 'HasBahCa_Rus_UKRAINA1.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV RUS UKRAINA2'):
-                    url = host + 'HasBahCa_Rus_UKRAINA2.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKEY TURKIYE FILMER'):
-                    url = host + 'HasBahCa_TÜRKÇE_Filmler.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKEY TURKIYE AVRUPA'):
-                    url = host + 'HasBahCa_Turkey_TURKiYE_AVRUPA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKEY TURKIYE BELGESEL'):
-                    url = host + 'HasBahCa_Turkey_TURKiYE_BELGESEL.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKEY TURKIYE BLUTVGENEL'):
-                    url = host + 'HasBahCa_Turkey_TURKiYE_BLUTVGENEL.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKEY TURKIYE COCUK'):
-                    url = host + 'HasBahCa_Turkey_TURKiYE_COCUK.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKEY TURKIYE DIGER'):
-                    url = host + 'HasBahCa_Turkey_TURKiYE_DIGER.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKEY TURKIYE DINI'):
-                    url = host + 'HasBahCa_Turkey_TURKiYE_DiNi.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKEY TURKIYE GENEL'):
-                    url = host + 'HasBahCa_Turkey_TURKiYE_GENEL.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKEY TURKIYE HABER'):
-                    url = host + 'HasBahCa_Turkey_TURKiYE_HABER.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKEY TURKIYE MIX'):
-                    url = host + 'HasBahCa_Turkey_TURKiYE_MIX_KARISIK.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKEY TURKIYE MUZIK'):
-                    url = host + 'HasBahCa_Turkey_TURKiYE_MUZIK.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKEY TURKIYE RADYO'):
-                    url = host + 'HasBahCa_Turkey_TURKiYE_RADYO.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKEY TURKIYE SPOR'):
-                    url = host + 'HasBahCa_Turkey_TURKiYE_SPOR.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKEY TURKIYE YEREL'):
-                    url = host + 'HasBahCa_Turkey_TURKiYE_YEREL.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV TURKI STAATEN'):
-                    url = host + 'HasBahCa_TURKI_ULKELER.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV USA CHINA ENGLISH'):
-                    url = host + 'HasBahCa_USA_CHINA_ENGLISH.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV WORLD MIXTV'):
-                    url = host + 'HasBahCa_WORLD_MIXTV.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV WORLD MUSIC'):
-                    url = host + 'HasBahCa_WORLD_Music_MUZIKTV.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('IPTV WORLD SPORTS'):
-                    url = host + 'HasBahCa_WORLD_Sports_SPOR.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('WEBCAM CHINA CIN'):
-                    url = host + 'HasBahCa_WEBCAM_China_CiN.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('WEBCAM DE AU CH'):
-                    url = host + 'HasBahCa_WEBCAM_DE_AU_CH.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('WEBCAM MIX'):
-                    url = host + 'HasBahCa_WEBCAM_MIX.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('WEBCAM POLSKI'):
-                    url = host + 'HasBahCa_webcam_POLSKI.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('WEBCAM PORTUGAL'):
-                    url = host + 'HasBahCa_WEBCAM_Portugal.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('WEBCAM RUS EX CCCP'):
-                    url = host + 'HasBahCa_WEBCAM_RUS_EX_CCCP.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('WEBCAM TURKEY'):
-                    url = host + 'HasBahCa_Turkey_WEBCAM.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-        elif sel == ('WEBCAM USA'):
-                    url = host + 'HasBahCa_WEBCAM_USA.m3u'
-                    self.session.open(HasBahCa1, sel, url)
-
         else:
-            return
+        
+            if sel == ('A-IPTV'):
+                        url = host + 'hasbahca_iptv.m3u'
+                        # self.session.open(HasBahCa1, sel, url)  
+            elif sel == ('A-MUSIC'):
+                        url = host + '1MUSIC.m3u'
+                        # self.session.open(HasBahCa1, sel, url)   
+            elif sel == ('A-MOVIE'):
+                        url = host + 'HasBahCa_MOVIES.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                      
+            elif sel == ('A-RADIO'):
+                        url = host + 'HasBahCa_RADIOS.m3u'
+                        # self.session.open(HasBahCa1, sel, url)      
+            elif sel == ('A-RELAX'):
+                        url = host + 'RELAX.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('A-SPORT'):
+                        url = host + '1SPORT.m3u'
+                        # self.session.open(HasBahCa1, sel, url)      
+            elif sel == ('A-WEBCAM'):
+                        url = host + 'HasBahCa_WEBCAMS.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('AFGHANISTAN'):
+                        url = host + 'AFGHANISTAN.m3u'
+            elif sel == ('AFRICA'):
+                        url = host + 'AFRICA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('ALBANIA BOSNIA KOSOVO'):
+                        url = host + 'ALBANIA_BOSNIA_KOSOVO.m3u'    
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('ARABIC 1'):
+                        url = host + 'ARABIC1.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('ARABIC 2'):
+                        url = host + 'ARABIC2.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('ARGENTINA'):
+                        url = host + 'ARGENTINA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('ARGENTINA PLUTO'):
+                        url = host + 'ARGENTINA_PLUTO.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('ASIA MIX'):
+                        url = host + 'ASIA_MIX.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('AUSTRIA'):
+                        url = host + 'AUSTRIA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('AUSTRIA TVPLUS'):
+                        url = host + 'AUSTRIA_TVPLUS.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('AVUSTURALIA NZELAND'):
+                        url = host + 'AVUSTURALIA_NZELAND.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('BALTIC_EST_LIT_LET'):
+                        url = host + 'BALTIC_EST_LIT_LET.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('BANGLADESH'):
+                        url = host + 'BANGLADESH.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('BRASIL'):
+                        url = host + 'BRASIL.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('BRASIL PLUTO'):
+                        url = host + 'BRASIL_PLUTO.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('BULGARIA'):
+                        url = host + 'BULGARIA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)     
+            elif sel == ('CAMBODIA'):
+                        url = host + 'CAMBODIA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('CANADA'):
+                        url = host + 'CANADA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('CANADA TVPLUS'):
+                        url = host + 'CANADA_TVPLUS.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('CHILE'):
+                        url = host + 'CHILE.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('CHINA1'):
+                        url = host + 'CHINA1.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('CHINA2'):
+                        url = host + 'CHINA2.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('COLOMBIA'):
+                        url = host + 'COLOMBIA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('COSTARICA'):
+                        url = host + 'COSTARICA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('CROATIA'):
+                        url = host + 'CROATIA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('CZECH'):
+                        url = host + 'CZECH.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('DOMINICANRP'):
+                        url = host + 'DOMINICANRP.m3u'
+                        # self.session.open(HasBahCa1, sel, url)  
+            elif sel == ('ENGLAND'):
+                        url = host + 'ENGLAND.m3u'
+                        # self.session.open(HasBahCa1, sel, url)  
+            elif sel == ('ENGLAND PLUTO'):
+                        url = host + 'ENGLAND_PLUTO.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('ENGLAND TVPLUS'):
+                        url = host + 'ENGLAND_TVPLUS.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('FRANCE'):
+                        url = host + 'FRANCE.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('FRANCE PLUTO'):
+                        url = host + 'FRANCE_PLUTO.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('FRANCE TVPLUS'):
+                        url = host + 'FRANCE_TVPLUS.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('GERMAN'):
+                        url = host + 'GERMAN.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('GERMAN PLUTO'):
+                        url = host + 'GERMAN_PLUTO.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('GERMAN TVPLUS'):
+                        url = host + 'GERMAN_TVPLUS.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                                     
+            elif sel == ('GERMAN LOKAL'):
+                        url = host + 'GERMAN_LOKAL.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('GREEK'):
+                        url = host + 'GREEK.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('HAITI'):
+                        url = host + 'HAITI.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('HOLLAND BELGIEN'):
+                        url = host + 'HOLLAND_BELGIEN.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('HOLLAND PLUTO'):
+                        url = host + 'HOLLAND_PLUTO.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('HONDURAS'):
+                        url = host + 'HONDURAS.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('INDIA TAMIL'):
+                        url = host + 'INDIA_TAMIL.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('INDONESIA'):
+                        url = host + 'INDONESIA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('ISRAEL'):
+                        url = host + 'ISRAEL.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('ITALIA'):
+                        url = host + 'ITALIA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('ITALY PLUTO'):
+                        url = host + 'ITALIA_PLUTO.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('ITALY TVPLUS'):
+                        url = host + 'ITALIA_TVPLUS.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('JAPAN'):
+                        url = host + 'JAPAN.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('KHUSUS MALAZIA'):
+                        url = host + 'KHUSUS_MALAZIA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('KOREA'):
+                        url = host + 'KOREA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('KURDI'):
+                        url = host + 'KURDI.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                        
+            elif sel == ('LAOS'):
+                        url = host + 'LAOS.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('LATINO MIX'):
+                        url = host + 'LATINO_MIX.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('LATINO PLUTOTV'):
+                        url = host + 'LATINO_PLUTOTV.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('LUXEMBOURG'):
+                        url = host + 'LUXEMBOURG.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('MACEDONIA'):
+                        url = host + 'MACEDONIA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('MAGYAR'):
+                        url = host + 'MAGYAR.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('MALTA'):
+                        url = host + 'MALTA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('MEXICO'):
+                        url = host + 'MEXICO.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('MEXICO PLUTO'):
+                        url = host + 'MEXICO_PLUTO.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('PAKISTAN'):
+                        url = host + 'PAKISTAN.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('PANAMA'):
+                        url = host + 'PANAMA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('PERU'):
+                        url = host + 'PERU.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('POLAND'):
+                        url = host + 'POLAND.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('PORTUGAL'):
+                        url = host + 'PORTUGAL.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('ROMANIA MOLDOVA'):
+                        url = host + 'ROMANIA_MOLDOVA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('RUS ARMENIA'):
+                        url = host + 'RUS_ARMENIA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('RUS EX CCCP1'):
+                        url = host + 'RUS_EXCCCP1.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('RUS EX CCCP2'):
+                        url = host + 'RUS_EXCCCP2.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('RUS EX CCCP LOCAL'):
+                        url = host + 'RUS_EXCCCP_LOCAL.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('RUS GEORGIA'):
+                        url = host + 'RUS_GEORGIA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('RUS KAZAKHSTAN'):
+                        url = host + 'RUS_KAZAKISTAN.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('SERBIA'):
+                        url = host + 'SERBIA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('SKANDINAV FINLAND'):
+                        url = host + 'SKANDINAV_FINLAND.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('SLOVAKIA SLOVEINA'):
+                        url = host + 'SLOVAKIA_SLOVENIA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('SPAIN'):
+                        url = host + 'SPAIN.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('SPAIN PLUTO'):
+                        url = host + 'SPAIN_PLUTO.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('SPAIN TVPLUS'):
+                        url = host + 'SPAIN_TVPLUS.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('SWITZERLAND'):
+                        url = host + 'SWITZERLAND.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('SWITZERLAND PLUTO'):
+                        url = host + 'SWITZERLAND_PLUTO.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('SWITZERLAND TVPLUS'):
+                        url = host + 'SWITZERLAND_TVPLUS.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('TAIWAN'):
+                        url = host + 'TAIWAN.m3u'
+                        # self.session.open(HasBahCa1, sel, url)  
+            elif sel == ('TURKEY 1TAMLISTE'):
+                        url = host + 'TURK_1TAMLISTE.m3u'
+                        # self.session.open(HasBahCa1, sel, url)   
+            elif sel == ('TURKEY AVRUPA'):
+                        url = host + 'TURK_AVRUPA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('TURKEY BLUTV'):
+                        url = host + 'TURK_BLUTV.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('TURKEY COCUK'):
+                        url = host + 'TURK_COCUK.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('TURKEY DINI'):
+                        url = host + 'TURK_DINI.m3u'
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('TURKEY HABER'):
+                        url = host + 'TURK_HABER.m3u'       
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('TURKEY KARISIK'):
+                        url = host + 'TURK_KARISIK.m3u'   
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('TURKEY MUZIK'):
+                        url = host + 'TURK_MUZIK.m3u'   
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('TURKEY OZEL'):
+                        url = host + 'TURK_OZEL.m3u'   
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('TURKEY RADYOLAR'):
+                        url = host + 'TURK_RADYOLAR.m3u' 
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('TURKEY ULUSAL'):
+                        url = host + 'TURK_ULUSAL.m3u' 
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('TURKEY YEREL'):
+                        url = host + 'TURK_YEREL.m3u' 
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('TURKI AZERBAYCAN'):
+                        url = host + 'TURKi_AZERBAYCAN.m3u' 
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('TURKI KKTC'):
+                        url = host + 'TURKi_KKTC.m3u' 
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('TURKI TURKMENISTAN'):
+                        url = host + 'TURKi_TURKMENISTAN.m3u'  
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('TURKI ULKELER'):
+                        url = host + 'TURKi_ULKELER.m3u'    
+                        # self.session.open(HasBahCa1, sel, url)                    
+            elif sel == ('URUGUAY'):
+                        url = host + 'URUGUAY.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('USA'):
+                        url = host + 'USA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('USA CHINA ENGLISH'):
+                        url = host + 'USA_CHINA_ENG.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('USA LOCAL'):
+                        url = host + 'USA_LOCAL.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('USA MYTVTO VELLYTV'):
+                        url = host + 'USA_MyTV_VellyTV.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('USA PLEX'):
+                        url = host + 'USA_PLEX.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('USA PLUTO'):
+                        url = host + 'USA_PLUTO.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('USA TVPLUS'):
+                        url = host + 'USA_TVPLUS.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('USA XUMO'):
+                        url = host + 'USA_XUMO.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('VIETNAM'):
+                        url = host + 'VIETNAM.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('WORLD OTHERS'):
+                        url = host + 'WORLD_OTHERS.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('WORLD PLUTOTV'):
+                        url = host + 'WORLD_PLUTOTV.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('WORLD TVPLUS'):
+                        url = host + 'WORLD_TVPLUS.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            # elif sel == ('WORLD MUSIC'):
+                        # url = host2 + 'HasBahCa_WORLD_Music_MUZIKTV.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            # elif sel == ('WORLD SPORTS'):
+                        # url = host2 + 'HasBahCa_WORLD_Sports_SPOR.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('WEBCAM CHINA CIN'):
+                        url = host + 'WEBCAM_CHINA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('WEBCAM DE AU CH'):
+                        url = host + 'WEBCAM_DACH.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('WEBCAM MIX'):
+                        url = host + 'WEBCAM_MIX.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('WEBCAM POLAND'):
+                        url = host + 'WEBCAM_POLAND.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('WEBCAM PORTUGAL'):
+                        url = host + 'WEBCAM_PORTUGAL.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('WEBCAM RUS EX CCCP'):
+                        url = host + 'WEBCAM_RUS_EXCCCP.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('WEBCAM TURKEY'):
+                        url = host + 'TURK_WEBCAM.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+            elif sel == ('WEBCAM USA'):
+                        url = host + 'WEBCAM_USA.m3u'
+                        # self.session.open(HasBahCa1, sel, url)
+                        
+            self.session.open(HasBahCa1, sel, url)            
+        # else:
+            # return
         return
 
 class HasBahCaC(Screen):
     def __init__(self, session, name, url):
+        Screen.__init__(self, session)     
         self.session = session
         skin = path_skin + 'settings.xml'
         with open(skin, 'r') as f:
             self.skin = f.read()
-        Screen.__init__(self, session)
         self.setup_title = ('HasBahCa TV')
         self.list = []
         self.name = name
@@ -842,6 +828,9 @@ class HasBahCaC(Screen):
         self['key_green'].hide()
         self['key_yellow'].hide()
         self['key_blue'].hide()
+        self['progress'] = ProgressBar()
+        self['progresstext'] = StaticText()
+        self["progress"].hide()        
         self['live'] = Label('')
         self['live'].setText('')
         self['actions'] = ActionMap(['SetupActions', 'ColorActions'], {
@@ -856,7 +845,7 @@ class HasBahCaC(Screen):
             self.timer_conn = self.timer.timeout.connect(self._gotPageLoad)
         else:
             self.timer.callback.append(self._gotPageLoad)
-        self.timer.start(750, True)
+        self.timer.start(300, True)
         self.onLayoutFinish.append(self.__layoutFinished)
 
     def __layoutFinished(self):
@@ -865,6 +854,7 @@ class HasBahCaC(Screen):
     def _gotPageLoad(self):
         self.names = []
         self.urls = []
+        github = 'http://raw.githubusercontent.com/HasBahCa/m3u_Links/main'
         url = self.url
         items = []
         try:
@@ -872,8 +862,8 @@ class HasBahCaC(Screen):
             # if six.PY3:
                 # content =six.ensure_str(content)
             print("HasBahCa t content =", content)
-            n1 = content.find('js-permalink-shortcut"', 0)
-            n2 = content.find('<div id="readme', n1)
+            n1 = content.find('container Details">', 0)
+            n2 = content.find('class="Layout-sidebar">', n1)
             content2 = content[n1:n2]
             regexvideo = 'title="(.*?).m3u.*?href="/HasBahCa/IPTV-LIST/blob/main/(.*?).m3u">.*?wrap">(.*?)</time'
             match = re.compile(regexvideo, re.DOTALL).findall(content2)
@@ -884,7 +874,7 @@ class HasBahCaC(Screen):
                 # print("HasBahCa t name =", name)
                 # print("HasBahCa t url =", url)
                 # print("HasBahCa t date =", date)
-                url1 = github + url + '.m3u'
+                url1 = github + str(url) + '.m3u'
                 date = date.replace(',', '')
                 name1 = name.replace('HasBahCa', '°')
                 name1 = name1.replace('-', ' ').replace('_', ' ')
@@ -922,11 +912,11 @@ class HasBahCaC(Screen):
 class HasBahCa1(Screen):
     def __init__(self, session, sel, url):
         self.session = session
+        Screen.__init__(self, session)        
         skin = path_skin + 'settings.xml'
         with open(skin, 'r') as f:
             self.skin = f.read()
-        Screen.__init__(self, session)
-        self.setup_title = ('HasBahCa')
+        self.setup_title = ('HasBahCa TV')
         self.list = []
         self.name = sel
         self.url = url
