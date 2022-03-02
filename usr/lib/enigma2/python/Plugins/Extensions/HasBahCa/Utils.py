@@ -134,6 +134,7 @@ def badcar(name):
         name = name.replace(i, '')
     return name
 
+
 def cleanTitle(x):
 	x = x.replace('~','')
 	x = x.replace('#','')
@@ -294,7 +295,6 @@ def b64decoder(s):
         print('outp1 ', outp)
         if PY3:   
             outp = outp.decode('utf-8')
-
             print('outp2 ', outp)
         return outp
         
@@ -311,7 +311,6 @@ def b64decoder(s):
         print('outp1 ', outp)
         if PY3:   
             outp = outp.decode('utf-8')
-            
             print('outp2 ', outp)
         return outp
 
@@ -553,7 +552,6 @@ std_headers = {
 }
 
 ListAgent = [
-          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
           'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
           'Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2919.83 Safari/537.36',
           'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.15 (KHTML, like Gecko) Chrome/24.0.1295.0 Safari/537.15',
