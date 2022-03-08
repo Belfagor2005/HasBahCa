@@ -5,7 +5,7 @@
 ****************************************
 *        coded by Lululla              *
 *             skin by MMark            *
-*             02/03/2022               *
+*             05/03/2022               *
 *   Thank's                            *
 *      HasBahCa, Levi45, KiddaC, Pcd   *
 ****************************************
@@ -67,23 +67,25 @@ global downloadhasba
 downloadhasba = None
 
 PY3 = sys.version_info.major >= 3
-if PY3:
-    from http.client import HTTPConnection, CannotSendRequest, BadStatusLine, HTTPException
-    from urllib.error import URLError, HTTPError
-    from urllib.request import urlopen, Request
-    from urllib.parse import urlparse
-    from urllib.parse import parse_qs, urlencode
-    unicode = str
-    unichr = chr
-    long = int
-    PY3 = True
-else:
+
+try:
     from httplib import HTTPConnection, CannotSendRequest, BadStatusLine, HTTPException
     from urllib2 import urlopen, Request, URLError, HTTPError
     from urlparse import urlparse, parse_qs
     from urllib import urlencode
     import httplib
     import six
+except:
+    from http.client import HTTPConnection, CannotSendRequest, BadStatusLine, HTTPException
+    from urllib.error import URLError, HTTPError
+    from urllib.request import urlopen, Request
+    from urllib.parse import urlparse
+    from urllib.parse import parse_qs, urlencode
+    unicode = str; unichr = chr; long = int
+    PY3 = True
+
+   
+    
 try:
     from Components.UsageConfig import defaultMoviePath
     downloadhasba = defaultMoviePath()
@@ -119,7 +121,7 @@ def ssl_urlopen(url):
         return urlopen(url)
 
 global path_skin
-currversion = '1.2'
+currversion = '1.3'
 title_plug = 'HasBahCa '
 desc_plugin = ('..:: HasBahCa by Lululla %s ::.. ' % currversion)
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
@@ -137,7 +139,6 @@ if DreamOS():
 print('HasBahCa path_skin: ', path_skin)
 
 Panel_Dlist = [
-    ('ALL CATEGORY'),
     ('ALL IPTV'),
     ('ALL MOVIE'),
     ('ALL MUSIC'),
@@ -145,6 +146,26 @@ Panel_Dlist = [
     ('ALL RELAX'),
     ('ALL SPORT'),
     ('ALL WEBCAM'),
+    ('~~~~~~~~~~~'),
+    ('MOVIES AZ TR RUS'),
+    ('MOVIES AZ TR RUS NEW'),
+    ('MOVIES RUS CARTOONS'),
+    ('MOVIES RUS COMEDY'),
+    ('MOVIES RUS MIX'),
+    ('~~~~~~~~~~~'),
+    ('WEBCAM CHINA CIN'),
+    ('WEBCAM DE AU CH'),
+    ('WEBCAM MIX'),
+    ('WEBCAM POLAND'),
+    ('WEBCAM PORTUGAL'),
+    ('WEBCAM RUS EX CCCP'),
+    ('WEBCAM TURK'),
+    ('WEBCAM USA'),
+    ('~~~~~~~~~~~'),
+    ('WORLD NEWS BUSINES'),
+    ('WORLD OTHERS'),
+    ('WORLD PLUTOTV'),
+    ('WORLD TVPLUS'),
     ('~~~~~~~~~~~'),
     ('AFGHANISTAN'),
     ('AFRICA'),
@@ -200,20 +221,13 @@ Panel_Dlist = [
     ('KURDI'),
     ('LAOS'),
     ('LATINO MIX'),
-    ('LATINO PLUTOTV'),
+    ('LATINO PLUTO'),
     ('LUXEMBOURG'),
     ('MACEDONIA'),
     ('MAGYAR'),
     ('MALTA'),
     ('MEXICO'),
     ('MEXICO PLUTO'),
-    ('~~~~~~~~~~~'),
-    ('MOVIES AZ TR RUS'),
-    ('MOVIES AZ TR RUS NEW'),
-    ('MOVIES RUS CARTOONS'),
-    ('MOVIES RUS COMEDY'),
-    ('MOVIES RUS MIX'),
-    ('~~~~~~~~~~~'),
     ('PAKISTAN'),
     ('PANAMA'),
     ('PERU'),
@@ -266,21 +280,11 @@ Panel_Dlist = [
     ('USA XUMO'),
     ('VIETNAM'),
     ('~~~~~~~~~~~'),
-    ('WEBCAM CHINA CIN'),
-    ('WEBCAM DE AU CH'),
-    ('WEBCAM MIX'),
-    ('WEBCAM POLAND'),
-    ('WEBCAM PORTUGAL'),
-    ('WEBCAM RUS EX CCCP'),
-    ('WEBCAM TURKEY'),
-    ('WEBCAM USA'),
-    ('~~~~~~~~~~~'),
-    ('WORLD NEWS BUSINES'),
-    ('WORLD OTHERS'),
-    ('WORLD PLUTOTV'),
-    ('WORLD TVPLUS'),
+    ('ALL CATEGORY'),
+    ('~~~~~~~~~~~'), 
     ]
-
+    
+       
 def downloadFile(url, target):
     try:
         response = urlopen(url, timeout=10)
@@ -294,13 +298,14 @@ def downloadFile(url, target):
 class hasList(MenuList):
     def __init__(self, list):
         MenuList.__init__(self, list, True, eListboxPythonMultiContent)
-        self.l.setItemHeight(50)
-        textfont = int(24)
-        self.l.setFont(0, gFont('Regular', textfont))
         if isFHD():
-            self.l.setItemHeight(50)
+            self.l.setItemHeight(60)
             textfont = int(34)
             self.l.setFont(0, gFont('Regular', textfont))
+        else:    
+            self.l.setItemHeight(60)
+            textfont = int(24)
+            self.l.setFont(0, gFont('Regular', textfont))            
 
 def hasListEntry(name, idx):
     res = [name]
@@ -314,20 +319,27 @@ def hasListEntry(name, idx):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
     elif 'sport' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
+    elif 'relax' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/relax.png".format('HasBahCa')) 
+    elif 'movie' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/movie.png".format('HasBahCa'))
+    elif 'pluto' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/plutotv.png".format('HasBahCa'))          
+    elif 'tvplus' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tvplus.png".format('HasBahCa'))   
     else:
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 
     if isFHD():
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 12), size=(34, 25), png=loadPNG(png)))
-        res.append(MultiContentEntryText(pos=(60, 0), size=(1900, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 7), size=(50, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryText(pos=(90, 0), size=(1900, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     else:
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 12), size=(34, 25), png=loadPNG(png)))
-        res.append(MultiContentEntryText(pos=(60, 0), size=(1000, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 7), size=(50, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryText(pos=(90, 0), size=(1000, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     return res
 
 def hasbaSetListEntry(name):
     res = [name]
-
     if 'radio' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/radio.png".format('HasBahCa'))
     elif 'radyo' in name.lower():
@@ -338,15 +350,23 @@ def hasbaSetListEntry(name):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
     elif 'sport' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
+    elif 'relax' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/relax.png".format('HasBahCa'))  
+    elif 'movie' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/movie.png".format('HasBahCa'))    
+    elif 'pluto' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/plutotv.png".format('HasBahCa'))          
+    elif 'tvplus' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tvplus.png".format('HasBahCa'))              
     else:
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 
     if isFHD():
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 12), size=(34, 25), png=loadPNG(png)))
-        res.append(MultiContentEntryText(pos=(60, 0), size=(1200, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 7), size=(50, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryText(pos=(90, 0), size=(1200, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     else:
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 12), size=(34, 25), png=loadPNG(png)))
-        res.append(MultiContentEntryText(pos=(60, 0), size=(1000, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 7), size=(50, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryText(pos=(90, 0), size=(1000, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     return res
 
 def showlisthasba(data, list):
@@ -444,6 +464,57 @@ class MainHasBahCa(Screen):
             elif sel == ('ALL WEBCAM'):
                         pixil = host + 'HasBahCa_WEBCAMS.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('MOVIES AZ TR RUS'):
+                        pixil = host + 'MOVIES_AZ_TR_RUS.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('MOVIES AZ TR RUS NEW'):
+                        pixil = host + 'MOVIES_AZ_TR_RUS_NEW.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('MOVIES RUS CARTOONS'):
+                        pixil = host + 'MOVIES_RUS_CARTOONS.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('MOVIES RUS COMEDY'):
+                        pixil = host + 'MOVIES_RUS_COMEDY.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('MOVIES RUS MIX'):
+                        pixil = host + 'MOVIES_RUS_MIX.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('WEBCAM CHINA CIN'):
+                        pixil = host + 'WEBCAM_CHINA.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('WEBCAM DE AU CH'):
+                        pixil = host + 'WEBCAM_DE_AU_CH.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('WEBCAM MIX'):
+                        pixil = host + 'WEBCAM_MIX.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('WEBCAM POLAND'):
+                        pixil = host + 'WEBCAM_POLAND.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('WEBCAM PORTUGAL'):
+                        pixil = host + 'WEBCAM_PORTUGAL.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('WEBCAM RUS EX CCCP'):
+                        pixil = host + 'WEBCAM_RUS_EXCCCP.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('WEBCAM USA'):
+                        pixil = host + 'WEBCAM_USA.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('WEBCAM TURK'):
+                        pixil = host + 'TURK_WEBCAM.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('WORLD NEWS BUSINES'):
+                        pixil = host + 'World_News_Busines.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('WORLD OTHERS'):
+                        pixil = host + 'WORLD_OTHERS.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('WORLD PLUTOTV'):
+                        pixil = host + 'WORLD_PLUTOTV.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('WORLD TVPLUS'):
+                        pixil = host + 'WORLD_TVPLUS.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)
 
             elif sel == ('AFGHANISTAN'):
                         pixil = host + 'AFGHANISTAN.m3u'
@@ -478,7 +549,7 @@ class MainHasBahCa(Screen):
             elif sel == ('AVUSTURALIA NZELAND'):
                         pixil = host + 'AVUSTURALIA_NZELAND.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('BALTIC_EST_LIT_LET'):
+            elif sel == ('BALTIC EST LIT LET'):
                         pixil = host + 'BALTIC_EST_LIT_LET.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
             elif sel == ('BANGLADESH'):
@@ -607,8 +678,8 @@ class MainHasBahCa(Screen):
             elif sel == ('LATINO MIX'):
                         pixil = host + 'LATINO_MIX.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('LATINO PLUTOTV'):
-                        pixil = host + 'LATINO_PLUTOTV.m3u'
+            elif sel == ('LATINO PLUTO'):
+                        pixil = host + 'LATINO_PLUTO.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
             elif sel == ('LUXEMBOURG'):
                         pixil = host + 'LUXEMBOURG.m3u'
@@ -627,21 +698,6 @@ class MainHasBahCa(Screen):
                         self.session.open(HasBahCa1, sel, pixil)
             elif sel == ('MEXICO PLUTO'):
                         pixil = host + 'MEXICO_PLUTO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('MOVIES AZ TR RUS'):
-                        pixil = host + 'MOVIES_AZ_TR_RUS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('MOVIES AZ TR RUS NEW'):
-                        pixil = host + 'MOVIES_AZ_TR_RUS_NEW.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('MOVIES RUS CARTOONS'):
-                        pixil = host + 'MOVIES_RUS_CARTOONS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('MOVIES RUS COMEDY'):
-                        pixil = host + 'MOVIES_RUS_COMEDY.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('MOVIES RUS MIX'):
-                        pixil = host + 'MOVIES_RUS_MIX.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
             elif sel == ('PAKISTAN'):
                         pixil = host + 'PAKISTAN.m3u'
@@ -679,10 +735,10 @@ class MainHasBahCa(Screen):
             elif sel == ('RUS KAZAKHSTAN'):
                         pixil = host + 'RUS_KAZAKISTAN.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('RUS EX CCCP1'):
+            elif sel == ('RUS UKRAINE1'):
                         pixil = host + 'RUS_UKRAINE1.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('RUS EX CCCP2'):
+            elif sel == ('RUS UKRAINE2'):
                         pixil = host + 'RUS_UKRAINE2.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
             elif sel == ('SERBIA'):
@@ -751,7 +807,7 @@ class MainHasBahCa(Screen):
             elif sel == ('TURK ULUSAL'):
                         pixil = host + 'TURK_ULUSAL.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURKEY YEREL'):
+            elif sel == ('TURK YEREL'):
                         pixil = host + 'TURK_YEREL.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
             elif sel == ('TURKI AZERBAYCAN'):
@@ -795,42 +851,6 @@ class MainHasBahCa(Screen):
                         self.session.open(HasBahCa1, sel, pixil)
             elif sel == ('VIETNAM'):
                         pixil = host + 'VIETNAM.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM CHINA CIN'):
-                        pixil = host + 'WEBCAM_CHINA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM DE AU CH'):
-                        pixil = host + 'WEBCAM_DE_AU_CH.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM MIX'):
-                        pixil = host + 'WEBCAM_MIX.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM POLAND'):
-                        pixil = host + 'WEBCAM_POLAND.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM PORTUGAL'):
-                        pixil = host + 'WEBCAM_PORTUGAL.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM RUS EX CCCP'):
-                        pixil = host + 'WEBCAM_RUS_EXCCCP.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM USA'):
-                        pixil = host + 'WEBCAM_USA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM TURK'):
-                        pixil = host + 'TURK_WEBCAM.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WORLD NEWS BUSINES'):
-                        pixil = host + 'World_News_Busines.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WORLD OTHERS'):
-                        pixil = host + 'WORLD_OTHERS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WORLD PLUTOTV'):
-                        pixil = host + 'WORLD_PLUTOTV.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WORLD TVPLUS'):
-                        pixil = host + 'WORLD_TVPLUS.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
         return
 
@@ -881,7 +901,6 @@ class HasBahCaC(Screen):
     def _gotPageLoad(self):
         self.names = []
         self.urls = []
-        github = 'https://raw.githubusercontent.com/HasBahCa/m3u_Links/main/'
         url = self.url
         items = []
         try:
@@ -898,10 +917,13 @@ class HasBahCaC(Screen):
             for name, url, date in match:
                 if 'readme' in name.lower():
                     continue
+                if 'enigma2' in name.lower():
+                    continue                    
                 print("HasBahCa t name =", name)
                 print("HasBahCa t url =", url)
                 print("HasBahCa t date =", date)
-                url1 =  'https://raw.githubusercontent.com/HasBahCa/m3u_Links/main/' + str(url) + '.m3u'
+                # url1 =  'https://raw.githubusercontent.com/HasBahCa/m3u_Links/main/' + str(url) + '.m3u'
+                url1 = '{}{}{}'.format('https://raw.githubusercontent.com/HasBahCa/m3u_Links/main/',  str(url), '.m3u')
                 date = date.replace(',', '')
                 name1 = name.replace('HasBahCa', '°')
                 name1 = name1.replace('-', ' ').replace('_', ' ')
@@ -1000,20 +1022,10 @@ class HasBahCa1(Screen):
             # for group, name, url in match:
                 # name = name.replace('_', ' ').replace('-', ' ')
                 # name1 = group + ' | ' + name
-                # if 'china' in self.name.lower():
-                    # name = name.decode('utf-8').encode('cns')
-                    # print('china name', name)
-                    # try:
-                        # import importlib
-                        # importlib.reload(sys)
-                    # except:
-                        # import imp
-                        # imp.reload(sys)
-                    # sys.setdefaultencoding('utf-8')
-
-                # name = get_safe_filename(name)
                 name1 = name.replace('_', ' ').replace('-', ' ')
-                name = decodeHtml(name1)
+                # name = get_safe_filename(name1)                
+                # name = decodeHtml(name1)
+                # name = checkStr(name1)
                 item = name + "###" + url
                 print('Items sort: ', item)
                 items.append(item)
