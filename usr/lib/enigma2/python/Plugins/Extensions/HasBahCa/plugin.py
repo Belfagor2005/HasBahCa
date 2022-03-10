@@ -82,6 +82,7 @@ except:
     from urllib.parse import urlparse
     from urllib.parse import parse_qs, urlencode
     unicode = str; unichr = chr; long = int
+    from importlib import reload
     PY3 = True
 
    
@@ -327,6 +328,8 @@ def hasListEntry(name, idx):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/plutotv.png".format('HasBahCa'))          
     elif 'tvplus' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tvplus.png".format('HasBahCa'))   
+    elif '~~~~' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/mark.png".format('HasBahCa'))         
     else:
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 
@@ -358,6 +361,8 @@ def hasbaSetListEntry(name):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/plutotv.png".format('HasBahCa'))          
     elif 'tvplus' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tvplus.png".format('HasBahCa'))              
+    elif '~~~~' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/mark.png".format('HasBahCa'))         
     else:
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 
@@ -1620,6 +1625,11 @@ def main(session, **kwargs):
         session.open(MainHasBahCa)
     else:
         session.open(MessageBox, "No Internet", MessageBox.TYPE_INFO)
+
+# if PY3:
+    # from importlib import reload
+# from . import plugin
+# reload(plugin)
 
 def StartSetup(menuid, **kwargs):
     if menuid == 'mainmenu':
