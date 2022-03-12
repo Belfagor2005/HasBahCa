@@ -5,7 +5,7 @@
 ****************************************
 *        coded by Lululla              *
 *             skin by MMark            *
-*             05/03/2022               *
+*             12/03/2022               *
 *   Thank's                            *
 *      HasBahCa, Levi45, KiddaC, Pcd   *
 ****************************************
@@ -150,6 +150,7 @@ Panel_Dlist = [
     ('~~~~~~~~~~~'),
     ('MOVIES AZ TR RUS'),
     ('MOVIES AZ TR RUS NEW'),
+    ('MOVIES LATINO'),    
     ('MOVIES RUS CARTOONS'),
     ('MOVIES RUS COMEDY'),
     ('MOVIES RUS MIX'),
@@ -214,8 +215,8 @@ Panel_Dlist = [
     ('INDONESIA'),
     ('ISRAEL'),
     ('ITALIA'),
-    ('ITALY PLUTO'),
-    ('ITALY TVPLUS'),
+    ('ITALIA PLUTO'),
+    ('ITALIA TVPLUS'),
     ('JAPAN'),
     ('KHUSUS MALAZIA'),
     ('KOREA'),
@@ -245,7 +246,7 @@ Panel_Dlist = [
 	('RUS UKRAINE2'),
     ('SERBIA'),
     ('SKANDINAV FINLAND'),
-    ('SLOVAKIA SLOVEINA'),
+    ('SLOVAKIA SLOVENIA'),
     ('SPAIN'),
     ('SPAIN PLUTO'),
     ('SPAIN TVPLUS'),
@@ -253,6 +254,7 @@ Panel_Dlist = [
     ('SWITZERLAND PLUTO'),
     ('SWITZERLAND TVPLUS'),
     ('TAIWAN'),
+    ('THAILAND'),    
     ('TURKCE FILMLER'),
     ('TURK 1TAMLISTE'),
     ('TURK AVRUPA'),
@@ -475,6 +477,9 @@ class MainHasBahCa(Screen):
             elif sel == ('MOVIES AZ TR RUS NEW'):
                         pixil = host + 'MOVIES_AZ_TR_RUS_NEW.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('MOVIES LATINO'):
+                        pixil = host + 'Latino_MOVIES.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)                        
             elif sel == ('MOVIES RUS CARTOONS'):
                         pixil = host + 'MOVIES_RUS_CARTOONS.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
@@ -659,10 +664,10 @@ class MainHasBahCa(Screen):
             elif sel == ('ITALIA'):
                         pixil = host + 'ITALIA.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ITALY PLUTO'):
+            elif sel == ('ITALIA PLUTO'):
                         pixil = host + 'ITALIA_PLUTO.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ITALY TVPLUS'):
+            elif sel == ('ITALIA TVPLUS'):
                         pixil = host + 'ITALIA_TVPLUS.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
             elif sel == ('JAPAN'):
@@ -752,7 +757,7 @@ class MainHasBahCa(Screen):
             elif sel == ('SKANDINAV FINLAND'):
                         pixil = host + 'SKANDINAV_FINLAND.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('SLOVAKIA SLOVEINA'):
+            elif sel == ('SLOVAKIA SLOVENIA'):
                         pixil = host + 'SLOVAKIA_SLOVENIA.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
             elif sel == ('SPAIN'):
@@ -776,6 +781,9 @@ class MainHasBahCa(Screen):
             elif sel == ('TAIWAN'):
                         pixil = host + 'TAIWAN.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('THAILAND'):
+                        pixil = host + 'THAILAND.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)                        
             elif sel == ('TURKCE FILMLER'):
                         pixil = host + 'TURKCE_FILMLER.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
