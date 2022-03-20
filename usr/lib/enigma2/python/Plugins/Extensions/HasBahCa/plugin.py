@@ -5,7 +5,7 @@
 ****************************************
 *        coded by Lululla              *
 *             skin by MMark            *
-*             12/03/2022               *
+*             20/03/2022               *
 *   Thank's                            *
 *      HasBahCa, Levi45, KiddaC, Pcd   *
 ****************************************
@@ -223,6 +223,7 @@ Panel_Dlist = [
     ('KURDI'),
     ('LAOS'),
     ('LATINO MIX'),
+    ('LATINO MOVIE'),    
     ('LATINO PLUTO'),
     ('LUXEMBOURG'),
     ('MACEDONIA'),
@@ -336,10 +337,10 @@ def hasListEntry(name, idx):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 
     if isFHD():
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 7), size=(50, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 10), size=(50, 40), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(90, 0), size=(1900, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     else:
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 7), size=(50, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 10), size=(50, 40), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(90, 0), size=(1000, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     return res
 
@@ -369,10 +370,10 @@ def hasbaSetListEntry(name):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 
     if isFHD():
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 7), size=(50, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 10), size=(50, 40), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(90, 0), size=(1200, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     else:
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 7), size=(50, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 10), size=(50, 40), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(90, 0), size=(1000, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     return res
 
@@ -691,6 +692,9 @@ class MainHasBahCa(Screen):
             elif sel == ('LATINO PLUTO'):
                         pixil = host + 'LATINO_PLUTO.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
+            elif sel == ('LATINO MOVIE'):
+                        pixil = host + 'Latino_MOVIES.m3u'
+                        self.session.open(HasBahCa1, sel, pixil)                        
             elif sel == ('LUXEMBOURG'):
                         pixil = host + 'LUXEMBOURG.m3u'
                         self.session.open(HasBahCa1, sel, pixil)
