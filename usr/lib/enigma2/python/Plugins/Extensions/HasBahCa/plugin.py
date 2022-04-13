@@ -5,7 +5,7 @@
 ****************************************
 *        coded by Lululla              *
 *             skin by MMark            *
-*             20/03/2022               *
+*             01/04/2022               *
 *   Thank's                            *
 *      HasBahCa, Levi45, KiddaC, Pcd   *
 ****************************************
@@ -128,9 +128,14 @@ desc_plugin = ('..:: HasBahCa by Lululla %s ::.. ' % currversion)
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
 pluglogo = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/logo.png".format('HasBahCa'))
 png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
-github = 'https://raw.githubusercontent.com/HasBahCa/m3u_Links/main/'
+
+# github = 'https://raw.githubusercontent.com/HasBahCa/m3u_Links/main/'
+# hostcategory = 'https://github.com/HasBahCa/m3u_Links'
+github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
+hostcategory = 'https://github.com/HasBahCa/IPTV-LIST'
 
 enigma_path = '/etc/enigma2'
+
 if isFHD():
     path_skin = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/skins/fhd/".format('HasBahCa'))
 else:
@@ -447,8 +452,10 @@ class MainHasBahCa(Screen):
     def keyNumberGlobalCB(self, idx):
         sel = self.menu_list[idx]
         host = github
+        url = hostcategory
         if sel == ('ALL CATEGORY'):
-                url = 'https://github.com/HasBahCa/m3u_Links'
+                # url = 'https://github.com/HasBahCa/m3u_Links'
+                url = hostcategory
                 self.session.open(HasBahCaC, sel, url)
         else:
             if sel == ('ALL IPTV'):
@@ -940,7 +947,7 @@ class HasBahCaC(Screen):
                 print("HasBahCa t url =", url)
                 print("HasBahCa t date =", date)
                 # url1 =  'https://raw.githubusercontent.com/HasBahCa/m3u_Links/main/' + str(url) + '.m3u'
-                url1 = '{}{}{}'.format('https://raw.githubusercontent.com/HasBahCa/m3u_Links/main/',  str(url), '.m3u')
+                url1 = '{}{}{}'.format(github, str(url), '.m3u')
                 date = date.replace(',', '')
                 name1 = name.replace('HasBahCa', '°')
                 name1 = name1.replace('-', ' ').replace('_', ' ')
@@ -1063,6 +1070,10 @@ class HasBahCa1(Screen):
             print('error HasBahCa', str(e))
 
     def okRun(self):
+        i = len(self.names)
+        print('iiiiii= ',i)
+        if i < 1:
+            return    
         idx = self["text"].getSelectionIndex()
         name = self.names[idx]
         url = self.urls[idx]
