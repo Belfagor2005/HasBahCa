@@ -5,7 +5,7 @@
 ****************************************
 *        coded by Lululla              *
 *             skin by MMark            *
-*             01/04/2022               *
+*             16/04/2022               *
 *   Thank's                            *
 *      HasBahCa, Levi45, KiddaC, Pcd   *
 ****************************************
@@ -122,18 +122,18 @@ def ssl_urlopen(url):
         return urlopen(url)
 
 global path_skin
-currversion = '1.3'
+currversion = '1.4'
 title_plug = 'HasBahCa '
 desc_plugin = ('..:: HasBahCa by Lululla %s ::.. ' % currversion)
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
 pluglogo = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/logo.png".format('HasBahCa'))
 png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 
-# github = 'https://raw.githubusercontent.com/HasBahCa/m3u_Links/main/'
-# hostcategory = 'https://github.com/HasBahCa/m3u_Links'
-github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
+hostcategoryes = 'https://github.com/HasBahCa/IPTV-LIST/'
 hostcategory = 'https://github.com/HasBahCa/IPTV-LIST'
+github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
 
+tyurl = 'http://hasbahca.net/hasbahca_m3u/'
 enigma_path = '/etc/enigma2'
 
 if isFHD():
@@ -144,156 +144,6 @@ if DreamOS():
     path_skin = path_skin + 'dreamOs/'
 print('HasBahCa path_skin: ', path_skin)
 
-Panel_Dlist = [
-    ('ALL IPTV'),
-    ('ALL MOVIE'),
-    ('ALL MUSIC'),
-    ('ALL RADIO'),
-    ('ALL RELAX'),
-    ('ALL SPORT'),
-    ('ALL WEBCAM'),
-    ('~~~~~~~~~~~'),
-    ('MOVIES AZ TR RUS'),
-    ('MOVIES AZ TR RUS NEW'),
-    ('MOVIES LATINO'),    
-    ('MOVIES RUS CARTOONS'),
-    ('MOVIES RUS COMEDY'),
-    ('MOVIES RUS MIX'),
-    ('~~~~~~~~~~~'),
-    ('WEBCAM CHINA CIN'),
-    ('WEBCAM DE AU CH'),
-    ('WEBCAM MIX'),
-    ('WEBCAM POLAND'),
-    ('WEBCAM PORTUGAL'),
-    ('WEBCAM RUS EX CCCP'),
-    ('WEBCAM TURK'),
-    ('WEBCAM USA'),
-    ('~~~~~~~~~~~'),
-    ('WORLD NEWS BUSINES'),
-    ('WORLD OTHERS'),
-    ('WORLD PLUTOTV'),
-    ('WORLD TVPLUS'),
-    ('~~~~~~~~~~~'),
-    ('AFGHANISTAN'),
-    ('AFRICA'),
-    ('ALBANIA BOSNIA KOSOVO'),
-    ('ARABIC 1'),
-    ('ARABIC 2'),
-    ('ARGENTINA'),
-    ('ARGENTINA PLUTO'),
-    ('ASIA MIX'),
-    ('AUSTRIA'),
-    ('AUSTRIA TVPLUS'),
-    ('AVUSTURALIA NZELAND'),
-    ('BALTIC EST LIT LET'),
-    ('BANGLADESH'),
-    ('BRASIL'),
-    ('BRASIL PLUTO'),
-    ('BULGARIA'),
-    ('CAMBODIA'),
-    ('CANADA'),
-    ('CANADA TVPLUS'),
-    ('CHILE'),
-    ('CHINA1'),
-    ('CHINA2'),
-    ('COLOMBIA'),
-    ('COSTARICA'),
-    ('CROATIA'),
-    ('CZECH'),
-    ('DOMINICANRP'),
-    ('ENGLAND'),
-    ('ENGLAND PLUTO'),
-    ('ENGLAND TVPLUS'),
-    ('FRANCE'),
-    ('FRANCE PLUTO'),
-    ('FRANCE TVPLUS'),
-    ('GERMAN'),
-    ('GERMAN LOKAL'),
-    ('GERMAN PLUTO'),
-    ('GERMAN TVPLUS'),
-    ('GREEK'),
-    ('HAITI'),
-    ('HOLLAND BELGIEN'),
-    ('HOLLAND PLUTO'),
-    ('HONDURAS'),
-    ('INDIA TAMIL'),
-    ('INDONESIA'),
-    ('ISRAEL'),
-    ('ITALIA'),
-    ('ITALIA PLUTO'),
-    ('ITALIA TVPLUS'),
-    ('JAPAN'),
-    ('KHUSUS MALAZIA'),
-    ('KOREA'),
-    ('KURDI'),
-    ('LAOS'),
-    ('LATINO MIX'),
-    ('LATINO MOVIE'),    
-    ('LATINO PLUTO'),
-    ('LUXEMBOURG'),
-    ('MACEDONIA'),
-    ('MAGYAR'),
-    ('MALTA'),
-    ('MEXICO'),
-    ('MEXICO PLUTO'),
-    ('PAKISTAN'),
-    ('PANAMA'),
-    ('PERU'),
-    ('POLAND'),
-    ('PORTUGAL'),
-    ('ROMANIA MOLDOVA'),
-    ('RUS ARMENIA'),
-    ('RUS EX CCCP1'),
-    ('RUS EX CCCP2'),
-    ('RUS EX CCCP LOCAL'),
-    ('RUS GEORGIA'),
-    ('RUS KAZAKHSTAN'),
-	('RUS UKRAINE1'),
-	('RUS UKRAINE2'),
-    ('SERBIA'),
-    ('SKANDINAV FINLAND'),
-    ('SLOVAKIA SLOVENIA'),
-    ('SPAIN'),
-    ('SPAIN PLUTO'),
-    ('SPAIN TVPLUS'),
-    ('SWITZERLAND'),
-    ('SWITZERLAND PLUTO'),
-    ('SWITZERLAND TVPLUS'),
-    ('TAIWAN'),
-    ('THAILAND'),    
-    ('TURKCE FILMLER'),
-    ('TURK 1TAMLISTE'),
-    ('TURK AVRUPA'),
-    ('TURK BLUTV'),
-    ('TURK COCUK'),
-    ('TURK DINI'),
-    ('TURK HABER'),
-    ('TURK KARISIK'),
-    ('TURK MUZIK'),
-    ('TURK OZEL'),
-    ('TURK RADYOLAR'),
-    ('TURK ULUSAL'),
-    ('TURK YEREL'),
-    ('TURKI AZERBAYCAN'),
-    ('TURKI KKTC'),
-    ('TURKI TURKMENISTAN'),
-    ('TURKI ULKELER'),
-    ('URUGUAY'),
-    ('USA'),
-    ('USA CHINA ENGLISH'),
-    ('USA LOCAL'),
-    ('USA MYTVTO VELLYTV'),
-    ('USA PLEX'),
-    ('USA PLUTO'),
-    ('USA TVPLUS'),
-    ('USA XUMO'),
-    ('VIETNAM'),
-    ('~~~~~~~~~~~'),
-    ('ALL CATEGORY'),
-    ('~~~~~~~~~~~'), 
-    ]
-    
-       
 def downloadFile(url, target):
     try:
         response = urlopen(url, timeout=10)
@@ -315,39 +165,6 @@ class hasList(MenuList):
             self.l.setItemHeight(60)
             textfont = int(24)
             self.l.setFont(0, gFont('Regular', textfont))            
-
-def hasListEntry(name, idx):
-    res = [name]
-    if 'radio' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/radio.png".format('HasBahCa'))
-    elif 'radyo' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/radio.png".format('HasBahCa'))
-    elif 'webcam' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/webcam.png".format('HasBahCa'))
-    elif 'music' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
-    elif 'sport' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'relax' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/relax.png".format('HasBahCa')) 
-    elif 'movie' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/movie.png".format('HasBahCa'))
-    elif 'pluto' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/plutotv.png".format('HasBahCa'))          
-    elif 'tvplus' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tvplus.png".format('HasBahCa'))   
-    elif '~~~~' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/mark.png".format('HasBahCa'))         
-    else:
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
-
-    if isFHD():
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 10), size=(50, 40), png=loadPNG(png)))
-        res.append(MultiContentEntryText(pos=(90, 0), size=(1900, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
-    else:
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 10), size=(50, 40), png=loadPNG(png)))
-        res.append(MultiContentEntryText(pos=(90, 0), size=(1000, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
-    return res
 
 def hasbaSetListEntry(name):
     res = [name]
@@ -402,7 +219,7 @@ class MainHasBahCa(Screen):
         self.setTitle(title_plug)
         self['text'] = hasList([])
         self['title'] = Label(title_plug)
-        self['info'] = Label(_('Loading data... Please wait'))
+        self['info'] = Label(_('Give me a few seconds ... loading the data'))
         self['key_red'] = Button(_('Exit'))
         self['key_green'] = Button(_('Select'))
         self['key_yellow'] = Button(_(''))
@@ -421,7 +238,14 @@ class MainHasBahCa(Screen):
             'back': self.closerm,
             'red': self.closerm,
             'cancel': self.closerm}, -1)
-        self.onFirstExecBegin.append(self.updateMenuList)
+        self.timer = eTimer()
+        if DreamOS():
+            self.timer_conn = self.timer.timeout.connect(self.updateMenuList)
+        else:
+            self.timer.callback.append(self.updateMenuList)
+        self.timer.start(1500, True)
+        
+        # self.onFirstExecBegin.append(self.updateMenuList)
         self.onLayoutFinish.append(self.__layoutFinished)
 
     def __layoutFinished(self):
@@ -431,452 +255,78 @@ class MainHasBahCa(Screen):
         deletetmp()
         self.close()
 
+
+#<tr><td valign="top">&nbsp;</td><td><a href="1MUSIC.m3u">1MUSIC.m3u</a>             </td><td align="right">2022-03-07 15:40  </td><td align="right"> 33K</td><td>&nbsp;</td></tr>
+#<tr><td valign="top">&nbsp;</td><td><a href="ALBANIA_BOSNIA_KOSOVO.m3u">ALBANIA_BOSNIA_KOSOV..&gt;</a></td><td align="right">2022-03-06 06:08  </td><td align="right">3.8K</td><td>&nbsp;</td></tr>
     def updateMenuList(self):
-        self.menu_list = []
-        for x in self.menu_list:
-            del self.menu_list[0]
-        list = []
-        idx = 0
-        for x in Panel_Dlist:
-            list.append(hasListEntry(x, idx))
-            self.menu_list.append(x)
-            idx += 1
-        self["live"].setText('N.' + str(idx) + " CATEGORY")
-        self['text'].setList(list)
-        self['info'].setText(_('Please select ...'))
-        self['key_green'].show()
+        self.names = []
+        self.urls = []
+        items = []
+        urls = tyurl
+        try:
+            content = getUrl(urls)
+            if six.PY3:
+                content = six.ensure_str(content)
+            content = content.replace('..&gt;','')
+            regexvideo = 'td><a href="(.*?)">(.*?).m3u.*?right">(.*?)  </td>.*?'
+            match = re.compile(regexvideo,re.DOTALL).findall(content)
+            idx = 0
+            for url, name, date in match:
+                print('url= ',url)
+                print('date= ',date)
+                if 'parent' in name.lower():
+                    continue
+                elif 'hasbahcanetlink' in url:
+                    continue
+                elif '.txt' in name.lower():
+                    continue
+                name = url.replace('..&gt;','').replace('_',' ').replace('.m3u','')   
+                name = name + ' ' + date
+                url = urls + url
+                item = name + "###" + url
+                items.append(item)
+            items.sort()
+            for item in items:
+                name = item.split("###")[0]
+                url = item.split("###")[1]
+                self.names.append(name)
+                self.urls.append(url)
+                idx += 1
+                
+            self.names.append('ALL CATEGORY')
+            self.urls.append(hostcategoryes)
+            idx += 1    
+            
+            self['info'].setText(_('Please now select ...'))
+            self["live"].setText('N.' + str(idx) + " CATEGORY")
+            self['key_green'].show()
+            showlisthasba(self.names, self['text'])
+        except Exception as e:
+            print('error HasBahCa1', str(e))
+
 
     def okRun(self):
-        self.keyNumberGlobalCB(self['text'].getSelectedIndex())
-
-    def keyNumberGlobalCB(self, idx):
-        sel = self.menu_list[idx]
-        host = github
-        url = hostcategory
-        if sel == ('ALL CATEGORY'):
-                # url = 'https://github.com/HasBahCa/m3u_Links'
-                url = hostcategory
-                self.session.open(HasBahCaC, sel, url)
-        else:
-            if sel == ('ALL IPTV'):
-                        pixil = host + 'hasbahca_iptv.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ALL MOVIE'):
-                        pixil = host + 'HasBahCa_MOVIES.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ALL MUSIC'):
-                        pixil = host + '1MUSIC.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ALL RADIO'):
-                        pixil = host + 'HasBahCa_RADIOS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ALL RELAX'):
-                        pixil = host + 'RELAX.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ALL SPORT'):
-                        pixil = host + '1SPORT.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ALL WEBCAM'):
-                        pixil = host + 'HasBahCa_WEBCAMS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('MOVIES AZ TR RUS'):
-                        pixil = host + 'MOVIES_AZ_TR_RUS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('MOVIES AZ TR RUS NEW'):
-                        pixil = host + 'MOVIES_AZ_TR_RUS_NEW.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('MOVIES LATINO'):
-                        pixil = host + 'Latino_MOVIES.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)                        
-            elif sel == ('MOVIES RUS CARTOONS'):
-                        pixil = host + 'MOVIES_RUS_CARTOONS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('MOVIES RUS COMEDY'):
-                        pixil = host + 'MOVIES_RUS_COMEDY.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('MOVIES RUS MIX'):
-                        pixil = host + 'MOVIES_RUS_MIX.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM CHINA CIN'):
-                        pixil = host + 'WEBCAM_CHINA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM DE AU CH'):
-                        pixil = host + 'WEBCAM_DE_AU_CH.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM MIX'):
-                        pixil = host + 'WEBCAM_MIX.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM POLAND'):
-                        pixil = host + 'WEBCAM_POLAND.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM PORTUGAL'):
-                        pixil = host + 'WEBCAM_PORTUGAL.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM RUS EX CCCP'):
-                        pixil = host + 'WEBCAM_RUS_EXCCCP.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM USA'):
-                        pixil = host + 'WEBCAM_USA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WEBCAM TURK'):
-                        pixil = host + 'TURK_WEBCAM.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WORLD NEWS BUSINES'):
-                        pixil = host + 'World_News_Busines.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WORLD OTHERS'):
-                        pixil = host + 'WORLD_OTHERS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WORLD PLUTOTV'):
-                        pixil = host + 'WORLD_PLUTOTV.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('WORLD TVPLUS'):
-                        pixil = host + 'WORLD_TVPLUS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-
-            elif sel == ('AFGHANISTAN'):
-                        pixil = host + 'AFGHANISTAN.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('AFRICA'):
-                        pixil = host + 'AFRICA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ALBANIA BOSNIA KOSOVO'):
-                        pixil = host + 'ALBANIA_BOSNIA_KOSOVO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ARABIC 1'):
-                        pixil = host + 'ARABIC1.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ARABIC 2'):
-                        pixil = host + 'ARABIC2.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ARGENTINA'):
-                        pixil = host + 'ARGENTINA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ARGENTINA PLUTO'):
-                        pixil = host + 'ARGENTINA_PLUTO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ASIA MIX'):
-                        pixil = host + 'ASIA_MIX.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('AUSTRIA'):
-                        pixil = host + 'AUSTRIA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('AUSTRIA TVPLUS'):
-                        pixil = host + 'AUSTRIA_TVPLUS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('AVUSTURALIA NZELAND'):
-                        pixil = host + 'AVUSTURALIA_NZELAND.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('BALTIC EST LIT LET'):
-                        pixil = host + 'BALTIC_EST_LIT_LET.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('BANGLADESH'):
-                        pixil = host + 'BANGLADESH.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('BRASIL'):
-                        pixil = host + 'BRASIL.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('BRASIL PLUTO'):
-                        pixil = host + 'BRASIL_PLUTO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('BULGARIA'):
-                        pixil = host + 'BULGARIA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('CAMBODIA'):
-                        pixil = host + 'CAMBODIA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('CANADA'):
-                        pixil = host + 'CANADA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('CANADA TVPLUS'):
-                        pixil = host + 'CANADA_TVPLUS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('CHILE'):
-                        pixil = host + 'CHILE.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('CHINA1'):
-                        pixil = host + 'CHINA1.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('CHINA2'):
-                        pixil = host + 'CHINA2.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('COLOMBIA'):
-                        pixil = host + 'COLOMBIA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('COSTARICA'):
-                        pixil = host + 'COSTARICA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('CROATIA'):
-                        pixil = host + 'CROATIA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('CZECH'):
-                        pixil = host + 'CZECH.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('DOMINICANRP'):
-                        pixil = host + 'DOMINICANRP.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ENGLAND'):
-                        pixil = host + 'ENGLAND.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ENGLAND PLUTO'):
-                        pixil = host + 'ENGLAND_PLUTO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ENGLAND TVPLUS'):
-                        pixil = host + 'ENGLAND_TVPLUS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('FRANCE'):
-                        pixil = host + 'FRANCE.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('FRANCE PLUTO'):
-                        pixil = host + 'FRANCE_PLUTO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('FRANCE TVPLUS'):
-                        pixil = host + 'FRANCE_TVPLUS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('GERMAN'):
-                        pixil = host + 'GERMAN.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('GERMAN LOKAL'):
-                        pixil = host + 'GERMAN_LOKAL.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('GERMAN PLUTO'):
-                        pixil = host + 'GERMAN_PLUTO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('GERMAN TVPLUS'):
-                        pixil = host + 'GERMAN_TVPLUS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('GREEK'):
-                        pixil = host + 'GREEK.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('HAITI'):
-                        pixil = host + 'HAITI.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('HOLLAND BELGIEN'):
-                        pixil = host + 'HOLLAND_BELGIEN.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('HOLLAND PLUTO'):
-                        pixil = host + 'HOLLAND_PLUTO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('HONDURAS'):
-                        pixil = host + 'HONDURAS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('INDIA TAMIL'):
-                        pixil = host + 'INDIA_TAMIL.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('INDONESIA'):
-                        pixil = host + 'INDONESIA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ISRAEL'):
-                        pixil = host + 'ISRAEL.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ITALIA'):
-                        pixil = host + 'ITALIA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ITALIA PLUTO'):
-                        pixil = host + 'ITALIA_PLUTO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ITALIA TVPLUS'):
-                        pixil = host + 'ITALIA_TVPLUS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('JAPAN'):
-                        pixil = host + 'JAPAN.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('KHUSUS MALAZIA'):
-                        pixil = host + 'KHUSUS_MALAZIA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('KOREA'):
-                        pixil = host + 'KOREA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('KURDI'):
-                        pixil = host + 'KURDI.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('LAOS'):
-                        pixil = host + 'LAOS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('LATINO MIX'):
-                        pixil = host + 'LATINO_MIX.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('LATINO PLUTO'):
-                        pixil = host + 'LATINO_PLUTO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('LATINO MOVIE'):
-                        pixil = host + 'Latino_MOVIES.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)                        
-            elif sel == ('LUXEMBOURG'):
-                        pixil = host + 'LUXEMBOURG.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('MACEDONIA'):
-                        pixil = host + 'MACEDONIA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('MAGYAR'):
-                        pixil = host + 'MAGYAR.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('MALTA'):
-                        pixil = host + 'MALTA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('MEXICO'):
-                        pixil = host + 'MEXICO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('MEXICO PLUTO'):
-                        pixil = host + 'MEXICO_PLUTO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('PAKISTAN'):
-                        pixil = host + 'PAKISTAN.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('PANAMA'):
-                        pixil = host + 'PANAMA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('PERU'):
-                        pixil = host + 'PERU.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('POLAND'):
-                        pixil = host + 'POLAND.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('PORTUGAL'):
-                        pixil = host + 'PORTUGAL.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('ROMANIA MOLDOVA'):
-                        pixil = host + 'ROMANIA_MOLDOVA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('RUS ARMENIA'):
-                        pixil = host + 'RUS_ARMENIA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('RUS EX CCCP1'):
-                        pixil = host + 'RUS_EXCCCP1.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('RUS EX CCCP2'):
-                        pixil = host + 'RUS_EXCCCP2.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('RUS EX CCCP LOCAL'):
-                        pixil = host + 'RUS_EXCCCP_LOCAL.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('RUS GEORGIA'):
-                        pixil = host + 'RUS_GEORGIA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('RUS KAZAKHSTAN'):
-                        pixil = host + 'RUS_KAZAKISTAN.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('RUS UKRAINE1'):
-                        pixil = host + 'RUS_UKRAINE1.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('RUS UKRAINE2'):
-                        pixil = host + 'RUS_UKRAINE2.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('SERBIA'):
-                        pixil = host + 'SERBIA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('SKANDINAV FINLAND'):
-                        pixil = host + 'SKANDINAV_FINLAND.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('SLOVAKIA SLOVENIA'):
-                        pixil = host + 'SLOVAKIA_SLOVENIA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('SPAIN'):
-                        pixil = host + 'SPAIN.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('SPAIN PLUTO'):
-                        pixil = host + 'SPAIN_PLUTO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('SPAIN TVPLUS'):
-                        pixil = host + 'SPAIN_TVPLUS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('SWITZERLAND'):
-                        pixil = host + 'SWITZERLAND.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('SWITZERLAND PLUTO'):
-                        pixil = host + 'SWITZERLAND_PLUTO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('SWITZERLAND TVPLUS'):
-                        pixil = host + 'SWITZERLAND_TVPLUS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TAIWAN'):
-                        pixil = host + 'TAIWAN.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('THAILAND'):
-                        pixil = host + 'THAILAND.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)                        
-            elif sel == ('TURKCE FILMLER'):
-                        pixil = host + 'TURKCE_FILMLER.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURK 1TAMLISTE'):
-                        pixil = host + 'TURK_1TAMLISTE.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURK AVRUPA'):
-                        pixil = host + 'TURK_AVRUPA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURK BLUTV'):
-                        pixil = host + 'TURK_BLUTV.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURK COCUK'):
-                        pixil = host + 'TURK_COCUK.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURK DINI'):
-                        pixil = host + 'TURK_DINI.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURK HABER'):
-                        pixil = host + 'TURK_HABER.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURK KARISIK'):
-                        pixil = host + 'TURK_KARISIK.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURK MUZIK'):
-                        pixil = host + 'TURK_MUZIK.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURK OZEL'):
-                        pixil = host + 'TURK_OZEL.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURK RADYOLAR'):
-                        pixil = host + 'TURK_RADYOLAR.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURK ULUSAL'):
-                        pixil = host + 'TURK_ULUSAL.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURK YEREL'):
-                        pixil = host + 'TURK_YEREL.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURKI AZERBAYCAN'):
-                        pixil = host + 'TURKi_AZERBAYCAN.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURKI KKTC'):
-                        pixil = host + 'TURKi_KKTC.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURKI TURKMENISTAN'):
-                        pixil = host + 'TURKi_TURKMENISTAN.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('TURKI ULKELER'):
-                        pixil = host + 'TURKi_ULKELER.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('URUGUAY'):
-                        pixil = host + 'URUGUAY.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('USA'):
-                        pixil = host + 'USA.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('USA CHINA ENGLISH'):
-                        pixil = host + 'USA_CHINA_ENG.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('USA LOCAL'):
-                        pixil = host + 'USA_LOCAL.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('USA MYTVTO VELLYTV'):
-                        pixil = host + 'USA_MyTV_VellyTV.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('USA PLEX'):
-                        pixil = host + 'USA_PLEX.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('USA PLUTO'):
-                        pixil = host + 'USA_PLUTO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('USA TVPLUS'):
-                        pixil = host + 'USA_TVPLUS.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('USA XUMO'):
-                        pixil = host + 'USA_XUMO.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-            elif sel == ('VIETNAM'):
-                        pixil = host + 'VIETNAM.m3u'
-                        self.session.open(HasBahCa1, sel, pixil)
-        return
+        i = len(self.names)
+        print('iiiiii= ',i)
+        # if i < 1:
+            # return
+        idx = self["text"].getSelectionIndex()
+        name = self.names[idx]
+        url = self.urls[idx]
+        if 'parent' in name.lower():
+            return
+        elif 'hasbahcanetlink' in url:
+            return            
+        elif 'parent' in name.lower():
+            return
+        elif '.txt' in name.lower():
+            return
+        elif 'category' in name.lower(): 
+            self.session.open(HasBahCaC, name, url) 
+            print('url HasBahCa C : ', url)
+        else:    
+            self.session.open(HasBahCa1, name, url)
+            print('url HasBahCa 1 : ', url)
 
 class HasBahCaC(Screen):
     def __init__(self, session, name, url):
@@ -932,27 +382,29 @@ class HasBahCaC(Screen):
             # if six.PY3:
                 # content =six.ensure_str(content)
             print("HasBahCa t content =", content)
+            print('urlll content: ', url)
             n1 = content.find('js-details-container Details">', 0)
             n2 = content.find('<div class="Details-content--shown Box-footer', n1)
             content2 = content[n1:n2]
-            regexvideo = 'title="(.*?).m3u.*?href="/HasBahCa/m3u_Links/blob/main/(.*?).m3u">.*?wrap">(.*?)</time'
+            regexvideo = 'title="(.*?).m3u.*?href="/HasBahCa/IPTV-LIST/blob/main/(.*?).m3u">.*?</a></span.*?</div>'
+            # regexvideo = 'title="(.*?).m3u.*?href="/HasBahCa/m3u_Links/blob/main/(.*?).m3u">.*?wrap">(.*?)</time'            
             match = re.compile(regexvideo, re.DOTALL).findall(content2)
+            print('match:  ', match)
             # print("HasBahCa t match =", match)
-            for name, url, date in match:
+            for name, url in match:
                 if 'readme' in name.lower():
                     continue
                 if 'enigma2' in name.lower():
                     continue                    
                 print("HasBahCa t name =", name)
                 print("HasBahCa t url =", url)
-                print("HasBahCa t date =", date)
-                # url1 =  'https://raw.githubusercontent.com/HasBahCa/m3u_Links/main/' + str(url) + '.m3u'
+                # print("HasBahCa t date =", date)
                 url1 = '{}{}{}'.format(github, str(url), '.m3u')
-                date = date.replace(',', '')
+                # date = date.replace(',', '')
                 name1 = name.replace('HasBahCa', '°')
                 name1 = name1.replace('-', ' ').replace('_', ' ')
-                name1 = decodeHtml(name1)
-                name = name1 + ' | ' + date
+                name = decodeHtml(name1)
+                # name = name1 + ' | ' + date
                 # print("******** name 1 ******* %s" % name)
                 # print("HasBahCa t name =", name)
                 # print("HasBahCa t url1 =", url1)
@@ -966,7 +418,7 @@ class HasBahCaC(Screen):
                 self.names.append(name)
                 self.urls.append(url2)
             self["live"].setText('N.' + str(len(self.names)) + " CATEGORY")
-            self['info'].setText(_('Please select ...'))
+            self['info'].setText(_('Please now select ...'))
             self['key_green'].show()
             showlisthasba(self.names, self['text'])
         except Exception as e:
@@ -1030,6 +482,7 @@ class HasBahCa1(Screen):
 
     def _gotPageLoad(self):
         url = self.url
+        print('self.url: ', self.url)
         self.names = []
         self.urls = []
         items = []
@@ -1060,7 +513,7 @@ class HasBahCa1(Screen):
                 self.names.append(name)
                 self.urls.append(url)
             self["live"].setText('N.' + str(len(self.names)) + " STREAM")
-            self['info'].setText(_('Please select ...'))
+            self['info'].setText(_('Please now select ...'))
             self['key_green'].show()
             self['key_yellow'].show()
             self['key_blue'].show()
@@ -1407,7 +860,6 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         self.allowPiP = False
         self.service = None
         self.url = url
-        self.pcip = 'None'
         print("******** name 3 ******* %s" % name)
         self.name = decodeHtml(name)
         self.state = self.STATE_PLAYING
