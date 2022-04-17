@@ -71,16 +71,16 @@ PY3 = sys.version_info.major >= 3
 try:
     from httplib import HTTPConnection, CannotSendRequest, BadStatusLine, HTTPException
     from urllib2 import urlopen, Request, URLError, HTTPError
-    from urlparse import urlparse, parse_qs
-    from urllib import urlencode
+    # from urlparse import urlparse
+    # from urllib import urlencode, parse_qs
     import httplib
     import six
 except:
     from http.client import HTTPConnection, CannotSendRequest, BadStatusLine, HTTPException
     from urllib.error import URLError, HTTPError
     from urllib.request import urlopen, Request
-    from urllib.parse import urlparse
-    from urllib.parse import parse_qs, urlencode
+    # from urllib.parse import urlparse
+    # from urllib.parse import parse_qs, urlencode
     unicode = str; unichr = chr; long = int
     from importlib import reload
     PY3 = True
@@ -93,6 +93,7 @@ try:
 except:
     if os.path.exists("/usr/bin/apt-get"):
         downloadhasba = ('/media/hdd/movie/')
+
 if sys.version_info >= (2, 7, 9):
     try:
         sslContext = ssl._create_unverified_context()
@@ -144,14 +145,18 @@ if DreamOS():
     path_skin = path_skin + 'dreamOs/'
 print('HasBahCa path_skin: ', path_skin)
 
+
+
 def downloadFile(url, target):
     try:
-        response = urlopen(url, timeout=10)
-        with open(target, 'wb') as output:
-            output.write(response.read())
+        response = ReadUrl(url)
+        print('response: ', response)
+        # response = urlopen(url, timeout=5)        
+        with open(target, 'w') as output:
+            output.write(response) #.read())
         return True
-    except:
-        print("downloadFile error")
+    except Exception as e:
+        print("downloadFile error ", str(e))
         return False
 
 class hasList(MenuList):
@@ -281,7 +286,7 @@ class MainHasBahCa(Screen):
                 elif '.txt' in name.lower():
                     continue
                 name = url.replace('..&gt;','').replace('_',' ').replace('.m3u','')   
-                name = name + ' ' + date
+                name = name #+ ' ' + date
                 url = urls + url
                 item = name + "###" + url
                 items.append(item)
@@ -554,15 +559,17 @@ class HasBahCa1(Screen):
             self.namel = ''
             tmplist = []
             tmplist.append('#NAME HasBahCa IPTV %s (%s)' % (name_file, self.type))
-            # tmplist.append('#NAME HASBAHCA IPTV %s' % name_file)
             tmplist.append('#SERVICE 1:64:0:0:0:0:0:0:0:0::%s CHANNELS' % name_file)
             tmplist.append('#DESCRIPTION --- %s ---' % name_file)
             print("Converting Bouquet %s" % name_file)
-            self.file = "/tmp/%s.m3u" % name_file
-            try:
-                downloadFile(self.url, self.file)
-            except Exceptions as e:
-                print('Error download self m3u: ', str(e))
+            # self.file = "/tmp/%s.m3u" % name_file.lower()  #use downloadhasba
+            self.file = "/tmp/tempm3u.m3u" # % name_file.lower()  #use downloadhasba            
+            # try:
+            downloadFile(self.url, self.file)
+            # except Exceptions as e:
+                # print('Error download self m3u: ', str(e))
+                # # self.download_m3u()
+                
             '''
             # self.download_m3u()
             # os.system('sleep 3')
