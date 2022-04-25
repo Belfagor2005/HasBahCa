@@ -5,7 +5,7 @@
 ****************************************
 *        coded by Lululla              *
 *             skin by MMark            *
-*             16/04/2022               *
+*             24/04/2022               *
 *   Thank's                            *
 *      HasBahCa, Levi45, KiddaC, Pcd   *
 ****************************************
@@ -86,7 +86,6 @@ except:
     PY3 = True
 
    
-    
 try:
     from Components.UsageConfig import defaultMoviePath
     downloadhasba = defaultMoviePath()
@@ -205,9 +204,9 @@ def hasbaSetListEntry(name):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))  
     elif 'spor' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'boxin' in name.lower():
+    elif 'boxing' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'racin' in name.lower():
+    elif 'racing' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))   
     elif 'fight' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))  
@@ -219,6 +218,8 @@ def hasbaSetListEntry(name):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))   
     elif 'futbool' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))   
+    elif 'motor' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))           
     elif 'nba' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))   
     elif 'nfl' in name.lower():
@@ -226,7 +227,11 @@ def hasbaSetListEntry(name):
     elif 'bull' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa')) 
     elif 'poker' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))         
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))   
+    elif 'billiar' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))  
+    elif 'fite' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))          
     elif 'relax' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/relax.png".format('HasBahCa'))  
     elif 'nature' in name.lower():
@@ -320,12 +325,14 @@ class MainHasBahCa(Screen):
             if six.PY3:
                 content = six.ensure_str(content)
             content = content.replace('..&gt;','')
-            regexvideo = 'td><a href="(.*?)">(.*?).m3u.*?right">(.*?)  </td>.*?'
+            regexvideo = 'td><td><a href="(.*?)">(.*?).m3u.*?right">.*?</td></tr>'
+            # regexvideo = 'td><a href="(.*?)">(.*?).m3u.*?right">(.*?)  </td>.*?'            
             match = re.compile(regexvideo,re.DOTALL).findall(content)
             idx = 0
-            for url, name, date in match:
+            # for url, name, date in match:
+            for url, name in match:            
                 print('url= ',url)
-                print('date= ',date)
+                # print('date= ',date)
                 if 'parent' in name.lower():
                     continue
                 elif 'hasbahcanetlink' in url:
@@ -333,14 +340,14 @@ class MainHasBahCa(Screen):
                 elif '.txt' in name.lower():
                     continue
                 name = url.replace('..&gt;','').replace('_',' ').replace('.m3u','')   
-                name = name #+ ' ' + date
+                # name = name #+ ' ' + date
                 url = urls + url
-                item = name + "###" + url
-                items.append(item)
-            items.sort()
-            for item in items:
-                name = item.split("###")[0]
-                url = item.split("###")[1]
+                # item = name + "###" + url
+                # items.append(item)
+            # items.sort()
+            # for item in items:
+                # name = item.split("###")[0]
+                # url = item.split("###")[1]
                 self.names.append(name)
                 self.urls.append(url)
                 idx += 1
@@ -1034,8 +1041,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
             from Plugins.Extensions.IMDb.plugin import IMDB
             text_clear = self.name
             text = charRemove(text_clear)
-            HHHHH = text
-            self.session.open(IMDB, HHHHH)
+            self.session.open(IMDB, text)
         else:
             text_clear = self.name
             self.session.open(MessageBox, text_clear, MessageBox.TYPE_INFO)
@@ -1137,18 +1143,17 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         self.close()
 
 def checks():
-    from Plugins.Extensions.HasBahCa.Utils import checkInternet
-    checkInternet()
+    from . import Utils
     chekin = False
-    if checkInternet():
+    if Utils.checkInternet():
         chekin = True
     return chekin
 
 def main(session, **kwargs):
     if checks:
         try:
-            from Plugins.Extensions.HasBahCa.Update import upd_done
-            upd_done()
+            from . import Update 
+            Update.upd_done()
         except:
             pass
         session.open(MainHasBahCa)
