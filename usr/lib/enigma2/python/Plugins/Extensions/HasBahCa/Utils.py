@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#19.02.2021
+#01.05.2021
 #a common tips used from Lululla
 #
 import sys
@@ -167,15 +167,36 @@ def getLanguage():
         pass
 
 def downloadFile(url, target):
+    import socket
     try:
-        response = urlopen(url)
-        with open(target, 'wb') as output:
-            output.write(response.read())
-        return True
+        from urllib.error import HTTPError, URLError
     except:
-        print("download error")
+        from urllib2 import HTTPError, URLError
+    try:
+        response = urlopen(url, None, 5)
+        with open(target, 'w') as output:
+            output.write(response)#.read())
+        response.close()
+        return True
+    except HTTPError:
+        print("Http error")
         return False
-
+    except URLError:
+        print("Url error")
+        return False
+    except socket.timeout:
+        print("sochet error")
+        return False
+        
+# def downloadFile(url, target):
+    # try:
+        # response = urlopen(url)
+        # with open(target, 'wb') as output:
+            # output.write(response.read())
+        # return True
+    # except:
+        # print("download error")
+        # return False
 def getserviceinfo(sref):## this def returns the current playing service name and stream_url from give sref
     try:
         from ServiceReference import ServiceReference
@@ -231,17 +252,26 @@ def testWebConnection(host="www.google.com", port=80, timeout=3):
         print('error: ', str(e))
         return False
 
-def checkStr(txt):
-    # convert variable to type str both in Python 2 and 3
-    if PY3:
-        # Python 3
-        if type(txt) == type(bytes()):
-            txt = txt.decode('utf-8')
-    else:
-        #Python 2
-        if type(txt) == type(unicode()):
-            txt = txt.encode('utf-8')
-    return txt
+def checkStr(text, encoding="utf8"):
+	if PY3 == False:
+		if isinstance(text, unicode):
+			return text.encode(encoding)
+		else:
+			return text
+	else:
+		return text
+        
+# def checkStr(txt):
+    # # convert variable to type str both in Python 2 and 3
+    # if PY3:
+        # # Python 3
+        # if type(txt) == type(bytes()):
+            # txt = txt.decode('utf-8')
+    # else:
+        # #Python 2
+        # if type(txt) == type(unicode()):
+            # txt = txt.encode('utf-8')
+    # return txt
 
 # def checkStr(txt):
     #import six
@@ -375,7 +405,7 @@ def ReloadBouquets():
         print('bouquets reloaded...')
 
 def deletetmp():
-    os.system('rm -rf /tmp/unzipped;rm -f /tmp/*.ipk;rm -f /tmp/*.tar;rm -f /tmp/*.zip;rm -f /tmp/*.tar.gz;rm -f /tmp/*.tar.bz2;rm -f /tmp/*.tar.tbz2;rm -f /tmp/*.tar.tbz')
+    os.system('rm -rf /tmp/unzipped;rm -f /tmp/*.ipk;rm -f /tmp/*.tar;rm -f /tmp/*.zip;rm -f /tmp/*.tar.gz;rm -f /tmp/*.tar.bz2;rm -f /tmp/*.tar.tbz2;rm -f /tmp/*.tar.tbz;rm -f /tmp/*.m3u')
     return
 
 def del_jpg():

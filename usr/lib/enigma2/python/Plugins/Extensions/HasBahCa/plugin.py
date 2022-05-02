@@ -5,7 +5,7 @@
 ****************************************
 *        coded by Lululla              *
 *             skin by MMark            *
-*             24/04/2022               *
+*             01/05/2022               *
 *   Thank's                            *
 *      HasBahCa, Levi45, KiddaC, Pcd   *
 ****************************************
@@ -50,6 +50,7 @@ from enigma import gFont
 from enigma import iServiceInformation
 from enigma import loadPNG
 # import base64
+from time import sleep
 import glob
 import os
 import re
@@ -57,10 +58,7 @@ import six
 import ssl
 import sys
 
-try:
-    from Plugins.Extensions.HasBahCa.Utils import *
-except:
-    from . import Utils
+from . import Utils
 
 global pngs
 global downloadhasba
@@ -133,14 +131,14 @@ hostcategoryes = 'https://github.com/HasBahCa/IPTV-LIST/'
 hostcategory = 'https://github.com/HasBahCa/IPTV-LIST'
 github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
 
-tyurl = 'http://hasbahca.net/hasbahca_m3u/'
+tyurl = 'https://hasbahca.net/hasbahca_m3u/'
 enigma_path = '/etc/enigma2'
 
-if isFHD():
+if Utils.isFHD():
     path_skin = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/skins/fhd/".format('HasBahCa'))
 else:
     path_skin = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/skins/hd/".format('HasBahCa'))
-if DreamOS():
+if Utils.DreamOS():
     path_skin = path_skin + 'dreamOs/'
 print('HasBahCa path_skin: ', path_skin)
 
@@ -148,20 +146,22 @@ print('HasBahCa path_skin: ', path_skin)
 
 def downloadFile(url, target):
     try:
-        response = ReadUrl(url)
+        # response = Utils.checkStr(urlopen(url, None, 5))
+        response = Utils.ReadUrl(url)
         print('response: ', response)
-        # response = urlopen(url, timeout=5)        
         with open(target, 'w') as output:
             output.write(response) #.read())
+        response.close()
         return True
     except Exception as e:
-        print("downloadFile error ", str(e))
+        print("error download %s", str(e))
         return False
+
 
 class hasList(MenuList):
     def __init__(self, list):
         MenuList.__init__(self, list, True, eListboxPythonMultiContent)
-        if isFHD():
+        if Utils.isFHD():
             self.l.setItemHeight(60)
             textfont = int(34)
             self.l.setFont(0, gFont('Regular', textfont))
@@ -176,6 +176,10 @@ def hasbaSetListEntry(name):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/radio.png".format('HasBahCa'))
     elif 'radyo' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/radio.png".format('HasBahCa'))
+    elif 'adult' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/xxx.png".format('HasBahCa'))
+    elif 'xxx' in name.lower():
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/xxx.png".format('HasBahCa'))        
     elif 'webcam' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/webcam.png".format('HasBahCa'))
     elif 'music' in name.lower():
@@ -249,7 +253,7 @@ def hasbaSetListEntry(name):
     else:
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 
-    if isFHD():
+    if Utils.isFHD():
         res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 10), size=(50, 40), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(90, 0), size=(1200, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     else:
@@ -297,12 +301,11 @@ class MainHasBahCa(Screen):
             'red': self.closerm,
             'cancel': self.closerm}, -1)
         self.timer = eTimer()
-        if DreamOS():
+        if Utils.DreamOS():
             self.timer_conn = self.timer.timeout.connect(self.updateMenuList)
         else:
             self.timer.callback.append(self.updateMenuList)
         self.timer.start(1500, True)
-        
         # self.onFirstExecBegin.append(self.updateMenuList)
         self.onLayoutFinish.append(self.__layoutFinished)
 
@@ -310,7 +313,7 @@ class MainHasBahCa(Screen):
         self.setTitle(self.setup_title)
 
     def closerm(self):
-        deletetmp()
+        Utils.deletetmp()
         self.close()
 
 
@@ -321,7 +324,7 @@ class MainHasBahCa(Screen):
         items = []
         urls = tyurl
         try:
-            content = getUrl(urls)
+            content = Utils.getUrl(urls)
             if six.PY3:
                 content = six.ensure_str(content)
             content = content.replace('..&gt;','')
@@ -348,8 +351,8 @@ class MainHasBahCa(Screen):
             # for item in items:
                 # name = item.split("###")[0]
                 # url = item.split("###")[1]
-                self.names.append(name)
-                self.urls.append(url)
+                self.urls.append(Utils.checkStr(url.strip()))
+                self.names.append(Utils.checkStr(name.strip()))
                 idx += 1
                 
             self.names.append('ALL CATEGORY')
@@ -362,7 +365,6 @@ class MainHasBahCa(Screen):
             showlisthasba(self.names, self['text'])
         except Exception as e:
             print('error HasBahCa1', str(e))
-
 
     def okRun(self):
         i = len(self.names)
@@ -421,7 +423,7 @@ class HasBahCaC(Screen):
             # 'back': self.close(),
             'cancel': self.close}, -2)
         self.timer = eTimer()
-        if DreamOS():
+        if Utils.DreamOS():
             self.timer_conn = self.timer.timeout.connect(self._gotPageLoad)
         else:
             self.timer.callback.append(self._gotPageLoad)
@@ -437,9 +439,9 @@ class HasBahCaC(Screen):
         url = self.url
         items = []
         try:
-            content = getUrl(url)
-            # if six.PY3:
-                # content =six.ensure_str(content)
+            content = Utils.getUrl(url)
+            if six.PY3:
+                content =six.ensure_str(content)
             print("HasBahCa t content =", content)
             print('urlll content: ', url)
             n1 = content.find('js-details-container Details">', 0)
@@ -462,20 +464,19 @@ class HasBahCaC(Screen):
                 # date = date.replace(',', '')
                 name1 = name.replace('HasBahCa', '°')
                 name1 = name1.replace('-', ' ').replace('_', ' ')
-                name = decodeHtml(name1)
+                name = Utils.decodeHtml(name1)
                 # name = name1 + ' | ' + date
                 # print("******** name 1 ******* %s" % name)
                 # print("HasBahCa t name =", name)
                 # print("HasBahCa t url1 =", url1)
                 item = name + "###" + url1
-                # print('HasBahCa Items sort: ', item)
                 items.append(item)
             items.sort()
             for item in items:
                 name = item.split('###')[0]
                 url2 = item.split('###')[1]
-                self.names.append(name)
-                self.urls.append(url2)
+                self.urls.append(Utils.checkStr(url2.strip()))
+                self.names.append(Utils.checkStr(name.strip()))
             self["live"].setText('N.' + str(len(self.names)) + " CATEGORY")
             self['info'].setText(_('Please now select ...'))
             self['key_green'].show()
@@ -483,9 +484,8 @@ class HasBahCaC(Screen):
         except Exception as e:
             print('error ', str(e))
         print('-------------HasBahCa-------------')
-        MemClean()
+        Utils.MemClean()
         print('-------------memclean-------------')
-        # self.onLayoutFinish.append(self.__layoutFinished)
 
     def okRun(self):
         idx = self["text"].getSelectionIndex()
@@ -529,7 +529,7 @@ class HasBahCa1(Screen):
             'blue': self.msgdeleteBouquets,
             'cancel': self.close}, -2)
         self.timer = eTimer()
-        if DreamOS():
+        if Utils.DreamOS():
             self.timer_conn = self.timer.timeout.connect(self._gotPageLoad)
         else:
             self.timer.callback.append(self._gotPageLoad)
@@ -546,22 +546,14 @@ class HasBahCa1(Screen):
         self.urls = []
         items = []
         try:
-            content = getUrl(url)
+            content = Utils.getUrl(url)
             if six.PY3:
                 content = six.ensure_str(content)
             content = content.replace('$BorpasFileFormat="1"','')
             regexvideo = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
-            # regexvideo = 'EXTINF.*?group-title="(.*?)".*?,(.*?)\\n(.*?)\\n'
-            # regexvideo = '#EXTINF.*?,(.*?)\\n(.+)'
             match = re.compile(regexvideo, re.DOTALL).findall(content)
             for name, url in match:
-            # for group, name, url in match:
-                # name = name.replace('_', ' ').replace('-', ' ')
-                # name1 = group + ' | ' + name
                 name1 = name.replace('_', ' ').replace('-', ' ')
-                # name = get_safe_filename(name1)                
-                # name = decodeHtml(name1)
-                # name = checkStr(name1)
                 item = name + "###" + url
                 print('Items sort: ', item)
                 items.append(item)
@@ -569,15 +561,15 @@ class HasBahCa1(Screen):
             for item in items:
                 name = item.split('###')[0]
                 url = item.split('###')[1]
-                self.names.append(name)
-                self.urls.append(url)
+                self.urls.append(Utils.checkStr(url.strip()))
+                self.names.append(Utils.checkStr(name.strip()))
             self["live"].setText('N.' + str(len(self.names)) + " STREAM")
             self['info'].setText(_('Please now select ...'))
             self['key_green'].show()
             self['key_yellow'].show()
             self['key_blue'].show()
             showlisthasba(self.names, self['text'])
-            MemClean()
+            Utils.MemClean()
         except Exception as e:
             print('error HasBahCa', str(e))
 
@@ -592,7 +584,11 @@ class HasBahCa1(Screen):
         self.session.open(Playgo, name, url)
 
     def convert(self):
-        self.session.openWithCallback(self.convert2, MessageBox, _("Do you want to Convert %s to Favorite Bouquet ?\n\nAttention!! Wait while converting !!!") % self.name, MessageBox.TYPE_YESNO, timeout=5, default=True)
+        i = len(self.names)
+        print('iiiiii= ',i)
+        if i < 1:
+            return      
+        self.session.openWithCallback(self.convert2, MessageBox, _("Do you want to Convert %s\nto Favorite Bouquet ?\n\nAttention!! Wait while converting !!!") % self.name, MessageBox.TYPE_YESNO, timeout=5, default=True)
 
     def convert2(self, result):
         if result:
@@ -617,13 +613,29 @@ class HasBahCa1(Screen):
             tmplist.append('#DESCRIPTION --- %s ---' % name_file)
             print("Converting Bouquet %s" % name_file)
             # self.file = "/tmp/%s.m3u" % name_file.lower()  #use downloadhasba
-            self.file = "/tmp/tempm3u.m3u" # % name_file.lower()  #use downloadhasba            
-            # try:
-            downloadFile(self.url, self.file)
-            # except Exceptions as e:
-                # print('Error download self m3u: ', str(e))
-                # # self.download_m3u()
-                
+            self.file = "/tmp/tempm3u.m3u"
+
+            if os.path.isfile(self.file):
+                os.remove(self.file)
+            print('path tmp : ', self.file)
+            # if PY3:
+                # self.url = six.ensure_str(self.url)
+            # print('urlmm33uu ', self.url)            
+            # # if PY3:
+                # # self.url.encode()
+            # # print('url m3u : ', self.url)
+            # downloadFile(self.url,self.file)
+            # sleep(8)
+
+            urlm3u = Utils.checkStr(self.url.strip())
+            if PY3:
+                urlm3u.encode()
+            print('urlmm33uu ', urlm3u)
+            print('in tmp' , self.file)
+            downloadFile(urlm3u, self.file)
+            sleep(3)
+            # Utils.downloadFile(self.url, self.file)
+               
             '''
             # self.download_m3u()
             # os.system('sleep 3')
@@ -631,7 +643,7 @@ class HasBahCa1(Screen):
 
             '''
             # with open(file, 'wb') as f:
-                # content = getUrl(self.url)
+                # content = Utils.getUrl(self.url)
                 # if six.PY3:
                     # content = six.ensure_str(content)
                 # print('Resp 1: ', content)
@@ -641,8 +653,8 @@ class HasBahCa1(Screen):
             # # self.download_m3u()
             # print('Error download : ', str(e))
             '''
-            if os.path.isfile(self.file) and os.stat(self.file).st_size > 0:
 
+            if os.path.isfile(self.file) and os.stat(self.file).st_size > 0:
                 for line in open(self.file):
                     if line.startswith('#EXTM3U'):
                         continue
@@ -659,7 +671,6 @@ class HasBahCa1(Screen):
                         namel = '%s' % line.split(',')[-1]
                         self.namel = namel.rstrip()
                         self.tmpx = '#DESCRIPTION %s\r' % line
-
                     else:
                         if self.type.upper() == 'TV':
                             line = line.replace(':', '%3a')
@@ -689,37 +700,6 @@ class HasBahCa1(Screen):
                         else:
                             print("UNKNOWN TYPE: %s" % self.type)
 
-                """
-                in_bouquets = 0
-                f = open('/etc/enigma2/' + bouquetname, 'w')
-                for item in tmplist:
-                    f.write("%s\n" % item)
-                f.close()
-                # write bouquet file
-                self.mbox = self.session.open(MessageBox, _('Check out the favorites list ...'), MessageBox.TYPE_INFO, timeout=5)
-                if os.path.isfile('/etc/enigma2/bouquets.tv'):
-                    # check if bouquet exists in bouquet file
-                    for line in open('/etc/enigma2/bouquets.%s' % self.type.lower()):
-                        if bouquetname in line:
-                            in_bouquets = 1
-                    if in_bouquets == 0:
-                        path1 = 'etc/enigma2/' + str(bouquetname)
-                        path2 = '/etc/enigma2/bouquets.' + str(self.type.lower())
-                        path3 = '/etc/enigma2/bouquets.' + str(self.type.lower() + '.bak')
-                        if os.path.isfile(path1) and os.path.isfile(path2):
-                            remove_line(path2, bouquetname)
-                        os.rename(path2, path3)
-                        tvfile = open(path2, 'w+')
-                        bakfile = open(path3)
-                        for line in bakfile:
-                            tvfile.write(line)
-                        tvfile.write('#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "%s" ORDER BY bouquet\r\n' % bouquetname)
-                        bakfile.close()
-                        tvfile.close()
-                        in_bouquets = 1
-                self.mbox = self.session.open(MessageBox, _('Shuffle Favorite List in Progress') + '\n' + _('Wait please ...'), MessageBox.TYPE_INFO, timeout=5)
-                ReloadBouquets()
-                """
                 path1 = '/etc/enigma2/' + str(bouquetname)
                 path2 = '/etc/enigma2/bouquets.' + str(self.type.lower())
                 # create userbouquet
@@ -740,9 +720,10 @@ class HasBahCa1(Screen):
                         bouquetTvString = '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "' + str(bouquetname) + '" ORDER BY bouquet\n'
                         f.write(str(bouquetTvString))
                     self.mbox = self.session.open(MessageBox, _('Shuffle Favorite List in Progress') + '\n' + _('Wait please ...'), MessageBox.TYPE_INFO, timeout=5)
-                ReloadBouquets()
+                Utils.ReloadBouquets()
             else:
                 self.mbox = self.session.open(MessageBox, _('Download Error'), MessageBox.TYPE_INFO, timeout=5)
+
 
     '''add for future'''
     def download_m3u(self):
@@ -779,7 +760,6 @@ class HasBahCa1(Screen):
         Clean up routine to remove any previously made changes
         """
         if result:
-
             try:
                 for fname in os.listdir(enigma_path):
                     if 'userbouquet.hbc_' in fname:
@@ -803,11 +783,10 @@ class HasBahCa1(Screen):
                 bakfile.close()
                 tvfile.close()
                 self.mbox = self.session.open(MessageBox, _('HasBahCa Favorites List have been removed'), MessageBox.TYPE_INFO, timeout=5)
-                ReloadBouquets()
+                Utils.ReloadBouquets()
             except Exception as ex:
                 print(str(ex))
                 raise
-
 
 class TvInfoBarShowHide():
     """ InfoBar show/hide control, accepts toggleShow and hide actions, might start
@@ -922,7 +901,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         self.service = None
         self.url = url
         print("******** name 3 ******* %s" % name)
-        self.name = decodeHtml(name)
+        self.name = Utils.decodeHtml(name)
         self.state = self.STATE_PLAYING
         self.srefInit = self.session.nav.getCurrentlyPlayingServiceReference()
         InfoBarBase.__init__(self, steal_current_service=True)
@@ -1035,12 +1014,12 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         if os.path.exists(TMDB):
             from Plugins.Extensions.TMBD.plugin import TMBD
             text_clear = self.name
-            text = charRemove(text_clear)
+            text = Utils.charRemove(text_clear)
             self.session.open(TMBD, text, False)
         elif os.path.exists(IMDb):
             from Plugins.Extensions.IMDb.plugin import IMDB
             text_clear = self.name
-            text = charRemove(text_clear)
+            text = Utils.charRemove(text_clear)
             self.session.open(IMDB, text)
         else:
             text_clear = self.name
@@ -1085,7 +1064,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         # # if "youtube" in str(self.url):
             # # self.mbox = self.session.open(MessageBox, _('For Stream Youtube coming soon!'), MessageBox.TYPE_INFO, timeout=5)
             # # return
-        # if isStreamlinkAvailable():
+        # if Utils.isStreamlinkAvailable():
             # streamtypelist.append("5002") #ref = '5002:0:1:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/' + url
             # streaml = True
         # if os.path.exists("/usr/bin/gstplayer"):
@@ -1142,15 +1121,9 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
     def leavePlayer(self):
         self.close()
 
-def checks():
-    from . import Utils
-    chekin = False
-    if Utils.checkInternet():
-        chekin = True
-    return chekin
-
 def main(session, **kwargs):
-    if checks:
+    from . import Utils
+    if Utils.checkInternet():
         try:
             from . import Update 
             Update.upd_done()
