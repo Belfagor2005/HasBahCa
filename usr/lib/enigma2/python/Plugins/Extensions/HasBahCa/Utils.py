@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 #01.05.2021
 #a common tips used from Lululla
@@ -32,6 +33,19 @@ else:
     from urllib2 import urlopen
     from urllib2 import Request
     from urllib2 import HTTPError, URLError
+
+if sys.version_info >= (2, 7, 9):
+    try:
+        import ssl
+        sslContext = ssl._create_unverified_context()
+    except:
+        sslContext = None
+        
+def ssl_urlopen(url):
+    if sslContext:
+        return urlopen(url, context=sslContext)
+    else:
+        return urlopen(url)
 
 def getDesktopSize():
     from enigma import getDesktop
@@ -175,7 +189,8 @@ def downloadFile(url, target):
     try:
         response = urlopen(url, None, 5)
         with open(target, 'w') as output:
-            output.write(response)#.read())
+            print('response: ', response)
+            output.write(response.read())
         response.close()
         return True
     except HTTPError:
@@ -188,15 +203,24 @@ def downloadFile(url, target):
         print("sochet error")
         return False
         
-# def downloadFile(url, target):
-    # try:
-        # response = urlopen(url)
-        # with open(target, 'wb') as output:
-            # output.write(response.read())
-        # return True
-    # except:
-        # print("download error")
-        # return False
+def downloadFilest(url, target):
+    try:
+        req=Request(url)
+        req.add_header('User-Agent','Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
+        # context=ssl._create_unverified_context()
+        response=ssl_urlopen(req)
+        with open(target, 'w') as output:
+            if PY3:
+                output.write(response.read().decode('utf-8'))            
+            else:
+                output.write(response.read())
+            print('response: ', response)
+        return True
+    except HTTPError as e:
+        print('HTTP Error code: ',e.code)
+    except URLError as e:
+        print('URL Error: ',e.reason)
+        
 def getserviceinfo(sref):## this def returns the current playing service name and stream_url from give sref
     try:
         from ServiceReference import ServiceReference
@@ -542,17 +566,8 @@ def isStreamlinkAvailable():
 
 #========================getUrl
 
-# if sys.version_info >= (2, 7, 9):
-    # try:
-        # import ssl
-        # sslContext = ssl._create_unverified_context()
-    # except:
-        # sslContext = None
-# def ssl_urlopen(url):
-    # if sslContext:
-        # return urlopen(url, context=sslContext)
-    # else:
-        # return urlopen(url)
+
+
 def AdultUrl(url):
         if sys.version_info.major == 3:
              import urllib.request as urllib2

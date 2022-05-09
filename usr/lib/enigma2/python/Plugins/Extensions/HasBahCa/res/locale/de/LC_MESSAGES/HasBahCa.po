@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HasBahCa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-25 19:48+0100\n"
+"POT-Creation-Date: 2022-05-09 20:11+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ))^^(( <>\n"
 "Language-Team: *\n"
@@ -15,62 +15,81 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Basepath: ../../../..\n"
 "X-Poedit-SearchPath-0: plugin.py\n"
+"X-Poedit-SearchPath-1: main.py\n"
 
-#: plugin.py:360 plugin.py:823 plugin.py:926
-msgid "Loading data... Please wait"
-msgstr "Daten werden geladen... Bitte warten"
+#: main.py:284
+msgid "Give me a few seconds ... loading the data"
+msgstr "Geben Sie mir ein paar Sekunden ... Laden der Daten"
 
-#: plugin.py:361
+#: main.py:285
 msgid "Exit"
 msgstr "Exit"
 
-#: plugin.py:362 plugin.py:825 plugin.py:928
+#: main.py:286 main.py:444 main.py:550
 msgid "Select"
 msgstr "Wählen"
 
-#: plugin.py:402 plugin.py:896 plugin.py:987
-msgid "Please select ..."
-msgstr "Bitte auswählen ..."
+#: main.py:288
+msgid "Remove"
+msgstr "Entfernen"
 
-#: plugin.py:824 plugin.py:927
-msgid "Back"
-msgstr "Zurück"
+#: main.py:362 main.py:518 main.py:604
+msgid "Please now select ..."
+msgstr "Bitte wählen Sie jetzt ..."
 
-#: plugin.py:1003
-#, python-format
-msgid ""
-"Do you want to Convert %s to Favorite Bouquet ?\n"
-"\n"
-"Attention!! Wait while converting !!!"
-msgstr ""
-"Möchten Sie %s in einen Favoriten Bouquet umwandeln?\n"
-"\n"
-"Achtung!! Warten Sie beim Konvertieren !!!"
-
-#: plugin.py:1147
-msgid "Shuffle Favorite List in Progress"
-msgstr "Einrichtung der Favoritenliste läuft"
-
-#: plugin.py:1147
-msgid "Wait please ..."
-msgstr "Bitte Warten ..."
-
-#: plugin.py:1150
-msgid "Download Error"
-msgstr "Download Fehler"
-
-#: plugin.py:1159 plugin.py:1175
-msgid "Download Failed!!!"
-msgstr "Herunterladen fehlgeschlagen!!!"
-
-#: plugin.py:1180
+#: main.py:394 main.py:777
 msgid "Remove all HasBahCa Favorite Bouquet ?"
 msgstr "Alle HasBahCa-Favoriten Bouquets entfernen?"
 
-#: plugin.py:1210
+#: main.py:423 main.py:806
 msgid "HasBahCa Favorites List have been removed"
 msgstr "Die HasBahCa-Favoritenliste wurde entfernt"
 
-#: plugin.py:1573
-msgid "HasBahCa  IPTV"
+#: main.py:442 main.py:548
+msgid "Loading data... Please wait"
+msgstr "Daten werden geladen... Bitte warten"
+
+#: main.py:443 main.py:549
+msgid "Back"
+msgstr "Zurück"
+
+#: main.py:628
+#, python-format
+msgid ""
+"Do you want to Convert %s\n"
+"to Favorite Bouquet ?\n"
+"\n"
+"Attention!! Wait while converting !!!"
 msgstr ""
+"Möchten Sie %s konvertieren\n"
+"zum Lieblingsblumenstrauß ?\n"
+"\n"
+"Beachtung!! Warten Sie beim Konvertieren !!!"
+
+#: main.py:745
+msgid "Shuffle Favorite List in Progress"
+msgstr "Einrichtung der Favoritenliste läuft"
+
+#: main.py:745
+msgid "Wait please ..."
+msgstr "Bitte Warten ..."
+
+#: main.py:748
+msgid "Download Error"
+msgstr "Download Fehler"
+
+#: main.py:757 main.py:773
+msgid "Download Failed!!!"
+msgstr "Herunterladen fehlgeschlagen!!!"
+
+#~ msgid "Please select ..."
+#~ msgstr "Bitte auswählen ..."
+
+#~ msgid ""
+#~ "Do you want to Convert %s to Favorite Bouquet ?\n"
+#~ "\n"
+#~ "Attention!! Wait while converting !!!"
+#~ msgstr ""
+#~ "Möchten Sie %s in einen Favoriten Bouquet umwandeln?\n"
+#~ "\n"
+#~ "Achtung!! Warten Sie beim Konvertieren !!!"
