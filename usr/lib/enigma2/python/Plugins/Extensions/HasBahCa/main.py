@@ -5,13 +5,14 @@
 ****************************************
 *        coded by Lululla              *
 *             skin by MMark            *
-*             01/05/2022               *
+*             09/05/2022               *
 *   Thank's                            *
 *      HasBahCa, Levi45, KiddaC, Pcd   *
 ****************************************
 '''
 from __future__ import print_function
 from . import _
+from . import Utils
 from Components.AVSwitch import AVSwitch
 from Components.ActionMap import ActionMap
 from Components.Button import Button
@@ -56,8 +57,6 @@ import re
 import six
 import ssl
 import sys
-from . import Utils
-
 global downloadhasba
 global path_skin
 downloadhasba = None
@@ -134,11 +133,6 @@ if sslverify:
             if self.hostname:
                 ClientTLSOptions(self.hostname, ctx)
             return ctx
-
-
-
-
-
 
 
 #config base plugin
@@ -317,7 +311,7 @@ class MainHasBahCa(Screen):
         Utils.deletetmp()
         self.close()
 
-#<tr><td valign="top">&nbsp;</td><td><a href="ALBANIA_BOSNIA_KOSOVO.m3u">ALBANIA_BOSNIA_KOSOV..&gt;</a></td><td align="right">2022-03-06 06:08  </td><td align="right">3.8K</td><td>&nbsp;</td></tr>
+    #<tr><td valign="top">&nbsp;</td><td><a href="ALBANIA_BOSNIA_KOSOVO.m3u">ALBANIA_BOSNIA_KOSOV..&gt;</a></td><td align="right">2022-03-06 06:08  </td><td align="right">3.8K</td><td>&nbsp;</td></tr>
     def updateMenuList(self):
         self.names = []
         self.urls = []

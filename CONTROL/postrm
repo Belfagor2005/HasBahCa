@@ -1,0 +1,16 @@
+#!/bin/sh
+echo
+echo "--- PostRemove * IPK Scripting v1.0 - date 10.08.2021 ---"
+echo
+echo "A shell script which is executed after uninstallation of the package:"
+echo
+echo "Name: HasBahCa"
+echo
+echo "uninstall HasBahCa ..."
+if [ -d /usr/lib/enigma2/python/Plugins/Extensions/HasBahCa ]
+then
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/HasBahCa > /dev/null 2>&1
+echo "Plugin Successfully Removed."
+fi
+echo
+exit 0

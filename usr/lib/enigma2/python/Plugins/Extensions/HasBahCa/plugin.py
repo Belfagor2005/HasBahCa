@@ -17,7 +17,7 @@ from . import main
 from . import Utils
 import os
 
-currversion = '1.4'
+currversion = '1.5'
 title_plug = 'HasBahCa '
 desc_plugin = ('..:: HasBahCa by Lululla %s ::.. ' % currversion)
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
@@ -50,9 +50,9 @@ def Plugins(**kwargs):
     ico_path = 'logo.png'
     if not os.path.exists('/var/lib/dpkg/status'):
         ico_path = plugin_path + '/res/pics/logo.png'
-    extensions_menu = PluginDescriptor(name="{} {}".format(title_plug, currversion), description=desc_plugin, where=PluginDescriptor.WHERE_EXTENSIONSMENU, fnc=main, needsRestart=True)
+    # extensions_menu = PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=PluginDescriptor.WHERE_EXTENSIONSMENU, fnc=mainw, needsRestart=True)
     result = [PluginDescriptor(name="{} {}".format(title_plug, currversion), description=desc_plugin, where=PluginDescriptor.WHERE_PLUGINMENU, icon=ico_path, fnc=mainw)]
-    result.append(extensions_menu)
+    # result.append(extensions_menu)
     return result
 
 
