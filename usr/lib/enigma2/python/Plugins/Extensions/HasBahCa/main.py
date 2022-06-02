@@ -478,8 +478,16 @@ class HasBahCaC(Screen):
             n1 = content.find('js-details-container Details">', 0)
             n2 = content.find('<div class="Details-content--shown Box-footer', n1)
             content2 = content[n1:n2]
-            regexvideo = 'title="(.*?).m3u.*?href="/HasBahCa/IPTV-LIST/blob/main/(.*?).m3u">.*?</a></span.*?</div>'
+            regexvideo = 'title="HasBahCa_(.*?).m3u.*?href="/HasBahCa/IPTV-LIST/blob/main/(.*?).m3u">.*?</a></span.*?</div>'
             # regexvideo = 'title="(.*?).m3u.*?href="/HasBahCa/m3u_Links/blob/main/(.*?).m3u">.*?wrap">(.*?)</time'
+            
+            
+            # n1 = content.find('js-details-container Details">', 0)
+            # n2 = content.find('<div class="Details-content--shown Box-footer', n1)
+            # content2 = content[n1:n2]
+            # regexvideo = 'title="(.*?).m3u.*?href="/HasBahCa/IPTV-LIST/blob/main/(.*?).m3u">.*?</a></span.*?</div>'
+            # # regexvideo = 'title="(.*?).m3u.*?href="/HasBahCa/m3u_Links/blob/main/(.*?).m3u">.*?wrap">(.*?)</time'            
+            
             match = re.compile(regexvideo, re.DOTALL).findall(content2)
             print('match:  ', match)
             # print("HasBahCa t match =", match)
