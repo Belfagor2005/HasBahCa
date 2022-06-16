@@ -349,9 +349,9 @@ class MainHasBahCa(Screen):
                 self.names.append(Utils.checkStr(name.strip()))
                 idx += 1
 
-            self.names.append('ALL CATEGORY')
-            self.urls.append(hostcategoryes)
-            idx += 1
+            # self.names.append('ALL CATEGORY')
+            # self.urls.append(hostcategoryes)
+            # idx += 1
 
             self['info'].setText(_('Please now select ...'))
             self["live"].setText('N.' + str(idx) + " CATEGORY")
