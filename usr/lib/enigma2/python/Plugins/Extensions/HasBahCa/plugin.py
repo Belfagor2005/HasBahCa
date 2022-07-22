@@ -3,11 +3,11 @@
 
 '''
 ****************************************
-*        coded by Lululla              *
-*             skin by MMark            *
-*             09/05/2022               *
-*   Thank's                            *
-*      HasBahCa, Levi45, KiddaC, Pcd   *
+*		 coded by Lululla			   *
+*			  skin by MMark			   *
+*			  09/05/2022			   *
+*	Thank's							   *
+*	   HasBahCa, Levi45, KiddaC, Pcd   *
 ****************************************
 '''
 from __future__ import absolute_import
@@ -24,52 +24,52 @@ desc_plugin = ('..:: HasBahCa by Lululla %s ::.. ' % currversion)
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
 
 def intCheck():
-    import socket
-    try:
-        socket.setdefaulttimeout(1)
-        socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(("8.8.8.8", 53))
-        return True
-    except:
-        return False
+	import socket
+	try:
+		socket.setdefaulttimeout(1)
+		socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(("8.8.8.8", 53))
+		return True
+	except:
+		return False
 
 try:
-    if intCheck():
-            from . import Update
-            Update.upd_done()
-    else:
-        from Screens.MessageBox import MessageBox
-        from Tools.Notifications import AddPopup
-        AddPopup(_("Sorry but No Internet :("),MessageBox.TYPE_INFO, 10, 'Sorry')            
+	if intCheck():
+			from . import Update
+			Update.upd_done()
+	else:
+		from Screens.MessageBox import MessageBox
+		from Tools.Notifications import AddPopup
+		AddPopup(_("Sorry but No Internet :("),MessageBox.TYPE_INFO, 10, 'Sorry')
 
 except:
-    import traceback
-    traceback.print_exc()
-    
+	import traceback
+	traceback.print_exc()
+
 # if Utils.checkInternet():
-    # try:
-        # from . import Update 
-        # Update.upd_done()
-    # except:
-        # pass
+	# try:
+		# from . import Update
+		# Update.upd_done()
+	# except:
+		# pass
 # else:
-    # Utils.web_info("No Internet")
+	# Utils.web_info("No Internet")
 def mainw(session, **kwargs):
-    try:
-        from six.moves import reload_module
-        reload_module(Utils)
-        reload_module(main)        
-        session.open(main.MainHasBahCa)
-    except:
-        import traceback
-        traceback.print_exc()
+	try:
+		from six.moves import reload_module
+		reload_module(Utils)
+		reload_module(main)
+		session.open(main.MainHasBahCa)
+	except:
+		import traceback
+		traceback.print_exc()
 
 def Plugins(**kwargs):
-    ico_path = 'logo.png'
-    if not os.path.exists('/var/lib/dpkg/status'):
-        ico_path = plugin_path + '/res/pics/logo.png'
-    # extensions_menu = PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=PluginDescriptor.WHERE_EXTENSIONSMENU, fnc=mainw, needsRestart=True)
-    result = [PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=PluginDescriptor.WHERE_PLUGINMENU, icon=ico_path, fnc=mainw)]
-    # result.append(extensions_menu)
-    return result
+	ico_path = 'logo.png'
+	if not os.path.exists('/var/lib/dpkg/status'):
+		ico_path = plugin_path + '/res/pics/logo.png'
+	# extensions_menu = PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=PluginDescriptor.WHERE_EXTENSIONSMENU, fnc=mainw, needsRestart=True)
+	result = [PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=PluginDescriptor.WHERE_PLUGINMENU, icon=ico_path, fnc=mainw)]
+	# result.append(extensions_menu)
+	return result
 
 
