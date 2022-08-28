@@ -11,7 +11,7 @@
 ****************************************
 '''
 from __future__ import print_function
-from . import _
+from .__init__ import _
 from . import Utils
 from Components.AVSwitch import AVSwitch
 from Components.ActionMap import ActionMap
