@@ -150,8 +150,6 @@ if Utils.DreamOS():
 	path_skin = path_skin + 'dreamOs/'
 print('HasBahCa path_skin: ', path_skin)
 
-
-
 class hasList(MenuList):
 	def __init__(self, list):
 		MenuList.__init__(self, list, True, eListboxPythonMultiContent)

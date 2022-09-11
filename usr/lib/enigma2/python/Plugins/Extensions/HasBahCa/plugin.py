@@ -24,17 +24,17 @@ desc_plugin = ('..:: HasBahCa by Lululla %s ::.. ' % currversion)
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
 
 try:
-        if Utils.zCheckInternet(0):
-                from . import Update
-                Update.upd_done()
-        else:
-                from Screens.MessageBox import MessageBox
-                from Tools.Notifications import AddPopup
-                AddPopup(_("Sorry but No Internet :("),MessageBox.TYPE_INFO, 10, 'Sorry')
+    if Utils.zCheckInternet(1):
+            from . import Update
+            Update.upd_done()
+    else:
+            from Screens.MessageBox import MessageBox
+            from Tools.Notifications import AddPopup
+            AddPopup(_("Sorry but No Internet :("),MessageBox.TYPE_INFO, 10, 'Sorry')
 
 except:
-        import traceback
-        traceback.print_exc()
+    import traceback
+    traceback.print_exc()
 
 def mainw(session, **kwargs):
 	try:
