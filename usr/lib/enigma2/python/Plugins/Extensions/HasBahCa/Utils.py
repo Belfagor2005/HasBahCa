@@ -1,7 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-#01.06.20212
-#a common tips used from Lululla
+
+# 01.06.20212
+# a common tips used from Lululla
 #
 import sys
 import datetime
@@ -119,7 +120,6 @@ def remove_line(filename, what):
                 file_write.write(line)
         file_write.close()
         
-#from kiddac plugin
 def badcar(name):
     name = name
     bad_chars = ["sd", "hd", "fhd", "uhd", "4k", "1080p", "720p", "blueray", "x264", "aac", "ozlem", "hindi", "hdrip", "(cache)", "(kids)", "[3d-en]", "[iran-dubbed]", "imdb", "top250", "multi-audio",
@@ -150,24 +150,24 @@ def badcar(name):
 
 
 def cleanTitle(x):
-	x = x.replace('~','')
-	x = x.replace('#','')
-	x = x.replace('%','')
-	x = x.replace('&','')
-	x = x.replace('*','')
-	x = x.replace('{','')
-	x = x.replace('}','')
-	x = x.replace(':','')
-	x = x.replace('<','')
-	x = x.replace('>','')
-	x = x.replace('?','')
-	x = x.replace('/','')
-	x = x.replace('+','')
-	x = x.replace('|','')
-	x = x.replace('"','')
-	x = x.replace('\\','')
-	x = x.replace('--','-')
-	return x 
+    x = x.replace('~','')
+    x = x.replace('#','')
+    x = x.replace('%','')
+    x = x.replace('&','')
+    x = x.replace('*','')
+    x = x.replace('{','')
+    x = x.replace('}','')
+    x = x.replace(':','')
+    x = x.replace('<','')
+    x = x.replace('>','')
+    x = x.replace('?','')
+    x = x.replace('/','')
+    x = x.replace('+','')
+    x = x.replace('|','')
+    x = x.replace('"','')
+    x = x.replace('\\','')
+    x = x.replace('--','-')
+    return x 
 
 def getLanguage():
     try:
@@ -255,12 +255,12 @@ def zCheckInternet(opt=1,server=None,port=None): # opt=5 custom server and port.
          socket.setdefaulttimeout(0.5)         
          socket.socket(socket.AF_INET,socket.SOCK_STREAM).connect(srv)
          sock = True         
-         #print("[iSettingE2] - Internet OK")
+         # print("[iSettingE2] - Internet OK")
          CountConnOk = 0
          print(_("Status Internet: %s:%s -> OK" % (srv[0],srv[1])))
       except:
          sock = False
-         #print("[iSettingE2] - Internet KO")         
+         # print("[iSettingE2] - Internet KO")         
          print(_("Status Internet: %s:%s -> KO" % (srv[0],srv[1])))
          if CountConnOk == 0 and opt != 2 and opt != 3:
               CountConnOk = 1
@@ -309,13 +309,13 @@ def testWebConnection(host="www.google.com", port=80, timeout=3):
         return False
 
 def checkStr(text, encoding="utf8"):
-	if PY3 == False:
-		if isinstance(text, unicode):
-			return text.encode(encoding)
-		else:
-			return text
-	else:
-		return text
+    if PY3 == False:
+        if isinstance(text, unicode):
+            return text.encode(encoding)
+        else:
+            return text
+    else:
+        return text
         
 # def checkStr(txt):
     # # convert variable to type str both in Python 2 and 3
@@ -1217,8 +1217,8 @@ def stream2bouquet(url=None,name=None,bouquetname=None):
           bouquetname='XBMCAddons'
           fileName ="/etc/enigma2/userbouquet.%s.tv" % bouquetname
           out = '#SERVICE 4097:0:0:0:0:0:0:0:0:0:%s:%s\r\n' % (quote(url), quote(name))
-          #py3
-          #out = '#SERVICE 4097:0:0:0:0:0:0:0:0:0:%s:%s\r\n' % (urllib.parse.quote(url), urllib.parse.quote(name))
+          # py3
+          # out = '#SERVICE 4097:0:0:0:0:0:0:0:0:0:%s:%s\r\n' % (urllib.parse.quote(url), urllib.parse.quote(name))
           try:
               addstreamboq(bouquetname)
               if not os.path.exists(fileName):

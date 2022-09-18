@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import os, re, sys
 from twisted.web.client import downloadPage
 PY3 = sys.version_info.major >= 3
@@ -7,7 +10,6 @@ def upd_done():
     from twisted.web.client import downloadPage
     print( "In upd_done")
     xfile ='http://patbuweb.com/HasBahCa/HasBahCa.tar'
-    print('xfile: ', xfile)
     if PY3:
         xfile = b"http://patbuweb.com/HasBahCa/HasBahCa.tar"
         print("Update.py in PY3")
