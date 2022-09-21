@@ -16,7 +16,9 @@ from . import Utils
 from Components.AVSwitch import AVSwitch
 from Components.ActionMap import ActionMap
 from Components.Button import Button
-from Components.config import *
+# from Components.config import *
+from Components.config import config
+from Tools.Downloader import downloadWithProgress
 from Components.Label import Label
 from Components.MenuList import MenuList
 from Components.MultiContent import MultiContentEntryText, MultiContentEntryPixmapAlphaTest
@@ -28,7 +30,6 @@ from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
 from Components.Sources.List import List
 from Components.Sources.StaticText import StaticText
 # from Plugins.Plugin import PluginDescriptor
-from Screens.Console import Console
 from Screens.InfoBar import InfoBar
 from Screens.InfoBar import MoviePlayer
 from Components.ProgressBar import ProgressBar
@@ -40,8 +41,8 @@ from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Tools.Directories import SCOPE_PLUGINS, resolveFilename
 from enigma import *
-from enigma import RT_HALIGN_CENTER, RT_VALIGN_CENTER
-from enigma import RT_HALIGN_LEFT, RT_HALIGN_RIGHT
+from enigma import RT_VALIGN_CENTER
+from enigma import RT_HALIGN_LEFT
 from enigma import eListbox, eTimer
 from enigma import eListboxPythonMultiContent, eConsoleAppContainer
 # from enigma import eServiceCenter
@@ -51,7 +52,6 @@ from enigma import gFont
 from enigma import iServiceInformation
 from enigma import loadPNG
 from time import sleep
-import glob
 import os
 import re
 import six
@@ -64,20 +64,17 @@ downloadhasba = None
 PY3 = sys.version_info.major >= 3
 
 try:
-    from httplib import HTTPConnection, CannotSendRequest, BadStatusLine, HTTPException
+    from httplib import HTTPConnection, CannotSendRequest, HTTPException
     from urllib2 import urlopen, Request, URLError, HTTPError
-    from urlparse import urlparse
-    # from urllib import urlencode, parse_qs
     import httplib
     import six
 except:
-    from http.client import HTTPConnection, CannotSendRequest, BadStatusLine, HTTPException
+    from http.client import HTTPConnection, CannotSendRequest, HTTPException
     from urllib.error import URLError, HTTPError
     from urllib.request import urlopen, Request
-    from urllib.parse import urlparse
-    # from urllib.parse import parse_qs, urlencode
-    unicode = str; unichr = chr; long = int
-    from importlib import reload
+    unicode = str
+    unichr = chr
+    long = int
     PY3 = True
 
 try:
@@ -94,17 +91,19 @@ if sys.version_info >= (2, 7, 9):
     except:
         sslContext = None
 
+
 def ssl_urlopen(url):
     if sslContext:
         return urlopen(url, context=sslContext)
     else:
         return urlopen(url)
 
+
 def downloadFilest(url, target):
     try:
-        req=Request(url)
-        req.add_header('User-Agent','Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
-        response=ssl_urlopen(req)
+        req = Request(url)
+        req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
+        response = ssl_urlopen(req)
         with open(target, 'w') as output:
             if PY3:
                 output.write(response.read().decode('utf-8'))
@@ -113,9 +112,10 @@ def downloadFilest(url, target):
             print('response: ', response)
         return True
     except HTTPError as e:
-        print('HTTP Error code: ',e.code)
+        print('HTTP Error code: ', e.code)
     except URLError as e:
-        print('URL Error: ',e.reason)
+        print('URL Error: ', e.reason)
+
 
 try:
     from twisted.internet import ssl
@@ -149,6 +149,7 @@ if Utils.DreamOS():
     path_skin = path_skin + 'dreamOs/'
 print('HasBahCa path_skin: ', path_skin)
 
+
 class hasList(MenuList):
     def __init__(self, list):
         MenuList.__init__(self, list, True, eListboxPythonMultiContent)
@@ -160,6 +161,7 @@ class hasList(MenuList):
             self.l.setItemHeight(60)
             textfont = int(24)
             self.l.setFont(0, gFont('Regular', textfont))
+
 
 def hasbaSetListEntry(name):
     res = [name]
@@ -252,6 +254,7 @@ def hasbaSetListEntry(name):
         res.append(MultiContentEntryText(pos=(90, 0), size=(1000, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     return res
 
+
 def showlisthasba(data, list):
     icount = 0
     plist = []
@@ -260,6 +263,7 @@ def showlisthasba(data, list):
         plist.append(hasbaSetListEntry(name))
         icount = icount + 1
         list.setList(plist)
+
 
 class MainHasBahCa(Screen):
     def __init__(self, session):
@@ -318,14 +322,14 @@ class MainHasBahCa(Screen):
             content = Utils.getUrl(urls)
             if six.PY3:
                 content = six.ensure_str(content)
-            content = content.replace('..&gt;','')
+            content = content.replace('..&gt;', '')
             regexvideo = 'td><td><a href="(.*?)">(.*?).m3u.*?right">.*?</td></tr>'
             # regexvideo = 'td><a href="(.*?)">(.*?).m3u.*?right">(.*?)  </td>.*?'
-            match = re.compile(regexvideo,re.DOTALL).findall(content)
+            match = re.compile(regexvideo, re.DOTALL).findall(content)
             idx = 0
             # for url, name, date in match:
             for url, name in match:
-                print('url= ',url)
+                print('url= ', url)
                 # print('date= ',date)
                 if 'parent' in name.lower():
                     continue
@@ -333,7 +337,7 @@ class MainHasBahCa(Screen):
                     continue
                 elif '.txt' in name.lower():
                     continue
-                name = url.replace('..&gt;','').replace('_',' ').replace('.m3u','')
+                name = url.replace('..&gt;', '').replace('_', ' ').replace('.m3u', '')
                 # name = name #+ ' ' + date
                 url = urls + url
                 # item = name + "###" + url
@@ -360,7 +364,7 @@ class MainHasBahCa(Screen):
 
     def okRun(self):
         i = len(self.names)
-        print('iiiiii= ',i)
+        print('iiiiii= ', i)
         # if i < 1:
             # return
         idx = self["text"].getSelectionIndex()
@@ -382,7 +386,7 @@ class MainHasBahCa(Screen):
             print('url HasBahCa 1 : ', url)
 
     def msgdeleteBouquets(self):
-        self.session.openWithCallback(self.deleteBouquets, MessageBox, _("Remove all HasBahCa Favorite Bouquet ?") , MessageBox.TYPE_YESNO, timeout=5, default=True)
+        self.session.openWithCallback(self.deleteBouquets, MessageBox, _("Remove all HasBahCa Favorite Bouquet ?"), MessageBox.TYPE_YESNO, timeout=5, default=True)
 
     def deleteBouquets(self, result):
         """
@@ -416,6 +420,7 @@ class MainHasBahCa(Screen):
             except Exception as ex:
                 print(str(ex))
                 raise
+
 
 class HasBahCaC(Screen):
     def __init__(self, session, name, url):
@@ -469,7 +474,7 @@ class HasBahCaC(Screen):
         try:
             content = Utils.getUrl(url)
             if six.PY3:
-                content =six.ensure_str(content)
+                content = six.ensure_str(content)
             print("HasBahCa t content =", content)
             print('urlll content: ', url)
             n1 = content.find('js-details-container Details">', 0)
@@ -528,6 +533,7 @@ class HasBahCaC(Screen):
         print("HasBahCa ok url1 =", url)
         self.session.open(HasBahCa1, name, url)
 
+
 class HasBahCa1(Screen):
     def __init__(self, session, sel, url):
         self.session = session
@@ -583,11 +589,11 @@ class HasBahCa1(Screen):
             content = Utils.getUrl(url)
             if six.PY3:
                 content = six.ensure_str(content)
-            content = content.replace('$BorpasFileFormat="1"','')
+            content = content.replace('$BorpasFileFormat="1"', '')
             regexvideo = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
             match = re.compile(regexvideo, re.DOTALL).findall(content)
             for name, url in match:
-                name1 = name.replace('_', ' ').replace('-', ' ')
+                name = name.replace('_', ' ').replace('-', ' ')
                 item = name + "###" + url
                 print('Items sort: ', item)
                 items.append(item)
@@ -609,7 +615,7 @@ class HasBahCa1(Screen):
 
     def okRun(self):
         i = len(self.names)
-        print('iiiiii= ',i)
+        print('iiiiii= ', i)
         if i < 1:
             return
         idx = self["text"].getSelectionIndex()
@@ -619,7 +625,7 @@ class HasBahCa1(Screen):
 
     def convert(self):
         i = len(self.names)
-        print('iiiiii= ',i)
+        print('iiiiii= ', i)
         if i < 1:
             return
         self.session.openWithCallback(self.convert2, MessageBox, _("Do you want to Convert %s\nto Favorite Bouquet ?\n\nAttention!! Wait while converting !!!") % self.name, MessageBox.TYPE_YESNO, timeout=5, default=True)
@@ -657,7 +663,7 @@ class HasBahCa1(Screen):
             if PY3:
                 urlm3u.encode()
             print('urlmm33uu ', urlm3u)
-            print('in tmp' , self.file)
+            print('in tmp', self.file)
             downloadFilest(urlm3u, self.file)
             sleep(3)
 
@@ -678,8 +684,8 @@ class HasBahCa1(Screen):
                 for line in open(self.file):
                     if line.startswith('#EXTM3U'):
                         continue
-                    if '#EXTM3U $BorpasFileFormat="1"' in line: #force export bouquet ???
-                        line = line.replace('$BorpasFileFormat="1"','')
+                    if '#EXTM3U $BorpasFileFormat="1"' in line:  #force export bouquet ???
+                        line = line.replace('$BorpasFileFormat="1"', '')
                         continue
                     if line == '':
                         continue
@@ -747,12 +753,12 @@ class HasBahCa1(Screen):
     '''add for future'''
     def download_m3u(self):
         try:
-                self.download = downloadWithProgress(self.url, self.file)
-                self.download.addProgress(self.downloadProgress)
-                self.download.start().addCallback(self.check).addErrback(self.showError)
+            self.download = downloadWithProgress(self.url, self.file)
+            self.download.addProgress(self.downloadProgress)
+            self.download.start().addCallback(self.check).addErrback(self.showError)
         except:
-                self.session.open(MessageBox, _('Download Failed!!!'), MessageBox.TYPE_INFO, timeout=5)
-                pass
+            self.session.open(MessageBox, _('Download Failed!!!'), MessageBox.TYPE_INFO, timeout=5)
+            pass
 
     def downloadProgress(self, recvbytes, totalbytes):
         self["progress"].show()
@@ -771,7 +777,7 @@ class HasBahCa1(Screen):
 
 # remove bouquet  'hbc'
     def msgdeleteBouquets(self):
-        self.session.openWithCallback(self.deleteBouquets, MessageBox, _("Remove all HasBahCa Favorite Bouquet ?") , MessageBox.TYPE_YESNO, timeout=5, default=True)
+        self.session.openWithCallback(self.deleteBouquets, MessageBox, _("Remove all HasBahCa Favorite Bouquet ?"), MessageBox.TYPE_YESNO, timeout=5, default=True)
 
     def deleteBouquets(self, result):
         """
@@ -805,6 +811,7 @@ class HasBahCa1(Screen):
             except Exception as ex:
                 print(str(ex))
                 raise
+
 
 class TvInfoBarShowHide():
     """ InfoBar show/hide control, accepts toggleShow and hide actions, might start
@@ -1138,4 +1145,3 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
 
     def leavePlayer(self):
         self.close()
-
