@@ -16,7 +16,6 @@ from . import Utils
 from Components.AVSwitch import AVSwitch
 from Components.ActionMap import ActionMap
 from Components.Button import Button
-# from Components.config import *
 from Components.config import config
 from Tools.Downloader import downloadWithProgress
 from Components.Label import Label
@@ -24,28 +23,21 @@ from Components.MenuList import MenuList
 from Components.MultiContent import MultiContentEntryText, MultiContentEntryPixmapAlphaTest
 from Components.Pixmap import Pixmap
 from Components.PluginComponent import plugins
-from Components.PluginList import *
 from Components.ScrollLabel import ScrollLabel
 from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
 from Components.Sources.List import List
 from Components.Sources.StaticText import StaticText
-# from Plugins.Plugin import PluginDescriptor
-from Screens.InfoBar import InfoBar
 from Screens.InfoBar import MoviePlayer
 from Components.ProgressBar import ProgressBar
 from Components.Sources.Progress import Progress
-from Screens.InfoBarGenerics import InfoBarShowHide, InfoBarSubtitleSupport, InfoBarSummarySupport, \
-    InfoBarNumberZap, InfoBarMenu, InfoBarEPG, InfoBarSeek, InfoBarMoviePlayerSummarySupport, \
-    InfoBarAudioSelection, InfoBarNotifications, InfoBarServiceNotifications
+from Screens.InfoBarGenerics import InfoBarShowHide, InfoBarSubtitleSupport, InfoBarSeek, InfoBarAudioSelection
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Tools.Directories import SCOPE_PLUGINS, resolveFilename
-from enigma import *
 from enigma import RT_VALIGN_CENTER
 from enigma import RT_HALIGN_LEFT
-from enigma import eListbox, eTimer
-from enigma import eListboxPythonMultiContent, eConsoleAppContainer
-# from enigma import eServiceCenter
+from enigma import eTimer
+from enigma import eListboxPythonMultiContent
 from enigma import eServiceReference
 from enigma import iPlayableService
 from enigma import gFont
@@ -64,12 +56,10 @@ downloadhasba = None
 PY3 = sys.version_info.major >= 3
 
 try:
-    from httplib import HTTPConnection, CannotSendRequest, HTTPException
+    from httplib import HTTPConnection, HTTPException
     from urllib2 import urlopen, Request, URLError, HTTPError
-    import httplib
-    import six
 except:
-    from http.client import HTTPConnection, CannotSendRequest, HTTPException
+    from http.client import HTTPConnection, HTTPException
     from urllib.error import URLError, HTTPError
     from urllib.request import urlopen, Request
     unicode = str
@@ -1011,10 +1001,13 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         self.setAspect(temp)
 
     def showinfo(self):
+        sref = self.srefInit
+        p = ServiceReference(sref)
+        servicename = str(p.getServiceName())
+        serviceurl = str(p.getPath())
         sTitle = ''
         sServiceref = ''
         try:
-            servicename, serviceurl = getserviceinfo(sref)
             if servicename is not None:
                 sTitle = servicename
             else:
