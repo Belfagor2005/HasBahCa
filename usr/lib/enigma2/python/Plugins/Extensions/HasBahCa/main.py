@@ -21,16 +21,13 @@ from Tools.Downloader import downloadWithProgress
 from Components.Label import Label
 from Components.MenuList import MenuList
 from Components.MultiContent import MultiContentEntryText, MultiContentEntryPixmapAlphaTest
-from Components.Pixmap import Pixmap
-from Components.PluginComponent import plugins
-from Components.ScrollLabel import ScrollLabel
 from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
-from Components.Sources.List import List
 from Components.Sources.StaticText import StaticText
 from Screens.InfoBar import MoviePlayer
 from Components.ProgressBar import ProgressBar
 from Components.Sources.Progress import Progress
-from Screens.InfoBarGenerics import InfoBarShowHide, InfoBarSubtitleSupport, InfoBarSeek, InfoBarAudioSelection
+from Screens.InfoBarGenerics import InfoBarSubtitleSupport
+from Screens.InfoBarGenerics import InfoBarSeek, InfoBarAudioSelection
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Tools.Directories import SCOPE_PLUGINS, resolveFilename
@@ -38,6 +35,7 @@ from enigma import RT_VALIGN_CENTER
 from enigma import RT_HALIGN_LEFT
 from enigma import eTimer
 from enigma import eListboxPythonMultiContent
+# from ServiceReference import ServiceReference
 from enigma import eServiceReference
 from enigma import iPlayableService
 from enigma import gFont
@@ -56,10 +54,8 @@ downloadhasba = None
 PY3 = sys.version_info.major >= 3
 
 try:
-    from httplib import HTTPConnection, HTTPException
     from urllib2 import urlopen, Request, URLError, HTTPError
 except:
-    from http.client import HTTPConnection, HTTPException
     from urllib.error import URLError, HTTPError
     from urllib.request import urlopen, Request
     unicode = str
@@ -306,7 +302,7 @@ class MainHasBahCa(Screen):
     def updateMenuList(self):
         self.names = []
         self.urls = []
-        items = []
+        # items = []
         urls = tyurl
         try:
             content = Utils.getUrl(urls)
@@ -355,7 +351,9 @@ class MainHasBahCa(Screen):
     def okRun(self):
         i = len(self.names)
         print('iiiiii= ', i)
-        # if i < 1:
+        if i < 1:
+            return
+        # if i is not None:
             # return
         idx = self["text"].getSelectionIndex()
         name = self.names[idx]
@@ -374,6 +372,8 @@ class MainHasBahCa(Screen):
         else:
             self.session.open(HasBahCa1, name, url)
             print('url HasBahCa 1 : ', url)
+        # else:
+            # self.mbox = self.session.open(MessageBox, _(':P'), MessageBox.TYPE_INFO, timeout=5)
 
     def msgdeleteBouquets(self):
         self.session.openWithCallback(self.deleteBouquets, MessageBox, _("Remove all HasBahCa Favorite Bouquet ?"), MessageBox.TYPE_YESNO, timeout=5, default=True)
@@ -674,7 +674,7 @@ class HasBahCa1(Screen):
                 for line in open(self.file):
                     if line.startswith('#EXTM3U'):
                         continue
-                    if '#EXTM3U $BorpasFileFormat="1"' in line:  #force export bouquet ???
+                    if '#EXTM3U $BorpasFileFormat="1"' in line:  # force export bouquet ???
                         line = line.replace('$BorpasFileFormat="1"', '')
                         continue
                     if line == '':
@@ -946,7 +946,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         ], {
             # 'stop': self.cancel,
             'epg': self.showIMDB,
-            'info': self.showinfo,
+            'info': self.showIMDB,
             # 'info': self.cicleStreamType,
             'tv': self.cicleStreamType,
             'stop': self.leavePlayer,
@@ -999,32 +999,6 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
             temp = 0
         self.new_aspect = temp
         self.setAspect(temp)
-
-    def showinfo(self):
-        sref = self.srefInit
-        p = ServiceReference(sref)
-        servicename = str(p.getServiceName())
-        serviceurl = str(p.getPath())
-        sTitle = ''
-        sServiceref = ''
-        try:
-            if servicename is not None:
-                sTitle = servicename
-            else:
-                sTitle = ''
-            if serviceurl is not None:
-                sServiceref = serviceurl
-            else:
-                sServiceref = ''
-            currPlay = self.session.nav.getCurrentService()
-            sTagCodec = currPlay.info().getInfoString(iServiceInformation.sTagCodec)
-            sTagVideoCodec = currPlay.info().getInfoString(iServiceInformation.sTagVideoCodec)
-            sTagAudioCodec = currPlay.info().getInfoString(iServiceInformation.sTagAudioCodec)
-            message = 'stitle:' + str(sTitle) + '\n' + 'sServiceref:' + str(sServiceref) + '\n' + 'sTagCodec:' + str(sTagCodec) + '\n' + 'sTagVideoCodec:' + str(sTagVideoCodec) + '\n' + 'sTagAudioCodec : ' + str(sTagAudioCodec)
-            self.mbox = self.session.open(MessageBox, message, MessageBox.TYPE_INFO)
-        except:
-            pass
-        return
 
     def showIMDB(self):
         TMDB = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('TMDB'))
