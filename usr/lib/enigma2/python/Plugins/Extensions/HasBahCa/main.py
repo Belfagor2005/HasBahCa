@@ -31,6 +31,7 @@ from Screens.InfoBarGenerics import InfoBarSeek, InfoBarAudioSelection
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Tools.Directories import SCOPE_PLUGINS, resolveFilename
+from Tools.Directories import fileExists, copyfile
 from enigma import RT_VALIGN_CENTER
 from enigma import RT_HALIGN_LEFT
 from enigma import eTimer
@@ -362,8 +363,6 @@ class MainHasBahCa(Screen):
             return
         elif 'hasbahcanetlink' in url:
             return
-        elif 'parent' in name.lower():
-            return
         elif '.txt' in name.lower():
             return
         elif 'category' in name.lower():
@@ -542,7 +541,7 @@ class HasBahCa1(Screen):
         self['key_red'] = Button(_('Back'))
         self['key_green'] = Button(_('Select'))
         self['key_yellow'] = Button('Convert')
-        self["key_blue"] = Button('Remove')
+        self["key_blue"] = Button('Search')
         self['key_green'].hide()
         self['key_yellow'].hide()
         self['key_blue'].hide()
@@ -551,13 +550,17 @@ class HasBahCa1(Screen):
         self['progress'] = ProgressBar()
         self['progresstext'] = StaticText()
         self["progress"].hide()
+        self.srefInit = self.session.nav.getCurrentlyPlayingServiceReference()
+        global search_ok
+        self.search = ''
+        search_ok = False        
         self['actions'] = ActionMap(['SetupActions', 'ColorActions'], {
             'ok': self.okRun,
             'green': self.okRun,
-            'red': self.close,
+            'red': self.cancel,
             'yellow': self.convert,
-            'blue': self.msgdeleteBouquets,
-            'cancel': self.close}, -2)
+            'blue': self.search_m3u,
+            'cancel': self.cancel}, -2)
         self.timer = eTimer()
         if Utils.DreamOS():
             self.timer_conn = self.timer.timeout.connect(self._gotPageLoad)
@@ -569,7 +572,74 @@ class HasBahCa1(Screen):
     def __layoutFinished(self):
         self.setTitle(self.setup_title)
 
+    def search_m3u(self):
+        text = ''
+        from Screens.VirtualKeyBoard import VirtualKeyBoard
+        self.session.openWithCallback(
+            self.filterM3u,
+            VirtualKeyBoard,
+            title = _("Filter this category..."),
+            text = self.search)
+
+
+            
+    def filterM3u(self, result):
+        global search_ok
+        if result:
+            self.names = []
+            self.urls = []
+            self.pics = []
+            # pic = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/default.png".format('TivuStream'))
+            search = result
+            try:
+                # if fileExists(self.name):
+                    # print('self.name = ', self.name)
+                    # f1 = open(self.name, "r+")
+                    # fpage = f1.read()
+                    # print('fpage = ', fpage)
+                    # #EXTINF:-1 group-title="SERIE TV: A-E" tvg-logo="https://patbuweb.com/tivustream/logos/logo.png",[COLOR red]-- UNDER MAINTENANCE --[/COLOR]
+                    # #EXTINF:-1 tvg-ID="Rai 1 HD" tvg-name="Rai 1 HD" tvg-logo="" group-title="Top Italia",Rai 1 HD
+                    # #EXTINF:-1,Primafila 1
+                    # regexcat = "EXTINF.*?,(.*?)\\n(.*?)\\n"
+                    # if 'tvg-logo' in fpage:
+                        # print('Tvg-logo in fpage is True1 ---')
+                        # regexcat = 'EXTINF.*?tvg-logo="(.*?)".*?,(.*?)\\n(.*?)\\n'
+                    # match = re.compile(regexcat, re.DOTALL).findall(fpage)
+                    
+                    content = Utils.getUrl(self.url)
+                    if six.PY3:
+                        content = six.ensure_str(content)
+                    content = content.replace('$BorpasFileFormat="1"', '')
+                    regexvideo = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
+                    match = re.compile(regexvideo, re.DOTALL).findall(content)
+                    for name, url in match:
+                        name = name.replace('_', ' ').replace('-', ' ')
+                
+                    # for  name, url in match:
+                        if str(search).lower() in name.lower():
+                            
+                            search_ok = True
+                            url = url.replace(" ", "")
+                            url = url.replace("\\n", "")
+                            self.names.append(name)
+                            self.urls.append(url)
+                            # self.pics.append(pic)
+                    if search_ok is True:
+                        # m3ulist(self.names, self["list"])
+                        # search_ok = False
+                        showlisthasba(self.names, self['text'])
+                        # self["live"].setText('N.' + str(len(self.names)) + " Stream")
+                        
+                        # self._gotPageLoad()
+                        
+            except:
+                self._gotPageLoad()
+        else:
+            self._gotPageLoad()
+
     def _gotPageLoad(self):
+        global search_ok
+        search_ok = False    
         url = self.url
         print('self.url: ', self.url)
         self.names = []
@@ -655,7 +725,7 @@ class HasBahCa1(Screen):
             print('urlmm33uu ', urlm3u)
             print('in tmp', self.file)
             downloadFilest(urlm3u, self.file)
-            sleep(3)
+            sleep(5)
 
             '''
             # with open(file, 'wb') as f:
@@ -802,6 +872,14 @@ class HasBahCa1(Screen):
                 print(str(ex))
                 raise
 
+    def cancel(self):
+        if search_ok is True:
+            self._gotPageLoad()
+        else:
+            self.session.nav.stopService()
+            self.session.nav.playService(self.srefInit)
+            self.close()
+            
 
 class TvInfoBarShowHide():
     """ InfoBar show/hide control, accepts toggleShow and hide actions, might start
