@@ -20,7 +20,8 @@ from Components.config import config
 from Tools.Downloader import downloadWithProgress
 from Components.Label import Label
 from Components.MenuList import MenuList
-from Components.MultiContent import MultiContentEntryText, MultiContentEntryPixmapAlphaTest
+from Components.MultiContent import MultiContentEntryText
+from Components.MultiContent import MultiContentEntryPixmapAlphaTest
 from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
 from Components.Sources.StaticText import StaticText
 from Screens.InfoBar import MoviePlayer
@@ -31,16 +32,14 @@ from Screens.InfoBarGenerics import InfoBarSeek, InfoBarAudioSelection
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Tools.Directories import SCOPE_PLUGINS, resolveFilename
-from Tools.Directories import fileExists, copyfile
+from Tools.Directories import fileExists
 from enigma import RT_VALIGN_CENTER
 from enigma import RT_HALIGN_LEFT
 from enigma import eTimer
 from enigma import eListboxPythonMultiContent
-# from ServiceReference import ServiceReference
 from enigma import eServiceReference
 from enigma import iPlayableService
 from enigma import gFont
-from enigma import iServiceInformation
 from enigma import loadPNG
 from time import sleep
 import os
@@ -553,7 +552,7 @@ class HasBahCa1(Screen):
         self.srefInit = self.session.nav.getCurrentlyPlayingServiceReference()
         global search_ok
         self.search = ''
-        search_ok = False        
+        search_ok = False
         self['actions'] = ActionMap(['SetupActions', 'ColorActions'], {
             'ok': self.okRun,
             'green': self.okRun,
@@ -573,7 +572,6 @@ class HasBahCa1(Screen):
         self.setTitle(self.setup_title)
 
     def search_m3u(self):
-        text = ''
         from Screens.VirtualKeyBoard import VirtualKeyBoard
         self.session.openWithCallback(
             self.filterM3u,
@@ -581,8 +579,6 @@ class HasBahCa1(Screen):
             title = _("Filter this category..."),
             text = self.search)
 
-
-            
     def filterM3u(self, result):
         global search_ok
         if result:
@@ -605,7 +601,7 @@ class HasBahCa1(Screen):
                         # print('Tvg-logo in fpage is True1 ---')
                         # regexcat = 'EXTINF.*?tvg-logo="(.*?)".*?,(.*?)\\n(.*?)\\n'
                     # match = re.compile(regexcat, re.DOTALL).findall(fpage)
-                    
+
                     content = Utils.getUrl(self.url)
                     if six.PY3:
                         content = six.ensure_str(content)
@@ -614,10 +610,10 @@ class HasBahCa1(Screen):
                     match = re.compile(regexvideo, re.DOTALL).findall(content)
                     for name, url in match:
                         name = name.replace('_', ' ').replace('-', ' ')
-                
+
                     # for  name, url in match:
                         if str(search).lower() in name.lower():
-                            
+
                             search_ok = True
                             url = url.replace(" ", "")
                             url = url.replace("\\n", "")
@@ -629,9 +625,9 @@ class HasBahCa1(Screen):
                         # search_ok = False
                         showlisthasba(self.names, self['text'])
                         # self["live"].setText('N.' + str(len(self.names)) + " Stream")
-                        
+
                         # self._gotPageLoad()
-                        
+
             except:
                 self._gotPageLoad()
         else:
@@ -639,7 +635,7 @@ class HasBahCa1(Screen):
 
     def _gotPageLoad(self):
         global search_ok
-        search_ok = False    
+        search_ok = False
         url = self.url
         print('self.url: ', self.url)
         self.names = []
@@ -879,7 +875,7 @@ class HasBahCa1(Screen):
             self.session.nav.stopService()
             self.session.nav.playService(self.srefInit)
             self.close()
-            
+
 
 class TvInfoBarShowHide():
     """ InfoBar show/hide control, accepts toggleShow and hide actions, might start
