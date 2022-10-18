@@ -5,7 +5,7 @@
 ****************************************
 *        coded by Lululla              *
 *             skin by MMark            *
-*             09/09/2022               *
+*             09/10/2022               *
 *   Thank's                            *
 *      HasBahCa, Levi45, KiddaC, Pcd   *
 ****************************************
@@ -233,10 +233,10 @@ def hasbaSetListEntry(name):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 
     if Utils.isFHD():
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 10), size=(50, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 0), size=(50, 50), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(90, 0), size=(1200, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     else:
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 10), size=(50, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 0), size=(50, 50), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(90, 0), size=(1000, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     return res
 
@@ -469,13 +469,6 @@ class HasBahCaC(Screen):
             n2 = content.find('<div class="Details-content--shown Box-footer', n1)
             content2 = content[n1:n2]
             regexvideo = 'title="HasBahCa_(.*?).m3u.*?href="/HasBahCa/IPTV-LIST/blob/main/(.*?).m3u">.*?</a></span.*?</div>'
-            # regexvideo = 'title="(.*?).m3u.*?href="/HasBahCa/m3u_Links/blob/main/(.*?).m3u">.*?wrap">(.*?)</time'
-            # n1 = content.find('js-details-container Details">', 0)
-            # n2 = content.find('<div class="Details-content--shown Box-footer', n1)
-            # content2 = content[n1:n2]
-            # regexvideo = 'title="(.*?).m3u.*?href="/HasBahCa/IPTV-LIST/blob/main/(.*?).m3u">.*?</a></span.*?</div>'
-            # # regexvideo = 'title="(.*?).m3u.*?href="/HasBahCa/m3u_Links/blob/main/(.*?).m3u">.*?wrap">(.*?)</time'
-
             match = re.compile(regexvideo, re.DOTALL).findall(content2)
             print('match:  ', match)
             # print("HasBahCa t match =", match)
@@ -492,10 +485,6 @@ class HasBahCaC(Screen):
                 name1 = name.replace('HasBahCa', '°')
                 name1 = name1.replace('-', ' ').replace('_', ' ')
                 name = Utils.decodeHtml(name1)
-                # name = name1 + ' | ' + date
-                # print("******** name 1 ******* %s" % name)
-                # print("HasBahCa t name =", name)
-                # print("HasBahCa t url1 =", url1)
                 item = name + "###" + url1
                 items.append(item)
             items.sort()
@@ -585,23 +574,8 @@ class HasBahCa1(Screen):
             self.names = []
             self.urls = []
             self.pics = []
-            # pic = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/default.png".format('TivuStream'))
             search = result
             try:
-                # if fileExists(self.name):
-                    # print('self.name = ', self.name)
-                    # f1 = open(self.name, "r+")
-                    # fpage = f1.read()
-                    # print('fpage = ', fpage)
-                    # #EXTINF:-1 group-title="SERIE TV: A-E" tvg-logo="https://patbuweb.com/tivustream/logos/logo.png",[COLOR red]-- UNDER MAINTENANCE --[/COLOR]
-                    # #EXTINF:-1 tvg-ID="Rai 1 HD" tvg-name="Rai 1 HD" tvg-logo="" group-title="Top Italia",Rai 1 HD
-                    # #EXTINF:-1,Primafila 1
-                    # regexcat = "EXTINF.*?,(.*?)\\n(.*?)\\n"
-                    # if 'tvg-logo' in fpage:
-                        # print('Tvg-logo in fpage is True1 ---')
-                        # regexcat = 'EXTINF.*?tvg-logo="(.*?)".*?,(.*?)\\n(.*?)\\n'
-                    # match = re.compile(regexcat, re.DOTALL).findall(fpage)
-
                     content = Utils.getUrl(self.url)
                     if six.PY3:
                         content = six.ensure_str(content)
@@ -610,24 +584,14 @@ class HasBahCa1(Screen):
                     match = re.compile(regexvideo, re.DOTALL).findall(content)
                     for name, url in match:
                         name = name.replace('_', ' ').replace('-', ' ')
-
-                    # for  name, url in match:
                         if str(search).lower() in name.lower():
-
                             search_ok = True
                             url = url.replace(" ", "")
                             url = url.replace("\\n", "")
                             self.names.append(name)
                             self.urls.append(url)
-                            # self.pics.append(pic)
                     if search_ok is True:
-                        # m3ulist(self.names, self["list"])
-                        # search_ok = False
                         showlisthasba(self.names, self['text'])
-                        # self["live"].setText('N.' + str(len(self.names)) + " Stream")
-
-                        # self._gotPageLoad()
-
             except:
                 self._gotPageLoad()
         else:
@@ -708,13 +672,10 @@ class HasBahCa1(Screen):
             tmplist.append('#SERVICE 1:64:0:0:0:0:0:0:0:0::%s CHANNELS' % name_file)
             tmplist.append('#DESCRIPTION --- %s ---' % name_file)
             print("Converting Bouquet %s" % name_file)
-            # self.file = "/tmp/%s.m3u" % name_file.lower()  #use downloadhasba
             self.file = "/tmp/tempm3u.m3u"
-
             if os.path.isfile(self.file):
                 os.remove(self.file)
             print('path tmp : ', self.file)
-
             urlm3u = self.url.strip()
             if PY3:
                 urlm3u.encode()
@@ -722,7 +683,6 @@ class HasBahCa1(Screen):
             print('in tmp', self.file)
             downloadFilest(urlm3u, self.file)
             sleep(5)
-
             '''
             # with open(file, 'wb') as f:
                 # content = Utils.getUrl(self.url)
@@ -735,7 +695,6 @@ class HasBahCa1(Screen):
             # # self.download_m3u()
             # print('Error download : ', str(e))
             '''
-
             if os.path.isfile(self.file) and os.stat(self.file).st_size > 0:
                 for line in open(self.file):
                     if line.startswith('#EXTM3U'):
@@ -781,7 +740,6 @@ class HasBahCa1(Screen):
                             tmplist.append(self.tmpx)
                         else:
                             print("UNKNOWN TYPE: %s" % self.type)
-
                 path1 = '/etc/enigma2/' + str(bouquetname)
                 path2 = '/etc/enigma2/bouquets.' + str(self.type.lower())
                 # create userbouquet
@@ -1006,27 +964,21 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
             self.init_aspect = 0
         self.new_aspect = self.init_aspect
 
-        self['actions'] = ActionMap([
-            'MoviePlayerActions',
-            'MovieSelectionActions',
-            'MediaPlayerActions',
-            'EPGSelectActions',
-            'MediaPlayerSeekActions',
-            'SetupActions',
-            'ColorActions',
-            'InfobarShowHideActions',
-            'InfobarActions',
-            'InfobarSeekActions'
-        ], {
-            # 'stop': self.cancel,
-            'epg': self.showIMDB,
-            'info': self.showIMDB,
-            # 'info': self.cicleStreamType,
-            'tv': self.cicleStreamType,
-            'stop': self.leavePlayer,
-            'cancel': self.cancel,
-            'back': self.cancel
-        }, -1)
+        self['actions'] = ActionMap(['MoviePlayerActions',
+                                     'MovieSelectionActions',
+                                     'MediaPlayerActions',
+                                     'EPGSelectActions',
+                                     'MediaPlayerSeekActions',
+                                     'SetupActions',
+                                     'ColorActions',
+                                     'InfobarShowHideActions',
+                                     'InfobarActions',
+                                     'InfobarSeekActions'], {'epg': self.showIMDB,
+                                                             'info': self.showIMDB,
+                                                             'tv': self.cicleStreamType,
+                                                             'stop': self.leavePlayer,
+                                                             'cancel': self.cancel,
+                                                             'back': self.cancel}, -1)
 
         if '8088' in str(self.url):
             # self.onLayoutFinish.append(self.slinkPlay)
@@ -1041,25 +993,25 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
 
     def getAspectString(self, aspectnum):
         return {
-            0: '4:3 Letterbox',
-            1: '4:3 PanScan',
-            2: '16:9',
-            3: '16:9 always',
-            4: '16:10 Letterbox',
-            5: '16:10 PanScan',
-            6: '16:9 Letterbox'
-        }[aspectnum]
+                0: '4:3 Letterbox',
+                1: '4:3 PanScan',
+                2: '16:9',
+                3: '16:9 always',
+                4: '16:10 Letterbox',
+                5: '16:10 PanScan',
+                6: '16:9 Letterbox'
+                }[aspectnum]
 
     def setAspect(self, aspect):
         map = {
-            0: '4_3_letterbox',
-            1: '4_3_panscan',
-            2: '16_9',
-            3: '16_9_always',
-            4: '16_10_letterbox',
-            5: '16_10_panscan',
-            6: '16_9_letterbox'
-        }
+               0: '4_3_letterbox',
+               1: '4_3_panscan',
+               2: '16_9',
+               3: '16_9_always',
+               4: '16_10_letterbox',
+               5: '16_10_panscan',
+               6: '16_9_letterbox'
+                }
         config.av.aspectratio.setValue(map[aspect])
         try:
             AVSwitch().setAspectRatio(aspect)

@@ -26,8 +26,11 @@ plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
 
 try:
     if Utils.zCheckInternet(1):
-        from . import Update
-        Update.upd_done()
+        try:
+            from . import Update
+            Update.upd_done()
+        except Exception as e:
+            print(str(e))
     else:
         from Screens.MessageBox import MessageBox
         from Tools.Notifications import AddPopup
