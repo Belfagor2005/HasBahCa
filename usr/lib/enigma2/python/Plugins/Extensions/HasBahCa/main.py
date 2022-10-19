@@ -140,11 +140,11 @@ class hasList(MenuList):
     def __init__(self, list):
         MenuList.__init__(self, list, True, eListboxPythonMultiContent)
         if Utils.isFHD():
-            self.l.setItemHeight(60)
+            self.l.setItemHeight(50)
             textfont = int(34)
             self.l.setFont(0, gFont('Regular', textfont))
         else:
-            self.l.setItemHeight(60)
+            self.l.setItemHeight(50)
             textfont = int(24)
             self.l.setFont(0, gFont('Regular', textfont))
 
@@ -234,10 +234,10 @@ def hasbaSetListEntry(name):
 
     if Utils.isFHD():
         res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 0), size=(50, 50), png=loadPNG(png)))
-        res.append(MultiContentEntryText(pos=(90, 0), size=(1200, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
+        res.append(MultiContentEntryText(pos=(80, 0), size=(1200, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     else:
         res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 0), size=(50, 50), png=loadPNG(png)))
-        res.append(MultiContentEntryText(pos=(90, 0), size=(1000, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
+        res.append(MultiContentEntryText(pos=(80, 0), size=(1000, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     return res
 
 
@@ -309,12 +309,13 @@ class MainHasBahCa(Screen):
             if six.PY3:
                 content = six.ensure_str(content)
             content = content.replace('..&gt;', '')
-            regexvideo = 'td><td><a href="(.*?)">(.*?).m3u.*?right">.*?</td></tr>'
+            regexvideo = '<tr><td data-sort="(.*?)"><a href="/hasbahca_m3u/(.*?).m3u"><img'
+            # regexvideo = 'td><td><a href="(.*?)">(.*?).m3u.*?right">.*?</td></tr>'
             # regexvideo = 'td><a href="(.*?)">(.*?).m3u.*?right">(.*?)  </td>.*?'
             match = re.compile(regexvideo, re.DOTALL).findall(content)
             idx = 0
             # for url, name, date in match:
-            for url, name in match:
+            for name, url in match:
                 print('url= ', url)
                 # print('date= ',date)
                 if 'parent' in name.lower():
@@ -323,9 +324,9 @@ class MainHasBahCa(Screen):
                     continue
                 elif '.txt' in name.lower():
                     continue
-                name = url.replace('..&gt;', '').replace('_', ' ').replace('.m3u', '')
+                name = name.replace('..&gt;', '').replace('_', ' ').replace('.m3u', '')
                 # name = name #+ ' ' + date
-                url = urls + url
+                url = urls + url + '.m3u'
                 # item = name + "###" + url
                 # items.append(item)
             # items.sort()
@@ -348,6 +349,16 @@ class MainHasBahCa(Screen):
         except Exception as e:
             print('error HasBahCa1', str(e))
 
+    def adultonly(self, answer=None):
+        idx = self["text"].getSelectionIndex()
+        name = self.names[idx]
+        url = self.urls[idx]
+        if answer is None:
+            self.session.openWithCallback(self.adultonly, MessageBox, _("These streams may contain Adult content\n\nare you sure you want to continue?"), MessageBox.TYPE_YESNO)
+        else:
+            self.session.open(HasBahCa1, name, url)
+        return
+
     def okRun(self):
         i = len(self.names)
         print('iiiiii= ', i)
@@ -358,6 +369,11 @@ class MainHasBahCa(Screen):
         idx = self["text"].getSelectionIndex()
         name = self.names[idx]
         url = self.urls[idx]
+
+        if 'xxx' in name.lower():
+            self.adultonly()
+            return
+        
         if 'parent' in name.lower():
             return
         elif 'hasbahcanetlink' in url:
@@ -565,8 +581,8 @@ class HasBahCa1(Screen):
         self.session.openWithCallback(
             self.filterM3u,
             VirtualKeyBoard,
-            title = _("Filter this category..."),
-            text = self.search)
+            title=_("Filter this category..."),
+            text=self.search)
 
     def filterM3u(self, result):
         global search_ok
@@ -576,22 +592,24 @@ class HasBahCa1(Screen):
             self.pics = []
             search = result
             try:
-                    content = Utils.getUrl(self.url)
-                    if six.PY3:
-                        content = six.ensure_str(content)
-                    content = content.replace('$BorpasFileFormat="1"', '')
-                    regexvideo = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
-                    match = re.compile(regexvideo, re.DOTALL).findall(content)
-                    for name, url in match:
-                        name = name.replace('_', ' ').replace('-', ' ')
-                        if str(search).lower() in name.lower():
-                            search_ok = True
-                            url = url.replace(" ", "")
-                            url = url.replace("\\n", "")
-                            self.names.append(name)
-                            self.urls.append(url)
-                    if search_ok is True:
-                        showlisthasba(self.names, self['text'])
+                content = Utils.getUrl(self.url)
+                if six.PY3:
+                    content = six.ensure_str(content)
+                # #EXTINF:-1 group-title="US_MOVIES",10 Minutes Gone
+                # http://195.201.202.85/r70/ml-content/movie/10MinutesGone1080p-MovieLand.mp4
+                content = content.replace('$BorpasFileFormat="1"', '')
+                regexvideo = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
+                match = re.compile(regexvideo, re.DOTALL).findall(content)
+                for name, url in match:
+                    name = name.replace('_', ' ').replace('-', ' ')
+                    if str(search).lower() in name.lower():
+                        search_ok = True
+                        url = url.replace(" ", "")
+                        url = url.replace("\\n", "")
+                        self.names.append(name)
+                        self.urls.append(url)
+                if search_ok is True:
+                    showlisthasba(self.names, self['text'])
             except:
                 self._gotPageLoad()
         else:
