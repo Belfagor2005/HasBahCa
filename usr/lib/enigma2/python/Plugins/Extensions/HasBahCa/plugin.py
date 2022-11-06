@@ -22,24 +22,53 @@ currversion = '1.5'
 title_plug = 'HasBahCa '
 desc_plugin = ('..:: HasBahCa by Lululla %s ::.. ' % currversion)
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
+_firstStarthbc = True
 
 
-try:
-    if Utils.zCheckInternet(1):
+# try:
+    # if Utils.zCheckInternet(1):
+        # try:
+            # from . import Update
+            # Update.upd_done()
+        # except Exception as e:
+            # print(str(e))
+    # else:
+        # from Screens.MessageBox import MessageBox
+        # from Tools.Notifications import AddPopup
+        # AddPopup(_("Sorry but No Internet :("), MessageBox.TYPE_INFO, 10, 'Sorry')
+
+# except:
+    # import traceback
+    # traceback.print_exc()
+
+
+class AutoStartTimerhbc:
+
+    def __init__(self, session):
+        self.session = session
+        global _firstStarthbc
+        print("*** running AutoStartTimerhbc ***")
+        if _firstStarthbc:
+            self.runUpdate()
+
+    def runUpdate(self):
+        print("*** running update ***")
         try:
             from . import Update
             Update.upd_done()
+            _firstStarthbc = False
         except Exception as e:
-            print(str(e))
-    else:
-        from Screens.MessageBox import MessageBox
-        from Tools.Notifications import AddPopup
-        AddPopup(_("Sorry but No Internet :("), MessageBox.TYPE_INFO, 10, 'Sorry')
+            print('error Fxy', str(e))
 
-except:
-    import traceback
-    traceback.print_exc()
-
+def autostart(reason, session=None, **kwargs):
+    print("*** running autostart autoStartTimerhbc ***")
+    global autoStartTimerhbc
+    global _firstStarthbc
+    if reason == 0:
+        if session is not None:
+            _firstStarthbc = True
+            autoStartTimerhbc = AutoStartTimerhbc(session)
+    return
 
 def mainw(session, **kwargs):
     try:
@@ -57,6 +86,8 @@ def Plugins(**kwargs):
     if not os.path.exists('/var/lib/dpkg/status'):
         ico_path = plugin_path + '/res/pics/logo.png'
     # extensions_menu = PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=PluginDescriptor.WHERE_EXTENSIONSMENU, fnc=mainw, needsRestart=True)
-    result = [PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=PluginDescriptor.WHERE_PLUGINMENU, icon=ico_path, fnc=mainw)]
+    result = [PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=[PluginDescriptor.WHERE_SESSIONSTART], fnc=autostart),
+              PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=PluginDescriptor.WHERE_PLUGINMENU, icon=ico_path, fnc=mainw)]
+    # result = [PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=PluginDescriptor.WHERE_PLUGINMENU, icon=ico_path, fnc=mainw)]
     # result.append(extensions_menu)
     return result

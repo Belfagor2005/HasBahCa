@@ -31,7 +31,7 @@ def upd_last(fplug):
     import time
     time.sleep(5)
     fdest = "/tmp/HasBahCa.tar"
-    if os.path.isfile(fdest) and os.stat(fdest).st_size > 10000:
+    if os.path.isfile(fdest) and os.stat(fdest).st_size > 1000:
         cmd = "tar -xvf /tmp/HasBahCa.tar -C /"
         print("cmd A =", cmd)
         os.system(cmd)

@@ -250,6 +250,31 @@ def showlisthasba(data, list):
         icount = icount + 1
         list.setList(plist)
 
+def returnIMDB(text_clear):
+    TMDB = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('TMDB'))
+    IMDb = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('IMDb'))
+    if TMDB:
+        try:
+            from Plugins.Extensions.TMBD.plugin import TMBD
+            text = decodeHtml(text_clear)
+            _session.open(TMBD.tmdbScreen, text, 0)
+        except Exception as ex:
+            print("[XCF] Tmdb: ", str(ex))
+        return True
+    elif IMDb:
+        try:
+            from Plugins.Extensions.IMDb.plugin import main as imdb
+            text = decodeHtml(text_clear)
+            imdb(_session, text)
+        except Exception as ex:
+            print("[XCF] imdb: ", str(ex))
+        return True
+    else:
+        text_clear = decodeHtml(text_clear)
+        _session.open(MessageBox, text_clear, MessageBox.TYPE_INFO)
+        return True
+    return
+
 
 class MainHasBahCa(Screen):
     def __init__(self, session):
@@ -501,13 +526,13 @@ class HasBahCaC(Screen):
                 name1 = name.replace('HasBahCa', '°')
                 name1 = name1.replace('-', ' ').replace('_', ' ')
                 name = Utils.decodeHtml(name1)
-                item = name + "###" + url1
-                items.append(item)
-            items.sort()
-            for item in items:
-                name = item.split('###')[0]
-                url2 = item.split('###')[1]
-                self.urls.append(Utils.checkStr(url2.strip()))
+                # item = name + "###" + url1
+                # items.append(item)
+            # items.sort()
+            # for item in items:
+                # name = item.split('###')[0]
+                # url2 = item.split('###')[1]
+                self.urls.append(Utils.checkStr(url1.strip()))
                 self.names.append(Utils.checkStr(name.strip()))
             self["live"].setText('N.' + str(len(self.names)) + " CATEGORY")
             self['info'].setText(_('Please now select ...'))
@@ -632,13 +657,13 @@ class HasBahCa1(Screen):
             match = re.compile(regexvideo, re.DOTALL).findall(content)
             for name, url in match:
                 name = name.replace('_', ' ').replace('-', ' ')
-                item = name + "###" + url
-                print('Items sort: ', item)
-                items.append(item)
-            items.sort()
-            for item in items:
-                name = item.split('###')[0]
-                url = item.split('###')[1]
+                # item = name + "###" + url
+                # print('Items sort: ', item)
+                # items.append(item)
+            # items.sort()
+            # for item in items:
+                # name = item.split('###')[0]
+                # url = item.split('###')[1]
                 self.urls.append(Utils.checkStr(url.strip()))
                 self.names.append(Utils.checkStr(name.strip()))
             self["live"].setText('N.' + str(len(self.names)) + " STREAM")
@@ -1045,21 +1070,9 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         self.setAspect(temp)
 
     def showIMDB(self):
-        TMDB = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('TMDB'))
-        IMDb = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('IMDb'))
-        if os.path.exists(TMDB):
-            from Plugins.Extensions.TMBD.plugin import TMBD
-            text_clear = self.name
-            text = Utils.charRemove(text_clear)
-            self.session.open(TMBD, text, False)
-        elif os.path.exists(IMDb):
-            from Plugins.Extensions.IMDb.plugin import IMDB
-            text_clear = self.name
-            text = Utils.charRemove(text_clear)
-            self.session.open(IMDB, text)
-        else:
-            text_clear = self.name
-            self.session.open(MessageBox, text_clear, MessageBox.TYPE_INFO)
+        text_clear = self.name
+        if returnIMDB(text_clear):
+            print('show imdb/tmdb')
 
     def slinkPlay(self, url):
         name = self.name
