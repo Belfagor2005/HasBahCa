@@ -32,7 +32,7 @@ from Screens.InfoBarGenerics import InfoBarSeek, InfoBarAudioSelection
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Tools.Directories import SCOPE_PLUGINS, resolveFilename
-from Tools.Directories import fileExists
+# from Tools.Directories import fileExists
 from enigma import RT_VALIGN_CENTER
 from enigma import RT_HALIGN_LEFT
 from enigma import eTimer
@@ -250,13 +250,14 @@ def showlisthasba(data, list):
         icount = icount + 1
         list.setList(plist)
 
+
 def returnIMDB(text_clear):
     TMDB = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('TMDB'))
     IMDb = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('IMDb'))
     if TMDB:
         try:
             from Plugins.Extensions.TMBD.plugin import TMBD
-            text = decodeHtml(text_clear)
+            text = Utils.decodeHtml(text_clear)
             _session.open(TMBD.tmdbScreen, text, 0)
         except Exception as ex:
             print("[XCF] Tmdb: ", str(ex))
@@ -264,13 +265,13 @@ def returnIMDB(text_clear):
     elif IMDb:
         try:
             from Plugins.Extensions.IMDb.plugin import main as imdb
-            text = decodeHtml(text_clear)
+            text = Utils.decodeHtml(text_clear)
             imdb(_session, text)
         except Exception as ex:
             print("[XCF] imdb: ", str(ex))
         return True
     else:
-        text_clear = decodeHtml(text_clear)
+        text_clear = Utils.decodeHtml(text_clear)
         _session.open(MessageBox, text_clear, MessageBox.TYPE_INFO)
         return True
     return
@@ -394,11 +395,9 @@ class MainHasBahCa(Screen):
         idx = self["text"].getSelectionIndex()
         name = self.names[idx]
         url = self.urls[idx]
-
         if 'xxx' in name.lower():
             self.adultonly()
             return
-        
         if 'parent' in name.lower():
             return
         elif 'hasbahcanetlink' in url:
