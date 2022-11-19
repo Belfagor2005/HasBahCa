@@ -301,13 +301,14 @@ class MainHasBahCa(Screen):
         self["progress"].hide()
         self['live'] = Label('')
         self['live'].setText('')
-        self['actions'] = ActionMap(['SetupActions', 'ColorActions', ], {
-            'ok': self.okRun,
-            'green': self.okRun,
-            'back': self.closerm,
-            'red': self.closerm,
-            'blue': self.msgdeleteBouquets,
-            'cancel': self.closerm}, -1)
+        self['actions'] = ActionMap(['OkCancelActions',
+                                     'ColorActions',
+                                     'WizardActions', ], {'ok': self.okRun,
+                                                          'green': self.okRun,
+                                                          'back': self.closerm,
+                                                          'red': self.closerm,
+                                                          'blue': self.msgdeleteBouquets,
+                                                          'cancel': self.closerm}, -1)
         self.timer = eTimer()
         if Utils.DreamOS():
             self.timer_conn = self.timer.timeout.connect(self.updateMenuList)
@@ -476,13 +477,14 @@ class HasBahCaC(Screen):
         self["progress"].hide()
         self['live'] = Label('')
         self['live'].setText('')
-        self['actions'] = ActionMap(['SetupActions', 'ColorActions'], {
-            'ok': self.okRun,
-            'green': self.okRun,
-            'red': self.close,
-            # 'yellow': self.convert,
-            # 'back': self.close(),
-            'cancel': self.close}, -2)
+        self['actions'] = ActionMap(['OkCancelActions',
+                                     'ColorActions',
+                                     'WizardActions', ], {'ok': self.okRun,
+                                                          'green': self.okRun,
+                                                          'red': self.close,
+                                                          # 'yellow': self.convert,
+                                                          # 'back': self.close(),
+                                                          'cancel': self.close}, -2)
         self.timer = eTimer()
         if Utils.DreamOS():
             self.timer_conn = self.timer.timeout.connect(self._gotPageLoad)
@@ -582,13 +584,14 @@ class HasBahCa1(Screen):
         global search_ok
         self.search = ''
         search_ok = False
-        self['actions'] = ActionMap(['SetupActions', 'ColorActions'], {
-            'ok': self.okRun,
-            'green': self.okRun,
-            'red': self.cancel,
-            'yellow': self.convert,
-            'blue': self.search_m3u,
-            'cancel': self.cancel}, -2)
+        self['actions'] = ActionMap(['OkCancelActions',
+                                     'ColorActions',
+                                     'WizardActions', ], {'ok': self.okRun,
+                                                          'green': self.okRun,
+                                                          'red': self.cancel,
+                                                          'yellow': self.convert,
+                                                          'blue': self.search_m3u,
+                                                          'cancel': self.cancel}, -2)
         self.timer = eTimer()
         if Utils.DreamOS():
             self.timer_conn = self.timer.timeout.connect(self._gotPageLoad)
@@ -1005,13 +1008,11 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         except:
             self.init_aspect = 0
         self.new_aspect = self.init_aspect
-
         self['actions'] = ActionMap(['MoviePlayerActions',
                                      'MovieSelectionActions',
                                      'MediaPlayerActions',
                                      'EPGSelectActions',
                                      'MediaPlayerSeekActions',
-                                     'SetupActions',
                                      'ColorActions',
                                      'InfobarShowHideActions',
                                      'InfobarActions',
