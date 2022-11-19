@@ -303,6 +303,7 @@ class MainHasBahCa(Screen):
         self['live'].setText('')
         self['actions'] = ActionMap(['OkCancelActions',
                                      'ColorActions',
+                                     'ButtonSetupActions',
                                      'WizardActions', ], {'ok': self.okRun,
                                                           'green': self.okRun,
                                                           'back': self.closerm,
@@ -336,37 +337,36 @@ class MainHasBahCa(Screen):
             if six.PY3:
                 content = six.ensure_str(content)
             content = content.replace('..&gt;', '')
-            regexvideo = '<tr><td data-sort="(.*?)"><a href="/hasbahca_m3u/(.*?).m3u"><img'
-            # regexvideo = 'td><td><a href="(.*?)">(.*?).m3u.*?right">.*?</td></tr>'
-            # regexvideo = 'td><a href="(.*?)">(.*?).m3u.*?right">(.*?)  </td>.*?'
+
+            # regexvideo = '<tr><td data-sort="(.*?)"><a href="/hasbahca_m3u/(.*?).m3u"><img'
+            regexvideo = '</td><td><a href="(.*?)">(.*?).m3u.*?right">(.*?) .*?</td><'
             match = re.compile(regexvideo, re.DOTALL).findall(content)
             idx = 0
-            # for url, name, date in match:
-            for name, url in match:
-                print('url= ', url)
-                # print('date= ',date)
-                if 'parent' in name.lower():
+            for url, name, date in match:
+            # for name, url in match:
+                if '.m3u' not in url:
                     continue
-                elif 'hasbahcanetlink' in url:
-                    continue
-                elif '.txt' in name.lower():
-                    continue
+                # if 'parent' in name.lower():
+                    # continue
+                # if 'hasbahcanetlink' in url:
+                    # continue
+                # if '.txt' in name.lower():
+                    # continue
                 name = name.replace('..&gt;', '').replace('_', ' ').replace('.m3u', '')
-                # name = name #+ ' ' + date
-                url = urls + url + '.m3u'
+
+                name = name + ' ' + date
+
+                url = urls + url  # + '.m3u'
+                url = url.strip()
                 # item = name + "###" + url
                 # items.append(item)
             # items.sort()
             # for item in items:
                 # name = item.split("###")[0]
                 # url = item.split("###")[1]
-                self.urls.append(Utils.checkStr(url.strip()))
+                self.urls.append(url)
                 self.names.append(Utils.checkStr(name.strip()))
                 idx += 1
-
-            # self.names.append('ALL CATEGORY')
-            # self.urls.append(hostcategoryes)
-            # idx += 1
 
             self['info'].setText(_('Please now select ...'))
             self["live"].setText('N.' + str(idx) + " CATEGORY")
@@ -479,6 +479,7 @@ class HasBahCaC(Screen):
         self['live'].setText('')
         self['actions'] = ActionMap(['OkCancelActions',
                                      'ColorActions',
+                                     'ButtonSetupActions',
                                      'WizardActions', ], {'ok': self.okRun,
                                                           'green': self.okRun,
                                                           'red': self.close,
@@ -586,6 +587,7 @@ class HasBahCa1(Screen):
         search_ok = False
         self['actions'] = ActionMap(['OkCancelActions',
                                      'ColorActions',
+                                     'ButtonSetupActions',
                                      'WizardActions', ], {'ok': self.okRun,
                                                           'green': self.okRun,
                                                           'red': self.cancel,
@@ -1013,7 +1015,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
                                      'MediaPlayerActions',
                                      'EPGSelectActions',
                                      'MediaPlayerSeekActions',
-                                     'ColorActions',
+                                     'ButtonSetupActions',
                                      'InfobarShowHideActions',
                                      'InfobarActions',
                                      'InfobarSeekActions'], {'epg': self.showIMDB,
@@ -1021,6 +1023,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
                                                              'tv': self.cicleStreamType,
                                                              'stop': self.leavePlayer,
                                                              'cancel': self.cancel,
+                                                             'leavePlayer': self.cancel,
                                                              'back': self.cancel}, -1)
 
         if '8088' in str(self.url):
