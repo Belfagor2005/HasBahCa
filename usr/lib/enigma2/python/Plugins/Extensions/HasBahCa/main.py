@@ -13,6 +13,7 @@
 from __future__ import print_function
 from .__init__ import _
 from . import Utils
+from . import html_conv
 from Components.AVSwitch import AVSwitch
 from Components.ActionMap import ActionMap
 from Components.Button import Button
@@ -32,7 +33,6 @@ from Screens.InfoBarGenerics import InfoBarSeek, InfoBarAudioSelection
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Tools.Directories import SCOPE_PLUGINS, resolveFilename
-# from Tools.Directories import fileExists
 from enigma import RT_VALIGN_CENTER
 from enigma import RT_HALIGN_LEFT
 from enigma import eTimer
@@ -257,7 +257,7 @@ def returnIMDB(text_clear):
     if TMDB:
         try:
             from Plugins.Extensions.TMBD.plugin import TMBD
-            text = Utils.decodeHtml(text_clear)
+            text = html_conv.html_unescape(text_clear)
             _session.open(TMBD.tmdbScreen, text, 0)
         except Exception as ex:
             print("[XCF] Tmdb: ", str(ex))
@@ -265,13 +265,13 @@ def returnIMDB(text_clear):
     elif IMDb:
         try:
             from Plugins.Extensions.IMDb.plugin import main as imdb
-            text = Utils.decodeHtml(text_clear)
+            text = html_conv.html_unescape(text_clear)
             imdb(_session, text)
         except Exception as ex:
             print("[XCF] imdb: ", str(ex))
         return True
     else:
-        text_clear = Utils.decodeHtml(text_clear)
+        text_clear = html_conv.html_unescape(text_clear)
         _session.open(MessageBox, text_clear, MessageBox.TYPE_INFO)
         return True
     return
@@ -340,22 +340,15 @@ class MainHasBahCa(Screen):
 
             # regexvideo = '<tr><td data-sort="(.*?)"><a href="/hasbahca_m3u/(.*?).m3u"><img'
             regexvideo = '</td><td><a href="(.*?)">(.*?).m3u.*?right">(.*?) .*?</td><'
+            
             match = re.compile(regexvideo, re.DOTALL).findall(content)
             idx = 0
             for url, name, date in match:
             # for name, url in match:
                 if '.m3u' not in url:
                     continue
-                # if 'parent' in name.lower():
-                    # continue
-                # if 'hasbahcanetlink' in url:
-                    # continue
-                # if '.txt' in name.lower():
-                    # continue
                 name = name.replace('..&gt;', '').replace('_', ' ').replace('.m3u', '')
-
                 name = name + ' ' + date
-
                 url = urls + url  # + '.m3u'
                 url = url.strip()
                 # item = name + "###" + url
@@ -367,7 +360,6 @@ class MainHasBahCa(Screen):
                 self.urls.append(url)
                 self.names.append(Utils.checkStr(name.strip()))
                 idx += 1
-
             self['info'].setText(_('Please now select ...'))
             self["live"].setText('N.' + str(idx) + " CATEGORY")
             self['key_green'].show()
@@ -411,8 +403,6 @@ class MainHasBahCa(Screen):
         else:
             self.session.open(HasBahCa1, name, url)
             print('url HasBahCa 1 : ', url)
-        # else:
-            # self.mbox = self.session.open(MessageBox, _(':P'), MessageBox.TYPE_INFO, timeout=5)
 
     def msgdeleteBouquets(self):
         self.session.openWithCallback(self.deleteBouquets, MessageBox, _("Remove all HasBahCa Favorite Bouquet ?"), MessageBox.TYPE_YESNO, timeout=5, default=True)
@@ -527,7 +517,7 @@ class HasBahCaC(Screen):
                 # date = date.replace(',', '')
                 name1 = name.replace('HasBahCa', '°')
                 name1 = name1.replace('-', ' ').replace('_', ' ')
-                name = Utils.decodeHtml(name1)
+                name = html_conv.html_unescape(name1)
                 # item = name + "###" + url1
                 # items.append(item)
             # items.sort()
@@ -995,7 +985,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         self.service = None
         self.url = url
         print("******** name 3 ******* %s" % name)
-        self.name = Utils.decodeHtml(name)
+        self.name = html_conv.html_unescape(name)
         self.state = self.STATE_PLAYING
         self.srefInit = self.session.nav.getCurrentlyPlayingServiceReference()
         InfoBarBase.__init__(self, steal_current_service=True)
@@ -1025,7 +1015,6 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
                                                              'cancel': self.cancel,
                                                              'leavePlayer': self.cancel,
                                                              'back': self.cancel}, -1)
-
         if '8088' in str(self.url):
             # self.onLayoutFinish.append(self.slinkPlay)
             self.onFirstExecBegin.append(self.slinkPlay)
