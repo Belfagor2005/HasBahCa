@@ -58,9 +58,9 @@ try:
 except:
     from urllib.error import URLError, HTTPError
     from urllib.request import urlopen, Request
-    unicode = str
-    unichr = chr
-    long = int
+    # unicode = str
+    # unichr = chr
+    # long = int
     PY3 = True
 
 try:
@@ -331,16 +331,17 @@ class MainHasBahCa(Screen):
         self.names = []
         self.urls = []
         # items = []
-        urls = tyurl
+        urls = tyurl  # https://hasbahca.net/hasbahca_m3u/
         try:
             content = Utils.getUrl(urls)
             if six.PY3:
                 content = six.ensure_str(content)
             content = content.replace('..&gt;', '')
 
-            # regexvideo = '<tr><td data-sort="(.*?)"><a href="/hasbahca_m3u/(.*?).m3u"><img'
-            regexvideo = '</td><td><a href="(.*?)">(.*?).m3u.*?right">(.*?) .*?</td><'
-            
+            # regexvideo = '<tr><td data-sort="(.*?)"><a href="/hasbahca_m3u/(.*?).m3u"><img' #>2022-12-30 15:25<
+             # https://hasbahca.net/hasbahca_m3u/HasBahCa_IPTV_FULL.m3u
+            regexvideo = 'href="/hasbahca_m3u/(.*?)">.*?alt="File">(.*?).m3u.*?data-sort=".*?>(.*?)</td><'
+            regedate = '^\d{4}[\-\/\s]?((((0[13578])|(1[02]))[\-\/\s]?(([0-2][0-9])|(3[01])))|(((0[469])|(11))[\-\/\s]?(([0-2][0-9])|(30)))|(02[\-\/\s]?[0-2][0-9]))$'
             match = re.compile(regexvideo, re.DOTALL).findall(content)
             idx = 0
             for url, name, date in match:
@@ -348,16 +349,17 @@ class MainHasBahCa(Screen):
                 if '.m3u' not in url:
                     continue
                 name = name.replace('..&gt;', '').replace('_', ' ').replace('.m3u', '')
-                name = name + ' ' + date
-                url = urls + url  # + '.m3u'
-                url = url.strip()
+                name = '{}{}{}'.format(name, ' ', date)
+                # name = name + ' ' + date
+                # url = urls + url  # + '.m3u'
+                url = '{}{}'.format(urls, url)
                 # item = name + "###" + url
                 # items.append(item)
             # items.sort()
             # for item in items:
                 # name = item.split("###")[0]
                 # url = item.split("###")[1]
-                self.urls.append(url)
+                self.urls.append(url.strip())
                 self.names.append(Utils.checkStr(name.strip()))
                 idx += 1
             self['info'].setText(_('Please now select ...'))
@@ -503,29 +505,26 @@ class HasBahCaC(Screen):
             content2 = content[n1:n2]
             regexvideo = 'title="HasBahCa_(.*?).m3u.*?href="/HasBahCa/IPTV-LIST/blob/main/(.*?).m3u">.*?</a></span.*?</div>'
             match = re.compile(regexvideo, re.DOTALL).findall(content2)
-            print('match:  ', match)
+            # print('match:  ', match)
             # print("HasBahCa t match =", match)
             for name, url in match:
                 if 'readme' in name.lower():
                     continue
                 if 'enigma2' in name.lower():
                     continue
-                print("HasBahCa t name =", name)
-                print("HasBahCa t url =", url)
-                # print("HasBahCa t date =", date)
                 url1 = '{}{}{}'.format(github, str(url), '.m3u')
                 # date = date.replace(',', '')
                 name1 = name.replace('HasBahCa', '°')
                 name1 = name1.replace('-', ' ').replace('_', ' ')
-                name = html_conv.html_unescape(name1)
+                # name = html_conv.html_unescape(name1)
                 # item = name + "###" + url1
                 # items.append(item)
             # items.sort()
             # for item in items:
                 # name = item.split('###')[0]
                 # url2 = item.split('###')[1]
-                self.urls.append(Utils.checkStr(url1.strip()))
                 self.names.append(Utils.checkStr(name.strip()))
+                self.urls.append(url1.strip())
             self["live"].setText('N.' + str(len(self.names)) + " CATEGORY")
             self['info'].setText(_('Please now select ...'))
             self['key_green'].show()
@@ -614,8 +613,6 @@ class HasBahCa1(Screen):
                 content = Utils.getUrl(self.url)
                 if six.PY3:
                     content = six.ensure_str(content)
-                # #EXTINF:-1 group-title="US_MOVIES",10 Minutes Gone
-                # http://195.201.202.85/r70/ml-content/movie/10MinutesGone1080p-MovieLand.mp4
                 content = content.replace('$BorpasFileFormat="1"', '')
                 regexvideo = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
                 match = re.compile(regexvideo, re.DOTALL).findall(content)
@@ -623,9 +620,8 @@ class HasBahCa1(Screen):
                     name = name.replace('_', ' ').replace('-', ' ')
                     if str(search).lower() in name.lower():
                         search_ok = True
-                        url = url.replace(" ", "")
-                        url = url.replace("\\n", "")
-                        self.names.append(name)
+                        url = url.replace(" ", "").replace("\\n", "")
+                        self.names.append(Utils.checkStr(name).strip())
                         self.urls.append(url)
                 if search_ok is True:
                     showlisthasba(self.names, self['text'])
@@ -641,7 +637,6 @@ class HasBahCa1(Screen):
         print('self.url: ', self.url)
         self.names = []
         self.urls = []
-        items = []
         try:
             content = Utils.getUrl(url)
             if six.PY3:
@@ -651,15 +646,8 @@ class HasBahCa1(Screen):
             match = re.compile(regexvideo, re.DOTALL).findall(content)
             for name, url in match:
                 name = name.replace('_', ' ').replace('-', ' ')
-                # item = name + "###" + url
-                # print('Items sort: ', item)
-                # items.append(item)
-            # items.sort()
-            # for item in items:
-                # name = item.split('###')[0]
-                # url = item.split('###')[1]
-                self.urls.append(Utils.checkStr(url.strip()))
-                self.names.append(Utils.checkStr(name.strip()))
+                self.names.append(Utils.checkStr(name).strip())
+                self.urls.append(url.strip())
             self["live"].setText('N.' + str(len(self.names)) + " STREAM")
             self['info'].setText(_('Please now select ...'))
             self['key_green'].show()
@@ -745,7 +733,8 @@ class HasBahCa1(Screen):
                         continue
                     if line.startswith("#EXTINF"):
                         line = '%s' % line.split(',')[-1]
-                        line = line.rstrip()
+                        line = line.rstrip(
+                        line = Utils.checkStr(line))
                         namel = '%s' % line.split(',')[-1]
                         self.namel = namel.rstrip()
                         self.tmpx = '#DESCRIPTION %s\r' % line
@@ -1007,6 +996,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
                                      'MediaPlayerSeekActions',
                                      'ButtonSetupActions',
                                      'InfobarShowHideActions',
+                                     'OkCancelActions',
                                      'InfobarActions',
                                      'InfobarSeekActions'], {'epg': self.showIMDB,
                                                              'info': self.showIMDB,
@@ -1014,6 +1004,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
                                                              'stop': self.leavePlayer,
                                                              'cancel': self.cancel,
                                                              'leavePlayer': self.cancel,
+                                                             'down': self.av,
                                                              'back': self.cancel}, -1)
         if '8088' in str(self.url):
             # self.onLayoutFinish.append(self.slinkPlay)
@@ -1093,15 +1084,15 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
     def cicleStreamType(self):
         global streml
         # streaml = False
-        # from itertools import cycle, islice
+        from itertools import cycle, islice
         self.servicetype = '4097'
         print('servicetype1: ', self.servicetype)
         url = str(self.url)
         if str(os.path.splitext(self.url)[-1]) == ".m3u8":
             if self.servicetype == "1":
                 self.servicetype = "4097"
-        # currentindex = 0
-        # streamtypelist = ["4097"]
+        currentindex = 0
+        streamtypelist = ["4097"]
         # # if "youtube" in str(self.url):
             # # self.mbox = self.session.open(MessageBox, _('For Stream Youtube coming soon!'), MessageBox.TYPE_INFO, timeout=5)
             # # return
@@ -1112,14 +1103,14 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
             # streamtypelist.append("5001")
         # if os.path.exists("/usr/bin/exteplayer3"):
             # streamtypelist.append("5002")
-        # if os.path.exists("/usr/bin/apt-get"):
-            # streamtypelist.append("8193")
-        # for index, item in enumerate(streamtypelist, start=0):
-            # if str(item) == str(self.servicetype):
-                # currentindex = index
-                # break
-        # nextStreamType = islice(cycle(streamtypelist), currentindex + 1, None)
-        # self.servicetype = str(next(nextStreamType))
+        if os.path.exists("/usr/bin/apt-get"):
+            streamtypelist.append("8193")
+        for index, item in enumerate(streamtypelist, start=0):
+            if str(item) == str(self.servicetype):
+                currentindex = index
+                break
+        nextStreamType = islice(cycle(streamtypelist), currentindex + 1, None)
+        self.servicetype = str(next(nextStreamType))
         print('servicetype2: ', self.servicetype)
         self.openTest(self.servicetype, url)
 
