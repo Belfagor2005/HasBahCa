@@ -124,6 +124,7 @@ if sslverify:
 hostcategoryes = 'https://github.com/HasBahCa/IPTV-LIST/'
 github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
 tyurl = 'https://hasbahca.net/hasbahca_m3u/'
+tyurl2 = 'http://eviptv.com/m3u/'
 enigma_path = '/etc/enigma2'
 png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 
@@ -141,10 +142,10 @@ class hasList(MenuList):
         MenuList.__init__(self, list, True, eListboxPythonMultiContent)
         if Utils.isFHD():
             self.l.setItemHeight(50)
-            textfont = int(34)
+            textfont = int(30)
             self.l.setFont(0, gFont('Regular', textfont))
         else:
-            self.l.setItemHeight(50)
+            self.l.setItemHeight(30)
             textfont = int(24)
             self.l.setFont(0, gFont('Regular', textfont))
 
@@ -233,11 +234,11 @@ def hasbaSetListEntry(name):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 
     if Utils.isFHD():
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 0), size=(50, 50), png=loadPNG(png)))
-        res.append(MultiContentEntryText(pos=(80, 0), size=(1200, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 5), size=(40, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryText(pos=(70, 0), size=(1000, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     else:
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 0), size=(50, 50), png=loadPNG(png)))
-        res.append(MultiContentEntryText(pos=(80, 0), size=(1000, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(3, 3), size=(50, 50), png=loadPNG(png)))
+        res.append(MultiContentEntryText(pos=(50, 0), size=(500, 30), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     return res
 
 
@@ -727,17 +728,19 @@ class HasBahCa1(Screen):
                     if '#EXTM3U $BorpasFileFormat="1"' in line:  # force export bouquet ???
                         line = line.replace('$BorpasFileFormat="1"', '')
                         continue
-                    if line == '':
-                        continue
                     if line == ' ':
                         continue
+                    # if line == '' or line == ' ':
+                        # continue
+
+                    # #EXTM3U
+                    # #EXTINF:-1 group-title="AFRICA_WEBCAM",Africa 4
+                    # https://outbound-production.explore.org/stream-production-4.m3u8
                     if line.startswith("#EXTINF"):
                         line = '%s' % line.split(',')[-1]
-                        line = line.rstrip(
-                        line = Utils.checkStr(line))
-                        namel = '%s' % line.split(',')[-1]
-                        self.namel = namel.rstrip()
-                        self.tmpx = '#DESCRIPTION %s\r' % line
+                        line = Utils.checkStr(line).rstrip('\r').rstrip('\n')
+                        self.namel = '%s' % line.split(',')[-1]
+                        self.tmpx = '#DESCRIPTION %s' % self.namel
                     else:
                         if self.type.upper() == 'TV':
                             line = line.replace(':', '%3a')
@@ -749,9 +752,6 @@ class HasBahCa1(Screen):
                                     line = '#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
                                 if line.startswith('https%3a'):
                                     line = '#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-                            tmplist.append(line)
-                            tmplist.append(self.tmpx)
-
                         elif self.type.upper() == 'RADIO':
                             line = line.replace(':', '%3a')
                             line = line.rstrip()
@@ -762,10 +762,13 @@ class HasBahCa1(Screen):
                                     line = '#SERVICE 4097:0:2:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
                                 if line.startswith('https%3a'):
                                     line = '#SERVICE 4097:0:2:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-                            tmplist.append(line)
-                            tmplist.append(self.tmpx)
                         else:
                             print("UNKNOWN TYPE: %s" % self.type)
+                    tmplist.append(line)
+                    tmplist.append(self.tmpx)
+                    print('lineee222: ', line)
+                    print('tmpx222: ', self.tmpx)
+                    
                 path1 = '/etc/enigma2/' + str(bouquetname)
                 path2 = '/etc/enigma2/bouquets.' + str(self.type.lower())
                 # create userbouquet
