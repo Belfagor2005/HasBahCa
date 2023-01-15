@@ -167,6 +167,7 @@ def getFreeMemory():
         pass
     return (mem_free,mem_total)
 
+
 def sizeToString(nbytes):
     suffixes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB']
     size="0 B"
@@ -178,6 +179,18 @@ def sizeToString(nbytes):
         f = ('%.2f' % nbytes).rstrip('0').rstrip('.').replace(".",",")
         size = '%s %s' % (f, suffixes[i])
     return size  
+
+
+def convert_size(size_bytes):
+    import math
+    if size_bytes == 0:
+        return "0B"
+    size_name = ("B", "KB", "MB", "GB", "TB")
+    i = int(math.floor(math.log(size_bytes, 1024)))
+    p = math.pow(1024, i)
+    s = round(size_bytes // p, 2)
+    return "%s %s" % (s, size_name[i])
+
 
 def getMountPoint(path):
     pathname= os.path.realpath(path)
@@ -466,21 +479,11 @@ def checkStr(text, encoding='utf8'):
     else:
         if isinstance(text, unicode):
             text = text.encode(encoding)
+        # else:
+            # return text
     return text
 
-def to_utf8(dct):
-    if isinstance(dct, dict):
-        return dict((to_utf8(key), to_utf8(value)) for key, value in dct.items())
-    elif isinstance(dct, list):
-        return [to_utf8(element) for element in dct]
-    elif isinstance(dct, unicode):
-        dct = dct.encode("utf8")
-        if PY3: dct = dct.decode("utf8")
-        return dct
-    elif PY3 and isinstance(dct, bytes):
-        return dct.decode('utf-8')
-    else:
-        return dct
+
 # def checkStr(txt):
     # # convert variable to type str both in Python 2 and 3
     # if PY3:

@@ -120,11 +120,14 @@ if sslverify:
                 ClientTLSOptions(self.hostname, ctx)
             return ctx
 
-
+# server
 hostcategoryes = 'https://github.com/HasBahCa/IPTV-LIST/'
 github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
-tyurl = 'https://hasbahca.net/hasbahca_m3u/'
-tyurl2 = 'http://eviptv.com/m3u/'
+# tyurl = 'https://hasbahca.net/hasbahca_m3u/'
+# tyurl2 = 'http://eviptv.com/m3u/'
+tyurl = 'http://eviptv.com/m3u/'
+tyurl2 = 'https://hasbahca.net/hasbahca_m3u/'
+
 enigma_path = '/etc/enigma2'
 png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 
@@ -149,95 +152,47 @@ class hasList(MenuList):
             textfont = int(24)
             self.l.setFont(0, gFont('Regular', textfont))
 
+# filter list assign png
+EXTRAD = "radio", "radyo", "mix", "fm", "kbit", "rap", "metal", "alternative"
+EXTXXX = "adult", "xxx"
+EXTCAM = "webcam", "webcams"
+EXTMUS = "music", "mtv", "deluxe", "djing", "fashion", "kiss", "mpeg", "sluhay", "stingray", "techno", "viva", "country", "vevo"
+EXTSPOR = "spor", "boxing", "racing", "fight", "golf", "knock", "harley", "futbool", "motor", "nba", "nfl", "bull", "poker", "billiar", "fite"
+EXTRLX = "relax", "nature", "escape"
+EXTMOV = "movie", "film"
+
 
 def hasbaSetListEntry(name):
     res = [name]
-    if 'radio' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/radio.png".format('HasBahCa'))
-    elif 'radyo' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/radio.png".format('HasBahCa'))
-    elif 'adult' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/xxx.png".format('HasBahCa'))
-    elif 'xxx' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/xxx.png".format('HasBahCa'))
-    elif 'webcam' in name.lower():
+    png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
+    if any(s in name.lower() for s in EXTCAM):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/webcam.png".format('HasBahCa'))
-    elif 'music' in name.lower():
+    elif any(s in name.lower() for s in EXTRAD):
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/radio.png".format('HasBahCa'))
+    elif any(s in name.lower() for s in EXTXXX):
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/xxx.png".format('HasBahCa'))
+    elif any(s in name.lower() for s in EXTMUS):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
-    elif 'mtv' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
-    elif 'deluxe' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
-    elif 'djing' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
-    elif 'fashion' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
-    elif 'kiss' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
-    elif 'sluhay' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
-    elif 'stingray' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
-    elif 'techno' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
-    elif 'viva' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
-    elif 'country' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
-    elif 'vevo' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
-    elif 'spor' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'boxing' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'racing' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'fight' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'golf' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'knock' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'harley' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'futbool' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'motor' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'nba' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'nfl' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'bull' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'poker' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'billiar' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'fite' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
-    elif 'relax' in name.lower():
+    elif any(s in name.lower() for s in EXTRLX):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/relax.png".format('HasBahCa'))
-    elif 'nature' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/relax.png".format('HasBahCa'))
-    elif 'escape' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/relax.png".format('HasBahCa'))
-    elif 'movie' in name.lower():
+    elif any(s in name.lower() for s in EXTMOV):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/movie.png".format('HasBahCa'))
+    elif any(s in name.lower() for s in EXTSPOR):
+        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
     elif 'pluto' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/plutotv.png".format('HasBahCa'))
     elif 'tvplus' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tvplus.png".format('HasBahCa'))
     elif '~~~~' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/mark.png".format('HasBahCa'))
-    else:
+    else:  
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 
     if Utils.isFHD():
         res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 5), size=(40, 40), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(70, 0), size=(1000, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     else:
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(3, 3), size=(50, 50), png=loadPNG(png)))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(3, 3), size=(30, 30), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(50, 0), size=(500, 30), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     return res
 
@@ -316,7 +271,7 @@ class MainHasBahCa(Screen):
             self.timer_conn = self.timer.timeout.connect(self.updateMenuList)
         else:
             self.timer.callback.append(self.updateMenuList)
-        self.timer.start(1500, True)
+        self.timer.start(1000, True)
         # self.onFirstExecBegin.append(self.updateMenuList)
         self.onLayoutFinish.append(self.__layoutFinished)
 
@@ -332,17 +287,25 @@ class MainHasBahCa(Screen):
         self.names = []
         self.urls = []
         # items = []
-        urls = tyurl  # https://hasbahca.net/hasbahca_m3u/
+
+        # tyurl2  'http://eviptv.com/m3u/'
+        # <tr><td data-sort="adult.m3u"><a href="/m3u/adult.m3u"><img class="icon" src="/_autoindex/assets/icons/file.svg" alt="File">adult.m3u</a></td><td data-sort="1672577704">2023-01-01 12:55</td><td data-sort="3825664">   3736k</td></tr>
+
+        # tyurl
+        # <tr><td data-sort="hasbahca_iptv.m3u"><a href="/hasbahca_m3u/hasbahca_iptv.m3u"><img class="icon" src="/_autoindex/assets/icons/file.svg" alt="File">hasbahca_iptv.m3u</a></td><td data-sort="1673444997">2023-01-11 13:49</td><td data-sort="5255168">   5132k</td></tr>
+        urls = tyurl2  # https://hasbahca.net/hasbahca_m3u/
+
         try:
             content = Utils.getUrl(urls)
             if six.PY3:
                 content = six.ensure_str(content)
             content = content.replace('..&gt;', '')
-
-            # regexvideo = '<tr><td data-sort="(.*?)"><a href="/hasbahca_m3u/(.*?).m3u"><img' #>2022-12-30 15:25<
-             # https://hasbahca.net/hasbahca_m3u/HasBahCa_IPTV_FULL.m3u
             regexvideo = 'href="/hasbahca_m3u/(.*?)">.*?alt="File">(.*?).m3u.*?data-sort=".*?>(.*?)</td><'
-            regedate = '^\d{4}[\-\/\s]?((((0[13578])|(1[02]))[\-\/\s]?(([0-2][0-9])|(3[01])))|(((0[469])|(11))[\-\/\s]?(([0-2][0-9])|(30)))|(02[\-\/\s]?[0-2][0-9]))$'
+            if 'eviptv' in content:
+                regexvideo = 'href="/m3u/(.*?)">.*?alt="File">(.*?).m3u.*?data-sort=".*?>(.*?)</td><'
+                # https://hasbahca.net/hasbahca_m3u/HasBahCa_IPTV_FULL.m3u
+
+            # regedate = '^\d{4}[\-\/\s]?((((0[13578])|(1[02]))[\-\/\s]?(([0-2][0-9])|(3[01])))|(((0[469])|(11))[\-\/\s]?(([0-2][0-9])|(30)))|(02[\-\/\s]?[0-2][0-9]))$'
             match = re.compile(regexvideo, re.DOTALL).findall(content)
             idx = 0
             for url, name, date in match:
@@ -494,7 +457,7 @@ class HasBahCaC(Screen):
         self.names = []
         self.urls = []
         url = self.url
-        items = []
+        # items = []
         try:
             content = Utils.getUrl(url)
             if six.PY3:
@@ -679,12 +642,12 @@ class HasBahCa1(Screen):
     def convert2(self, result):
         if result:
             self.type = 'tv'
-            if "webcam" in self.name.lower():
-                self.type = "tv"
-            elif "radio" in self.name.lower():
+            # if "webcam" in self.name.lower():
+                # self.type = "tv"
+            if "radio" in self.name.lower():
                 self.type = "radio"
-            else:
-                self.type = "tv"
+            # else:
+                # self.type = "tv"
             name_file = self.name.replace('/', '_').replace(',', '').replace('hasbahca', 'hbc')
             cleanName = re.sub(r'[\<\>\:\"\/\\\|\?\*]', '_', str(name_file))
             cleanName = re.sub(r' ', '_', cleanName)
@@ -768,7 +731,7 @@ class HasBahCa1(Screen):
                     tmplist.append(self.tmpx)
                     print('lineee222: ', line)
                     print('tmpx222: ', self.tmpx)
-                    
+
                 path1 = '/etc/enigma2/' + str(bouquetname)
                 path2 = '/etc/enigma2/bouquets.' + str(self.type.lower())
                 # create userbouquet
