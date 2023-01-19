@@ -5,7 +5,7 @@
 ****************************************
 *        coded by Lululla              *
 *             skin by MMark            *
-*             09/10/2022               *
+*             14/01/2023               *
 *   Thank's                            *
 *      HasBahCa, Levi45, KiddaC, Pcd   *
 ****************************************
@@ -58,9 +58,6 @@ try:
 except:
     from urllib.error import URLError, HTTPError
     from urllib.request import urlopen, Request
-    # unicode = str
-    # unichr = chr
-    # long = int
     PY3 = True
 
 try:
@@ -127,9 +124,7 @@ github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
 # tyurl2 = 'http://eviptv.com/m3u/'
 tyurl = 'http://eviptv.com/m3u/'
 tyurl2 = 'https://hasbahca.net/hasbahca_m3u/'
-
 enigma_path = '/etc/enigma2'
-png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 
 if Utils.isFHD():
     path_skin = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/skins/fhd/".format('HasBahCa'))
@@ -287,7 +282,6 @@ class MainHasBahCa(Screen):
         self.names = []
         self.urls = []
         # items = []
-
         # tyurl2  'http://eviptv.com/m3u/'
         # <tr><td data-sort="adult.m3u"><a href="/m3u/adult.m3u"><img class="icon" src="/_autoindex/assets/icons/file.svg" alt="File">adult.m3u</a></td><td data-sort="1672577704">2023-01-01 12:55</td><td data-sort="3825664">   3736k</td></tr>
 
@@ -303,26 +297,15 @@ class MainHasBahCa(Screen):
             regexvideo = 'href="/hasbahca_m3u/(.*?)">.*?alt="File">(.*?).m3u.*?data-sort=".*?>(.*?)</td><'
             if 'eviptv' in content:
                 regexvideo = 'href="/m3u/(.*?)">.*?alt="File">(.*?).m3u.*?data-sort=".*?>(.*?)</td><'
-                # https://hasbahca.net/hasbahca_m3u/HasBahCa_IPTV_FULL.m3u
-
             # regedate = '^\d{4}[\-\/\s]?((((0[13578])|(1[02]))[\-\/\s]?(([0-2][0-9])|(3[01])))|(((0[469])|(11))[\-\/\s]?(([0-2][0-9])|(30)))|(02[\-\/\s]?[0-2][0-9]))$'
             match = re.compile(regexvideo, re.DOTALL).findall(content)
             idx = 0
             for url, name, date in match:
-            # for name, url in match:
                 if '.m3u' not in url:
                     continue
                 name = name.replace('..&gt;', '').replace('_', ' ').replace('.m3u', '')
                 name = '{}{}{}'.format(name, ' ', date)
-                # name = name + ' ' + date
-                # url = urls + url  # + '.m3u'
                 url = '{}{}'.format(urls, url)
-                # item = name + "###" + url
-                # items.append(item)
-            # items.sort()
-            # for item in items:
-                # name = item.split("###")[0]
-                # url = item.split("###")[1]
                 self.urls.append(url.strip())
                 self.names.append(Utils.checkStr(name.strip()))
                 idx += 1
