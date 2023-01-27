@@ -49,6 +49,8 @@ import ssl
 import sys
 global downloadhasba
 global path_skin
+global tyurl
+tyurl = False
 downloadhasba = None
 
 PY3 = sys.version_info.major >= 3
@@ -279,36 +281,41 @@ class MainHasBahCa(Screen):
 
     # <tr><td valign="top">&nbsp;</td><td><a href="ALBANIA_BOSNIA_KOSOVO.m3u">ALBANIA_BOSNIA_KOSOV..&gt;</a></td><td align="right">2022-03-06 06:08  </td><td align="right">3.8K</td><td>&nbsp;</td></tr>
     def updateMenuList(self):
+        global tyurl
         self.names = []
         self.urls = []
-        # items = []
-        # tyurl2  'http://eviptv.com/m3u/'
-        # <tr><td data-sort="adult.m3u"><a href="/m3u/adult.m3u"><img class="icon" src="/_autoindex/assets/icons/file.svg" alt="File">adult.m3u</a></td><td data-sort="1672577704">2023-01-01 12:55</td><td data-sort="3825664">   3736k</td></tr>
+        urls = tyurl 
+        if tyurl is True:
+            urls = tyurl2
 
-        # tyurl
-        # <tr><td data-sort="hasbahca_iptv.m3u"><a href="/hasbahca_m3u/hasbahca_iptv.m3u"><img class="icon" src="/_autoindex/assets/icons/file.svg" alt="File">hasbahca_iptv.m3u</a></td><td data-sort="1673444997">2023-01-11 13:49</td><td data-sort="5255168">   5132k</td></tr>
-        urls = tyurl2  # https://hasbahca.net/hasbahca_m3u/
-
+        print('urls  ', urls)
         try:
             content = Utils.getUrl(urls)
             if six.PY3:
                 content = six.ensure_str(content)
-            content = content.replace('..&gt;', '')
-            regexvideo = 'href="/hasbahca_m3u/(.*?)">.*?alt="File">(.*?).m3u.*?data-sort=".*?>(.*?)</td><'
-            if 'eviptv' in content:
-                regexvideo = 'href="/m3u/(.*?)">.*?alt="File">(.*?).m3u.*?data-sort=".*?>(.*?)</td><'
-            # regedate = '^\d{4}[\-\/\s]?((((0[13578])|(1[02]))[\-\/\s]?(([0-2][0-9])|(3[01])))|(((0[469])|(11))[\-\/\s]?(([0-2][0-9])|(30)))|(02[\-\/\s]?[0-2][0-9]))$'
-            match = re.compile(regexvideo, re.DOTALL).findall(content)
+            n1 = content.find('Directory</a>', 0)
+            n2 = content.find('</body', n1)
+            content2 = content[n1:n2]
+            content3 = content2.replace('..&gt;', '')
+            # print('content ', content3)
+            regexvideo = 'href="(.*?).m3u">HasBahCa_(.*?)</a.*?align="right">(.*?)</td>.*?</tr>'            
+            match = re.compile(regexvideo, re.DOTALL).findall(content3)
             idx = 0
             for url, name, date in match:
-                if '.m3u' not in url:
-                    continue
-                name = name.replace('..&gt;', '').replace('_', ' ').replace('.m3u', '')
+                name = name.replace('..','').replace('HasBahCa_', '')
+                name = name.replace('&gt;', '').replace('_', ' ').replace('.m3u', '')
                 name = '{}{}{}'.format(name, ' ', date)
-                url = '{}{}'.format(urls, url)
+                url = '{}{}'.format(urls, url + '.m3u')
                 self.urls.append(url.strip())
                 self.names.append(Utils.checkStr(name.strip()))
                 idx += 1
+            print(len(self.names))
+            if len(self.names) < 1:
+                if tyurl is True:
+                    tyurl = False
+                else:
+                    tyurl = True
+                    self.updateMenuList()
             self['info'].setText(_('Please now select ...'))
             self["live"].setText('N.' + str(idx) + " CATEGORY")
             self['key_green'].show()
