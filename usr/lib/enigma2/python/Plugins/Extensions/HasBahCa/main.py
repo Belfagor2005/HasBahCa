@@ -122,8 +122,6 @@ if sslverify:
 # server
 hostcategoryes = 'https://github.com/HasBahCa/IPTV-LIST/'
 github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
-# tyurl = 'https://hasbahca.net/hasbahca_m3u/'
-# tyurl2 = 'http://eviptv.com/m3u/'
 tyurl = 'http://eviptv.com/m3u/'
 tyurl2 = 'https://hasbahca.net/hasbahca_m3u/'
 enigma_path = '/etc/enigma2'
@@ -145,9 +143,10 @@ class hasList(MenuList):
             textfont = int(30)
             self.l.setFont(0, gFont('Regular', textfont))
         else:
-            self.l.setItemHeight(30)
+            self.l.setItemHeight(50)
             textfont = int(24)
             self.l.setFont(0, gFont('Regular', textfont))
+
 
 # filter list assign png
 EXTRAD = "radio", "radyo", "mix", "fm", "kbit", "rap", "metal", "alternative"
@@ -182,15 +181,15 @@ def hasbaSetListEntry(name):
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tvplus.png".format('HasBahCa'))
     elif '~~~~' in name.lower():
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/mark.png".format('HasBahCa'))
-    else:  
+    else:
         png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
 
     if Utils.isFHD():
         res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 5), size=(40, 40), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(70, 0), size=(1000, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     else:
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(3, 3), size=(30, 30), png=loadPNG(png)))
-        res.append(MultiContentEntryText(pos=(50, 0), size=(500, 30), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(3, 10), size=(40, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryText(pos=(50, 0), size=(500, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     return res
 
 
@@ -279,12 +278,11 @@ class MainHasBahCa(Screen):
         Utils.deletetmp()
         self.close()
 
-    # <tr><td valign="top">&nbsp;</td><td><a href="ALBANIA_BOSNIA_KOSOVO.m3u">ALBANIA_BOSNIA_KOSOV..&gt;</a></td><td align="right">2022-03-06 06:08  </td><td align="right">3.8K</td><td>&nbsp;</td></tr>
     def updateMenuList(self):
         global tyurl
         self.names = []
         self.urls = []
-        urls = tyurl 
+        urls = tyurl
         if tyurl is True:
             urls = tyurl2
 
@@ -298,11 +296,11 @@ class MainHasBahCa(Screen):
             content2 = content[n1:n2]
             content3 = content2.replace('..&gt;', '')
             # print('content ', content3)
-            regexvideo = 'href="(.*?).m3u">HasBahCa_(.*?)</a.*?align="right">(.*?)</td>.*?</tr>'            
+            regexvideo = 'href="(.*?).m3u">HasBahCa_(.*?)</a.*?align="right">(.*?)</td>.*?</tr>'
             match = re.compile(regexvideo, re.DOTALL).findall(content3)
             idx = 0
             for url, name, date in match:
-                name = name.replace('..','').replace('HasBahCa_', '')
+                name = name.replace('..', '').replace('HasBahCa_', '')
                 name = name.replace('&gt;', '').replace('_', ' ').replace('.m3u', '')
                 name = '{}{}{}'.format(name, ' ', date)
                 url = '{}{}'.format(urls, url + '.m3u')
@@ -459,24 +457,23 @@ class HasBahCaC(Screen):
             content2 = content[n1:n2]
             regexvideo = 'title="HasBahCa_(.*?).m3u.*?href="/HasBahCa/IPTV-LIST/blob/main/(.*?).m3u">.*?</a></span.*?</div>'
             match = re.compile(regexvideo, re.DOTALL).findall(content2)
-            # print('match:  ', match)
-            # print("HasBahCa t match =", match)
             for name, url in match:
                 if 'readme' in name.lower():
                     continue
                 if 'enigma2' in name.lower():
                     continue
                 url1 = '{}{}{}'.format(github, str(url), '.m3u')
-                # date = date.replace(',', '')
                 name1 = name.replace('HasBahCa', '°')
                 name1 = name1.replace('-', ' ').replace('_', ' ')
-                # name = html_conv.html_unescape(name1)
-                # item = name + "###" + url1
-                # items.append(item)
-            # items.sort()
-            # for item in items:
-                # name = item.split('###')[0]
-                # url2 = item.split('###')[1]
+                '''
+                name = html_conv.html_unescape(name1)
+                item = name + "###" + url1
+                items.append(item)
+            items.sort()
+            for item in items:
+                name = item.split('###')[0]
+                url2 = item.split('###')[1]
+                '''
                 self.names.append(Utils.checkStr(name.strip()))
                 self.urls.append(url1.strip())
             self["live"].setText('N.' + str(len(self.names)) + " CATEGORY")
@@ -632,12 +629,8 @@ class HasBahCa1(Screen):
     def convert2(self, result):
         if result:
             self.type = 'tv'
-            # if "webcam" in self.name.lower():
-                # self.type = "tv"
             if "radio" in self.name.lower():
                 self.type = "radio"
-            # else:
-                # self.type = "tv"
             name_file = self.name.replace('/', '_').replace(',', '').replace('hasbahca', 'hbc')
             cleanName = re.sub(r'[\<\>\:\"\/\\\|\?\*]', '_', str(name_file))
             cleanName = re.sub(r' ', '_', cleanName)
@@ -683,12 +676,6 @@ class HasBahCa1(Screen):
                         continue
                     if line == ' ':
                         continue
-                    # if line == '' or line == ' ':
-                        # continue
-
-                    # #EXTM3U
-                    # #EXTINF:-1 group-title="AFRICA_WEBCAM",Africa 4
-                    # https://outbound-production.explore.org/stream-production-4.m3u8
                     if line.startswith("#EXTINF"):
                         line = '%s' % line.split(',')[-1]
                         line = Utils.checkStr(line).rstrip('\r').rstrip('\n')
@@ -1049,16 +1036,18 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
                 self.servicetype = "4097"
         currentindex = 0
         streamtypelist = ["4097"]
-        # # if "youtube" in str(self.url):
-            # # self.mbox = self.session.open(MessageBox, _('For Stream Youtube coming soon!'), MessageBox.TYPE_INFO, timeout=5)
-            # # return
-        # if Utils.isStreamlinkAvailable():
-            # streamtypelist.append("5002") #ref = '5002:0:1:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/' + url
-            # streaml = True
-        # if os.path.exists("/usr/bin/gstplayer"):
-            # streamtypelist.append("5001")
-        # if os.path.exists("/usr/bin/exteplayer3"):
-            # streamtypelist.append("5002")
+        '''
+        # if "youtube" in str(self.url):
+            # self.mbox = self.session.open(MessageBox, _('For Stream Youtube coming soon!'), MessageBox.TYPE_INFO, timeout=5)
+            # return
+        if Utils.isStreamlinkAvailable():
+            streamtypelist.append("5002") #ref = '5002:0:1:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/' + url
+            streaml = True
+        if os.path.exists("/usr/bin/gstplayer"):
+            streamtypelist.append("5001")
+        if os.path.exists("/usr/bin/exteplayer3"):
+            streamtypelist.append("5002")
+        '''
         if os.path.exists("/usr/bin/apt-get"):
             streamtypelist.append("8193")
         for index, item in enumerate(streamtypelist, start=0):

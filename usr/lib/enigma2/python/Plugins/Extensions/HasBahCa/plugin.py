@@ -25,23 +25,6 @@ plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
 _firstStarthbc = True
 
 
-# try:
-    # if Utils.zCheckInternet(1):
-        # try:
-            # from . import Update
-            # Update.upd_done()
-        # except Exception as e:
-            # print(str(e))
-    # else:
-        # from Screens.MessageBox import MessageBox
-        # from Tools.Notifications import AddPopup
-        # AddPopup(_("Sorry but No Internet :("), MessageBox.TYPE_INFO, 10, 'Sorry')
-
-# except:
-    # import traceback
-    # traceback.print_exc()
-
-
 class AutoStartTimerhbc:
 
     def __init__(self, session):
