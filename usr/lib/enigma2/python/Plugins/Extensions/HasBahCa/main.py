@@ -124,12 +124,13 @@ hostcategoryes = 'https://github.com/HasBahCa/IPTV-LIST/'
 github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
 tyurl = 'http://eviptv.com/m3u/'
 tyurl2 = 'https://hasbahca.net/hasbahca_m3u/'
+plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
 enigma_path = '/etc/enigma2'
 
 if Utils.isFHD():
-    path_skin = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/skins/fhd/".format('HasBahCa'))
+    path_skin = os.path.join(plugin_path, 'res/skins/fhd/')
 else:
-    path_skin = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/skins/hd/".format('HasBahCa'))
+    path_skin = os.path.join(plugin_path, 'res/skins/hd/')
 if Utils.DreamOS():
     path_skin = path_skin + 'dreamOs/'
 print('HasBahCa path_skin: ', path_skin)
@@ -160,32 +161,32 @@ EXTMOV = "movie", "film"
 
 def hasbaSetListEntry(name):
     res = [name]
-    png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
+    png = os.path.join(plugin_path, 'res/pics/tv.png')
     if any(s in name.lower() for s in EXTCAM):
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/webcam.png".format('HasBahCa'))
+        png = os.path.join(plugin_path, 'res/pics/webcam.png')
     elif any(s in name.lower() for s in EXTRAD):
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/radio.png".format('HasBahCa'))
+        png = os.path.join(plugin_path, 'res/pics/radio.png')
     elif any(s in name.lower() for s in EXTXXX):
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/xxx.png".format('HasBahCa'))
+        png = os.path.join(plugin_path, 'res/pics/xxx.png')
     elif any(s in name.lower() for s in EXTMUS):
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/music.png".format('HasBahCa'))
+        png = os.path.join(plugin_path, 'res/pics/music.png')
     elif any(s in name.lower() for s in EXTRLX):
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/relax.png".format('HasBahCa'))
+        png = os.path.join(plugin_path, 'res/pics/relax.png')
     elif any(s in name.lower() for s in EXTMOV):
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/movie.png".format('HasBahCa'))
+        png = os.path.join(plugin_path, 'res/pics/movie.png')
     elif any(s in name.lower() for s in EXTSPOR):
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/sport.png".format('HasBahCa'))
+        png = os.path.join(plugin_path, 'res/pics/sport.png')
     elif 'pluto' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/plutotv.png".format('HasBahCa'))
+        png = os.path.join(plugin_path, 'res/pics/plutotv.png')
     elif 'tvplus' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tvplus.png".format('HasBahCa'))
+        png = os.path.join(plugin_path, 'res/pics/tvplus.png')
     elif '~~~~' in name.lower():
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/mark.png".format('HasBahCa'))
+        png = os.path.join(plugin_path, 'res/pics/mark.png')
     else:
-        png = resolveFilename(SCOPE_PLUGINS, "Extensions/{}/res/pics/tv.png".format('HasBahCa'))
+        png = os.path.join(plugin_path, 'res/pics/tv.png')
 
     if Utils.isFHD():
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 5), size=(40, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 10), size=(40, 40), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(70, 0), size=(1000, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     else:
         res.append(MultiContentEntryPixmapAlphaTest(pos=(3, 10), size=(40, 40), png=loadPNG(png)))

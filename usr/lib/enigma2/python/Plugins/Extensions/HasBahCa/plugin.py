@@ -67,7 +67,7 @@ def mainw(session, **kwargs):
 def Plugins(**kwargs):
     ico_path = 'logo.png'
     if not os.path.exists('/var/lib/dpkg/status'):
-        ico_path = plugin_path + '/res/pics/logo.png'
+        ico_path = os.path.join(plugin_path, 'res/pics/logo.png')
     # extensions_menu = PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=PluginDescriptor.WHERE_EXTENSIONSMENU, fnc=mainw, needsRestart=True)
     result = [PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=[PluginDescriptor.WHERE_SESSIONSTART], fnc=autostart),
               PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=PluginDescriptor.WHERE_PLUGINMENU, icon=ico_path, fnc=mainw)]
