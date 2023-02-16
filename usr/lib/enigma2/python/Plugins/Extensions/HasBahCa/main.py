@@ -5,7 +5,7 @@
 ****************************************
 *        coded by Lululla              *
 *             skin by MMark            *
-*             14/01/2023               *
+*             14/02/2023               *
 *   Thank's                            *
 *      HasBahCa, Levi45, KiddaC, Pcd   *
 ****************************************
@@ -132,7 +132,7 @@ if Utils.isFHD():
 else:
     path_skin = os.path.join(plugin_path, 'res/skins/hd/')
 if Utils.DreamOS():
-    path_skin = path_skin + 'dreamOs/'
+    path_skin = os.path.join(path_skin, 'dreamOs/')
 print('HasBahCa path_skin: ', path_skin)
 
 
@@ -207,34 +207,33 @@ def showlisthasba(data, list):
 def returnIMDB(text_clear):
     TMDB = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('TMDB'))
     IMDb = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('IMDb'))
-    if TMDB:
+    if os.path.exists(TMDB):
         try:
             from Plugins.Extensions.TMBD.plugin import TMBD
             text = html_conv.html_unescape(text_clear)
             _session.open(TMBD.tmdbScreen, text, 0)
-        except Exception as ex:
-            print("[XCF] Tmdb: ", str(ex))
+        except Exception as e:
+            print("[XCF] Tmdb: ", str(e))
         return True
-    elif IMDb:
+    elif os.path.exists(IMDb):
         try:
             from Plugins.Extensions.IMDb.plugin import main as imdb
             text = html_conv.html_unescape(text_clear)
             imdb(_session, text)
-        except Exception as ex:
-            print("[XCF] imdb: ", str(ex))
+        except Exception as e:
+            print("[XCF] imdb: ", str(e))
         return True
     else:
         text_clear = html_conv.html_unescape(text_clear)
         _session.open(MessageBox, text_clear, MessageBox.TYPE_INFO)
         return True
-    return
 
 
 class MainHasBahCa(Screen):
     def __init__(self, session):
         Screen.__init__(self, session)
         self.session = session
-        skin = path_skin + 'settings.xml'
+        skin = os.path.join(path_skin, 'settings.xml')
         with open(skin, 'r') as f:
             self.skin = f.read()
         self.setup_title = ('Main HasBahCa')
@@ -309,7 +308,7 @@ class MainHasBahCa(Screen):
                 self.names.append(Utils.checkStr(name.strip()))
                 idx += 1
             print(len(self.names))
-            if len(self.names) < 1:
+            if len(self.names) < 0:
                 if tyurl is True:
                     tyurl = False
                 else:
@@ -336,10 +335,8 @@ class MainHasBahCa(Screen):
     def okRun(self):
         i = len(self.names)
         print('iiiiii= ', i)
-        if i < 1:
+        if i < 0:
             return
-        # if i is not None:
-            # return
         idx = self["text"].getSelectionIndex()
         name = self.names[idx]
         url = self.urls[idx]
@@ -400,7 +397,7 @@ class HasBahCaC(Screen):
     def __init__(self, session, name, url):
         Screen.__init__(self, session)
         self.session = session
-        skin = path_skin + 'settings.xml'
+        skin = os.path.join(path_skin, 'settings.xml')
         with open(skin, 'r') as f:
             self.skin = f.read()
         self.setup_title = ('HasBahCa TV')
@@ -499,7 +496,7 @@ class HasBahCa1(Screen):
     def __init__(self, session, sel, url):
         self.session = session
         Screen.__init__(self, session)
-        skin = path_skin + 'settings.xml'
+        skin = os.path.join(path_skin, 'settings.xml')
         with open(skin, 'r') as f:
             self.skin = f.read()
         self.setup_title = ('HasBahCa TV')
@@ -613,7 +610,7 @@ class HasBahCa1(Screen):
     def okRun(self):
         i = len(self.names)
         print('iiiiii= ', i)
-        if i < 1:
+        if i < 0:
             return
         idx = self["text"].getSelectionIndex()
         name = self.names[idx]
@@ -623,7 +620,7 @@ class HasBahCa1(Screen):
     def convert(self):
         i = len(self.names)
         print('iiiiii= ', i)
-        if i < 1:
+        if i < 0:
             return
         self.session.openWithCallback(self.convert2, MessageBox, _("Do you want to Convert %s\nto Favorite Bouquet ?\n\nAttention!! Wait while converting !!!") % self.name, MessageBox.TYPE_YESNO, timeout=5, default=True)
 
