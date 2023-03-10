@@ -617,30 +617,25 @@ class HasBahCa1(Screen):
         url = self.urls[idx]
         self.session.open(Playgo, name, url)
 
-    def convert(self):
+    def convert(self, answer=None):
         i = len(self.names)
         print('iiiiii= ', i)
         if i < 0:
             return
-        self.session.openWithCallback(self.convert2, MessageBox, _("Do you want to Convert %s\nto Favorite Bouquet ?\n\nAttention!! Wait while converting !!!") % self.name, MessageBox.TYPE_YESNO, timeout=5, default=True)
-
-    def convert2(self, result):
-        if result:
+        if answer is None:
+            self.session.openWithCallback(self.messagerun, MessageBox, _("Do you want to Convert %s\nto Favorite Bouquet ?\n\nAttention!! Wait while converting !!!") % self.name)
+        elif answer:
             self.type = 'tv'
             if "radio" in self.name.lower():
                 self.type = "radio"
+
             name_file = self.name.replace('/', '_').replace(',', '').replace('hasbahca', 'hbc')
             cleanName = re.sub(r'[\<\>\:\"\/\\\|\?\*]', '_', str(name_file))
             cleanName = re.sub(r' ', '_', cleanName)
             cleanName = re.sub(r'\d+:\d+:[\d.]+', '_', cleanName)
             name_file = re.sub(r'_+', '_', cleanName)
             bouquetname = 'userbouquet.hbc_%s.%s' % (name_file.lower(), self.type.lower())
-            self.tmpx = ''
-            self.namel = ''
-            tmplist = []
-            tmplist.append('#NAME HasBahCa IPTV %s (%s)' % (name_file, self.type))
-            tmplist.append('#SERVICE 1:64:0:0:0:0:0:0:0:0::%s CHANNELS' % name_file)
-            tmplist.append('#DESCRIPTION --- %s ---' % name_file)
+
             print("Converting Bouquet %s" % name_file)
             self.file = "/tmp/tempm3u.m3u"
             if os.path.isfile(self.file):
@@ -665,50 +660,49 @@ class HasBahCa1(Screen):
             # # self.download_m3u()
             # print('Error download : ', str(e))
             '''
-            if os.path.isfile(self.file) and os.stat(self.file).st_size > 0:
-                for line in open(self.file):
-                    if line.startswith('#EXTM3U'):
-                        continue
-                    if '#EXTM3U $BorpasFileFormat="1"' in line:  # force export bouquet ???
-                        line = line.replace('$BorpasFileFormat="1"', '')
-                        continue
-                    if line == ' ':
-                        continue
-                    if line.startswith("#EXTINF"):
-                        line = '%s' % line.split(',')[-1]
-                        line = Utils.checkStr(line).rstrip('\r').rstrip('\n')
-                        self.namel = '%s' % line.split(',')[-1]
-                        self.tmpx = '#DESCRIPTION %s' % self.namel
-                    else:
-                        if self.type.upper() == 'TV':
-                            line = line.replace(':', '%3a')
-                            line = line.rstrip()
-                            if line.startswith('rtmp') or line.startswith('rtsp') or line.startswith('mms'):
-                                line = '#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-                            if not line.startswith("#SERVICE 4097:0:1:0:0:0:0:0:0:0:rt"):
-                                if line.startswith('http%3a'):
-                                    line = '#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-                                if line.startswith('https%3a'):
-                                    line = '#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-                        elif self.type.upper() == 'RADIO':
-                            line = line.replace(':', '%3a')
-                            line = line.rstrip()
-                            if line.startswith('rtmp') or line.startswith('rtsp') or line.startswith('mms'):
-                                line = '#SERVICE 4097:0:2:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-                            if not line.startswith("#SERVICE 4097:0:2:0:0:0:0:0:0:0:rt"):
-                                if line.startswith('http%3a'):
-                                    line = '#SERVICE 4097:0:2:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-                                if line.startswith('https%3a'):
-                                    line = '#SERVICE 4097:0:2:0:0:0:0:0:0:0:%s:%s' % (line, self.namel)
-                        else:
-                            print("UNKNOWN TYPE: %s" % self.type)
-                    tmplist.append(line)
-                    tmplist.append(self.tmpx)
-                    print('lineee222: ', line)
-                    print('tmpx222: ', self.tmpx)
+            path1 = '/etc/enigma2/' + str(bouquetname)
+            path2 = '/etc/enigma2/bouquets.' + str(self.type.lower())
 
-                path1 = '/etc/enigma2/' + str(bouquetname)
-                path2 = '/etc/enigma2/bouquets.' + str(self.type.lower())
+            if os.path.isfile(self.file) and os.stat(self.file).st_size > 0:
+                self.tmpx = ''
+                self.namel = ''
+                tmplist = []
+                tmplist.append('#NAME HasBahCa IPTV %s (%s)' % (name_file, self.type))
+                tmplist.append('#SERVICE 1:64:0:0:0:0:0:0:0:0::%s CHANNELS' % name_file)
+                tmplist.append('#DESCRIPTION --- %s ---' % name_file)
+
+                for line in open(self.file):
+                    # if line.startswith('#EXTM3U'):
+                        # continue
+                    # if '#EXTM3U $BorpasFileFormat="1"' in line:  # force export bouquet ???
+                        # line = line.replace('$BorpasFileFormat="1"', '')
+                        # continue
+                    # if line == ' ':
+                        # continue
+                    if line.startswith("#EXTINF"):
+                        self.namel = '%s' % line.split(',')[-1]
+                        descriptiona = '#DESCRIPTION %s' % self.namel
+                        self.tmpx = descriptiona.rstrip('\r').rstrip('\n')
+
+                        # line = '%s' % line.split(',')[-1]
+                        # line = Utils.checkStr(line).rstrip('\r').rstrip('\n')
+                        # self.namel = '%s' % line.split(',')[-1]
+                        # self.tmpx = '#DESCRIPTION %s' % self.namel
+
+                    elif line.startswith('http'):
+
+                        if type.upper() == 'TV':
+                            servicea = ('#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s' % line.replace(':', '%3a')).rstrip('\r').rstrip('\n')
+                            self.line = servicea + ':' + self.namel
+
+                        elif type.upper() == 'RADIO':
+                            servicea = ('#SERVICE 4097:0:2:0:0:0:0:0:0:0:%s' % line.replace(':', '%3a')).rstrip('\r').rstrip('\n')
+                            self.line = servicea + ':' + self.namel
+
+                    if line not in tmplist:
+                        tmplist.append(self.line)
+                        tmplist.append(self.tmpx)
+
                 # create userbouquet
                 with open(path1, 'w+') as f:
                     for item in tmplist:
@@ -718,7 +712,7 @@ class HasBahCa1(Screen):
                 for line in open('/etc/enigma2/bouquets.%s' % self.type.lower()):
                     if bouquetname in line:
                         in_bouquets = 1
-                        break
+                        # break
                 if in_bouquets == 0:
                     '''
                     Rename unlinked bouquet file /etc/enigma2/userbouquet.webcam.tv to /etc/enigma2/userbouquet.webcam.tv.del
@@ -727,7 +721,11 @@ class HasBahCa1(Screen):
                         bouquetTvString = '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "' + str(bouquetname) + '" ORDER BY bouquet\n'
                         f.write(str(bouquetTvString))
                     self.mbox = self.session.open(MessageBox, _('Shuffle Favorite List in Progress') + '\n' + _('Wait please ...'), MessageBox.TYPE_INFO, timeout=5)
-                Utils.ReloadBouquets()
+                from enigma import eDVBDB
+                eDVBDB.getInstance().reloadServicelist()
+                eDVBDB.getInstance().reloadBouquets()
+                message = (_("Bouquet exported"))
+                Utils.web_info(message)
             else:
                 self.mbox = self.session.open(MessageBox, _('Download Error'), MessageBox.TYPE_INFO, timeout=5)
 
