@@ -1,0 +1,133 @@
+#EXTM3U
+#EXTINF:-1,ABU DHABI SPORT 1 HD
+https://admdn1.cdn.mangomolo.com/adsports1/smil:adsports1.stream.smil/chunklist_b4000000_t64MTA4MHA=.m3u8
+#EXTINF:-1,ABU DHABI SPORT 2 HD
+https://admdn5.cdn.mangomolo.com/adsports2/smil:adsports2.stream.smil/chunklist_b4000000_t64MTA4MHA=.m3u8
+#EXTINF:-1,Abu Dhabi TV
+https://admdn2.cdn.mangomolo.com/adtv/smil:adtv.stream.smil/chunklist.m3u8
+#EXTINF:-1,Action Hollywood Movies
+https://lightning-actionhollywood-xiaomi.amagi.tv/playlist.m3u8
+#EXTINF:-1,ALTV
+https://thaipbs-ujxrch.cdn.byteark.com/live/playlist_1080p/index.m3u8
+#EXTINF:-1,ASTV News 1
+http://news1.live14.com/stream/news1_hi.m3u8
+#EXTINF:-1,BeINSports 1 HD[THAI] 🇹🇭
+http://clientsportals.com:2095/zsjc2FSW/mrFswGP1/115807
+#EXTINF:-1,BeINSports 2 HD[THAI] 🇹🇭
+http://clientsportals.com:2095/zsjc2FSW/mrFswGP1/115809
+#EXTINF:-1,Bloomberg TV
+https://bloomberg-bloomberg-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1,Channel 5 (240p)
+https://tc-live1.sanook.com/live/22302_ch5.m3u8
+#EXTINF:-1,Channel 5 (1080p)
+http://110.170.117.27:1935/apptv5hd1live/vdo-tv5hd1/playlist.m3u8
+#EXTINF:-1,Channel 8 (1080p) [Not 24/7]
+http://usa.login.in.th:1935/ch8/ch8/playlist.m3u8
+#EXTINF:-1,CONTV ANIME
+https://contvanime-littlstar.cinedigm.com/ingest/masterR1080p.m3u8
+#EXTINF:-1,CTB
+http://vip.login.in.th:1935/CTB/CTB/playlist.m3u8
+#EXTINF:-1,DHABI SPORTS HD1
+https://dmitnthvll.cdn.mangomolo.com/dubaisports/smil:dubaisports.smil/chunklist_b1600000.m3u8
+#EXTINF:-1,DHABI SPORTS HD3
+https://dmitwlvvll.cdn.mangomolo.com/dubaisportshd5/smil:dubaisportshd5.smil/chunklist_b1600000.m3u8
+#EXTINF:-1,DLTV1
+https://cdn-live.dltv.ac.th/dltv01_720p/index.m3u8
+#EXTINF:-1,DLTV2
+https://cdn-live.dltv.ac.th/dltv02_720p/index.m3u8
+#EXTINF:-1,DLTV3
+https://cdn-live.dltv.ac.th/dltv03_720p/index.m3u8
+#EXTINF:-1,DLTV4
+https://cdn-live.dltv.ac.th/dltv04_720p/index.m3u8
+#EXTINF:-1,DLTV5
+https://cdn-live.dltv.ac.th/dltv05_720p/index.m3u8
+#EXTINF:-1,DLTV6
+https://cdn-live.dltv.ac.th/dltv06_720p/index.m3u8
+#EXTINF:-1,DLTV7
+https://cdn-live.dltv.ac.th/dltv07_720p/index.m3u8
+#EXTINF:-1,DLTV8
+https://cdn-live.dltv.ac.th/dltv08_720p/index.m3u8
+#EXTINF:-1,DLTV9
+https://cdn-live.dltv.ac.th/dltv09_720p/index.m3u8
+#EXTINF:-1,DLTV10
+https://cdn-live.dltv.ac.th/dltv10_720p/index.m3u8
+#EXTINF:-1,DLTV11
+https://cdn-live.dltv.ac.th/dltv11_720p/index.m3u8
+#EXTINF:-1,DLTV12
+https://cdn-live.dltv.ac.th/dltv12_720p/index.m3u8
+#EXTINF:-1,DLTV13
+https://cdn-live.dltv.ac.th/dltv13_720p/index.m3u8
+#EXTINF:-1,DLTV14
+https://cdn-live.dltv.ac.th/dltv14_720p/index.m3u8
+#EXTINF:-1,DLTV15
+https://cdn-live.dltv.ac.th/dltv15_720p/index.m3u8
+#EXTINF:-1,Dubai Racing 1 HD
+https://dmisvthvll.cdn.mgmlcdn.com/events/smil:events.smil/chunklist_b1500000.m3u8
+#EXTINF:-1,Dubai Racing 2 HD
+https://dmithrvll.cdn.mgmlcdn.com/dubairacing/smil:dubairacing.smil/chunklist_b1500000.m3u8
+#EXTINF:-1,Dubai Racing 3 HD
+https://dmithrvll.cdn.mgmlcdn.com/dubaimubasher/smil:dubaimubasher.smil/chunklist_b1600000.m3u8
+#EXTINF:-1,Dubai SPORT 1 HD
+https://dmitnthvll.cdn.mgmlcdn.com/dubaisports/smil:dubaisports.smil/chunklist_b1600000.m3u8
+#EXTINF:-1,Dubai SPORT 2 HD
+https://dmitwlvvll.cdn.mgmlcdn.com/dubaisportshd/smil:dubaisportshd.smil/chunklist_b1600000.m3u8
+#EXTINF:-1,Dubai SPORT 3 HD
+https://dmitwlvvll.cdn.mgmlcdn.com/dubaisportshd5/smil:dubaisportshd5.smil/chunklist_b1600000.m3u8
+#EXTINF:-1,ESPN
+http://clientsportals.com:2095/live/eSN1tfXB/f6QW2ugz/9660.m3u8
+#EXTINF:-1,FIGHT SPORTS+
+https://a.jsrdn.com/broadcast/47cff5378f/+0000/high/c.m3u8
+#EXTINF:-1,Fightsport
+https://shls-fight-sports-ak.akamaized.net:443/out/v1/ee7e6475b12e484bbfa5c31461ad4306/index_1.m3u8
+#EXTINF:-1,KHONGDEE
+http://6395online.com:8080/live/0635192910/0833344553/140164.ts
+#EXTINF:-1,KMTV
+https://fc411f09ac2840368cad3ceb953e0bc9.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Plex_KMTV/playlist.m3u8
+#EXTINF:-1,MIDIA NEWS
+https://live1.thaitvstream.com/play/medianews/index.m3u8
+#EXTINF:-1,MU TV
+https://bcovlive-a.akamaihd.net/r2d2c4ca5bf57456fb1d16255c1a535c8/eu-west-1/eu-west-1/6058004203001/profile_1/chunklist.m3u8
+#EXTINF:-1,NAT TV (1080p)
+https://livefta.malimarcdn.com/ftaedge00/nat.sdp/playlist.m3u8
+#EXTINF:-1,Natgeo Abu Dhabi HD
+https://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/chunklist_b4000000_t64MTA4MHA=.m3u8
+#EXTINF:-1,News1
+http://news1.live14.com/stream/news1.m3u8
+#EXTINF:-1,NICK PLUTOO
+https://siloh.pluto.tv/lilo/production/Nick/01/master_1.m3u8
+#EXTINF:-1,ONE GOLF
+http://162.250.201.58:6211/pk/ONEGOLF/index.m3u8
+#EXTINF:-1,Phoenix Chinese Channel
+https://playtv-live.ifeng.com/live/06OLEGEGM4G_tv1.m3u8
+#EXTINF:-1,Phoenix InfoNews Channel
+https://playtv-live.ifeng.com/live/06OLEEWQKN4_tv1.m3u8
+#EXTINF:-1,Rai Italia
+http://210.210.155.37/x6bnqe/s/s63/index2.m3u8
+#EXTINF:-1,ROKU_COCORO
+https://bit.ly/3aOcOrC
+#EXTINF:-1,SIAM NEWS
+https://live1.thaitvstream.com/play/siamnewstv/index.m3u8
+#EXTINF:-1,SPOTV
+https://bcovlive-a.akamaihd.net/99545824f51f4c1592b35314c6ece3b0/ap-northeast-1/6271486521001/profile_0/chunklist.m3u8
+#EXTINF:-1,SPOTV2
+https://bcovlive-a.akamaihd.net/48eee16919834d3b97df1082a649bcfa/ap-northeast-1/6271486521001/profile_0/chunklist.m3u8
+#EXTINF:-1,THAI NEWS
+https://live.thaitvstream.com/play/thainews/index.m3u8
+#EXTINF:-1,Thai PBS (Opt-4)
+http://thaipbs-live.cdn.byteark.com/live/playlist_480p/index.m3u8
+#EXTINF:-1,Thai PBS 3
+https://thaipbs-live.cdn.byteark.com/live/playlist_1080p/index.m3u8
+#EXTINF:-1,Thai PBS 3 (1080p)
+https://thaipbs-live.cdn.byteark.com/live/playlist.m3u8
+#EXTINF:-1,TOM & JERRY
+https://pstrem.herokuapp.com/iptv-query?streaming-ip=https://www.youtube.com/watch?v=PX2wegQtnBQ
+#EXTINF:-1,TRACE SPORT STARS
+http://lightning-tracesportstars-xiaomi.amagi.tv/playlist.m3u8
+#EXTINF:-1,White Channel (1080p)
+http://symc-cdn.violin.co.th:1935/tndedge/whitechannel/chunklist.m3u8
+#EXTINF:-1,Wild Earth
+https://wildearth-roku.amagi.tv/master.m3u8
+#EXTINF:-1,WILDEARTH
+https://wildearth-plex.amagi.tv/hls/amagi_hls_data_plexAAAAA-wildearth-plex/CDN/playlist.m3u8
+#EXTINF:-1,Xplore
+https://xplore-roku.amagi.tv/playlist720-p.m3u8

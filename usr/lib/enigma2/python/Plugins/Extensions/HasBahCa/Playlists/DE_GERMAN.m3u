@@ -1,0 +1,343 @@
+#EXTM3U
+#EXTINF:-1,1-2-3.tv
+http://146.19.16.201:8009/play/a028
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/1-2-3-tv-de.png",1-2-3.tv HD
+http://87.212.248.44:60250/play/a0b8/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/3sat-de.svg",3Sat
+https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/high/master.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/3sat-de.svg",3sat
+http://154.58.202.35:8003/play/a0cc/index.m3u8
+#EXTINF:-1,3sat HD
+http://45.135.194.236:8002/play/a066
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/3sat-de.svg",3sat Ⓖ
+https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/veryhigh/master.m3u8
+#EXTINF:-1,a.tv HD
+http://87.212.248.44:60250/play/a0am/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/Anixe.de.png",ANIXE HD
+http://87.212.248.44:60250/play/a0bf/index.m3u8
+#EXTINF:-1,ANIXE+
+http://146.19.16.201:8009/play/a029
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/ard_das_erste.png",ARD Das Erste
+https://derste247liveint.akamaized.net/hls/live/662735/daserste_int/master.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/cro_cz_pardubice.png",ARD-alpha (720p)
+http://livestreams.br.de/i/bralpha_germany@119899/master.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/france-3-champagne-ardenne-fr.png",ARD-alpha (720p) [Not 24/7]
+https://brlive-lh.akamaihd.net/i/bralpha_germany@119899/master.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/ard_alpha_de.png",ARD-alpha HD
+http://87.212.248.44:60250/play/a0b3/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/ARTE.de.png",arte HD
+http://87.212.248.44:60250/play/a0au/index.m3u8
+#EXTINF:-1,Astro TV
+http://45.135.194.236:8002/play/a06f
+#EXTINF:-1,AstroTV
+http://146.19.16.201:8009/play/a02m
+#EXTINF:-1,AstroTV HD
+http://146.19.16.201:8009/play/a03d
+#EXTINF:-1,Baden TV
+http://146.19.16.201:8009/play/a02k
+#EXTINF:-1,Bibel TV
+http://45.135.194.236:8002/play/a05p
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/ComedyCentral.de.png",Comedy Central HD
+http://87.212.248.44:60250/play/a0bi/index.m3u8
+#EXTINF:-1,Comedy Central HD
+http://45.135.194.236:8002/play/a03w
+#EXTINF:-1,Curiosity Channel
+http://45.135.194.236:8002/play/a05k
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/ard_das_erste.png",Das Erste
+https://mcdn.daserste.de/daserste/de/profile1/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/7wABSuo.png",Das Erste
+https://derste247livede.akamaized.net/hls/live/658317/daserste_de/master.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/bindass-in.png",Das Erste
+https://mcdn.daserste.de/daserste/int/master.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/ard_das_erste.png",Das Erste HD
+https://mcdn.daserste.de/daserste/de/master.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/ard_das_erste.png",Das Erste HD
+http://87.212.248.44:60250/play/a0at/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/DW-TV.png",DE:DW Deutsch (1080p)
+https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/E65GQN9.png",Deluxe Music
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
+#EXTINF:-1,DELUXE MUSIC
+http://45.135.194.236:8002/play/a06d
+#EXTINF:-1,Deutsches Musik Fernsehen
+http://45.135.194.236:8002/play/a06c
+#EXTINF:-1,Disney Channel
+http://146.19.16.201:8009/play/a02c
+#EXTINF:-1,Disney Channel
+http://45.135.194.236:8002/play/a05l
+#EXTINF:-1,DMAX
+http://146.19.16.201:8009/play/a02j
+#EXTINF:-1,DMAX HD
+http://146.19.16.201:8009/play/a032
+#EXTINF:-1,eSports1 HD
+http://45.135.194.236:8002/play/a065
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/Euronews.png",EURONEWS
+https://rakuten-euronews-5-de.samsung.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/sDDydM6Z/Euronews-2016-logo.png",Euronews Deutsch
+https://euronews.alteox.app/hls/de_stream.m3u8
+#EXTINF:-1,EWTN katholisches TV
+http://146.19.16.201:8009/play/a025
+#EXTINF:-1,Fix & Foxi
+http://45.135.194.236:8002/play/a05j
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/franken-plus-de.png",Franken Plus HD
+http://87.212.248.44:60250/play/a0as/index.m3u8
+#EXTINF:-1,Genius Trend
+http://146.19.16.201:8009/play/a02n
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/07/DEAK0500445A_20200923T100523.png",GoldStar TV
+https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/4d36a94b-6fb0-11eb-908d-533d39655269/0/master.m3u8?uid=%7BPSID%7D&optout=%7BTARGETOPT%7D&country=DE&vendor=samsung&ads%3Aapp_domain=%7BAPP_DOMAIN%7D&ads%3Aapp_name=%7BAPP_NAME%7D&coppa=1&ads%3Atcf=%7BTC_STRING%7D
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/94/DEAK0500449A_20201118T003316.png",Grjngo
+https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/11edf121-80c2-11eb-908d-533d39655269/0/master.m3u8?uid=%7BPSID%7D&optout=%7BTARGETOPT%7D&country=DE&vendor=samsung&ads%3Aapp_domain=%7BAPP_DOMAIN%7D&ads%3Aapp_name=%7BAPP_NAME%7D&coppa=1&ads%3Atcf=%7BTC_STRING%7D
+#EXTINF:-1,Handystar TV
+http://146.19.16.201:8009/play/a027
+#EXTINF:-1,Handystar TV 2
+http://146.19.16.201:8009/play/a02g
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/26/DEAJ0500420A_20200923T100529.png",Health TV
+https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/8df8031c-72bd-11eb-908d-533d39655269/0/master.m3u8?uid=%7BPSID%7D&optout=%7BTARGETOPT%7D&country=DE&vendor=samsung&ads%3Aapp_domain=%7BAPP_DOMAIN%7D&ads%3Aapp_name=%7BAPP_NAME%7D&coppa=1&ads%3Atcf=%7BTC_STRING%7D
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/03/45/DEBA1500024PZ_20211125T020753.png",Heimatkino
+https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/a5fd52f5-b250-11eb-a7de-bacfe1f83627/0/master.m3u8?uid=%7BPSID%7D&optout=%7BTARGETOPT%7D&country=DE&vendor=samsung&ads%3Aapp_domain=%7BAPP_DOMAIN%7D&ads%3Aapp_name=%7BAPP_NAME%7D&coppa=1&ads%3Atcf=%7BTC_STRING%7D
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/31/DEAJ0500424A_20210609T004643.png",Hip Trips
+https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/ebd246c0-6faf-11eb-908d-533d39655269/0/master.m3u8?uid=%7BPSID%7D&optout=%7BTARGETOPT%7D&country=DE&vendor=samsung&ads%3Aapp_domain=%7BAPP_DOMAIN%7D&ads%3Aapp_name=%7BAPP_NAME%7D&coppa=1&ads%3Atcf=%7BTC_STRING%7D
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/hr_fernsehen_de.png",hr-fernsehen HD
+http://154.58.202.35:8003/play/a0c2/index.m3u8
+#EXTINF:-1,HSE EXTRA
+http://45.135.194.236:8002/play/a069
+#EXTINF:-1,HSE SD
+http://146.19.16.201:8009/play/a02f
+#EXTINF:-1,HSE Trend SD
+http://146.19.16.201:8009/play/a02l
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/HSE24.de.png",HSE24 EXTRA HD
+http://87.212.248.44:60250/play/a0b7/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/HSE24.de.png",HSE24 HD
+http://87.212.248.44:60250/play/a0bh/index.m3u8
+#EXTINF:-1,Juwelo HD
+http://146.19.16.201:8009/play/a033
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/Kabel1.de.png",kabel eins
+http://154.58.202.35:8003/play/a0b3/index.m3u8
+#EXTINF:-1,kabel eins
+http://146.19.16.201:8009/play/a02t
+#EXTINF:-1,kabel eins Doku
+http://154.58.202.35:8003/play/a0b9/index.m3u8
+#EXTINF:-1,kabel eins Doku
+http://146.19.16.201:8009/play/a02z
+#EXTINF:-1,kabel eins Doku
+http://45.135.194.236:8002/play/a067
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/kika-de.svg",KiKA
+http://154.58.202.35:8003/play/a0cd/index.m3u8
+#EXTINF:-1,KinoweltTV HD
+http://45.135.194.236:8002/play/a02r
+#EXTINF:-1,L-TV
+http://146.19.16.201:8009/play/a03c
+#EXTINF:-1,Lilo.TV
+http://146.19.16.201:8009/play/a037
+#EXTINF:-1,LT1-OOE
+http://146.19.16.201:8009/play/a038
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/mdr_aktuell_de.png",MDR S-Anhalt HD
+http://154.58.202.35:8003/play/a0c0/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/mdr_aktuell_de.png",MDR Sachsen HD
+http://154.58.202.35:8003/play/a0bz/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/mdr_aktuell_de.png",MDR Thüringen HD
+http://154.58.202.35:8003/play/a0c1/index.m3u8
+#EXTINF:-1,MediaShop- Neuheiten
+http://146.19.16.201:8009/play/a02o
+#EXTINF:-1,meinTVshop
+http://146.19.16.201:8009/play/a02p
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/96/DEBA3300039TT_20210609T004952.png",Moviedome
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/samsunguk-kochmedia-moviedome-samsunguk/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.tc_string=%7BTC_STRING%7D&ads.coppa=0
+#EXTINF:-1,MTV
+http://45.135.194.236:8002/play/a05m
+#EXTINF:-1,MTV HD
+http://45.135.194.236:8002/play/a064
+#EXTINF:-1,münchen.tv HD
+http://87.212.248.44:60250/play/a0an/index.m3u8
+#EXTINF:-1,N24 DOKU
+http://146.19.16.201:8009/play/a024
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/cytec/tvlogos/master/ndr.png",NDR Hamburg Ⓖ
+https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_hh/master.m3u8)
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/80/DEAJ0500419A_20201230T003306.png",Netzkino
+https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/9390cd38-818d-11eb-908d-533d39655269/0/master.m3u8?uid=%7BPSID%7D&optout=%7BTARGETOPT%7D&country=DE&vendor=samsung&ads%3Aapp_domain=%7BAPP_DOMAIN%7D&ads%3Aapp_name=%7BAPP_NAME%7D&coppa=1&ads%3Atcf=%7BTC_STRING%7D
+#EXTINF:-1,Nick HD
+http://45.135.194.236:8002/play/a03x
+#EXTINF:-1,Nick Jr. HD
+http://45.135.194.236:8002/play/a03v
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/niederbayern-tv-de.png",NIEDERBAYERN TV HD
+http://87.212.248.44:60250/play/a0aq/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/nitro_de.png",NITRO
+http://154.58.202.35:8003/play/a0ax/index.m3u8
+#EXTINF:-1,NITRO Austria
+http://146.19.16.201:8009/play/a036
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/ntv.png",ntv
+http://154.58.202.35:8003/play/a0az/index.m3u8
+#EXTINF:-1,ntv
+http://45.135.194.236:8002/play/a05t
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/one-de.svg",ONE HD
+http://87.212.248.44:60250/play/a0b2/index.m3u8
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/95/DEBA15000227H_20210609T004745.png",One Terra
+https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/0d7ddc61-818f-11eb-908d-533d39655269/0/master.m3u8?uid=%7BPSID%7D&optout=%7BTARGETOPT%7D&country=DE&vendor=samsung&ads%3Aapp_domain=%7BAPP_DOMAIN%7D&ads%3Aapp_name=%7BAPP_NAME%7D&coppa=1&ads%3Atcf=%7BTC_STRING%7D
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/otva-de.svg",OTVA HD
+http://87.212.248.44:60250/play/a0ar/index.m3u8
+#EXTINF:-1,pearl.tv HD Shop
+http://146.19.16.201:8009/play/a034
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/pro-tv-ro.png",Pro7 MAXX
+http://154.58.202.35:8003/play/a0b6/index.m3u8
+#EXTINF:-1,Pro7 MAXX
+http://146.19.16.201:8009/play/a02w
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/prosiebensat-1-uhd-de.png",ProSieben
+http://154.58.202.35:8003/play/a0b2/index.m3u8
+#EXTINF:-1,ProSieben
+http://146.19.16.201:8009/play/a02s
+#EXTINF:-1,ProSieben MAXX
+http://45.135.194.236:8002/play/a06a
+#EXTINF:-1,QVC
+http://146.19.16.201:8009/play/a02d
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/qvc_hd.png",QVC HD
+http://87.212.248.44:60250/play/a0bg/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/qvc-zwei_hd.png",QVC ZWEI HD
+http://87.212.248.44:60250/play/a0ba/index.m3u8
+#EXTINF:-1,QVC2
+http://45.135.194.236:8002/play/a068
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/rbb-berlin-de.png",rbb Berlin HD
+http://154.58.202.35:8003/play/a0by/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/rbb_de_radio_eins.png",rbb Brandenburg HD
+http://154.58.202.35:8003/play/a0bx/index.m3u8
+#EXTINF:-1,REGIO TV
+http://146.19.16.201:8009/play/a02h
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Ap7SweA.png",Regio TV Bodensee
+https://regiotv-b.iptv-playoutcenter.de/regiotv-b/regiotv-b.stream_1/chunks.m3u8
+#EXTINF:-1,Romance TV HD
+http://45.135.194.236:8002/play/a02q
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/rtl-uhd-de.png",RTL Bayern
+http://154.58.202.35:8003/play/a0ar/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/rtl-uhd-de.png",RTL HB NDS
+http://154.58.202.35:8003/play/a0aq/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/rtl-up-de.png",RTL HH SH
+http://154.58.202.35:8003/play/a0as/index.m3u8
+#EXTINF:-1,RTL Living HD
+http://45.135.194.236:8002/play/a03z
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/rtl-deutschland-de.png",RTL Regional NRW
+http://154.58.202.35:8003/play/a0ap/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/rtl2_radio_fr.png",RTL Television
+http://154.58.202.35:8003/play/a0ao/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/rtl-lu.png",RTLup
+http://154.58.202.35:8003/play/a0ay/index.m3u8
+#EXTINF:-1,RTLup
+http://45.135.194.236:8002/play/a05o
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/RTL2.de.png",RTLZWEI
+http://154.58.202.35:8003/play/a0at/index.m3u8
+#EXTINF:-1,RTLZWEI
+http://45.135.194.236:8002/play/a05r
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/Sat1.de.png",SAT.1
+http://154.58.202.35:8003/play/a0b1/index.m3u8
+#EXTINF:-1,SAT.1
+http://146.19.16.201:8009/play/a02r
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/Sat1.de.png",SAT.1 Bayern
+http://154.58.202.35:8003/play/a0b7/index.m3u8
+#EXTINF:-1,SAT.1 Bayern
+http://146.19.16.201:8009/play/a02x
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/sat1_de_gold.png",SAT.1 Gold
+http://154.58.202.35:8003/play/a0b5/index.m3u8
+#EXTINF:-1,SAT.1 Gold
+http://146.19.16.201:8009/play/a02v
+#EXTINF:-1,SAT.1 Gold
+http://45.135.194.236:8002/play/a06e
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/Sat1.de.png",SAT.1 NRW
+http://154.58.202.35:8003/play/a0b8/index.m3u8
+#EXTINF:-1,SAT.1 NRW
+http://146.19.16.201:8009/play/a02y
+#EXTINF:-1 tvg-logo="https://i.imgur.com/xZ1z4Yj.png",Schlager Deluxe
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/26658/26658_264_live.m3u8
+#EXTINF:-1,ServusTV Deutschland
+http://146.19.16.201:8009/play/a03b
+#EXTINF:-1,Shop LC
+http://146.19.16.201:8009/play/a039
+#EXTINF:-1,SIXX
+http://146.19.16.201:8009/play/a02b
+#EXTINF:-1,Sonnenklar TV
+http://146.19.16.201:8009/play/a02e
+#EXTINF:-1,sonnenklar.TV
+http://45.135.194.236:8002/play/a05v
+#EXTINF:-1,sonnenklar.TV HD
+http://146.19.16.201:8009/play/a030
+#EXTINF:-1,Spiegel Geschichte
+http://45.135.194.236:8002/play/a04j
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/00/69/DEAK0500441A_20200923T100613.png",SPIEGEL.TV
+https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/0ac124fc-818e-11eb-908d-533d39655269/0/master.m3u8?uid=%7BPSID%7D&optout=%7BTARGETOPT%7D&country=DE&vendor=samsung&ads%3Aapp_domain=%7BAPP_DOMAIN%7D&ads%3Aapp_name=%7BAPP_NAME%7D&coppa=1&ads%3Atcf=%7BTC_STRING%7D
+#EXTINF:-1,SPORT1
+http://146.19.16.201:8009/play/a02q
+#EXTINF:-1,SPORT1
+http://45.135.194.236:8002/play/a05w
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/02/DEAK0500454A_20200923T100607.png",spot on news
+https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/bee5e646-7cd5-11eb-908d-533d39655269/0/master.m3u8?uid=%7BPSID%7D&optout=%7BTARGETOPT%7D&country=DE&vendor=samsung&ads%3Aapp_domain=%7BAPP_DOMAIN%7D&ads%3Aapp_name=%7BAPP_NAME%7D&coppa=1&ads%3Atcf=%7BTC_STRING%7D
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/sr_fernsehen.png",SR Fernsehen HD
+http://87.212.248.44:60250/play/a0b4/index.m3u8
+#EXTINF:-1,SUPER RTL
+http://154.58.202.35:8003/play/a0av/index.m3u8
+#EXTINF:-1,SUPER RTL
+http://45.135.194.236:8002/play/a05q
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/swr_de_fernsehen_bw.png",SWR BW HD
+http://87.212.248.44:60250/play/a0av/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/swr_de_fernsehen_rp.png",SWR RP HD
+http://87.212.248.44:60250/play/a0aw/index.m3u8
+#EXTINF:-1,SYFY HD (VF)
+http://45.135.194.236:8002/play/a02o
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/Tagesschau24.de.png",tagesschau24 HD
+http://87.212.248.44:60250/play/a0b1/index.m3u8
+#EXTINF:-1,TELE 5
+http://146.19.16.201:8009/play/a02i
+#EXTINF:-1,TELE 5 HD
+http://146.19.16.201:8009/play/a031
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/20/DEAJ0500423A_20200923T100555.png",Tierwelt
+https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/5a7fe3dd-7cd6-11eb-908d-533d39655269/0/master.m3u8?uid=%7BPSID%7D&optout=%7BTARGETOPT%7D&country=DE&vendor=samsung&ads%3Aapp_domain=%7BAPP_DOMAIN%7D&ads%3Aapp_name=%7BAPP_NAME%7D&coppa=1&ads%3Atcf=%7BTC_STRING%7D
+#EXTINF:-1,TLC
+http://146.19.16.201:8009/play/a02a
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TOGGOplus.de.png",TOGGO plus
+http://154.58.202.35:8003/play/a0au/index.m3u8
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/07/91/DEBA100000404_20201208T050244.png",Travelxp
+https://dd87bd3119dc4cbca8c31c3f5d127aef.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-de_TravelXP/playlist.m3u8?ads.wurl_channel=556&ads.wurl_name=TravelXP&ads.psid=%7BPSID%7D&ads.targetopt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0&ads.consent=%7BTC_STRING%7D
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/RTL1025TV.it.png",tv.ingolstadt HD
+http://87.212.248.44:60250/play/a0ao/index.m3u8
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/63/DEBA39000012B_20211013T011756.png",Vevo Pop
+https://eu.linear.zype.com/7a727d8b-13f8-458f-b37e-c6fe35f39072/612c2923-5cb6-4291-8349-3dfbf27320f1-samsung-tv/live.m3u8?sitesection_id=vevo_linear%3A_samsungtvplus&sitesection_network_id=516283&sitesection_fallback_id=15346233&device_id=%7BPSID%7D&target_option=%7BTARGETOPT%7D&app_name=%7BAPP_NAME%7D&app_domain=%7BAPP_DOMAIN%7D&TC_STRING=%7BTC_STRING%7D
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/53/DEBA39000024Y_20211013T011821.png",Vevo Schlager Pop
+https://eu.linear.zype.com/94b11c4d-b7ec-43fb-b1d4-53de5540df7b/a1c67f60-e917-41d5-86ab-dd1f4e252002-samsung-tv/live.m3u8?sitesection_id=vevo_linear%3A_samsungtvplus&sitesection_network_id=516283&sitesection_fallback_id=15346233&device_id=%7BPSID%7D&target_option=%7BTARGETOPT%7D&app_name=%7BAPP_NAME%7D&app_domain=%7BAPP_DOMAIN%7D&TC_STRING=%7BTC_STRING%7D
+#EXTINF:-1,VISIT-X.tv
+http://146.19.16.201:8009/play/a03a
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/Vox.de.png",VOX
+http://154.58.202.35:8003/play/a0aw/index.m3u8
+#EXTINF:-1,VOX
+http://45.135.194.236:8002/play/a05s
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/WDR.de.png",WDR HD Aachen
+http://154.58.202.35:8003/play/a0cr/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/WDR.de.png",WDR HD Bielefeld
+http://154.58.202.35:8003/play/a0cs/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/WDR.de.png",WDR HD Duisburg
+http://154.58.202.35:8003/play/a0cu/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/WDR.de.png",WDR HD Düsseldorf
+http://154.58.202.35:8003/play/a0cv/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/WDR.de.png",WDR HD Essen
+http://154.58.202.35:8003/play/a0cw/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/WDR.de.png",WDR HD Köln
+http://154.58.202.35:8003/play/a0cq/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/WDR.de.png",WDR HD Münster
+http://154.58.202.35:8003/play/a0cx/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/WDR.de.png",WDR HD Siegen
+http://154.58.202.35:8003/play/a0cy/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/WDR.de.png",WDR HD Wuppertal
+http://154.58.202.35:8003/play/a0cz/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/Welt.de.png",WELT
+http://154.58.202.35:8003/play/a0b4/index.m3u8
+#EXTINF:-1,WELT
+http://146.19.16.201:8009/play/a02u
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/01/DEBA2200007V6_20201006T091036.png",XITE
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/xiteaaaaa-xite-samsung-de/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.tc_string=%7BTC_STRING%7D
+#EXTINF:-1 tvg-logo="https://tvpmlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/70/06/47/CHAJ0500428A_20210609T004842.png",Xplore Reisen
+https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/a1d25e73-7b34-11eb-908d-533d39655269/0/master.m3u8?uid=%7BPSID%7D&optout=%7BTARGETOPT%7D&country=CH&vendor=samsung&ads%3Aapp_domain=%7BAPP_DOMAIN%7D&ads%3Aapp_name=%7BAPP_NAME%7D&coppa=1&ads%3Atcf=%7BTC_STRING%7D
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/zdf-de.svg",ZDF
+http://154.58.202.35:8003/play/a0cb/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/zdf-de.svg",ZDF HD
+http://87.212.248.44:60250/play/a0ay/index.m3u8
+#EXTINF:-1,ZDF HD DE
+http://3937a675.ucomist.net/iptv/G6CY7FHK5ZMG2X/6059/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/zdf-neo-de.svg",zdf_neo HD
+http://87.212.248.44:60250/play/a0az/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/ZDFinfo.de.png",ZDFinfo
+http://154.58.202.35:8003/play/a0ce/index.m3u8

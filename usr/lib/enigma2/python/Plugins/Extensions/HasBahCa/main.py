@@ -17,7 +17,7 @@ from . import html_conv
 from Components.AVSwitch import AVSwitch
 from Components.ActionMap import ActionMap
 from Components.Button import Button
-from Components.config import config
+from Components.config import config, ConfigDirectory
 from Tools.Downloader import downloadWithProgress
 from Components.Label import Label
 from Components.MenuList import MenuList
@@ -126,6 +126,16 @@ tyurl = 'http://eviptv.com/m3u/'
 tyurl2 = 'https://hasbahca.net/hasbahca_m3u/'
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
 enigma_path = '/etc/enigma2'
+path_playlist = os.path.join(plugin_path, 'Playlists')
+# cfg.pthmovie = ConfigDirectory(default="/media/hdd/movie")
+# try:
+    # from Components.UsageConfig import defaultMoviePath
+    # downloadpath = defaultMoviePath()
+    # cfg.pthmovie = ConfigDirectory(default=downloadpath)
+# except:
+    # if file_exists("/usr/bin/apt-get"):
+        # cfg.pthmovie = ConfigDirectory(default='/media/hdd/movie')
+# Path_Movies = str(cfg.pthmovie.value) + "/"
 
 if Utils.isFHD():
     path_skin = os.path.join(plugin_path, 'res/skins/fhd/')
@@ -282,38 +292,58 @@ class MainHasBahCa(Screen):
         global tyurl
         self.names = []
         self.urls = []
-        urls = tyurl
-        if tyurl is True:
-            urls = tyurl2
-
-        print('urls  ', urls)
-        try:
-            content = Utils.getUrl(urls)
-            if six.PY3:
-                content = six.ensure_str(content)
-            n1 = content.find('Directory</a>', 0)
-            n2 = content.find('</body', n1)
-            content2 = content[n1:n2]
-            content3 = content2.replace('..&gt;', '')
-            # print('content ', content3)
-            regexvideo = 'href="(.*?).m3u">HasBahCa_(.*?)</a.*?align="right">(.*?)</td>.*?</tr>'
-            match = re.compile(regexvideo, re.DOTALL).findall(content3)
+        try:        
             idx = 0
-            for url, name, date in match:
-                name = name.replace('..', '').replace('HasBahCa_', '')
-                name = name.replace('&gt;', '').replace('_', ' ').replace('.m3u', '')
-                name = '{}{}{}'.format(name, ' ', date)
-                url = '{}{}'.format(urls, url + '.m3u')
-                self.urls.append(url.strip())
-                self.names.append(Utils.checkStr(name.strip()))
-                idx += 1
-            print(len(self.names))
-            if len(self.names) < 0:
-                if tyurl is True:
-                    tyurl = False
-                else:
-                    tyurl = True
-                    self.updateMenuList()
+            AA = ['.m3u']
+            for root, dirs, files in os.walk(path_playlist):
+                for name in files:
+                    if '.m3u' not in name:
+                        continue
+                    # for x in AA:
+                        # if x not in name:
+                            # continue
+                        # if '.py' in name:
+                            # continue
+                        
+                    print('name ', name)
+                    namex = name.replace('.m3u', '').capitalize()
+                    self.names.append(namex)
+                    self.urls.append(root + '/' + name)
+                    idx += 1 
+        # urls = tyurl
+        # if tyurl is True:
+            # urls = tyurl2
+
+        # print('urls  ', urls)
+
+            # content = Utils.getUrl(urls)
+            # if six.PY3:
+                # content = six.ensure_str(content)
+            # n1 = content.find('Directory</a>', 0)
+            # n2 = content.find('</body', n1)
+            # content2 = content[n1:n2]
+            # content3 = content2.replace('..&gt;', '')
+            # # print('content ', content3)
+            # regexvideo = 'href="(.*?).m3u">HasBahCa_(.*?)</a.*?align="right">(.*?)</td>.*?</tr>'
+            # match = re.compile(regexvideo, re.DOTALL).findall(content3)
+            # # idx = 0
+            # for url, name, date in match:
+                # name = name.replace('..', '').replace('HasBahCa_', '')
+                # name = name.replace('&gt;', '').replace('_', ' ').replace('.m3u', '')
+                # name = '{}{}{}'.format(name, ' ', date)
+                # url = '{}{}'.format(urls, url + '.m3u')
+                # self.urls.append(url.strip())
+                # self.names.append(Utils.checkStr(name.strip()))
+                # idx += 1
+            # print(len(self.names))
+            # if len(self.names) < 0:
+                # if tyurl is True:
+                    # tyurl = False
+                # else:
+                    # tyurl = True
+                    # self.updateMenuList()
+
+            
             self['info'].setText(_('Please now select ...'))
             self["live"].setText('N.' + str(idx) + " CATEGORY")
             self['key_green'].show()
@@ -587,9 +617,14 @@ class HasBahCa1(Screen):
         self.names = []
         self.urls = []
         try:
-            content = Utils.getUrl(url)
-            if six.PY3:
-                content = six.ensure_str(content)
+            if plugin_path in url:
+                f1=open(url,"r")
+                content = f1.read()
+                f1.close()
+            else:
+                content = Utils.getUrl(url)
+                if six.PY3:
+                    content = six.ensure_str(content)
             content = content.replace('$BorpasFileFormat="1"', '')
             regexvideo = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
             match = re.compile(regexvideo, re.DOTALL).findall(content)
@@ -795,8 +830,8 @@ class HasBahCa1(Screen):
         if search_ok is True:
             self._gotPageLoad()
         else:
-            self.session.nav.stopService()
-            self.session.nav.playService(self.srefInit)
+            # self.session.nav.stopService()
+            # self.session.nav.playService(self.srefInit)
             self.close()
 
 

@@ -1,0 +1,273 @@
+#EXTM3U
+#EXTINF:-1,7 Noticias (1080p)
+https://amg01573-7nn-7nnono-ono-pcdj3.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/1144547866393882626/2R0Khn5n_200x200.png",24h Catalunya
+https://ztnr.rtve.es/ztnr/4952053.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/beinseries101_205x150_s101.png",101 Tele Malaga| HD (1080p)
+https://bcovlive-a.akamaihd.net/469e448f034b4d46afa4bcac53297d60/eu-central-1/6057955885001/playlist_dvr.m3u8
+#EXTINF:-1,À Punt TV
+https://bcovlive-a.akamaihd.net/469e448f034b4d46afa4bcac53297d60/eu-central-1/6057955885001/profile_0/chunklist_dvr.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/guHWZwP.jpg",Activa TV (720p) [Not 24/7]
+https://streamtv.mediasector.es/hls/activatv/.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/filmbox_africa.png",AfroLand TV
+https://api-ott.afrolandtv.com/loggingmediaurlpassthrough/a.m3u8?version=12&id=816&partner=distro
+#EXTINF:-1 tvg-logo="https://i.imgur.com/pzJAYan.png",Alcarria TV
+http://217.182.77.27/live/alcarriatv-livestream.m3u8
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/AlcarriaTV/picture?width=200&height=200",Alcarria TV
+https://cls.alcarria.tv/live/alcarriatv-livestream.m3u8
+#EXTINF:-1,AMC HD
+http://212.9.92.182:49000/play/a004
+#EXTINF:-1,ANTENA 3 HD
+http://212.9.92.182:49000/play/a005
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/a-para-tr.png",Aragon TV
+https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8
+#EXTINF:-1 tvg-logo="https://i2.paste.pics/1d96bb1f41f4a0a3862bdc1b9c541f8a.png",Aragon TV | ES
+http://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8
+#EXTINF:-1,AXN HD
+http://212.9.92.182:49000/play/a00p
+#EXTINF:-1,AXN WHITE HD
+http://212.9.92.182:49000/play/a01w
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/muhabbet_tv_tr.png",betevé (1080p)
+https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_n6442jz0/format/applehttp/.m3u8?referrer=aHR0cHM6Ly9iZXRldmUuY2F0
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/Canal33Madrid/picture?width=200&height=200",C33 Madrid
+https://5ab29cc78f681.streamlock.net/canal33tvmadridgmailcom/livestream/master.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/2BBGZ1H.png",Canal 25 TV (Barbastro) (720p) [Not 24/7]
+https://common01.todostreaming.es/live/tvbarbastro-livestream.m3u8
+#EXTINF:-1 tvg-logo="https://lh3.googleusercontent.com/-TgqXXkxQpBQ/Xx2kfaSx-MI/AAAAAAAA3cg/CAK8Lu-eY-MYJQVhmdxH-Bz_h1NKMWhogCK8BGAsYHg/s0/2020-07-26.png",Canal 33 Madrid | ES
+https://5ab29cc78f681.streamlock.net/canal33tvmadridgmailcom/livestream/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/1HsrjNY.png",Canal 56 (576p) [Not 24/7]
+https://videos.canal56.com/directe/stream/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/canakkale_tv_tr.png",Canal 2000 La Solana
+http://canal2000.berkano-systems.net/streaming/streams/canal2000-720p.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/canakkale_tv_tr.png",Canal 2000 La Solana (720p)
+http://canal2000.berkano-systems.net/streaming/streams/canal2000.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/canakkale_tv_tr.png",Canal Extremadura
+https://cdnlive.shooowit.net/canalextremaduralive/smil:channel1DVR.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/xBeywIA.png",Canal Extremadura
+https://cdnlive.shooowit.net/canalextremaduralive/smil:channel1.smil/chunklist_b1500000.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/QBzvCJc.png",Canal San Roque (720p) [Not 24/7]
+https://elastic10.todostreaming.es/live/sanroque-livestream.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/canakkale_tv_tr.png",Canal Sur Andalucía ?
+https://www.youtube.com/watch?v=QMM1xsaFlfg
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/can-tv-tr.png",Canela.TV
+https://api-ott.canela.tv/loggingmediaurlpassthrough/a.m3u8?version=12.5&id=1205&partner=distro&device_id=af56109e-ef74-4f31-b201-55dcce3b60d1&device_model=Web&device_width=530&device_height=298&us_privacy=1&gdpr=0&device_language=en&is_lat=0
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/Sochi Live HD.png",Chiquilines
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-chiquilines-distro/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/cine-5-tv-tr.png",Cine Real
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-cinereal-distro/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/cine-5-tv-tr.png",Cine Sureno
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-cinesureno-distro/playlist.m3u8
+#EXTINF:-1,CostadelSol TV
+https://limited11.todostreaming.es/live/benalmadena-livestream.m3u8
+#EXTINF:-1 tvg-logo="https://lh3.googleusercontent.com/-CVm245eZ890/YE6U9N6yZSI/AAAAAAABAuE/9Auajk4UAtM5WfqNd3bWvPawI9cGHvc2ACK8BGAsYHg/s512/2021-03-14.png",Cristiana TV | ES
+https://cristianos2.todostreaming.es/live/malaga-livestream.m3u8
+#EXTINF:-1,CUATRO HD
+http://212.9.92.182:49000/play/a006
+#EXTINF:-1 tvg-logo="https://lh3.googleusercontent.com/-aZ2_EoCAfQ0/X5nNOv1mNvI/AAAAAAAA60k/pYw6P8ZcR2o-urMgH8wbj4K2IQQULyZ0wCK8BGAsYHg/s0/2020-10-28.png",Cultura 365 | ES
+http://cultural-crtvg.flumotion.com/playlist.m3u8
+#EXTINF:-1,DAZN 1 HD
+http://212.9.92.182:49000/play/a00o
+#EXTINF:-1,DAZN 2 HD
+http://212.9.92.182:49000/play/a00r
+#EXTINF:-1,DAZN F1 HD
+http://212.9.92.182:49000/play/a01s
+#EXTINF:-1 tvg-logo="https://imgur.com/VBVu2bu.png",EITB1
+https://multimedia.eitb.eus/live-content/etb1hd-hls/bitrate_4.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/VBVu2bu.png",EITB2
+https://multimedia.eitb.eus/live-content/etb2hd-hls/bitrate_4.m3u8
+#EXTINF:-1 tvg-logo="https://lh3.googleusercontent.com/-IQ_nfMVQgsw/YLKSUeZPa6I/AAAAAAABCks/8ShGNJcxtH8FOY_K_Ilp_vfjTa20crS-gCJEEGAsYHg/s512/2021-05-29.jpg",El Futuro en tu Mano | ES
+https://limited24.todostreaming.es/live/renjillo-livestream.m3u8
+#EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/1350010679554695169/WXojvq15_200x200.jpg",Elche 7 TV
+https://elche7tv.gestec-video.com/hls/canal2.m3u8
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/eitb/picture?width=200&height=200",ETB 1
+https://multimedia.eitb.eus/live-content/etb1hd-hls/master.m3u8
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/eitb/picture?width=200&height=200",ETB 2
+https://multimedia.eitb.eus/live-content/etb2hd-hls/master.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/euronews_medium_128.png",Euronews en Español (720p)
+https://rakuten-euronews-4-es.samsung.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/Russian Extreme.png",Extremadura TVᴴᴰ
+https://cdnlive.shooowit.net/canalextremaduralive/channel1DVR.smil/chunklist_b1500000_DVR.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/FilmBox Arthouse.png",FILMON.TV nippon
+https://n24-cdn-live.ntv.co.jp/ch01/high.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/flash-tv-tr.png",Flash
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-flash-distro/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/googlelogo_color_42x16dp.png",GlewedTV Spanish
+https://dai.google.com/linear/hls/event/9ssgEjm4SM6kdOdByUsmRA/master.m3u8
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/GoierriIrratiTelebista/picture?width=200&height=200",Goierri Irrati TV
+https://5940924978228.streamlock.net/8155/8155/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/Hollywood HD.png",Hola Playᴴᴰ [Rakuten]
+https://rakuten-hola-2-es.samsung.wurl.tv/3000.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/cs-horror-cz.png",Horrify [Roku]
+https://olympusamagi.pc.cdn.bitgravity.com/Horrify-roku/master_4.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/cs-horror-cz.png",Horrorfy
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-horrorfy-distro/playlist.m3u8
+#EXTINF:-1,IB3 Global ?
+https://www.youtube.com/watch?v=w2mhujR8Rrk
+#EXTINF:-1 tvg-logo="https://i.imgur.com/b59MxgM.png",IB3 Global Ⓨ
+https://www.youtube.com/watch?v=MtNkzID0ULs
+#EXTINF:-1 tvg-logo="https://i.imgur.com/u0lyhFX.png",Interalmeria TV
+https://interalmeria.tv/directo/live.m3u8
+#EXTINF:-1,LA 1 HD
+http://212.9.92.182:49000/play/a00s
+#EXTINF:-1 tvg-logo="https://i.imgur.com/o2FlMXP.png",La 7 CYLTV
+https://cdnlive.shooowit.net/la7live/smil:channel1.smil/chunklist_b2200000.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/oVtVKw0.png",La 8 Avila (720p) [Not 24/7]
+https://cdnlive.shooowit.net/la8avilalive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Euy5tr0.png",La 8 Bierzo (720p)
+https://cdnlive.shooowit.net/la8bierzolive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Uu7XQ15.png",La 8 Burgos (720p) [Not 24/7]
+https://cdnlive.shooowit.net/la8burgoslive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/mhK7EWO.png",La 8 León
+https://cdnlive.shooowit.net/la8leonlive/smil:streamswitchingchannel.smil/chunklist_b2200000.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/0cauvlI.png",La 8 Leon (720p) [Not 24/7]
+https://cdnlive.shooowit.net/la8leonlive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ays4l8A.png",La 8 Palencia (270p) [Not 24/7]
+https://cdnlive.shooowit.net/la8palencialive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/DiM5iWn.png",La 8 Salamanca (720p)
+https://cdnlive.shooowit.net/la8salamancalive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ePhoNJl.png",La 8 Segovia (720p)
+https://cdnlive.shooowit.net/la8segovialive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/pTC3bLN.png",La 8 Soria (720p) [Not 24/7]
+https://cdnlive.shooowit.net/la8sorialive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/WEHmZ0R.png",La 8 Valladolid (720p)
+https://cdnlive.shooowit.net/la8valladolidlive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/cJepz8T.png",La 8 Zamora (720p)
+https://cdnlive.shooowit.net/la8zamoralive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/W1UZyXH.png",La Otra
+https://laotrahls2-live-hls.secure2.footprint.net/egress/chandler/telemadrid/laotra_1/bitrate_1.m3u8
+#EXTINF:-1,LA SEXTA HD
+http://212.9.92.182:49000/play/a008
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/288850935035196/picture?width=200&height=200",Lancelot TV
+https://5c0956165db0b.streamlock.net:8090/directo/_definst_/lancelot.television/master.m3u8
+#EXTINF:-1,LaOtra (720p)
+https://telemadridhls2-live-hls.secure2.footprint.net/egress/chandler/telemadrid/laotra_1/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/AbKNgz5.png",Levante TV (320p) [Not 24/7]
+https://play.cdn.enetres.net/C2F6CBB67E5B4D08A16CE5FE67ABCEC9023/029/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://lh3.googleusercontent.com/-M-XeelP5_Y0/Xx2owEDeMjI/AAAAAAAA3eE/9HFnHjVvVToLTdQXT_CPHC85lBCeCIjugCK8BGAsYHg/s0/2020-07-26.png",Levante TV | ES
+https://i.imgur.com/Cc1CypC.mp4
+#EXTINF:-1,Liga SmartBank
+http://212.9.92.182:49000/play/a02m
+#EXTINF:-1,Liga SmartBank 2
+http://212.9.92.182:49000/play/a02k
+#EXTINF:-1,LigaSmartBankHD
+http://212.9.92.182:49000/play/a02r
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/dmax-logo.jpg",Logos TV
+http://streamer1.streamhost.org/salive/logosH/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://proyectoesperanza.es/wp-content/uploads/2017/02/logos-logo-big.png",Logos TV (720p)
+https://streamer1.streamhost.org/salive/logosH/master.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/nat-geo-wild-logo-featured.jpg",Logos TV (1080p) [Not 24/7]
+http://streamer1.streamhost.org/salive/logosH/HasBahCa.m3u8
+#EXTINF:-1,M+ #VAMOSHD
+http://212.9.92.182:49000/play/a025
+#EXTINF:-1,M+ GOLF HD
+http://212.9.92.182:49000/play/a00i
+#EXTINF:-1,M+ La Resistencia
+http://212.9.92.182:49000/play/a015
+#EXTINF:-1,M+COMEDIA HD
+http://212.9.92.182:49000/play/a00q
+#EXTINF:-1,M+DEPORTES2HD
+http://212.9.92.182:49000/play/a01t
+#EXTINF:-1,M+DEPORTESHD
+http://212.9.92.182:49000/play/a01q
+#EXTINF:-1,M+ELLAS #V HD
+http://212.9.92.182:49000/play/a02a
+#EXTINF:-1,M+LaLigaTVHD
+http://212.9.92.182:49000/play/a01z
+#EXTINF:-1,M+LCAMPEON2
+http://212.9.92.182:49000/play/a00z
+#EXTINF:-1,M+LCAMPEON3
+http://212.9.92.182:49000/play/a011
+#EXTINF:-1,M+LCAMPEON6
+http://212.9.92.182:49000/play/a018
+#EXTINF:-1,M+LCAMPEONES
+http://212.9.92.182:49000/play/a00h
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/m95tvmarbella/picture?width=200&height=200",M95 Marbella
+https://limited2.todostreaming.es/live/m95-livestream.m3u8
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/RTVMarbella/picture?width=200&height=200",Marbella TV
+https://limited41.todostreaming.es/live/marbellatv-livestream.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/moon_tv_in.png",MooviMex
+https://dai.google.com/linear/hls/event/lj5QQH_5RX-yR2kwvxaiNg/master.m3u8
+#EXTINF:-1,NG WILD HD
+http://212.9.92.182:49000/play/a01k
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/aljoamyvisual/picture?width=200&height=200",NORTEvisión
+http://amaru.dyndns.org:8870/0.m3u8
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/Pequeradio/picture?width=200&height=200",Pequeradio TV
+https://canadaremar2.todostreaming.es/live/peque-pequetv.m3u8
+#EXTINF:-1 tvg-logo="https://lh3.googleusercontent.com/-5wlAQ6nLfW4/YF5I0iHgH3I/AAAAAAABA90/HsqEimRfhGARstgd044vc0ZkynUYntbTACK8BGAsYHg/s512/2021-03-26.jpg",Pequeradio TV | ES
+http://canadaremar2.todostreaming.es/live/peque-pequetv.m3u8
+#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5f1ac1f1b66c76000790ef27/colorLogoPNG.png",Pluto TV Cine Estelar (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f1ac1f1b66c76000790ef27/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&is_lat=1&platform=web&rdid=channel&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-logo="https://i.imgur.com/hboiinD.jpg",Rakuten TV Family Spain (720p)
+https://rakuten-family-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/cbs_reality_eu.png",Real Madrid Tv
+https://bit.ly/RealMadridtv?/chunklist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/retro_music_tv_cz.png",Retro Plus Classic
+https://59f1cbe63db89.streamlock.net:1443/retroplussenal3/_definst_/retroplussenal3/chunklist_w1037350940.m3u8
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/radiotelevisionmogan/picture?width=200&height=200",RTV Mogán
+https://cloudvideo.servers10.com:8081/8028/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/sun_rtv_tr.png",RTV Vida (1080p)
+https://vidartv2.todostreaming.es/live/radiovida-emisiontvhd.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/saban_tv_tr.png",Saber Mas
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-sabermas-distro/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/absolute_radio_80s.png",Solidaria TV España
+https://canadaremar2.todostreaming.es/live/solidariatv-webhd.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/RPXusvS.png",Sophia TV (720p)
+https://www.onairport.live/sophiatv-es-live/livestream/master.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/FAN (Fantastic animation).png",Tastemadeᴴᴰ [Pluto]
+https://tastemade-es16tm-samsung.amagi.tv/playlist1080.m3u8
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/312994995454199/picture?width=200&height=200",TeleBilbao
+https://cloudbilbao.todostreaming.es/live/telebilbao-livestream.m3u8
+#EXTINF:-1,TELECINCO HD
+http://212.9.92.182:49000/play/a00b
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/tele.gilena/picture?width=200&height=200",TeleGilena
+https://5940924978228.streamlock.net/Directo1/Directo1/master.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/VSDsSTZ.png",Telemadrid
+https://telemadridhls2-live-hls.secure2.footprint.net/egress/chandler/telemadrid/telemadrid_1/bitrate_1.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/teledunya_info.png",Telemadrid (720p)
+https://telemadridhls2-live-hls.secure2.footprint.net/egress/chandler/telemadrid/telemadrid_1/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/tele_1_tr.png",TeleRibera
+http://37.187.7.106/teleribera/live.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/68LNS8e.png",Televisión Canaria Ⓨ
+https://www.youtube.com/watch?v=6LlZXt8nk4s
+#EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/1252212600923979776/Z8ANYZqX_200x200.jpg",teve.cat
+https://www.tdtchannels.com/stream/tevecat.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/teve_2_tr.png",teve.cat (1080p)
+https://limited35.todostreaming.es/live/mitjans-livestream.m3u8
+#EXTINF:-1,TNT HD
+http://212.9.92.182:49000/play/a01j
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/MCM Top.png",Top Cine
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-topcine-distro/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Trece.svg/512px-Trece.svg.png",Trece TV (576p)
+https://live-edge-bhs-1.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/playlist.m3u8
+#EXTINF:-1,Tu Cine
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-tucineus-distro/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/KjWuini.png",Tuya La Janda Televisión (1080p)
+http://185.210.20.13:8080/0.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/BRIDGE TV CLASSIC.png",Tv Cocina [Pluto]
+https://bit.ly/tvcocinaPluto
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/MTV Dance_.png",TV DIRECT 13
+https://edge1.tvdirect13.com/live/playlist_720p.m3u8
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/TVVegaBaja/picture?width=200&height=200",TV Vega Baja
+https://streaming.tvt.es:8080/hls/tvb_interno/live.m3u8
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/urolatelebista/picture?width=200&height=200",Urola TV
+https://5940924978228.streamlock.net/j_Directo2/mp4:j_Directo2/playlist.m3u8
+#EXTINF:-1,Vega Baja TV
+http://185.29.68.24/tvb.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/pdHYWPp.png",Ventdelnord TV (404p)
+http://ventdelnord.tv:8080/hls/directe.m3u8
+#EXTINF:-1,WappTV
+https://dai.google.com/linear/hls/event/5Pqo1pb3QbGsAUyajQFxQQ/master.m3u8
+#EXTINF:-1 tvg-logo="https://lh3.googleusercontent.com/-xtIFcA9E93w/X5nM7R708-I/AAAAAAAA60c/YpDjeGtwiss-irwhyy-h5mCzL39AOoqHQCK8BGAsYHg/s0/2020-10-28.png",Xabarin TV | ES
+http://infantil-crtvg.flumotion.com/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.canalsur.es/css/cssimg/favicon.ico",🇪🇸 ➾ Canal Sur Andaluciaᴴᴰ
+https://cdnlive.codev8.net/rtvalive/smil:channel1.smil/chunklist_b2200000.m3u8
+#EXTINF:-1 tvg-logo="https://sck.pm/sc9k",🇪🇸 ➾ Galicia Americaᴴᴰ
+http://america-crtvg.flumotion.com:80/crtvg/america_high/chunks.m3u8?wowzasessionid=inspiration
+#EXTINF:-1 tvg-logo="https://sck.pm/sc9k",🇪🇸 ➾ Galicia Europaᴴᴰ
+http://europa-crtvg.flumotion.com:80/crtvg/europa_high/chunks.m3u8?wowzasessionid=inspiration
+#EXTINF:-1 tvg-logo="https://www.cyltv.es/img/la8Burgos.svg",🇪🇸 ➾ La 8 Burgosᴴᴰ
+https://cdnlive.shooowit.net/la8burgoslive/smil:streamswitchingchannel.smil/chunklist_b2200000.m3u8
+#EXTINF:-1 tvg-logo="https://www.telemadrid.es/static/BB3HTML/app/images/logos/logo.png?hash=dcdede14b767968b29028761f31fe79e",🇪🇸 ➾ La Otra
+https://laotrahls2-live-hls.secure2.footprint.net/egress/chandler/telemadrid/laotra_1/bitrate_2.m3u8
+#EXTINF:-1 tvg-logo="https://www.telemadrid.es/2018/08/28/favicon_ICO.ico?hash=d7c54ef560fbc93645f196c4aa138aa3fbe9250f",🇪🇸 ➾ TeleMadrid
+https://telemadridhls2-live-hls.secure2.footprint.net:443/egress/chandler/telemadrid/telemadrid_1/bitrate_1.m3u8

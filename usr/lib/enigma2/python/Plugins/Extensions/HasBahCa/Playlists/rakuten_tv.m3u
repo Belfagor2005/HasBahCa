@@ -1,0 +1,521 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="LIVE 24/7 news UE" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B8A0:2D65:EC:0:0:0:0", LIVE 24/7 news UE
+https://1plus1-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="CNN International (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:1869:A171:EC:0:0:0:0", CNN International (EU)
+https://cnn-cnninternational-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="EuroNews 1 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F468:F967:EC:0:0:0:0", EuroNews 1 (EU)
+https://rakuten-euronews-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="EuroNews 8 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:A636:1A2A:EC:0:0:0:0", EuroNews 8 (EU)
+https://rakuten-euronews-8-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="EuroNews 10 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:BE7C:792B:EC:0:0:0:0", EuroNews 10 (EU)
+https://rakuten-euronews-10-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="EuroNews 11 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:10FF:7B2A:EC:0:0:0:0", EuroNews 11 (EU)
+https://rakuten-euronews-11-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="EuroNews 12 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F380:4929:EC:0:0:0:0", EuroNews 12 (EU)
+https://rakuten-euronews-12-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="EuroNews 13 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7A7D:36D4:EC:0:0:0:0", EuroNews 13 (EU)
+https://rakuten-euronews-13-eu.rakuten.wurl.tv/playlist.m3u8%09
+#EXTINF:-1 tvg-name="Guardian (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:4B6:18CE:EC:0:0:0:0", Guardian (EU)
+https://rakuten-guardian-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Hollywire (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7CCD:A857:EC:0:0:0:0", Hollywire (EU)
+https://hollywire-samsung-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Popsugar" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:D80:F2B1:EC:0:0:0:0", Popsugar
+https://groupnine-popsugar-rakuten.amagi.tv/playlist.m3u8%09
+#EXTINF:-1 tvg-name="AfricaNews (EU) " group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F39:BF12:EC:0:0:0:0", AfricaNews (EU) 
+https://rakuten-africanews-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Reuters (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:ACDE:598C:EC:0:0:0:0", Reuters (EU)
+https://reuters-reuters-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Planet Knowledge (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:FB9F:883F:EC:0:0:0:0", Planet Knowledge (EU)
+https://vod365-planet-knowledge-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="People are awesome (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:BB9:7F73:EC:0:0:0:0", People are awesome (EU)
+https://jukin-peopleareawesome-2-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Fashion TV (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:5799:E5AF:EC:0:0:0:0", Fashion TV (EU)
+https://fashiontv-fashiontv-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Fuel TV (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:EAC0:C41F:EC:0:0:0:0", Fuel TV (EU)
+https://fueltv-fueltv-10-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Travel XP (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:ACD3:4E7A:EC:0:0:0:0", Travel XP (EU)
+https://travelxp-travelxp-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="AFV Family (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:E07B:D928:EC:0:0:0:0", AFV Family (EU)
+https://futuretoday-afv-family-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Motor1 TV (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:D8DC:1DB2:EC:0:0:0:0", Motor1 TV (EU)
+https://motorsportnetwork-motor1tv-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Surf Channel (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:E6C4:ABA7:EC:0:0:0:0", Surf Channel (EU)
+https://surfchannel-surfchannel-01-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="FTF (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F19A:AAB5:EC:0:0:0:0", FTF (EU)
+https://ftf-forthefans-3-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="MavTV (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:17D8:A8F7:EC:0:0:0:0", MavTV (EU)
+https://mavtv-mavtvglobal-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Tankee (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B33:BFD8:EC:0:0:0:0", Tankee (EU)
+https://playworksdigital-tankee-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="PlayWorks (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:C474:45FA:EC:0:0:0:0", PlayWorks (EU)
+https://playworksdigital-playworks-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Destination TV (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:1168:7F6E:EC:0:0:0:0", Destination TV (EU)
+https://makingitmedia-destinationtv-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="The Design Network (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:9C35:4D74:EC:0:0:0:0", The Design Network (EU)
+https://thedesignnetwork-tdn-6-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Bonappetit" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7989:3155:EC:0:0:0:0", Bonappetit
+https://bonappetit-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Ifood.tv (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:401:8DFA:EC:0:0:0:0", Ifood.tv (EU)
+https://futuretoday-ifoodtv-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="BITE" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:6DF8:B0C7:EC:0:0:0:0", BITE
+https://parademedia-bite-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Tastemade (International)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:4D17:1F7B:EC:0:0:0:0", Tastemade (International)
+https://tastemade-tdint-rakuten.amagi.tv/playlist.m3u8%09
+#EXTINF:-1 tvg-name="Tastemade (ES)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B9D8:6A3F:EC:0:0:0:0", Tastemade (ES)
+https://tastemade-es8tm-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Tastemade TDGM" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:3133:E4A2:EC:0:0:0:0", Tastemade TDGM
+https://tastemade-tdgmn-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="BBC Travel (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:86A7:6A2B:EC:0:0:0:0", BBC Travel (EU)
+https://bbceu-bbctravel-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="BBC History (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:EBF5:59D:EC:0:0:0:0", BBC History (EU)
+https://bbceu-bbchistory-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="BBC Food (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:1844:9F82:EC:0:0:0:0", BBC Food (EU)
+https://bbceu-food-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="BBC Travel (DE)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:1463:A302:EC:0:0:0:0", BBC Travel (DE)
+https://bbceu-bbctravel-1-de.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="BBC Food (DE)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:24D0:13CD:EC:0:0:0:0", BBC Food (DE)
+https://bbceu-food-1-de.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="BBC Drama (FR)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:6215:BC68:EC:0:0:0:0", BBC Drama (FR)
+https://bbceu-bbcdrama-1-fr.samsung.wurl.tv/playlist.m3u8%09
+#EXTINF:-1 tvg-name="BBC Doctor Who (FR)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:3BF1:D80D:EC:0:0:0:0", BBC Doctor Who (FR)
+https://bbceu-doctorwho-3-fr.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="BBC Drama (IT)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:4B22:CC6:EC:0:0:0:0", BBC Drama (IT)
+https://bbceu-bbcdrama-2-it.samsung.wurl.tv/playlist.m3u8%09
+#EXTINF:-1 tvg-name="BBC Doctor Who (IT)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B70E:278C:EC:0:0:0:0", BBC Doctor Who (IT)
+https://bbceu-doctorwho-1-it.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="BBC Doctor Who (ES)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:5E3C:8E12:EC:0:0:0:0", BBC Doctor Who (ES)
+https://bbceu-doctorwho-2-es.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="BBC Drama (ES)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:4DA0:FA6A:EC:0:0:0:0", BBC Drama (ES)
+https://bbceu-bbcdrama-3-es.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Beano TV (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:3E46:CFAA:EC:0:0:0:0", Beano TV (EU)
+https://beanostudios-beanotv-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Radical Docs (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:67FD:FE45:EC:0:0:0:0", Radical Docs (EU)
+https://quintus-radicaldocs-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Halloelterrn (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:AC8F:3271:EC:0:0:0:0", Halloelterrn (EU)
+https://targetvideo-parenting-media-halloeltern-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Horse and Country free (UK)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7720:5896:EC:0:0:0:0", Horse and Country free (UK)
+https://hncfree-rakutenuk.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="WeatherSpy (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B57B:5B88:EC:0:0:0:0", WeatherSpy (EU)
+https://jukin-weatherspy-2-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="FailArmy International (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7D51:5527:EC:0:0:0:0", FailArmy International (EU)
+https://failarmy-international-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Vitor The Boatshow (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:8A0F:44FE:EC:0:0:0:0", Vitor The Boatshow (EU)
+https://vitor-theboatshow-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Zoo Moo (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F1B:3B2:EC:0:0:0:0", Zoo Moo (EU)
+https://rockentertainment-zoomoo-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Comedy Movies 1 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:CFE1:162F:EC:0:0:0:0", Rakuten Comedy Movies 1 (EU)
+https://rakuten-comedymovies-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Comedy Movies 2 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:EEB9:5D94:EC:0:0:0:0", Rakuten Comedy Movies 2 (EU)
+https://rakuten-comedymovies-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Comedy Movies 3 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:336A:4DF9:EC:0:0:0:0", Rakuten Comedy Movies 3 (EU)
+https://rakuten-comedymovies-3-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Action Movies 5 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:5DEC:59C3:EC:0:0:0:0", Rakuten Action Movies 5 (EU)
+https://rakuten-comedymovies-5-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Comedy Movies 6 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7CC4:A128:EC:0:0:0:0", Rakuten Comedy Movies 6 (EU)
+https://rakuten-comedymovies-6-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Comedy Movies 7 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:C175:918D:EC:0:0:0:0", Rakuten Comedy Movies 7 (EU)
+https://rakuten-comedymovies-7-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Action Movies 1 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:CC3B:E468:EC:0:0:0:0", Rakuten Action Movies 1 (EU)
+https://rakuten-actionmovies-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Action Movies 2 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:AD63:9D03:EC:0:0:0:0", Rakuten Action Movies 2 (EU)
+https://rakuten-actionmovies-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Action Movies 3 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:68B2:AC9E:EC:0:0:0:0", Rakuten Action Movies 3 (EU)
+https://rakuten-actionmovies-3-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Action Movies 5 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:3E30:A0D4:EC:0:0:0:0", Rakuten Action Movies 5 (EU)
+https://rakuten-actionmovies-5-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Action Movies 6 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:1F58:596F:EC:0:0:0:0", Rakuten Action Movies 6 (EU)
+https://rakuten-actionmovies-6-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Action Movies 7 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:DAA7:690A:EC:0:0:0:0", Rakuten Action Movies 7 (EU)
+https://rakuten-actionmovies-7-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight 1 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:13DD:D8D3:EC:0:0:0:0", Rakuten Spotlight 1 (EU)
+https://rakuten-spotlight-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight 2 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:36B2:CCD2:EC:0:0:0:0", Rakuten Spotlight 2 (EU)
+https://rakuten-spotlight-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight 3 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:1369:CBD1:EC:0:0:0:0", Rakuten Spotlight 3 (EU)
+https://rakuten-spotlight-3-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight 4 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:C819:37D8:EC:0:0:0:0", Rakuten Spotlight 4 (EU)
+https://rakuten-spotlight-4-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight 5 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:A4D0:36D7:EC:0:0:0:0", Rakuten Spotlight 5 (EU)
+https://rakuten-spotlight-5-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight 6 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:C7A5:2AD6:EC:0:0:0:0", Rakuten Spotlight 6 (EU)
+https://rakuten-spotlight-6-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight 7 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:A45C:29D5:EC:0:0:0:0", Rakuten Spotlight 7 (EU)
+https://rakuten-spotlight-7-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight 8 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:52ED:57DC:EC:0:0:0:0", Rakuten Spotlight 8 (EU)
+https://rakuten-spotlight-8-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight 9 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:2FA4:56DB:EC:0:0:0:0", Rakuten Spotlight 9 (EU)
+https://rakuten-spotlight-9-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight 10 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7D7B:4307:EC:0:0:0:0", Rakuten Spotlight 10 (EU)
+https://rakuten-spotlight-10-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight 11 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:C22C:336C:EC:0:0:0:0", Rakuten Spotlight 11 (EU)
+https://rakuten-spotlight-11-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight 11 (NO)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B2DF:E16F:EC:0:0:0:0", Rakuten Spotlight 11 (NO)
+https://rakuten-spotlight-11-no.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight 12 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:19F2:B3D:EC:0:0:0:0", Rakuten Spotlight 12 (EU)
+https://rakuten-spotlight-12-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight 12 (FI)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:2F79:E878:EC:0:0:0:0", Rakuten Spotlight 12 (FI)
+https://rakuten-spotlight-12-fi.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight 13 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:5EA2:FBA2:EC:0:0:0:0", Rakuten Spotlight 13 (EU)
+https://rakuten-spotlight-13-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Drama 8 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7899:C2F:EC:0:0:0:0", Rakuten Drama 8 (EU)
+https://rakuten-drama-8-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Drama 9 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:9BE:20D3:EC:0:0:0:0", Rakuten Drama 9 (EU)
+https://rakuten-drama-9-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Drama 10 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:CD1E:495A:EC:0:0:0:0", Rakuten Drama 10 (EU)
+https://rakuten-drama-10-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Drama 11 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:73A9:AFBF:EC:0:0:0:0", Rakuten Drama 11 (EU)
+https://rakuten-drama-11-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Drama 12 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B5E:5024:EC:0:0:0:0", Rakuten Drama 12 (EU)
+https://rakuten-drama-12-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Drama 13 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:500F:4089:EC:0:0:0:0", Rakuten Drama 13 (EU)
+https://rakuten-drama-13-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten TV Shows 1 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:844A:F40F:EC:0:0:0:0", Rakuten TV Shows 1 (EU)
+https://rakuten-tvshows-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten TV Shows 2 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:A71F:E80E:EC:0:0:0:0", Rakuten TV Shows 2 (EU)
+https://rakuten-tvshows-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten TV Shows 3 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:83D6:E70D:EC:0:0:0:0", Rakuten TV Shows 3 (EU)
+https://rakuten-tvshows-3-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten TV Shows 4 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:3886:5314:EC:0:0:0:0", Rakuten TV Shows 4 (EU)
+https://rakuten-tvshows-4-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten TV Shows 5 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:153D:5213:EC:0:0:0:0", Rakuten TV Shows 5 (EU)
+https://rakuten-tvshows-5-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten TV Shows 6 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:3812:4612:EC:0:0:0:0", Rakuten TV Shows 6 (EU)
+https://rakuten-tvshows-6-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten TV Shows 7 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:14C9:4511:EC:0:0:0:0", Rakuten TV Shows 7 (EU)
+https://rakuten-tvshows-7-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Top Free 1 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B9AB:FB96:EC:0:0:0:0", Rakuten Top Free 1 (EU)
+https://rakuten-topfree-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Top Free 2 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:9C2C:C995:EC:0:0:0:0", Rakuten Top Free 2 (EU)
+https://rakuten-topfree-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Top Free 3 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:78E8:994:EC:0:0:0:0", Rakuten Top Free 3 (EU)
+https://rakuten-topfree-3-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Top Free 6 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:2D1F:2799:EC:0:0:0:0", Rakuten Top Free 6 (EU)
+https://rakuten-topfree-6-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Top Free 7 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:9DA:6798:EC:0:0:0:0", Rakuten Top Free 7 (EU)
+https://rakuten-topfree-7-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 1 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:6DEE:7CA7:EC:0:0:0:0", Rakuten Family 1 (EU)
+https://rakuten-family-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 2 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:4F16:3542:EC:0:0:0:0", Rakuten Family 2 (EU)
+https://rakuten-family-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 3 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:A65:44DD:EC:0:0:0:0", Rakuten Family 3 (EU)
+https://rakuten-family-3-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 4 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:2494:2978:EC:0:0:0:0", Rakuten Family 4 (EU)
+https://rakuten-family-4-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 5 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:DFE3:3913:EC:0:0:0:0", Rakuten Family 5 (EU)
+https://rakuten-family-5-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 6 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:C10A:F1AE:EC:0:0:0:0", Rakuten Family 6 (EU)
+https://rakuten-family-6-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 7 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7C5A:149:EC:0:0:0:0", Rakuten Family 7 (EU)
+https://rakuten-family-7-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 8 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:BC21:5BE4:EC:0:0:0:0", Rakuten Family 8 (EU)
+https://rakuten-family-8-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 9 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7770:6B7F:EC:0:0:0:0", Rakuten Family 9 (EU)
+https://rakuten-family-9-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 10 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:C354:1D3:EC:0:0:0:0", Rakuten Family 10 (EU)
+https://rakuten-family-10-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 11 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:E69D:2D4:EC:0:0:0:0", Rakuten Family 11 (EU)
+https://rakuten-family-11-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 11 (NO)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:1718:BD0D:EC:0:0:0:0", Rakuten Family 11 (NO)
+https://rakuten-family-11-no.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 12 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:C2DF:F4D1:EC:0:0:0:0", Rakuten Family 12 (EU)
+https://rakuten-family-12-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 12 (FI)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:E4E3:BD24:EC:0:0:0:0", Rakuten Family 12 (FI)
+https://rakuten-family-12-fi.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 13 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:E628:F5D2:EC:0:0:0:0", Rakuten Family 13 (EU)
+https://rakuten-family-13-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Family 16 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:53D2:52D5:EC:0:0:0:0", Rakuten Family 16 (EU)
+https://rakuten-family-16-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Romance 1 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:62C8:2A7E:EC:0:0:0:0", Rakuten Romance 1 (EU)
+https://rakuten-romance-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Romance 2 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:4ACF:7F7F:EC:0:0:0:0", Rakuten Romance 2 (EU)
+https://rakuten-romance-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Romance 3 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:6E1:43F8:EC:0:0:0:0", Rakuten Romance 3 (EU)
+https://rakuten-romance-3-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Romance 6 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B9DD:217B:EC:0:0:0:0", Rakuten Romance 6 (EU)
+https://rakuten-romance-6-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Romance 7 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:DD21:E17C:EC:0:0:0:0", Rakuten Romance 7 (EU)
+https://rakuten-romance-7-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Thriller 1 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:39E6:4CA9:EC:0:0:0:0", Rakuten Thriller 1 (EU)
+https://rakuten-thriller-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Thriller 2 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:8CBA:F7D8:EC:0:0:0:0", Rakuten Thriller 2 (EU)
+https://rakuten-thriller-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Thriller 3 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F102:AC73:EC:0:0:0:0", Rakuten Thriller 3 (EU)
+https://rakuten-thriller-3-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Thriller 6 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:1AC6:3B6C:EC:0:0:0:0", Rakuten Thriller 6 (EU)
+https://rakuten-thriller-6-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Thriller 7 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7F0D:F007:EC:0:0:0:0", Rakuten Thriller 7 (EU)
+https://rakuten-thriller-7-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Action 8 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:A253:7796:EC:0:0:0:0", Rakuten Action 8 (EU)
+https://rakuten-action-8-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Action 9 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:9FE6:38FB:EC:0:0:0:0", Rakuten Action 9 (EU)
+https://rakuten-action-9-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Action 10 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B622:5E77:EC:0:0:0:0", Rakuten Action 10 (EU)
+https://rakuten-action-10-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Action 11 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:92D9:5D76:EC:0:0:0:0", Rakuten Action 11 (EU)
+https://rakuten-action-11-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Action 12 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:755E:6C75:EC:0:0:0:0", Rakuten Action 12 (EU)
+https://rakuten-action-12-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Action 13 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:C7DD:2D74:EC:0:0:0:0", Rakuten Action 13 (EU)
+https://rakuten-action-13-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Comedy 8 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:ABE5:6E99:EC:0:0:0:0", Rakuten Comedy 8 (EU)
+https://rakuten-comedy-8-eu.rakuten.wurl.tv/playlist.m3u8%09
+#EXTINF:-1 tvg-name="Rakuten Comedy 9 (EU) Danish Subs" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:FF2:F72C:EC:0:0:0:0", Rakuten Comedy 9 (EU) Danish Subs
+https://rakuten-comedy-9-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Comedy 10 (EU) Danish Subs" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:3C20:7B1A:EC:0:0:0:0", Rakuten Comedy 10 (EU) Danish Subs
+https://rakuten-comedy-10-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Comedy 11 (EU) Danish Subs" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:18D7:7A19:EC:0:0:0:0", Rakuten Comedy 11 (EU) Danish Subs
+https://rakuten-comedy-11-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Comedy 12 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:3BAC:6E18:EC:0:0:0:0", Rakuten Comedy 12 (EU)
+https://rakuten-comedy-12-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Comedy 13 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:1863:6D17:EC:0:0:0:0", Rakuten Comedy 13 (EU)
+https://rakuten-comedy-13-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="FilmRise Serien DE" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7F4:4167:EC:0:0:0:0", FilmRise Serien DE
+https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/channel-hls/v2/77dc314fd75541ff/9991732/master.m3u8?ads.xumo_channelId=9991732
+#EXTINF:-1 tvg-name="FilmRise Binge Watch DE" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F456:39EE:EC:0:0:0:0", FilmRise Binge Watch DE
+https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/channel-hls/v2/56f5b5ceafba4a8b/9991733/master.m3u8?ads.xumo_channelId=9991733
+#EXTINF:-1 tvg-name="GoldStar TV " group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:6130:F82D:EC:0:0:0:0", GoldStar TV 
+https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/channel-hls/v2/a249be578217437d/9991761/master.m3u8?ads.xumo_channelId=9991761
+#EXTINF:-1 tvg-name="Rakuten Documentaries 4 (EU) German subs" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F477:92EF:EC:0:0:0:0", Rakuten Documentaries 4 (EU) German subs
+https://rakuten-documentaries-4-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Documentaries 5 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:D12E:91EE:EC:0:0:0:0", Rakuten Documentaries 5 (EU)
+https://rakuten-documentaries-5-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Documentaries 6 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F403:85ED:EC:0:0:0:0", Rakuten Documentaries 6 (EU)
+https://rakuten-documentaries-6-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Documentaries 7 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:D0BA:84EC:EC:0:0:0:0", Rakuten Documentaries 7 (EU)
+https://rakuten-documentaries-7-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Documentaries 8 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:69A3:72EB:EC:0:0:0:0", Rakuten Documentaries 8 (EU)
+https://rakuten-documentaries-8-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Documentaries 9 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:465A:71EA:EC:0:0:0:0", Rakuten Documentaries 9 (EU)
+https://rakuten-documentaries-9-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Documentaries 10 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:46F:4D85:EC:0:0:0:0", Rakuten Documentaries 10 (EU)
+https://rakuten-documentaries-10-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Documentaries 11 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:4962:16EB:EC:0:0:0:0", Rakuten Documentaries 11 (EU)
+https://rakuten-documentaries-11-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Documentaries 12 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:8B4:D186:EC:0:0:0:0", Rakuten Documentaries 12 (EU)
+https://rakuten-documentaries-12-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Documentaries 13 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:6CFC:8621:EC:0:0:0:0", Rakuten Documentaries 13 (EU)
+https://rakuten-documentaries-13-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Documentaries 16 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7AA9:8DF2:EC:0:0:0:0", Rakuten Documentaries 16 (EU)
+https://rakuten-documentaries-16-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Filmzie (EU) " group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:3993:764F:EC:0:0:0:0", Filmzie (EU) 
+https://filmzie-filmzie-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Filmstream (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:40CE:6133:EC:0:0:0:0", Filmstream (EU)
+https://spi-filmstream-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Top Film (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F7E:FA73:EC:0:0:0:0", Rakuten Top Film (EU)
+https://rakuten-gratis-topfilm-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="The Pet Collective International (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:C802:E38A:EC:0:0:0:0", The Pet Collective International (EU)
+https://the-pet-collective-international-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Froo TV (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:AF30:ECCE:EC:0:0:0:0", Froo TV (EU)
+https://outtv-froottv-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Bloomberg (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:29B6:B6CC:EC:0:0:0:0", Bloomberg (EU)
+https://bloomberg-bloomberg-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Bloomberg Quicktake (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:E070:FF44:EC:0:0:0:0", Bloomberg Quicktake (EU)
+https://bloomberg-quicktake-2-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Forbes (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:45D4:2FD7:EC:0:0:0:0", Forbes (EU)
+https://bfc-forbes-1-eu.rakuten.wurl.tv/playlist.m3u8%09
+#EXTINF:-1 tvg-name="Dry Bar Comedy (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:3D75:1549:EC:0:0:0:0", Dry Bar Comedy (EU)
+https://drybar-drybarcomedy-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Edgesports rest of the world" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:1069:AB06:EC:0:0:0:0", Edgesports rest of the world
+https://edgesports-row-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Revry News (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F10F:A913:EC:0:0:0:0", Revry News (EU)
+https://revry-revrynews-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Revry 2 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:4464:880B:EC:0:0:0:0", Revry 2 (EU)
+https://revry-revry-2-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Revry 3 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:AEFA:766A:EC:0:0:0:0", Revry 3 (EU)
+https://revry-revry-3-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Lacrosse Sport Network (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:3123:17BB:EC:0:0:0:0", Lacrosse Sport Network (EU)
+https://asermedia-lacrossesportsnetwork-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Billiards TV (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:ECF5:B6E6:EC:0:0:0:0", Billiards TV (EU)
+https://newidco-billiardstv-1-eu.rakuten.wurl.tv/playlist.m3u8%09
+#EXTINF:-1 tvg-name="Boo Gaming (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:D22A:8676:EC:0:0:0:0", Boo Gaming (EU)
+https://arcade-cloud-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="VennTV (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F665:6578:EC:0:0:0:0", VennTV (EU)
+https://venntv-rakuteneu.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Got Game (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:3A13:BCF:EC:0:0:0:0", Got Game (EU)
+https://gghubsrl-gotgame-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Duck TV (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:9789:6A03:EC:0:0:0:0", Duck TV (EU)
+https://mmm-ducktv-4-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Happy Kids -1 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:2C43:613B:EC:0:0:0:0", Happy Kids -1 (EU)
+https://futuretoday-happykids-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-name="Happy Kids -2 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:BF19:843C:EC:0:0:0:0", Happy Kids -2 (EU)
+https://futuretoday-happykids-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="The Lego Channel (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:580B:D692:EC:0:0:0:0", The Lego Channel (EU)
+https://futuretoday-thelegochannel-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Teletubbies 1 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:E5C7:AA29:EC:0:0:0:0", Teletubbies 1 (EU)
+https://dhx-teletubbies-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Teletubbies 2 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:89C:9E28:EC:0:0:0:0", Teletubbies 2 (EU)
+https://dhx-teletubbies-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Teletubbies 3 (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:E553:9D27:EC:0:0:0:0", Teletubbies 3 (EU)
+https://dhx-teletubbies-3-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Caillou (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:2C39:6BFD:EC:0:0:0:0", Caillou (EU)
+https://dhx-caillou-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:8925:130F:EC:0:0:0:0", Baby Shark TV (EU)
+https://newidco-babysharktv-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Travel XP (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:4A37:D3E3:EC:0:0:0:0", Travel XP (EU)
+https://travelxp-travelxp-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Viki (EU) " group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F1C:6FA2:EC:0:0:0:0", Viki (EU) 
+https://newidco-rakutenviki-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Sofy TV" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:99C1:C558:EC:0:0:0:0", Sofy TV
+https://sofytv-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Lonestar" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:9428:3A7B:EC:0:0:0:0", Lonestar
+https://lonestar-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Luxe TV (UK)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:909C:ED9B:EC:0:0:0:0", Luxe TV (UK)
+https://alchimie-luxe-uk-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Luxe TV (Fr)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:CF02:1B51:EC:0:0:0:0", Luxe TV (Fr)
+https://alchimie-luxe-fr-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Humanity Documentaries (UK)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:3F64:C4A4:EC:0:0:0:0", Humanity Documentaries (UK)
+https://alchimie-humanity-documentaries-uk-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Humanity Documentaries (Fr)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:607D:2484:EC:0:0:0:0", Humanity Documentaries (Fr)
+https://alchimie-humanity-documentaries-fr-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Humanity Documentaries (It)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:975D:C919:EC:0:0:0:0", Humanity Documentaries (It)
+https://alchimie-humanity-documentaries-it-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="MMA TV" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:767B:447:EC:0:0:0:0", MMA TV
+https://alchimie-mmatv-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Brat TV" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:72B8:7E0C:EC:0:0:0:0", Brat TV
+https://brat-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Insight TV (English)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:422A:FFC:EC:0:0:0:0", Insight TV (English)
+https://insighttv-eng-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Inwonder (English)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:5585:E958:EC:0:0:0:0", Inwonder (English)
+https://inwonder-eng-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Insight TV (German)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:9037:EACA:EC:0:0:0:0", Insight TV (German)
+https://insighttv-ger-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Inwonder (German)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:621E:8806:EC:0:0:0:0", Inwonder (German)
+https://inwonder-ger-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="InTrouble" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:EFA8:9BB3:EC:0:0:0:0", InTrouble
+https://introuble-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Qwest jazz" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:5307:B796:EC:0:0:0:0", Qwest jazz
+https://qwestjazz-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Qwest Classic" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:576B:90E7:EC:0:0:0:0", Qwest Classic
+https://qwestclassic-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Qwest Mix" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:A969:6E5B:EC:0:0:0:0", Qwest Mix
+https://qwestmix-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Young Hollywood" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:E7C2:A268:EC:0:0:0:0", Young Hollywood
+https://younghollywood-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Clubbing TV" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:60A7:804F:EC:0:0:0:0", Clubbing TV
+https://clubbingtv-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Moviesphere UK" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F7EF:E5DA:EC:0:0:0:0", Moviesphere UK
+https://moviesphereuk-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rush Street" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B8DD:B40C:EC:0:0:0:0", Rush Street
+https://rushstreet-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Comedy Dynamics" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:BEF:BEF4:EC:0:0:0:0", Comedy Dynamics
+https://comedydynamics-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="ESTV" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:260C:CE8F:EC:0:0:0:0", ESTV
+https://estv-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="EuroNews (Spain)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:3F29:9D48:EC:0:0:0:0", EuroNews (Spain)
+https://rakuten-euronews-4-es.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Mytime (Spain)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:AE0C:316E:EC:0:0:0:0", Mytime (Spain)
+https://appletree-mytimespain-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="InsightTV (Spain)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:99B5:43C6:EC:0:0:0:0", InsightTV (Spain)
+https://insighttv-spa-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Runtime (Spain)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:CA5E:5308:EC:0:0:0:0", Runtime (Spain)
+https://runtime-espana-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Cine (EU) (Spanish)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:967A:91EF:EC:0:0:0:0", Cine (EU) (Spanish)
+https://rakuten-cine-espanol-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Darkmatter (Spanish)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:4B2C:FCFB:EC:0:0:0:0", Darkmatter (Spanish)
+https://darkmatter-spanish-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Kino (German)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:2932:EA89:EC:0:0:0:0", Kino (German)
+https://rakuten-deutsches-kino-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Cinema Segretto (EU) (Italy)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:8DA1:AD5D:EC:0:0:0:0", Cinema Segretto (EU) (Italy)
+https://minerva-cinemasegreto-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Bizzaro Movies (EU) (Italy)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:28ED:A22B:EC:0:0:0:0", Bizzaro Movies (EU) (Italy)
+https://minerva-bizzarromovies-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Classico (EU) (Italy)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:921E:1772:EC:0:0:0:0", Classico (EU) (Italy)
+https://rakuten-classico-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Krime (French subs)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:9A9B:35B4:EC:0:0:0:0", Krime (French subs)
+https://alchimie-krime-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="iHola Play (EU) " group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:37A8:E7BC:EC:0:0:0:0", iHola Play (EU) 
+https://rakuten-hola-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Wonder" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:9FC8:DDE6:EC:0:0:0:0", Wonder
+https://lds-wonder-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Real Crime" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F3B7:F547:EC:0:0:0:0", Real Crime
+https://lds-realcrime-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Real Families" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:8F1B:FDA3:EC:0:0:0:0", Real Families
+https://lds-realfamilies-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Real Wild" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7A3D:FB91:EC:0:0:0:0", Real Wild
+https://lds-realwild-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Timeline" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7018:1236:EC:0:0:0:0", Timeline
+https://lds-timeline-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Don't Tell the Bride" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:C210:39A1:EC:0:0:0:0", Don't Tell the Bride
+https://lds-donttellbride-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Huippuelokuvat -Top Movies (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:228E:6ABB:EC:0:0:0:0", Rakuten Huippuelokuvat -Top Movies (EU)
+https://rakuten-huippuelokuvat-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Gratisfilmer (EU)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B708:93F2:EC:0:0:0:0", Gratisfilmer (EU)
+https://rakuten-gratisfilmer-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Top Film (EU) (Denmark)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:74BF:5A3B:EC:0:0:0:0", Top Film (EU) (Denmark)
+https://rakuten-toppfilmer-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="WildEarth" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:C275:5663:EC:0:0:0:0", WildEarth
+https://wildearth-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="TalkRadio TV" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:1301:A9B4:EC:0:0:0:0", TalkRadio TV
+https://newsuk-talkradiotv-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Explore by TVPlayer (Uk)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:4E9:763E:EC:0:0:0:0", Explore by TVPlayer (Uk)
+https://alchimie-explorebytvplayer-uk-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Explore by TVPlayer (ES)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:41B1:C8F6:EC:0:0:0:0", Explore by TVPlayer (ES)
+https://alchimie-explorebytvplayer-es-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Explore by TVPlayer (Fr)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:67A2:8BA:EC:0:0:0:0", Explore by TVPlayer (Fr)
+https://alchimie-explorebytvplayer-fr-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Tennis Channel (Deu) Geo" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:BB6E:D893:EC:0:0:0:0", Tennis Channel (Deu) Geo
+https://tennischanneldeu-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Tennis Channel International (Geo)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:4FDC:D332:EC:0:0:0:0", Tennis Channel International (Geo)
+https://tennischannelintl-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Cnn International (GB) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:2BA2:F2F8:EC:0:0:0:0", Cnn International (GB) LG
+https://rakuten-cnninternational-1-gb.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight (GB Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:8B68:DF87:EC:0:0:0:0", Rakuten Spotlight (GB Subs) LG
+https://rakuten-spotlight-1-gb.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Actionmovies (GB Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:AB9:BF4:EC:0:0:0:0", Rakuten Actionmovies (GB Subs) LG
+https://rakuten-actionmovies-1-gb.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten TV Shows (GB Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:367:553:EC:0:0:0:0", Rakuten TV Shows (GB Subs) LG
+https://rakuten-tvshows-1-gb.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Comedy Movies (GB Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:CA95:A303:EC:0:0:0:0", Rakuten Comedy Movies (GB Subs) LG
+https://rakuten-comedymovies-1-gb.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Viki (GB) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:74E0:B3E6:EC:0:0:0:0", Viki (GB) LG
+https://newidco-rakutenviki-2-gb.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight (ES Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B337:1F93:EC:0:0:0:0", Rakuten Spotlight (ES Subs) LG
+https://rakuten-spotlight-2-es.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Actionmovies (ES Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:DD84:3FD6:EC:0:0:0:0", Rakuten Actionmovies (ES Subs) LG
+https://rakuten-actionmovies-2-es.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten TV Shows (ES Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:2B35:455F:EC:0:0:0:0", Rakuten TV Shows (ES Subs) LG
+https://rakuten-tvshows-2-es.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Comedy Movies (ES Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:3620:F4EF:EC:0:0:0:0", Rakuten Comedy Movies (ES Subs) LG
+https://rakuten-comedymovies-2-es.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Viki (ES) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:2DCE:AC99:EC:0:0:0:0", Viki (ES) LG
+https://newidco-rakutenviki-2-es.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Hola 2 (ES subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:9B05:8DA7:EC:0:0:0:0", Hola 2 (ES subs) LG
+https://rakuten-hola-2-es.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="CNN International LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:BFC0:2C2E:EC:0:0:0:0", CNN International LG
+https://rakuten-cnninternational-1-de.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight (DE Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:6589:38E5:EC:0:0:0:0", Rakuten Spotlight (DE Subs) LG
+https://rakuten-spotlight-3-de.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Actionmovies (DE Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:1FB4:73CC:EC:0:0:0:0", Rakuten Actionmovies (DE Subs) LG
+https://rakuten-actionmovies-3-de.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten TV Shows (DE Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B594:EFD9:EC:0:0:0:0", Rakuten TV Shows (DE Subs) LG
+https://rakuten-tvshows-3-de.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Comedy Movies (DE Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:FA0D:C105:EC:0:0:0:0", Rakuten Comedy Movies (DE Subs) LG
+https://rakuten-comedymovies-3-de.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Viki (DE) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:81B3:3DC8:EC:0:0:0:0", Viki (DE) LG
+https://newidco-rakutenviki-2-de.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Horse and Country Free (DE)" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:249C:FC4B:EC:0:0:0:0", Horse and Country Free (DE)
+https://hncfree-rakutende.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight (IT Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:37DA:917E:EC:0:0:0:0", Rakuten Spotlight (IT Subs) LG
+https://rakuten-spotlight-6-it.lg.wurl.tv/playlist.m3u8%09
+#EXTINF:-1 tvg-name="Rakuten Actionmovies (IT Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:78B0:CFC3:EC:0:0:0:0", Rakuten Actionmovies (IT Subs) LG
+https://rakuten-actionmovies-6-it.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten TV Shows (IT Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:C3E5:9FD6:EC:0:0:0:0", Rakuten TV Shows (IT Subs) LG
+https://rakuten-tvshows-6-it.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Comedy Movies (IT Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:D825:FFDC:EC:0:0:0:0", Rakuten Comedy Movies (IT Subs) LG
+https://rakuten-comedymovies-6-it.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Viki (IT) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:4FD9:1289:EC:0:0:0:0", Viki (IT) LG
+https://newidco-rakutenviki-1-it.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Spotlight (FR Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B4B7:46D6:EC:0:0:0:0", Rakuten Spotlight (FR Subs) LG
+https://rakuten-spotlight-7-fr.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Actionmovies (FR Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:F38F:5313:EC:0:0:0:0", Rakuten Actionmovies (FR Subs) LG
+https://rakuten-actionmovies-7-fr.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten TV Shows (FR Subs) LG	" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:2CB5:6CA2:EC:0:0:0:0", Rakuten TV Shows (FR Subs) LG	
+https://rakuten-tvshows-7-fr.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Comedy Movies (FR Subs) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:7C3:92F3:EC:0:0:0:0", Rakuten Comedy Movies (FR Subs) LG
+https://rakuten-comedymovies-7-fr.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Viki (FR) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:B62:17D4:EC:0:0:0:0", Viki (FR) LG
+https://newidco-rakutenviki-1-fr.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Viki (US) LG" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:CE89:3689:EC:0:0:0:0", Viki (US) LG
+https://newidco-rakutenviki-2-us.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Real Crime Beta" group-title="*IPTV Rakuten TV" dvb-reference="4097:0:1:26EA:B4D1:EC:0:0:0:0", Real Crime Beta
+https://lds-realcrimebeta-rakuten.amagi.tv/playlist.m3u8

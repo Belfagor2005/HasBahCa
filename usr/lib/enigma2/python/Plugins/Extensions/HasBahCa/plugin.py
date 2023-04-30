@@ -12,7 +12,6 @@
 '''
 from __future__ import absolute_import
 from Plugins.Plugin import PluginDescriptor
-from Components.PluginComponent import plugins
 from Tools.Directories import SCOPE_PLUGINS, resolveFilename
 from . import main
 from . import Utils
@@ -43,6 +42,7 @@ class AutoStartTimerhbc:
         except Exception as e:
             print('error Fxy', str(e))
 
+
 def autostart(reason, session=None, **kwargs):
     print("*** running autostart autoStartTimerhbc ***")
     global autoStartTimerhbc
@@ -52,6 +52,7 @@ def autostart(reason, session=None, **kwargs):
             _firstStarthbc = True
             autoStartTimerhbc = AutoStartTimerhbc(session)
     return
+
 
 def mainw(session, **kwargs):
     try:

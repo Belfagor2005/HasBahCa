@@ -1,0 +1,163 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Rakuten TV Top Movies" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:6076:F853:EC:0:0:0:0", Rakuten TV Top Movies
+https://16464fe910f94d65ab9b9255101d7fc7.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-gb_TopFree/playlist.m3u8
+#EXTINF:-1 tvg-name="Action Movies - Rakuten TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:684B:38EE:EC:0:0:0:0", Action Movies - Rakuten TV
+https://8f72400044c842498436abd352ba487b.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-gb_RakutenActionMovies/playlist.m3u8
+#EXTINF:-1 tvg-name="Comedy Movies - Rakuten TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:6D6:C152:EC:0:0:0:0", Comedy Movies - Rakuten TV
+https://3b860eeb37fb4f4fa78a0848dd060893.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-gb_RakutenComedyMovies/playlist.m3u8
+#EXTINF:-1 tvg-name="Drama Movies - Rakuten TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:4B81:78FF:EC:0:0:0:0", Drama Movies - Rakuten TV
+https://db44ab650bce44a59112e74420f2af4e.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-gb_RakutenTVShows/playlist.m3u8
+#EXTINF:-1 tvg-name="Rakuten Stories" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:F331:F1A7:EC:0:0:0:0", Rakuten Stories
+https://743eb67cfcf441d188f8eb7bf518289d.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-gb_RakutenSpotlight/playlist.m3u8
+#EXTINF:-1 tvg-name="British Films - Rakuten TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:D6B7:EF3C:EC:0:0:0:0", British Films - Rakuten TV
+https://e1c61ff393ae4a4d93f1f12e3fdae43d.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-gb_Local/playlist.m3u8
+#EXTINF:-1 tvg-name="Thrillers - Rakuten TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:D4E4:BF3B:EC:0:0:0:0", Thrillers - Rakuten TV
+https://002933288fed459bbb7fe5e82562c3e2.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-gb_RakutenThriller/playlist.m3u8
+#EXTINF:-1 tvg-name="Romance Movies - Rakuten TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:9E5F:BA4D:EC:0:0:0:0", Romance Movies - Rakuten TV
+https://f5804858608b4fb7a9a831a7b2572a79.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-gb_RakutenRomance/playlist.m3u8
+#EXTINF:-1 tvg-name="MyTime Movie Network" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:7873:31B1:EC:0:0:0:0", MyTime Movie Network
+https://appletree-mytimeuk-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-mytime-uk-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Filmzie" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:83B4:6F94:EC:0:0:0:0", Filmzie
+https://3bd25beecec04b169f33659a7739c10b.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_Filmzie/playlist.m3u8
+#EXTINF:-1 tvg-name="MOVIESPHERE" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:135A:3CC7:EC:0:0:0:0", MOVIESPHERE
+https://moviesphereuk-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lionsgate-moviesphere-uk-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Filmstream" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:3C71:82E4:EC:0:0:0:0", Filmstream
+https://a4c5024989df44268e50935f65fb0d88.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_Filmstream/playlist.m3u8
+#EXTINF:-1 tvg-name="Lone Star" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:1DE5:EF95:EC:0:0:0:0", Lone Star
+https://lonestar-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lonestar-rakuten/CDN/playlist.m3u8
+#EXTINF:-1 tvg-name="Shorts" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:30A7:6787:EC:0:0:0:0", Shorts
+https://amg00784-shortsinternati-shortstvfastuk-rakuten-fo7jn.amagi.tv/hls/amagi_hls_data_rakutenAA-shortstvfastuk-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="The Film Detective" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:1AB:663E:EC:0:0:0:0", The Film Detective
+https://filmdetective-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-film-detective-rakuten/CDN/playlist.m3u8
+#EXTINF:-1 tvg-name="Fawesome" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:CD00:B73D:EC:0:0:0:0", Fawesome
+https://eaaa414db25b43a1b6bee085c61ea487.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_Fawesome/playlist.m3u8
+#EXTINF:-1 tvg-name="Real Crime" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:CA77:C477:EC:0:0:0:0", Real Crime
+https://lds-realcrimebeta-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lds-realcrime2-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Are We There Yet?" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:54F4:C78A:EC:0:0:0:0", Are We There Yet?
+https://amg00353-lionsgatestudio-arewethereyet-rakuten-hqfmx.amagi.tv/hls/amagi_hls_data_rakutenAA-arewethereyet-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Rakuten VIKI" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:D8B2:134F:EC:0:0:0:0", Rakuten VIKI
+https://fd18f1cadd404894a31a3362c5f319bd.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_RakutenViki-1/playlist.m3u8
+#EXTINF:-1 tvg-name="Pet Obsessed" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:9B22:E752:EC:0:0:0:0", Pet Obsessed
+https://6d185bb7400e446f89481c43da8a579c.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_FailArmy/playlist.m3u8
+#EXTINF:-1 tvg-name="Fail Army" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:82DE:C388:EC:0:0:0:0", Fail Army
+https://4b1a614d2fbc47b5843ee545489fc197.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_FailArmy/playlist.m3u8
+#EXTINF:-1 tvg-name="People Are Awesome" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:9CEE:FA14:EC:0:0:0:0", People Are Awesome
+https://3f01356fd70c4daba7be812b88108d0e.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_PeopleAreAwesome/playlist.m3u8
+#EXTINF:-1 tvg-name="Insight TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:EDF0:A90B:EC:0:0:0:0", Insight TV
+https://insighttv-eng-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-insighttv-eng-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="AFV Family" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:8603:2038:EC:0:0:0:0", AFV Family
+https://ec4a5bcc9d664b48985de6095931aaa7.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_AmericasFunniestHomeVideos/playlist.m3u8
+#EXTINF:-1 tvg-name="InWonder TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:AFC7:30B:EC:0:0:0:0", InWonder TV
+https://inwonder-eng-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-inwonder-eng-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Revry" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:EFDE:2DC3:EC:0:0:0:0", Revry
+https://03e7e5beea1d42fea576037d67f531eb.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_Revry/playlist.m3u8
+#EXTINF:-1 tvg-name="Young Hollywood" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:92B0:4BB3:EC:0:0:0:0", Young Hollywood
+https://younghollywood-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-younghollywood-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Tennis Channel (Geo-UK)" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:4F4B:FDC3:EC:0:0:0:0", Tennis Channel (Geo-UK)
+https://tennischannelintl-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-tennischannel-international-uk/CDN/master.m3u8
+#EXTINF:-1 tvg-name="MAVTV Motorsports Network" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:D597:1A71:EC:0:0:0:0", MAVTV Motorsports Network
+https://1ed7111548254b7080611444388d3b50.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_MAVTVMotorSportsNetwork/playlist.m3u8
+#EXTINF:-1 tvg-name="FUEL TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:1DE2:CA73:EC:0:0:0:0", FUEL TV
+https://b4208a07e52a4a4a8fc67d390ca70848.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_FuelTV/playlist.m3u8
+#EXTINF:-1 tvg-name="ESTV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:3B2B:1FAF:EC:0:0:0:0", ESTV
+https://estv-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-estv-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Impact! Wrestling" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:334F:3614:EC:0:0:0:0", Impact! Wrestling
+https://d39g1vxj2ef6in.cloudfront.net/v1/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/aab4761a-6a80-4cb5-9ca0-637c5540166b/0.m3u8
+#EXTINF:-1 tvg-name="InTrouble TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:CA8D:8475:EC:0:0:0:0", InTrouble TV
+https://introuble-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-inwonder-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="MMA TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:E000:4B27:EC:0:0:0:0", MMA TV
+https://alchimie-mmatv-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-alchimie-mmatv-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="EDGESport" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:765E:1298:EC:0:0:0:0", EDGESport
+https://edgesports-row-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-edgesports-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="USGA (Replace)" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:6341:384F:EC:0:0:0:0", USGA (Replace)
+https://unbeaten-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-inverleigh-unbeaten-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Players TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:8C60:DCD8:EC:0:0:0:0", Players TV
+https://amg00379-playerstv-playerstv-rakuten-o0ew5.amagi.tv/hls/amagi_hls_data_rakutenAA-playerstv-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Fashion TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:F1FA:7076:EC:0:0:0:0", Fashion TV
+https://68f1accef2154d2195cae87dec183843.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_FashionTV/playlist.m3u8
+#EXTINF:-1 tvg-name="Luxe TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:5370:A30F:EC:0:0:0:0", Luxe TV
+https://alchimie-luxe-uk-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-alchimie-luxe-uk-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="PopSugar Fitness" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:3F68:E0CB:EC:0:0:0:0", PopSugar Fitness
+https://groupnine-popsugar-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-groupnine-popsugar-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="The Design Network" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:E32F:16E8:EC:0:0:0:0", The Design Network
+https://a7f0dfe917e848a0acfebf5be36b5abd.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_TheDesignNetwork/playlist.m3u8
+#EXTINF:-1 tvg-name="Travelxp" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:E585:62BC:EC:0:0:0:0", Travelxp
+https://27c980761ff9437d929e64647afe183a.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_TravelXP/playlist.m3u8
+#EXTINF:-1 tvg-name="Museum Fast" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:DB9D:6F79:EC:0:0:0:0", Museum Fast
+https://amg01492-secomsasmediart-museumtv-en-rakuten-39duu.amagi.tv/hls/amagi_hls_data_rakutenAA-museumtv-en-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="MyZen Fit" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:26F:9F2F:EC:0:0:0:0", MyZen Fit
+https://amg01255-secomcofites-my-myzen-en-rakuten-cyxqh.amagi.tv/hls/amagi_hls_data_rakutenAA-myzen-en-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Tastemade" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:9BA3:432B:EC:0:0:0:0", Tastemade
+https://tastemade-tdint-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-tm-intl-rakuten-uk/CDN/master.m3u8
+#EXTINF:-1 tvg-name="BITE" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:16E4:7967:EC:0:0:0:0", BITE
+https://parademedia-bite-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-parademedia-bite-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="iFood.tv" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:3311:3BC3:EC:0:0:0:0", iFood.tv
+https://ac84a060d6fd4f7eae260e2b21e468f5.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_iFoodTV/playlist.m3u8
+#EXTINF:-1 tvg-name="CLUBBING TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:F73C:D1E7:EC:0:0:0:0", CLUBBING TV
+https://clubbingtv-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-clubbingtv-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Qwest TV Jazz and Beyond" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:F2E5:A60B:EC:0:0:0:0", Qwest TV Jazz and Beyond
+https://qwestjazz-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-qwestjazz-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Qwest TV Mix" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:1CF6:7327:EC:0:0:0:0", Qwest TV Mix
+https://qwestmix-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-qwestmix-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Qwest TV Classical" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:748C:DB47:EC:0:0:0:0", Qwest TV Classical
+https://qwestclassic-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-qwestclassic-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Family - Rakuten TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:519:673C:EC:0:0:0:0", Family - Rakuten TV
+https://e7934a8802cc472f957e8cb4adb933e4.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-gb_RakutenFamily/playlist.m3u8
+#EXTINF:-1 tvg-name="The LEGO Channel" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:6C3C:1666:EC:0:0:0:0", The LEGO Channel
+https://24600b450e314de4ba28bff46fd6661a.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_TheLEGOChannel/playlist.m3u8
+#EXTINF:-1 tvg-name="ducktv" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:659F:992E:EC:0:0:0:0", ducktv
+https://ef3d941a9095450e888b479dc77bc037.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_DuckTV/playlist.m3u8
+#EXTINF:-1 tvg-name="KIDZ BOP" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:F54C:EFBC:EC:0:0:0:0", KIDZ BOP
+https://amg00377-kidzbop-kidzbop-rakuten-ur4iu.amagi.tv/hls/amagi_hls_data_rakutenAA-kidzbop-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:28AB:BF4B:EC:0:0:0:0", Baby Shark TV
+https://c0c65b821b3542c3a4dca92702f59944.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_BabySharkTV/playlist.m3u8
+#EXTINF:-1 tvg-name="Brat TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:8DC6:CCB:EC:0:0:0:0", Brat TV
+https://brat-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-brat-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="HappyKids" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:FEDB:22C5:EC:0:0:0:0", HappyKids
+https://cae65e8f5df44be1b3332d9ba0574138.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_HappyKidsTV-1/playlist.m3u8
+#EXTINF:-1 tvg-name="Beano TV" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:A4FB:4F25:EC:0:0:0:0", Beano TV
+https://a5b4bacecd47433dad06d3189fc7422e.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_BeanoTV/playlist.m3u8
+#EXTINF:-1 tvg-name="Weather Spy" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:D6D2:9965:EC:0:0:0:0", Weather Spy
+https://288cf8bdd0784900b402d3ae8bb4807a.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_Weatherspy/playlist.m3u8
+#EXTINF:-1 tvg-name="WildEarth" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:F84F:3B0B:EC:0:0:0:0", WildEarth
+https://wildearth-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-wildearth-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="High Street TV Shopping 1" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:A043:5A39:EC:0:0:0:0", High Street TV Shopping 1
+https://amg00834-asiabroadcastsa-abs-hstv1-rakuten-hvqc1.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="TJC - The Jewellery Channel" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:B4C4:A05B:EC:0:0:0:0", TJC - The Jewellery Channel
+https://amg00128-shoplc-shoplctjc-rakuten-mh7yd.amagi.tv/hls/amagi_hls_data_rakutenAA-shoplc-tjc-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Humanity Documentaries" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:9229:8D4B:EC:0:0:0:0", Humanity Documentaries
+https://alchimie-humanity-documentaries-uk-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-alchimie-humanity-documentaries-uk-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Explore by TVPlayer" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:1CAB:F18B:EC:0:0:0:0", Explore by TVPlayer
+https://alchimie-explorebytvplayer-uk-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-alchimie-explorebytvplayer-uk-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Timeline" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:773D:6CB:EC:0:0:0:0", Timeline
+https://lds-timeline-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lds-timeline-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Real Wild" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:6DB4:DA3D:EC:0:0:0:0", Real Wild
+https://lds-realwild-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-realwild-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Real Stories" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:B062:440B:EC:0:0:0:0", Real Stories
+https://lds-realstories-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lds-realstories-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Real Life" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:EBB9:712F:EC:0:0:0:0", Real Life
+https://lds-realfamilies-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lds-realfamilies-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Wonder" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:866C:FF4B:EC:0:0:0:0", Wonder
+https://lds-wonder-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lds-wonder-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-name="Planet Knowledge" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:D8F:A488:EC:0:0:0:0", Planet Knowledge
+https://b26093b7415b4630bfe93ab276aa23fb.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_PlanetKnowledge/playlist.m3u8
+#EXTINF:-1 tvg-name="Radical Docs" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:FB59:39F1:EC:0:0:0:0", Radical Docs
+https://b20a340953e24055b6a4736ab4605f23.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_RadicalDocs/playlist.m3u8
+#EXTINF:-1 tvg-name="Euronews Live" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:968A:CD01:EC:0:0:0:0", Euronews Live
+https://3b6e2112ee2d490a93b95c9d130c46aa.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-gb_EuroNewsLive/playlist.m3u8
+#EXTINF:-1 tvg-name="Africanews" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:F7C3:7011:EC:0:0:0:0", Africanews
+https://37c774660687468c821a51190046facf.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-gb_AfricaNews/playlist.m3u8
+#EXTINF:-1 tvg-name="Reuters" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:60C6:1ECB:EC:0:0:0:0", Reuters
+https://bbc982df73cf41ceb5511c0aba6df6c0.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_ReutersNow/playlist.m3u8
+#EXTINF:-1 tvg-name="Revry News" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:212:A006:EC:0:0:0:0", Revry News
+https://dce9e10d279f410d87ef5ad1c3740459.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_RevryNews/playlist.m3u8
+#EXTINF:-1 tvg-name="ICTV Ukraine" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:A329:F65:EC:0:0:0:0", ICTV Ukraine
+https://ictv-ukraine-rakuten.amagi.tv/index.m3u8
+#EXTINF:-1 tvg-name="1+1 International" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:B8A0:2D65:EC:0:0:0:0", 1+1 International
+https://1plus1-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Quicktake" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:E476:E316:EC:0:0:0:0", Quicktake
+https://d7ec4f6950ed4c6d946e497bd44db7ef.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_QuickTake-1/playlist.m3u8
+#EXTINF:-1 tvg-name="Bloomberg Television" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:A57:27FD:EC:0:0:0:0", Bloomberg Television
+https://afda8ca41e7a407eb97239803281b088.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_Bloomberg/playlist.m3u8
+#EXTINF:-1 tvg-name="The Guardian" group-title="*IPTV Rakuten UK" dvb-reference="4097:0:1:282B:52D4:EC:0:0:0:0", The Guardian
+https://d73fb24db4524ddca65ec4935761d3ef.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_TheGuardianChannel/playlist.m3u8

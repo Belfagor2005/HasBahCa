@@ -1,0 +1,85 @@
+#EXTM3U
+#EXTINF:-1,05. NTV
+https://a.jsrdn.com/broadcast/22680_3BR3zocwi9/-0800/c.m3u8
+#EXTINF:-1,61. 9XM
+https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/9XM.isml/9XM-audio_208482_und=208000-video=877600.m3u8
+#EXTINF:-1,64. 9X Jalwa
+https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XJalwa/9XJalwa.isml/9XJalwa-audio_208482_und=208000-video=877600.m3u8
+#EXTINF:-1,81. National Geographic Wild
+http://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/playlist.m3u8
+#EXTINF:-1,88. Travel XP
+https://travelxp-travelxp-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1,Ahlulbayt TV (1080)
+https://5f3e23ac71915.streamlock.net:4434/live/livestream1.sdp/playlist.m3u8
+#EXTINF:-1,Ananda TV (720p)
+https://live.jagobd.com:444/c2VydmVyX6RpbEU8Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/anandatv.stream/chunks.m3u8
+#EXTINF:-1,Bahrain Quran(480p)
+https://5c7b683162943.streamlock.net:443/live/ngrp:bahrainquran_all/chunklist_w1461721754_b978000.m3u8
+#EXTINF:-1,Bangla TV (720p)
+https://live.jagobd.com:444/c2VydmVyX6RpbEU8Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/banglatvhd.stream/chunks.m3u8
+#EXTINF:-1,Boishakhi tv plus
+https://live.jagobd.com:444/c2VydmVyX6RpbEU8Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/boishakhiplus.stream/chunks.m3u8
+#EXTINF:-1,BT- Iqra Tv
+https://ap02.iqplay.tv:8082/iqb8002/iq6a7k/playlist.m3u8
+#EXTINF:-1,Can Bangla
+https://live.jagobd.com:444/c2VydmVyX6RpbEU8Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/canbanglatv.stream/chunks.m3u8
+#EXTINF:-1,Channel 24
+https://bd.jagobd.com:444/c2VydmVyX4RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/channel24-sg-e8e.stream/live-orgin/channel24-sg-e8e.stream/chunks.m3u8
+#EXTINF:-1,Channel 24 HD (1080p)
+https://live.jagobd.com:444/c2VydmVyX6RpbEU8Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/channel24-sg-e8e.stream/chunks.m3u8
+#EXTINF:-1,Channel S (720p) [Not 24/7]
+https://a.jsrdn.com/r-373576a3/publish/22679_24MrQma9TX/index.m3u8
+#EXTINF:-1,Channel S UK (576p)
+https://live.jagobd.com:444/c2VydmVyX6RpbEU8Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/chsukoff.stream/chunks.m3u8
+#EXTINF:-1,DBC
+http://208.86.19.13:81/614.stream/index.m3u8
+#EXTINF:-1,Ekushey TV
+http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
+#EXTINF:-1,Ekushey TV
+https://ekusheyserver.com/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
+#EXTINF:-1,Imam Hussein TV 1 (360p)
+https://mn-nl.mncdn.com:443/ihtv1/ihtv1_sd.smil/chunklist_b208000.m3u8
+#EXTINF:-1,Imam Hussein TV 2 Arabic (360p)
+https://mn-nl.mncdn.com:443/ihtv2/ihtv2_sd.smil/chunklist_b704000.m3u8
+#EXTINF:-1,Imam Hussein TV 4 Urdu
+https://mn-nl.mncdn.com/arbaeen/arbaeen_sd.smil/chunklist_b2096000.m3u8
+#EXTINF:-1,Imam Hussein TV 4 Urdu
+https://mn-nl.mncdn.com:443/ihtv4/ihtv4_sd.smil/chunklist_b704000.m3u8
+#EXTINF:-1,In- IPlus Tv
+https://5c75277727cd1.streamlock.net/iplustv/iplustv/playlist.m3u8
+#EXTINF:-1,itv
+http://162.244.81.142:1935/live/livestream/playlist.m3u8
+#EXTINF:-1,ITV USA
+http://itvusabox-hls-01.dgo-nyc3.itvusa.tv/itvusabox/itvstream.m3u8
+#EXTINF:-1,Jalsha Movies HD
+http://208.86.19.13:81/716.stream/index.m3u8
+#EXTINF:-1,Madani Channel Urdu
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/MadaniChannelUrduLive
+#EXTINF:-1,Madani TV Bangla
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/MadaniChannelBanglaLive
+#EXTINF:-1,Madani TV Bangla
+https://madnitv.vdn.dstreamone.net/madnitvbangla/madnibanglaabr/playlist.m3u8
+#EXTINF:-1,Mohona TV HD (720p)
+https://live.jagobd.com:444/c2VydmVyX6RpbEU8Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/mohonatv00000223232244556633.stream/chunks.m3u8
+#EXTINF:-1,MY tv
+http://208.86.19.13:81/624.stream/index.m3u8
+#EXTINF:-1,Nandan Tv
+http://nandansyst.com/hls/nandan.m3u8
+#EXTINF:-1,Ntv
+http://208.86.19.13:81/652.stream/index.m3u8
+#EXTINF:-1,NTV UK
+https://live.jagobd.com:444/c2VydmVyX6RpbEU8Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/ntvuk00332211.stream/chunks.m3u8
+#EXTINF:-1,RTV
+https://stream.cstfctg.com/rtvonline/rtv2021.stream/playlist.m3u8
+#EXTINF:-1,RTV HD (1080p)
+https://live.jagobd.com:444/c2VydmVyX6RpbEU8Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/rtv-sg.stream/chunks.m3u8
+#EXTINF:-1,SA TV HD
+https://live.jagobd.com:444/c2VydmVyX6RpbEU8Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/satvoff5666.stream/chunks.m3u8
+#EXTINF:-1,Safeer TV (1080)
+https://cdn3.wowza.com/1/YStGZlJRdktzZkdK/VXROZWNW/hls/live/playlist.m3u8
+#EXTINF:-1,SATV (720p) [Not 24/7]
+https://cdn.appv.jagobd.com:444/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/satvoff5666.stream/playlist.m3u8
+#EXTINF:-1,Sharjah TV (1080p)
+https://svs.itworkscdn.net:443/smc1live/smc1.smil/smc1tv_chunks.m3u8
+#EXTINF:-1,Somoy News
+https://bd.jagobd.com:444/c2VydmVyX4RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/somoyt000011226615544544.stream/live-orgin/somoyt000011226615544544.stream/chunks.m3u8

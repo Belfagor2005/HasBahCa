@@ -1,0 +1,435 @@
+#EXTM3U
+#EXTINF:-1 group-title="EU_POLAND",4FUN TV (576p) [Not 24/7]
+https://stream.4fun.tv:8888/hls/4f.m3u8
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="https://i.imgur.com/a5DX4nh.jpg",Echo24 (720p) [Not 24/7]
+https://live-insysgo.cf.insyscd.net/echo24.720.smil/manifest.mpd
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="https://i.imgur.com/9ffrXBg.png",M2 (540p)
+http://live.m2.tv/hls3/stream.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: 	Polsat Doku
+http://37.49.224.40:8000/play/PolsatDoku/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: 13ulica
+http://37.49.224.40:8000/play/13_ulica/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Active
+http://37.49.224.40:8000/play/active/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: ActiveFamily1
+http://37.49.224.40:8000/play/ActiveFamily1/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: adventure
+http://37.49.224.40:8000/play/adventure/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Ale Kino
+http://37.49.224.40:8000/play/ale_kino/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: AMC
+http://37.49.224.40:8000/play/amc/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Animalplanet
+http://37.49.224.40:8000/play/Animal_planet/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: AXN HD
+http://37.49.224.40:8000/play/axnhd/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: AXN White
+http://37.49.224.40:8000/play/axn_white/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: bbc brit
+http://37.49.224.40:8000/play/bbcbrit/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: BBC CBee
+http://37.49.224.40:8000/play/bbc_cbeebes/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: BBC Earth
+http://37.49.224.40:8000/play/BBC_Earth/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: BBC First
+http://37.49.224.40:8000/play/BBC_First/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: BBC Lifestyle
+http://37.49.224.40:8000/play/BBC_Lifestyle/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Biznes
+http://37.49.224.40:8000/play/biznes/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: bollywood
+http://37.49.224.40:8000/play/bollywood/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Boomerang
+http://37.49.224.40:8000/play/boomerang_pl/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: C+ sport 3
+http://37.49.224.40:8000/play/c_sport3/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: C+4k transkodowany
+http://37.49.224.40:8000/play/C_4k_transkodowany/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: c+online1
+http://37.49.224.40:8000/play/conline1/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: c+sport
+http://37.49.224.40:8000/play/csport/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: c+sport 5
+http://37.49.224.40:8000/play/csport_5/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: C+sport2
+http://37.49.224.40:8000/play/csport2/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: C+sport4
+http://37.49.224.40:8000/play/Csport4/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: CANAL+ 1 HD
+http://37.49.224.40:8000/play/CANAL_1_HD_stalker/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Canal+ 4K Ultra HD (low bitrate)
+http://37.49.224.40:8000/play/Canal4Klowbitrate/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: CANAL+ Domo HD
+http://37.49.224.40:8000/play/CANALplusDomo/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: CANAL+ FAMILY HD (HB)
+http://37.49.224.40:8000/play/canal_family_HB/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: CANAL+ SERIALE HD (HB)
+http://37.49.224.40:8000/play/canal_seriale_HB/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Cartoon Network
+http://37.49.224.40:8000/play/Cartoon_Network/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: CBS Europa
+http://37.49.224.40:8000/play/cbs_europa/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: CBS Reality
+http://37.49.224.40:8000/play/cbs_reality/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: cinemax
+http://37.49.224.40:8000/play/cinemax/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Cinemax 2
+http://37.49.224.40:8000/play/Cinemax2/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Comedy Central HD
+http://37.49.224.40:8000/play/Comedy_Central_HD/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Da Vinci Kids
+http://37.49.224.40:8000/play/Da_Vinci_Kids/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Discovery HD
+http://37.49.224.40:8000/play/Discovery_HD/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Discovery Life (HB)-1
+http://37.49.224.40:8000/play/DiscoveryLife_hb_1/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Discovery Science HD
+http://37.49.224.40:8000/play/discovery_science/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: DiscoveryHiist
+http://37.49.224.40:8000/play/DiscoveryHiist/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Disney
+http://37.49.224.40:8000/play/disney/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: E! Entertainment FHD
+http://37.49.224.40:8000/play/e/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: eleven 4
+http://37.49.224.40:8000/play/eleven_4/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Eleven Sport 4K (low)
+http://37.49.224.40:8000/play/Eleven_Sport_4K_low/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Eska Rock
+http://37.49.224.40:8000/play/eska_rock/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Eska TV Extra
+http://37.49.224.40:8000/play/EskaTVExtra/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Eskka hd
+http://37.49.224.40:8000/play/eska_hd/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Eurosport 1
+http://37.49.224.40:8000/play/Eurosport1/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Eurosport Event 1
+http://37.49.224.40:8000/play/Eurosport_Event_1/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Eurosport Event 2
+http://37.49.224.40:8000/play/ee2/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Eurosport Event 3
+http://37.49.224.40:8000/play/ee3/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Eurosport Event 4
+http://37.49.224.40:8000/play/ee4/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Eurosport2
+http://37.49.224.40:8000/play/Eurosport2/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Fightclub
+http://37.49.224.40:8000/play/fightclub/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Fokus HD
+http://37.49.224.40:8000/play/Fokus/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Food Network FHD
+http://37.49.224.40:8000/play/food/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: FOX HD
+http://37.49.224.40:8000/play/fox_hd/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Golf (HB)
+http://37.49.224.40:8000/play/golf_hb/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: H2
+http://37.49.224.40:8000/play/h2/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: HBO 2
+http://37.49.224.40:8000/play/hbo2/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Id hd
+http://37.49.224.40:8000/play/id/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: inultra4k
+http://37.49.224.40:8000/play/inultra_4k/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: itvn
+http://37.49.224.40:8000/play/itvn/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: itvn extra
+http://37.49.224.40:8000/play/itvn_extra/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Kuchnia
+http://37.49.224.40:8000/play/kuchnia/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Love Nature 4K (HB)
+http://37.49.224.40:8000/play/Love_Nature_4K/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: MTV Dance
+http://37.49.224.40:8000/play/mtvdance/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Museum 4k
+http://37.49.224.40:8000/play/Museum_4k/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: nat geo
+http://37.49.224.40:8000/play/nat_geo/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: nickjr
+http://37.49.224.40:8000/play/nickjr/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: nickolodeon
+http://37.49.224.40:8000/play/nickolodeon/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Nicktoons HD
+http://37.49.224.40:8000/play/Nicktoons/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Novela
+http://37.49.224.40:8000/play/Novela/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Novela+
+http://37.49.224.40:8000/play/novela_plus/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Paramount
+http://37.49.224.40:8000/play/Paramount/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Planete+HD
+http://37.49.224.40:8000/play/Planete/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Polo TV
+http://37.49.224.40:8000/play/polo/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Polsat Cafe
+http://37.49.224.40:8000/play/polsatcafe/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Polsat Fight
+http://37.49.224.40:8000/play/polsat_fight/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Polsat games
+http://37.49.224.40:8000/play/games/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Polsat Rodzina
+http://37.49.224.40:8000/play/PolsatRodzina/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Polsat seriale
+http://37.49.224.40:8000/play/Polsat_seriale_stalker/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: polsat sport
+http://37.49.224.40:8000/play/polsatsport/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Polsat Sport News HD
+http://37.49.224.40:8000/play/PolsatSportNewsHD/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Polsat Sport Premium 1
+http://37.49.224.40:8000/play/Polsat_Sport_Premium_1/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Polsat Sport Premium PPV 3
+http://37.49.224.40:8000/play/Polsat_Sport_Premium_3/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Polsat Sport Premium PPV 4
+http://37.49.224.40:8000/play/Polsat_Sport_Premium_4/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Polsat Sport Premium PPV 5
+http://37.49.224.40:8000/play/Polsat_Sport_Premium_5/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Polsat Sport Premium PPV 6
+http://37.49.224.40:8000/play/Polsat_Sport_Premium_6/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Powerhd
+http://37.49.224.40:8000/play/power/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Puls 2
+http://37.49.224.40:8000/play/puls2/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Sci Fi
+http://37.49.224.40:8000/play/Sci_Fi/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Sportklub
+http://37.49.224.40:8000/play/sportklub/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Sundance TV
+http://37.49.224.40:8000/play/Sundance/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Super Polsat HD
+http://37.49.224.40:8000/play/SuperPolsat/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TBN
+http://37.49.224.40:8000/play/tbn/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TELE 5 sd (HB)
+http://37.49.224.40:8000/play/tele_5sd/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Teletoon (HB)
+http://37.49.224.40:8000/play/teletoon_HB/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TLC_
+http://37.49.224.40:8000/play/tlc_hd/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: travel HD
+http://37.49.224.40:8000/play/travel_hd/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: tv6 hd
+http://37.49.224.40:8000/play/tv6/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: tvn
+http://37.49.224.40:8000/play/tvn/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TVN 7
+http://37.49.224.40:8000/play/tvn7/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TVN Turbo
+http://37.49.224.40:8000/play/tvnturbo/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: tvn_fabuła
+http://37.49.224.40:8000/play/fabula_hd/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: tvn24
+http://37.49.224.40:8000/play/tvn24/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TVNStyleHD
+http://37.49.224.40:8000/play/TVNStyle/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TVP ABC
+http://37.49.224.40:8000/play/tvp_abc/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TVP ABC 2
+http://37.49.224.40:8000/play/abc2/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TVP Alfa
+http://37.49.224.40:8000/play/alfa/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: tvp doku
+http://37.49.224.40:8000/play/tvpdoku/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TVP HD
+http://37.49.224.40:8000/play/tvp/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TVP Hiistoria
+http://37.49.224.40:8000/play/tvphistoria/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TVP Historia 2
+http://37.49.224.40:8000/play/tvphis2/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: tvp kobieta
+http://37.49.224.40:8000/play/kobieta/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TVP Kultura
+http://37.49.224.40:8000/play/tvpkultura/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TVP Rozrywka
+http://37.49.224.40:8000/play/rozrywka/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TVP Seriale
+http://37.49.224.40:8000/play/tvpseriale/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TVP Wilno HD
+http://37.49.224.40:8000/play/wilno/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TVP World
+http://37.49.224.40:8000/play/tvp_world/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: TVP2 HD
+http://37.49.224.40:8000/play/tvp2/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: VOX
+http://37.49.224.40:8000/play/vox/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: WP tv
+http://37.49.224.40:8000/play/wp_sd/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PL: Zoom
+http://37.49.224.40:8000/play/zoom/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PPV: Eurosportevent
+http://37.49.224.40:8000/play/Eurosportevent/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PPV: Fame
+http://37.49.224.40:8000/play/fame/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PPV: Fen
+http://37.49.224.40:8000/play/ppv_fen/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PPV: Gromda
+http://37.49.224.40:8000/play/gromda/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PPV: High League
+http://37.49.224.40:8000/play/high_league/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PPV: KSW
+http://37.49.224.40:8000/play/ppv_ksw/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PPV: MMMA Attack
+http://37.49.224.40:8000/play/mma_attack/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PPV: OKTAGON
+http://37.49.224.40:8000/play/oktagon/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PPV: Playlife
+http://37.49.224.40:8000/play/playlife/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PPV: Poolsat ppv
+http://37.49.224.40:8000/play/polsatgo/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PPV: Prime
+http://37.49.224.40:8000/play/prime/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PPV: Stream
+http://37.49.224.40:8000/play/Stream/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PPV: War
+http://37.49.224.40:8000/play/war/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",PPV: Wotore
+http://37.49.224.40:8000/play/ppv_wotore/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",Radio Czworka (1080p)
+https://stream14.polskieradio.pl/pr4_video/video_pr4.stream/playlist.m3u8
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="https://i.imgur.com/XtG3rfj.png",Skrypin.ua (1080p) [Not 24/7]
+https://open-cdn.lanet.tv/play/skrypin.m3u8
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="https://i.imgur.com/0XeBQUi.png",Telewizja Toruń (1080p) [Not 24/7]
+http://217.173.176.107:1935/live/ngrp:tvk.stream_mobile/chunks.m3u8
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="https://i.imgur.com/BMOIq1J.png",Trwam TV (480p)
+https://rd.insyscd.net/trwamtv.live/cl01/out/u/trwam.mpd
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="https://i.imgur.com/tgLWe9o.jpg",TV Kujawy (576p) [Not 24/7]
+http://stream.tvkujawy.pl:8080/live/broadcast.m3u8
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="https://i.imgur.com/l8tRJVW.jpg",TV Regionalna (Lubin) (576p) [Not 24/7]
+https://tvreg.klemit.net/regionalna/stream/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/world/SongTV Russia.png",TV Republika (1080p)
+https://ec08.luz1.cache.orange.pl/jupiter/o2-cl7/live/tvrepublika/live.m3u8
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/MTV Club.png",TV Torun
+http://217.173.176.107:1935/live/ngrp:tvk.stream_all/master.m3u8
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="https://i.imgur.com/GdbkqCM.png",TV Toruń (1080p)
+http://217.173.176.107:1935/live/tvk.stream/playlist.m3u8
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TVPPolonia.pl.png",TVP 3 Białystok (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpbialystok
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TVPPolonia.pl.png",TVP 3 Bydgoszcz (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpbydgoszcz
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TVPPolonia.pl.png",TVP 3 Gdańsk (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpgdansk
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TVPPolonia.pl.png",TVP 3 Gorzów Wielkopolski (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpgorzow
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="https://i.imgur.com/burRKHa.jpg",TVP 3 Katowice (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpkatowice
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="https://i.imgur.com/YcQxM94.jpg",TVP 3 Kielce (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpkielce
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TVPPolonia.pl.png",TVP 3 Kraków (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpkrakow
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TVPPolonia.pl.png",TVP 3 Łódź (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvplodz
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TVPPolonia.pl.png",TVP 3 Lublin (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvplublin
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TVPPolonia.pl.png",TVP 3 Olsztyn (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpolsztyn
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TVPPolonia.pl.png",TVP 3 Opole (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpopole
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TVPPolonia.pl.png",TVP 3 Poznań (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvppoznan
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TVPPolonia.pl.png",TVP 3 Rzeszów (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvprzeszow
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TVPPolonia.pl.png",TVP 3 Szczecin (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpszczecin
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="https://i.imgur.com/AfZOO8U.jpg",TVP 3 Warszawa (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpwarszawa
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TVPPolonia.pl.png",TVP 3 Wrocław (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpwroclaw
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TVPPolonia.pl.png",TVP Info (404p)
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpinfo
+#EXTINF:-1 group-title="EU_POLAND",TVP Polonia
+http://149.62.177.99:8004/play/a00r/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="http://hasbahca.net/TVLogo/world/kralpoptvtr.png",TVT Zgorzelec
+http://gargoyle.tomkow.pl/hls/tvt.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via1
+http://37.49.224.40:8000/play/via1/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via2
+http://37.49.224.40:8000/play/via2/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via3
+http://37.49.224.40:8000/play/via3/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via4
+http://37.49.224.40:8000/play/via4/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via5
+http://37.49.224.40:8000/play/via5/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via6
+http://37.49.224.40:8000/play/via6/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via7
+http://37.49.224.40:8000/play/via7/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via8
+http://37.49.224.40:8000/play/via8/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via9
+http://37.49.224.40:8000/play/via9/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via10
+http://37.49.224.40:8000/play/via10/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via11
+http://37.49.224.40:8000/play/via11/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via12
+http://37.49.224.40:8000/play/via12/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via13
+http://37.49.224.40:8000/play/via13/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via14
+http://37.49.224.40:8000/play/via14/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via15
+http://37.49.224.40:8000/play/via15/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via16
+http://37.49.224.40:8000/play/via16/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via17
+http://37.49.224.40:8000/play/via17/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via18
+http://37.49.224.40:8000/play/via18/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via19
+http://37.49.224.40:8000/play/via19/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via20
+http://37.49.224.40:8000/play/via20/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via21
+http://37.49.224.40:8000/play/via21/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via22
+http://37.49.224.40:8000/play/via22/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via23
+http://37.49.224.40:8000/play/via23/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via24
+http://37.49.224.40:8000/play/via24/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via25
+http://37.49.224.40:8000/play/via25/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via26
+http://37.49.224.40:8000/play/via26/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via27
+http://37.49.224.40:8000/play/via27/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via28
+http://37.49.224.40:8000/play/via28/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via29
+http://37.49.224.40:8000/play/via29/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via30
+http://37.49.224.40:8000/play/via30/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via31
+http://37.49.224.40:8000/play/via31/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via32
+http://37.49.224.40:8000/play/via32/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via33
+http://37.49.224.40:8000/play/via33/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via34
+http://37.49.224.40:8000/play/via34/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via35
+http://37.49.224.40:8000/play/via35/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via36
+http://37.49.224.40:8000/play/via36/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via37
+http://37.49.224.40:8000/play/via37/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via38
+http://37.49.224.40:8000/play/via38/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via39
+http://37.49.224.40:8000/play/via39/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via40
+http://37.49.224.40:8000/play/via40/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via41
+http://37.49.224.40:8000/play/via41/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via42
+http://37.49.224.40:8000/play/via42/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via43
+http://37.49.224.40:8000/play/via43/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via44
+http://37.49.224.40:8000/play/via44/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via45
+http://37.49.224.40:8000/play/via45/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND",via46
+http://37.49.224.40:8000/play/via46/index.m3u8
+#EXTINF:-1 group-title="EU_POLAND" tvg-logo="https://i.imgur.com/1uW5ex8.png",ТРК Алекс (576p)
+http://46.46.112.223/live/livestream1.m3u8

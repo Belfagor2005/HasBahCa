@@ -1,0 +1,489 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="http://1.bp.blogspot.com/-Sou5ONlDqO8/Wtc_Y-lL6eI/AAAAAAAAV-4/EiPDtF6wDzsEN7RlUs0Z5cxljLx75zcmgCLcBGAs/s1600/38.jpg",38 KENT TÜRK TV
+http://yerelmedya.tv:1935/38kenttv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/agro-tv-rs.png",AGRO TV TR
+https://yayin30.haber100.com/live/agrotv/chunklist.m3u8
+#EXTINF:-1,AKSU TV
+http://31.177.62.182:8011/play/s38
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/aksu_tv.png",Aksu TV
+https://waw2.artiyerelmedya.net/aksutv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/aksu_tv.png",AKSU TV
+http://yerelmedya.tv:1935/aksutv/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/aksu_tv.png",AKSU TV
+http://yerelmedya.tv:1935/aksutv/bant1/playlist.m3u8
+#EXTINF:-1,AKSU TV
+http://185.234.217.19:8038/play/a021
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/alanya_tv_tr.png",ALANYA ATV
+https://broadcasttr.com:446/alanyatv/bant1/chunklist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal_alanya_tr.png",Alanya Posta TV
+http://win4.yayin.com.tr/postatv/postatv/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/IgcCGcL.jpeg",Alanya Posta TV
+http://win4.yayin.com.tr/postatv/postatv/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/kanal_alanya_tr.png",ALANYA POSTA TV
+http://win4.yayin.com.tr/postatv/postatv/simba.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/altas-tv_medium_171.png",ALTAS TV
+http://stream.taksimbilisim.com:1935/altastv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/altas-tv_medium_171.png",ALTAŞ TV
+https://broadcasttr.com:446/altastv/bant1/index.m3u8
+#EXTINF:-1,ANADOLU DERNEK TV
+http://31.223.85.34:9999/play/a065/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/Boomerang HD.png",Angara TV - Keçiören Belediyesi
+https://angr.radyotvonline.net/webtv/smil:kecioren.smil/chunklist_w976368300_b3268000_sltur.m3u8
+#EXTINF:-1,AS TV
+https://waw2.artiyerelmedya.net/astv/bant1/playlist.m3u8
+#EXTINF:-1,AS TV
+http://yerelmedya.tv:1935/astv/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/bb/berat-tv-tr.png",Berat TV
+http://cdn-berattv.yayin.com.tr/berattv/berattv/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/besiktas_web_tv_tr.png",Besiktas Web TV
+https://s01.vpis.io/besiktas/besiktas.m3u8
+#EXTINF:-1,Beşiktaş Belediyesi Web TV
+http://s01.vpis.io/besiktas/besiktas.m3u8
+#EXTINF:-1,Bir Tv
+http://185.234.217.19:8038/play/a02i
+#EXTINF:-1,BITLIS TV
+http://31.223.85.34:9999/play/a08k/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/brtv-tr.png",BRTV
+http://waw1.artiyerelmedya.net:1935/brtv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/bb/brtv_tr.png",BRTV
+https://waw2.artiyerelmedya.net/brtv/bant1/playlist.m3u8
+#EXTINF:-1,BRTV B KRDNIZ
+http://185.234.217.19:8038/play/a027
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/brtv-tr.png",BRTV KARABUK
+http://yerelmedya.tv:1935/brtv/bant1/chunklist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/bursa_tv_tr.png",Bursa AS TV
+https://waw2.artiyerelmedya.net/astv/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/bursaspor_tv.png",BURSA LiNE TV
+http://broadcasttr.com:1935/linetv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/bursaspor_tv.png",BURSA ON6 TV
+http://yerelmedya.tv:1935/kanal16/bant1/playlist.m3u8
+#EXTINF:-1,BURSA TV
+http://31.223.85.34:9999/play/a07g/index.m3u8
+#EXTINF:-1,CAY TV
+http://31.223.85.34:9999/play/a07n/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/cay-tv-tr.png",CAY TV
+https://edge1.socialsmart.tv/caytv/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/80d40Qb/e2K5ixJ.png",Cay TV (720p) [Not 24/7]
+http://stream2.taksimbilisim.com:1935/caytv/bant1/CAYTV.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/cekmekoy_tv_tr.png",CEKMEKOY BELEDiYE TV
+https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/amlst:cekmekoybeltv/chunklist_w1305163043_b1694720.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/cekmekoy_tv_tr.png",Cekmeköy Belediye TV
+https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/amlst:cekmekoybeltv/HasBahCa_w1463185090_b3256584.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/cekmekoy_tv_tr.png",Cekmeköy TV
+https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/cekmekoybeltv_1080p/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/sjAGFWu.png",Cekmeköy TV
+https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/cekmekoybeltv/playlist.m3u8
+#EXTINF:-1,CIFTCI TV
+http://31.223.85.34:9999/play/a06w/index.m3u8
+#EXTINF:-1,CIFTCI TV
+http://185.234.217.19:8038/play/a023
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/deniz_haber_tv_tr.png",DENiZ POSTASI TV
+http://yerelmedya.tv:1935/denizpostasitv/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/deniz_haber_tv_tr.png",Deniz Postası TV
+http://waw1.artiyerelmedya.net:1935/denizpostasitv/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/0a9Olr1.png",Deniz Postası TV
+http://waw1.artiyerelmedya.net:1935/denizpostasitv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/0a9Olr1.png",Deni̇z Postasi TV
+https://waw2.artiyerelmedya.net/denizpostasitv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/dardimandi_tv_ge.png",Dim TV
+https://waw2.artiyerelmedya.net/dimtv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/dardimandi_tv_ge.png",DiM TV ALANYA
+http://yerelmedya.tv:1935/dimtv/bant1/HasBahCa.m3u8
+#EXTINF:-1,DIYAR TV
+http://31.177.62.182:8011/play/s31
+#EXTINF:-1,DIYAR TV
+http://185.234.217.19:8038/play/a02k
+#EXTINF:-1,EDESSA TV
+http://31.223.85.34:9999/play/a07j/index.m3u8
+#EXTINF:-1,ENGELSİZ
+http://31.223.85.34:9999/play/a066/index.m3u8
+#EXTINF:-1,ER TV
+http://31.177.62.182:8011/play/s40
+#EXTINF:-1,ER TV
+http://31.223.85.34:9999/play/a06x/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/Super Tennis.png",ER TV
+http://waw1.artiyerelmedya.net:1935/ertv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/Super Tennis.png",ER TV MALATYA HD
+https://mn-nl.mncdn.com/blutv_ertv2/live.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/erciyes_tv_tr.png",ERCiS TV
+https://cdn1-ercistv.yayin.com.tr/ercistv/amlst:ercistv/chunklist.m3u8
+#EXTINF:-1,ES TV
+http://31.177.62.182:8011/play/s39
+#EXTINF:-1,ES TV
+http://31.223.85.34:9999/play/a06v/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/Babes TV.png",ES TV
+http://waw2.artiyerelmedya.net/estv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/Babes TV.png",ES TV EskiSehir
+http://yerelmedya.tv:1935/estv/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/trt-belgesel_medium_23.png",ESENLER SEHiR EKRANI
+https://yayin30.haber100.com/live/sehirekrani/chunklist_w1128481069.m3u8
+#EXTINF:-1,EYmen
+http://31.223.85.34:9999/play/a08w/index.m3u8
+#EXTINF:-1,EYmen
+http://185.234.217.19:8038/play/a01i
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/guneydogu-tv-tr.png",GUNEY TV TARSUS
+http://yerelmedya.tv:1935/guneytv/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/guneydogu-tv-tr.png",GUNEY TV TARSUS
+http://yerelmedya.tv:1935/guneytv/bant1/playlist.m3u8
+#EXTINF:-1,GUNEYDOGU TV
+http://31.223.85.34:9999/play/a07l/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/gursel_tekin_tv_tr.png",Gurbet 24 Erzincan
+http://cdn1-gurbet24.yayin.com.tr/gurbet24/ngrp:gurbet24/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/ahabertr.png",Haber 61
+http://win8.yayin.com.tr/haber61tv/smil:haber61tv.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/RhPIYKu.jpg",Haber61 TV
+https://cdn-haber61tv.yayin.com.tr/haber61tv/smil:haber61tv.smil/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/XCEZY1z.png",Hunat TV
+https://waw2.artiyerelmedya.net/hunattv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/XCEZY1z.png",HUNAT TV KAYSERi
+http://yerelmedya.tv:1935/hunattv/bant1/HasBahCa.m3u8
+#EXTINF:-1,KACKAR TV
+http://31.223.85.34:9999/play/a08p/index.m3u8
+#EXTINF:-1,KADIRGA TV
+http://31.223.85.34:9999/play/a07e/index.m3u8
+#EXTINF:-1,KANAL 15
+http://31.177.62.182:8011/play/s45
+#EXTINF:-1,KANAL 15
+http://31.223.85.34:9999/play/a076/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal7tr.png",Kanal 15
+https://waw2.artiyerelmedya.net/kanal15/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal7tr.png",KANAL 15
+http://yerelmedya.tv:1935/kanal15/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/kanal7tr.png",KANAL 15
+http://yerelmedya.tv:1935/kanal15/bant1/playlist.m3u8
+#EXTINF:-1,KANAL 15
+http://185.234.217.19:8038/play/a02e
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal-avrupa-tr.png",Kanal 15 Burdur
+http://waw1.artiyerelmedya.net:1935/kanal15/bant1/playlist.m3u8
+#EXTINF:-1,KANAL 23
+http://31.223.85.34:9999/play/a075/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal7tr.png",Kanal 23
+http://yerelmedya.tv:1935/kanal23/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="https://izmottvsc23.tvplus.com.33207/CPS/images/universal/film/logo/202003/20200327/202003270730438110om_op.png",Kanal 23
+https://waw2.artiyerelmedya.net/kanal23/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://2.bp.blogspot.com/-ZRsTbQDXcyI/VqnK6srDZQI/AAAAAAAAPRo/8A8Uh9mBCFM/s1600/kanal23.jpg",KANAL 23
+http://yerelmedya.tv:1935/kanal23/_definst_/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/kanal7tr.png",KANAL 23
+http://yerelmedya.tv:1935/kanal23/bant1/playlist.m3u8
+#EXTINF:-1,KANAL 23
+http://185.234.217.19:8038/play/a02d
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/kanal-ege-tr.png",KANAL 23 FHD
+https://cdn13-kanal23.yayin.com.tr/kanal23/ngrp:kanal23/tracks-v1a1/mono.m3u8
+#EXTINF:-1,KANAL 26
+http://31.177.62.182:8011/play/s37
+#EXTINF:-1,KANAL 26
+http://31.223.85.34:9999/play/a06t/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal7tr.png",Kanal 26
+http://yerelmedya.tv:1935/kanal26/_definst_/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/w1MUkRe.png",Kanal 26
+https://waw2.artiyerelmedya.net/kanal26/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal7tr.png",KANAL 26
+http://yerelmedya.tv:1935/kanal26/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/kanal7tr.png",KANAL 26
+http://yerelmedya.tv:1935/kanal26/bant1/playlist.m3u8
+#EXTINF:-1,KANAL 26
+http://185.234.217.19:8038/play/a01z
+#EXTINF:-1,KANAL 3
+http://31.177.62.182:8011/play/s32
+#EXTINF:-1,KANAL 3
+http://31.223.85.34:9999/play/a079/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal-firat-tr.png",Kanal 3
+http://stream.taksimbilisim.com:1935/kanal3/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Jq49Y1g/uHAGsRk.png",Kanal 3
+http://stream.taksimbilisim.com:1935/kanal3/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/kanal-7-avrupa_medium_150.png",Kanal 3
+https://waw2.artiyerelmedya.net/kanal3/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal7tr.png",KANAL 3
+http://yerelmedya.tv:1935/kanal3/bant1/chunks.m3u8
+#EXTINF:-1,KANAL 3
+http://185.234.217.19:8038/play/a02n
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal-7-avrupa_medium_150.png",Kanal 3 (Afyonkarahisar) m3u8 taksimbilisim
+http://stream.taksimbilisim.com:1935/kanal3/bant1/Kanal3.m3u8
+#EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/kk/kanal-32-tr.png",Kanal 32 (480p)
+https://edge1.socialsmart.tv/kanal32/bant1/playlist.m3u8
+#EXTINF:-1,KANAL 33
+http://31.223.85.34:9999/play/a089/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal7tr.png",Kanal 42
+http://iptvmasterlink.dyndns.org:8080/Kanal42/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/kanal7tr.png",KANAL 56
+https://cdn-kanal56tv.yayin.com.tr/kanal56tv/kanal56tv/chunklist_w559405215.m3u8
+#EXTINF:-1,KANAL 58
+http://31.223.85.34:9999/play/a078/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal7tr.png",KANAL 58
+http://yerelmedya.tv:1935/kanal58/bant1/chunks.m3u8
+#EXTINF:-1,KANAL 58
+http://185.234.217.19:8038/play/a02m
+#EXTINF:-1,KANAL 68
+http://31.177.62.182:8011/play/s42
+#EXTINF:-1,KANAL 68
+http://31.223.85.34:9999/play/a070/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal7tr.png",Kanal 68
+http://waw1.artiyerelmedya.net:1935/kanal68/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/gx7m6Fz.jpg",Kanal 68
+https://waw2.artiyerelmedya.net/kanal68/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal7tr.png",KANAL 68
+http://yerelmedya.tv:1935/kanal68/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://3.bp.blogspot.com/-eVr8BpYIMgs/VqnMNstJLcI/AAAAAAAAPTw/zG3ssq2rVsI/s1600/kanal68.jpg",KANAL 68
+http://yerelmedya.tv:1935/kanal68/_definst_/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/kanal7tr.png",KANAL 68
+http://yerelmedya.tv:1935/kanal68/bant1/playlist.m3u8
+#EXTINF:-1,KANAL 68
+http://185.234.217.19:8038/play/a028
+#EXTINF:-1,KANAL ANTALYA
+http://31.223.85.34:9999/play/a067/index.m3u8
+#EXTINF:-1,KANAL ANTALYA
+http://31.223.85.34:9999/play/a05z/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal7tr.png",Kanal B
+http://212.174.58.161/hls-live/livepkgr/_definst_/liveevent/kanalb.m3u8
+#EXTINF:-1,KANAL FIRAT
+http://31.223.85.34:9999/play/a06z/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal-15-tr.png",KANAL FIRAT
+http://yerelmedya.tv:1935/kanalfirat/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/kanal-15-tr.png",KANAL FIRAT
+http://yerelmedya.tv:1935/kanalfirat/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal-15-tr.png",Kanal Fırat
+https://waw2.artiyerelmedya.net/kanalfirat/bant1/playlist.m3u8
+#EXTINF:-1,KANAL S
+http://31.223.85.34:9999/play/a08j/index.m3u8
+#EXTINF:-1,KANAL URFA
+http://31.223.85.34:9999/play/a07k/index.m3u8
+#EXTINF:-1,Kanal Urfa
+https://broadcasttr.com:446/kanalurfa/bant1/chunklist_w1125528664.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/kanal-7-avrupa_medium_150.png",Kanal Urfa
+https://broadcasttr.com:446/kanalurfa/bant1/playlist.m3u8
+#EXTINF:-1,KANAL V
+http://31.177.62.182:8011/play/s34
+#EXTINF:-1,KANAL V
+http://31.223.85.34:9999/play/a06o/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal7tr.png",Kanal V
+http://waw1.artiyerelmedya.net:1935/kanalv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal-firat-tr.png",Kanal V
+http://yerelmedya.tv:1935/kanalv/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="https://izmottvsc23.tvplus.com.33207/CPS/images/universal/film/poster/fileEntity/20170221/001300/001300000002742527/d3cdff38-e389-49f1-a54c-63f9bf4194aa.png",Kanal V
+http://yerelmedya.tv:1935/kanalv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal7tr.png",KANAL V
+https://waw1.artiyerelmedya.net/kanalv/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="http://t2.gstatic.com/images?q=tbn:ANd9GcRd9pk0_3HikARed7pS0RuogyvbHmwoxwZhoLrrmzQd4B0byogOlQ",KANAL V
+http://yerelmedya.tv:1935/kanalv/_definst_/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal7tr.png",Kanal Z
+https://waw2.artiyerelmedya.net/kanalz/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal7tr.png",KANAL Z
+http://yerelmedya.tv:1935/kanalz/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/kanal13.jpg",KANAL Z
+http://yerelmedya.tv:1935/kanalz/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/heimatkanal_de.png",Kanal İstanbul
+http://cdn1-kanalistanbultv.yayin.com.tr/kanalistanbultv/ngrp:kanalistanbultv/chunklist_w1612362189_b1596000.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kay_tv_tr.png",Kay TV
+https://waw2.artiyerelmedya.net/kaytv/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/HXRQVJW.png",Kay TV
+https://waw2.artiyerelmedya.net/kaytv/bant1/playlist.m3u8
+#EXTINF:-1,KENT TURK
+http://31.177.62.182:8011/play/s36
+#EXTINF:-1,KENT TURK
+http://31.223.85.34:9999/play/a06s/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/kent-turk-tr.png",KENT TURK TV
+http://yerelmedya.tv:1935/38kenttv/bant1/chunklist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/beykenttv.png",Kent Türk
+http://waw1.artiyerelmedya.net:1935/38kenttv/bant1/playlist.m3u8
+#EXTINF:-1,KON TV
+http://31.223.85.34:9999/play/a07u/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kon_tv.png",Kon TV
+https://mn-nl.mncdn.com/blutv_kontv2/live_720p2000000kbps/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/koroglu_tv_tr.png",KOROGLU TV YEDEK
+https://broadcasttr.com:446/koroglutv/bant1/chunklist.m3u8
+#EXTINF:-1,KOY TV
+http://31.223.85.34:9999/play/a07z/index.m3u8
+#EXTINF:-1,KUDUS TV
+http://31.223.85.34:9999/play/a087/index.m3u8
+#EXTINF:-1 tvg-logo="http://2.bp.blogspot.com/-lz8kgZuUMjU/VqnN4Z-EJGI/AAAAAAAAPXY/eEMbFtKlrEg/s1600/koroglutv.jpg",KÖROĞLU TV
+http://stream.taksimbilisim.com:1935/koroglutv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/6GNp7f8.png",Line TV (404p)
+https://broadcasttr.com:446/linetv/bant1/playlist.m3u8
+#EXTINF:-1,LUYS TV
+http://31.223.85.34:9999/play/a08m/index.m3u8
+#EXTINF:-1 tvg-logo="http://2.bp.blogspot.com/-FyUO3dn8kXE/VqnOgFg1_AI/AAAAAAAAPX4/NzXsGSMDEJ8/s1600/malatyaertv.jpg",MALATYA ER TV
+http://yerelmedya.tv:1935/ertv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/tv_malatya_tr.png",MALATYA VUSLAT
+http://yayin3.canlitv.com:1935/live/vuslattv/HasBahCa.m3u8
+#EXTINF:-1,MALATYA VUSLAT TV
+http://31.223.85.34:9999/play/a077/index.m3u8
+#EXTINF:-1,MALATYA VUSLAT TV
+http://185.234.217.19:8038/play/a02h
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/marmaris_tv_tr.png",MARMARiS TV WEB TV
+https://cdn-marmariswebtv.yayin.com.tr/marmariswebtv/marmariswebtv/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/marmaris_tv_tr.png",Marmaris Web TV
+https://cdn-marmariswebtv.yayin.com.tr/marmariswebtv/marmariswebtv/HasBahCa.m3u8
+#EXTINF:-1,MAVI KARADENIZ
+http://31.223.85.34:9999/play/a072/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/mavi_karadeniz.png",Mavi Karadeniz
+https://waw3.artiyerelmedya.net/mavikaradeniz/bant1/chunks.m3u8
+#EXTINF:-1,MAVI KARADENIZ
+http://185.234.217.19:8038/play/a02a
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/mavi-karadeniz-tr.png",MAVi KARADENiZ TV
+https://waw1.artiyerelmedya.net/mavikaradeniz/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/mavi-karadeniz-tv-tr.png",MaviKaradeniz
+http://yerelmedya.tv:1935/mavikaradeniz/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/mu7EJWq.png",MaviKaradeniz
+http://yerelmedya.tv:1935/mavikaradeniz/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/mavi-karadeniz-tv_medium_157.png",MaviKaradeniz
+https://waw2.artiyerelmedya.net/mavikaradeniz/bant1/playlist.m3u8
+#EXTINF:-1,MC EU TV
+https://rrr.sz.xlcdn.com/?account=mceutv&file=mc2&type=live&service=wowza&protocol=https&output=playlist.m3u8
+#EXTINF:-1,MERCAN TV
+http://31.177.62.182:8011/play/s41
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/mercan-tv-tr.png",MERCAN TV
+http://yerelmedya.tv:1935/mercantv/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://3.bp.blogspot.com/-b79VRT0gw4U/VqnO8koUQAI/AAAAAAAAPY4/wHNUC_gonN0/s1600/mercantv.jpg",MERCAN TV
+http://yerelmedya.tv:1935/mercantv/_definst_/bant1/playlist.m3u8
+#EXTINF:-1,MERCAN TV
+http://185.234.217.19:8038/play/a025
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/madhimugam_tv_in.png",MUGLA TURK TV
+http://broadcasttr.com:1935/muglaturk/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/viasatnature_history.png",Natural TV
+https://broadcasttr.com:446/naturaltv/bant1/playlist.m3u8
+#EXTINF:-1,Ogün TV
+https://s01.vpis.io/ogun/ogun.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/gaziantep-olay-tv-tr.png",OLAY TURK KAYSERi TV
+http://yerelmedya.tv:1935/olayturk/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/olay-tv_medium_151.png",OlayTürk Kayseri
+http://waw1.artiyerelmedya.net:1935/olayturk/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/9BuCpuV.png",OlayTürk Kayseri
+http://waw1.artiyerelmedya.net:1935/olayturk/bant1/playlist.m3u8
+#EXTINF:-1,ON6 TV
+http://yerelmedya.tv:1935/kanal16/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/iConcerts.png",ONCU RTV
+https://broadcasttr.com:446/oncurtv/bant1/chunklist_w658442161.m3u8
+#EXTINF:-1,ORDU ALTAS TV
+http://31.223.85.34:9999/play/a080/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/RecordTV.br.png",Ordu BB TV
+https://cdn1-ordubeltv.yayin.com.tr/ordubeltv/ordubeltv/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/RecordTV.br.png",ORDU BEL TV
+https://cdn1-ordubeltv.yayin.com.tr/ordubeltv/ordubeltv/playlist.m3u8
+#EXTINF:-1,PAMUKKALETV
+http://31.223.85.34:9999/play/a08b/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/powerturkhdtr.png",PowerTürk TV
+https://waw2.artiyerelmedya.net/powerturktv/bant1/playlist.m3u8
+#EXTINF:-1,RUMELİ TV
+http://31.223.85.34:9999/play/a068/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/sariyer_tv_tr.png",Sariyer TV
+http://s01.vpis.io/sariyer/sariyer.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/WD0JaKP.png",Semerkand TV
+https://b01c02nl.mediatriple.net/videoonlylive/mtisvwurbfcyslive/broadcast_58d915bd40efc.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/sinop_yildiz_tv_tr.png",Sinop Yildiz TV
+http://s01.vpis.io/sinopyildiz/sinopyildiz.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/qk102lK.png",Sinop Yildiz TV (360p)
+https://s01.vpis.io/sinopyildiz/sinopyildiz.m3u8
+#EXTINF:-1,SUN RTV
+http://31.223.85.34:9999/play/a06n/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/sun_tv_tr.png",Sun RTV
+https://tr.socialsmart.tv/suntv/bant1/chunks.m3u8
+#EXTINF:-1,SUN RTV
+http://185.234.217.19:8038/play/a01t
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/sun_rtv_tr.png",SUN RTV MERSiN
+http://yerelmedya.tv:1935/sunrtv/bant1/chunks.m3u8
+#EXTINF:-1,SZC
+http://31.223.85.34:9999/play/a085/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/tarsus_guney_tv_tr.png",Tarsus Güney TV
+https://waw1.artiyerelmedya.net/guneytv/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/tempotv.png",TEMPO TV
+http://yerelmedya.tv:1935/tempotv/bant1/playlist.m3u8
+#EXTINF:-1,TEVE63
+http://31.223.85.34:9999/play/a08l/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/zhCeooV.png",TGRT Belgesel TV
+https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe462afc6a0e.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/TGRT_Haber_logosu.png/512px-TGRT_Haber_logosu.png",TGRT Haber (360p)
+https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe4598be8e5d.smil/playlist.m3u8
+#EXTINF:-1,TON TV
+http://31.177.62.182:8011/play/s51
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/ton_tv_tr.png",Ton TV
+http://yerelmedya.tv:1935/tontv/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/O'zbekiston.png",Ton TV
+https://waw2.artiyerelmedya.net/tontv/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/ton_tv_tr.png",TON TV
+http://yerelmedya.tv:1935/tontv/bant1/playlist.m3u8
+#EXTINF:-1,TON TV
+http://185.234.217.19:8038/play/a02f
+#EXTINF:-1,TR35
+http://31.223.85.34:9999/play/a06k/index.m3u8
+#EXTINF:-1,TR35
+http://185.234.217.19:8038/play/a01g
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/trakya_turk_tr.png",TRAKYA TURK HD
+https://tv.medyakurumsal.com:3439/live/trakyaturklive.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/turhal_super_tv_tr.png",TURHAL WEB TV
+http://cdn-turhalwebtv.yayin.com.tr/turhalwebtv/turhalwebtv/chunklist.m3u8
+#EXTINF:-1,TV 1
+http://31.223.85.34:9999/play/a07v/index.m3u8
+#EXTINF:-1,TV 264
+http://31.223.85.34:9999/play/a084/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/MTV HD.png",TV 41
+http://yerelmedya.tv:1935/tv41/_definst_/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/BRIDGE TV РУССКИЙ ХИТ.png",TV 41
+https://waw1.artiyerelmedya.net/tv41/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/BRIDGE TV РУССКИЙ ХИТ.png",TV 41
+http://stream.taksimbilisim.com:1935/tv41/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/tt/tv_41_tr.png",TV 41
+http://stream.taksimbilisim.com:1935/tv41/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/BRIDGE TV РУССКИЙ ХИТ.png",TV 41
+http://stream.taksimbilisim.com:1935/tv41/bant1/TV41.m3u8
+#EXTINF:-1,TV 41
+http://31.177.62.182:8011/play/s43
+#EXTINF:-1,TV 41
+http://31.223.85.34:9999/play/a071/index.m3u8
+#EXTINF:-1,TV 41
+http://185.234.217.19:8038/play/a029
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/SongTV Russia.png",TV 41 KOCAELi
+http://yerelmedya.tv:1935/tv41/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/SongTV Russia.png",TV 41 KOCAELi
+http://yerelmedya.tv:1935/tv41/bant1/playlist.m3u8
+#EXTINF:-1,TV 52
+http://31.223.85.34:9999/play/a082/index.m3u8
+#EXTINF:-1,TV DEN
+http://31.223.85.34:9999/play/a083/index.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/e/e9/TvEM_logosu.png",TV Em (486p)
+http://cdn-tvem.yayin.com.tr/TVEM/TVEM/playlist.m3u8
+#EXTINF:-1,TV KAYSERI
+http://31.223.85.34:9999/play/a07w/index.m3u8
+#EXTINF:-1 tvg-logo="http://2.bp.blogspot.com/-3AgtGWHhFBQ/VqnQTNvFBEI/AAAAAAAAPbo/766jHzr8Kjg/s1600/tv1.jpg",TV1
+http://stream.taksimbilisim.com:1935/tv1/smil:tv1.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/tv4-tr.png",TV41
+https://waw2.artiyerelmedya.net/tv41/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="http://2.bp.blogspot.com/-0eGv2dDP7wA/VqnQiSGGKqI/AAAAAAAAPcI/zkr06d7IYoM/s1600/tv41.jpg",TV41 Seçenek
+http://yerelmedya.tv:1935/tv41/_definst_/bant1/playlist.m3u8
+#EXTINF:-1,TV42
+http://31.223.85.34:9999/play/a07x/index.m3u8
+#EXTINF:-1,UR FANATiK TV
+http://yerelmedya.tv:1935/urfanatiktv/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/kanal-urfa-tr.png",Urfanatik TV
+https://edge1.socialsmart.tv/urfanatiktv/bant1/chunks.m3u8
+#EXTINF:-1,USKUDAR UNiV.TV
+http://uskudarunv.mediatriple.net/uskudarunv/uskudar2/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/vizyon-58-tr.png",Vizyon 58
+https://waw2.artiyerelmedya.net/vizyon58/bant1/playlist.m3u8
+#EXTINF:-1,VIZYON 58
+http://31.223.85.34:9999/play/a074/index.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/world/vizyon-turk-tr.png",ViZYON 58 SiVAS
+http://yerelmedya.tv:1935/vizyon58/bant1/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/avtv.png",VTV
+https://waw2.artiyerelmedya.net/kanalv/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/a_vuslat_tv.jpg",Vuslat TV
+http://yayin3.canlitv.com:1935/live/vuslattv/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/a_vuslat_tv.jpg",Vuslat TV
+https://waw2.artiyerelmedya.net/vuslattv/bant1/playlist.m3u8
+#EXTINF:-1,VİZYON 58
+https://waw2.artiyerelmedya.net/vizyon58/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="http://1.bp.blogspot.com/-Ze9mOtyaVaI/VqnQ674xG1I/AAAAAAAAPdA/9LNgSEFzxZs/s1600/vizyon58.jpg",VİZYON 58
+http://yerelmedya.tv:1935/vizyon58/bant1/playlist.m3u8
+#EXTINF:-1,YENİ KOCAELİ TV
+http://31.223.85.34:9999/play/a06l/index.m3u8
+#EXTINF:-1,YENİ KOCAELİ TV
+http://185.234.217.19:8038/play/a01h
+#EXTINF:-1,YILDIZ EN
+http://31.223.85.34:9999/play/a07b/index.m3u8
+#EXTINF:-1,Z ZAZA TV
+http://31.223.85.34:9999/play/a05y/index.m3u8
+#EXTINF:-1,Çiftçi TV
+https://waw2.artiyerelmedya.net/ciftcitv/bant1/playlist.m3u8
+#EXTINF:-1,İKRA
+http://31.223.85.34:9999/play/a06m/index.m3u8
+#EXTINF:-1,İKRA
+http://185.234.217.19:8038/play/a00x

@@ -1,0 +1,249 @@
+#EXTM3U
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",A7
+http://51.75.64.67:8000/play/a049
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",A7 HD
+http://51.75.64.67:8000/play/a048
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",ACASA GOLD
+http://51.75.64.67:8000/play/a04c
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",ACASA GOLD HD
+http://51.75.64.67:8000/play/a01r
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",Acasa HD
+http://51.75.64.67:8000/play/a01b
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",ACCENT TV OLTENIA
+http://51.75.64.67:8000/play/a030
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/world/agro-tv-tr.png",Agro TV
+https://agrotv.streamnet.ro/mobile_tv/agrotv.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="https://i.imgur.com/S7X1PiC.png",AgroTV (404p) [Not 24/7]
+https://stream1.1616.ro:1945/agro/livestream/playlist.m3u8?wowzatokenhash=NqSD4qaHc94SbTW05NBB-lXC78ZiAOIbnbUBOHj1DAM=
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",ALBA CAROLINA HD
+http://51.75.64.67:8000/play/a01h
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/world/canakkale_tv_tr.png",Aleph News (720p)
+https://stream-aleph.m.ro/Aleph/ngrp:Alephnewsmain.stream_all/HasBahCa.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="https://i.imgur.com/MQ5PkKB.png",Aleph News (720p)
+https://stream-aleph.m.ro/Aleph/ngrp:Alephnewsmain.stream_all/playlist.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/world/canakkale_tv_tr.png",Aleph Smart TV
+https://stream-aleph.m.ro/Aleph/Smartv.stream/chunklist.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/alfa-tv-mk.png",Alfa Omega TV (540p) [Not 24/7]
+http://s5.alfaomega.tv:1935/alfaomega/alfaomega1.sdp/HasBahCa.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="https://i.imgur.com/StJg6Pu.png",Alfa Omega TV (540p) [Not 24/7]
+http://s5.alfaomega.tv:1935/alfaomega/alfaomega1.sdp/playlist.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/alfa-tv-mk.png",Alfa Omega TV (Opt-1)
+http://s5.alfaomega.tv:1935/alfaomega/alfaomega1.sdp/HasBahCa.m3u8?wowzasessionid=1441530266&time=1463063123262
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",AMC HD
+http://51.75.64.67:8000/play/a03t
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",ANIMAL PLANET HD
+http://51.75.64.67:8000/play/a01i
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",Antena 1 HD
+http://51.75.64.67:8000/play/a01d
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",Antena 3 HD
+http://51.75.64.67:8000/play/a01e
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",Antena Stars HD
+http://51.75.64.67:8000/play/a01f
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",ATOMIC ACADEMY HD
+http://51.75.64.67:8000/play/a04d
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/world/envato_black.png",Atomic TV
+https://atomic.streamnet.ro/atomictv.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",ATOMIC TV
+http://51.75.64.67:8000/play/a02z
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",ATOMIC TV HD
+http://51.75.64.67:8000/play/a02y
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",B1 TV HD
+http://51.75.64.67:8000/play/a039
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",BALADA TV
+http://51.75.64.67:8000/play/a05e
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",balcan music
+http://51.75.64.67:8000/play/a05f
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/world/yaban-tr.png",Banat TV
+https://www.btv.ro/hls/banat-tv.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",BANAT TV
+http://51.75.64.67:8000/play/a03i
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",BBC FIRST HD
+http://51.75.64.67:8000/play/a03p
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",BOLLYWOOD CLASSIC
+http://51.75.64.67:8000/play/a01k
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",BOLLYWOOD FILM
+http://51.75.64.67:8000/play/a01l
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",BOLLYWOOD HD
+http://51.75.64.67:8000/play/a01j
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",BOOMERANG HD
+http://51.75.64.67:8000/play/a01m
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/tv8bucuk.png",Bucovina TV
+http://46.4.14.12:9999/btvsvlive/playlist.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/tv8bucuk.png",Bucovina TV
+http://46.4.14.12:9999/btvsvlive/playlist.m3u8?fluxustv.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",BUCURESTI TV HD
+http://51.75.64.67:8000/play/a02e
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",CANAL 33 HD
+http://51.75.64.67:8000/play/a01n
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",CINEMARATON HD
+http://51.75.64.67:8000/play/a04u
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",CINETUBE HD
+http://51.75.64.67:8000/play/a01p
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/world/digi_kanal.png",Digi 24 HD
+https://edge-ar.rcs-rds.ro/digi24ar/hq.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",DiscoMix HD
+http://51.75.64.67:8000/play/a019
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",Discovery HD
+http://51.75.64.67:8000/play/a01g
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",DORCEL XXX HD
+http://51.75.64.67:8000/play/a044
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",DTX HD
+http://51.75.64.67:8000/play/a01q
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="https://i.ibb.co/kQJ10r8/est-tv-ro.png",Est TV (Neamt) (576p) [Not 24/7]
+http://89.38.8.130:39435
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",EURONEWS HD
+http://51.75.64.67:8000/play/a01s
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",EVENIMET TV
+http://51.75.64.67:8000/play/a02k
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/viasat_explore.png",Exploris
+http://89.38.8.130:39449/
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",EXPORIS TV HD
+http://51.75.64.67:8000/play/a02u
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",FILMCAFE HD
+http://51.75.64.67:8000/play/a032
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",FISHING HD
+http://51.75.64.67:8000/play/a01t
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",GIURGIU TV
+http://51.75.64.67:8000/play/a02j
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",GTV OLTENIA
+http://51.75.64.67:8000/play/a02i
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",HGTV HD
+http://51.75.64.67:8000/play/a01u
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",HISTORY 2 HD
+http://51.75.64.67:8000/play/a042
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",HISTORY HD
+http://51.75.64.67:8000/play/a04n
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",ID DISCOVERY HD
+http://51.75.64.67:8000/play/a01v
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",IDA TV HD
+http://51.75.64.67:8000/play/a02b
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",INFO HUNEDOARA
+http://51.75.64.67:8000/play/a03c
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/france_inter.png",Intermedia TV
+http://46.4.14.12:9999/intermedia1/playlist.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",Kanal D HD
+http://51.75.64.67:8000/play/a01a
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",KISS TV HD
+http://51.75.64.67:8000/play/a01w
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="https://i.imgur.com/qskVMhF.png",Light Channel (480p) [Not 24/7]
+http://streamer1.streamhost.org:1935/salive/GMIlcbgM/playlist.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",LINK PRESS HD
+http://51.75.64.67:8000/play/a01x
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",LOVE NATURE HD
+http://51.75.64.67:8000/play/a05h
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",MAGIC TV HD
+http://51.75.64.67:8000/play/a01y
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/world/Amedia Premium HD.png",MEDIA REGIONAL
+http://83.103.150.198:8080
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",MEDIASUD
+http://51.75.64.67:8000/play/a02h
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",MEDIKA TV
+http://51.75.64.67:8000/play/a020
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",MELOS TV HD
+http://51.75.64.67:8000/play/a021
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/world/metro_tv_tr.png",MeteoTV.TV
+http://80.86.106.207:8000/play/1/index.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/meteorolojitv.png",MeteoTV.TV
+http://80.86.106.207:8000/play/1/index.m3u8?HasBahCa.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",METROPOLA TV HD
+http://51.75.64.67:8000/play/a022
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",MOLDOVA TV HD
+http://51.75.64.67:8000/play/a02t
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",Naşul TV (720p) [Not 24/7]
+https://5ab29cc78f681.streamlock.net/NasulTV/livestream/HasBahCa.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="https://static.cinemagia.ro/img/tv_station/nasul-tv.jpg",Naşul TV (720p) [Not 24/7]
+https://5ab29cc78f681.streamlock.net/NasulTV/livestream/playlist.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",NCN
+http://51.75.64.67:8000/play/a02r
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",NCN CLUJ
+http://51.75.64.67:8000/play/a02s
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",OLTENIA 3 TV
+http://51.75.64.67:8000/play/a02f
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",OLTENIA TV
+http://51.75.64.67:8000/play/a02g
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",ORANGE SPORT 3 HD
+http://51.75.64.67:8000/play/a03g
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",ORANGE SPORT 4 HD
+http://51.75.64.67:8000/play/a03h
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",PAPIRKA HD
+http://51.75.64.67:8000/play/a031
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",PARTYMIX HD
+http://51.75.64.67:8000/play/a03d
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",Prima News HD
+http://51.75.64.67:8000/play/a04e
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",PRIMA SPORT 1 HD
+http://51.75.64.67:8000/play/a033
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",PRIMA SPORT 5 HD
+http://51.75.64.67:8000/play/a03j
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Prima_TV_%28Rumaenien%29_Logo.svg/512px-Prima_TV_%28Rumaenien%29_Logo.svg.png",Prima TV (404p) [Not 24/7]
+https://stream1.1616.ro:1945/prima/livestream/playlist.m3u8?wowzatokenhash=hOdIznDoakApEuQ8FaFI3yrJuBMZHqCB7B3cWTmRWsc=
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",PRIMA TV HD
+http://51.75.64.67:8000/play/a02a
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",Privesc.EU
+https://cachestar.privesc.eu/liniar/moldova/chunklist_w856126048.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",Pro Arena HD
+http://51.75.64.67:8000/play/a01c
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",ProCinema HD
+http://51.75.64.67:8000/play/a02o
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/world/PROГонки.png",Profit
+https://stream1.profit.ro:1945/profit/livestream/HasBahCa.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/world/PROГонки.png",Profit TV
+http://stream1.profit.ro:1935/profit/livestream/chunklist.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/world/smart_promo.png",Profit.ro (404p)
+https://stream1.1616.ro:1945/profit/livestream/HasBahCa.m3u8?wowzatokenhash=hOdIznDoakApEuQ8FaFI3yrJuBMZHqCB7B3cWTmRWsc=
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/republic-bharat-tv-in.png",Publika TV (Moldova)
+http://livebeta.publika.md/LIVE/P/1500.m3u8
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",ROCK TV HD
+http://51.75.64.67:8000/play/a01z
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",SCIENCE HD
+http://51.75.64.67:8000/play/a023
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",SPORT EXTRA HD
+http://51.75.64.67:8000/play/a024
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",SWEET TV
+http://51.75.64.67:8000/play/a02l
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",TELE 2 DROBETA
+http://51.75.64.67:8000/play/a02x
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",TELE EUROPA NOVA
+http://51.75.64.67:8000/play/a03f
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",TELE U CRAIOVA
+http://51.75.64.67:8000/play/a02c
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",TEZAUR TV
+http://51.75.64.67:8000/play/a038
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",TLC HD
+http://51.75.64.67:8000/play/a025
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",TRALALA HD
+http://51.75.64.67:8000/play/a026
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",TV AS
+http://51.75.64.67:8000/play/a03m
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/MTV HD.png",TV Sat
+http://89.38.8.130:39443/
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/MTV HD.png",TV SE
+http://89.38.8.130:39419/
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="https://i.imgur.com/r4zKU1e.png",TV SE (576p) [Not 24/7]
+http://89.38.8.130:39419
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/TVPPolonia.pl.png",TVPlus Suceava
+http://85.186.146.34:8080
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",TVR CULTURAL HD
+http://51.75.64.67:8000/play/a04l
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",TVR INFO HD
+http://51.75.64.67:8000/play/a02v
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/SMtvSanMarino.it.png",TVSat (576p)
+http://89.38.8.130:39443
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/Channel/logo/rtvs-3-sk.png",TVSE
+http://89.38.8.130:39422/
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",UTV HD
+http://51.75.64.67:8000/play/a02w
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",VASLUI TV HD
+http://51.75.64.67:8000/play/a027
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",VIXEN
+http://51.75.64.67:8000/play/a045
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",VP
+http://51.75.64.67:8000/play/a03e
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",VTV
+http://51.75.64.67:8000/play/a03n
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",WARNER TV HD
+http://51.75.64.67:8000/play/a029
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA",ZOOM TV HD
+http://51.75.64.67:8000/play/a028
+#EXTINF:-1 group-title="EU_ROMANIA_MOLDOVA" tvg-logo="http://hasbahca.net/TVLogo/world/beyaztvtr.png",ZTV.TV
+http://65.21.245.48:8000/play/1/index.m3u8

@@ -1,0 +1,79 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="News Picks (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:B94:7134:EC:0:0:0:0", News Picks (GEO)
+https://277be9afc3f14a75866466c549762014.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_NewsPicks/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=1086&ads.wurl_name=NewsPicks&ads.device_model=
+#EXTINF:-1 tvg-name="Bloomberg Japan (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:203:D168:EC:0:0:0:0", Bloomberg Japan (GEO)
+https://59155f3aad06478b9bbaf6510b811374.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_Bloomberg/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=&ads.wurl_name=Bloomberg&ads.device_model=
+#EXTINF:-1 tvg-name="Reuters (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:1DF5:E74B:EC:0:0:0:0", Reuters (GEO)
+https://edb2b3144a1540e488282b62c66e3c12.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_ReutersNow/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=804&ads.wurl_name=ReutersNow&ads.device_model=
+#EXTINF:-1 tvg-name="Euronews (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:1A8:3A71:EC:0:0:0:0", Euronews (GEO)
+https://1c380e6952614e9f9567582255d487d7.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_EuronewsWorld/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=&ads.wurl_name=EuronewsWorld&ads.device_model=
+#EXTINF:-1 tvg-name="NBA TV (GEO) DRM" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:10C8:3D9:EC:0:0:0:0", NBA TV (GEO) DRM
+https://99370464f66946e781a84622cf4b7652.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_NBA/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=806&ads.wurl_name=NBA&ads.device_model=
+#EXTINF:-1 tvg-name="Japan Pro Baseball (GEO) DRM" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:C71C:7C84:EC:0:0:0:0", Japan Pro Baseball (GEO) DRM
+https://7f1e081265e041f6aae0e222c0edd09c.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_JapaneseProBaseball/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=714&ads.wurl_name=JapaneseProBaseball&ads.device_model=
+#EXTINF:-1 tvg-name="Golf Net TV (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:AC22:3643:EC:0:0:0:0", Golf Net TV (GEO)
+https://5ed39d998bfd48d7b39c777df8635240.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_GolfNetTV/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=993&ads.wurl_name=GolfNetTV&ads.device_model=
+#EXTINF:-1 tvg-name="Gaora Zero TV (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:90C0:9AC7:EC:0:0:0:0", Gaora Zero TV (GEO)
+https://69d205f901a74dcea3308b69b2bfdcd8.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_Train/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=&ads.wurl_name=GAORA+ZERO&ads.device_model=
+#EXTINF:-1 tvg-name="Fitness (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:AC98:1E68:EC:0:0:0:0", Fitness (GEO)
+https://4d5d7553b44d4422a4a1649b59e7bf3e.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_Fitness/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=815&ads.wurl_name=Fitness&ads.device_model=
+#EXTINF:-1 tvg-name="Fashion and Life (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:6FA:8273:EC:0:0:0:0", Fashion and Life (GEO)
+https://3a036debf9b445f58418725803ad048b.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_Fashion/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=811&ads.wurl_name=Fashion&ads.device_model=
+#EXTINF:-1 tvg-name="Fashion TV (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:657E:3C55:EC:0:0:0:0", Fashion TV (GEO)
+https://b0ba6aee6b5a4ecda186b32e3e734289.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_FashionTV/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=827&ads.wurl_name=FashionTV&ads.device_model=
+#EXTINF:-1 tvg-name="Asian Drama (GEO) DRM" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:132C:D985:EC:0:0:0:0", Asian Drama (GEO) DRM
+https://0da6bc1d3e5445cba4c7b766a93bbb91.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_AsianDrama/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=810&ads.wurl_name=AsianDrama&ads.device_model=
+#EXTINF:-1 tvg-name="Web Music 2 (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:18DF:C4A7:EC:0:0:0:0", Web Music 2 (GEO)
+https://6a6b44676e4f42f990ce2bb133528db7.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_Music2/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=813&ads.wurl_name=Music2&ads.device_model=
+#EXTINF:-1 tvg-name="YGTV (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:792D:FDA5:EC:0:0:0:0", YGTV (GEO)
+https://823ebe2804a14bd0b2db416b0f3d6c7c.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_YGTV/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=&ads.wurl_name=YGTV&ads.device_model=
+#EXTINF:-1 tvg-name="New Kpop (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:DC4:EB97:EC:0:0:0:0", New Kpop (GEO)
+https://48117655a1ef4f73a87b6ca6ad132098.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_NewKPop/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=&ads.wurl_name=NewKPop&ads.device_model=
+#EXTINF:-1 tvg-name="Nagoyo TV Next" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:3EC6:7499:EC:0:0:0:0", Nagoyo TV Next
+https://amg01287-rakutentvjapan-nagoyatvnext-ono-r26lw.amagi.tv/index.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0
+#EXTINF:-1 tvg-name="Pluto Reality (GEO) DRM" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:D51D:35B:EC:0:0:0:0", Pluto Reality (GEO) DRM
+https://af55ef663ba348019140095b62256842.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_USReality/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=818&ads.wurl_name=USReality&ads.device_model=
+#EXTINF:-1 tvg-name="Nikkatsu Movie (GEO) DRM" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:6357:2DD6:EC:0:0:0:0", Nikkatsu Movie (GEO) DRM
+https://687e8bdf8de347148ed7ce3013fb868a.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_NikkatsuMovie/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=823&ads.wurl_name=NikkatsuMovie&ads.device_model=
+#EXTINF:-1 tvg-name="International Movie Drama (GEO) DRM" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:C538:41B1:EC:0:0:0:0", International Movie Drama (GEO) DRM
+https://37c8fdeb731445439a5ee644befe2fc6.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_InternationalMovieDrama/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=821&ads.wurl_name=InternationalMovieDrama&ads.device_model=
+#EXTINF:-1 tvg-name="Classic Movie (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:9986:C59C:EC:0:0:0:0", Classic Movie (GEO)
+https://c19d618e541c4450af03d5b346d99f5e.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_ClassicMovie/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=774&ads.wurl_name=ClassicMovie&ads.device_model=
+#EXTINF:-1 tvg-name="Movie" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:7E9D:70B3:EC:0:0:0:0", Movie
+https://amg01287-rakutentvjapan-movie-ono-60nl1.amagi.tv/index.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0
+#EXTINF:-1 tvg-name="Animation 1 (GEO) DRM" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:DF49:55BB:EC:0:0:0:0", Animation 1 (GEO) DRM
+https://216c8080fdd94c0c825ef7ae7b4debfd.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_Animation1/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=808&ads.wurl_name=Animation1&ads.device_model=
+#EXTINF:-1 tvg-name="Animation 2 (GEO) DRM" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:88D:C45:EC:0:0:0:0", Animation 2 (GEO) DRM
+https://bdbc7cd4986249dfa0a07512dc10f48a.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_Animation2/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=809&ads.wurl_name=Animation2&ads.device_model=
+#EXTINF:-1 tvg-name="Classic Animation (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:3B54:E3BF:EC:0:0:0:0", Classic Animation (GEO)
+https://9aa580f9af8641149d6391ecea812f25.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_ClassicAnimation/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=826&ads.wurl_name=ClassicAnimation&ads.device_model=
+#EXTINF:-1 tvg-name="History" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:AA9E:8825:EC:0:0:0:0", History
+https://amg01287-rakutentvjapan-historyhls-ono-7gbll.amagi.tv/index.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0
+#EXTINF:-1 tvg-name="Crime and Investigation" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:5B39:75BD:EC:0:0:0:0", Crime and Investigation
+https://cdn-apne1.tsv2.amagi.tv/linear/amg01287-rakutentvjapan-cplusihls-rakutenjp/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0
+#EXTINF:-1 tvg-name="Global Trekker" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:518D:F96A:EC:0:0:0:0", Global Trekker
+https://amg01287-rakutentvjapan-documentaryhls-ono-tyj7n.amagi.tv/index.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0
+#EXTINF:-1 tvg-name="Entertainment (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:29C5:83F2:EC:0:0:0:0", Entertainment (GEO)
+https://6a827d71fe4548f5a695d249dee10e51.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_Entertainment/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=822&ads.wurl_name=Entertainment&ads.device_model=
+#EXTINF:-1 tvg-name="Time and Travel" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:54DF:A58D:EC:0:0:0:0", Time and Travel
+https://amg01287-rakutentvjapan-timeandtravel-ono-n7iwv.amagi.tv/index.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0
+#EXTINF:-1 tvg-name="Travel XP (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:E93C:4878:EC:0:0:0:0", Travel XP (GEO)
+https://bbf3b472d5ef4b248782d534405728b0.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_TravelXP/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=&ads.wurl_name=TravelXP&ads.device_model=
+#EXTINF:-1 tvg-name="The Pet Collective (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:5FAE:FD85:EC:0:0:0:0", The Pet Collective (GEO)
+https://ba7688ef8f37442f98c0b1decef2f3a5.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_ThePetCollective/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=&ads.wurl_name=The+Pet+Collective&ads.device_model=
+#EXTINF:-1 tvg-name="Shogi" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:2A1B:3B47:EC:0:0:0:0", Shogi
+https://amg01287-rakutentvjapan-shogi-ono-95zk2.amagi.tv/index.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0
+#EXTINF:-1 tvg-name="Mahjong (GEO)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:D1EB:278C:EC:0:0:0:0", Mahjong (GEO)
+https://dc801d03d8194435b92c69f84585f13f.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_Mahjong/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=775&ads.wurl_name=Mahjong&ads.device_model=
+#EXTINF:-1 tvg-name="Pachislo" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:6316:488E:EC:0:0:0:0", Pachislo
+https://amg01287-rakutentvjapan-pachislotest-ono-y56rm.amagi.tv/index.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0
+#EXTINF:-1 tvg-name="International Kids (GEO) DRM" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:2728:9D49:EC:0:0:0:0", International Kids (GEO) DRM
+https://2ca9e5f3591c4b45a610d01a53b432d1.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_InternationalKids/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=825&ads.wurl_name=InternationalKids&ads.device_model=
+#EXTINF:-1 tvg-name="Kids (GEO) DRM" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:4296:8B2E:EC:0:0:0:0", Kids (GEO) DRM
+https://8d431658602642a4a828dd12c6fdb07e.mediatailor.ap-northeast-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenJP-web_Kids/playlist.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0&ads.wurl_channel=824&ads.wurl_name=Kids&ads.device_model=
+#EXTINF:-1 tvg-name="Idol Gravure (Adult) Geo JAPAN" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:46B1:460A:EC:0:0:0:0", Idol Gravure (Adult) Geo JAPAN
+https://cdn-apne1.tsv2.amagi.tv/linear/amg01287-rakutentvjapan-gravurecmaf-rakutenjp/playlist.m3u8
+#EXTINF:-1 tvg-name="Shigistrong (Adult)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:657:6C13:EC:0:0:0:0", Shigistrong (Adult)
+https://amg01287-rakutentvjapan-shigekistrong-ono-3y1k8.amagi.tv/index.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0
+#EXTINF:-1 tvg-name="Movie 2 (Adult)" group-title="*IPTV Rakuten JP" dvb-reference="4097:0:1:4BE0:5FB:EC:0:0:0:0", Movie 2 (Adult)
+https://amg01287-rakutentvjapan-movie2-ono-pkm45.amagi.tv/index.m3u8?ads.spotx_uid=&ads.device_make=rchweb&ads.fromsps=0
