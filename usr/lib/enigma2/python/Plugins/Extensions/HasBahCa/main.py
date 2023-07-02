@@ -41,6 +41,7 @@ from enigma import eServiceReference
 from enigma import iPlayableService
 from enigma import gFont
 from enigma import loadPNG
+from enigma import getDesktop
 from time import sleep
 import os
 import re
@@ -136,8 +137,10 @@ path_playlist = os.path.join(plugin_path, 'Playlists')
     # if file_exists("/usr/bin/apt-get"):
         # cfg.pthmovie = ConfigDirectory(default='/media/hdd/movie')
 # Path_Movies = str(cfg.pthmovie.value) + "/"
-
-if Utils.isFHD():
+screenwidth = getDesktop(0).size()
+if screenwidth.width() == 2560:
+    path_skin = os.path.join(plugin_path, 'res/skins/uhd/')
+elif screenwidth.width() == 1920:
     path_skin = os.path.join(plugin_path, 'res/skins/fhd/')
 else:
     path_skin = os.path.join(plugin_path, 'res/skins/hd/')
@@ -149,7 +152,11 @@ print('HasBahCa path_skin: ', path_skin)
 class hasList(MenuList):
     def __init__(self, list):
         MenuList.__init__(self, list, True, eListboxPythonMultiContent)
-        if Utils.isFHD():
+        if screenwidth.width() == 2560:
+            self.l.setItemHeight(60)
+            textfont = int(42)
+            self.l.setFont(0, gFont('Regular', textfont))        
+        elif screenwidth.width() == 1920:
             self.l.setItemHeight(50)
             textfont = int(30)
             self.l.setFont(0, gFont('Regular', textfont))
@@ -195,7 +202,10 @@ def hasbaSetListEntry(name):
     else:
         png = os.path.join(plugin_path, 'res/pics/tv.png')
 
-    if Utils.isFHD():
+    if screenwidth.width() == 2560:
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 10), size=(50, 50), png=loadPNG(png)))
+        res.append(MultiContentEntryText(pos=(90, 0), size=(1200, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
+    elif screenwidth.width() == 1920:
         res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 10), size=(40, 40), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(70, 0), size=(1000, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     else:
