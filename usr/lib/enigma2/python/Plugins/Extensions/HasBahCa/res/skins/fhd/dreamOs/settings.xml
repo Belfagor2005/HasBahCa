@@ -1,5 +1,5 @@
 <!-- Skin Setting 15/08/2020 -->
-<screen name="MainSetting" position="0,0" size="1920,1080" title="..::HasBahCa::.." backgroundColor="#20000000" flags="wfNoBorder">
+<screen name="MainSetting" position="0,0" size="1920,1080" title="..::HasBahCa::.." backgroundColor="#ff000000" flags="wfNoBorder">
 	<widget name="title" position="301,55" size="830,40" font="Regular;34" halign="center" valign="center" foregroundColor="#ffff00" backgroundColor="black" transparent="1" zPosition="5" />
 	<widget name="info" position="220,130" size="970,50" font="Regular;30" halign="center" valign="center" foregroundColor="yellow" backgroundColor="#202020" transparent="0" zPosition="5" />
 	<widget name="progress" position="563,949" size="300,50" foregroundColor="#2a70a4" backgroundColor="#10000000" transparent="1" zPosition="5" />
