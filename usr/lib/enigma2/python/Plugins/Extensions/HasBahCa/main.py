@@ -128,15 +128,6 @@ tyurl2 = 'https://hasbahca.net/hasbahca_m3u/'
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
 enigma_path = '/etc/enigma2'
 path_playlist = os.path.join(plugin_path, 'Playlists')
-# cfg.pthmovie = ConfigDirectory(default="/media/hdd/movie")
-# try:
-    # from Components.UsageConfig import defaultMoviePath
-    # downloadpath = defaultMoviePath()
-    # cfg.pthmovie = ConfigDirectory(default=downloadpath)
-# except:
-    # if file_exists("/usr/bin/apt-get"):
-        # cfg.pthmovie = ConfigDirectory(default='/media/hdd/movie')
-# Path_Movies = str(cfg.pthmovie.value) + "/"
 screenwidth = getDesktop(0).size()
 if screenwidth.width() == 2560:
     path_skin = os.path.join(plugin_path, 'res/skins/uhd/')
@@ -247,6 +238,7 @@ def returnIMDB(text_clear):
         text_clear = html_conv.html_unescape(text_clear)
         _session.open(MessageBox, text_clear, MessageBox.TYPE_INFO)
         return True
+    return False
 
 
 class MainHasBahCa(Screen):

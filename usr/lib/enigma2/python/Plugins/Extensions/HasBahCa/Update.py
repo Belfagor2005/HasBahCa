@@ -7,7 +7,7 @@ print("Update.py")
 
 
 def upd_done():
-    from os import popen, remove
+    from os import popen, system
     cmd01 = "wget http://patbuweb.com/HasBahCa/HasBahCa.tar -O /tmp/HasBahCa.tar ; tar -xvf /tmp/HasBahCa.tar -C /"
     cmd02 = "wget --no-check-certificate -U 'Enigma2 - HasBahCa Plugin' -c 'http://patbuweb.com/HasBahCa/HasBahCa.tar' -O '/tmp/HasBahCa.tar'; tar -xvf /tmp/HasBahCa.tar -C /"
     cmd22 = 'find /usr/bin -name "wget"'
@@ -19,7 +19,7 @@ def upd_done():
         popen(cmd02)
     except:
         popen(cmd01)
-    remove('/tmp/HasBahCa.tar')
+    system('rm -rf /tmp/HasBahCa.tar')
     return
 
 
