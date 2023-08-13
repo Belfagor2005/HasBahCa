@@ -994,7 +994,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         self.onClose.append(self.cancel)
 
     def getAspect(self):
-        return AVSwitch().getAspectRatioSetting()
+        return eAVSwitch().getAspectRatioSetting()
 
     def getAspectString(self, aspectnum):
         return {
@@ -1019,7 +1019,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
                 }
         config.av.aspectratio.setValue(map[aspect])
         try:
-            AVSwitch().setAspectRatio(aspect)
+            eAVSwitch().setAspectRatio(aspect)
         except:
             pass
 
