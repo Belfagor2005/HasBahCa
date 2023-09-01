@@ -14,10 +14,11 @@ from __future__ import print_function
 from .__init__ import _
 from . import Utils
 from . import html_conv
+from . import cvbq
 try:
-    from Components.AVSwitch import eAVSwitch
+    from Components.AVSwitch import eAVSwitch as AVSwitch
 except Exception:
-    from Components.AVSwitch import iAVSwitch as eAVSwitch
+    from Components.AVSwitch import iAVSwitch as AVSwitch
 from Components.ActionMap import ActionMap
 from Components.Button import Button
 from Components.config import config, ConfigDirectory
@@ -659,12 +660,12 @@ class HasBahCa1(Screen):
 
     def convert(self, answer=None):
         i = len(self.names)
-        print('iiiiii= ', i)
         if i < 0:
             return
         if answer is None:
             self.session.openWithCallback(self.messagerun, MessageBox, _("Do you want to Convert %s\nto Favorite Bouquet ?\n\nAttention!! Wait while converting !!!") % self.name)
         elif answer:
+        
             self.type = 'tv'
             if "radio" in self.name.lower():
                 self.type = "radio"
@@ -675,31 +676,15 @@ class HasBahCa1(Screen):
             cleanName = re.sub(r'\d+:\d+:[\d.]+', '_', cleanName)
             name_file = re.sub(r'_+', '_', cleanName)
             bouquetname = 'userbouquet.hbc_%s.%s' % (name_file.lower(), self.type.lower())
-
             print("Converting Bouquet %s" % name_file)
             self.file = "/tmp/tempm3u.m3u"
             if os.path.isfile(self.file):
                 os.remove(self.file)
-            print('path tmp : ', self.file)
             urlm3u = self.url.strip()
             if PY3:
                 urlm3u.encode()
-            print('urlmm33uu ', urlm3u)
-            print('in tmp', self.file)
             downloadFilest(urlm3u, self.file)
             sleep(5)
-            '''
-            # with open(file, 'wb') as f:
-                # content = Utils.getUrl(self.url)
-                # if six.PY3:
-                    # content = six.ensure_str(content)
-                # print('Resp 1: ', content)
-                # f.write(content)
-                # os.system('sleep 3')
-                # f.close()
-            # # self.download_m3u()
-            # print('Error download : ', str(e))
-            '''
             path1 = '/etc/enigma2/' + str(bouquetname)
             path2 = '/etc/enigma2/bouquets.' + str(self.type.lower())
 
@@ -712,22 +697,10 @@ class HasBahCa1(Screen):
                 tmplist.append('#DESCRIPTION --- %s ---' % name_file)
 
                 for line in open(self.file):
-                    # if line.startswith('#EXTM3U'):
-                        # continue
-                    # if '#EXTM3U $BorpasFileFormat="1"' in line:  # force export bouquet ???
-                        # line = line.replace('$BorpasFileFormat="1"', '')
-                        # continue
-                    # if line == ' ':
-                        # continue
                     if line.startswith("#EXTINF"):
                         self.namel = '%s' % line.split(',')[-1]
                         descriptiona = '#DESCRIPTION %s' % self.namel
                         self.tmpx = descriptiona.rstrip('\r').rstrip('\n')
-
-                        # line = '%s' % line.split(',')[-1]
-                        # line = Utils.checkStr(line).rstrip('\r').rstrip('\n')
-                        # self.namel = '%s' % line.split(',')[-1]
-                        # self.tmpx = '#DESCRIPTION %s' % self.namel
 
                     elif line.startswith('http'):
 
@@ -761,9 +734,16 @@ class HasBahCa1(Screen):
                         bouquetTvString = '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "' + str(bouquetname) + '" ORDER BY bouquet\n'
                         f.write(str(bouquetTvString))
                     self.mbox = self.session.open(MessageBox, _('Shuffle Favorite List in Progress') + '\n' + _('Wait please ...'), MessageBox.TYPE_INFO, timeout=5)
-                from enigma import eDVBDB
-                eDVBDB.getInstance().reloadServicelist()
-                eDVBDB.getInstance().reloadBouquets()
+                try:
+                    from enigma import eDVBDB
+                    dbr = eDVBDB.getInstance()
+                    dbr.reloadBouquets()
+                    dbr.reloadServicelist()
+                    print('all bouquets reloaded...')
+                except:
+                    eDVBDB = None
+                    os.system('wget -qO - http://127.0.0.1/web/servicelistreload?mode=2 > /dev/null 2>&1 &')
+                    print('bouquets reloaded...')
                 message = (_("Bouquet exported"))
                 Utils.web_info(message)
             else:
@@ -994,7 +974,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         self.onClose.append(self.cancel)
 
     def getAspect(self):
-        return eAVSwitch().getAspectRatioSetting()
+        return AVSwitch().getAspectRatioSetting()
 
     def getAspectString(self, aspectnum):
         return {
@@ -1019,7 +999,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
                 }
         config.av.aspectratio.setValue(map[aspect])
         try:
-            eAVSwitch().setAspectRatio(aspect)
+            AVSwitch().setAspectRatio(aspect)
         except:
             pass
 
