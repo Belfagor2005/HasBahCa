@@ -15,10 +15,12 @@ from .__init__ import _
 from . import Utils
 from . import html_conv
 from . import cvbq
+import codecs
+from Components.AVSwitch import AVSwitch
 try:
-    from Components.AVSwitch import eAVSwitch as AVSwitch
-except Exception:
-    from Components.AVSwitch import iAVSwitch as AVSwitch
+    from Components.AVSwitch import iAVSwitch
+except:
+    from enigma import eAVSwitch
 from Components.ActionMap import ActionMap
 from Components.Button import Button
 from Components.config import config, ConfigDirectory
@@ -250,7 +252,7 @@ class MainHasBahCa(Screen):
         Screen.__init__(self, session)
         self.session = session
         skin = os.path.join(path_skin, 'settings.xml')
-        with open(skin, 'r') as f:
+        with codecs.open(skin, "r", encoding="utf-8") as f:
             self.skin = f.read()
         self.setup_title = ('Main HasBahCa')
         self.setTitle('HasBahCa')
@@ -434,7 +436,7 @@ class HasBahCaC(Screen):
         Screen.__init__(self, session)
         self.session = session
         skin = os.path.join(path_skin, 'settings.xml')
-        with open(skin, 'r') as f:
+        with codecs.open(skin, "r", encoding="utf-8") as f:
             self.skin = f.read()
         self.setup_title = ('HasBahCa TV')
         self.list = []
@@ -533,7 +535,7 @@ class HasBahCa1(Screen):
         self.session = session
         Screen.__init__(self, session)
         skin = os.path.join(path_skin, 'settings.xml')
-        with open(skin, 'r') as f:
+        with codecs.open(skin, "r", encoding="utf-8") as f:
             self.skin = f.read()
         self.setup_title = ('HasBahCa TV')
         self.list = []
@@ -974,34 +976,34 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         self.onClose.append(self.cancel)
 
     def getAspect(self):
-        return AVSwitch().getAspectRatioSetting()
+        try:
+            aspect = iAVSwitch.getAspectRatioSetting()
+        except:
+            aspect = eAVSwitch.getAspectRatioSetting()
+        return aspect
 
     def getAspectString(self, aspectnum):
-        return {
-                0: '4:3 Letterbox',
+        return {0: '4:3 Letterbox',
                 1: '4:3 PanScan',
                 2: '16:9',
                 3: '16:9 always',
                 4: '16:10 Letterbox',
                 5: '16:10 PanScan',
-                6: '16:9 Letterbox'
-                }[aspectnum]
+                6: '16:9 Letterbox'}[aspectnum]
 
     def setAspect(self, aspect):
-        map = {
-               0: '4_3_letterbox',
+        map = {0: '4_3_letterbox',
                1: '4_3_panscan',
                2: '16_9',
                3: '16_9_always',
                4: '16_10_letterbox',
                5: '16_10_panscan',
-               6: '16_9_letterbox'
-                }
+               6: '16_9_letterbox'}
         config.av.aspectratio.setValue(map[aspect])
         try:
-            AVSwitch().setAspectRatio(aspect)
+            iAVSwitch.setAspectRatio(aspect)
         except:
-            pass
+            eAVSwitch.setAspectRatio(aspect)
 
     def av(self):
         temp = int(self.getAspect())
@@ -1021,7 +1023,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         ref = "{0}:{1}".format(url.replace(":", "%3a"), name.replace(":", "%3a"))
         print('final reference:   ', ref)
         sref = eServiceReference(ref)
-        sref.setName(name)
+        sref.setName(str(name))
         self.session.nav.stopService()
         self.session.nav.playService(sref)
 
@@ -1036,7 +1038,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
 
         print('final reference:   ', ref)
         sref = eServiceReference(ref)
-        sref.setName(name)
+        sref.setName(str(name))
         self.session.nav.stopService()
         self.session.nav.playService(sref)
 
