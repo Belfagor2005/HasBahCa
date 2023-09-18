@@ -14,7 +14,7 @@ from __future__ import print_function
 from .__init__ import _
 from . import Utils
 from . import html_conv
-from . import cvbq
+# from . import cvbq
 import codecs
 from Components.AVSwitch import AVSwitch
 try:
@@ -23,7 +23,7 @@ except:
     from enigma import eAVSwitch
 from Components.ActionMap import ActionMap
 from Components.Button import Button
-from Components.config import config, ConfigDirectory
+from Components.config import config
 from Tools.Downloader import downloadWithProgress
 from Components.Label import Label
 from Components.MenuList import MenuList
@@ -31,7 +31,7 @@ from Components.MultiContent import MultiContentEntryText
 from Components.MultiContent import MultiContentEntryPixmapAlphaTest
 from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
 from Components.Sources.StaticText import StaticText
-from Screens.InfoBar import MoviePlayer
+# from Screens.InfoBar import MoviePlayer
 from Components.ProgressBar import ProgressBar
 from Components.Sources.Progress import Progress
 from Screens.InfoBarGenerics import InfoBarSubtitleSupport
@@ -152,7 +152,7 @@ class hasList(MenuList):
         if screenwidth.width() == 2560:
             self.l.setItemHeight(60)
             textfont = int(42)
-            self.l.setFont(0, gFont('Regular', textfont))        
+            self.l.setFont(0, gFont('Regular', textfont))
         elif screenwidth.width() == 1920:
             self.l.setItemHeight(50)
             textfont = int(30)
@@ -300,9 +300,9 @@ class MainHasBahCa(Screen):
         global tyurl
         self.names = []
         self.urls = []
-        try:        
+        try:
             idx = 0
-            AA = ['.m3u']
+            # AA = ['.m3u']
             for root, dirs, files in os.walk(path_playlist):
                 for name in files:
                     if '.m3u' not in name:
@@ -312,12 +312,12 @@ class MainHasBahCa(Screen):
                             # continue
                         # if '.py' in name:
                             # continue
-                        
+
                     print('name ', name)
                     namex = name.replace('.m3u', '').capitalize()
                     self.names.append(namex)
                     self.urls.append(root + '/' + name)
-                    idx += 1 
+                    idx += 1
         # urls = tyurl
         # if tyurl is True:
             # urls = tyurl2
@@ -351,7 +351,6 @@ class MainHasBahCa(Screen):
                     # tyurl = True
                     # self.updateMenuList()
 
-            
             self['info'].setText(_('Please now select ...'))
             self["live"].setText('N.' + str(idx) + " CATEGORY")
             self['key_green'].show()
@@ -626,7 +625,7 @@ class HasBahCa1(Screen):
         self.urls = []
         try:
             if plugin_path in url:
-                f1=open(url,"r")
+                f1 = open(url, "r")
                 content = f1.read()
                 f1.close()
             else:
@@ -667,11 +666,9 @@ class HasBahCa1(Screen):
         if answer is None:
             self.session.openWithCallback(self.messagerun, MessageBox, _("Do you want to Convert %s\nto Favorite Bouquet ?\n\nAttention!! Wait while converting !!!") % self.name)
         elif answer:
-        
             self.type = 'tv'
             if "radio" in self.name.lower():
                 self.type = "radio"
-
             name_file = self.name.replace('/', '_').replace(',', '').replace('hasbahca', 'hbc')
             cleanName = re.sub(r'[\<\>\:\"\/\\\|\?\*]', '_', str(name_file))
             cleanName = re.sub(r' ', '_', cleanName)
@@ -735,7 +732,7 @@ class HasBahCa1(Screen):
                     with open(path2, 'a+') as f:
                         bouquetTvString = '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "' + str(bouquetname) + '" ORDER BY bouquet\n'
                         f.write(str(bouquetTvString))
-                    self.mbox = self.session.open(MessageBox, _('Shuffle Favorite List in Progress') + '\n' + _('Wait please ...'), MessageBox.TYPE_INFO, timeout=5)
+                    self.session.open(MessageBox, _('Shuffle Favorite List in Progress') + '\n' + _('Wait please ...'), MessageBox.TYPE_INFO, timeout=5)
                 try:
                     from enigma import eDVBDB
                     dbr = eDVBDB.getInstance()
@@ -749,7 +746,7 @@ class HasBahCa1(Screen):
                 message = (_("Bouquet exported"))
                 Utils.web_info(message)
             else:
-                self.mbox = self.session.open(MessageBox, _('Download Error'), MessageBox.TYPE_INFO, timeout=5)
+                self.session.open(MessageBox, _('Download Error'), MessageBox.TYPE_INFO, timeout=5)
 
     '''add for future'''
     def download_m3u(self):
@@ -807,7 +804,7 @@ class HasBahCa1(Screen):
                         tvfile.write(line)
                 bakfile.close()
                 tvfile.close()
-                self.mbox = self.session.open(MessageBox, _('HasBahCa Favorites List have been removed'), MessageBox.TYPE_INFO, timeout=5)
+                self.session.open(MessageBox, _('HasBahCa Favorites List have been removed'), MessageBox.TYPE_INFO, timeout=5)
                 Utils.ReloadBouquets()
             except Exception as ex:
                 print(str(ex))
