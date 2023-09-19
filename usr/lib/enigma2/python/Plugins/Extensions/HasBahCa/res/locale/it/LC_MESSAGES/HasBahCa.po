@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: HasBahCa\n"
-"POT-Creation-Date: 2022-05-09 20:11+0200\n"
+"POT-Creation-Date: 2023-09-19 14:15+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -14,43 +14,57 @@ msgstr ""
 "X-Poedit-SearchPath-0: plugin.py\n"
 "X-Poedit-SearchPath-1: main.py\n"
 
-#: main.py:284
+#: main.py:261
 msgid "Give me a few seconds ... loading the data"
 msgstr "Dammi qualche secondo... caricamento dei dati"
 
-#: main.py:285
+#: main.py:262
 msgid "Exit"
 msgstr "Uscire"
 
-#: main.py:286 main.py:444 main.py:550
+#: main.py:263 main.py:448 main.py:548
 msgid "Select"
 msgstr "Seleziona"
 
-#: main.py:288
+#: main.py:265
 msgid "Remove"
 msgstr "Rimuovere"
 
-#: main.py:362 main.py:518 main.py:604
+#: main.py:354 main.py:515 main.py:643
 msgid "Please now select ..."
 msgstr "Per favore ora seleziona..."
 
-#: main.py:394 main.py:777
+#: main.py:367
+msgid ""
+"These streams may contain Adult content\n"
+"\n"
+"are you sure you want to continue?"
+msgstr ""
+"Questi flussi possono contenere contenuti per adulti\n"
+"\n"
+"sei sicuro di voler continuare?"
+
+#: main.py:397 main.py:778
 msgid "Remove all HasBahCa Favorite Bouquet ?"
 msgstr "Rimuovere tutto il bouquet preferito di HasBahCa?"
 
-#: main.py:423 main.py:806
+#: main.py:426 main.py:807
 msgid "HasBahCa Favorites List have been removed"
 msgstr "L'elenco dei preferiti di HasBahCa è stato rimosso"
 
-#: main.py:442 main.py:548
+#: main.py:446 main.py:546
 msgid "Loading data... Please wait"
 msgstr "Caricamento dati in corso... Attendere"
 
-#: main.py:443 main.py:549
+#: main.py:447 main.py:547
 msgid "Back"
 msgstr "Indietro"
 
-#: main.py:628
+#: main.py:588
+msgid "Filter this category..."
+msgstr ""
+
+#: main.py:667
 #, python-format
 msgid ""
 "Do you want to Convert %s\n"
@@ -63,19 +77,23 @@ msgstr ""
 "\n"
 "Attenzione!! Aspetta durante la conversione !!!"
 
-#: main.py:745
+#: main.py:735
 msgid "Shuffle Favorite List in Progress"
 msgstr "Ricarico l'elenco dei preferiti in corso"
 
-#: main.py:745
+#: main.py:735
 msgid "Wait please ..."
 msgstr "Attendere prego..."
 
-#: main.py:748
+#: main.py:746
+msgid "Bouquet exported"
+msgstr "Bouqet esportato"
+
+#: main.py:749
 msgid "Download Error"
 msgstr ""
 
-#: main.py:757 main.py:773
+#: main.py:758 main.py:774
 msgid "Download Failed!!!"
 msgstr ""
 

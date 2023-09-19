@@ -423,7 +423,7 @@ class MainHasBahCa(Screen):
                         tvfile.write(line)
                 bakfile.close()
                 tvfile.close()
-                self.mbox = self.session.open(MessageBox, _('HasBahCa Favorites List have been removed'), MessageBox.TYPE_INFO, timeout=5)
+                self.session.open(MessageBox, _('HasBahCa Favorites List have been removed'), MessageBox.TYPE_INFO, timeout=5)
                 Utils.ReloadBouquets()
             except Exception as ex:
                 print(str(ex))
@@ -664,7 +664,7 @@ class HasBahCa1(Screen):
         if i < 0:
             return
         if answer is None:
-            self.session.openWithCallback(self.messagerun, MessageBox, _("Do you want to Convert %s\nto Favorite Bouquet ?\n\nAttention!! Wait while converting !!!") % self.name)
+            self.session.openWithCallback(self.convert, MessageBox, _("Do you want to Convert %s\nto Favorite Bouquet ?\n\nAttention!! Wait while converting !!!") % self.name)
         elif answer:
             self.type = 'tv'
             if "radio" in self.name.lower():
@@ -676,13 +676,16 @@ class HasBahCa1(Screen):
             name_file = re.sub(r'_+', '_', cleanName)
             bouquetname = 'userbouquet.hbc_%s.%s' % (name_file.lower(), self.type.lower())
             print("Converting Bouquet %s" % name_file)
-            self.file = "/tmp/tempm3u.m3u"
-            if os.path.isfile(self.file):
-                os.remove(self.file)
-            urlm3u = self.url.strip()
-            if PY3:
-                urlm3u.encode()
-            downloadFilest(urlm3u, self.file)
+            if plugin_path in url:
+                self.file = self.url
+            else:
+                self.file = "/tmp/tempm3u.m3u"
+                if os.path.isfile(self.file):
+                    os.remove(self.file)
+                urlm3u = self.url.strip()
+                if PY3:
+                    urlm3u.encode()
+                downloadFilest(urlm3u, self.file)
             sleep(5)
             path1 = '/etc/enigma2/' + str(bouquetname)
             path2 = '/etc/enigma2/bouquets.' + str(self.type.lower())
@@ -974,9 +977,9 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
 
     def getAspect(self):
         try:
-            aspect = iAVSwitch.getAspectRatioSetting()
+            aspect = iAVSwitch().getAspectRatioSetting()
         except:
-            aspect = eAVSwitch.getAspectRatioSetting()
+            aspect = eAVSwitch().getAspectRatioSetting()
         return aspect
 
     def getAspectString(self, aspectnum):
