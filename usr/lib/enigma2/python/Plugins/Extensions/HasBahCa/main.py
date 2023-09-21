@@ -667,8 +667,8 @@ class HasBahCa1(Screen):
             self.session.openWithCallback(self.convert, MessageBox, _("Do you want to Convert %s\nto Favorite Bouquet ?\n\nAttention!! Wait while converting !!!") % self.name)
         elif answer:
             self.type = 'tv'
-            if "radio" in self.name.lower():
-                self.type = "radio"
+            # if "radio" in self.name.lower():
+                # self.type = "radio"
             name_file = self.name.replace('/', '_').replace(',', '').replace('hasbahca', 'hbc')
             cleanName = re.sub(r'[\<\>\:\"\/\\\|\?\*]', '_', str(name_file))
             cleanName = re.sub(r' ', '_', cleanName)
@@ -676,7 +676,7 @@ class HasBahCa1(Screen):
             name_file = re.sub(r'_+', '_', cleanName)
             bouquetname = 'userbouquet.hbc_%s.%s' % (name_file.lower(), self.type.lower())
             print("Converting Bouquet %s" % name_file)
-            if plugin_path in url:
+            if plugin_path in self.url:
                 self.file = self.url
             else:
                 self.file = "/tmp/tempm3u.m3u"
@@ -689,67 +689,44 @@ class HasBahCa1(Screen):
             sleep(5)
             path1 = '/etc/enigma2/' + str(bouquetname)
             path2 = '/etc/enigma2/bouquets.' + str(self.type.lower())
-
+            service = '4097'
+            ch = 0
+            # try:
             if os.path.isfile(self.file) and os.stat(self.file).st_size > 0:
-                self.tmpx = ''
-                self.namel = ''
-                tmplist = []
-                tmplist.append('#NAME HasBahCa IPTV %s (%s)' % (name_file, self.type))
-                tmplist.append('#SERVICE 1:64:0:0:0:0:0:0:0:0::%s CHANNELS' % name_file)
-                tmplist.append('#DESCRIPTION --- %s ---' % name_file)
-
-                for line in open(self.file):
-                    if line.startswith("#EXTINF"):
-                        self.namel = '%s' % line.split(',')[-1]
-                        descriptiona = '#DESCRIPTION %s' % self.namel
-                        self.tmpx = descriptiona.rstrip('\r').rstrip('\n')
-
-                    elif line.startswith('http'):
-
-                        if type.upper() == 'TV':
-                            servicea = ('#SERVICE 4097:0:1:0:0:0:0:0:0:0:%s' % line.replace(':', '%3a')).rstrip('\r').rstrip('\n')
-                            self.line = servicea + ':' + self.namel
-
-                        elif type.upper() == 'RADIO':
-                            servicea = ('#SERVICE 4097:0:2:0:0:0:0:0:0:0:%s' % line.replace(':', '%3a')).rstrip('\r').rstrip('\n')
-                            self.line = servicea + ':' + self.namel
-
-                    if line not in tmplist:
-                        tmplist.append(self.line)
-                        tmplist.append(self.tmpx)
-
-                # create userbouquet
-                with open(path1, 'w+') as f:
-                    for item in tmplist:
-                        f.write("%s\n" % item)
-                # write bouquet.tv file
+                print('ChannelList is_tmp exist in playlist')
+                desk_tmp = ''
                 in_bouquets = 0
-                for line in open('/etc/enigma2/bouquets.%s' % self.type.lower()):
-                    if bouquetname in line:
-                        in_bouquets = 1
-                        # break
-                if in_bouquets == 0:
-                    '''
-                    Rename unlinked bouquet file /etc/enigma2/userbouquet.webcam.tv to /etc/enigma2/userbouquet.webcam.tv.del
-                    '''
-                    with open(path2, 'a+') as f:
-                        bouquetTvString = '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "' + str(bouquetname) + '" ORDER BY bouquet\n'
-                        f.write(str(bouquetTvString))
-                    self.session.open(MessageBox, _('Shuffle Favorite List in Progress') + '\n' + _('Wait please ...'), MessageBox.TYPE_INFO, timeout=5)
-                try:
-                    from enigma import eDVBDB
-                    dbr = eDVBDB.getInstance()
-                    dbr.reloadBouquets()
-                    dbr.reloadServicelist()
-                    print('all bouquets reloaded...')
-                except:
-                    eDVBDB = None
-                    os.system('wget -qO - http://127.0.0.1/web/servicelistreload?mode=2 > /dev/null 2>&1 &')
-                    print('bouquets reloaded...')
-                message = (_("Bouquet exported"))
-                Utils.web_info(message)
-            else:
-                self.session.open(MessageBox, _('Download Error'), MessageBox.TYPE_INFO, timeout=5)
+                with open('%s' % path1, 'w+') as outfile:
+                    outfile.write('#NAME %s\r\n' % name_file.capitalize())
+                    for line in open(self.file):
+                        if line.startswith('http://') or line.startswith('https'):
+                            outfile.write('#SERVICE %s:0:1:1:0:0:0:0:0:0:%s' % (service, line.replace(':', '%3a')))
+                            outfile.write('#DESCRIPTION %s' % desk_tmp)
+                        elif line.startswith('#EXTINF'):
+                            desk_tmp = '%s' % line.split(',')[-1]
+                        elif '<stream_url><![CDATA' in line:
+                            outfile.write('#SERVICE %s:0:1:1:0:0:0:0:0:0:%s\r\n' % (service, line.split('[')[-1].split(']')[0].replace(':', '%3a')))
+                            outfile.write('#DESCRIPTION %s\r\n' % desk_tmp)
+                        elif '<title>' in line:
+                            if '<![CDATA[' in line:
+                                desk_tmp = '%s\r\n' % line.split('[')[-1].split(']')[0]
+                            else:
+                                desk_tmp = '%s\r\n' % line.split('<')[1].split('>')[1]
+                        ch += 1
+                    outfile.close()
+                if os.path.isfile(path2):
+                    for line in open(path2):
+                        if bouquetname in line:
+                            in_bouquets = 1
+                    if in_bouquets == 0:
+                        if os.path.isfile('%s/%s' % (enigma_path, bouquetname)) and os.path.isfile('/etc/enigma2/bouquets.tv'):
+                            Utils.remove_line(path2, bouquetname)
+                            with open(path2, 'a+') as outfile:
+                                outfile.write('#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "%s" ORDER BY bouquet\r\n' % bouquetname)
+                                outfile.close()
+                                in_bouquets = 1
+                    Utils.ReloadBouquets()
+                self.session.open(MessageBox, (_('Shuffle Favorite %s List in Progress') % ch) + '\n' + _('Wait please ...'), MessageBox.TYPE_INFO, timeout=5)
 
     '''add for future'''
     def download_m3u(self):
@@ -976,11 +953,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         self.onClose.append(self.cancel)
 
     def getAspect(self):
-        try:
-            aspect = iAVSwitch().getAspectRatioSetting()
-        except:
-            aspect = eAVSwitch().getAspectRatioSetting()
-        return aspect
+        return AVSwitch().getAspectRatioSetting()
 
     def getAspectString(self, aspectnum):
         return {0: '4:3 Letterbox',
@@ -1001,9 +974,9 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
                6: '16_9_letterbox'}
         config.av.aspectratio.setValue(map[aspect])
         try:
-            iAVSwitch.setAspectRatio(aspect)
+            AVSwitch().setAspectRatio(aspect)
         except:
-            eAVSwitch.setAspectRatio(aspect)
+            pass
 
     def av(self):
         temp = int(self.getAspect())
