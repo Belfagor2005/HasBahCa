@@ -17,7 +17,7 @@ from . import main
 from . import Utils
 import os
 
-currversion = '1.5'
+currversion = '1.6'
 title_plug = 'HasBahCa '
 desc_plugin = ('..:: HasBahCa by Lululla %s ::.. ' % currversion)
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
