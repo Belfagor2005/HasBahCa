@@ -132,9 +132,10 @@ if sslverify:
             return ctx
 
 # server
+# https://eviptv.com/m3u8/
 hostcategoryes = 'https://github.com/HasBahCa/IPTV-LIST/'
 github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
-tyurl = 'http://eviptv.com/m3u/'
+tyurl1 = 'http://eviptv.com/m3u/'
 tyurl2 = 'https://hasbahca.net/hasbahca_m3u/'
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
 enigma_path = '/etc/enigma2'
@@ -205,13 +206,13 @@ def hasbaSetListEntry(name):
         png = os.path.join(plugin_path, 'res/pics/tv.png')
 
     if screenwidth.width() == 2560:
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 10), size=(50, 50), png=loadPNG(png)))
-        res.append(MultiContentEntryText(pos=(90, 0), size=(1200, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 5), size=(50, 50), png=loadPNG(png)))
+        res.append(MultiContentEntryText(pos=(90, 0), size=(1200, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     elif screenwidth.width() == 1920:
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 10), size=(40, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 5), size=(40, 40), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(70, 0), size=(1000, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     else:
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(3, 10), size=(40, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(3, 5), size=(40, 40), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(50, 0), size=(500, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     return res
 
@@ -305,57 +306,55 @@ class MainHasBahCa(Screen):
         global tyurl
         self.names = []
         self.urls = []
+        idx = 0
         try:
-            idx = 0
-            # AA = ['.m3u']
-            for root, dirs, files in os.walk(path_playlist):
-                for name in files:
-                    if '.m3u' not in name:
-                        continue
-                    # for x in AA:
-                        # if x not in name:
-                            # continue
-                        # if '.py' in name:
-                            # continue
-
-                    print('name ', name)
-                    namex = name.replace('.m3u', '').capitalize()
-                    self.names.append(namex)
-                    self.urls.append(root + '/' + name)
-                    idx += 1
-        # urls = tyurl
-        # if tyurl is True:
-            # urls = tyurl2
-
-        # print('urls  ', urls)
-
-            # content = Utils.getUrl(urls)
-            # if six.PY3:
-                # content = six.ensure_str(content)
-            # n1 = content.find('Directory</a>', 0)
-            # n2 = content.find('</body', n1)
-            # content2 = content[n1:n2]
-            # content3 = content2.replace('..&gt;', '')
-            # # print('content ', content3)
-            # regexvideo = 'href="(.*?).m3u">HasBahCa_(.*?)</a.*?align="right">(.*?)</td>.*?</tr>'
-            # match = re.compile(regexvideo, re.DOTALL).findall(content3)
-            # # idx = 0
-            # for url, name, date in match:
-                # name = name.replace('..', '').replace('HasBahCa_', '')
-                # name = name.replace('&gt;', '').replace('_', ' ').replace('.m3u', '')
-                # name = '{}{}{}'.format(name, ' ', date)
-                # url = '{}{}'.format(urls, url + '.m3u')
-                # self.urls.append(url.strip())
-                # self.names.append(Utils.checkStr(name.strip()))
-                # idx += 1
-            # print(len(self.names))
+            urlx = 'https://eviptv.com/m3u8/'
+            # if tyurl is True:
+                # urls = tyurl  # tyurl2
+            print('urlx  ', urlx)
+            content = Utils.make_request(urlx)
+            if six.PY3:
+                content = six.ensure_str(content)
+            n1 = content.find('Directory</a>', 0)
+            n2 = content.find('</body', n1)
+            content2 = content[n1:n2]
+            content3 = content2.replace('..&gt;', '')
+            regexvideo = 'href="(.*?).m3u">HasBahCa_(.*?)</a.*?align="right">(.*?)</td>.*?</tr>'
+            match = re.compile(regexvideo, re.DOTALL).findall(content3)
+            for url, name, date in match:
+                name = name.replace('..', '').replace('HasBahCa_', '')
+                name = name.replace('&gt;', '').replace('_', ' ').replace('.m3u', '')
+                name = '{}{}{}'.format(name, ' ', date)
+                url = '{}{}'.format(urlx, url + '.m3u')
+                print(name)
+                print(url)
+                self.urls.append(url.strip())
+                self.names.append(Utils.checkStr(name.strip()))
+                idx += 1
+            print(len(self.names))
             # if len(self.names) < 0:
                 # if tyurl is True:
                     # tyurl = False
                 # else:
                     # tyurl = True
                     # self.updateMenuList()
+        except Exception as e:
+            print('error HasBahCa1', str(e))
 
+        try:
+            for root, dirs, files in os.walk(path_playlist):
+                for name in files:
+                    if '.m3u' not in name:
+                        continue
+                    print('name ', name)
+                    namex = name.replace('.m3u', '').capitalize()
+                    self.names.append(namex)
+                    self.urls.append(root + '/' + name)
+                    idx += 1
+        except Exception as e:
+            print('error HasBahCa1', str(e))
+
+        try:
             self['info'].setText(_('Please now select ...'))
             self["live"].setText('N.' + str(idx) + " CATEGORY")
             self['key_green'].show()
@@ -487,7 +486,7 @@ class HasBahCaC(Screen):
         url = self.url
         # items = []
         try:
-            content = Utils.getUrl(url)
+            content = Utils.make_request(url)
             if six.PY3:
                 content = six.ensure_str(content)
             print("HasBahCa t content =", content)
@@ -601,7 +600,7 @@ class HasBahCa1(Screen):
             self.pics = []
             search = result
             try:
-                content = Utils.getUrl(self.url)
+                content = Utils.make_request(self.url)
                 if six.PY3:
                     content = six.ensure_str(content)
                 content = content.replace('$BorpasFileFormat="1"', '')
@@ -634,7 +633,7 @@ class HasBahCa1(Screen):
                 content = f1.read()
                 f1.close()
             else:
-                content = Utils.getUrl(url)
+                content = Utils.make_request(url)
                 if six.PY3:
                     content = six.ensure_str(content)
             content = content.replace('$BorpasFileFormat="1"', '')
