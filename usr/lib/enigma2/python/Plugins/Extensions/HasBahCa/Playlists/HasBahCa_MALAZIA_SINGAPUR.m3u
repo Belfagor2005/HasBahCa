@@ -1,0 +1,102 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/429_144.png",122 TVS
+https://stream.smg.my/live/tvs.m3u8
+#EXTINF:-1,Addis TV (720p)
+https://rrsatrtmp.tulix.tv/addis1/addis1multi.smil/playlist.m3u8
+#EXTINF:-1,Afrobeats (AFR)
+https://stream.ecable.tv/afrobeats/tracks-v1a1/index.m3u8
+#EXTINF:-1,After School Cartoons
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/56171fafada51f8004c4b40f/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+#EXTINF:-1,ALManarTV
+https://manar.live/iptv/index.m3u8
+#EXTINF:-1 tvg-logo="https://hometv.pw/logo/kids/aniplus.png",ANIPLUS
+https://code.vthanhtivi.pw/getlink/eazie/241430/playlist.m3u8
+#EXTINF:-1,ASTRO AWANI
+https://d2idp3hzkhjpih.cloudfront.net/out/v1/4b85d9c2bf97413eb0c9fd875599b837/index.m3u8
+#EXTINF:-1 tvg-logo="https://berita.rtm.gov.my/images/logobes.jpg",Berita RTM
+https://d25tgymtnqzu8s.cloudfront.net/smil:berita/manifest.mpd
+#EXTINF:-1,BERITA SATU WORLD
+https://b1world.beritasatumedia.com/Beritasatu/B1World_1280x720.m3u8
+#EXTINF:-1,BeritaSatu
+http://b1news.beritasatumedia.com/Beritasatu/B1News_1280x720.m3u8
+#EXTINF:-1,British Muslim
+http://api.visionip.tv/live/ASHTTP/visiontvuk-international-britishmuslimtv-hsslive-25f-16x9-MB/playlist.m3u8
+#EXTINF:-1,Channel News Asia
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_3.m3u8
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net/portal/picon/2023-05/42d29b03357fec1753cf970323f02e04.png",Cinemax (Sg)
+https://tglmp04.akamaized.net/out/v1/0f439c1d8a1a47fca9ae1fa92144306e/manifest.mpd
+#EXTINF:-1 tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/337_144.png",CINEMAX (Thi)
+https://ais-s.ais-vidnt.com/ais/play/origin/live/eds/V0118/DASH/V0118.mpd
+#EXTINF:-1 tvg-logo="https://images.indihometv.com/logo_cdrama_ver1.png",CITRA DRAMA (Indi)
+https://cdn08jtedge.indihometv.com/dassdvr/130/cdrama/manifest.mpd
+#EXTINF:-1,Discovery Kid (L*)
+https://raw.githubusercontent.com/mimipipi22/lalajo/main/discoverykids.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/8CyTM6g2/download-2024-01-19-T210600-559.png",Drama Hebat Malaysia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36
+https://ce2388031147403ca25a81e56607a193.mediatailor.ap-southeast-1.amazonaws.com/v1/dash/7d6144f66f990e10fc667942d522b82f89ae5cd9/FAST_1_Ad/dash.mpd?aws.sessionId=44e175e1-eb16-4e7c-8aaa-e04e865974e9
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/Sooka_Drama_Hotpot.png",Drama Hotpot Malaysia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36
+https://770c1b3657e94bc4b76ecd3e12882bcc.mediatailor.ap-southeast-1.amazonaws.com/v1/dash/7d6144f66f990e10fc667942d522b82f89ae5cd9/FAST_4_Ad/dash.mpd?aws.sessionId=58442df2-7820-4010-9a73-56381a7afe27
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cb/Sooka_Filem_Mantap.png",Filem Mantap Malaysia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36
+https://78470390525b4b03b023113696878114.mediatailor.ap-southeast-1.amazonaws.com/v1/dash/7d6144f66f990e10fc667942d522b82f89ae5cd9/FAST_2_Ad/dash.mpd?aws.sessionId=e5afa272-3bef-427f-9c68-976c25e8d27b
+#EXTINF:-1,Global TV
+https://vcdn2.rctiplus.id/live/eds/gtv_fta/live_fta/gtv_fta-avc1_1537200=7-mp4a_64000_eng=2.m3u8
+#EXTINF:-1,GTV
+https://vcdn2.rctiplus.id/live/eds/gtv_fta/live_fta/gtv_fta-avc1_1537200=6-mp4a_64000_eng=2.m3u8
+#EXTINF:-1,Hard Knocks
+https://d397e8970cd346fdac04c0af81290c3a.mediatailor.us-west-2.amazonaws.com/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/Hard-Knocks-DistroTV/109.m3u8
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net/portal/picon/2022-01/0ccfe41056aa7d1274f1fc80abe17ea3.png",HBO (Sg)
+https://tglmp01.akamaized.net/out/v1/29687feb8f96427ca7348cd59c2338d9/manifest.mpd
+#EXTINF:-1 tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/143_144.png",HBO (Thi)
+https://ais-s.ais-vidnt.com/ais/play/origin/live/eds/V0114/DASH/V0114.mpd
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net/portal/picon/2022-01/43c918deb93b6cb276bc97bc3316d66a.png",HBO Family (Sg)
+https://tglmp03.akamaized.net/out/v1/d15476c2807d4380b0cc375a7d861752/manifest.mpd
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/HBO_Family_Asia_logo.svg/400px-HBO_Family_Asia_logo.svg.png",HBO Family (Thi)
+https://ais-s.ais-vidnt.com/ais/play/origin/live/eds/V0115/DASH/V0115.mpd
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net/portal/picon/2022-01/00e312e6e408859a759d2cb679bf2f28.png",HBO Hits (Sg)
+https://tglmp02.akamaized.net/out/v1/0fdcb3b643af40ceb3a5b7efa39f7b72/manifest.mpd
+#EXTINF:-1 tvg-logo="https://dl.dropboxusercontent.com/s/9lmchrvt6dfd21s/hbohits.png",HBO Hits (Thi)
+https://ais-s.ais-vidnt.com/ais/play/origin/live/eds/V0116/DASH/V0116.mpd
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net/portal/picon/2023-05/b918a4f6087d1550bed78481f3fd878e.png",HBO Signature (Sg)
+https://tglmp02.akamaized.net/out/v1/b37a81eb3585471cb9c639c78edcdefa/manifest.mpd
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/af/HBO_Signature_Asia.png",HBO Signature (Thi)
+https://ais-s.ais-vidnt.com/ais/play/origin/live/eds/V0117/DASH/V0117.mpd
+#EXTINF:-1,Kaif TV
+http://82.212.74.2:8000/live/hls/7311.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/QtgS6JVY/download-2024-01-19-T210328-208.png",Lawak Sentral Malaysia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36
+https://4940c5f69db24a558151436f708d5a69.mediatailor.ap-southeast-1.amazonaws.com/v1/dash/7d6144f66f990e10fc667942d522b82f89ae5cd9/FAST_3_Ad/dash.mpd?aws.sessionId=bd2627a3-77a3-4364-8072-da33bbff1c5e
+#EXTINF:-1,Little Baby Bum
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5eb301b7395671000780d100/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+#EXTINF:-1 tvg-logo="https://hometv.pw/logo/kids/mentari.png",MENTARI TV (Indi)
+https://cdn08jtedge.indihometv.com/dassdvr/134/mentaritv/manifest.mpd
+#EXTINF:-1,MNC TV
+https://vcdn2.rctiplus.id/live/eds/mnctv_fta/live_fta/mnctv_fta-avc1_1537200=7-mp4a_64000_eng=2.m3u8
+#EXTINF:-1,Motorvision TV
+http://5jcwq4ei.otttv.pw/iptv/7AA66875YWHV2R/6112/index.m3u8
+#EXTINF:-1,Nitro Circus
+https://dai2.xumo.com/amagi_hls_data_xumo1212A-redboxnitrocircus/CDN/playlist.m3u8?p=redbox&deviceid=&is_lat=&subp=RedboxdesktopWebWindows
+#EXTINF:-1,Red Bull TV (1080p)
+https://dms.redbull.tv/v3/linear-borb/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYXRlZ29yeSI6InBlcnNvbmFsX2NvbXB1dGVyIiwiY291bnRyeV9jb2RlIjoidXMiLCJleHBpcmVzIjoiMjAxNy0wOS0xNlQxNzo0NjowMy45NjM0NjI4NDJaIiwib3NfZmFtaWx5IjoiaHR0cCIsInJlbW90ZV9pcCI6IjEwLjE1Ny4xMTIuMTQ4IiwidWEiOiJNb3ppbGxhLzUuMCAoTWFjaW50b3NoOyBJbnRlbCBNYWMgT1MgWCAxMF8xMl81KSBBcHBsZVdlYktpdC82MDMuMi40IChLSFRNTCwgbGlrZSBHZWNrbykgVmVyc2lvbi8xMC4xLjEgU2FmYXJpLzYwMy4yLjQiLCJ1aWQiOiJkOGZiZWYzMC0yZDhhLTQwYTUtOGNjNy0wNzgxNGJhMTliNzMifQ.Q_38FNpW3so5yrA5FQt9qBuix3dTulKpb6uQ0dRjrtY/playlist.m3u8
+#EXTINF:-1,RTB Sukmaindera (720p)
+https://d1211whpimeups.cloudfront.net/smil:rtb1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/wBFj2rLb/download-2024-01-19-T210746-192.png",Travel&Taste Malaysia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36
+https://068877e598224108a60fb9cd5db3717f.mediatailor.ap-southeast-1.amazonaws.com/v1/dash/7d6144f66f990e10fc667942d522b82f89ae5cd9/FAST_5_Ad/dash.mpd
+#EXTINF:-1,TRT Arabi (1080p)
+https://tv-trtarabi.live.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/467_144.png",TV Okey (MyFreeview Feed)
+https://d25tgymtnqzu8s.cloudfront.net/smil:okey/manifest.mpd
+#EXTINF:-1 tvg-logo="https://i.imgur.com/wSyPmiY.png",TV1 [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
+https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/LGEdeyJ.png",TV2 [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
+https://d25tgymtnqzu8s.cloudfront.net/smil:tv2/playlist.m3u8?id=2
+#EXTINF:-1 tvg-logo="https://i.imgur.com/bHcZgIo.png",TV3 [Geo-blocked]
+https://live-streams-ssai-01.tonton.com.my/live/2dd2b7cd-1b34-4871-b669-57b5c9beca23/live.isml/.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/vHcWdsP/image.png",TV6
+https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/manifest.mpd
+#EXTINF:-1,Youtoo America (1080p)
+https://thegateway.app/YouToo/YTamerica/playlist.m3u8

@@ -1,0 +1,47 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/9/93/24_News_HD_Logo.png",24 News HD (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UCcmpeVbSSQlZRvHfdC-CRwg.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/XqQOUi7.png",92 News HD (720p)
+http://92news.vdn.dstreamone.net/92newshd/92hd/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/hRzxiJ3.png",Al Ehsaan TV (720p)
+https://cdn.bmstudiopk.com/alehsaan/live/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/vcSFetk.png",City 42 (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UCdTup4kK7Ze08KYp7ReiuMw.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/OiQPS34.png",DD Urdu (720p) [Not 24/7]
+https://ythls.armelin.one/channel/UCu9Fj9QRAg26ZY9DhF8HSrQ.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/rgHbb8W.png",Express Entertainment (1080p)
+https://5dcabf026b188.streamlock.net/expressdigital/livestream/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/2ugiEOt.png",Express News (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UCTur7oM6mLL0rM2k0znuZpQ.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/yTWdcWI.png",EYE95 America (1080p) [Not 24/7]
+https://cdn20.liveonlineservices.com/hls/eye95tv.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/VXVnXXi.png",GNN HD (720p) [Not 24/7]
+https://ythls.armelin.one/channel/UC35KuZBNIj4S5Ls0yjY-UHQ.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/QSaZPJ4.png",Grace Network (720p)
+https://livecdn.live247stream.com/grace/tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/brAY4XF.png",HK TV (720p)
+https://streamer12.vdn.dstreamone.net/hktv/hktv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/9OroocT.png",Hum News (720p)
+https://ythls.armelin.one/channel/UC0Um3pnZ2WGBEeoA3BX2sKw.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/0UYcylY.png",Imam Hussein TV 4 (1080p) [Not 24/7]
+https://live.imamhossaintv.com/live/ih4.m3u8
+#EXTINF:-1 tvg-logo="https://iqra.tv/wp-content/uploads/2019/12/IQ-logo-light-120px.png",Iqra TV (576p)
+https://cdn5.iqsat.net/iqb/b5b9977ca31beabec903ba7b34e1c198.sdp/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/KHuKQQL.png",JooMusic (720p)
+https://livecdn.live247stream.com/joomusic/tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/bYiRfAg.png",MTA1 World (720p)
+https://chlivemta1.akamaized.net/hls/live/2008145/mta1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/aVts0sz.png",MTA2 Europe (720p)
+https://chlivemta1.akamaized.net/hls/live/2008145/mta2/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/8xnwMRR.png",News18 Urdu (720p) [Not 24/7]
+https://ythls.armelin.one/channel/UC9IQhNgS43lmUdU-KdGyb0A.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/O1Bavlz.png",PTV Home (1080p)
+https://ythls.armelin.one/channel/UCMfwlaPLGMn44BKvHv15yzA.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Fpn8VU7.png",PTV News (720p) [Not 24/7]
+https://ythls.armelin.one/channel/UC5RvV_LtR1dxPCVFGw6dxXA.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/CWFI3wg.png",PTV World (720p) [Not 24/7]
+https://ythls.armelin.one/channel/UCj-e7yp2_-qE-TPritppZGQ.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/r3U4A1P.png",Samaa TV (720p) [Not 24/7]
+https://ythls.armelin.one/channel/UCJekW1Vj5fCVEGdye_mBN6Q.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/FeSntVO.jpg",Suno News HD (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UCB82Zom1MYh8VV4q7wXkfGA.m3u8

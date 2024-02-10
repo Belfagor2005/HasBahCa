@@ -1,0 +1,57 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://i.imgur.com/5UxU4zc.png",Africanews
+https://rakuten-africanews-1-pt.samsung.wurl.tv/manifest/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/5UxU4zc.png",AfricaNews Français (720p)
+https://rakuten-africanews-2-be.samsung.wurl.tv/manifest/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/7bRVpnu.png",Al Jazeera Arabic (1080p)
+https://live-hls-v3-aja.getaj.net/AJA-V3/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Gp5mNea.png",Alaraby 2 TV (1080p)
+https://alaraby.cdn.octivid.com/alaraby2n/smil:alaraby2n.stream.smil/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/YMqWEe4.png",Alaraby TV (1080p)
+https://alaraby.cdn.octivid.com/alaraby/smil:alaraby.stream.smil/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/qKLEGU7.png",Angel TV Africa (720p)
+https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelafrica_all/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/qKLEGU7.png",Angel TV Arabia (720p)
+https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelarabia_all/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ScyTG6P.png",BBC Arabic (720p)
+https://vs-cmaf-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.mpd
+#EXTINF:-1 tvg-logo="https://i.imgur.com/s1kLdBG.png",Bblack! Africa
+http://livevideo.vedge.infomaniak.com/livecast/ik:bblackafrica/manifest.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/VEb631f.png",Canal Algérie (480p)
+https://bozztv.com/inim03/live1/giniko_canalalgerie/chunks.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/F8ZM25a.png",EWTN Africa Asia (720p)
+https://cdn3.wowza.com/1/ZVBYYXFLLzE0c3NC/Qk1FMURC/hls/live/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/hW4g2oe.png",GOD TV Africa (576p)
+https://webstreaming.viewmedia.tv/web_006/Stream/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Jx8GW4D/m24.png",M24 TV للأنباء
+https://63df3191463ce.streamlock.net/live/ngrp:Live2.stream_all/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/CiA3plN.png",MBC 1 (1080p)
+https://d3o3cim6uzorb4.cloudfront.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/BcXASJp.png",MBC 4 (1080p)
+https://mbc4-prod-dub-ak.akamaized.net/out/v1/c08681f81775496ab4afa2bac7ae7638/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/TTAGFHG.png",MBC Bollywood (1080p) [Geo-blocked]
+https://shls-mbcbollywood-prod-dub.shahid.net/out/v1/a79c9d7ef2a64a54a64d5c4567b3462a/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/g5PWnqp.png",MBC Drama KSA (1080p)
+https://mbc1-enc.edgenextcdn.net/out/v1/b0b3a0e6750d4408bb86d703d5feffd1/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/kuYMKgG.png",PMC Royale (720p) [Not 24/7]
+https://rohls.pmc.live/hls/stream.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/DjgNNHK.png",QwestTV
+https://amg00447-qwesttv-qwestjazz-cineverse-ve12d.amagi.tv/playlist/amg00447-qwesttv-qwestjazz-cineverse/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/EauXR22.png",REFLET TV (1080p)
+https://edge-a3.evrideo.tv/8f37c9f0-fe22-44f4-b64a-76ad11730daf_1000026630_HLS/manifest.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/6VjLFmR.png",TBN Africa (1080p)
+https://tbn-jw.cdn.vustreams.com/live/tbn-africa/live.isml/cc850928-d0d8-4336-84d0-999581129465.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/JcuV9ZE.png",Tele 7 (720p)
+https://ingest2-video.streaming-pro.com/tele7_ABR/stream/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/rfwFbLk/telemaroc.gif",TELE MAROC قناة المغرب
+https://api.new.livestream.com/accounts/27130247/events/9197096/live.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/9tsD8WP/TV2Al.png",TV2 ALGERIE
+https://bozztv.com/inim03/live1/giniko_canalalgerie/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/vBbSHB4/Tvi-africa.png",TVI África (480p) [Not 24/7]
+https://video-auth4.iol.pt/live_tvi_africa/live_tvi_africa/edge_servers/tviafrica-480p/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/5M4CwmQ/watania1.png",WATANIA 1
+https://new.cache-stream.workers.dev/stream/UCdvWVsmQBROkgcGzVep73oA/live.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/5M4CwmQ/watania1.png",WATANIA 1 (backup)
+https://ythls.armelin.one/channel/UCdvWVsmQBROkgcGzVep73oA.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/TM8sRjr/watanya-2.png",WATANIA 2
+https://new.cache-stream.workers.dev/stream/UCJW9gatYczI191TunQxMGbA/live.m3u8

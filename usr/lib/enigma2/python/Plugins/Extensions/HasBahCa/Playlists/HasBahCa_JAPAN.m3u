@@ -1,0 +1,221 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Asahi_Broadcasting_Corporation_Logo.svg/2560px-Asahi_Broadcasting_Corporation_Logo.svg.png",ABC
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx02&isp=10&bind=0&uin=159413&playseek=0
+#EXTINF:-1 tvg-logo="https://i.imgur.com/I11J99B.png",ABC (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx02
+#EXTINF:-1 tvg-logo="https://ri.zzls.xyz/bYX8NqT.png",Animax (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs15
+#EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/ytc/AGIKgqOMUS0adc02h6Py293xPnF0r8QrwOQRLKuVkVFz0Q=s176-c-k-c0x00ffffff-no-rj",ANN JapaNews24 (720p) [Not 24/7]
+https://ythls.armelin.one/channel/UCGCZAYq5Xxojl_tSXcVJhiQ.m3u8
+#EXTINF:-1,ANN News Ⓨ
+https://youtu.be/coYw-eVU0Ks
+#EXTINF:-1 tvg-logo="https://i.imgur.com/DuGepQp.jpg",Asahi Shimbun Digital (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UCMKvT0YVLufHMdGLH89J1oA.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/WxLHBwu.png",BabyFirst
+https://origin1.noisypeak.com/4XhPa5v93P3za6G0cMyV/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.ccn-catv.co.jp/service/tv/img/logo/bbcworldnews.png",BBC NEWS
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs15&isp=10&bind=0&uin=159413&playseek=0
+#EXTINF:-1 tvg-logo="https://i.imgur.com/huXFL3A.png",BS Asahi (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs03
+#EXTINF:-1 tvg-logo="https://i.imgur.com/aDdwjjc.png",BS Fuji TV (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs06
+#EXTINF:-1 tvg-logo="https://i.imgur.com/D8lhZCI.png",BS Nippon TV (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs02
+#EXTINF:-1 tvg-logo="https://i.imgur.com/h20eGKq.png",BS TBS (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs04
+#EXTINF:-1 tvg-logo="https://i.imgur.com/yJfA6ak.png",BS TV Tokyo (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs05
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/512px-Cartoon_Network_2010_logo.svg.png",Cartoon Network Japan (400p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs25
+#EXTINF:-1 tvg-logo="https://i.imgur.com/5LNZeVq.png",CGNTV Japan (1080p)
+https://cgntvliveweb-944.acs.wecandeo.com/ms/2850/944/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/zfvyspc.png",Channel Ginga (1080p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs29
+#EXTINF:-1 tvg-logo="https://i.imgur.com/fSNc0jP.png",Chukyo TV News (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UCxiRdfyH0FtFCRZTRfRsdsA.m3u8
+#EXTINF:-1 tvg-logo="https://www.lyngsat-logo.com/logo/tv/cc/cnn-j-us-jp.png",CNN Japan
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs16&isp=10&bind=0&uin=159413&playseek=0
+#EXTINF:-1 tvg-logo="https://www.lyngsat-logo.com/logo/tv/dd/discovery-channel-east-us.png",Discovery Channel
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs08
+#EXTINF:-1 tvg-logo="https://i.imgur.com/VSq7b5E.jpg",Disney Channel Japan (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs24
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Disney_Junior.svg/512px-Disney_Junior.svg.png",Disney Junior (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs23
+#EXTINF:-1 tvg-logo="https://i.imgur.com/0ALvy3B.png",Eisei Gekijo (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs22
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Azdf7m6.png",Family Gekijo (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs20
+#EXTINF:-1 tvg-logo="https://i.imgur.com/qX6nNOF.png",Fishing Vision (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs25
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Fuji_TV_Logo.svg/1049px-Fuji_TV_Logo.svg.png",Fuji TV
+https://stream01.willfonk.com/live_playlist.m3u8?cid=BS298&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/j95aeSA.png",Fuji TV NEXT (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs26
+#EXTINF:-1 tvg-logo="https://i.imgur.com/UgKRfuw.png",Gaora Sports (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs17
+#EXTINF:-1 tvg-logo="https://i.imgur.com/sD3z8j7.png",Green Channel (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs14
+#EXTINF:-1,GSTV (720p)
+https://gstv-tnz-gsmediastreaming.preview-jpea.channel.media.azure.net/dfd06b62-e9d1-4a7f-bcbb-89d2ecbc82ee/preview.ism/manifest(format=mpd-time-csf,audio-only=false)
+#EXTINF:-1 tvg-logo="https://www.lyngsat-logo.com/logo/tv/hh/history_us.png",History
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs09&isp=10&bind=0&uin=159413&playseek=0
+#EXTINF:-1 tvg-logo="https://i.imgur.com/iNkKh7w.png",Home Drama Channel (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs05
+#EXTINF:-1 tvg-logo="https://i.imgur.com/yqUItvM.png",HTB Hokkaido News 24 (720p) [Not 24/7]
+https://ythls.armelin.one/channel/UCSWOnDD1KIriGmyQ7SgNA4A.m3u8
+#EXTINF:-1,HTB Ⓨ
+https://www.youtube.com/watch?v=5iK9G85rPVc
+#EXTINF:-1 tvg-logo="https://i.imgur.com/vEpjLnj.png",J Sports 1 (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs18
+#EXTINF:-1 tvg-logo="https://i.imgur.com/g1GLVH2.png",J Sports 2 (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs19
+#EXTINF:-1 tvg-logo="https://i.imgur.com/xdI361E.png",J Sports 3 (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs21
+#EXTINF:-1 tvg-logo="https://i.imgur.com/fBcyZNL.png",J Sports 4 (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs22
+#EXTINF:-1 tvg-logo="https://i.imgur.com/lcwDgKU.png",Jidaigeki Senmon (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs04
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Ktv_logo.svg/2560px-Ktv_logo.svg.png",Kansai TV
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx03&isp=10&bind=0&uin=159413&playseek=0
+#EXTINF:-1 tvg-logo="https://i.imgur.com/WMNg5De.png",Kansai TV (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx03
+#EXTINF:-1 tvg-logo="https://i.imgur.com/7VcFGkx.png",Kayo Pops (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs13
+#EXTINF:-1 tvg-logo="https://i.imgur.com/RxHI8OZ.jpg",KBC News (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UCS8ZQejq2CL-nZcnRWZCA5Q.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/pb94kIk.png",Kids Station (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs07
+#EXTINF:-1 tvg-logo="https://i.imgur.com/APBty36.png",LaLa TV (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs19
+#EXTINF:-1 tvg-logo="https://i.imgur.com/RfrkGrd.png",MBS (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx01
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mainichi_Broadcasting_System_logo.svg/140px-Mainichi_Broadcasting_System_logo.svg.png?20110904042013",MBS News (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UCkKJhKO73xF1pK5h9R82ZGQ.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/QP0lqYn.jpg",Mētele News Live 24 (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UCWnOKASPkCBEL-_O8odMvtg.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/mmpjpu2.png",Mondo TV (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs21
+#EXTINF:-1 tvg-logo="https://i.imgur.com/3OTLJpi.png",Movie Plus (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs14
+#EXTINF:-1 tvg-logo="https://www.lyngsat-logo.com/logo/tv/mm/mtv-us.svg",MTV
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs18&isp=10&bind=0&uin=159413&playseek=0
+#EXTINF:-1 tvg-logo="https://i.imgur.com/HmCI5mk.png",Music Japan TV (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs06
+#EXTINF:-1 tvg-logo="https://www.lyngsat-logo.com/logo/tv/mm/music_japan_tv.png",Music JapanTV
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs06&isp=10&bind=0&uin=159413&playseek=0
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/National_Geographic_Channel.svg/320px-National_Geographic_Channel.svg.png",Natgeo Japan
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs10&isp=10&bind=0&uin=159413&playseek=0
+#EXTINF:-1 tvg-logo="https://i.imgur.com/t0uZcSR.png",NHK BS (720p)
+http://203.162.235.41:20099
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6d/NHKBS1%E3%83%AD%E3%82%B42020-.png",NHK BS1
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs11
+#EXTINF:-1 tvg-logo="https://i.imgur.com/uvPpFo5.png",NHK BSP4K (1080p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs01
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/aa/NHKE%E3%83%86%E3%83%AC%E3%83%AD%E3%82%B42020-.png",NHK E
+https://stream01.willfonk.com/live_playlist.m3u8?cid=BS292&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/WxtftlO.png",NHK E (Tokyo) (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd02
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6f/NHK%E7%B7%8F%E5%90%88%E3%83%AD%E3%82%B42020-.png",NHK G
+https://stream01.willfonk.com/live_playlist.m3u8?cid=BS291&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/fAZ2BEZ.png",NHK G (Osaka) (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx06
+#EXTINF:-1 tvg-logo="https://i.imgur.com/fAZ2BEZ.png",NHK G (Tokyo) (720p)
+http://203.162.235.41:14093
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6f/NHK%E7%B7%8F%E5%90%88%E3%83%AD%E3%82%B42020-.png",NHK G Osaka
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx06&isp=10&bind=0&uin=159413&playseek=0
+#EXTINF:-1 tvg-logo="https://i.imgur.com/oWKCBIz.png",NHK Kishou Saigai (360p) [Not 24/7]
+https://newssimul-stream.nhk.jp/hls/live/2010561/nhknewssimul/master.m3u8
+#EXTINF:-1,NHK World Japan
+https://nhkwlive-xjp.akamaized.net/hls/live/2003458/nhkwlive-xjp-en/index_600k.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/PzwtC9K.png",Nihon Eiga Senmon (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs23
+#EXTINF:-1 tvg-logo="https://i.imgur.com/CfvqUup.png",Nittele G Plus (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs02
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Nippon_TV_logo_2014.svg/2560px-Nippon_TV_logo_2014.svg.png",NTV
+https://stream01.willfonk.com/live_playlist.m3u8?cid=BS294&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/SwheroL.jpg",Pokémon Kids TV Japanese (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UCH0JJtRn2syic5xxavMKQ4Q.m3u8
+#EXTINF:-1,QVC Japan
+https://cdn-live1.qvc.jp/iPhone/1501/1501.m3u8
+#EXTINF:-1,QVC Ⓢ
+http://cdn-live1.qvc.jp/iPhone/800/800.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/SHmYLML.jpg",RKB NEWS 24 (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UCgrmHAblzN-QzMMgl2oNRog.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/PxFcRh9.jpg",SATV News 24H (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UCvF5vIejmf-H_XSluaBldfg.m3u8
+#EXTINF:-1,Shop Channel
+http://stream1.shopch.jp/HLS/out1/prog_index.m3u8
+#EXTINF:-1,Shop Channel (1080p) [Not 24/7]
+https://stream3.shopch.jp/HLS/master.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/h3KtKJ5.png",Sky A (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs01
+#EXTINF:-1 tvg-logo="https://i.imgur.com/PjjkT9P.png",Space Shower TV (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs26
+#EXTINF:-1 tvg-logo="https://i.imgur.com/PSVgw99.png",Star 1 (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs08
+#EXTINF:-1 tvg-logo="https://i.imgur.com/QOriZy5.png",Star 2 (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs27
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Z1x8ecY.png",Star 3 (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs28
+#EXTINF:-1 tvg-logo="https://i.imgur.com/0qtXIRM.png",Sun TV (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx07
+#EXTINF:-1 tvg-logo="https://i.imgur.com/JBePECx.png",Tabi Channel (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs12
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Al1A8t2.png",TAKARAZUKA SKY STAGE (1080p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs28
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Tokyo_Broadcasting_System_logo_2020.svg/2560px-Tokyo_Broadcasting_System_logo_2020.svg.png",TBS
+https://stream01.willfonk.com/live_playlist.m3u8?cid=BS296&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/GoNmywa.png",TBS News (720p) [Not 24/7]
+https://ythls.armelin.one/channel/UC6AG81pAkf6Lbi_1VC5NmPA.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/MRSlSvm.png",Toei Channel (1080p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs27
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Tokyo_metropolitan_television_logo_%28rainbow%29.svg/2560px-Tokyo_metropolitan_television_logo_%28rainbow%29.svg.png",TOKYO MX1
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd08&isp=10&bind=0&uin=159413&playseek=
+#EXTINF:-1 tvg-logo="https://i.imgur.com/igia8OX.png",Tokyo MX1 (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd08
+#EXTINF:-1 tvg-logo="https://i.imgur.com/SwvuR00.png",Tokyo MX2 (720p)
+https://mcas-eqms-mx2-live.hls.davlive.stream.ne.jp/mt/master/340f27cd590451b1e7d0034b85b5175ddaf05454/EQMS_MX2/master.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/JBkXyvj.jpg",TOS News (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UChx_y6aLWNkifSDUt2TVAzg.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/zjEYDK9.png",Tulip TV (Youtube) (720p) [Not 24/7]
+https://ythls.armelin.one/channel/UCk4bgav5X0rlbGefFnPcuoQ.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/TV_Asahi_Logo.svg/2560px-TV_Asahi_Logo.svg.png",TV Asahi
+https://stream01.willfonk.com/live_playlist.m3u8?cid=BS295&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/YCqB5Kj.png",TV Asahi (720p)
+http://203.162.235.41:17097
+#EXTINF:-1 tvg-logo="https://seeklogo.com/images/T/tv-osaka-logo-8BA164D52E-seeklogo.com.png",TV Osaka
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx05&isp=10&bind=0&uin=159413&playseek=0
+#EXTINF:-1 tvg-logo="https://i.imgur.com/rUmrruq.png",TV Osaka (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx05
+#EXTINF:-1 tvg-logo="https://i.imgur.com/HxBu6ce.png",TV Shizuoka (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UCFIlFvYMWkPE6uDcjdro1UA.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/TV_Tokyo_logo_20110629.svg/2560px-TV_Tokyo_logo_20110629.svg.png",TV Tokyo
+https://stream01.willfonk.com/live_playlist.m3u8?cid=BS297&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/tDyxk0Y.png",TV Tokyo (720p)
+http://203.162.235.41:19098
+#EXTINF:-1 tvg-logo="https://i.imgur.com/9yZe76d.png",TV-U Yamagata (Youtube) (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UCTWatTAOnFVB0vwIetZCTHw.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/A8uRSTS.png",Weathernews (1080p)
+https://ythls.armelin.one/channel/UCNsidkYpIAQ4QaufptQBPHQ.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Wx9fkCW.png",WOWOW Cinema (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs07
+#EXTINF:-1 tvg-logo="https://i.imgur.com/jPAYT5F.png",WOWOW Live (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs20
+#EXTINF:-1 tvg-logo="http://www.lyngsat-logo.com/logo/tv/ww/wowow_prime.png",WOWOW Prime
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs12
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ONbuWvo.png",YTV (544p)
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx04
+#EXTINF:-1 tvg-logo="https://www.lyngsat-logo.com/logo/tv/hh/home-drama-channelpng-jp.png",ホームドラマチャンネル / Home Drama Channel
+https://stream01.willfonk.com/live_playlist.m3u8?cid=CS294&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1
+#EXTINF:-1 tvg-logo="https://www.lyngsat-logo.com/logo/tv/mm/movie_plus_jp.png",ムービープラス / Movie Plus
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs14&isp=10&bind=0&uin=159413&playseek=0
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Ya4yHpC.jpg",日テレNEWS24
+https://stream01.willfonk.com/live_playlist.m3u8?cid=CS349&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1
+#EXTINF:-1,日テレNEWS24 (480p Official2)
+https://n24-cdn-live.ntv.co.jp/ch02/index.m3u8
+#EXTINF:-1,日本购物2
+http://stream1.shopch.jp/HLS/out2/prog_index.m3u8
+#EXTINF:-1,日本购物3
+http://stream1.shopch.jp/HLS/out3/prog_index.m3u8
+#EXTINF:-1,日本购物4
+http://stream1.shopch.jp/HLS/out4/prog_index.m3u8

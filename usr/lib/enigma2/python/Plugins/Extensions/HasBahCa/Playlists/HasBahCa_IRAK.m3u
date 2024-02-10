@@ -1,0 +1,93 @@
+#EXTM3U
+#EXTINF:-1,Al Ahd TV
+http://63b03f7689049.streamlock.net:1935/live/7/playlist.m3u8
+#EXTINF:-1,Al Anwar 2
+http://63b03f7689049.streamlock.net:1935/live/13/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/aa/al-ayam-tv.png",Al Ayyam TV
+http://63b03f7689049.streamlock.net:1935/live/6/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/SuACr3L.png",Al Eshraq TV
+http://63b03f7689049.streamlock.net:1935/live/19/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/YPj6kXq.png",Al Ghadeer TV
+http://63b03f7689049.streamlock.net:1935/live/2/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/XWXehZL.png",Al Nujaba
+http://63b03f7689049.streamlock.net:1935/live/3/playlist.m3u8
+#EXTINF:-1,Al Rasheed (408p) [Not 24/7]
+https://media1.livaat.com/AL-RASHEED-HD/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/tiQp2sR.png",Alhurra (720p)
+https://mbn-ingest-worldsafe.akamaized.net/hls/live/2038900/MBN_Alhurra_Worldsafe_HLS/master.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/sWWdpdH/1687955091062.jpg",Alhurra Iraq (720p)
+https://mbn-ingest-worldsafe.akamaized.net/hls/live/2038899/MBN_Iraq_Worldsafe_HLS/master.m3u8
+#EXTINF:-1,Althaqalayn TV
+http://63b03f7689049.streamlock.net:1935/live/16/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/T8fRsUB.png",Assyrian ANB (720p)
+https://anbsat.ddns.net/anb/live/ANB/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/s8PfUQy.png",BeitolAbbas TV Channel (720p)
+https://live.beitolabbas.tv/live/beitolabbastv.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/FJEeYiz.png",Dijlah TV
+https://ghaasiflu.online/Dijlah/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Tb1OJQa.png",Dua Channel (720p)
+https://live.ishiacloud.com/haditv.co.uk/dua-channel.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Jd9DywP.png",Gali Kurdistan (720p) [Not 24/7]
+https://live.bradosti.net/live/GaliKurdistan_playlist.m3u8
+#EXTINF:-1,Hudhud TV
+http://63b03f7689049.streamlock.net:1935/live/17/playlist.m3u8
+#EXTINF:-1,Imam Hussein TV 1 Farsi (720p)
+https://fa.imamhusseintv.com/live/ih1.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/IXVSPdJ.png",Imam Hussein TV 2 (1080p) [Not 24/7]
+https://live.imamhossaintv.com/live/ih2.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/emQRHQZ.png",Imam Hussein TV 3 (1080p) [Not 24/7]
+https://live.imamhossaintv.com/live/ih3.m3u8
+#EXTINF:-1,Imam Hussein TV 4 Urdu (720p)
+https://ur.imamhusseintv.com/live/ih4.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Oq2Ve7C.png",Imam Hussein TV 5 (1080p) [Not 24/7]
+https://mn-nl.mncdn.com/alzahra/alzahra_hd.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/lqhU0PY.png",Imam Hussein TV 6 (1080p) [Not 24/7]
+https://mn-nl.mncdn.com/arbaeen/arbaeen_hd.smil/index.m3u8
+#EXTINF:-1,IRAQ 24
+http://45.65.112.206:8000/play/a05k
+#EXTINF:-1,IRAQ EDU KIDS
+http://45.65.112.206:8000/play/a05w
+#EXTINF:-1,Iraq Future
+http://154.58.202.131:8000/play/a01w
+#EXTINF:-1,Iraqi Drama
+http://78.40.141.196:8000/play/a03m
+#EXTINF:-1,Iraqi Edu HD
+http://154.58.202.131:8000/play/a031
+#EXTINF:-1,Iraqia Ent HD
+http://154.58.202.131:8000/play/a030
+#EXTINF:-1,Iraqia Entertainment
+http://154.58.202.131:8000/play/a02w
+#EXTINF:-1,Iraqia Kurd
+http://154.58.202.131:8000/play/a02y
+#EXTINF:-1,Iraqia News HD
+http://154.58.202.131:8000/play/a02u
+#EXTINF:-1,Iraqia News SD
+http://154.58.202.131:8000/play/a02v
+#EXTINF:-1,Iraqia Sport HD
+http://154.58.202.131:8000/play/a02z
+#EXTINF:-1,Iraqia Syriac HD
+http://154.58.202.131:8000/play/a032
+#EXTINF:-1,Iraqia Turkuman
+http://154.58.202.131:8000/play/a02x
+#EXTINF:-1 tvg-logo="https://i.imgur.com/qzApokm.png",Ishtar TV (1080p)
+http://ishtar.cdncast.xyz:1935/live/iShtarHD/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/xPwzad9.png",Kurd Channel (480p)
+https://kurd-channel.ikoflix.com/hls/stream_2.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/XTmyGmL.png",KurdMax Show (720p)
+https://6476e46b58f91.streamlock.net/liveTrans/SHOW1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/JkK8HG8.png",KurdMax Sorani (1080p)
+https://6476e46b58f91.streamlock.net/liveTrans/KurdmaxS0rani!/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/F3XRwkt.png",KurdSat News (1080p) [Not 24/7]
+https://ikomg2.mmdlive.lldns.net/ikomg2/107b7df8f5444d778f349100739a09cd/manifest.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/LsYYkUI.png",Marjaeyat TV Arabic (1080p)
+https://livefa.marjaeyattv.com/mtv_ar/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/uGKGtbW.png",NRT TV (720p) [Not 24/7]
+https://media.streambrothers.com:1936/8226/8226/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/h4LWHr5.png",NUBAR TV (1080p)
+http://stream.nubar.tv:1935/private/NUBARtv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/va3TVSd.jpg",Speda TV (720p)
+https://speda.dwasat.com/upload/images/spedahd.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/9qFHjnu.png",UTV (1080p)
+https://mn-nl.mncdn.com/utviraqi2/64c80359/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/rK0y02d.png",Waar TV (720p)
+https://ikomg4.s.llnwi.net/waarhd/waar-hd.m3u8

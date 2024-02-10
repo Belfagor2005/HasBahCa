@@ -1,0 +1,47 @@
+#EXTM3U
+#EXTINF:-1,92 News UK (576p)
+https://securecontributions.sechls01.visionip.tv/live/securecontributions-securecontributions-92_news-hsslive-25f-16x9-SD/chunklist.m3u8
+#EXTINF:-1,ARY DIGITAL
+http://38.96.178.201/live/ARYDigital/index.m3u8
+#EXTINF:-1,ARY MUZAK
+http://38.96.178.201/live/ARYMusic/index.m3u8
+#EXTINF:-1,ARY ZINDEGI
+http://38.96.178.201/live/ARYZindagi/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/hJxFLvF.png",Channel S (576p) [Not 24/7]
+https://ap02.iqplay.tv:8082/iqb8002/ch4n3ls/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/IJH47fJ.png",Discover Pakistan (1080p)
+https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8
+#EXTINF:-1,DISCOVER PAKISTAN (PK)
+https://livecdn.live247stream.com/discoverpakistan/web/discoverpakistan/stream2/chunks.m3u8
+#EXTINF:-1,DUNY NEWS (PK)
+https://intl.dunyanews.tv/livehd/_definst_/ngrp:dunyalivehd_2_all/chunklist.m3u8
+#EXTINF:-1,Dunya News (480p) [Not 24/7]
+https://imob.dunyanews.tv/livehd/_definst_/ngrp:dunyalivehd_2_all/playlist.m3u8
+#EXTINF:-1,Dunya News (INT Feed) (480p) [Not 24/7]
+https://intl.dunyanews.tv/livehd/_definst_/ngrp:dunyalivehd_2_all/playlist.m3u8?dvr=
+#EXTINF:-1,Dunya News (UK Feed) (720p) [Not 24/7]
+https://ukintl.dunyanews.tv/liveuk/ngrp:dunyalive_all/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/49XTqzs.png",Eternal Life TV Network (1080p)
+https://livecdn.live247stream.com/eternallife/tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/0W6zzHS.png",Gawahi TV (720p)
+https://livecdn.live247stream.com/gawahi/tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/E8VwnK7.png",iON TV (576p)
+https://ap02.iqplay.tv:8082/iqb8002/i09/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/RHDbsiO.png",Isaac TV (720p)
+https://livecdn.live247stream.com/isaac/tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/x9xPR2h.png",Joshua TV (720p)
+https://livecdn.live247stream.com/joshua/tv/playlist.m3u8
+#EXTINF:-1,Kalsan TV (360p)
+https://ap02.iqplay.tv:8082/iqb8002/s03btv/chunks.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/AqyY1bR.png",Kalsan TV (576p)
+https://ap02.iqplay.tv:8082/iqb8002/ka1s0n/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/B5mKwF6.png",Mission Asia (1080p)
+https://livecdn.live247stream.com/missionasia/tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/T9fIdLs.png",Praise TV (720p)
+https://livecdn.live247stream.com/praise/tv/playlist.m3u8
+#EXTINF:-1,Somali National TV (360p)
+https://ap02.iqplay.tv:8082/iqb8002/s4ne/chunks.m3u8
+#EXTINF:-1,WATAN-E-MAA
+https://5caf24a595d94.streamlock.net:1937/8132/8132/playlist.m3u8
+#EXTINF:-1,Zindagi TV
+https://5ad386ff92705.streamlock.net/live_transcoder/ngrp:zindagitv.stream_all/chunklist.m3u8

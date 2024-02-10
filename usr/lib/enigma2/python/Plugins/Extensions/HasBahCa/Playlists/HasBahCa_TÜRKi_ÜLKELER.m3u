@@ -1,0 +1,85 @@
+#EXTM3U
+#EXTINF:-1,Abai TV
+https://abaitv-stream.qazcdn.com/abaitv/abaitv/playlist.m3u8
+#EXTINF:-1,Abai TV
+https://abaitv-stream.qazcdn.com/abaitv/abaitv/abaitv/abaitv_720/chunks.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/LPQfdz2.png",Ada TV Ⓢ
+https://sc-kuzeykibrissmarttv.ercdn.net/adatv/bant1/playlist.m3u8
+#EXTINF:-1,Altyn Asyr (406p) [Not 24/7]
+https://alpha.tv.online.tm/hls/ch001.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/csKl1z6.png",Aqtóbe (576p)
+https://stream.kaztrk.kz/regional/aktobetv/index.m3u8
+#EXTINF:-1 tvg-logo="https://turkmentv.gov.tm/assets/img/live-imgs/ashgabat.png",Aşgabat (406p) [Not 24/7]
+https://alpha.tv.online.tm/legacyhls/ch006.m3u8
+#EXTINF:-1,AŞKABAT TV Türkmenistan
+https://alpha.tv.online.tm/hls/ch006.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/kva4O3T.png",Atyraý (720p)
+https://stream.kaztrk.kz/regional/atyrautv/index.m3u8
+#EXTINF:-1 tvg-logo="https://www.aznews.tv/wp-content/uploads/2019/04/headerlogo.fw_.png",Azerbaijan News TV (720p) [Not 24/7]
+https://edge1.socialsmart.tv/aznews/smil/playlist.m3u8
+#EXTINF:-1,Balapan
+https://balapantv-stream.qazcdn.com/balapantv/balapantv/chunks.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/gOPAi2c.png",BRT 1
+https://sc-kuzeykibrissmarttv.ercdn.net/brt1hd/bant1/playlist.m3u8
+#EXTINF:-1,BRT 1
+https://sc-kuzeykibrissmarttv.ercdn.net/brt1hd/bant1/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/t5kbIuj.png",BRT 2
+https://sc-kuzeykibrissmarttv.ercdn.net/brt2hd/bant1/playlist.m3u8
+#EXTINF:-1,BRT 2
+https://sc-kuzeykibrissmarttv.ercdn.net/brt2hd/bant1/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/tghMiwW.png",Ertis (1080p) [Not 24/7]
+https://stream.kaztrk.kz/regional/pavlodartv/index.m3u8
+#EXTINF:-1,HTK
+https://video-cdn-1.ntk.kz/live/ntk-live-loop/chunklist_w317681302.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/4bA4pXT.png",Kanal T Ⓢ
+https://sc-kuzeykibrissmarttv.ercdn.net/kanalt/bantp1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png",KIBRIS BRT 3
+http://gineu8.bozztv.com/gin-36bay3/gt-kibrisbrt3/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/eBdQn9h.png",Kıbrıs Genç TV Ⓢ
+https://sc-kuzeykibrissmarttv.ercdn.net/kibrisgenctv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/5MJZPTo.png",Kıbrıs TV Ⓢ
+https://sc-kuzeykibrissmarttv.ercdn.net/kibristv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/pOR3FSR.png",Kókshe (720p) [Not 24/7]
+https://stream.kaztrk.kz/regional/kokshetautv/index.m3u8
+#EXTINF:-1,KUZEY KIBRIS
+http://kuzeykibris.tv/m3u8/tv_kktv.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/pWbJzr9.png",Miras (406p) [Not 24/7]
+https://alpha.tv.online.tm/hls/ch003.m3u8
+#EXTINF:-1,MTRK
+https://tvcdn01.oktv.kz/tv/mtrk/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/xqr1hjN.png",Ontústik (360p)
+https://stream.kaztrk.kz/regional/shymkenttv/index.m3u8
+#EXTINF:-1,OWAZY TV Türkmenistan
+https://alpha.tv.online.tm/hls/ch005.m3u8
+#EXTINF:-1,Qazaqstan International
+https://qazaqstantv-stream.qazcdn.com/international/international/chunks.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/eOz4xJ8.png",Qostanai (576p) [Not 24/7]
+https://stream.kaztrk.kz/regional/kostanaytv/index.m3u8
+#EXTINF:-1,RU:Salyam TV Başkurtistan
+https://bsttv.bonus-tv.ru/cdn/salyam/playlist_sdhigh.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/P9V0532/Captura.png",Semeı (1080p)
+https://stream.kaztrk.kz/regional/semeytv/index.m3u8
+#EXTINF:-1,SIM TV
+https://sc-kuzeykibrissmarttv.ercdn.net/simtv/bantp1/playlist.m3u8
+#EXTINF:-1,SPORT TV Türkmenistan
+http://217.174.225.146/legacyhls/ch004.m3u8
+#EXTINF:-1,SPORT TV Türkmenistan
+http://alpha.tv.online.tm/hls/ch004_720/index.m3u8
+#EXTINF:-1,Turkmen Sport [SD]
+http://217.174.225.146/hls/ch004_720/index.m3u8?checkedby:iptvcat.com
+#EXTINF:-1,Turkmen Спорт
+http://217.174.225.146/legacyhls/ch004_400/index.m3u8
+#EXTINF:-1,TURKMENİSTAN TV
+https://alpha.tv.online.tm/hls/ch007.m3u8
+#EXTINF:-1,Türkmenistan (226p) [Not 24/7]
+https://alpha.tv.online.tm/legacyhls/ch007.m3u8
+#EXTINF:-1,Türkmenistan Sport (406p) [Not 24/7]
+https://alpha.tv.online.tm/hls/ch004.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/rtfsNdd.png",TV 2020 Ⓢ
+https://sc-kuzeykibrissmarttv.ercdn.net/tv2020/bantp1/playlist.m3u8
+#EXTINF:-1,YAŞLIK TV Türkmenistan
+https://alpha.tv.online.tm/hls/ch002.m3u8
+#EXTINF:-1,Курай ТВ Kurai
+http://bsttv.bonus-tv.ru/cdn/kurai/playlist_sdhigh.m3u8
+#EXTINF:-1,МТРК (576p) [Not 24/7]
+https://tvcdn01.oktv.kz/tv/mtrk/playlist.m3u8

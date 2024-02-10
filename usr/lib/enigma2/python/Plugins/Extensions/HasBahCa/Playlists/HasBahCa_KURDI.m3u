@@ -1,0 +1,15 @@
+#EXTM3U
+#EXTINF:-1,Afarin TV (720p) [Not 24/7]
+https://5ab29cc78f681.streamlock.net/afarinTV/livestream/playlist.m3u8
+#EXTINF:-1,Amozhgary TV (1080p)
+https://media.streambrothers.com:1936/8248/8248/playlist.m3u8
+#EXTINF:-1,CIRA TV
+http://176.10.117.18:8000/play/a00m
+#EXTINF:-1,Kurdistan 24 (720p)
+https://d1x82nydcxndze.cloudfront.net/live/index.m3u8
+#EXTINF:-1,Med Music
+http://176.10.117.18:8000/play/a00k
+#EXTINF:-1,Ronahi TV
+http://176.10.117.18:8000/play/a00j
+#EXTINF:-1,STERK TV HD
+http://176.10.117.18:8000/play/a00l

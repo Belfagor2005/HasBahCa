@@ -1,0 +1,41 @@
+#EXTM3U
+#EXTINF:-1,Al Hayat TV (720p)
+http://media.islamexplained.com:1935/live/_definst_mp4:ahme.stream/HasBahCa.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/xa7RK5p.png",Al Kahera Wal Nas (1080p) [Not 24/7]
+https://ythls.armelin.one/channel/UCzWdc0aUo0IDk5ysLrt04hw.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/37t7yfO.png",Al Qahera News (1080p) [Not 24/7]
+https://bcovlive-a.akamaihd.net/d30cbb3350af4cb7a6e05b9eb1bfd850/eu-west-1/6057955906001/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/p82RKIq.png",Alfath Atfal TV (576p)
+https://alfat7-q.com:5443/LiveApp/streams/434833549141598440488987.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/7VYJStp.png",Alfath Sonnah TV (576p)
+https://alfat7-q.com:5443/LiveApp/streams/986613792230697141226562.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/87bdieg.png",Alfath TV (576p)
+https://alfat7-q.com:5443/LiveApp/streams/515112551489055772942045.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/f6PQzKd.png",Alforat TV (1080p)
+http://95.216.180.111:1935/live/10/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/bl9ie9u.png",Alhayat TV (720p)
+https://cdn3.wowza.com/5/OE5HREpIcEkySlNT/alhayat-live/ngrp:livestream_all/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.ctvchannel.tv/images/CTV-logo-white.png",Coptic TV (720p)
+https://58cc65c534c67.streamlock.net/ctvchannel.tv/ctv.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.9090.fm/images/logo.png",El Radio 9090 FM (480p)
+https://9090video.mobtada.com/hls/stream.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/1UUjU26.png",Huda TV (720p) [Not 24/7]
+https://cdn.bestream.io:19360/elfaro1/elfaro1.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/o2elx0u.png",MBC Masr 1 (1080p)
+https://shls-masr-ak.akamaized.net/out/v1/d5036cabf11e45bf9d0db410ca135c18/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/krp3kgv.png",NogoumFMTV (672p) [Not 24/7]
+https://nogoumtv.nrpstream.com/hls/stream.m3u8
+#EXTINF:-1,ONTIME SPORTS
+http://45.65.112.206:8000/play/a0fj
+#EXTINF:-1,ONTIME SPORTS HD
+http://45.65.112.206:8000/play/a0fg
+#EXTINF:-1,ONTIME SPORTS2
+http://45.65.112.206:8000/play/a0fh
+#EXTINF:-1,ONTIME SPORTS2 HD
+http://45.65.112.206:8000/play/a0fe
+#EXTINF:-1,Real Nosey (EU)
+https://nosey-realnosey-1-eu.xiaomi.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/dGlKoLW.png",Rotana Cinema Egypt (1080p)
+https://shls-masr2-ak.akamaized.net/out/v1/c39c0ecbcbdb46e890e91106776397a8/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/pZyKaUH.png",Watan TV (1080p)
+https://n101.stream.tactivemedia.com/watantv/live/playlist.m3u8

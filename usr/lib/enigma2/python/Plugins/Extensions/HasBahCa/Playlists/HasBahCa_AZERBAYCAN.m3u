@@ -1,0 +1,83 @@
+#EXTM3U
+#EXTINF:-1,ARB KEPEZ
+http://85.132.81.184:8080/arbkepez/live/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/E97M2OL.png",ARB TV HD
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o1/arbtv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/VC7Q18V/azflag.png",ATV AZ
+https://stream.atv.az/WebRTCAppEE/streams/780339739845112514894920_adaptive.m3u8
+#EXTINF:-1,AZ NEWS
+https://edge1.socialsmart.tv/aznews/smil/aznews/720p/chunks.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/VC7Q18V/azflag.png",AZ NEWS
+https://swow1.socialsmart.tv/aznews/smil:aznews.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/VC7Q18V/azflag.png",AZ STAR
+http://live.azstartv.com/azstar/smil:azstar.smil/playlist.m3u8
+#EXTINF:-1,AZ TV
+https://str.yodacdn.net/aztv/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/VC7Q18V/azflag.png",AZ TV Azərbaycan Televiziyası
+http://str.yodacdn.net/aztv/index.m3u8
+#EXTINF:-1,AZ:Hadi TV AZ
+https://live.ishiacloud.com/hls/1d6e10dc-7bfc-4abb-9bb3-0dfe80b3d7df_720p.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Baku_TV_%282018%29.png/640px-Baku_TV_%282018%29.png",Baku TV
+https://rtmp.baku.tv/live/bakutv_720p.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/VC7Q18V/azflag.png",BAKU TV
+https://rtmp.baku.tv/live/bakutv_1080p.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/YdIHXOR.png",Bolt
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o4/mtvhits/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/wVT0dwO.png",CBC
+https://stream.cbctv.az:5443/LiveApp/streams/cbctv.m3u8
+#EXTINF:-1,Ictimai TV
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o1/ictimai/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/PlvaDIa.png",Medeniyyet
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o1/medeniyyet/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/VC7Q18V/azflag.png",MEDENİYYET
+http://str.yodacdn.net/medeniyyet/index.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fc/M%C9%99d%C9%99niyy%C9%99t_TV_logo.png",Mədəniyyət TV Ⓢ
+https://str.yodacdn.net/medeniyyet/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/e2KFL0R.png",Real TV
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o2/realtv/playlist.m3u8
+#EXTINF:-1,Salyam
+https://bsttv.bonus-tv.ru/cdn/salyam/playlist_sdhigh.m3u8
+#EXTINF:-1,Salyam
+https://bsttv.bonus-tv.ru/cdn/salyam/playlist_sdhigh.m3u8?checkedby:iptvcat.com
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ufvVQJH.png",Space TV
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o1/space/playlist.m3u8
+#EXTINF:-1,TV 1 (720p)
+https://edge1.socialsmart.tv/tv1/bant1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/VC7Q18V/azflag.png",UMİT TV
+http://cdn-umudtv.yayin.com.tr/umudtv/smil:umudtv.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/4PAcpfM.png",Звезда
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o1/tvzvezda/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/kmMIjjf.png",Мама
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o2/mamatv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/YBdBc0J.png",Ностальгия
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o3/nostalgiya/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/0Tu5lte.png",Рен ТВ
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o2/rentv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/H70LxoZ.png",Родное Кино
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o2/rodnoekino/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Russia-Cultura.svg/512px-Russia-Cultura.svg.png",Россия К
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o1/rtrkultura/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/RlsqFN8.png",Русский Иллюзион
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o2/ruilluzion/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/HM4xy4G.png",Совершенно Секретно
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o1/sovershennosekretno/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/gBokU5i.png",ТНТ4
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o7/tnt4/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ZOcDGpB.png",Че!
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o5/chetv/playlist.m3u8
