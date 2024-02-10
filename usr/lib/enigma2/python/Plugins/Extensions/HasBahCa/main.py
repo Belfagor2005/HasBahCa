@@ -768,7 +768,7 @@ class HasBahCa1(Screen):
         if result:
             try:
                 for fname in os.listdir(enigma_path):
-                    if 'userbouquet.hbc_' in fname:
+                    if 'hbc_' in fname:
                         # os.remove(os.path.join(enigma_path, fname))
                         Utils.purge(enigma_path, fname)
                     elif 'bouquets.tv.bak' in fname:
@@ -784,7 +784,7 @@ class HasBahCa1(Screen):
                 tvfile = open(os.path.join(enigma_path, 'bouquets.tv'), 'w+')
                 bakfile = open(os.path.join(enigma_path, 'bouquets.tv.bak'))
                 for line in bakfile:
-                    if '.hbc_' not in line:
+                    if 'hbc_' not in line:
                         tvfile.write(line)
                 bakfile.close()
                 tvfile.close()
