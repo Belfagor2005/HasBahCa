@@ -18,11 +18,6 @@ from . import html_conv
 import codecs
 from Components.AVSwitch import AVSwitch
 try:
-    from Components.AVSwitch import iAVSwitch
-except Exception as e:
-    print(e)
-
-try:
     from enigma import eAVSwitch
 except Exception as e:
     print(e)
@@ -223,7 +218,7 @@ def showlisthasba(data, list):
     for line in data:
         name = data[icount]
         plist.append(hasbaSetListEntry(name))
-        icount = icount + 1
+        icount += 1
         list.setList(plist)
 
 
