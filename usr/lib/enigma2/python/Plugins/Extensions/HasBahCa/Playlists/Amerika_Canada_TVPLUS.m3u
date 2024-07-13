@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1 group-title="Amerika_Canada_TVPLUS",Baywatch (Canada)
+https://d22ljxpuae2sin.cloudfront.net/playlist.m3u8
+#EXTINF:-1 group-title="Amerika_Canada_TVPLUS",Insight TV (Canada)
+https://insighttv-samsung-canada.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="Amerika_Canada_TVPLUS",The Jack Hannah Channel (Canada)
+https://littonjackhannah-samsungca.amagi.tv/playlist.m3u8

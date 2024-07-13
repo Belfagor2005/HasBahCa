@@ -1,0 +1,15 @@
+#EXTM3U
+#EXTINF:-1 group-title="EU_ITALIA_TVPLUS",Canale Europa (Italy)
+https://canaleeuropa-canaleeuropa-1-it.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_ITALIA_TVPLUS",Deluxe Lounge HD (Italy) Geo
+https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/9f58b8c3-80c1-11eb-908d-533d39655269/0/master.m3u8
+#EXTINF:-1 group-title="EU_ITALIA_TVPLUS",Failarmy (Italy)
+https://failarmy-international-it.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_ITALIA_TVPLUS",Horizon Sports (Italy)
+https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/3559cc0f-80c2-11eb-908d-533d39655269/0/master.m3u8?
+#EXTINF:-1 group-title="EU_ITALIA_TVPLUS",Qwest Jazz and Beyond (UK) Geo
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/qwestAAAA-qwestjazz-uk-samsungtv/playlist.m3u8
+#EXTINF:-1 group-title="EU_ITALIA_TVPLUS",Televisa Telenovelas (Italy)
+https://televisa-televisa-1-it.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_ITALIA_TVPLUS",WP Minerva Pictures (Italy)
+https://minerva-wp-1-it.samsung.wurl.tv/playlist.m3u8

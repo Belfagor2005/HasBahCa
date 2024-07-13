@@ -1,15 +1,11 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://i.imgur.com/gmrVKEC.jpg",Better Life Nature Channel (480p)
+#EXTINF:-1 group-title="RELAX" tvg-logo="https://i.imgur.com/gmrVKEC.jpg",Better Life Nature Channel (480p)
 https://tgn.bozztv.com/betterlife/betternature/betternature/index.m3u8
-#EXTINF:-1,Island Escape
+#EXTINF:-1 group-title="RELAX",Island Escape
 https://dai.google.com/linear/hls/event/IpUm6gZ6Tz-pEotpMRsZ4w/master.m3u8
-#EXTINF:-1,Local Now ZEN TV
+#EXTINF:-1 group-title="RELAX",Local Now ZEN TV
 https://ln-zen.localnowlive.com/v1/master/385c85a93929f94966d0fb186fc33b431e6f1eb9/DSP_5fd8fd0625dd2a6b74008872_ln-zen/playlist.m3u8
-#EXTINF:-1,Loupe 4K (2160p)
-http://d2dw21aq0j0l5c.cloudfront.net/playlist.m3u8
-#EXTINF:-1,Quietude 4K
-https://dai.google.com/linear/hls/event/znOljgluSSeoYrXfiYc2VA/master.m3u8
-#EXTINF:-1,Relax
+#EXTINF:-1 group-title="RELAX",Relax
 http://185.57.68.33:8091/232/tracks-v1a1/index.m3u8?cur=tva.org.ua&key=3i277
-#EXTINF:-1,RELAXON
+#EXTINF:-1 group-title="RELAX",RELAXON
 http://iptv.prosto.tv:7000/ch317/video.m3u8

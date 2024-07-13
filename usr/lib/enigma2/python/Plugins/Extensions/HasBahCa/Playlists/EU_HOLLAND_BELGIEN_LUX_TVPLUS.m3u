@@ -1,0 +1,77 @@
+#EXTM3U
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",AVF Family alt url (Belgium)
+https://futuretoday-afv-family-2-be.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Bloomberg Quicktake (Netherland)
+http://bloomberg-quicktake-1-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Bloomberg TV+ (Netherland)
+https://bloomberg-bloombergtv-3-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Clubbing TV
+https://clubbingtv-samsunguk.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",DiscoverFilm (Netherlands)
+https://discoverfilm-discoverfilm-1-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Euronews (Netherlands)
+https://rakuten-euronews-1-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Euronews 10 (Luxemburg)
+https://rakuten-euronews-10-lu.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Euronews alt url (Belgium)
+https://rakuten-euronews-10-be.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Failarmy International (Netherlands)
+https://failarmy-international-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Fashion TV (Netherlands)
+https://fashiontv-fashiontv-5-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Filmstream (Netherlands)
+https://spi-filmstream-1-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Go USA TV
+https://brandusa-gousa-1-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",LOL! Network (Netherland)
+https://lol-lolnetwork-2-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Mojitv (Netherland)
+https://odmedia-mojitv-1-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Qwest Jazz and Beyond (UK) Geo
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/qwestAAAA-qwestjazz-uk-samsungtv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Rakuten Action
+https://rakuten-action-8-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Rakuten Action (Netherland)
+https://rakuten-action-8-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Rakuten Comedy
+https://rakuten-comedy-8-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Rakuten Comedy (Netherland)
+https://rakuten-comedy-8-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Rakuten Drama
+https://rakuten-drama-8-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Rakuten Drama (Netherlands)
+https://rakuten-drama-8-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Rakuten Family
+https://rakuten-family-16-be.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Rakuten Family
+https://rakuten-family-8-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Rakuten Family (Belgium)
+https://rakuten-family-16-be.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Rakuten Family (Netherlands)
+https://rakuten-family-8-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Rakuten Stories
+https://rakuten-spotlight-8-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Rakuten Stories (Netherland)
+https://rakuten-spotlight-8-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS" tvg-logo="https://i.imgur.com/0Vzg2OR.png",Salto MaLive (1080p)
+https://live.salto.nl/hls/malive_high.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Strongman Champions League
+https://rightsboosterltd-scl-1-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",The Boat Show (UK)
+https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/7058e85e-80c1-11eb-908d-533d39655269/0/master.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",The Guardian (Netherland)
+https://rakuten-guardian-1-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",The Pet Collective (Netherland)
+https://the-pet-collective-international-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Timeline
+https://lds-timeline-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Travelxp (Netherland)
+https://travelxp-travelxp-3-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Waterbear (Netherland)
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01415-waterbearnetwor-waterbear-samsungnl/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Wicked Tuna (Netherland)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00353-lionsgatestudio-wickedtunanl-samsungnl/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Wonder
+https://lds-wonder-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="EU_HOLLAND_BELGIEN_LUX_TVPLUS",Xplore (Netherland)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00111-hearstmediaprod-xploreintlnl-samsungnl/playlist.m3u8

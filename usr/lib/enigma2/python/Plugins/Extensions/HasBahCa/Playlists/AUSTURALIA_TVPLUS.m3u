@@ -1,85 +1,79 @@
 #EXTM3U
-#EXTINF:-1,Anger Management (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Anger Management (Australia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00353-lionsgatestudio-angermgmt-samsungau/playlist.m3u8
-#EXTINF:-1,Aus Biz TV (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Aus Biz TV (Australia)
 https://ausbiztv-ausbiz-1-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Baywatch Remastered (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Baywatch Remastered (Australia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00145-fremantlemedian-baywatch-samsungau/playlist.m3u8
-#EXTINF:-1,Bloomberg Quicktake (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Bloomberg Quicktake (Australia)
 https://bloomberg-quicktake-1-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Bloomberg TV (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Bloomberg TV (Australia)
 https://bloomberg-bloomberg-2-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Bondi Vet (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Bondi Vet (Australia)
 https://wtfn-bondivet-1-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Bounty (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Bounty (Australia)
 https://bountyfilms-bounty-1-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Clubbing TV (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Clubbing TV (Australia)
 https://clubbingtv-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1,Dry Bar Comedy (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Dry Bar Comedy (Australia)
 https://drybar-drybarcomedy-1-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Entertainment Hub (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Entertainment Hub (Australia)
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01447-samsungau-enthub-samsungau/playlist.m3u8
-#EXTINF:-1,Euronews World (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Euronews World (Australia)
 https://euronews-euronews-world-1-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Failarmy (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Failarmy (Australia)
 https://failarmy-international-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Filmstream (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Filmstream (Australia)
 https://spi-filmstream-1-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Gusto TV (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Gusto TV (Australia)
 https://gustotv-samsung-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Haunt TV (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Haunt TV (Australia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01446-blueantmediacan-haunttvaussam-samsungau/playlist.m3u8
-#EXTINF:-1,Horse and Country (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Horse and Country (Australia)
 https://hncfree-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1,Kartoon channel (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Kartoon channel (Australia)
 https://lightning-fnf-samsungaus.amagi.tv/playlist.m3u8
-#EXTINF:-1,Lovenature (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Lovenature (Australia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00090-blueantllc-lovenature-au-samsungau/playlist.m3u8
-#EXTINF:-1,Lovenature (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Lovenature (Australia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00090-blueantllc-lovenature-au-samsungau/playlist.m3u8
-#EXTINF:-1,Made in Hollywood (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Made in Hollywood (Australia)
 https://connection3-ent-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Magellan TV Now (Australia)
-https://magellantv-3-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,MovieSphere Free (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",MovieSphere Free (Australia)
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00353-lionsgatefilmsi-moviesphereaus-samsungau/playlist.m3u8
-#EXTINF:-1,Mythbusters (Australia)
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01447-samsungau-mythbustersau-samsungau/playlist.m3u8
-#EXTINF:-1,Mytime Movie Network (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Mytime Movie Network (Australia)
 https://appletree-mytimeau-samsung.amagi.tv/playlist.m3u8
-#EXTINF:-1,People Are Awesome (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",People Are Awesome (Australia)
 https://jukin-peopleareawesome-2-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Pet Club TV (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Pet Club TV (Australia)
 https://petclub-samsungaus.amagi.tv/playlist.m3u8
-#EXTINF:-1,Qwest TV Jazz and Beyond (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Qwest TV Jazz and Beyond (Australia)
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/samsungau-qwestjazz-samsungtv/playlist.m3u8
-#EXTINF:-1,Real Life (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Real Life (Australia)
 https://lds-realfamilies-samsunguau.amagi.tv/playlist.m3u8
-#EXTINF:-1,Real Stories (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Real Stories (Australia)
 https://lds-realstories-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1,Ryan and Friends (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Ryan and Friends (Australia)
 https://ryanandfriends-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1,Tastemade International (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Tastemade International (Australia)
 https://tmint-aus-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1,The Design Network (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",The Design Network (Australia)
 https://thedesignnetwork-tdn-1-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,The Pet Collective (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",The Pet Collective (Australia)
 https://the-pet-collective-international-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Timeline (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Timeline (Australia)
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/ldsAAAAAA-timeline-samsungau/playlist.m3u8
-#EXTINF:-1,Trace Sport Stars (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Trace Sport Stars (Australia)
 https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1,Trace Urban (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Trace Urban (Australia)
 https://lightning-traceurban-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1,Travel XP (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Travel XP (Australia)
 https://travelxp-travelxp-1-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,True Crime Now (Australia)
-https://alliantcontent-truecrimenow-3-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Weather Spy (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Weather Spy (Australia)
 https://jukin-weatherspy-2-au.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Wicked Tuna (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Wicked Tuna (Australia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00353-lionsgatestudio-wickedtuna-samsungau/playlist.m3u8
-#EXTINF:-1,Wonder (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Wonder (Australia)
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/ldsAAAAAA-wonder-samsungau/playlist.m3u8
-#EXTINF:-1,Zoo Moo (Australia)
+#EXTINF:-1 group-title="AUSTURALIA_TVPLUS",Zoo Moo (Australia)
 https://zoomoo-samsungau.amagi.tv/playlist.m3u8

@@ -1,39 +1,19 @@
 #EXTM3U
-#EXTINF:-1,Bloomberg TV+ (Spain)
-https://bloomberg-bloombergtv-1-es.samsung.wurl.com/manifest/playlist.m3u8
-#EXTINF:-1,Clubbing TV (may not be correct source)
+#EXTINF:-1 group-title="EU_SPAIN_TVPLUS",Clubbing TV (may not be correct source)
 https://clubbingtv-samsunguk.amagi.tv/playlist.m3u8
-#EXTINF:-1,Comedia Made in Spain
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1abce155a03d0007718834/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=505&deviceId=5f1abce155a03d0007718834&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=41.1167&deviceLon=1.2500&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=ES&serverSideAds=false
-#EXTINF:-1,Duck TV (Spain)
-https://mmm-ducktv-3-es.samsung.wurl.com/manifest/playlist.m3u8
-#EXTINF:-1,Euronews (Spain)
-https://rakuten-euronews-4-es.samsung.wurl.com/manifest/playlist.m3u8
-#EXTINF:-1,Fashion TV (Spain)
-https://fashiontv-fashiontv-2-es.samsung.wurl.com/manifest/playlist.m3u8
-#EXTINF:-1,Fuel TV (Spain)
-https://fueltv-fueltv-7-es.samsung.wurl.com/manifest/playlist.m3u8
-#EXTINF:-1,iHola Play (Spain)
+#EXTINF:-1 group-title="EU_SPAIN_TVPLUS",iHola Play (Spain)
 https://rakuten-hola-2-es.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,MTV Catfish Pluto (Spain)
+#EXTINF:-1 group-title="EU_SPAIN_TVPLUS",MTV Catfish Pluto (Spain)
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1ab3c7778230000735cf41/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=305&deviceId=5f1ab3c7778230000735cf41&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=41.1167&deviceLon=1.2500&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=ES&serverSideAds=false
-#EXTINF:-1,MTV Cribs Pluto (Spain)
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1ab9c6d8f1300007f54e30/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=315&deviceId=5f1ab9c6d8f1300007f54e30&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=41.1167&deviceLon=1.2500&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=ES&serverSideAds=false
-#EXTINF:-1,MTV Originals Pluto (Spain)
+#EXTINF:-1 group-title="EU_SPAIN_TVPLUS",MTV Originals Pluto (Spain)
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1aadf373bed3000794d1d7/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=300&deviceId=5f1aadf373bed3000794d1d7&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=41.1167&deviceLon=1.2500&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=ES&serverSideAds=false
-#EXTINF:-1,PBS America
-https://pbs-samsunguk.amagi.tv/playlist.m3u8
-#EXTINF:-1,Pluto Cine Estelar (Spain)
+#EXTINF:-1 group-title="EU_SPAIN_TVPLUS",Pluto Cine Estelar (Spain)
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f1ac1f1b66c76000790ef27/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
-#EXTINF:-1,Pluto Mundo Real (Spain)
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1acdfda84c970007e750b5/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=405&deviceId=5f1acdfda84c970007e750b5&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=41.1167&deviceLon=1.2500&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=ES&serverSideAds=false
-#EXTINF:-1,Pluto TV Animakids (Spain)
+#EXTINF:-1 group-title="EU_SPAIN_TVPLUS",Pluto TV Animakids (Spain)
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1aabee6f4a2c00076a322c/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=905&deviceId=5f1aabee6f4a2c00076a322c&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=41.1167&deviceLon=1.2500&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=ES&serverSideAds=false
-#EXTINF:-1,Pluto TV Cocina (Spain)
+#EXTINF:-1 group-title="EU_SPAIN_TVPLUS",Pluto TV Cocina (Spain)
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1acdaa8ba90f0007d5e760/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=700&deviceId=5f1acdaa8ba90f0007d5e760&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=41.1167&deviceLon=1.2500&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=ES&serverSideAds=false
-#EXTINF:-1,Pluto TV Kids (Spain)
+#EXTINF:-1 group-title="EU_SPAIN_TVPLUS",Pluto TV Kids (Spain)
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1aab1d29b39600073e243f/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=910&deviceId=5f1aab1d29b39600073e243f&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=41.1167&deviceLon=1.2500&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=ES&serverSideAds=false
-#EXTINF:-1,Sofy TV (Spain)
-https://sofytv-samsunges.amagi.tv/playlist.m3u8
-#EXTINF:-1,Tastemade (Spain)
+#EXTINF:-1 group-title="EU_SPAIN_TVPLUS",Tastemade (Spain)
 https://tastemade-es16tm-samsung.amagi.tv/playlist.m3u8

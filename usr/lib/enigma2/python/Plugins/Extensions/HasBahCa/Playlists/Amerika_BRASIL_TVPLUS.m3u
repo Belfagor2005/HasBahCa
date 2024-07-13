@@ -1,0 +1,63 @@
+#EXTM3U
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Adrenalina Freezone (Brazil)
+https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/61b790b985706b00072cb797/master.m3u8?deviceId=PSID&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",AFV Family (Brazil)
+https://d12f70rc9elynx.cloudfront.net/playlist.m3u8
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Canal Uol
+https://d19fe0yjxkxylf.cloudfront.net/index.m3u8
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Encantador de Cães (Brazil)
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/61099df8cee03b00074b2ecf/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",EuroNews Português (Brazil)
+https://euronews-euronews-portugues-1-br.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",FailArmy (Brazil)
+https://failarmy-international-br.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Fashion TV International (Brazil)
+https://fashiontv-fashiontv-5-br.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Hard Knocks Fight Championship (Brazil)
+https://d3uyzhwvmemdyf.cloudfront.net/scheduler/scheduleMaster/109.m3u8
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Jovem Pan News (Brazil)
+http://d9tard1jbwri9.cloudfront.net/playlist.m3u8
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",MasterChef (Brazil)
+https://d24vdd1b8d5s8r.cloudfront.net/playlist.m3u8
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",MTV Biggest Pop
+http://service-stitcher-ipv4.clusters.pluto.tv/v1/stitch/embed/hls/channel/6047fbdbbb776a0007e7f2fflivestitch/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=0&deviceId=e1760207-0a78-8a50-619d-f898605668f9&advertisingId=e1760207-0a78-8a50-619d-f898605668f9&us_privacy=%7BUS_PRIVACY%7D&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",MyTime Movie Network (Brazil)
+https://appletree-mytime-samsungbrazil.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Nick Clássico (Brazil)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f12151794c1800007a8ae63/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=730&deviceId=5f12151794c1800007a8ae63&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=-23.5475&deviceLon=-46.6361&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=BR&serverSideAds=false
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Nick Junior Club (Brazil)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f121460b73ac6000719fbaf/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=706&deviceId=5f121460b73ac6000719fbaf&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=-23.5475&deviceLon=-46.6361&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=BR&serverSideAds=false
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Nickelodeon Bob Esponja Calça Quadrada (Brazil)
+http://service-stitcher-ipv4.clusters.pluto.tv/v1/stitch/embed/hls/channel/62545c0b002f4b0007688b61/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=0&deviceId=e1760207-0a78-8a50-619d-f898605668f9&advertisingId=e1760207-0a78-8a50-619d-f898605668f9&us_privacy=%7BUS_PRIVACY%7D&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Novelisima (Brazil)
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=2380
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Os Dez Mandamentos (Brazil)
+https://d1w1no6ex9c1d6.cloudfront.net/playlist.m3u8
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",People Are Awesome (Brazil)
+https://jukin-peopleareawesome-2-br.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Pluto TV Anime (Brazil)
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5ff609de50ab210008025c1b/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Pluto TV Naruto (Brazil)
+http://service-stitcher-ipv4.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f12136385bccc00070142ed/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=0&deviceId=e1760207-0a78-8a50-619d-f898605668f9&advertisingId=e1760207-0a78-8a50-619d-f898605668f9&us_privacy=%7BUS_PRIVACY%7D&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Record News (Brazil)
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=2116
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Record News (Brazil)
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=2116
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Revry (Brazil)
+https://dletvjdknba4f.cloudfront.net/playlist.m3u8
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Smithsonian Channel Pluto TV (Brazil)
+https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/6298bd10d88ef000073f16b7/master.m3u8?deviceId=PSID&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Tastemade (Brazil)
+https://tastemade-pt16intl-samsungbrazil.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",The Pet Collective (Brazil)
+https://the-pet-collective-international-br.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Toon Goggles (Brazil)
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=825
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Toon Goggles (Brazil)
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=825
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Trace Brazuca (Brazil)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01131-tracetv-tracebrazuca-samsungbr/playlist.m3u8
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",TV Turma da Mônica (Brazil)
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5f997e44949bc70007a6941e/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+#EXTINF:-1 group-title="Amerika_BRASIL_TVPLUS",Weather Spy (Brazil)
+https://jukin-weatherspy-2-br.samsung.wurl.tv/playlist.m3u8
