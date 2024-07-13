@@ -17,41 +17,41 @@ from . import main
 from . import Utils
 import os
 
-currversion = '1.5'
+currversion = '1.6'
 title_plug = 'HasBahCa '
 desc_plugin = ('..:: HasBahCa by Lululla %s ::.. ' % currversion)
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
-_firstStarthbc = True
+# _firstStarthbc = True
 
 
-class AutoStartTimerhbc:
+# class AutoStartTimerhbc:
 
-    def __init__(self, session):
-        self.session = session
-        global _firstStarthbc
-        print("*** running AutoStartTimerhbc ***")
-        if _firstStarthbc:
-            self.runUpdate()
+    # def __init__(self, session):
+        # self.session = session
+        # print("*** running AutoStartTimerhbc ***")
+        # if _firstStarthbc:
+            # self.runUpdate()
 
-    def runUpdate(self):
-        print("*** running update ***")
-        try:
-            from . import Update
-            Update.upd_done()
-            _firstStarthbc = False
-        except Exception as e:
-            print('error Fxy', str(e))
+    # def runUpdate(self):
+        # print("*** running update ***")
+        # global _firstStarthbc
+        # try:
+            # from . import Update
+            # Update.upd_done()
+            # _firstStarthbc = False
+        # except Exception as e:
+            # print('error Fxy', str(e))
 
 
-def autostart(reason, session=None, **kwargs):
-    print("*** running autostart autoStartTimerhbc ***")
-    global autoStartTimerhbc
-    global _firstStarthbc
-    if reason == 0:
-        if session is not None:
-            _firstStarthbc = True
-            autoStartTimerhbc = AutoStartTimerhbc(session)
-    return
+# def autostart(reason, session=None, **kwargs):
+    # print("*** running autostart autoStartTimerhbc ***")
+    # global autoStartTimerhbc
+    # global _firstStarthbc
+    # if reason == 0:
+        # if session is not None:
+            # _firstStarthbc = True
+            # autoStartTimerhbc = AutoStartTimerhbc(session)
+    # return
 
 
 def mainw(session, **kwargs):
@@ -70,8 +70,8 @@ def Plugins(**kwargs):
     if not os.path.exists('/var/lib/dpkg/status'):
         ico_path = os.path.join(plugin_path, 'res/pics/logo.png')
     # extensions_menu = PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=PluginDescriptor.WHERE_EXTENSIONSMENU, fnc=mainw, needsRestart=True)
-    result = [PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=[PluginDescriptor.WHERE_SESSIONSTART], fnc=autostart),
-              PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=PluginDescriptor.WHERE_PLUGINMENU, icon=ico_path, fnc=mainw)]
+    result = [PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=PluginDescriptor.WHERE_PLUGINMENU, icon=ico_path, fnc=mainw)]
     # result = [PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=PluginDescriptor.WHERE_PLUGINMENU, icon=ico_path, fnc=mainw)]
+    # PluginDescriptor(name=title_plug + ' ' + currversion, description=desc_plugin, where=[PluginDescriptor.WHERE_SESSIONSTART], fnc=autostart),
     # result.append(extensions_menu)
     return result

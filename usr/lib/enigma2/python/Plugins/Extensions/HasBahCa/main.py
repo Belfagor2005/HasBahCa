@@ -15,12 +15,9 @@ from .__init__ import _
 from . import Utils
 from . import html_conv
 # from . import cvbq
-import codecs
+# from .plugin import currversion
+from .Console import Console as xConsole
 from Components.AVSwitch import AVSwitch
-try:
-    from Components.AVSwitch import iAVSwitch
-except:
-    from enigma import eAVSwitch
 from Components.ActionMap import ActionMap
 from Components.Button import Button
 from Components.config import config
@@ -31,7 +28,6 @@ from Components.MultiContent import MultiContentEntryText
 from Components.MultiContent import MultiContentEntryPixmapAlphaTest
 from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
 from Components.Sources.StaticText import StaticText
-# from Screens.InfoBar import MoviePlayer
 from Components.ProgressBar import ProgressBar
 from Components.Sources.Progress import Progress
 from Screens.InfoBarGenerics import InfoBarSubtitleSupport
@@ -39,29 +35,44 @@ from Screens.InfoBarGenerics import InfoBarSeek, InfoBarAudioSelection
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Tools.Directories import SCOPE_PLUGINS, resolveFilename
-from enigma import RT_VALIGN_CENTER
-from enigma import RT_HALIGN_LEFT
-from enigma import eTimer
-from enigma import eListboxPythonMultiContent
-from enigma import eServiceReference
-from enigma import iPlayableService
-from enigma import gFont
-from enigma import loadPNG
-from enigma import getDesktop
+from enigma import (
+    RT_VALIGN_CENTER,
+    RT_HALIGN_LEFT,
+    eTimer,
+    eListboxPythonMultiContent,
+    eServiceReference,
+    iPlayableService,
+    gFont,
+    loadPNG,
+    getDesktop,
+)
 from time import sleep
 import os
 import re
 import six
 import ssl
 import sys
+from datetime import datetime
+import codecs
+import json
 global downloadhasba
 global path_skin
 global tyurl
+
 tyurl = False
 downloadhasba = None
-
+currversion = '1.6'
 PY3 = sys.version_info.major >= 3
-
+hostcategoryes = 'https://github.com/HasBahCa/IPTV-LIST/'
+github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
+tyurl1 = 'http://eviptv.com/m3u/'
+tyurl2 = 'https://hasbahca.net/hasbahca_m3u/'
+tyurl3 = tyurl1 + 'M3U_Listeleri/'
+plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
+enigma_path = '/etc/enigma2'
+path_playlist = os.path.join(plugin_path, 'Playlists')
+installer_url = 'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0JlbGZhZ29yMjAwNS9IYXNCYWhDYS9tYWluL2luc3RhbGxlci5zaA=='
+developer_url = 'aHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy9CZWxmYWdvcjIwMDUvSGFzQmFoQ2E='
 try:
     from urllib2 import urlopen, Request, URLError, HTTPError
 except:
@@ -115,6 +126,8 @@ try:
     sslverify = True
 except:
     sslverify = False
+
+
 if sslverify:
     class SNIFactory(ssl.ClientContextFactory):
         def __init__(self, hostname=None):
@@ -127,13 +140,8 @@ if sslverify:
             return ctx
 
 # server
-hostcategoryes = 'https://github.com/HasBahCa/IPTV-LIST/'
-github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
-tyurl = 'http://eviptv.com/m3u/'
-tyurl2 = 'https://hasbahca.net/hasbahca_m3u/'
-plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('HasBahCa'))
-enigma_path = '/etc/enigma2'
-path_playlist = os.path.join(plugin_path, 'Playlists')
+# https://eviptv.com/m3u8/
+
 screenwidth = getDesktop(0).size()
 if screenwidth.width() == 2560:
     path_skin = os.path.join(plugin_path, 'res/skins/uhd/')
@@ -200,13 +208,13 @@ def hasbaSetListEntry(name):
         png = os.path.join(plugin_path, 'res/pics/tv.png')
 
     if screenwidth.width() == 2560:
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 10), size=(50, 50), png=loadPNG(png)))
-        res.append(MultiContentEntryText(pos=(90, 0), size=(1200, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 5), size=(50, 50), png=loadPNG(png)))
+        res.append(MultiContentEntryText(pos=(90, 0), size=(1200, 60), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     elif screenwidth.width() == 1920:
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 10), size=(40, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 5), size=(40, 40), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(70, 0), size=(1000, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     else:
-        res.append(MultiContentEntryPixmapAlphaTest(pos=(3, 10), size=(40, 40), png=loadPNG(png)))
+        res.append(MultiContentEntryPixmapAlphaTest(pos=(3, 5), size=(40, 40), png=loadPNG(png)))
         res.append(MultiContentEntryText(pos=(50, 0), size=(500, 50), font=0, text=name, color=0xa6d1fe, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
     return res
 
@@ -217,7 +225,7 @@ def showlisthasba(data, list):
     for line in data:
         name = data[icount]
         plist.append(hasbaSetListEntry(name))
-        icount = icount + 1
+        icount += 1
         list.setList(plist)
 
 
@@ -246,6 +254,17 @@ def returnIMDB(text_clear):
         return True
     return False
 
+def decodename(name):
+    import unicodedata
+    import six
+    if isinstance(name, six.text_type):
+        name = name.encode('utf-8')
+    name = unicodedata.normalize('NFKD', six.text_type(name, 'utf_8', errors='ignore')).encode('ASCII', 'ignore')
+    name = re.sub(b'[^a-z0-9-_]', b'', name.lower())
+    if not name:
+        name = fallback
+    return six.ensure_str(name)
+    
 
 class MainHasBahCa(Screen):
     def __init__(self, session):
@@ -261,7 +280,7 @@ class MainHasBahCa(Screen):
         self['info'] = Label(_('Give me a few seconds ... loading the data'))
         self['key_red'] = Button(_('Exit'))
         self['key_green'] = Button(_('Select'))
-        self['key_yellow'] = Button(_(''))
+        self['key_yellow'] = Button(_('Update'))
         self["key_blue"] = Button(_('Remove'))
         self['key_green'].hide()
         self['key_yellow'].hide()
@@ -269,25 +288,90 @@ class MainHasBahCa(Screen):
         self['progress'] = ProgressBar()
         self['progresstext'] = StaticText()
         self["progress"].hide()
-        self['live'] = Label('')
-        self['live'].setText('')
+        self['live'] = Label()
+        self.Update = False
         self['actions'] = ActionMap(['OkCancelActions',
                                      'ColorActions',
-                                     'ButtonSetupActions',
-                                     'WizardActions', ], {'ok': self.okRun,
-                                                          'green': self.okRun,
-                                                          'back': self.closerm,
-                                                          'red': self.closerm,
-                                                          'blue': self.msgdeleteBouquets,
-                                                          'cancel': self.closerm}, -1)
+                                     'DirectionActions',
+                                     'HotkeyActions',
+                                     'InfobarEPGActions',
+                                     'ChannelSelectBaseActions'], {'ok': self.okRun,
+                                                                   'back': self.closerm,
+                                                                   'cancel': self.closerm,
+                                                                   'yellow': self.update_me,  # update_me,
+                                                                   'green': self.okRun,
+                                                                   'blue': self.msgdeleteBouquets,
+                                                                   'yellow_long': self.update_dev,
+                                                                   'info_long': self.update_dev,
+                                                                   'infolong': self.update_dev,
+                                                                   'showEventInfoPlugin': self.update_dev,
+                                                                   'red': self.closerm}, -1)
         self.timer = eTimer()
-        if Utils.DreamOS():
-            self.timer_conn = self.timer.timeout.connect(self.updateMenuList)
+        if os.path.exists('/var/lib/dpkg/status'):
+            self.timer_conn = self.timer.timeout.connect(self.check_vers)
         else:
-            self.timer.callback.append(self.updateMenuList)
-        self.timer.start(1000, True)
-        # self.onFirstExecBegin.append(self.updateMenuList)
+            self.timer.callback.append(self.check_vers)
+        self.timer.start(500, 1)
+        self.onLayoutFinish.append(self.updateMenuList)
         self.onLayoutFinish.append(self.__layoutFinished)
+
+    def check_vers(self):
+        remote_version = '0.0'
+        remote_changelog = ''
+        req = Utils.Request(Utils.b64decoder(installer_url), headers={'User-Agent': 'Mozilla/5.0'})
+        page = Utils.urlopen(req).read()
+        if PY3:
+            data = page.decode("utf-8")
+        else:
+            data = page.encode("utf-8")
+        if data:
+            lines = data.split("\n")
+            for line in lines:
+                if line.startswith("version"):
+                    remote_version = line.split("=")
+                    remote_version = line.split("'")[1]
+                if line.startswith("changelog"):
+                    remote_changelog = line.split("=")
+                    remote_changelog = line.split("'")[1]
+                    break
+        self.new_version = remote_version
+        self.new_changelog = remote_changelog
+        # if float(currversion) < float(remote_version):
+        if currversion < remote_version:
+            self.Update = True
+            self['key_yellow'].show()
+            # self['key_green'].show()
+            self.session.open(MessageBox, _('New version %s is available\n\nChangelog: %s\n\nPress info_long or yellow_long button to start force updating.') % (self.new_version, self.new_changelog), MessageBox.TYPE_INFO, timeout=5)
+        # self.update_me()
+
+    def update_me(self):
+        if self.Update is True:
+            self.session.openWithCallback(self.install_update, MessageBox, _("New version %s is available.\n\nChangelog: %s \n\nDo you want to install it now?") % (self.new_version, self.new_changelog), MessageBox.TYPE_YESNO)
+        else:
+            self.session.open(MessageBox, _("Congrats! You already have the latest version..."),  MessageBox.TYPE_INFO, timeout=4)
+
+    def update_dev(self):
+        try:
+            req = Utils.Request(Utils.b64decoder(developer_url), headers={'User-Agent': 'Mozilla/5.0'})
+            page = Utils.urlopen(req).read()
+            data = json.loads(page)
+            remote_date = data['pushed_at']
+            strp_remote_date = datetime.strptime(remote_date, '%Y-%m-%dT%H:%M:%SZ')
+            remote_date = strp_remote_date.strftime('%Y-%m-%d')
+            self.session.openWithCallback(self.install_update, MessageBox, _("Do you want to install update ( %s ) now?") % (remote_date), MessageBox.TYPE_YESNO)
+        except Exception as e:
+            print('error xcons:', e)
+
+    def install_update(self, answer=False):
+        if answer:
+            cmd1 = 'wget -q "--no-check-certificate" ' + Utils.b64decoder(installer_url) + ' -O - | /bin/sh'
+            self.session.open(xConsole, 'Upgrading...', cmdlist=[cmd1], finishedCallback=self.myCallback, closeOnSuccess=False)
+        else:
+            self.session.open(MessageBox, _("Update Aborted!"),  MessageBox.TYPE_INFO, timeout=3)
+
+    def myCallback(self, result=None):
+        print('result:', result)
+        return
 
     def __layoutFinished(self):
         self.setTitle(self.setup_title)
@@ -300,57 +384,60 @@ class MainHasBahCa(Screen):
         global tyurl
         self.names = []
         self.urls = []
+        idx = 0
         try:
-            idx = 0
-            # AA = ['.m3u']
-            for root, dirs, files in os.walk(path_playlist):
-                for name in files:
-                    if '.m3u' not in name:
-                        continue
-                    # for x in AA:
-                        # if x not in name:
-                            # continue
-                        # if '.py' in name:
-                            # continue
-
-                    print('name ', name)
-                    namex = name.replace('.m3u', '').capitalize()
-                    self.names.append(namex)
-                    self.urls.append(root + '/' + name)
-                    idx += 1
-        # urls = tyurl
-        # if tyurl is True:
-            # urls = tyurl2
-
-        # print('urls  ', urls)
-
-            # content = Utils.getUrl(urls)
+            urlx = 'http://eviptv.com/m3u8/'
+            # if tyurl is True:
+                # urls = tyurl  # tyurl2
+            print('urlx  ', urlx)
+            content = Utils.make_request(urlx)
             # if six.PY3:
                 # content = six.ensure_str(content)
-            # n1 = content.find('Directory</a>', 0)
-            # n2 = content.find('</body', n1)
-            # content2 = content[n1:n2]
-            # content3 = content2.replace('..&gt;', '')
-            # # print('content ', content3)
-            # regexvideo = 'href="(.*?).m3u">HasBahCa_(.*?)</a.*?align="right">(.*?)</td>.*?</tr>'
-            # match = re.compile(regexvideo, re.DOTALL).findall(content3)
-            # # idx = 0
-            # for url, name, date in match:
-                # name = name.replace('..', '').replace('HasBahCa_', '')
-                # name = name.replace('&gt;', '').replace('_', ' ').replace('.m3u', '')
-                # name = '{}{}{}'.format(name, ' ', date)
-                # url = '{}{}'.format(urls, url + '.m3u')
-                # self.urls.append(url.strip())
-                # self.names.append(Utils.checkStr(name.strip()))
-                # idx += 1
-            # print(len(self.names))
-            # if len(self.names) < 0:
-                # if tyurl is True:
-                    # tyurl = False
-                # else:
-                    # tyurl = True
-                    # self.updateMenuList()
+            n1 = content.find('Directory</a>', 0)
+            n2 = content.find('</body', n1)
+            content2 = content[n1:n2]
 
+
+            if six.PY3:
+                # content2 = content2.decode("utf-8")
+                content2 = six.ensure_str(content2)
+            else:
+                content2 = content2.encode("utf-8")
+            if content2:
+
+                # <tr><td valign="top">&nbsp;</td><td><a href="HasBahCa_ALL.m3u">HasBahCa_ALL.m3u</a>       </td><td align="right">2024-06-28 00:30  </td><td align="right"> 18M</td><td>&nbsp;</td></tr>
+                # content3 = content2.replace('..&gt;', '')
+                regexvideo = 'href="(.*?).m3u">(.*?)</a>.*?align.*?">(.*?)</td><td.*?</tr>'
+                match = re.compile(regexvideo, re.DOTALL).findall(content2)
+                for url, name, date in match:
+                    name = name.replace('..', '').replace('HasBahCa_', '')
+                    name = name.replace('&gt;', '').replace('_', ' ').replace('.m3u', '')
+                    name = decodename(name)
+                    name = '{}{}{}'.format(name, ' ', date)
+                    url = '{}{}'.format(urlx, url + '.m3u')
+
+                    self.names.append(name.strip())
+                    self.urls.append(url.strip())
+                    idx += 1
+                print(len(self.names))
+        except Exception as e:
+            print('error HasBahCa1', str(e))
+
+        # # don't work
+        # try:
+            # for root, dirs, files in os.walk(path_playlist):
+                # for name in files:
+                    # if '.m3u' not in name:
+                        # continue
+                    # # print('name ', name)
+                    # namex = name.replace('.m3u', '').capitalize()
+                    # self.names.append(namex)
+                    # self.urls.append(path_playlist + '/' + name)
+                    # idx += 1
+        # except Exception as e:
+            # print('error HasBahCa1', str(e))
+
+        try:
             self['info'].setText(_('Please now select ...'))
             self["live"].setText('N.' + str(idx) + " CATEGORY")
             self['key_green'].show()
@@ -377,7 +464,7 @@ class MainHasBahCa(Screen):
         idx = self["text"].getSelectionIndex()
         name = self.names[idx]
         url = self.urls[idx]
-        if 'xxx' in name.lower():
+        if 'xxx' in name.lower() or 'porn' in name.lower() or 'adult' in name.lower():
             self.adultonly()
             return
         if 'parent' in name.lower():
@@ -454,8 +541,7 @@ class HasBahCaC(Screen):
         self['progress'] = ProgressBar()
         self['progresstext'] = StaticText()
         self["progress"].hide()
-        self['live'] = Label('')
-        self['live'].setText('')
+        self['live'] = Label()
         self['actions'] = ActionMap(['OkCancelActions',
                                      'ColorActions',
                                      'ButtonSetupActions',
@@ -482,14 +568,15 @@ class HasBahCaC(Screen):
         url = self.url
         # items = []
         try:
-            content = Utils.getUrl(url)
-            if six.PY3:
-                content = six.ensure_str(content)
+            content = Utils.make_request(url)
+            # if six.PY3:
+                # content = six.ensure_str(content)
             print("HasBahCa t content =", content)
             print('urlll content: ', url)
             n1 = content.find('js-details-container Details">', 0)
             n2 = content.find('<div class="Details-content--shown Box-footer', n1)
             content2 = content[n1:n2]
+
             regexvideo = 'title="HasBahCa_(.*?).m3u.*?href="/HasBahCa/IPTV-LIST/blob/main/(.*?).m3u">.*?</a></span.*?</div>'
             match = re.compile(regexvideo, re.DOTALL).findall(content2)
             for name, url in match:
@@ -498,18 +585,10 @@ class HasBahCaC(Screen):
                 if 'enigma2' in name.lower():
                     continue
                 url1 = '{}{}{}'.format(github, str(url), '.m3u')
-                name1 = name.replace('HasBahCa', '°')
-                name1 = name1.replace('-', ' ').replace('_', ' ')
-                '''
-                name = html_conv.html_unescape(name1)
-                item = name + "###" + url1
-                items.append(item)
-            items.sort()
-            for item in items:
-                name = item.split('###')[0]
-                url2 = item.split('###')[1]
-                '''
-                self.names.append(Utils.checkStr(name.strip()))
+                name1 = name.replace('HasBahCa', '°').replace('-', ' ').replace('_', ' ')
+                name = decodename(name1)
+
+                self.names.append(name.strip())
                 self.urls.append(url1.strip())
             self["live"].setText('N.' + str(len(self.names)) + " CATEGORY")
             self['info'].setText(_('Please now select ...'))
@@ -551,8 +630,7 @@ class HasBahCa1(Screen):
         self['key_green'].hide()
         self['key_yellow'].hide()
         self['key_blue'].hide()
-        self['live'] = Label('')
-        self['live'].setText('')
+        self['live'] = Label()
         self['progress'] = ProgressBar()
         self['progresstext'] = StaticText()
         self["progress"].hide()
@@ -596,19 +674,33 @@ class HasBahCa1(Screen):
             self.pics = []
             search = result
             try:
-                content = Utils.getUrl(self.url)
-                if six.PY3:
-                    content = six.ensure_str(content)
+                content = Utils.make_request(self.url)
                 content = content.replace('$BorpasFileFormat="1"', '')
-                regexvideo = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
-                match = re.compile(regexvideo, re.DOTALL).findall(content)
-                for name, url in match:
-                    name = name.replace('_', ' ').replace('-', ' ')
-                    if str(search).lower() in name.lower():
-                        search_ok = True
-                        url = url.replace(" ", "").replace("\\n", "")
-                        self.names.append(Utils.checkStr(name).strip())
-                        self.urls.append(url)
+
+                if "#EXTM3U" and 'tvg-logo' in content:
+                    regexcat = 'EXTINF.*?tvg-logo.*?,(.*?)\\n(.*?)\\n'
+                    match = re.compile(regexcat, re.DOTALL).findall(content)
+                    for name, url in match:
+                        name = name.replace('_', ' ').replace('-', ' ')
+                        if str(search).lower() in name.lower():
+                            search_ok = True   
+                        url = url.replace(' ', '').replace('\\n', '')
+                        name = decodename(name)
+                        self.names.append(str(name))
+                        self.urls.append(str(url))
+                else:
+                    regexcat = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
+                    match = re.compile(regexcat, re.DOTALL).findall(content)
+                    for name, url in match:
+                        name = name.replace('_', ' ').replace('-', ' ')
+                        
+                        if str(search).lower() in name.lower():
+                            search_ok = True                        
+                            url = url.replace(' ', '').replace('\\n', '')
+                            name = decodename(name)
+                            self.names.append(str(name))
+                            self.urls.append(str(url))
+                    
                 if search_ok is True:
                     showlisthasba(self.names, self['text'])
             except:
@@ -629,16 +721,29 @@ class HasBahCa1(Screen):
                 content = f1.read()
                 f1.close()
             else:
-                content = Utils.getUrl(url)
-                if six.PY3:
-                    content = six.ensure_str(content)
+                content = Utils.make_request(url)
+
             content = content.replace('$BorpasFileFormat="1"', '')
-            regexvideo = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
-            match = re.compile(regexvideo, re.DOTALL).findall(content)
-            for name, url in match:
-                name = name.replace('_', ' ').replace('-', ' ')
-                self.names.append(Utils.checkStr(name).strip())
-                self.urls.append(url.strip())
+
+            if "#EXTM3U" and 'tvg-logo' in content:
+                regexcat = 'EXTINF.*?tvg-logo.*?,(.*?)\\n(.*?)\\n'
+                match = re.compile(regexcat, re.DOTALL).findall(content)
+                for name, url in match:
+                    name = name.replace('_', ' ').replace('-', ' ')
+                    url = url.replace(' ', '').replace('\\n', '')
+                    name = decodename(name)
+                    self.names.append(str(name))
+                    self.urls.append(str(url))
+            else:
+                regexcat = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
+                match = re.compile(regexcat, re.DOTALL).findall(content)
+                for name, url in match:
+                    name = name.replace('_', ' ').replace('-', ' ')
+                    url = url.replace(' ', '').replace('\\n', '')
+                    name = decodename(name)
+                    self.names.append(str(name))
+                    self.urls.append(str(url))
+
             self["live"].setText('N.' + str(len(self.names)) + " STREAM")
             self['info'].setText(_('Please now select ...'))
             self['key_green'].show()
@@ -764,7 +869,7 @@ class HasBahCa1(Screen):
         if result:
             try:
                 for fname in os.listdir(enigma_path):
-                    if 'userbouquet.hbc_' in fname:
+                    if 'hbc_' in fname:
                         # os.remove(os.path.join(enigma_path, fname))
                         Utils.purge(enigma_path, fname)
                     elif 'bouquets.tv.bak' in fname:
@@ -780,7 +885,7 @@ class HasBahCa1(Screen):
                 tvfile = open(os.path.join(enigma_path, 'bouquets.tv'), 'w+')
                 bakfile = open(os.path.join(enigma_path, 'bouquets.tv.bak'))
                 for line in bakfile:
-                    if '.hbc_' not in line:
+                    if 'hbc_' not in line:
                         tvfile.write(line)
                 bakfile.close()
                 tvfile.close()
@@ -953,11 +1058,7 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         self.onClose.append(self.cancel)
 
     def getAspect(self):
-        try:
-            aspect = iAVSwitch().getAspectRatioSetting()
-        except:
-            aspect = eAVSwitch().getAspectRatioSetting()
-        return aspect
+        return AVSwitch().getAspectRatioSetting()
 
     def getAspectString(self, aspectnum):
         return {0: '4:3 Letterbox',
@@ -978,9 +1079,9 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
                6: '16_9_letterbox'}
         config.av.aspectratio.setValue(map[aspect])
         try:
-            iAVSwitch.setAspectRatio(aspect)
+            AVSwitch().setAspectRatio(aspect)
         except:
-            eAVSwitch.setAspectRatio(aspect)
+            pass
 
     def av(self):
         temp = int(self.getAspect())
