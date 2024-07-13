@@ -254,9 +254,9 @@ def returnIMDB(text_clear):
         return True
     return False
 
-def decodename(name):
+def decodename(name, fallback=''):
     import unicodedata
-    import six
+    import six, re
     if isinstance(name, six.text_type):
         name = name.encode('utf-8')
     name = unicodedata.normalize('NFKD', six.text_type(name, 'utf_8', errors='ignore')).encode('ASCII', 'ignore')
@@ -397,7 +397,6 @@ class MainHasBahCa(Screen):
             n2 = content.find('</body', n1)
             content2 = content[n1:n2]
 
-
             if six.PY3:
                 # content2 = content2.decode("utf-8")
                 content2 = six.ensure_str(content2)
@@ -420,24 +419,21 @@ class MainHasBahCa(Screen):
                     self.urls.append(url.strip())
                     idx += 1
                 print(len(self.names))
-        except Exception as e:
-            print('error HasBahCa1', str(e))
-
-        # # don't work
-        # try:
-            # for root, dirs, files in os.walk(path_playlist):
-                # for name in files:
-                    # if '.m3u' not in name:
-                        # continue
-                    # # print('name ', name)
-                    # namex = name.replace('.m3u', '').capitalize()
-                    # self.names.append(namex)
-                    # self.urls.append(path_playlist + '/' + name)
-                    # idx += 1
         # except Exception as e:
             # print('error HasBahCa1', str(e))
 
-        try:
+        # local files to playlist folder
+        for root, dirs, files in os.walk(path_playlist):
+            for name in files:
+                if '.m3u' not in name:
+                    continue
+                # print('name ', name)
+                namex = '(Local) ' + name.replace('.m3u', '').capitalize()
+                self.names.append(namex)
+                self.urls.append(path_playlist + '/' + name)
+                idx += 1
+
+        # try:
             self['info'].setText(_('Please now select ...'))
             self["live"].setText('N.' + str(idx) + " CATEGORY")
             self['key_green'].show()
@@ -677,29 +673,29 @@ class HasBahCa1(Screen):
                 content = Utils.make_request(self.url)
                 content = content.replace('$BorpasFileFormat="1"', '')
 
-                if "#EXTM3U" and 'tvg-logo' in content:
-                    regexcat = 'EXTINF.*?tvg-logo.*?,(.*?)\\n(.*?)\\n'
-                    match = re.compile(regexcat, re.DOTALL).findall(content)
-                    for name, url in match:
-                        name = name.replace('_', ' ').replace('-', ' ')
-                        if str(search).lower() in name.lower():
-                            search_ok = True   
+                # if "#EXTM3U" and 'tvg-logo' in content:
+                    # regexcat = 'EXTINF.*?tvg-logo.*?,(.*?)\\n(.*?)\\n'
+                    # match = re.compile(regexcat, re.DOTALL).findall(content)
+                    # for name, url in match:
+                        # name = name.replace('_', ' ').replace('-', ' ')
+                        # if str(search).lower() in name.lower():
+                            # search_ok = True   
+                            # url = url.replace(' ', '').replace('\\n', '')
+                            # name = decodename(name)
+                            # self.names.append(str(name))
+                            # self.urls.append(str(url))
+                # else:
+                regexcat = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
+                match = re.compile(regexcat, re.DOTALL).findall(content)
+                for name, url in match:
+                    name = name.replace('_', ' ').replace('-', ' ')
+                    
+                    if str(search).lower() in name.lower():
+                        search_ok = True                        
                         url = url.replace(' ', '').replace('\\n', '')
                         name = decodename(name)
                         self.names.append(str(name))
                         self.urls.append(str(url))
-                else:
-                    regexcat = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
-                    match = re.compile(regexcat, re.DOTALL).findall(content)
-                    for name, url in match:
-                        name = name.replace('_', ' ').replace('-', ' ')
-                        
-                        if str(search).lower() in name.lower():
-                            search_ok = True                        
-                            url = url.replace(' ', '').replace('\\n', '')
-                            name = decodename(name)
-                            self.names.append(str(name))
-                            self.urls.append(str(url))
                     
                 if search_ok is True:
                     showlisthasba(self.names, self['text'])
@@ -724,25 +720,25 @@ class HasBahCa1(Screen):
                 content = Utils.make_request(url)
 
             content = content.replace('$BorpasFileFormat="1"', '')
-
-            if "#EXTM3U" and 'tvg-logo' in content:
-                regexcat = 'EXTINF.*?tvg-logo.*?,(.*?)\\n(.*?)\\n'
-                match = re.compile(regexcat, re.DOTALL).findall(content)
-                for name, url in match:
-                    name = name.replace('_', ' ').replace('-', ' ')
-                    url = url.replace(' ', '').replace('\\n', '')
-                    name = decodename(name)
-                    self.names.append(str(name))
-                    self.urls.append(str(url))
-            else:
-                regexcat = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
-                match = re.compile(regexcat, re.DOTALL).findall(content)
-                for name, url in match:
-                    name = name.replace('_', ' ').replace('-', ' ')
-                    url = url.replace(' ', '').replace('\\n', '')
-                    name = decodename(name)
-                    self.names.append(str(name))
-                    self.urls.append(str(url))
+            # #EXTINF:-1 group-title="XXX_movies_OLD",#14 / Золотой век Эротики 14
+            # if "#EXTM3U" and 'tvg-logo' in content:
+                # regexcat = 'EXTINF.*?tvg-logo.*?,(.*?)\\n(.*?)\\n'
+                # match = re.compile(regexcat, re.DOTALL).findall(content)
+                # for name, url in match:
+                    # name = name.replace('_', ' ').replace('-', ' ')
+                    # url = url.replace(' ', '').replace('\\n', '')
+                    # name = decodename(name)
+                    # self.names.append(str(name))
+                    # self.urls.append(str(url))
+            # else:
+            regexcat = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
+            match = re.compile(regexcat, re.DOTALL).findall(content)
+            for name, url in match:
+                name = name.replace('_', ' ').replace('-', ' ')
+                url = url.replace(' ', '').replace('\\n', '')
+                name = decodename(name)
+                self.names.append(str(name))
+                self.urls.append(str(url))
 
             self["live"].setText('N.' + str(len(self.names)) + " STREAM")
             self['info'].setText(_('Please now select ...'))
