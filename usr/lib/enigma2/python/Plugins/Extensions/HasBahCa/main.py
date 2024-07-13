@@ -422,16 +422,16 @@ class MainHasBahCa(Screen):
         # except Exception as e:
             # print('error HasBahCa1', str(e))
 
-        # local files to playlist folder
-        for root, dirs, files in os.walk(path_playlist):
-            for name in files:
-                if '.m3u' not in name:
-                    continue
-                # print('name ', name)
-                namex = '(Local) ' + name.replace('.m3u', '').capitalize()
-                self.names.append(namex)
-                self.urls.append(path_playlist + '/' + name)
-                idx += 1
+            # local files to playlist folder
+            for root, dirs, files in os.walk(path_playlist):
+                for name in files:
+                    if '.m3u' not in name:
+                        continue
+                    # print('name ', name)
+                    namex = '(Local) ' + name.replace('.m3u', '').capitalize()
+                    self.names.append(namex)
+                    self.urls.append(path_playlist + '/' + name)
+                    idx += 1
 
         # try:
             self['info'].setText(_('Please now select ...'))
@@ -693,6 +693,7 @@ class HasBahCa1(Screen):
                     if str(search).lower() in name.lower():
                         search_ok = True                        
                         url = url.replace(' ', '').replace('\\n', '')
+                        
                         name = decodename(name)
                         self.names.append(str(name))
                         self.urls.append(str(url))
@@ -737,6 +738,7 @@ class HasBahCa1(Screen):
                 name = name.replace('_', ' ').replace('-', ' ')
                 url = url.replace(' ', '').replace('\\n', '')
                 name = decodename(name)
+                # name = html_conv.html_unescape(name)
                 self.names.append(str(name))
                 self.urls.append(str(url))
 
