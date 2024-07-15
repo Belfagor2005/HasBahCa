@@ -1,14 +1,12 @@
 #!/bin/bash
-##setup command=wget -q "--no-check-certificate" https://raw.githubusercontent.com/Belfagor2005/HasBahCa/main/installer.sh -O - | /bin/sh
+## setup command=wget -q "--no-check-certificate" https://raw.githubusercontent.com/Belfagor2005/HasBahCa/main/installer.sh -O - | /bin/sh
 
-######### Only This 2 lines to edit with new version ######
+## Only This 2 lines to edit with new version ######
 version='1.6'
 changelog='\nAdd Locale Language\nFix Upgrade'
-##############################################################
-
+###
 TMPPATH=/tmp/HasBahCa--main
 FILEPATH=/tmp/main.tar.gz
-
 if [ ! -d /usr/lib64 ]; then
 	PLUGINPATH=/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa
 else
@@ -22,9 +20,9 @@ fi
 [ -r $FILEPATH ] && rm -f $FILEPATH > /dev/null 2>&1
 
 ## Remove old plugin directory
-# [ -r $PLUGINPATH ] && rm -rf $PLUGINPATH
+## [ -r $PLUGINPATH ] && rm -rf $PLUGINPATH
 
-# check depends packges
+## check depends packges
 if [ -f /var/lib/dpkg/status ]; then
    STATUS=/var/lib/dpkg/status
    OSTYPE=DreamOs
@@ -59,16 +57,19 @@ else
 	echo ""
 	if [ $OSTYPE = "DreamOs" ]; then
 		apt-get update && apt-get install python-requests -y
-	elif [ $PYTHON = "PY3" ]; then
-		opkg update && opkg install python3-requests
-	elif [ $PYTHON = "PY2" ]; then
-		opkg update && opkg install python-requests
+	else
+		if [ $PYTHON = "PY3" ]; then
+			opkg update && opkg install python3-requests
+		# elif [ $PYTHON = "PY2" ]; then
+		else
+			opkg update && opkg install python-requests
+		fi
 	fi
 fi
 echo ""
 
-# Download and install plugin
-# check depends packges
+## Download and install plugin
+## check depends packges
 mkdir -p $TMPPATH
 cd $TMPPATH
 set -e
@@ -85,13 +86,6 @@ if [ $OSTYPE != "DreamOs" ]; then
 fi
 sleep 2
 
-# if [ $OSTYPE = "DreamOs" ]; then
-	# apt-get update && apt-get install ffmpeg gstplayer exteplayer3 enigma2-plugin-systemplugins-serviceapp -y
-# else
-	# opkg update && opkg install ffmpeg gstplayer exteplayer3 enigma2-plugin-systemplugins-serviceapp
-# fi
-
-# wget https://github.com/Belfagor2005/HasBahCa/archive/refs/heads/main.tar.gz
 wget --no-check-certificate --no-cache --no-dns-cache 'https://github.com/Belfagor2005/HasBahCa/archive/refs/heads/main.tar.gz'
 tar -xzf main.tar.gz
 cp -r 'HasBahCa--main/usr' '/'
@@ -99,7 +93,7 @@ set +e
 cd
 sleep 2
 
-### Check if plugin installed correctly
+## Check if plugin installed correctly
 if [ ! -d $PLUGINPATH ]; then
 	echo "Some thing wrong .. Plugin not installed"
 	exit 1
