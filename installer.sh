@@ -4,7 +4,7 @@
 ## Only This 2 lines to edit with new version ######
 version='1.6'
 changelog='\nAdd Locale Language\nFix Upgrade'
-###
+##
 TMPPATH=/tmp/HasBahCa--main
 FILEPATH=/tmp/main.tar.gz
 if [ ! -d /usr/lib64 ]; then
@@ -46,7 +46,7 @@ if [ $PYTHON = "PY3" ]; then
 	if grep -qs "Package: $Packagesix" cat $STATUS ; then
 		echo ""
 	else
-		opkg update && opkg install python3-six
+		opkg update && opkg --force-reinstall --force-overwrite install python3-six
 	fi
 fi
 echo ""
@@ -59,10 +59,10 @@ else
 		apt-get update && apt-get install python-requests -y
 	else
 		if [ $PYTHON = "PY3" ]; then
-			opkg update && opkg install python3-requests
+			opkg update && opkg --force-reinstall --force-overwrite install python3-requests
 		# elif [ $PYTHON = "PY2" ]; then
 		else
-			opkg update && opkg install python-requests
+			opkg update && opkg --force-reinstall --force-overwrite install python-requests
 		fi
 	fi
 fi
@@ -82,7 +82,7 @@ else
 fi
 
 if [ $OSTYPE != "DreamOs" ]; then
-	opkg update && opkg install ffmpeg gstplayer exteplayer3 enigma2-plugin-systemplugins-serviceapp
+	opkg update && opkg --force-reinstall --force-overwrite install ffmpeg gstplayer exteplayer3 enigma2-plugin-systemplugins-serviceapp
 fi
 sleep 2
 
