@@ -30,8 +30,11 @@ from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
 from Components.Sources.StaticText import StaticText
 from Components.ProgressBar import ProgressBar
 from Components.Sources.Progress import Progress
-from Screens.InfoBarGenerics import InfoBarSubtitleSupport
-from Screens.InfoBarGenerics import InfoBarSeek, InfoBarAudioSelection
+from Screens.InfoBarGenerics import (
+    InfoBarSubtitleSupport,
+    InfoBarSeek,
+    InfoBarAudioSelection,
+)
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Tools.Directories import SCOPE_PLUGINS, resolveFilename
@@ -61,7 +64,7 @@ global tyurl
 
 tyurl = False
 downloadhasba = None
-currversion = '1.6'
+currversion = '1.7'
 PY3 = sys.version_info.major >= 3
 hostcategoryes = 'https://github.com/HasBahCa/IPTV-LIST/'
 github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
