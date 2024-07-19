@@ -6,14 +6,14 @@
 	<widget source="progresstext" render="Label" font="Regular;27" position="750,1267" size="400,67" backgroundColor="#202020" transparent="1" halign="center" zPosition="6" />	
 	<widget name="live" position="295,1026" size="1295,67" font="Regular;40" halign="left" foregroundColor="yellow" backgroundColor="#20000000" transparent="1" zPosition="5" />
 
-	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/main2.png" position="0,0" size="2560,1440" zPosition="1" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/main2.png" position="0,0" size="2560,1440" />
 	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/tvs.png" position="524,1110" size="800,107" alphatest="blend" zPosition="5" />
 	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/sep.png" position="294,147" size="1294,11" zPosition="5" />
 	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/sep.png" position="294,1014" size="1294,7" zPosition="5" />
   	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/sep.png" position="294,1227" size="1294,11" zPosition="5" />	
 	
 	<!-- Menu List -->
-	<widget name="text" position="294,254" size="1294,734" scrollbarMode="showOnDemand" transparent="1" zPosition="5" foregroundColor="#00a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="#20000000" backgroundColorSelected="#0b2049" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/sliderb.png" />
+	<widget name="text" position="294,254" size="1294,734" scrollbarMode="showOnDemand" transparent="1" zPosition="5" foregroundColor="#00a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="#20000000" backgroundColorSelected="#0b2049" />
 
   	<!-- Colors 1220 -->
   	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res/pics/key_red.png" position="294,1274" size="40,40" alphatest="on" zPosition="5" />
