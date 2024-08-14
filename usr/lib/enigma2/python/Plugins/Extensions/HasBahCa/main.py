@@ -14,9 +14,8 @@ from __future__ import print_function
 from .__init__ import _
 from . import Utils
 from . import html_conv
-# from . import cvbq
-# from .plugin import currversion
 from .Console import Console as xConsole
+
 from Components.AVSwitch import AVSwitch
 from Components.ActionMap import ActionMap
 from Components.Button import Button
@@ -147,13 +146,13 @@ if sslverify:
 
 screenwidth = getDesktop(0).size()
 if screenwidth.width() == 2560:
-    path_skin = os.path.join(plugin_path, 'res/skins/uhd/')
+    path_skin = os.path.join(plugin_path, 'res/skins/uhd')
 elif screenwidth.width() == 1920:
-    path_skin = os.path.join(plugin_path, 'res/skins/fhd/')
+    path_skin = os.path.join(plugin_path, 'res/skins/fhd')
 else:
-    path_skin = os.path.join(plugin_path, 'res/skins/hd/')
+    path_skin = os.path.join(plugin_path, 'res/skins/hd')
 if Utils.DreamOS():
-    path_skin = os.path.join(path_skin, 'dreamOs/')
+    path_skin = os.path.join(path_skin, 'dreamOs')
 print('HasBahCa path_skin: ', path_skin)
 
 
