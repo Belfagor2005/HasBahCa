@@ -256,9 +256,11 @@ def returnIMDB(text_clear):
         return True
     return False
 
+
 def decodename(name, fallback=''):
     import unicodedata
-    import six, re
+    import six
+    import re
     if isinstance(name, six.text_type):
         name = name.encode('utf-8')
     name = unicodedata.normalize('NFKD', six.text_type(name, 'utf_8', errors='ignore')).encode('ASCII', 'ignore')
@@ -306,7 +308,6 @@ class MainHasBahCa(Screen):
         self['live'] = Label()
         self.Update = False
         self['actions'] = ActionMap(['OkCancelActions',
-                                     'ColorActions',
                                      'DirectionActions',
                                      'HotkeyActions',
                                      'InfobarEPGActions',
@@ -401,18 +402,14 @@ class MainHasBahCa(Screen):
         idx = 0
         try:
             urlx = 'http://eviptv.com/m3u8/'
-            # if tyurl is True:
-                # urls = tyurl  # tyurl2
             print('urlx  ', urlx)
             content = Utils.make_request(urlx)
-            # if six.PY3:
-                # content = six.ensure_str(content)
+
             n1 = content.find('Directory</a>', 0)
             n2 = content.find('</body', n1)
             content2 = content[n1:n2]
 
             if six.PY3:
-                # content2 = content2.decode("utf-8")
                 content2 = six.ensure_str(content2)
             else:
                 content2 = content2.encode("utf-8")
@@ -550,7 +547,7 @@ class HasBahCaC(Screen):
         self["progress"].hide()
         self['live'] = Label()
         self['actions'] = ActionMap(['OkCancelActions',
-                                     'ColorActions',
+                                     'HotkeyActions',
                                      'ButtonSetupActions',
                                      'WizardActions', ], {'ok': self.okRun,
                                                           'green': self.okRun,
@@ -683,11 +680,11 @@ class HasBahCa1(Screen):
             try:
                 content = Utils.make_request(self.url)
                 content = content.replace('$BorpasFileFormat="1"', '')
-                ##EXTINF:-1 group-title="RUS_movies3_cartoons","Пришелец Ванюша ч.3" 1990г.
+                # #EXTINF:-1 group-title="RUS_movies3_cartoons","Пришелец Ванюша ч.3" 1990г.
                 regexcat = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
                 match = re.compile(regexcat, re.DOTALL).findall(content)
                 for name, url in match:
-                    name = name.replace('"', '').replace('-', ' ')  #.replace('-', ' ')
+                    name = name.replace('"', '').replace('-', ' ')  # .replace('-', ' ')
                     if str(search).lower() in name.lower():
                         search_ok = True
                         # url = url.replace(' ', '').replace('\\n', '')
