@@ -413,10 +413,8 @@ class MainHasBahCa(Screen):
                 content2 = six.ensure_str(content2)
             else:
                 content2 = content2.encode("utf-8")
-            if content2:
 
-                # <tr><td valign="top">&nbsp;</td><td><a href="HasBahCa_ALL.m3u">HasBahCa_ALL.m3u</a>       </td><td align="right">2024-06-28 00:30  </td><td align="right"> 18M</td><td>&nbsp;</td></tr>
-                # content3 = content2.replace('..&gt;', '')
+            if content2:
                 regexvideo = 'href="(.*?).m3u">(.*?)</a>.*?align.*?">(.*?)</td><td.*?</tr>'
                 match = re.compile(regexvideo, re.DOTALL).findall(content2)
                 for url, name, date in match:
@@ -425,7 +423,6 @@ class MainHasBahCa(Screen):
                     # name = decodename(name)
                     name = '{}{}{}'.format(name, ' ', date)
                     url = '{}{}'.format(urlx, url + '.m3u')
-
                     self.names.append(name.strip())
                     self.urls.append(url.strip())
                     idx += 1
@@ -591,7 +588,6 @@ class HasBahCaC(Screen):
                 url1 = '{}{}{}'.format(github, str(url), '.m3u')
                 name = name.replace('HasBahCa', '°').replace('-', ' ').replace('_', ' ')
                 # name = decodename(name)
-
                 self.names.append(name.strip())
                 self.urls.append(url1.strip())
             self["live"].setText('N.' + str(len(self.names)) + " CATEGORY")
