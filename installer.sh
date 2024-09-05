@@ -5,22 +5,13 @@
 version='1.7'
 changelog='\nAdd Locale Language\nFix Upgrade'
 ##
-TMPPATH=/tmp/HasBahCa--main
+TMPPATH=/tmp/HasBahCa-main
 FILEPATH=/tmp/main.tar.gz
 if [ ! -d /usr/lib64 ]; then
 	PLUGINPATH=/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa
 else
 	PLUGINPATH=/usr/lib64/enigma2/python/Plugins/Extensions/HasBahCa
 fi
-
-## Remove tmp directory
-[ -r $TMPPATH ] && rm -f $TMPPATH > /dev/null 2>&1
-
-## Remove tmp directory
-[ -r $FILEPATH ] && rm -f $FILEPATH > /dev/null 2>&1
-
-## Remove old plugin directory
-## [ -r $PLUGINPATH ] && rm -rf $PLUGINPATH
 
 ## check depends packges
 if [ -f /var/lib/dpkg/status ]; then
@@ -57,16 +48,23 @@ else
 	echo ""
 	if [ $OSTYPE = "DreamOs" ]; then
 		apt-get update && apt-get install python-requests -y
-	else
-		if [ $PYTHON = "PY3" ]; then
-			opkg update && opkg --force-reinstall --force-overwrite install python3-requests
-		# elif [ $PYTHON = "PY2" ]; then
-		else
-			opkg update && opkg --force-reinstall --force-overwrite install python-requests
-		fi
+	elif [ $PYTHON = "PY3" ]; then
+		opkg update && opkg --force-reinstall --force-overwrite install python3-requests
+	elif [ $PYTHON = "PY2" ]; then
+	  
+		opkg update && opkg --force-reinstall --force-overwrite install python-requests
+	
 	fi
 fi
 echo ""
+
+## Remove tmp directory
+[ -r $TMPPATH ] && rm -f $TMPPATH > /dev/null 2>&1
+
+## Remove tmp directory
+[ -r $FILEPATH ] && rm -f $FILEPATH > /dev/null 2>&1
+## Remove old plugin directory
+[ -r $PLUGINPATH ] && rm -rf $PLUGINPATH
 
 ## Download and install plugin
 ## check depends packges
@@ -88,7 +86,7 @@ sleep 2
 
 wget --no-check-certificate 'https://github.com/Belfagor2005/HasBahCa/archive/refs/heads/main.tar.gz'
 tar -xzf main.tar.gz
-cp -r 'HasBahCa--main/usr' '/'
+cp -r 'HasBahCa-main/usr' '/'
 set +e
 cd
 sleep 2
