@@ -233,6 +233,7 @@ def showlisthasba(data, list):
 
 def returnIMDB(text_clear):
     TMDB = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('TMDB'))
+    tmdb = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('tmdb'))
     IMDb = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('IMDb'))
     text = html_conv.html_unescape(text_clear)
     if os.path.exists(TMDB):
@@ -242,6 +243,15 @@ def returnIMDB(text_clear):
         except Exception as e:
             print("[XCF] Tmdb: ", str(e))
         return True
+
+    elif os.path.exists(tmdb):
+        try:
+            from Plugins.Extensions.tmdb.plugin import tmdb
+            _session.open(tmdb.tmdbScreen, text, 0)
+        except Exception as e:
+            print("[XCF] Tmdb: ", str(e))
+        return True
+
     elif os.path.exists(IMDb):
         try:
             from Plugins.Extensions.IMDb.plugin import main as imdb
@@ -250,7 +260,7 @@ def returnIMDB(text_clear):
             print("[XCF] imdb: ", str(e))
         return True
     else:
-        _session.open(MessageBox, text_clear, MessageBox.TYPE_INFO)
+        _session.open(MessageBox, text, MessageBox.TYPE_INFO)
         return True
     return False
 
@@ -570,8 +580,8 @@ class HasBahCaC(Screen):
             content = Utils.make_request(url)
             # if six.PY3:
                 # content = six.ensure_str(content)
-            print("HasBahCa t content =", content)
-            print('urlll content: ', url)
+            # print("HasBahCa t content =", content)
+            # print('urlll content: ', url)
             n1 = content.find('js-details-container Details">', 0)
             n2 = content.find('<div class="Details-content--shown Box-footer', n1)
             content2 = content[n1:n2]
