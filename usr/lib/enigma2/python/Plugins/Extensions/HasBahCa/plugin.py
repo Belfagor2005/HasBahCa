@@ -14,7 +14,7 @@ from __future__ import absolute_import
 from Plugins.Plugin import PluginDescriptor
 from Tools.Directories import SCOPE_PLUGINS, resolveFilename
 from . import main
-from . import Utils
+from .lib import Utils
 import os
 
 currversion = '1.7'

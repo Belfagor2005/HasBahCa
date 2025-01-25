@@ -12,9 +12,9 @@
 '''
 from __future__ import print_function
 from .__init__ import _
-from . import Utils
-from . import html_conv
-from .Console import Console as xConsole
+from .lib import Utils
+from .lib import html_conv
+from .lib.Console import Console as xConsole
 
 from Components.AVSwitch import AVSwitch
 from Components.ActionMap import ActionMap
@@ -63,7 +63,7 @@ global tyurl
 
 tyurl = False
 downloadhasba = None
-currversion = '1.7'
+currversion = '1.8'
 PY3 = sys.version_info.major >= 3
 hostcategoryes = 'https://github.com/HasBahCa/IPTV-LIST/'
 github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
@@ -154,6 +154,8 @@ else:
 if Utils.DreamOS():
     path_skin = os.path.join(path_skin, 'dreamOs')
 print('HasBahCa path_skin: ', path_skin)
+VIDEO_ASPECT_RATIO_MAP = {0: "4:3 Letterbox", 1: "4:3 PanScan", 2: "16:9", 3: "16:9 Always", 4: "16:10 Letterbox", 5: "16:10 PanScan", 6: "16:9 Letterbox"}
+VIDEO_FMT_PRIORITY_MAP = {"38": 1, "37": 2, "22": 3, "18": 4, "35": 5, "34": 6}
 
 
 class hasList(MenuList):
@@ -575,13 +577,8 @@ class HasBahCaC(Screen):
         self.names = []
         self.urls = []
         url = self.url
-        # items = []
         try:
             content = Utils.make_request(url)
-            # if six.PY3:
-                # content = six.ensure_str(content)
-            # print("HasBahCa t content =", content)
-            # print('urlll content: ', url)
             n1 = content.find('js-details-container Details">', 0)
             n2 = content.find('<div class="Details-content--shown Box-footer', n1)
             content2 = content[n1:n2]
@@ -628,6 +625,7 @@ class HasBahCa1(Screen):
         self.name = sel
         self.url = url
         self.type = None
+        self.currentList = 'list'
         self['title'] = Label(sel)
         self['text'] = hasList([])
         self['info'] = Label(_('Loading data... Please wait'))
@@ -740,19 +738,32 @@ class HasBahCa1(Screen):
             self['key_yellow'].show()
             self['key_blue'].show()
             showlisthasba(self.names, self['text'])
+
+            self.currentList = [(name, url) for name, url in zip(self.names, self.urls)]
+
+            print('self names=', self.names)
+            print('self currentlist=', self.currentList)
             Utils.MemClean()
         except Exception as e:
             print('error HasBahCa', str(e))
 
     def okRun(self):
-        i = len(self.names)
-        print('iiiiii= ', i)
-        if i < 0:
-            return
-        idx = self["text"].getSelectionIndex()
-        name = self.names[idx]
-        url = self.urls[idx]
-        self.session.open(Playgo, name, url)
+        try:
+            i = self['text'].getSelectedIndex()
+            self.currentindex = i
+            selection = self['text'].l.getCurrentSelection()
+            if selection is not None:
+                # print("self.currentList:", self.currentList)
+                item = self.currentList[i]  # Ottieni la tupla (name, url)
+                name = item[0]  # Primo elemento: nome
+                url = item[1]   # Secondo elemento: url
+                # print("name:", name, "url:", url)
+            self.play_that_shit(url, name, self.currentindex, item, self.currentList)
+        except Exception as error:
+            print('error as:', error)
+
+    def play_that_shit(self, url, name, index, item, currentList):
+        self.session.open(Playgo, name, url, index, item, currentList)
 
     def convert(self, answer=None):
         i = len(self.names)
@@ -762,8 +773,6 @@ class HasBahCa1(Screen):
             self.session.openWithCallback(self.convert, MessageBox, _("Do you want to Convert %s\nto Favorite Bouquet ?\n\nAttention!! Wait while converting !!!") % self.name)
         elif answer:
             self.type = 'tv'
-            # if "radio" in self.name.lower():
-                # self.type = "radio"
             name_file = self.name.replace('/', '_').replace(',', '').replace('hasbahca', 'hbc')
             cleanName = re.sub(r'[\<\>\:\"\/\\\|\?\*]', '_', str(name_file))
             cleanName = re.sub(r' ', '_', cleanName)
@@ -889,25 +898,21 @@ class HasBahCa1(Screen):
         if search_ok is True:
             self._gotPageLoad()
         else:
-            # self.session.nav.stopService()
-            # self.session.nav.playService(self.srefInit)
             self.close()
 
 
 class TvInfoBarShowHide():
-    """ InfoBar show/hide control, accepts toggleShow and hide actions, might start
-    fancy animations. """
     STATE_HIDDEN = 0
     STATE_HIDING = 1
     STATE_SHOWING = 2
     STATE_SHOWN = 3
+    FLAG_CENTER_DVB_SUBS = 2048
     skipToggleShow = False
 
     def __init__(self):
-        self["ShowHideActions"] = ActionMap(["InfobarShowHideActions"], {
-            "toggleShow": self.OkPressed,
-            "hide": self.hide
-        }, 0)
+        self["ShowHideActions"] = ActionMap(["InfobarShowHideActions"],
+                                            {"toggleShow": self.OkPressed,
+                                             "hide": self.hide}, 0)
         self.__event_tracker = ServiceEventTracker(screen=self, eventmap={iPlayableService.evStart: self.serviceStarted})
         self.__state = self.STATE_SHOWN
         self.__locked = 0
@@ -916,12 +921,42 @@ class TvInfoBarShowHide():
             self.hideTimer_conn = self.hideTimer.timeout.connect(self.doTimerHide)
         except:
             self.hideTimer.callback.append(self.doTimerHide)
-        self.hideTimer.start(5000, True)
+        self.hideTimer.start(3000, True)
         self.onShow.append(self.__onShow)
         self.onHide.append(self.__onHide)
 
     def OkPressed(self):
         self.toggleShow()
+
+    def __onShow(self):
+        self.__state = self.STATE_SHOWN
+        self.startHideTimer()
+
+    def __onHide(self):
+        self.__state = self.STATE_HIDDEN
+
+    def serviceStarted(self):
+        if self.execing:
+            # if config.usage.show_infobar_on_zap.value:
+            self.doShow()
+
+    def startHideTimer(self):
+        if self.__state == self.STATE_SHOWN and not self.__locked:
+            self.hideTimer.stop()
+            self.hideTimer.start(3000, True)
+        elif hasattr(self, "pvrStateDialog"):
+            self.hideTimer.stop()
+        self.skipToggleShow = False
+
+    def doShow(self):
+        self.hideTimer.stop()
+        self.show()
+        self.startHideTimer()
+
+    def doTimerHide(self):
+        self.hideTimer.stop()
+        if self.__state == self.STATE_SHOWN:
+            self.hide()
 
     def toggleShow(self):
         if self.skipToggleShow:
@@ -933,35 +968,6 @@ class TvInfoBarShowHide():
         else:
             self.hide()
             self.startHideTimer()
-
-    def serviceStarted(self):
-        if self.execing:
-            if config.usage.show_infobar_on_zap.value:
-                self.doShow()
-
-    def __onShow(self):
-        self.__state = self.STATE_SHOWN
-        self.startHideTimer()
-
-    def startHideTimer(self):
-        if self.__state == self.STATE_SHOWN and not self.__locked:
-            self.hideTimer.stop()
-            idx = config.usage.infobar_timeout.index
-            if idx:
-                self.hideTimer.start(idx * 1500, True)
-
-    def __onHide(self):
-        self.__state = self.STATE_HIDDEN
-
-    def doShow(self):
-        self.hideTimer.stop()
-        self.show()
-        self.startHideTimer()
-
-    def doTimerHide(self):
-        self.hideTimer.stop()
-        if self.__state == self.STATE_SHOWN:
-            self.hide()
 
     def lockShow(self):
         try:
@@ -983,9 +989,6 @@ class TvInfoBarShowHide():
         if self.execing:
             self.startHideTimer()
 
-    def debug(obj, text=""):
-        print(text + " %s\n" % obj)
-
 
 class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection, InfoBarSubtitleSupport, Screen):
     STATE_IDLE = 0
@@ -993,23 +996,25 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
     STATE_PAUSED = 2
     ENABLE_RESUME_SUPPORT = True
     ALLOW_SUSPEND = True
-    screen_timeout = 3000
+    screen_timeout = 5000
 
-    def __init__(self, session, name, url):
-        global streaml
+    def __init__(self, session, name, url, index, item, currentList):
+        # def __init__(self, session, name, url):
+        global streaml, _session
         Screen.__init__(self, session)
-        global _session
-        _session = session
         self.session = session
+        _session = session
         self.skinName = 'MoviePlayer'
+        self.currentindex = index
+        self.item = item
+        self.itemscount = len(currentList)
+        self.list = currentList
         streaml = False
-        self.allowPiP = False
-        self.service = None
-        self.url = url
-        print("******** name 3 ******* %s" % name)
-        self.name = html_conv.html_unescape(name)
-        self.state = self.STATE_PLAYING
-        self.srefInit = self.session.nav.getCurrentlyPlayingServiceReference()
+        # print("Selected index:", self.currentindex)
+        # print("Selected item:", item)
+        # print("self.itemscount:", self.itemscount)
+        # print("Name:", name)
+        # print("URL:", url)
         InfoBarBase.__init__(self, steal_current_service=True)
         TvInfoBarShowHide.__init__(self)
         InfoBarSeek.__init__(self, actionmap="InfobarSeekActions")
@@ -1022,6 +1027,13 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         except:
             self.init_aspect = 0
         self.new_aspect = self.init_aspect
+
+        self.allowPiP = False
+        self.service = None
+        self.url = url
+        self.name = html_conv.html_unescape(name)
+        self.state = self.STATE_PLAYING
+        self.srefInit = self.session.nav.getCurrentlyPlayingServiceReference()
         self['actions'] = ActionMap(['MoviePlayerActions',
                                      'MovieSelectionActions',
                                      'MediaPlayerActions',
@@ -1030,22 +1042,60 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
                                      'ButtonSetupActions',
                                      'InfobarShowHideActions',
                                      'OkCancelActions',
+                                     'DirectionActions',
                                      'InfobarActions',
                                      'InfobarSeekActions'], {'epg': self.showIMDB,
                                                              'info': self.showIMDB,
-                                                             'tv': self.cicleStreamType,
                                                              'stop': self.leavePlayer,
                                                              'cancel': self.cancel,
                                                              'leavePlayer': self.cancel,
-                                                             'down': self.av,
+                                                             'channelDown': self.previousitem,
+                                                             'channelUp': self.nextitem,
+                                                             'down': self.previousitem,
+                                                             'up': self.nextitem,
+                                                             # 'down': self.av,
                                                              'back': self.cancel}, -1)
         if '8088' in str(self.url):
+            streaml = True
             # self.onLayoutFinish.append(self.slinkPlay)
             self.onFirstExecBegin.append(self.slinkPlay)
         else:
-            # self.onLayoutFinish.append(self.cicleStreamType)
-            self.onFirstExecBegin.append(self.cicleStreamType)
+            self.onFirstExecBegin.append(self.openTest)
         self.onClose.append(self.cancel)
+
+    def nextitem(self):
+        currentindex = int(self.currentindex) + 1
+        if currentindex == self.itemscount:
+            currentindex = 0
+        self.currentindex = currentindex
+        i = self.currentindex
+        item = self.list[i]
+        self.name = item[0]
+        self.url = item[1]
+        self.openTest()
+
+    def previousitem(self):
+        currentindex = int(self.currentindex) - 1
+        if currentindex < 0:
+            currentindex = self.itemscount - 1
+        self.currentindex = currentindex
+        i = self.currentindex
+        item = self.list[i]
+        self.name = item[0]
+        self.url = item[1]
+        self.openTest()
+
+    def doEofInternal(self, playing):
+        print('doEofInternal', playing)
+        Utils.MemClean()
+        if self.execing and playing:
+            self.openTest()
+
+    def __evEOF(self):
+        print('__evEOF')
+        self.end = True
+        Utils.MemClean()
+        self.openTest()
 
     def getAspect(self):
         return AVSwitch().getAspectRatioSetting()
@@ -1074,20 +1124,24 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
             pass
 
     def av(self):
-        temp = int(self.getAspect())
-        temp = temp + 1
-        if temp > 6:
-            temp = 0
-        self.new_aspect = temp
-        self.setAspect(temp)
+        self.new_aspect += 1
+        if self.new_aspect > 6:
+            self.new_aspect = 0
+        try:
+            AVSwitch.getInstance().setAspectRatio(self.new_aspect)
+            return VIDEO_ASPECT_RATIO_MAP[self.new_aspect]
+        except Exception as error:
+            print(error)
+            return _("Resolution Change Failed")
 
     def showIMDB(self):
         text_clear = self.name
         if returnIMDB(text_clear):
             print('show imdb/tmdb')
 
-    def slinkPlay(self, url):
+    def slinkPlay(self):
         name = self.name
+        url = self.url
         ref = "{0}:{1}".format(url.replace(":", "%3a"), name.replace(":", "%3a"))
         print('final reference:   ', ref)
         sref = eServiceReference(ref)
@@ -1095,74 +1149,21 @@ class Playgo(InfoBarBase, TvInfoBarShowHide, InfoBarSeek, InfoBarAudioSelection,
         self.session.nav.stopService()
         self.session.nav.playService(sref)
 
-    def openTest(self, servicetype, url):
+    def openTest(self):
+        servicetype = '4097'
         name = self.name
+        url = self.url
         ref = "{0}:0:1:0:0:0:0:0:0:0:{1}:{2}".format(servicetype, url.replace(":", "%3a"), name.replace(":", "%3a"))
         print('reference:   ', ref)
         if streaml is True:
             url = 'http://127.0.0.1:8088/' + str(url)
-            ref = "{0}:0:1:0:0:0:0:0:0:0:{1}:{2}".format(servicetype, url.replace(":", "%3a"), name.replace(":", "%3a"))
-            print('streaml reference:   ', ref)
-
+            ref = "{0}:0:0:0:0:0:0:0:0:0:{1}:{2}".format(servicetype, url.replace(":", "%3a"), name.replace(":", "%3a"))
         print('final reference:   ', ref)
         sref = eServiceReference(ref)
-        sref.setName(str(name))
+        self.sref = sref
+        self.sref.setName(name)
         self.session.nav.stopService()
-        self.session.nav.playService(sref)
-
-    def cicleStreamType(self):
-        global streml
-        # streaml = False
-        from itertools import cycle, islice
-        self.servicetype = '4097'
-        print('servicetype1: ', self.servicetype)
-        url = str(self.url)
-        if str(os.path.splitext(self.url)[-1]) == ".m3u8":
-            if self.servicetype == "1":
-                self.servicetype = "4097"
-        currentindex = 0
-        streamtypelist = ["4097"]
-        '''
-        # if "youtube" in str(self.url):
-            # self.mbox = self.session.open(MessageBox, _('For Stream Youtube coming soon!'), MessageBox.TYPE_INFO, timeout=5)
-            # return
-        if Utils.isStreamlinkAvailable():
-            streamtypelist.append("5002") #ref = '5002:0:1:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/' + url
-            streaml = True
-        if os.path.exists("/usr/bin/gstplayer"):
-            streamtypelist.append("5001")
-        if os.path.exists("/usr/bin/exteplayer3"):
-            streamtypelist.append("5002")
-        '''
-        if os.path.exists("/usr/bin/apt-get"):
-            streamtypelist.append("8193")
-        for index, item in enumerate(streamtypelist, start=0):
-            if str(item) == str(self.servicetype):
-                currentindex = index
-                break
-        nextStreamType = islice(cycle(streamtypelist), currentindex + 1, None)
-        self.servicetype = str(next(nextStreamType))
-        print('servicetype2: ', self.servicetype)
-        self.openTest(self.servicetype, url)
-
-    def up(self):
-        pass
-
-    def down(self):
-        self.up()
-
-    def doEofInternal(self, playing):
-        self.close()
-
-    def __evEOF(self):
-        self.end = True
-
-    def showVideoInfo(self):
-        if self.shown:
-            self.hideInfobar()
-        if self.infoCallback is not None:
-            self.infoCallback()
-        return
+        self.session.nav.playService(self.sref)
 
     def showAfterSeek(self):
         if isinstance(self, TvInfoBarShowHide):
