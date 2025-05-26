@@ -15,8 +15,8 @@ from __future__ import print_function
 # Python standard libraries
 import codecs
 import json
-import re
-import six
+from re import sub, compile, DOTALL
+from six import ensure_str, text_type
 import sys
 from datetime import datetime
 from os import listdir, path as os_path, remove, rename, stat, walk
@@ -71,7 +71,6 @@ try:
 except:
 	from urllib.error import URLError, HTTPError
 	from urllib.request import urlopen, Request
-	PY3 = True
 
 try:
 	from Components.UsageConfig import defaultMoviePath
@@ -88,7 +87,6 @@ if sys.version_info >= (2, 7, 9):
 		sslContext = None
 
 global downloadhasba
-global path_skin
 global tyurl
 
 
@@ -166,9 +164,8 @@ else:
 	path_skin = os_path.join(plugin_path, 'res/skins/hd')
 if isDreamOS:
 	path_skin = os_path.join(path_skin, 'dreamOs')
+
 print('HasBahCa path_skin: ', path_skin)
-VIDEO_ASPECT_RATIO_MAP = {0: "4:3 Letterbox", 1: "4:3 PanScan", 2: "16:9", 3: "16:9 Always", 4: "16:10 Letterbox", 5: "16:10 PanScan", 6: "16:9 Letterbox"}
-VIDEO_FMT_PRIORITY_MAP = {"38": 1, "37": 2, "22": 3, "18": 4, "35": 5, "34": 6}
 
 
 class hasList(MenuList):
@@ -277,15 +274,13 @@ def returnIMDB(text_clear):
 
 def decodename(name, fallback=''):
 	import unicodedata
-	import six
-	import re
-	if isinstance(name, six.text_type):
+	if isinstance(name, text_type):
 		name = name.encode('utf-8')
-	name = unicodedata.normalize('NFKD', six.text_type(name, 'utf_8', errors='ignore')).encode('ASCII', 'ignore')
-	name = re.sub(b'[^a-z0-9-_]', b' ', name.lower())
+	name = unicodedata.normalize('NFKD', text_type(name, 'utf_8', errors='ignore')).encode('ASCII', 'ignore')
+	name = sub(b'[^a-z0-9-_]', b' ', name.lower())
 	if not name:
 		name = fallback
-	return six.ensure_str(name)
+	return ensure_str(name)
 
 
 def saveM3u(dwn, url):
@@ -444,14 +439,14 @@ class MainHasBahCa(Screen):
 			n2 = content.find('</body', n1)
 			content2 = content[n1:n2]
 
-			if six.PY3:
-				content2 = six.ensure_str(content2)
+			if PY3:
+				content2 = ensure_str(content2)
 			else:
 				content2 = content2.encode("utf-8")
 
 			if content2:
 				regexvideo = 'href="(.*?).m3u">(.*?)</a>.*?align.*?">(.*?)</td><td.*?</tr>'
-				match = re.compile(regexvideo, re.DOTALL).findall(content2)
+				match = compile(regexvideo, DOTALL).findall(content2)
 				for url, name, date in match:
 					name = name.replace('..', '').replace('HasBahCa_', '')
 					name = name.replace('&gt;', '').replace('_', ' ').replace('.m3u', '')
@@ -608,7 +603,7 @@ class HasBahCaC(Screen):
 			content2 = content[n1:n2]
 
 			regexvideo = 'title="HasBahCa_(.*?).m3u.*?href="/HasBahCa/IPTV-LIST/blob/main/(.*?).m3u">.*?</a></span.*?</div>'
-			match = re.compile(regexvideo, re.DOTALL).findall(content2)
+			match = compile(regexvideo, DOTALL).findall(content2)
 			for name, url in match:
 				if 'readme' in name.lower():
 					continue
@@ -717,9 +712,8 @@ class HasBahCa1(Screen):
 			try:
 				content = Utils.make_request(self.url)
 				content = content.replace('$BorpasFileFormat="1"', '')
-				# #EXTINF:-1 group-title="RUS_movies3_cartoons","Пришелец Ванюша ч.3" 1990г.
 				regexcat = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
-				match = re.compile(regexcat, re.DOTALL).findall(content)
+				match = compile(regexcat, DOTALL).findall(content)
 				for name, url in match:
 					name = name.replace('"', '').replace('-', ' ')  # .replace('-', ' ')
 					if str(search).lower() in name.lower():
@@ -738,30 +732,25 @@ class HasBahCa1(Screen):
 		global search_ok
 		search_ok = False
 		url = self.url
-		# print('self.url: ', self.url)
 		self.names = []
 		self.urls = []
-		# dwn = '/tmp/m3utmp.m3u'
 		try:
 			if plugin_path in url:
-				f1 = open(url, "r")
-				content = f1.read()
-				f1.close()
+				try:
+					with open(url, "r") as f1:
+						content = f1.read()
+				except IOError as e:
+					print("Error opening file %s: %s" % (url, str(e)))
+					content = ""
 			else:
 				content = Utils.make_request(url)
-				# saveM3u(dwn, content)
-				# f1 = open(dwn, "r")
-				# content = f1.read()
-				# f1.close()
-			content = content.replace('$BorpasFileFormat="1"', '')
+
+			content = content.replace('$BorpasFileFormat="1"', "")
 
 			regexcat = '#EXTINF.*?,(.*?)\\n(.*?)\\n'
-			match = re.compile(regexcat, re.DOTALL).findall(content)
+			match = compile(regexcat, DOTALL).findall(content)
 			for name, url in match:
 				name = name.replace('_', ' ').replace('-', ' ')
-				# url = url.replace(' ', '').replace('\\n', '')
-				# name = decodename(name)
-				# name = html_conv.html_unescape(name)
 				self.names.append(str(name))
 				self.urls.append(str(url))
 
@@ -805,10 +794,10 @@ class HasBahCa1(Screen):
 		elif answer:
 			self.type = 'tv'
 			name_file = self.name.replace('/', '_').replace(',', '').replace('hasbahca', 'hbc')
-			cleanName = re.sub(r'[\<\>\:\"\/\\\|\?\*]', '_', str(name_file))
-			cleanName = re.sub(r' ', '_', cleanName)
-			cleanName = re.sub(r'\d+:\d+:[\d.]+', '_', cleanName)
-			name_file = re.sub(r'_+', '_', cleanName)
+			cleanName = sub(r'[\<\>\:\"\/\\\|\?\*]', '_', str(name_file))
+			cleanName = sub(r' ', '_', cleanName)
+			cleanName = sub(r'\d+:\d+:[\d.]+', '_', cleanName)
+			name_file = sub(r'_+', '_', cleanName)
 			bouquetname = 'userbouquet.hbc_%s.%s' % (name_file.lower(), self.type.lower())
 			print("Converting Bouquet %s" % name_file)
 			if plugin_path in self.url:
@@ -900,17 +889,10 @@ class HasBahCa1(Screen):
 			try:
 				for fname in listdir(enigma_path):
 					if 'hbc_' in fname:
-						# remove(os_path.join(enigma_path, fname))
 						Utils.purge(enigma_path, fname)
 					elif 'bouquets.tv.bak' in fname:
-						# remove(os_path.join(enigma_path, fname))
 						Utils.purge(enigma_path, fname)
-				"""
-				# if os_path.isdir(epgimport_path):
-					# for fname in listdir(epgimport_path):
-						# if 'hbc_' in fname:
-							# remove(os_path.join(epgimport_path, fname))
-							"""
+
 				rename(os_path.join(enigma_path, 'bouquets.tv'), os_path.join(enigma_path, 'bouquets.tv.bak'))
 				tvfile = open(os_path.join(enigma_path, 'bouquets.tv'), 'w+')
 				bakfile = open(os_path.join(enigma_path, 'bouquets.tv.bak'))
@@ -1054,14 +1036,16 @@ class Playgo(
 		self.itemscount = len(currentList)
 		self.list = currentList
 		streaml = False
-		for x in InfoBarBase, \
-				InfoBarMenu, \
-				InfoBarSeek, \
-				InfoBarAudioSelection, \
-				InfoBarSubtitleSupport, \
-				InfoBarNotifications, \
-				TvInfoBarShowHide:
-			x.__init__(self)
+		for cls in (
+			InfoBarBase,
+			InfoBarMenu,
+			InfoBarSeek,
+			InfoBarAudioSelection,
+			InfoBarSubtitleSupport,
+			InfoBarNotifications,
+			TvInfoBarShowHide
+		):
+			cls.__init__(self)
 
 		self.url = url
 		self.name = html_conv.html_unescape(name)
