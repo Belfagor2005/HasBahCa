@@ -87,7 +87,6 @@ if sys.version_info >= (2, 7, 9):
 		sslContext = None
 
 global downloadhasba
-global tyurl
 
 
 currversion = '1.8'
@@ -103,7 +102,6 @@ path_playlist = os_path.join(plugin_path, 'Playlists')
 installer_url = 'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0JlbGZhZ29yMjAwNS9IYXNCYWhDYS9tYWluL2luc3RhbGxlci5zaA=='
 developer_url = 'aHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy9CZWxmYWdvcjIwMDUvSGFzQmFoQ2E='
 aspect_manager = Utils.AspectManager()
-tyurl = False
 downloadhasba = None
 
 
@@ -426,7 +424,6 @@ class MainHasBahCa(Screen):
 		self.close()
 
 	def updateMenuList(self):
-		global tyurl
 		self.names = []
 		self.urls = []
 		idx = 0
