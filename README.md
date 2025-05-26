@@ -1,4 +1,4 @@
-# HasBahCa ![HasBahCa Logo](https://github.com/Belfagor2005/RadioGit/blob/main/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/logo.png?raw=true)
+# HasBahCa ![HasBahCa Logo](https://github.com/Belfagor2005/HasBahCa/blob/main/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/logo.png?raw=true)
 
 [![Python package](https://github.com/Belfagor2005/HasBahCa/actions/workflows/pylint.yml/badge.svg)](https://github.com/Belfagor2005/HasBahCa/actions/workflows/pylint.yml) ![](https://komarev.com/ghpvc/?username=Belfagor2005)
 
