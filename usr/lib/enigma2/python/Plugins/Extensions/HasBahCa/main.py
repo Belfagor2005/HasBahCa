@@ -793,7 +793,7 @@ class HasBahCa1(Screen):
 			name_file = self.name.replace('/', '_').replace(',', '').replace('hasbahca', 'hbc')
 			cleanName = sub(r'[\<\>\:\"\/\\\|\?\*]', '_', str(name_file))
 			cleanName = sub(r' ', '_', cleanName)
-			cleanName = sub(r'\d+:\d+:[\d.]+', '_', cleanName)
+			cleanName = sub(r'\d+:\d+:\d+(?:\.\d+)*', '_', cleanName)
 			name_file = sub(r'_+', '_', cleanName)
 			bouquetname = 'userbouquet.hbc_%s.%s' % (name_file.lower(), self.type.lower())
 			print("Converting Bouquet %s" % name_file)
