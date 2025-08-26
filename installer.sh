@@ -1,7 +1,7 @@
 #!/bin/bash
 ## setup command=wget -q --no-check-certificate https://raw.githubusercontent.com/Belfagor2005/HasBahCa/main/installer.sh -O - | /bin/sh
 
-version='1.8'
+version='1.9'
 changelog='\nAdd ChannelUp/ChannelDown in Player'
 TMPPATH=/tmp/HasBahCa-main
 FILEPATH=/tmp/hasbahca.tar.gz
