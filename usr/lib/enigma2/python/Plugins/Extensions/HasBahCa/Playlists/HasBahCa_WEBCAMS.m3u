@@ -431,15 +431,15 @@ https://outbound-production.explore.org/stream-production-591.m3u8
 https://outbound-production.explore.org/stream-production-621.m3u8
 #EXTINF:-1 group-title="AFRICA_WEBCAM",Africa 622
 https://outbound-production.explore.org/stream-production-622.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Africam 49
+#EXTINF:-1 group-title="AFRICA_WEBCAM",Africam 49
 https://outbound-production.explore.org/stream-production-49/.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Africam 110
+#EXTINF:-1 group-title="AFRICA_WEBCAM",Africam 110
 https://outbound-production.explore.org/stream-production-110/.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Africam 276
+#EXTINF:-1 group-title="AFRICA_WEBCAM",Africam 276
 https://outbound-production.explore.org/stream-production-276/.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Africam 317
+#EXTINF:-1 group-title="AFRICA_WEBCAM",Africam 317
 https://outbound-production.explore.org/stream-production-317/.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Albarquel
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Albarquel
 https://video-auth1.iol.pt/beachcam/bcalbarquel/playlist.m3u8
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Almograve - New
 https://video-auth1.iol.pt/beachcam/bcalmograve/playlist.m3u8
@@ -447,13 +447,13 @@ https://video-auth1.iol.pt/beachcam/bcalmograve/playlist.m3u8
 https://video-auth1.iol.pt/beachcam/alvor/playlist.m3u8
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Alvor Nascente
 https://video-auth1.iol.pt/beachcam/bcalvornascente/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Apúlia
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Apúlia
 https://video-auth1.iol.pt/beachcam/bcapulia/playlist.m3u8
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Areia Branca
 https://video-auth1.iol.pt/beachcam/bcareiabranca/playlist.m3u8
 #EXTINF:-1 group-title="LATINO_CAM",Armação de Pêra
 https://video-auth1.iol.pt/beachcam/armacaodepera/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Arrifana
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Arrifana
 https://video-auth1.iol.pt/beachcam/arrifana/playlist.m3u8
 #EXTINF:-1 group-title="DE_GERMAN_DACH_WEBCAM",Austria - Spitzerberg Airfield
 https://spitzerberg.at/webcam/stream.m3u8
@@ -461,8 +461,6 @@ https://spitzerberg.at/webcam/stream.m3u8
 http://stream1.panocloud.com/KlagenfurtNeuerPlatz/KlagenfurtNeuerPlatz.stream/playlist.m3u8
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Baía de Cascais
 https://video-auth1.iol.pt/beachcam/praiadospescadores/playlist.m3u8
-#EXTINF:-1 group-title="LATINO_CAM",Brazil 2
-http://cameras.interaviation.com.br/camera02/interaviation2.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Brazil: Rio (Copacabana Beach)
 https://video2archives.earthcam.com/archives/_definst_/MP4:permanent/6593/2017/10/01/1300.mp4/playlist.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Brazil: Rio (Copacabana Beach)
@@ -477,7 +475,7 @@ https://cam.indikom.ru/26/hls/stream.m3u8
 https://cam.indikom.ru/59/hls/stream.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",cam.indikom.ru/63
 https://cam.indikom.ru/63/hls/stream.m3u8
-#EXTINF:-1 group-title="VIETNAM_WebCam" tvg-logo="https://i.ytimg.com/vi/wAosJr8hMX8/hqdefault.jpg",CAMERA PTZ KHÁCH SẠN HẢI TRIỀU ĐÀ NẴNG
+#EXTINF:-1 group-title="VIETNAM_WebCam",CAMERA PTZ KHÁCH SẠN HẢI TRIỀU ĐÀ NẴNG
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=wAosJr8hMX8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Canada
 http://5ddd47d64e730.streamlock.net:1935/ospreycam/ospreycam.stream/playlist.m3u8
@@ -487,16 +485,14 @@ http://media.gpei.ca/islandcam/guild.stream/HasBahCa.m3u8
 https://video2archives.earthcam.com/archives/_definst_/MP4:permanent/4559/2019/08/11/1300.mp4/chunklist_w1595912559.m3u8
 #EXTINF:-1 group-title="LATINO_CAM",Carcavelos - Calhau
 https://video-auth1.iol.pt/beachcam/carcavelos2/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Carcavelos | Calhau | Estática
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Carcavelos | Calhau | Estática
 https://video-auth1.iol.pt/beachcam/bccarcaveloscalhaufixa/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Carcavelos | Norte | Estática
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Carcavelos | Norte | Estática
 https://video-auth1.iol.pt/beachcam/bccarcavelosnortefixa/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Carvalhal
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Carvalhal
 https://video-auth1.iol.pt/beachcam/bccarvalhalodemira/playlist.m3u8
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Carvoeiro
 https://video-auth1.iol.pt/beachcam/carvoeiro/playlist.m3u8
-#EXTINF:-1 group-title="DE_GERMAN_DACH_WEBCAM",CH Lausanne Vaud
-http://145.232.235.226:80/mjpg/video.mjpg
 #EXTINF:-1 group-title="VIETNAM_WebCam",cổng sau Bệnh viện C Đà Nẵng
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=b6mdgPBqAi8
 #EXTINF:-1 group-title="VIETNAM_WebCam",Công trình Bệnh viện Đà Nẵng
@@ -505,34 +501,24 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=1M2IE21aUy4
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Costa de Caparica - CDS Norte
 https://video-auth1.iol.pt/beachcam/costacaparicacds/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Costa de Caparica - CDS Sul
-https://video-auth1.iol.pt/beachcam/costacaparicabernard/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Costa de Caparica - Praia Nova
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Costa de Caparica - Praia Nova
 https://video-auth1.iol.pt/beachcam/bccaparicanovapraia/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Costa de Caparica - Riviera
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Costa de Caparica - Riviera
 https://video-auth1.iol.pt/beachcam/riviera/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Costa de Caparica | CDS NORTE | Estática
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Costa de Caparica | CDS NORTE | Estática
 https://video-auth1.iol.pt/beachcam/bccaparicanortefixa/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Costa de Caparica | CDS SUL | Estática
-https://video-auth1.iol.pt/beachcam/bcdrbernard/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Costa de Caparica | Praia Nova | Estática
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Costa de Caparica | Praia Nova | Estática
 https://video-auth1.iol.pt/beachcam/bcnovapraia/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Costa de Caparica | Tarquínio
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Costa de Caparica | Tarquínio
 https://video-auth1.iol.pt/beachcam/bctarquinho/playlist.m3u8
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Costa Nova
 https://video-auth1.iol.pt/beachcam/costanova/playlist.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",CZ Kamera Horní Bečva - Rališka
 http://31.47.96.14:80/hls/raliska.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",CZ Kamera Horní Bečva - Rališka_Horní stanice
-http://31.47.96.14:80/hls/raliska2.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",CZ Kamera Hutisko-Solanec
 http://31.47.96.14:80/hls/hutisko.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",CZ Kamera na Radhošti - Kaple
-http://31.47.96.14:80/hls/radhostkaple.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",CZ Kamera na Radhošti - východ
 http://31.47.96.14:80/hls/radhostvychod.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",CZ Kamera Valašská Bystřice - Búřov
-http://31.47.96.14:80/hls/burov.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",CZ Kamera Vidče
 http://31.47.96.14:80/hls/vidce.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",CZ Kamera Zašová
@@ -559,38 +545,36 @@ https://outbound-production.explore.org/stream-production-216/.m3u8
 https://outbound-production.explore.org/stream-production-320/.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Ehukai Beach
 https://outbound-production.explore.org/stream-production-4/.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Ericeira
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Ericeira
 https://video-auth1.iol.pt/beachcam/ericeiraspots/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Esmoriz
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Esmoriz
 https://video-auth1.iol.pt/beachcam/esmoriz/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Espinho | Silvade
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Espinho | Silvade
 https://video-auth1.iol.pt/beachcam/bcsilvade/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Espinho | Silvade | Estática |
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Espinho | Silvade | Estática |
 https://video-auth1.iol.pt/beachcam/bcsilvadefixa/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Esposende - Foz Do Rio Cávado
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Esposende - Foz Do Rio Cávado
 https://video-auth1.iol.pt/beachcam/bcfarolesposende/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Faro
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Faro
 https://video-auth1.iol.pt/beachcam/bcfaro/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Faro | Ilha da Culatra
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Faro | Ilha da Culatra
 https://video-auth1.iol.pt/beachcam/bcfarolfaro/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Faro | Praia de Faro Oeste
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Faro | Praia de Faro Oeste
 https://video-auth1.iol.pt/beachcam/bcfaropraia/playlist.m3u8
 #EXTINF:-1 group-title="LATINO_CAM",Ferragudo - Praia Grande
 https://video-auth1.iol.pt/beachcam/ferragudo/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Ferreira do Zêzere - Dornes
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Ferreira do Zêzere - Dornes
 https://video-auth1.iol.pt/beachcam/bcdornes/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Ferreira do Zêzere - Lago Azul
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Ferreira do Zêzere - Lago Azul
 https://video-auth1.iol.pt/beachcam/bclagoazul/playlist.m3u8
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Figueira da Foz
 https://video-auth1.iol.pt/beachcam/figueiradafoz/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Figueira da Foz | Buarcos | Estática
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Figueira da Foz | Buarcos | Estática
 https://video-auth1.iol.pt/beachcam/bcbuarcos/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Figueira da Foz | Cabedelo
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Figueira da Foz | Cabedelo
 https://video-auth1.iol.pt/beachcam/bcfigueiracabeledo/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Fonte da Telha | SUL
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Fonte da Telha | SUL
 https://video-auth1.iol.pt/beachcam/bcbambu/playlist.m3u8
-#EXTINF:-1 group-title="WEB CAM Y CLIMA",FOUR SEASONS BUENOS AIRES
-https://www.youtube.com/watch?v=if91GyWP3zQ
 #EXTINF:-1 group-title="LATINO_CAM",Foz do Arelho
 https://video-auth1.iol.pt/beachcam/bcfozdoarelho/playlist.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",France - Windsurf Breizh 22 - Goaz-Trez HD
@@ -599,8 +583,6 @@ http://www.windsurfbreizh22.com/webcamHD/webcam-g13/video.php
 https://outbound-production.explore.org/stream-production-127/.m3u8
 #EXTINF:-1 group-title="LATINO_CAM",Furadouro
 https://video-auth1.iol.pt/beachcam/furadouro/playlist.m3u8
-#EXTINF:-1 group-title="DE_GERMAN_DACH_WEBCAM",Germany - Cologne Bonn Airport
-https://stream-5gw.1000eyes.de/cupertino/cgn4463E1.stream/playlist.m3u8
 #EXTINF:-1 group-title="DE_GERMAN_DACH_WEBCAM",Germany - Groemitz
 http://osltv.stream24.net/osltv1/_definst_/mp4:groemitz.stream/playlist.m3u8
 #EXTINF:-1 group-title="DE_GERMAN_DACH_WEBCAM",Germany - Regensburg
@@ -621,323 +603,433 @@ https://outbound-production.explore.org/stream-production-189/.m3u8
 https://outbound-production.explore.org/stream-production-188/.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Hummingbird Trees
 https://outbound-production.explore.org/stream-production-209/.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-375
-http://ibb-media2.ibb.gov.tr:1935/live/375.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-378
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 25
+http://ibb-media2.ibb.gov.tr:1935/live/25.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 43
+http://ibb-media2.ibb.gov.tr:1935/live/43.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 68
+http://ibb-media2.ibb.gov.tr:1935/live/68.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 69
+http://ibb-media2.ibb.gov.tr:1935/live/69.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 101
+http://ibb-media2.ibb.gov.tr:1935/live/101.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 134
+http://ibb-media2.ibb.gov.tr:1935/live/134.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 136
+http://ibb-media2.ibb.gov.tr:1935/live/136.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 145
+http://ibb-media2.ibb.gov.tr:1935/live/145.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 264
+http://ibb-media2.ibb.gov.tr:1935/live/264.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 274
+http://ibb-media2.ibb.gov.tr:1935/live/274.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 344
+http://ibb-media2.ibb.gov.tr:1935/live/344.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 356
+http://ibb-media2.ibb.gov.tr:1935/live/356.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 376
+http://ibb-media2.ibb.gov.tr:1935/live/376.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 378
 http://ibb-media2.ibb.gov.tr:1935/live/378.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-381
-http://ibb-media2.ibb.gov.tr:1935/live/381.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-382
-http://ibb-media2.ibb.gov.tr:1935/live/382.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-386
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 379
+http://ibb-media2.ibb.gov.tr:1935/live/379.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 386
 http://ibb-media2.ibb.gov.tr:1935/live/386.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-389
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 389
 http://ibb-media2.ibb.gov.tr:1935/live/389.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-391
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 391
 http://ibb-media2.ibb.gov.tr:1935/live/391.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-393
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 393
 http://ibb-media2.ibb.gov.tr:1935/live/393.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-397
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 397
 http://ibb-media2.ibb.gov.tr:1935/live/397.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-398
-http://ibb-media2.ibb.gov.tr:1935/live/398.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-399
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 399
 http://ibb-media2.ibb.gov.tr:1935/live/399.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-400
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 400
 http://ibb-media2.ibb.gov.tr:1935/live/400.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-401
-http://ibb-media2.ibb.gov.tr:1935/live/401.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-402
-http://ibb-media2.ibb.gov.tr:1935/live/402.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-403
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 403
 http://ibb-media2.ibb.gov.tr:1935/live/403.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-413
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 405
+http://ibb-media2.ibb.gov.tr:1935/live/405.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 408
+http://ibb-media2.ibb.gov.tr:1935/live/408.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 411
+http://ibb-media2.ibb.gov.tr:1935/live/411.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 413
 http://ibb-media2.ibb.gov.tr:1935/live/413.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-415
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 415
 http://ibb-media2.ibb.gov.tr:1935/live/415.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-423
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 417
+http://ibb-media2.ibb.gov.tr:1935/live/417.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 419
+http://ibb-media2.ibb.gov.tr:1935/live/419.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 420
+http://ibb-media2.ibb.gov.tr:1935/live/420.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 423
 http://ibb-media2.ibb.gov.tr:1935/live/423.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-424
-http://ibb-media2.ibb.gov.tr:1935/live/424.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-427
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 425
+http://ibb-media2.ibb.gov.tr:1935/live/425.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 427
 http://ibb-media2.ibb.gov.tr:1935/live/427.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-432
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 432
 http://ibb-media2.ibb.gov.tr:1935/live/432.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-433
-http://ibb-media2.ibb.gov.tr:1935/live/433.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-438
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 434
+http://ibb-media2.ibb.gov.tr:1935/live/434.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 435
+http://ibb-media2.ibb.gov.tr:1935/live/435.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 436
+http://ibb-media2.ibb.gov.tr:1935/live/436.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 438
 http://ibb-media2.ibb.gov.tr:1935/live/438.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-447
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 447
 http://ibb-media2.ibb.gov.tr:1935/live/447.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-451
-http://ibb-media2.ibb.gov.tr:1935/live/451.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-455
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 450
+http://ibb-media2.ibb.gov.tr:1935/live/450.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 455
 http://ibb-media2.ibb.gov.tr:1935/live/455.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-463
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 459
+http://ibb-media2.ibb.gov.tr:1935/live/459.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 463
 http://ibb-media2.ibb.gov.tr:1935/live/463.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-470
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 469
+http://ibb-media2.ibb.gov.tr:1935/live/469.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 470
 http://ibb-media2.ibb.gov.tr:1935/live/470.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-473
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 473
 http://ibb-media2.ibb.gov.tr:1935/live/473.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-476
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 476
 http://ibb-media2.ibb.gov.tr:1935/live/476.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-477
-http://ibb-media2.ibb.gov.tr:1935/live/477.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-480
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 480
 http://ibb-media2.ibb.gov.tr:1935/live/480.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-481
-http://ibb-media2.ibb.gov.tr:1935/live/481.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-482
-http://ibb-media2.ibb.gov.tr:1935/live/482.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-487
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 487
 http://ibb-media2.ibb.gov.tr:1935/live/487.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-531
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 491
+http://ibb-media2.ibb.gov.tr:1935/live/491.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 505
+http://ibb-media2.ibb.gov.tr:1935/live/505.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 509
+http://ibb-media2.ibb.gov.tr:1935/live/509.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 511
+http://ibb-media2.ibb.gov.tr:1935/live/511.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 531
 http://ibb-media2.ibb.gov.tr:1935/live/531.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-538
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 535
+http://ibb-media2.ibb.gov.tr:1935/live/535.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 538
 http://ibb-media2.ibb.gov.tr:1935/live/538.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-542
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 542
 http://ibb-media2.ibb.gov.tr:1935/live/542.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-549
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 547
+http://ibb-media2.ibb.gov.tr:1935/live/547.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 549
 http://ibb-media2.ibb.gov.tr:1935/live/549.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-561
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 552
+http://ibb-media2.ibb.gov.tr:1935/live/552.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 558
+http://ibb-media2.ibb.gov.tr:1935/live/558.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 560
+http://ibb-media2.ibb.gov.tr:1935/live/560.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 561
 http://ibb-media2.ibb.gov.tr:1935/live/561.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-562
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 562
 http://ibb-media2.ibb.gov.tr:1935/live/562.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-563
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 563
 http://ibb-media2.ibb.gov.tr:1935/live/563.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-564
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 564
 http://ibb-media2.ibb.gov.tr:1935/live/564.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-569
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 567
+http://ibb-media2.ibb.gov.tr:1935/live/567.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 569
 http://ibb-media2.ibb.gov.tr:1935/live/569.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-570
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 570
 http://ibb-media2.ibb.gov.tr:1935/live/570.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-573
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 572
+http://ibb-media2.ibb.gov.tr:1935/live/572.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 573
 http://ibb-media2.ibb.gov.tr:1935/live/573.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-579
-http://ibb-media2.ibb.gov.tr:1935/live/579.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-580
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 578
+http://ibb-media2.ibb.gov.tr:1935/live/578.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 580
 http://ibb-media2.ibb.gov.tr:1935/live/580.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-581
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 581
 http://ibb-media2.ibb.gov.tr:1935/live/581.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-582
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 582
 http://ibb-media2.ibb.gov.tr:1935/live/582.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-590
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 583
+http://ibb-media2.ibb.gov.tr:1935/live/583.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 584
+http://ibb-media2.ibb.gov.tr:1935/live/584.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 587
+http://ibb-media2.ibb.gov.tr:1935/live/587.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 590
 http://ibb-media2.ibb.gov.tr:1935/live/590.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-594
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 594
 http://ibb-media2.ibb.gov.tr:1935/live/594.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-607
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 598
+http://ibb-media2.ibb.gov.tr:1935/live/598.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 602
+http://ibb-media2.ibb.gov.tr:1935/live/602.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 607
 http://ibb-media2.ibb.gov.tr:1935/live/607.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-608
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 608
 http://ibb-media2.ibb.gov.tr:1935/live/608.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-610
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 610
 http://ibb-media2.ibb.gov.tr:1935/live/610.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-611
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 611
 http://ibb-media2.ibb.gov.tr:1935/live/611.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-613
-http://ibb-media2.ibb.gov.tr:1935/live/613.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-614
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 612
+http://ibb-media2.ibb.gov.tr:1935/live/612.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 614
 http://ibb-media2.ibb.gov.tr:1935/live/614.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-616
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 616
 http://ibb-media2.ibb.gov.tr:1935/live/616.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-624
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 624
 http://ibb-media2.ibb.gov.tr:1935/live/624.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-632
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 632
 http://ibb-media2.ibb.gov.tr:1935/live/632.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-635
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 635
 http://ibb-media2.ibb.gov.tr:1935/live/635.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-644
-http://ibb-media2.ibb.gov.tr:1935/live/644.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-648
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 638
+http://ibb-media2.ibb.gov.tr:1935/live/638.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 640
+http://ibb-media2.ibb.gov.tr:1935/live/640.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 641
+http://ibb-media2.ibb.gov.tr:1935/live/641.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 647
+http://ibb-media2.ibb.gov.tr:1935/live/647.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 648
 http://ibb-media2.ibb.gov.tr:1935/live/648.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-652
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 652
 http://ibb-media2.ibb.gov.tr:1935/live/652.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-661
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 653
+http://ibb-media2.ibb.gov.tr:1935/live/653.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 659
+http://ibb-media2.ibb.gov.tr:1935/live/659.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 661
 http://ibb-media2.ibb.gov.tr:1935/live/661.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-663
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 663
 http://ibb-media2.ibb.gov.tr:1935/live/663.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-668
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 664
+http://ibb-media2.ibb.gov.tr:1935/live/664.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 665
+http://ibb-media2.ibb.gov.tr:1935/live/665.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 668
 http://ibb-media2.ibb.gov.tr:1935/live/668.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-670
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 670
 http://ibb-media2.ibb.gov.tr:1935/live/670.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-673
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 673
 http://ibb-media2.ibb.gov.tr:1935/live/673.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-674
-http://ibb-media2.ibb.gov.tr:1935/live/674.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-675
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 675
 http://ibb-media2.ibb.gov.tr:1935/live/675.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-684
-http://ibb-media2.ibb.gov.tr:1935/live/684.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-725
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 677
+http://ibb-media2.ibb.gov.tr:1935/live/677.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 678
+http://ibb-media2.ibb.gov.tr:1935/live/678.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 680
+http://ibb-media2.ibb.gov.tr:1935/live/680.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 686
+http://ibb-media2.ibb.gov.tr:1935/live/686.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 692
+http://ibb-media2.ibb.gov.tr:1935/live/692.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 695
+http://ibb-media2.ibb.gov.tr:1935/live/695.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 698
+http://ibb-media2.ibb.gov.tr:1935/live/698.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 700
+http://ibb-media2.ibb.gov.tr:1935/live/700.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 701
+http://ibb-media2.ibb.gov.tr:1935/live/701.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 709
+http://ibb-media2.ibb.gov.tr:1935/live/709.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 713
+http://ibb-media2.ibb.gov.tr:1935/live/713.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 715
+http://ibb-media2.ibb.gov.tr:1935/live/715.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 725
 http://ibb-media2.ibb.gov.tr:1935/live/725.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-764
-http://ibb-media2.ibb.gov.tr:1935/live/764.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-765
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 735
+http://ibb-media2.ibb.gov.tr:1935/live/735.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 738
+http://ibb-media2.ibb.gov.tr:1935/live/738.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 749
+http://ibb-media2.ibb.gov.tr:1935/live/749.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 752
+http://ibb-media2.ibb.gov.tr:1935/live/752.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 765
 http://ibb-media2.ibb.gov.tr:1935/live/765.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-768
-http://ibb-media2.ibb.gov.tr:1935/live/768.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-769
-http://ibb-media2.ibb.gov.tr:1935/live/769.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-772
-http://ibb-media2.ibb.gov.tr:1935/live/772.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-779
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 771
+http://ibb-media2.ibb.gov.tr:1935/live/771.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 779
 http://ibb-media2.ibb.gov.tr:1935/live/779.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-788
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 782
+http://ibb-media2.ibb.gov.tr:1935/live/782.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 783
+http://ibb-media2.ibb.gov.tr:1935/live/783.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 788
 http://ibb-media2.ibb.gov.tr:1935/live/788.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-794
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 794
 http://ibb-media2.ibb.gov.tr:1935/live/794.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-820
-http://ibb-media2.ibb.gov.tr:1935/live/820.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-826
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 795
+http://ibb-media2.ibb.gov.tr:1935/live/795.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 817
+http://ibb-media2.ibb.gov.tr:1935/live/817.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 819
+http://ibb-media2.ibb.gov.tr:1935/live/819.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 823
+http://ibb-media2.ibb.gov.tr:1935/live/823.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 824
+http://ibb-media2.ibb.gov.tr:1935/live/824.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 825
+http://ibb-media2.ibb.gov.tr:1935/live/825.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 826
 http://ibb-media2.ibb.gov.tr:1935/live/826.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-834
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 827
+http://ibb-media2.ibb.gov.tr:1935/live/827.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 831
+http://ibb-media2.ibb.gov.tr:1935/live/831.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 832
+http://ibb-media2.ibb.gov.tr:1935/live/832.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 833
+http://ibb-media2.ibb.gov.tr:1935/live/833.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 834
 http://ibb-media2.ibb.gov.tr:1935/live/834.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-835
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 835
 http://ibb-media2.ibb.gov.tr:1935/live/835.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-845
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 842
+http://ibb-media2.ibb.gov.tr:1935/live/842.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 845
 http://ibb-media2.ibb.gov.tr:1935/live/845.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-847
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 847
 http://ibb-media2.ibb.gov.tr:1935/live/847.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-848
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 848
 http://ibb-media2.ibb.gov.tr:1935/live/848.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-850
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 850
 http://ibb-media2.ibb.gov.tr:1935/live/850.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-851
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 851
 http://ibb-media2.ibb.gov.tr:1935/live/851.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-852
-http://ibb-media2.ibb.gov.tr:1935/live/852.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-853
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 853
 http://ibb-media2.ibb.gov.tr:1935/live/853.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-856
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 856
 http://ibb-media2.ibb.gov.tr:1935/live/856.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-860
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 857
+http://ibb-media2.ibb.gov.tr:1935/live/857.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 860
 http://ibb-media2.ibb.gov.tr:1935/live/860.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-861
-http://ibb-media2.ibb.gov.tr:1935/live/861.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-863
-http://ibb-media2.ibb.gov.tr:1935/live/863.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-886
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 886
 http://ibb-media2.ibb.gov.tr:1935/live/886.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-889
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 889
 http://ibb-media2.ibb.gov.tr:1935/live/889.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-890
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 890
 http://ibb-media2.ibb.gov.tr:1935/live/890.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-891
-http://ibb-media2.ibb.gov.tr:1935/live/891.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-892
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 892
 http://ibb-media2.ibb.gov.tr:1935/live/892.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-894
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 894
 http://ibb-media2.ibb.gov.tr:1935/live/894.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-896
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 895
+http://ibb-media2.ibb.gov.tr:1935/live/895.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 896
 http://ibb-media2.ibb.gov.tr:1935/live/896.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-898
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 897
+http://ibb-media2.ibb.gov.tr:1935/live/897.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 898
 http://ibb-media2.ibb.gov.tr:1935/live/898.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-912
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 899
+http://ibb-media2.ibb.gov.tr:1935/live/899.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 900
+http://ibb-media2.ibb.gov.tr:1935/live/900.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 911
+http://ibb-media2.ibb.gov.tr:1935/live/911.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 912
 http://ibb-media2.ibb.gov.tr:1935/live/912.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-929
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 914
+http://ibb-media2.ibb.gov.tr:1935/live/914.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 915
+http://ibb-media2.ibb.gov.tr:1935/live/915.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 929
 http://ibb-media2.ibb.gov.tr:1935/live/929.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-930
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 930
 http://ibb-media2.ibb.gov.tr:1935/live/930.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-931
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 931
 http://ibb-media2.ibb.gov.tr:1935/live/931.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-949
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 949
 http://ibb-media2.ibb.gov.tr:1935/live/949.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-950
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 950
 http://ibb-media2.ibb.gov.tr:1935/live/950.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-975
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 951
+http://ibb-media2.ibb.gov.tr:1935/live/951.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 960
+http://ibb-media2.ibb.gov.tr:1935/live/960.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 961
+http://ibb-media2.ibb.gov.tr:1935/live/961.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 962
+http://ibb-media2.ibb.gov.tr:1935/live/962.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 975
 http://ibb-media2.ibb.gov.tr:1935/live/975.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-1027
-http://ibb-media2.ibb.gov.tr:1935/live/1027.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-1027
-http://ibb-media2.ibb.gov.tr:1935/live/1027.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-1029
-http://ibb-media2.ibb.gov.tr:1935/live/1029.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-1029
-http://ibb-media2.ibb.gov.tr:1935/live/1029.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-1031
-http://ibb-media2.ibb.gov.tr:1935/live/1031.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-1031
-http://ibb-media2.ibb.gov.tr:1935/live/1031.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-1033
-http://ibb-media2.ibb.gov.tr:1935/live/1033.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-1033
-http://ibb-media2.ibb.gov.tr:1935/live/1033.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-1034
-http://ibb-media2.ibb.gov.tr:1935/live/1034.stream/playlist.m3u8
-#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM-1034
-http://ibb-media2.ibb.gov.tr:1935/live/1034.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 976
+http://ibb-media2.ibb.gov.tr:1935/live/976.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 981
+http://ibb-media2.ibb.gov.tr:1935/live/981.stream/playlist.m3u8
+#EXTINF:-1 group-title="*TÜRK_Webcam",Istanbul_AKOM - 987
+http://ibb-media2.ibb.gov.tr:1935/live/987.stream/playlist.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Kelp Forest
 https://outbound-production.explore.org/stream-production-70/.m3u8
 #EXTINF:-1 group-title="DE_GERMAN_DACH_WEBCAM",Klagenfurt Neuer Platz
 http://stream1.panocloud.com/KlagenfurtNeuerPlatz/KlagenfurtNeuerPlatz.stream/.m3u8
-#EXTINF:-1 group-title="DE_GERMAN_DACH_WEBCAM",Köln Airport Cam3
-http://stream-5gw.1000eyes.de/cupertino/cgn4463E1.stream/.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Lagoa de Albufeira
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Lagoa de Albufeira
 https://video-auth1.iol.pt/beachcam/bclagoaalbufeira/playlist.m3u8
 #EXTINF:-1 group-title="DE_GERMAN_DACH_WEBCAM",Landshut Burg
 http://tdt.shmhost.net/burg/livestream.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Leça da Palmeira
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Leça da Palmeira
 https://video-auth1.iol.pt/beachcam/lecadapalmeira/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Leça da Palmeira | Panorâmica | Aterro
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Leça da Palmeira | Panorâmica | Aterro
 https://video-auth1.iol.pt/beachcam/bcfarolleca/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Madeira - Ponta Pequena - Paul
-https://video-auth1.iol.pt/beachcam/madeirajardimdomar/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Madeira - Porto Santo
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Madeira - Porto Santo
 https://video-auth1.iol.pt/beachcam/bcportosanto/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Madeira | Fajã da Areia
-https://video-auth1.iol.pt/beachcam/bcfaja/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Madeira | Paul do Mar
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Madeira | Paul do Mar
 https://video-auth1.iol.pt/beachcam/bcpauldomar2/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Madeira | Seixal
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Madeira | Seixal
 https://video-auth1.iol.pt/beachcam/bcmadeiraseixal/playlist.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Malibu
 https://outbound-production.explore.org/stream-production-183/.m3u8
 #EXTINF:-1 group-title="LATINO_CAM",Matosinhos
 https://video-auth1.iol.pt/beachcam/matosinhos/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Meia Praia
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Meia Praia
 https://video-auth1.iol.pt/beachcam/meiapraia/playlist.m3u8
 #EXTINF:-1 group-title="LATINO_CAM",Monte Clérigo
 https://video-auth1.iol.pt/beachcam/bcmonteclerigo/playlist.m3u8
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Murtinheira
 https://video-auth1.iol.pt/beachcam/bcmurtinheira/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Nazaré - Forte S. Miguel Arcanjo
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Nazaré - Forte S. Miguel Arcanjo
 https://video-auth1.iol.pt/beachcam/bcarcanjo3/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Nazaré - Forte S. Miguel Arcanjo - Baía
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Nazaré - Forte S. Miguel Arcanjo - Baía
 https://video-auth1.iol.pt/beachcam/bcarcanjo1/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Nazaré - Praia da Vila
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Nazaré - Praia da Vila
 https://video-auth1.iol.pt/beachcam/nazarepraiadavila/playlist.m3u8
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Nazaré - Praia do Norte
 https://video-auth1.iol.pt/beachcam/canhaonazare/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Nazaré - Praia do Norte panorâmica
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Nazaré - Praia do Norte panorâmica
 https://video-auth1.iol.pt/beachcam/nazareparadonorte/playlist.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",NL - Blokzijl 2
 https://584b389d712f9.streamlock.net/live2/blokzijl2.stream/HasBahCa.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",NL - Harderwijk 2
-http://mtxstr001.matrixdata.nl/live/vuurtoren.stream/chunklist_w2084393416.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",NL - Rotterdam 7
-http://cdn22d.streampartner.nl/berartvd/berartvd.stream/chunklist_w1217637226.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",NL - Vlissingen
-http://cdn15.streampartner.nl/interact1037_2/interact1037_2.stream/chunklist_w2093434315.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Northern Lights
 https://outbound-production.explore.org/stream-production-77/.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Norway: Finse (Hotel Finse 1222)
 https://stream1.vossaskyen.no/bt/FinseStasjon.stream/chunklist_w254227656.m3u8?custom-mdt=on
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Odeceixe
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Odeceixe
 https://video-auth1.iol.pt/beachcam/bcodeceixe/playlist.m3u8
 #EXTINF:-1 group-title="LATINO_CAM",Ofir
 https://video-auth1.iol.pt/beachcam/bcofir/playlist.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Orcas
 https://outbound-production.explore.org/stream-production-95/.m3u8
-#EXTINF:-1 group-title="WEB CAM Y CLIMA",OSTENDE Y LA RAMBLA PINAMAR
-https://wowza.telpin.com.ar:1935/camara-rambla/camara-rambla.smil/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Paço de Arcos
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Paço de Arcos
 https://video-auth1.iol.pt/beachcam/parcos/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Paço de Arcos | Estática
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Paço de Arcos | Estática
 https://video-auth1.iol.pt/beachcam/pacodearcosfixa/playlist.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Panda
 https://outbound-production.explore.org/stream-production-33/.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Paredes da Vitória
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Paredes da Vitória
 https://video-auth1.iol.pt/beachcam/bcparedesvitoria/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Pedra do Ouro
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Pedra do Ouro
 https://video-auth1.iol.pt/beachcam/bcpraiaouro/playlist.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Penguin Beach
 https://outbound-production.explore.org/stream-production-14/.m3u8
@@ -945,79 +1037,71 @@ https://outbound-production.explore.org/stream-production-14/.m3u8
 https://outbound-production.explore.org/stream-production-13/.m3u8
 #EXTINF:-1 group-title="LATINO_CAM",Peniche - Lagide
 https://video-auth1.iol.pt/beachcam/lagide/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Peniche - Supertubos
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Peniche - Supertubos
 https://video-auth1.iol.pt/beachcam/supertubos/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Peniche | Baleal | Panorâmica
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Peniche | Baleal | Panorâmica
 https://video-auth1.iol.pt/beachcam/bcbalealgeral/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Peniche | Cantinho da Baia | Estática
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Peniche | Cantinho da Baia | Estática
 https://video-auth1.iol.pt/beachcam/bcbalealcantinho/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Peniche | Consolação
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Peniche | Consolação
 https://video-auth1.iol.pt/beachcam/bcconsolacao/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Peniche | Lagide | Estática
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Peniche | Lagide | Estática
 https://video-auth1.iol.pt/beachcam/bclagidefixa/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Peniche | Molhe Leste | Estática
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Peniche | Molhe Leste | Estática
 https://video-auth1.iol.pt/beachcam/bcmolheleste/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Peniche | Supertubos | Estática
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Peniche | Supertubos | Estática
 https://video-auth1.iol.pt/beachcam/bcsupertubosfixa/playlist.m3u8
-#EXTINF:-1 group-title="WEB CAM Y CLIMA",PINAMAR GOLF
-https://wowza.telpin.com.ar:1935/camara-golf/camara-golf.smil/playlist.m3u8
 #EXTINF:-1 group-title="EU_POLAND_webcam",PL KASPROWYrynek Podg??i
 http://hls1.webcamera.pl/krakow_cam_c44608/krakow_cam_c44608.stream/chunks.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",PL Krakow (PL)
+#EXTINF:-1 group-title="EU_POLAND_webcam",PL Krakow (PL)
 http://hoktastream2.webcamera.pl/krakow_cam_4c3e37/krakow_cam_4c3e37.stream/playlist.m3u8
-#EXTINF:-1 group-title="EU_POLAND_webcam",Poland - Gdansk
-http://hoktastream4.webcamera.pl/gdansk_cam_77aeaf/gdansk_cam_77aeaf.stream/chunks.m3u8
 #EXTINF:-1 group-title="EU_POLAND_webcam",Poland - Hotel Stok
 http://hoktastream4.webcamera.pl/hotelstok_cam_77f104/hotelstok_cam_77f104.stream/playlist.m3u8
 #EXTINF:-1 group-title="EU_POLAND_webcam",Poland - Lodz Airport
 https://cdn-3-go.toya.net.pl/kamery/lodz_lublinek1.m3u8
 #EXTINF:-1 group-title="EU_POLAND_webcam",Poland - Lodz Airport
 https://cdn-3-go.toya.net.pl/kamery/lodz_lublinek2.m3u8
-#EXTINF:-1 group-title="EU_POLAND_webcam",Poland - Lodz Airport
-https://cdn-3-go.toya.net.pl/kamery/lodz_lublinek3.m3u8
 #EXTINF:-1 group-title="EU_POLAND_webcam",Poland - Nowy Sacz Lososina Dolna Airfield
 https://videocdn.km-net.pl/Lososina_Dolna/index.m3u8
 #EXTINF:-1 group-title="EU_POLAND_webcam",Poland - Olsztyn
 http://hls13.webcamera.pl/olsztyn_cam_43a997/olsztyn_cam_43a997.stream/playlist.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Poland - Slowik Ski
+#EXTINF:-1 group-title="EU_POLAND_webcam",Poland - Slowik Ski
 http://91.224.104.112:8181/xxx_wyciag_II/index.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Poland - Slowik Ski 2
-http://91.224.104.112/xxx_wyciag_III/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="EU_POLAND_webcam",Poland - Sopot
 http://hls8.webcamera.pl/sopot_cam_e1c28f/sopot_cam_e1c28f.stream/chunks.m3u8
 #EXTINF:-1 group-title="EU_POLAND_webcam",Poland - TV Cam
 https://hoktastream1.webcamera.pl/tv_cam_781381/tv_cam_781381.stream/chunks.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Poland - Ujsoly
+#EXTINF:-1 group-title="EU_POLAND_webcam",Poland - Ujsoly
 http://91.224.104.112:80/ujsoly/index.m3u8
 #EXTINF:-1 group-title="EU_POLAND_webcam",Poland - Widok
 http://91.224.104.112:80/wgwidok/index.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Poland 1
+#EXTINF:-1 group-title="EU_POLAND_webcam",Poland 1
 http://s1.worldcam.live:8081/koden/index.m3u8
 #EXTINF:-1 group-title="EU_POLAND_webcam",Poland 3
 https://s1.worldcam.live:8082/rabien/index.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Poland 3
+#EXTINF:-1 group-title="EU_POLAND_webcam",Poland 3
 http://s1.worldcam.live:8081/rabien/index.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Poland 4
+#EXTINF:-1 group-title="EU_POLAND_webcam",Poland 4
 http://s1.worldcam.live:8081/mwgmazury/index.m3u8
 #EXTINF:-1 group-title="EU_POLAND_webcam",Poland 8
 http://live.kamera24.pl/umolawa/index.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Poland 11
+#EXTINF:-1 group-title="EU_POLAND_webcam",Poland 11
 http://s1.worldcam.live:8081/lotniskoleszno/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Poland 15
+#EXTINF:-1 group-title="EU_POLAND_webcam",Poland 15
 https://stream.arkomnet.eu/bacowka_gawel/index.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Poland 20
+#EXTINF:-1 group-title="EU_POLAND_webcam",Poland 20
 https://stream.mazury24.eu/mosir-elblag/index.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Poland 21
+#EXTINF:-1 group-title="EU_POLAND_webcam",Poland 21
 http://stream.elblag.net:18080/mosir/index.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Poland 28
+#EXTINF:-1 group-title="EU_POLAND_webcam",Poland 28
 https://stream.arkomnet.eu/TSMetalWG/index.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Poland 29
+#EXTINF:-1 group-title="EU_POLAND_webcam",Poland 29
 https://stream.arkomnet.eu/cisiec/index.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Poland 30
+#EXTINF:-1 group-title="EU_POLAND_webcam",Poland 30
 https://stream.arkomnet.eu/ciecina/index.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Poland 31
+#EXTINF:-1 group-title="EU_POLAND_webcam",Poland 31
 https://stream.arkomnet.eu/zabnica/index.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",Poland 33
+#EXTINF:-1 group-title="EU_POLAND_webcam",Poland 33
 https://stream.arkomnet.eu/wgjaz/index.m3u8
 #EXTINF:-1 group-title="EU_POLAND_webcam",Polar Bear Family
 https://outbound-production.explore.org/stream-production-191/.m3u8
@@ -1029,100 +1113,78 @@ https://hls7.webcamera.pl/skywind_cam_1f9295/skywind_cam_1f9295.stream/playlist.
 http://hls8.webcamera.pl/gdynia_cam_b3ccea/gdynia_cam_b3ccea.stream/playlist.m3u8
 #EXTINF:-1 group-title="EU_POLAND_webcam",Polen - Najstarszy d
 https://hls8.webcamera.pl/dab-bartek_cam_187c42/dab-bartek_cam_187c42.stream/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Portinho da Arrábida
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Portinho da Arrábida
 https://video-auth1.iol.pt/beachcam/bcportinho/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Porto - Carneiro
-https://video-auth1.iol.pt/beachcam/bccarneiro/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia Canide Norte - Sul
-https://video-auth1.iol.pt/beachcam/bccanidelo/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia da Barra
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia da Barra
 https://video-auth1.iol.pt/beachcam/aveiro/playlist.m3u8
 #EXTINF:-1 group-title="LATINO_CAM",Praia da Cresmina
 https://video-auth1.iol.pt/beachcam/crismina/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia da Galé
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia da Galé
 https://video-auth1.iol.pt/beachcam/bcgale/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia da Luz
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia da Luz
 https://video-auth1.iol.pt/beachcam/luz/playlist.m3u8
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia da Rocha
 https://video-auth1.iol.pt/beachcam/praiadarocha/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia da Rocha | Marina
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia da Rocha | Marina
 https://video-auth1.iol.pt/beachcam/bcrochaportimao2/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia da Rocha | Miradouro
-https://video-auth1.iol.pt/beachcam/bcmiradourorocha/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia da Torreira
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia da Torreira
 https://video-auth1.iol.pt/beachcam/torreira/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia das Avencas
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia das Avencas
 https://video-auth1.iol.pt/beachcam/praiadasavencas/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia das Bicas
-https://video-auth1.iol.pt/beachcam/bcpraiadasbicas/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia das Maçãs
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia das Maçãs
 https://video-auth1.iol.pt/beachcam/praiadasmacas/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia das Rocas
-https://video-auth1.iol.pt/beachcam/praiadasrocas/playlist.m3u8
 #EXTINF:-1 group-title="LATINO_CAM",Praia de Mira
 https://video-auth1.iol.pt/beachcam/bcmira/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia de Santa Rita
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia de Santa Rita
 https://video-auth1.iol.pt/beachcam/vimeiro/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia de São Jacinto | Barra
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia de São Jacinto | Barra
 https://video-auth1.iol.pt/beachcam/bcfarolbarra/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia do Amado
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia do Amado
 https://video-auth1.iol.pt/beachcam/bcamado/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia do Carvalhal
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia do Carvalhal
 https://video-auth1.iol.pt/beachcam/carvalhal/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia do Guincho - Sul
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia do Guincho - Sul
 https://video-auth1.iol.pt/beachcam/praiaguinchosul/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia do Guincho - Sul
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia do Guincho - Sul
 https://video-auth1.iol.pt/beachcam/praiaguinchosul/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia do Meco
-https://video-auth1.iol.pt/beachcam/bcmeco/playlist.m3u8
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia do Peneco
 https://video-auth1.iol.pt/beachcam/praiadopeneco/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia do Vau
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia do Vau
 https://video-auth1.iol.pt/beachcam/bcvauportimao/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia dos Pescadores
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia dos Pescadores
 https://video-auth1.iol.pt/beachcam/bcpescadores/playlist.m3u8
-#EXTINF:-1 group-title="LATINO_CAM",Praia Grande - Norte
-https://video-auth1.iol.pt/beachcam/praiagrande/playlist.m3u8
 #EXTINF:-1 group-title="LATINO_CAM",Praia Grande - Sul
 https://video-auth1.iol.pt/beachcam/praiagrande2/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Praia Osso da Baleia
-https://video-auth1.iol.pt/beachcam/ossodabaleia/playlist.m3u8
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia Sesimbra
 https://video-auth1.iol.pt/beachcam/sesimbra/playlist.m3u8
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Praia Verde - Castro Marim
 https://video-auth1.iol.pt/beachcam/bcpraiaverde/playlist.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Pre?ov Sun Park
 https://stream.kukaj.se/stream/8b/video.m3u8
-#EXTINF:-1 group-title="VIETNAM_WebCam" tvg-logo="https://i.ytimg.com/vi/P1CmJ1YJehA/hqdefault.jpg",Quảng Ngãi
+#EXTINF:-1 group-title="VIETNAM_WebCam",Quảng Ngãi
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=P1CmJ1YJehA
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Ribeira D´Ilhas
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Ribeira D´Ilhas
 https://video-auth1.iol.pt/beachcam/bcmafraribeira/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Ribeira D´Ilhas | Estática
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Ribeira D´Ilhas | Estática
 https://video-auth1.iol.pt/beachcam/bcribeirafixa/playlist.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Rosies Pan
 https://outbound-production.explore.org/stream-production-108/.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",S. Torpes
-https://video-auth1.iol.pt/beachcam/saotorpes/playlist.m3u8
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Santa Cruz
 https://video-auth1.iol.pt/beachcam/santacruz/playlist.m3u8
 #EXTINF:-1 group-title="EU_PORTUGAL_webcam",Santa Cruz - Praia Azul
 https://video-auth1.iol.pt/beachcam/bcpraiaazul/playlist.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Santa Monica
 https://outbound-production.explore.org/stream-production-65/.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Santo Amaro
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Santo Amaro
 https://video-auth1.iol.pt/beachcam/santoamaro/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Santo Amaro | Estática
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Santo Amaro | Estática
 https://video-auth1.iol.pt/beachcam/santoamarofixa/playlist.m3u8
-#EXTINF:-1 group-title="LATINO_CAM",São João do Estoril
-https://video-auth1.iol.pt/beachcam/saojoaodoestoril/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",São Martinho do Porto
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",São Martinho do Porto
 https://video-auth1.iol.pt/beachcam/bcsaomartinho/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",São Pedro de Moel
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",São Pedro de Moel
 https://video-auth1.iol.pt/beachcam/bcsaopedromoel/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",São Pedro do Estoril
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",São Pedro do Estoril
 https://video-auth1.iol.pt/beachcam/saopedroestoria/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",São Torpes | Estática
-https://video-auth1.iol.pt/beachcam/bcsaotorpes2/playlist.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Scharbeutz Ferienwohnung Meersehen
 https://ch-fra-n2.livespotting.com/vpu/azcqykit/qovrg03j_720.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Shark Aquarium
@@ -1135,18 +1197,10 @@ https://video-auth1.iol.pt/beachcam/bctroia/playlist.m3u8
 https://outbound-production.explore.org/stream-production-10/.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Tropical Fish
 https://outbound-production.explore.org/stream-production-16/.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Abergynolwyn
-http://maybach.railcam.co.uk/Abergynolwyn_68473/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Apperley Bridge
 http://maybach.railcam.co.uk/ApperleyBridge_20194/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Bishops Lydeard Station
-http://maybach.railcam.co.uk:80/BishopsLydeard_59234/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Blue Anchor Station
-http://maybach.railcam.co.uk:80/BlueAnchor_68938/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Corfe Station
 http://maybach.railcam.co.uk:80/Corfe_14435/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Cramlington
-https://maybach.railcam.co.uk/Cramlington_54382/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Crewe
 https://maybach.railcam.co.uk/Crewe2_16754/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Dawlish
@@ -1163,12 +1217,6 @@ https://maybach.railcam.co.uk/Hebden_41043/tracks-v1a1/mono.m3u8
 https://maybach.railcam.co.uk/Hensall_12532/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Kidderminster
 http://89.16.164.68:80/SVR-Kidderminster-C2_094871/index.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Minehead Station
-http://maybach.railcam.co.uk:80/Minehead_05286/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",UK - New Romney 2
-https://maybach.railcam.co.uk/NewRomney2_27157/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Orton Mere
-http://maybach.railcam.co.uk/NVR-Orton-Mere_39273/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Princes
 https://paxman.railcam.co.uk/Princes-Risborough_95234/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Ribblehead
@@ -1181,28 +1229,18 @@ http://maybach.railcam.co.uk:80/Swanage_43965/tracks-v1a1/mono.m3u8
 https://camsecure.co/HLS/boatq.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Wansford
 http://paxman.railcam.co.uk/NVR-Wansford_83969/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Weather
-http://89.16.164.69/weather/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Westward
 https://camsecure.co/HLS/westho.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Westward
 http://camsecure.co/HLS/westho.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Williton Station
-http://maybach.railcam.co.uk:80/Williton1_17337/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Williton Station 2
-http://maybach.railcam.co.uk/Williton2_84721/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Пингвины
 http://stream.wildlifestreaming.io:1935/Marwell/marwell_penguin.stream/HasBahCa.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Пингвины
 http://stream.wildlifestreaming.io:1935/Marwell/marwell_penguin.stream/playlist.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",UK - Фламинго
 http://stream.wildlifestreaming.io:1935/Marwell/marwell_flamingo.stream/playlist.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",UK rail - Bishops Lydeard station
-https://maybach.railcam.co.uk/BishopsLydeard_59234/tracks-v1a1/index.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",UK rail - Crewe Cam 1 - Chester Lines
 https://maybach.railcam.co.uk/Crewe1_69241/tracks-v1a1/index.m3u8
-#EXTINF:-1 group-title="WORLD_webcam_MIX",UK rail - Orton Mere
-https://maybach.railcam.co.uk/NVR-Orton-Mere_39273/tracks-v1a1/index.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Underwater Coral
 https://outbound-production.explore.org/stream-production-105/.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Underwater Manatee
@@ -1227,14 +1265,8 @@ http://cdn.estesparkwebcams.com/prospect3/index.m3u8
 http://live.idnes.cz/slow/krmitkousa/HasBahCa.m3u8
 #EXTINF:-1 group-title="USA_webcam",USA - Kure Beach
 http://5a5f765a4fcc2.streamlock.net:1935/live/kbstreet.stream/playlist.m3u8
-#EXTINF:-1 group-title="USA_webcam",USA - Panda 3
-https://zssd-panda.hls.camzonecdn.com/CamzoneStreams/zssd-panda/HasBahCa.m3u8
 #EXTINF:-1 group-title="USA_webcam",USA - Platypus
 https://zssd-platypus.hls.camzonecdn.com/CamzoneStreams/zssd-platypus/HasBahCa.m3u8
-#EXTINF:-1 group-title="USA_webcam",USA - Schooners Sunset Cam
-https://5ed7b8fd7bf40.streamlock.net:444/schoonerssunsetHDCam/schsun/HasBahCa.m3u8
-#EXTINF:-1 group-title="USA_webcam",USA - Schooners Sunset Cam
-http://5ed7b8fd7bf40.streamlock.net:1935/schoonerssunsetHDCam/schsun/playlist.m3u8
 #EXTINF:-1 group-title="USA_webcam",USA - Southport
 http://5a5f765a4fcc2.streamlock.net:1935/live/spp.stream/HasBahCa.m3u8
 #EXTINF:-1 group-title="USA_webcam",USA - Southport
@@ -1247,19 +1279,17 @@ http://5c864aa99ee04.streamlock.net:1935/surfcam/live.stream/playlist.m3u8
 http://live.idnes.cz/slow/krmitkousa/playlist.m3u8
 #EXTINF:-1 group-title="USA_webcam",USA Independence State Airport
 https://5ddd47d64e730.streamlock.net:444/jeannesflyingservice1/jeannesflyingservice1.stream/chunklist_w1266566556.m3u8
-#EXTINF:-1 group-title="WEB CAM Y CLIMA",USHUAIA LIVE
-https://www.youtube.com/watch?v=TLZ6LcTDgNs
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Viana do Castelo | Cabedelo
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Viana do Castelo | Cabedelo
 https://video-auth1.iol.pt/beachcam/bccabedeloviana/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Vila Nova de Milfontes - Farol
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Vila Nova de Milfontes - Farol
 https://video-auth1.iol.pt/beachcam/bcfarol/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Vila Nova de Milfontes - Franquia
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Vila Nova de Milfontes - Franquia
 https://video-auth1.iol.pt/beachcam/bcfranquia/playlist.m3u8
 #EXTINF:-1 group-title="LATINO_CAM",Vila Nova de Milfontes - Furnas Mar
 https://video-auth1.iol.pt/beachcam/furnasmar/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Vila Praia de Âncora
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Vila Praia de Âncora
 https://video-auth1.iol.pt/beachcam/bcvilapraiadeancora/playlist.m3u8
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Vilamoura
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Vilamoura
 https://video-auth1.iol.pt/beachcam/vilamoura/playlist.m3u8
 #EXTINF:-1 group-title="VIETNAM_WebCam",Vòng xoay Điện Biên Phủ TPHCM
 https://livevn.piepme.com/camhls/14789.a6a2cdaedb0e4a62b8307d232370f4ff_720p/index.m3u8
@@ -1269,9 +1299,7 @@ https://outbound-production.explore.org/stream-production-5/.m3u8
 https://ch-fra-n2.livespotting.com/vpu/oq57fxnt/mciwlhsf_720.m3u8
 #EXTINF:-1 group-title="WORLD_webcam_MIX",Webcamhotelalexander
 https://hotelalexander.it-wms.com/clip_current_720p.mp4
-#EXTINF:-1 group-title="WEB CAM Y CLIMA",WORLD LIVE
-https://www.youtube.com/watch?v=3qdEMXmwTkQ
-#EXTINF:-1 group-title="EU_PORTUGAL_webcam" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Meo-Beachcam.png",Zambujeira do Mar
+#EXTINF:-1 group-title="EU_PORTUGAL_webcam",Zambujeira do Mar
 https://video-auth1.iol.pt/beachcam/zambujeira/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Абакан 1
 http://abkvideo1.orionnet.online/cam924/tracks-v1/mono.m3u8
@@ -1297,12 +1325,8 @@ http://abkvideo1.orionnet.online/cam1042/tracks-v1/mono.m3u8
 http://abkvideo1.orionnet.online/cam805/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Абакан 8
 http://krkvideo1.orionnet.online/cam1471/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Абакан 8
-http://abkvideo1.orionnet.online/cam1553/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Абакан 9
 http://krkvideo1.orionnet.online/cam1470/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Абакан 9
-http://abkvideo1.orionnet.online/cam1554/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Абакан 10
 http://abkvideo1.orionnet.online/cam804/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Абакан 11
@@ -1313,8 +1337,6 @@ http://abkvideo1.orionnet.online/cam2939/tracks-v1/mono.m3u8
 http://abkvideo1.orionnet.online/cam799/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Абакан 14
 http://abkvideo1.orionnet.online/cam802/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Абакан 15
-http://abkvideo1.orionnet.online/cam800/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Алматы - ГК Шымбулак 1
 http://ipcam.kz/cam1/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Алматы - ГК Шымбулак 4
@@ -1339,20 +1361,6 @@ http://dvr2.astrakhan.ru/yabl-36-hd-1/index.m3u8
 https://dvr2.astrakhan.ru/yabl-36-hd-1/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Астрахань 8
 http://dvr.astrakhan.ru/kir-19-hd-2/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Аэропорт Дюссельдорфа 2
-http://stream-5gw.1000eyes.de:1935/cupertino/dus5abb.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Аэропорт Дюссельдорфа 3
-http://stream-5gw.1000eyes.de/cupertino/dusfcae.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Аэропорт Дюссельдорфа 4
-http://stream-5gw.1000eyes.de/cupertino/dus1ba9.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Аэропорт Дюссельдорфа 5
-http://stream-5gw.1000eyes.de:1935/cupertino/dused0c.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Аэропорт Кельн/Бонн 1
-http://stream-5gw.1000eyes.de/cupertino/cgn06B1E8.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Аэропорт Кельн/Бонн 3
-http://stream-5gw.1000eyes.de/cupertino/cgn4463E1.stream/HasBahCa.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Аэропорт Кельн/Бонн 3
-http://stream-5gw.1000eyes.de/cupertino/cgn4463E1.stream/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Байкальский Музей
 http://bm.isc.irk.ru:8085/hls/st13.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Байкальский Музей 3
@@ -1415,22 +1423,10 @@ https://streamer.devnet.rs/hls/vuk.m3u8
 http://cctv.kpmelnica.ru/camera2.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Белоярский 7
 http://cctv.kpmelnica.ru/camera6.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Братск 1
-http://irkvideo1.orionnet.online/cam2476/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Братск 2
-http://irkvideo1.orionnet.online/cam2445/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Братск 3
-http://irkvideo1.orionnet.online/cam2888/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Братск 4
-http://irkvideo1.orionnet.online/cam2889/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Братск 5
-http://irkvideo1.orionnet.online/cam5063/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Верхняя Салда 2
 https://www.forpost96.ru:8443/hls/174502/60f2084f19ee1aa968dd/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Верхняя Салда 4
 https://www.forpost96.ru:8443/hls/174581/dd2ba6343435c6c39864/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Верхняя Салда 5
-https://www.forpost96.ru:8443/hls/174500/4ac15b10bfc2f5c2917d/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Верхняя Салда 6
 https://www.forpost96.ru:8443/hls/171905/3810da36bde423ae1edd/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Верхняя Салда 7
@@ -1453,10 +1449,6 @@ http://gaj-tanki.camsh.gts.tv/hls/gaj-tanki.m3u8
 http://gaj-krug.camsh.gts.tv/hls/gaj-krug.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Глазов
 http://91.210.192.74:8081/hls/340/46c4cd4aae2a82b0f44f/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Глазов 2
-http://91.210.192.74:8081/hls/192502/96005cb302ad71f01749/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Глазов 3
-http://91.210.192.74:8081/hls/8039/1b21ce36ef884d0521b0/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Екатеринбург 4
 https://cctv-sa2-b2b.ekat.ertelecom.ru:18080/hls/41086261/fe9478f4bdb0de7f23eb/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Израиль - Стена Плача 2
@@ -1467,14 +1459,6 @@ http://95.154.111.110/cam1/index.m3u8
 http://95.154.111.110/cam2/index.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Испания 8
 https://5b8d2cbe62ad6.streamlock.net/live/spanje.stream/chunklist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Казань 3
-http://cdn.universmotri.ru/ipcam/cam32.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Казань 4
-http://cdn.universmotri.ru/ipcam/cam36.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Казань 6
-http://cdn.universmotri.ru/ipcam/cam39.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Каменск-Уральский 11
-http://78.139.78.106:8080/hls/3849/30aef21385b0c2fe006e/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Кингисепп 1
 https://flussonic.king-online.ru/camera01/index.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Кингисепп 1
@@ -1525,64 +1509,22 @@ http://s2.moidom.karelia.pro/s/public/0000001361.m3u8
 http://s1.moidom.karelia.pro/s/public/0000007613.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск - Бобровый Лог 1
 http://62.213.36.148:1935/live/kkd2-bot.stream/chunklist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск - Бобровый Лог 3
-http://62.213.36.148:1935/live/kkd2-top.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск - Бобровый Лог 5
-http://62.213.36.148:1935/live/kkd2-top.stream/HasBahCa.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск - Бобровый Лог 6
 http://62.213.36.148:1935/live/cam86.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск - Бобровый Лог 7
-http://62.213.36.148:1935/live/kkd1-top.stream/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск - Бобровый Лог 8
 http://62.213.36.148:1935/live/AS32.stream/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск - Бобровый Лог 9
 http://62.213.36.148:1935/live/AS69.stream/chunklist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск - Енисей
-http://flussonic.multi-net.ru/St.enisey-Irkutskaya_1/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 1
-http://krkvideo14.orionnet.online/cam1567/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 2
-http://krkvideo5.orionnet.online/cam290/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 3
-http://krkvideo15.orionnet.online/cam3209/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 5
 http://krkvideo7.orionnet.online/cam74/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 5
-http://krkvideo7.orionnet.online/cam16/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 6
-http://krkvideo17.orionnet.online/cam417/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 8
 http://abkvideo1.orionnet.online/cam802/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 8
-http://abkvideo1.orionnet.online/cam2109/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 8
-http://krkvideo15.orionnet.online/cam4905/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 10
 http://krkvideo5.orionnet.online/cam2061/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 11
-http://krkvideo7.orionnet.online/cam75/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 11
-http://krkvideo17.orionnet.online/cam418/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 12
 http://krkvideo7.orionnet.online/cam2089/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 13
-http://krkvideo2.orionnet.online/cam3679/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 14
-http://krkvideo15.orionnet.online/cam3124/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 15
 http://irkvideo1.orionnet.online/cam3042/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 15
-http://krkvideo15.orionnet.online/cam7080/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 16
-http://krkvideo15.orionnet.online/cam5874/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 17
-http://krkvideo14.orionnet.online/cam1541/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 18
-http://krkvideo15.orionnet.online/cam3993/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 19
-http://krkvideo15.orionnet.online/cam3994/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Красноярск 20
-http://krkvideo15.orionnet.online/cam2988/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Кузбасс 2
 http://hls.kts42.ru:45125/pospelova/tracks-v1/index.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Литва - Вильнюс
@@ -1671,8 +1613,6 @@ http://hls.m-ten.ru:8080/hls/14/live.m3u8
 http://hls.m-ten.ru:8080/hls/25/live.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Междуреченск 14
 http://hls.m-ten.ru:8080/hls/24/live.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Междуреченск 15
-http://hls.m-ten.ru:8080/hls/18/live.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Междуреченск 16
 http://hls.m-ten.ru:8080/hls/23/live.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Минусинск 1
@@ -1685,8 +1625,6 @@ https://s2.moidom-stream.ru/s/public/0000089203.m3u8
 http://intek-m.ru/live/koltso_perl/s.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Мытищи - Пересечение ул.Каргина и Олимпийского пр.
 http://intek-m.ru/live/alta_krug/s.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Мытищи - Пересечение ул.Комарова
-http://intek-m.ru/live/novomyt_komar/s.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Мытищи - Пересечение ул.Мира и Новомытищинского пр.
 http://intek-m.ru/live/novomytischinskiy/s.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Мытищи - Пересечение ул.Мира и Юбилейная
@@ -1711,18 +1649,12 @@ http://intek-m.ru/live/trudstroika/s.m3u8
 https://cam.indikom.ru/43/hls/stream.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Мытищи 2
 https://cam.indikom.ru/10/hls/stream.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Мытищи 3
-http://cam.indikom.ru/67/hls/stream.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Мытищи 4
 http://cam.indikom.ru/12/hls/stream.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Мытищи 6
-http://cam.indikom.ru/61/hls/stream.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Мытищи 8
 http://cam.indikom.ru/59/hls/stream.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Мытищи 9
 http://cam.indikom.ru/43/hls/stream.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Назарово
-http://cam.sibmf.ru:8081/hls/123684/1157313fa8717cdda7cb/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Назарово 2
 http://cam.sibmf.ru:8081/hls/122754/1d882e4eef0d5b7dad13/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Назарово 3
@@ -1773,18 +1705,6 @@ https://ipcam.rdtc.ru/ipcam/ipcam_7/tracks-v1/mono.m3u8
 https://ipcam.rdtc.ru/ipcam/ipcam_8/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Новокузнецк 11
 https://ipcam.rdtc.ru/ipcam/ipcam_11/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Новотроицк 1
-http://poliklinika.camsh.ntsk.ru/hls/ntsk-poliklinika.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Новотроицк 2
-http://uralskaya.camsh.ntsk.ru/hls/ntsk-uralskaya.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Новотроицк 2
-http://sberbank.camsh.ntsk.ru/hls/ntsk-sberbank.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Новотроицк 4
-http://adm.camsh.ntsk.ru/hls/ntsk-adm.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Новотроицк 5
-http://alkomarket.camsh.ntsk.ru/hls/ntsk-alkomarket.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Новотроицк 6
-http://tekhnikum.camsh.ntsk.ru/hls/ntsk-tekhnikum.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Ноябрьск 13
 http://camera.global-x.ru:80/CAM_Visotskogo-Magistralnaya/index.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Нур-Султан - ТРЦ Хан Шатыр
@@ -2001,60 +1921,6 @@ https://kamera.task.gda.pl/rtplive/molo.sdp/playlist.m3u8
 http://s2.moidom.karelia.pro/s/public/0000007153.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Полярные Зори 3
 http://s2.moidom.karelia.pro/s/public/0000088767.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Аттракционы
-http://citycams.pskovline.ru:8080/cam17/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Детский парк
-http://citycams.pskovline.ru:8080/cam11/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Жилой комплекс "Видный"
-http://citycams.pskovline.ru:8080/cam12/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Золотая набережная
-http://citycams.pskovline.ru:8080/cam13/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Летний сад
-http://citycams.pskovline.ru:8080/cam14/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Октябрьская площадь
-http://citycams.pskovline.ru:8080/cam1/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Ольгинский мост
-http://citycams.pskovline.ru:8080/cam2/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Перекресток Инженерной и Индустриальной
-http://citycams.pskovline.ru:8080/cam16/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Перекресток Рижского и Балтийской
-http://citycams.pskovline.ru:8080/cam18/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Перекресток Рижского и М.Горького
-http://citycams.pskovline.ru:8080/cam10/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Перекресток Рижского и Юбиленой
-http://citycams.pskovline.ru:8080/cam6/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Перекресток ул.Коммунальной и ул.Юбилейной
-http://citycams.pskovline.ru:8080/cam0/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Перекресток ул.Октябрьского и Вокзальной
-http://citycams.pskovline.ru:8080/cam9/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Перекресток ул.Труда и ул.Звездной
-http://citycams.pskovline.ru:8080/cam8/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Перекресток Чудской и Поземского
-http://citycams.pskovline.ru:8080/cam19/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Площадь Героев-Десантников
-http://citycams.pskovline.ru:8080/cam7/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Площадь Ленина
-http://citycams.pskovline.ru:8080/cam3/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Площадь Победы
-http://citycams.pskovline.ru:8080/cam4/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Привокзальная площадь
-http://citycams.pskovline.ru:8080/cam5/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков - Рижский проспект
-http://citycams.pskovline.ru:8080/cam15/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков 3
-http://citycams.pskovline.ru:8080/cam20/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков 4
-http://citycams.pskovline.ru:8080/cam22/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков 5
-http://citycams.pskovline.ru:8080/cam21/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков 5
-http://citycams.pskovline.ru:8080/cam26/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков 6
-http://citycams.pskovline.ru:8080/cam23/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков 7
-http://citycams.pskovline.ru:8080/cam24/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Псков 9
-http://citycams.pskovline.ru:8080/cam25/index.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Пушкино
 http://cam.indikom.ru/15/hls/stream.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Пушкино 1
@@ -2063,8 +1929,6 @@ https://cam.indikom.ru/29/hls/stream.m3u8
 http://cam.indikom.ru/29/hls/stream.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Пушкино 5
 http://cam.indikom.ru/14/hls/stream.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Самара 2
-https://cdn.mediagolod.online/hls/zhkolimp1/stream.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Сегежа 1
 http://s1.moidom.karelia.pro/s/public/0000007317.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Сегежа 3
@@ -2087,8 +1951,6 @@ http://stream.profi-net.sk:1935/tmr/STREAM33.stream/HasBahCa.m3u8
 http://stream.profi-net.sk:1935/tmr/STREAM33.stream/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Словакия 6
 http://stream.profi-net.sk:1935/tmr/STREAM43.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Словакия 8
-http://stream.profi-net.sk:1935/tmr//STREAM29.stream/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Словакия 10
 http://kukaj.profi-net.sk:1935/live/PLAMIENKA2.stream/chunklist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Словакия 11
@@ -2117,8 +1979,6 @@ http://stream.kukaj.se/stream/3/video.m3u8
 http://stream.kukaj.se/stream/4/video.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Словакия 23
 https://kukaj.profi-net.sk/live/PLAMIENKA1.stream/chunklist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Словакия 24
-https://kukaj.profi-net.sk/live/BOCIANY_BESENOVA_4K.stream/chunklist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Словакия 25
 https://kukaj.profi-net.sk/livetrans/KUVIK1.stream_aac/chunklist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Сортавала 2
@@ -2191,22 +2051,8 @@ http://stream.telko.ru/Tuhach_30_5_cam2/tracks-v1/mono.m3u8
 http://stream.telko.ru/Tuhach_26_2_cam1/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Ставрополь 20
 http://stream.telko.ru/Tuhach_26_3_cam2/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Ставрополь 21
-http://stream.telko.ru/Tuhach_26_3_cam1/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Ставрополь 22
 http://stream.telko.ru/Tuhach_26_4_cam2/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Старица 1
-https://s131-obzor.tvhost.ru:21200/hls/2252626/d678a23369514d400fb2/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Стрежевой 1
-http://strezhi.ru:1935/live/cam1.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Стрежевой 3
-http://strezhi.ru:1935/live/cam4.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Стрый 1
-http://193.53.83.168/hls4/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Стрый 2
-http://193.53.83.168/hls3/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Стрый 3
-https://stream-uspinnia.pp.ua/hls2/index.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Суоярви 2
 http://s1.moidom.karelia.pro/s/public/0000007079.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Суоярви 3
@@ -2223,16 +2069,12 @@ http://flussonic.tele-plus.ru/mosaic/index.m3u8?token=dvor86
 http://flussonic.tele-plus.ru/Mira_41_truba/index.m3u8?token=dvor86
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",США - Выдры
 https://5ad79df289937.streamlock.net/Aquarium-WebCams/Otters.stream/chunklist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",США - Жираф 2
-http://zoocams.elpasozoo.org/ZooGH.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",США - Морской лев
 http://zoocams.elpasozoo.org/ZooSLO.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",США - Пингвины 2
 https://5ad79df289937.streamlock.net/Aquarium-WebCams/Penguins.stream/chunklist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",США - Рифы
 https://5ad79df289937.streamlock.net/Aquarium-WebCams/Secret-Reef.stream/chunklist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",США - Совка
-https://live.hdontap.com/hls/hosbdvr5/ty-mayo_eastern-screech-owl.stream/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",США - Утконос
 https://zssd-platypus.hls.camzonecdn.com/CamzoneStreams/zssd-platypus/Playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Тверь - Компьютерия 1
@@ -2253,26 +2095,8 @@ https://webcamsbuildpool.tltsu.ru/cam1/cam1.m3u8
 http://cdn08.vtomske.ru/hls/stream6.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Томск - Река Томь
 http://cdn08.vtomske.ru/hls/stream9.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Томск - Река Томь 2
-http://cdn08.vtomske.ru/hls/stream2.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Томск 1
 http://cdn08.vtomske.ru/hls/stream1.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Трехгорный 1
-http://89.237.41.2/cams/live/lenina1106/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Трехгорный 3
-http://89.237.41.2/cams/live/Mira546/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Трехгорный 4
-http://89.237.41.2/cams/live/Mira312/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Трехгорный 5
-http://89.237.41.2/cams/live/Mira2761/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Трехгорный 6
-http://89.237.41.2/cams/live/50letpobedy2231/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Трехгорный 7
-http://89.237.41.2/cams/live/50letpobedy2232/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Тула
-https://lenin-live.sunlink.ru/live/lenin.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Тула 2
-https://ermitage-live.sunlink.ru/ermitage/live.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Тулун 1
 http://tv.t-tk.ru/cam_vokzal/index.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Тулун 2
@@ -2307,16 +2131,10 @@ http://ibb-media2.ibb.gov.tr:1935/live/648.stream/chunklist.m3u8
 http://212.175.207.19:1935/canliyayin/dbbBelediye1.stream/chunklist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Турция 13
 http://212.175.207.19:1935/canliyayin/dbbBelediye2.stream/chunklist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Ужур
-http://91.211.56.203:8081/sibmf/uz117/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Улан-Удэ 1
 http://stream.trafjam.ru/cam3_site/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Улан-Удэ 1
 http://stream.trafjam.ru/cam3_site/index.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Улан-Удэ 2
-http://stream.trafjam.ru/cam6_site/tracks-v1/mono.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Улан-Удэ 2
-http://stream.trafjam.ru/cam6_site/index.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Улан-Удэ 4
 http://stream.trafjam.ru/cam11_site/tracks-v1/mono.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Ульяновск 1
@@ -2351,24 +2169,6 @@ https://cc-stream-01.uilim.ru/cam-dom-torgovli/tracks-v1/mono.m3u8
 https://sarralbe.live-kd.com/live/sarralbe/sarralbe.stream_aac/index.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Херсон 1
 http://pravoslav.tv:90/hlsplay/live.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Хорватия 1
-https://cdn-002.whatsupcams.com/hls/hr_zgzoo02.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Хорватия 3
-https://cdn-004.whatsupcams.com/hls/hr_senj03.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Череповец 4
-http://live.cmirit.ru:1935/live/kolhryn_640x360.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Череповец 6
-http://live.cmirit.ru:1935/live/smart12_1920x1080.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Череповец 7
-http://live.cmirit.ru:1935/live/axis5_1280x720.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Череповец 9
-http://live.cmirit.ru:1935/live/rvi2_1920x1080.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Череповец 11
-http://live.cmirit.ru:1935/live/smart3_1920x1080.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Череповец 13
-http://live.cmirit.ru:1935/live/rvi1_1920x1080.stream/playlist.m3u8
-#EXTINF:-1 group-title="RUS_exCCCP_webcam",Череповец 14
-http://live.cmirit.ru:1935/live/rvi3_1920x1080.stream/playlist.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Чехия - Аэропорт
 http://live.idnes.cz/slow/planespotting/HasBahCa.m3u8
 #EXTINF:-1 group-title="RUS_exCCCP_webcam",Чехия - Аэропорт
