@@ -1,14 +1,53 @@
 #!/bin/sh
-echo "****************************************"
-echo "*         Enjoy our plugin             *"
-echo "****************************************"
+
+# **************************************
+# HasBahCa Post-installation
+# Simple version
+# **************************************
+
 echo "****************************************"
 echo "*                                      *"
-echo "*                                      *"
-echo "*   Restarting Enigma2 is requided...  *"
-echo "*                                      *"
+echo "*     HasBahCa INSTALLATION            *"
 echo "*                                      *"
 echo "****************************************"
+
+# Set basic permissions
+echo "Setting up permissions..."
+find /usr/lib/enigma2/python/Plugins/Extensions/HasBahCa -type f -name "*.py" -exec chmod 644 {} \;
+find /usr/lib/enigma2/python/Plugins/Extensions/HasBahCa -type d -exec chmod 755 {} \;
+
+# Create Playlists directory if missing
+if [ ! -d "/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/Playlists" ]; then
+    echo "Creating Playlists directory..."
+    mkdir -p "/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/Playlists"
+    chmod 755 "/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/Playlists"
+fi
+
+# Compile Python for better performance
+echo "Optimizing performance..."
+python -m py_compile /usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/*.py 2>/dev/null
+python -m py_compile /usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/lib/*.py 2>/dev/null
+
+# Update plugin cache
+echo "Updating plugin system..."
+touch /usr/lib/enigma2/python/Plugins/.force_reload 2>/dev/null
+
+echo ""
 echo "****************************************"
+echo "*          ✓ INSTALLATION DONE!       *"
 echo "****************************************"
+echo ""
+echo ""
+echo "*** REQUIRED ACTION ***"
+echo "You MUST restart Enigma2 for the"
+echo "plugin to appear in the menu."
+echo ""
+echo "To restart:"
+echo "1. Reboot your receiver"
+echo "2. Or restart GUI from menu"
+echo ""
+echo "****************************************"
+echo "Press Enter to continue..."
+read dummy
+
 exit 0

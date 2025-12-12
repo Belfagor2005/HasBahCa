@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HasBahCa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 20:11+0200\n"
+"POT-Creation-Date: 2025-12-12 13:18+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ))^^(( <>\n"
 "Language-Team: *\n"
@@ -10,50 +10,177 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.7\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-Basepath: ../../../..\n"
 "X-Poedit-SearchPath-0: plugin.py\n"
 "X-Poedit-SearchPath-1: main.py\n"
 
-#: main.py:284
+#: main.py:313
 msgid "Give me a few seconds ... loading the data"
 msgstr "Geben Sie mir ein paar Sekunden ... Laden der Daten"
 
-#: main.py:285
+#: main.py:314
 msgid "Exit"
 msgstr "Exit"
 
-#: main.py:286 main.py:444 main.py:550
+#: main.py:315 main.py:876 main.py:978
 msgid "Select"
 msgstr "Wählen"
 
-#: main.py:288
+#: main.py:316
+msgid "Options"
+msgstr ""
+
+#: main.py:317
 msgid "Remove"
 msgstr "Entfernen"
 
-#: main.py:362 main.py:518 main.py:604
+#: main.py:362
+msgid "Update M3U Playlists from GitHub"
+msgstr ""
+
+#: main.py:363
+msgid "Update Plugin to new version"
+msgstr ""
+
+#: main.py:364
+msgid "Force Update (Developer)"
+msgstr ""
+
+#: main.py:370
+msgid "Select update type:"
+msgstr ""
+
+#: main.py:404
+#, python-format
+msgid "Error checking version: %s"
+msgstr ""
+
+#: main.py:413
+#, python-format
+msgid ""
+"New version %s is available\n"
+"\n"
+"Changelog: %s\n"
+"\n"
+"Press info_long or yellow_long button to start force updating."
+msgstr ""
+
+#: main.py:420
+#, python-format
+msgid ""
+"New version %s is available.\n"
+"\n"
+"Changelog: %s \n"
+"\n"
+"Do you want to install it now?"
+msgstr ""
+
+#: main.py:422
+msgid "Congrats! You already have the latest version..."
+msgstr ""
+
+#: main.py:435
+#, python-format
+msgid "Do you want to install update ( %s ) now?"
+msgstr ""
+
+#: main.py:444
+msgid "Update Aborted!"
+msgstr ""
+
+#: main.py:458
+msgid ""
+"Do you want to download ALL M3U playlists from GitHub?\n"
+"\n"
+"This will download all .m3u files from HasBahCa repository."
+msgstr ""
+
+#: main.py:467
+msgid "Downloading ALL playlists..."
+msgstr ""
+
+#: main.py:542
+#| msgid "Download Failed!!!"
+msgid ""
+"Download completed!\n"
+"\n"
+msgstr ""
+
+#: main.py:543
+#, python-format
+msgid "Successfully downloaded: %d files\n"
+msgstr ""
+
+#: main.py:544
+#, python-format
+msgid "Failed: %d files\n"
+msgstr ""
+
+#: main.py:547
+msgid ""
+"\n"
+"Trying alternative method..."
+msgstr ""
+
+#: main.py:657
+msgid ""
+"Alternative method completed!\n"
+"\n"
+msgstr ""
+
+#: main.py:658
+#, python-format
+#| msgid "Download Failed!!!"
+msgid "Downloaded: %d files"
+msgstr ""
+
+#: main.py:665
+#, python-format
+msgid ""
+"Both methods failed!\n"
+"\n"
+"Error: %s"
+msgstr ""
+
+#: main.py:674 main.py:723 main.py:937 main.py:1077
 msgid "Please now select ..."
 msgstr "Bitte wählen Sie jetzt ..."
 
-#: main.py:394 main.py:777
+#: main.py:736
+msgid ""
+"These streams may contain Adult content\n"
+"\n"
+"are you sure you want to continue?"
+msgstr ""
+
+#: main.py:828
+msgid "Access denied or wrong PIN"
+msgstr ""
+
+#: main.py:834 main.py:1201
 msgid "Remove all HasBahCa Favorite Bouquet ?"
 msgstr "Alle HasBahCa-Favoriten Bouquets entfernen?"
 
-#: main.py:423 main.py:806
+#: main.py:853 main.py:1223
 msgid "HasBahCa Favorites List have been removed"
 msgstr "Die HasBahCa-Favoritenliste wurde entfernt"
 
-#: main.py:442 main.py:548
+#: main.py:874 main.py:976
 msgid "Loading data... Please wait"
 msgstr "Daten werden geladen... Bitte warten"
 
-#: main.py:443 main.py:549
+#: main.py:875 main.py:977
 msgid "Back"
 msgstr "Zurück"
 
-#: main.py:628
+#: main.py:1021
+msgid "Filter this category..."
+msgstr ""
+
+#: main.py:1112
 #, python-format
 msgid ""
 "Do you want to Convert %s\n"
@@ -66,21 +193,22 @@ msgstr ""
 "\n"
 "Beachtung!! Warten Sie beim Konvertieren !!!"
 
-#: main.py:745
-msgid "Shuffle Favorite List in Progress"
-msgstr "Einrichtung der Favoritenliste läuft"
+#: main.py:1172
+#, python-format
+#| msgid "Shuffle Favorite List in Progress"
+msgid "Shuffle Favorite %s List in Progress"
+msgstr ""
 
-#: main.py:745
+#: main.py:1172
 msgid "Wait please ..."
 msgstr "Bitte Warten ..."
 
-#: main.py:748
-msgid "Download Error"
-msgstr "Download Fehler"
-
-#: main.py:757 main.py:773
+#: main.py:1181 main.py:1197
 msgid "Download Failed!!!"
 msgstr "Herunterladen fehlgeschlagen!!!"
+
+#~ msgid "Download Error"
+#~ msgstr "Download Fehler"
 
 #~ msgid "Please select ..."
 #~ msgstr "Bitte auswählen ..."

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: HasBahCa\n"
-"POT-Creation-Date: 2023-09-19 14:15+0200\n"
+"POT-Creation-Date: 2025-12-12 13:07+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -9,32 +9,164 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-Basepath: ../../../..\n"
 "X-Poedit-SearchPath-0: plugin.py\n"
 "X-Poedit-SearchPath-1: main.py\n"
 
-#: main.py:261
+#: main.py:313
 msgid "Give me a few seconds ... loading the data"
 msgstr "Dammi qualche secondo... caricamento dei dati"
 
-#: main.py:262
+#: main.py:314
 msgid "Exit"
 msgstr "Uscire"
 
-#: main.py:263 main.py:448 main.py:548
+#: main.py:315 main.py:876 main.py:978
 msgid "Select"
 msgstr "Seleziona"
 
-#: main.py:265
+#: main.py:316
+msgid "Options"
+msgstr "Opzioni"
+
+#: main.py:317
 msgid "Remove"
 msgstr "Rimuovere"
 
-#: main.py:354 main.py:515 main.py:643
+#: main.py:362
+msgid "Update M3U Playlists from GitHub"
+msgstr "Aggiorna le playlist M3U da GitHub"
+
+#: main.py:363
+msgid "Update Plugin to new version"
+msgstr "Aggiorna il plugin alla nuova versione"
+
+#: main.py:364
+msgid "Force Update (Developer)"
+msgstr "Aggiornamento forzato (sviluppatore)"
+
+#: main.py:370
+msgid "Select update type:"
+msgstr "Seleziona il tipo di aggiornamento:"
+
+#: main.py:404
+#, python-format
+msgid "Error checking version: %s"
+msgstr "Errore durante il controllo della versione: %s"
+
+#: main.py:413
+#, python-format
+msgid ""
+"New version %s is available\n"
+"\n"
+"Changelog: %s\n"
+"\n"
+"Press info_long or yellow_long button to start force updating."
+msgstr ""
+"New version %s is available\n"
+"\n"
+"Changelog: %s\n"
+"\n"
+"Press info_long or yellow_long button to start force updating."
+
+#: main.py:420
+#, python-format
+msgid ""
+"New version %s is available.\n"
+"\n"
+"Changelog: %s \n"
+"\n"
+"Do you want to install it now?"
+msgstr ""
+"È disponibile la nuova versione %s.\n"
+"\n"
+"Changelog: %s\n"
+"\n"
+"Vuoi installarla subito?"
+
+#: main.py:422
+msgid "Congrats! You already have the latest version..."
+msgstr "Congratulazioni! Hai già l'ultima versione..."
+
+#: main.py:435
+#, python-format
+msgid "Do you want to install update ( %s ) now?"
+msgstr "Vuoi installare l'aggiornamento (%s) adesso?"
+
+#: main.py:444
+msgid "Update Aborted!"
+msgstr "Aggiornamento interrotto!"
+
+#: main.py:458
+msgid ""
+"Do you want to download ALL M3U playlists from GitHub?\n"
+"\n"
+"This will download all .m3u files from HasBahCa repository."
+msgstr ""
+"Vuoi scaricare TUTTE le playlist M3U da GitHub?\n"
+"\n"
+"Questo scaricherà tutti i file .m3u dal repository HasBahCa."
+
+#: main.py:467
+msgid "Downloading ALL playlists..."
+msgstr "Download di TUTTE le playlist..."
+
+#: main.py:542
+msgid ""
+"Download completed!\n"
+"\n"
+msgstr ""
+"Download completato!\n"
+"\n"
+
+#: main.py:543
+#, python-format
+msgid "Successfully downloaded: %d files\n"
+msgstr "Scaricati correttamente: %d file\n"
+
+#: main.py:544
+#, python-format
+msgid "Failed: %d files\n"
+msgstr "Errore: %d file\n"
+
+#: main.py:547
+msgid ""
+"\n"
+"Trying alternative method..."
+msgstr ""
+"\n"
+"Sto provando un metodo alternativo..."
+
+#: main.py:657
+msgid ""
+"Alternative method completed!\n"
+"\n"
+msgstr ""
+"Metodo alternativo completato!\n"
+"\n"
+
+#: main.py:658
+#, python-format
+msgid "Downloaded: %d files"
+msgstr "Scaricati: %d file"
+
+#: main.py:665
+#, python-format
+msgid ""
+"Both methods failed!\n"
+"\n"
+"Error: %s"
+msgstr ""
+"Entrambi i metodi sono falliti!\n"
+"\n"
+"Errore: %s"
+
+#: main.py:674 main.py:723 main.py:937 main.py:1077
 msgid "Please now select ..."
 msgstr "Per favore ora seleziona..."
 
-#: main.py:367
+#: main.py:736
 msgid ""
 "These streams may contain Adult content\n"
 "\n"
@@ -44,27 +176,31 @@ msgstr ""
 "\n"
 "sei sicuro di voler continuare?"
 
-#: main.py:397 main.py:778
+#: main.py:828
+msgid "Access denied or wrong PIN"
+msgstr "Accesso negato o PIN errato"
+
+#: main.py:834 main.py:1201
 msgid "Remove all HasBahCa Favorite Bouquet ?"
 msgstr "Rimuovere tutto il bouquet preferito di HasBahCa?"
 
-#: main.py:426 main.py:807
+#: main.py:853 main.py:1223
 msgid "HasBahCa Favorites List have been removed"
 msgstr "L'elenco dei preferiti di HasBahCa è stato rimosso"
 
-#: main.py:446 main.py:546
+#: main.py:874 main.py:976
 msgid "Loading data... Please wait"
 msgstr "Caricamento dati in corso... Attendere"
 
-#: main.py:447 main.py:547
+#: main.py:875 main.py:977
 msgid "Back"
 msgstr "Indietro"
 
-#: main.py:588
+#: main.py:1021
 msgid "Filter this category..."
-msgstr ""
+msgstr "Filtra questa categoria..."
 
-#: main.py:667
+#: main.py:1112
 #, python-format
 msgid ""
 "Do you want to Convert %s\n"
@@ -77,25 +213,21 @@ msgstr ""
 "\n"
 "Attenzione!! Aspetta durante la conversione !!!"
 
-#: main.py:735
-msgid "Shuffle Favorite List in Progress"
-msgstr "Ricarico l'elenco dei preferiti in corso"
+#: main.py:1172
+#, python-format
+msgid "Shuffle Favorite %s List in Progress"
+msgstr "Riproduzione casuale dell'elenco dei preferiti %s in corso"
 
-#: main.py:735
+#: main.py:1172
 msgid "Wait please ..."
 msgstr "Attendere prego..."
 
-#: main.py:746
-msgid "Bouquet exported"
-msgstr "Bouqet esportato"
-
-#: main.py:749
-msgid "Download Error"
-msgstr ""
-
-#: main.py:758 main.py:774
+#: main.py:1181 main.py:1197
 msgid "Download Failed!!!"
-msgstr ""
+msgstr "Download non riuscito!!!"
+
+#~ msgid "Bouquet exported"
+#~ msgstr "Bouqet esportato"
 
 #~ msgid "Please select ..."
 #~ msgstr "Seleziona Prego ..."

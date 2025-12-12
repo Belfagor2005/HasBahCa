@@ -1,7 +1,7 @@
 #!/bin/bash
 
-version='1.9'
-changelog='\nAdd ChannelUp/ChannelDown in Player'
+version='2.0'
+changelog='\nAdd Update Playlist Online'
 
 TMPPATH=/tmp/HasBahCa-install
 FILEPATH=/tmp/HasBahCa-main.tar.gz

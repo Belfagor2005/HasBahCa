@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: HasBahCa\n"
-"POT-Creation-Date: 2022-08-03 21:38+0200\n"
+"POT-Creation-Date: 2025-12-12 13:07+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Lululla <ekekaz@gmail.com>\n"
@@ -10,49 +10,174 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: main.py\n"
 "X-Poedit-SearchPath-1: plugin.py\n"
 
-#: main.py:278
+#: main.py:313
 msgid "Give me a few seconds ... loading the data"
 msgstr ""
 
-#: main.py:279
+#: main.py:314
 msgid "Exit"
 msgstr ""
 
-#: main.py:280 main.py:438 main.py:552
+#: main.py:315 main.py:876 main.py:978
 msgid "Select"
 msgstr ""
 
-#: main.py:282
+#: main.py:316
+msgid "Options"
+msgstr ""
+
+#: main.py:317
 msgid "Remove"
 msgstr ""
 
-#: main.py:356 main.py:520 main.py:606
+#: main.py:362
+msgid "Update M3U Playlists from GitHub"
+msgstr ""
+
+#: main.py:363
+msgid "Update Plugin to new version"
+msgstr ""
+
+#: main.py:364
+msgid "Force Update (Developer)"
+msgstr ""
+
+#: main.py:370
+msgid "Select update type:"
+msgstr ""
+
+#: main.py:404
+#, python-format
+msgid "Error checking version: %s"
+msgstr ""
+
+#: main.py:413
+#, python-format
+msgid ""
+"New version %s is available\n"
+"\n"
+"Changelog: %s\n"
+"\n"
+"Press info_long or yellow_long button to start force updating."
+msgstr ""
+
+#: main.py:420
+#, python-format
+msgid ""
+"New version %s is available.\n"
+"\n"
+"Changelog: %s \n"
+"\n"
+"Do you want to install it now?"
+msgstr ""
+
+#: main.py:422
+msgid "Congrats! You already have the latest version..."
+msgstr ""
+
+#: main.py:435
+#, python-format
+msgid "Do you want to install update ( %s ) now?"
+msgstr ""
+
+#: main.py:444
+msgid "Update Aborted!"
+msgstr ""
+
+#: main.py:458
+msgid ""
+"Do you want to download ALL M3U playlists from GitHub?\n"
+"\n"
+"This will download all .m3u files from HasBahCa repository."
+msgstr ""
+
+#: main.py:467
+msgid "Downloading ALL playlists..."
+msgstr ""
+
+#: main.py:542
+msgid ""
+"Download completed!\n"
+"\n"
+msgstr ""
+
+#: main.py:543
+#, python-format
+msgid "Successfully downloaded: %d files\n"
+msgstr ""
+
+#: main.py:544
+#, python-format
+msgid "Failed: %d files\n"
+msgstr ""
+
+#: main.py:547
+msgid ""
+"\n"
+"Trying alternative method..."
+msgstr ""
+
+#: main.py:657
+msgid ""
+"Alternative method completed!\n"
+"\n"
+msgstr ""
+
+#: main.py:658
+#, python-format
+msgid "Downloaded: %d files"
+msgstr ""
+
+#: main.py:665
+#, python-format
+msgid ""
+"Both methods failed!\n"
+"\n"
+"Error: %s"
+msgstr ""
+
+#: main.py:674 main.py:723 main.py:937 main.py:1077
 msgid "Please now select ..."
 msgstr ""
 
-#: main.py:388 main.py:779
+#: main.py:736
+msgid ""
+"These streams may contain Adult content\n"
+"\n"
+"are you sure you want to continue?"
+msgstr ""
+
+#: main.py:828
+msgid "Access denied or wrong PIN"
+msgstr ""
+
+#: main.py:834 main.py:1201
 msgid "Remove all HasBahCa Favorite Bouquet ?"
 msgstr ""
 
-#: main.py:417 main.py:808
+#: main.py:853 main.py:1223
 msgid "HasBahCa Favorites List have been removed"
 msgstr ""
 
-#: main.py:436 main.py:550
+#: main.py:874 main.py:976
 msgid "Loading data... Please wait"
 msgstr ""
 
-#: main.py:437 main.py:551
+#: main.py:875 main.py:977
 msgid "Back"
 msgstr ""
 
-#: main.py:630
+#: main.py:1021
+msgid "Filter this category..."
+msgstr ""
+
+#: main.py:1112
 #, python-format
 msgid ""
 "Do you want to Convert %s\n"
@@ -61,22 +186,15 @@ msgid ""
 "Attention!! Wait while converting !!!"
 msgstr ""
 
-#: main.py:747
-msgid "Shuffle Favorite List in Progress"
+#: main.py:1172
+#, python-format
+msgid "Shuffle Favorite %s List in Progress"
 msgstr ""
 
-#: main.py:747
+#: main.py:1172
 msgid "Wait please ..."
 msgstr ""
 
-#: main.py:750
-msgid "Download Error"
-msgstr ""
-
-#: main.py:759 main.py:775
+#: main.py:1181 main.py:1197
 msgid "Download Failed!!!"
-msgstr ""
-
-#: plugin.py:42
-msgid "Sorry but No Internet :("
 msgstr ""

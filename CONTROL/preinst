@@ -1,15 +1,87 @@
 #!/bin/sh
-echo "Restart GUI after intallation..."
-echo "........................."
-echo "Checking for an older version in the system..."
-echo "........................."
-if [ -d /usr/lib/enigma2/python/Plugins/Extensions/HasBahCa ]
-then
-rm -rf /usr/lib/enigma2/python/Plugins/Extensions/HasBahCa > /dev/null 2>&1
-echo "An older version was found and removed"
-echo "Proceeding to installation..."
-else
-echo "Proceeding to installation..."
+
+# **************************************
+# HasBahCa Pre-installation Script
+# **************************************
+
+echo "========================================"
+echo "HasBahCa Pre-installation Script"
+echo "========================================"
+
+# Kill running instances
+echo "Checking for running instances..."
+if [ -f /usr/bin/enigma2 ]; then
+    killall -9 enigma2 > /dev/null 2>&1
+    sleep 1
 fi
-echo "Enjoy - Reboot system Necessary!..."
+
+# Remove old versions
+echo "Removing old versions..."
+
+# Main plugin directory
+EXTDIR="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa"
+if [ -d "$EXTDIR" ]; then
+    echo "Removing: $EXTDIR"
+    rm -rf "$EXTDIR" > /dev/null 2>&1
+fi
+
+# Remove any leftover files
+echo "Cleaning up leftover files..."
+
+# Remove old playlists directory
+PLAYLIST_DIR="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/Playlists"
+if [ -d "$PLAYLIST_DIR" ]; then
+    rm -rf "$PLAYLIST_DIR" > /dev/null 2>&1
+fi
+
+# Remove old skins
+SKIN_DIR="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/res"
+if [ -d "$SKIN_DIR" ]; then
+    rm -rf "$SKIN_DIR" > /dev/null 2>&1
+fi
+
+# Remove old .pyo/.pyc files
+find /usr/lib/enigma2/python/Plugins/Extensions/ -name "*HasBahCa*.pyo" -exec rm -f {} \; > /dev/null 2>&1
+find /usr/lib/enigma2/python/Plugins/Extensions/ -name "*HasBahCa*.pyc" -exec rm -f {} \; > /dev/null 2>&1
+
+# Remove old init files
+INIT_FILES="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/__init__.py*"
+if [ -f "$INIT_FILES" ]; then
+    rm -f "$INIT_FILES" > /dev/null 2>&1
+fi
+
+# Clean up any leftover symlinks
+echo "Removing old symlinks..."
+find /usr/lib/enigma2/python/Plugins/Extensions/ -type l -name "*HasBahCa*" -exec rm -f {} \; > /dev/null 2>&1
+
+# Clean up old locale files
+echo "Cleaning locale files..."
+LOCALE_DIR="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/locale"
+if [ -d "$LOCALE_DIR" ]; then
+    rm -rf "$LOCALE_DIR" > /dev/null 2>&1
+fi
+
+# Clean MO files
+find /usr/share/enigma2/po -name "HasBahCa*.mo" -exec rm -f {} \; > /dev/null 2>&1
+find /usr/lib/enigma2/python/Plugins/Extensions/HasBahCa -name "*.mo" -exec rm -f {} \; > /dev/null 2>&1
+
+# Force remove any lock files
+echo "Removing lock files..."
+rm -f /tmp/hasbahca*.lock > /dev/null 2>&1
+rm -f /tmp/*hasbahca* > /dev/null 2>&1
+
+# Clean up temporary files
+echo "Cleaning temporary files..."
+rm -f /tmp/tempm3u.m3u > /dev/null 2>&1
+rm -f /tmp/hls.avi > /dev/null 2>&1
+
+# Remove old bouquets if requested (optional)
+# echo "Removing old bouquets..."
+# find /etc/enigma2 -name "*hbc_*" -exec rm -f {} \; > /dev/null 2>&1
+
+echo "========================================"
+echo "Pre-installation cleanup complete!"
+echo "Ready for new installation."
+echo "========================================"
+
 exit 0

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HasBahCa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-07 22:08+0200\n"
+"POT-Creation-Date: 2025-12-12 13:19+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ))^^(( <>\n"
 "Language-Team: *\n"
@@ -10,38 +10,177 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.7\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-Basepath: ../../../..\n"
 "X-Poedit-SearchPath-0: plugin.py\n"
 "X-Poedit-SearchPath-1: main.py\n"
 
-#: main.py:270
+#: main.py:313
 msgid "Give me a few seconds ... loading the data"
 msgstr ""
 
-#: main.py:271
+#: main.py:314
 msgid "Exit"
 msgstr "ÇIKIŞ"
 
-#: main.py:272 main.py:393 main.py:499
+#: main.py:315 main.py:876 main.py:978
 msgid "Select"
 msgstr "Seç"
 
-#: main.py:348 main.py:467 main.py:553
+#: main.py:316
+msgid "Options"
+msgstr ""
+
+#: main.py:317
+msgid "Remove"
+msgstr ""
+
+#: main.py:362
+msgid "Update M3U Playlists from GitHub"
+msgstr ""
+
+#: main.py:363
+msgid "Update Plugin to new version"
+msgstr ""
+
+#: main.py:364
+msgid "Force Update (Developer)"
+msgstr ""
+
+#: main.py:370
+msgid "Select update type:"
+msgstr ""
+
+#: main.py:404
+#, python-format
+msgid "Error checking version: %s"
+msgstr ""
+
+#: main.py:413
+#, python-format
+msgid ""
+"New version %s is available\n"
+"\n"
+"Changelog: %s\n"
+"\n"
+"Press info_long or yellow_long button to start force updating."
+msgstr ""
+
+#: main.py:420
+#, python-format
+msgid ""
+"New version %s is available.\n"
+"\n"
+"Changelog: %s \n"
+"\n"
+"Do you want to install it now?"
+msgstr ""
+
+#: main.py:422
+msgid "Congrats! You already have the latest version..."
+msgstr ""
+
+#: main.py:435
+#, python-format
+msgid "Do you want to install update ( %s ) now?"
+msgstr ""
+
+#: main.py:444
+msgid "Update Aborted!"
+msgstr ""
+
+#: main.py:458
+msgid ""
+"Do you want to download ALL M3U playlists from GitHub?\n"
+"\n"
+"This will download all .m3u files from HasBahCa repository."
+msgstr ""
+
+#: main.py:467
+msgid "Downloading ALL playlists..."
+msgstr ""
+
+#: main.py:542
+#| msgid "Download Failed!!!"
+msgid ""
+"Download completed!\n"
+"\n"
+msgstr ""
+
+#: main.py:543
+#, python-format
+msgid "Successfully downloaded: %d files\n"
+msgstr ""
+
+#: main.py:544
+#, python-format
+msgid "Failed: %d files\n"
+msgstr ""
+
+#: main.py:547
+msgid ""
+"\n"
+"Trying alternative method..."
+msgstr ""
+
+#: main.py:657
+msgid ""
+"Alternative method completed!\n"
+"\n"
+msgstr ""
+
+#: main.py:658
+#, python-format
+#| msgid "Download Failed!!!"
+msgid "Downloaded: %d files"
+msgstr ""
+
+#: main.py:665
+#, python-format
+msgid ""
+"Both methods failed!\n"
+"\n"
+"Error: %s"
+msgstr ""
+
+#: main.py:674 main.py:723 main.py:937 main.py:1077
 msgid "Please now select ..."
 msgstr ""
 
-#: main.py:391 main.py:497
+#: main.py:736
+msgid ""
+"These streams may contain Adult content\n"
+"\n"
+"are you sure you want to continue?"
+msgstr ""
+
+#: main.py:828
+msgid "Access denied or wrong PIN"
+msgstr ""
+
+#: main.py:834 main.py:1201
+msgid "Remove all HasBahCa Favorite Bouquet ?"
+msgstr "Tüm HasBahCa Favori Buketlerini kaldırmak istiyormusun? "
+
+#: main.py:853 main.py:1223
+msgid "HasBahCa Favorites List have been removed"
+msgstr "HasBahCa Favoriler Listesi kaldırıldı "
+
+#: main.py:874 main.py:976
 msgid "Loading data... Please wait"
 msgstr "Daten werden geladen... Bitte warten"
 
-#: main.py:392 main.py:498
+#: main.py:875 main.py:977
 msgid "Back"
 msgstr "Geri"
 
-#: main.py:577
+#: main.py:1021
+msgid "Filter this category..."
+msgstr ""
+
+#: main.py:1112
 #, python-format
 msgid ""
 "Do you want to Convert %s\n"
@@ -50,29 +189,22 @@ msgid ""
 "Attention!! Wait while converting !!!"
 msgstr ""
 
-#: main.py:708
-msgid "Shuffle Favorite List in Progress"
-msgstr "Favori Listesi kurulumu Devam Ediyor "
+#: main.py:1172
+#, python-format
+#| msgid "Shuffle Favorite List in Progress"
+msgid "Shuffle Favorite %s List in Progress"
+msgstr ""
 
-#: main.py:708
+#: main.py:1172
 msgid "Wait please ..."
 msgstr "Lütfen Bekleyin ..."
 
-#: main.py:711
-msgid "Download Error"
-msgstr "İndirme hatası"
-
-#: main.py:721 main.py:737
+#: main.py:1181 main.py:1197
 msgid "Download Failed!!!"
 msgstr "Yükleme başarısız!!!"
 
-#: main.py:742
-msgid "Remove all HasBahCa Favorite Bouquet ?"
-msgstr "Tüm HasBahCa Favori Buketlerini kaldırmak istiyormusun? "
-
-#: main.py:771
-msgid "HasBahCa Favorites List have been removed"
-msgstr "HasBahCa Favoriler Listesi kaldırıldı "
+#~ msgid "Download Error"
+#~ msgstr "İndirme hatası"
 
 #~ msgid "Please select ..."
 #~ msgstr "Lütfen Seçiniz ..."
