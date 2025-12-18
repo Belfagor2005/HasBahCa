@@ -13,75 +13,7 @@ MAIN_DIR="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa"
 if [ -d "$MAIN_DIR" ]; then
     echo "Removing plugin directory: $MAIN_DIR"
     rm -rf "$MAIN_DIR"
-else
-    echo "Plugin directory not found or already removed"
-fi
 
-# 2. Remove compiled Python files
-echo "Removing compiled Python files..."
-find /usr/lib/enigma2/python/Plugins/Extensions/ -name "*HasBahCa*.pyo" -exec rm -f {} \; > /dev/null 2>&1
-find /usr/lib/enigma2/python/Plugins/Extensions/ -name "*HasBahCa*.pyc" -exec rm -f {} \; > /dev/null 2>&1
-
-# 3. Remove locale files
-echo "Cleaning locale files..."
-LOCALE_DIR="/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/locale"
-if [ -d "$LOCALE_DIR" ]; then
-    rm -rf "$LOCALE_DIR"
-fi
-
-# Remove MO files
-find /usr/share/enigma2/po -name "*HasBahCa*.mo" -exec rm -f {} \; > /dev/null 2>&1
-
-# 4. Remove temporary files
-echo "Cleaning temporary files..."
-rm -f /tmp/hasbahca*.log > /dev/null 2>&1
-rm -f /tmp/hasbahca*.tmp > /dev/null 2>&1
-rm -f /tmp/tempm3u.m3u > /dev/null 2>&1
-rm -f /tmp/hls.avi > /dev/null 2>&1
-
-# 5. Remove user playlists (optional - ask user?)
-# echo "Removing user playlists..."
-# USER_PLAYLISTS="/etc/enigma2/hasbahca_playlists"
-# if [ -d "$USER_PLAYLISTS" ]; then
-#     echo "Do you want to remove user playlists? (y/n)"
-#     read answer
-#     if [ "$answer" = "y" ]; then
-#         rm -rf "$USER_PLAYLISTS"
-#     fi
-# fi
-
-# 6. Remove HasBahCa bouquets from enigma2
-echo "Cleaning up bouquets..."
-if [ -f "/etc/enigma2/bouquets.tv" ]; then
-    # Create backup
-    cp "/etc/enigma2/bouquets.tv" "/etc/enigma2/bouquets.tv.bak" > /dev/null 2>&1
-    
-    # Remove HasBahCa bouquets from bouquets.tv
-    grep -v "hbc_" "/etc/enigma2/bouquets.tv" > "/etc/enigma2/bouquets.tv.tmp"
-    mv "/etc/enigma2/bouquets.tv.tmp" "/etc/enigma2/bouquets.tv"
-    
-    # Remove actual bouquet files
-    rm -f /etc/enigma2/userbouquet.hbc_* > /dev/null 2>&1
-fi
-
-# 7. Remove any leftover symlinks
-echo "Removing symlinks..."
-find /usr/lib/enigma2/python/Plugins/Extensions/ -type l -name "*HasBahCa*" -exec rm -f {} \; > /dev/null 2>&1
-
-# 8. Remove configuration files
-echo "Removing configuration..."
-rm -f /etc/enigma2/hasbahca.conf > /dev/null 2>&1
-rm -f /etc/hasbahca.conf > /dev/null 2>&1
-
-# 9. Clean up any leftover cache
-echo "Cleaning cache..."
-rm -rf /tmp/.hasbahca_cache > /dev/null 2>&1
-
-# 10. Update plugin cache
-echo "Updating plugin cache..."
-if [ -f /usr/bin/enigma2 ]; then
-    # Trigger plugin cache rebuild
-    touch /usr/lib/enigma2/python/Plugins/Extensions/.force_reload > /dev/null 2>&1
 fi
 
 echo "========================================"
@@ -93,11 +25,4 @@ echo "To restart Enigma2, you can:"
 echo "1. Reboot your receiver"
 echo "2. Or restart GUI from menu"
 echo "========================================"
-
-# Show restart message
-echo ""
-echo "Please restart Enigma2 to complete the removal."
-echo "Press any key to continue..."
-read -n 1 -s
-
 exit 0
