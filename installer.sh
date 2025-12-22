@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version='2.2'
+version='2.3'
 changelog='\nAdd Update Playlist Online'
 
 TMPPATH=/tmp/HasBahCa-install

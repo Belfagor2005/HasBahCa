@@ -5,7 +5,7 @@ __author__ = "Lululla"
 __email__ = "ekekaz@gmail.com"
 __copyright__ = 'Copyright (c) 2024 Lululla'
 __license__ = "GPL-v2"
-__version__ = "2.2"
+__version__ = "2.3"
 
 from Components.Language import language
 from Tools.Directories import resolveFilename, SCOPE_PLUGINS
