@@ -67,7 +67,7 @@ from enigma import (
 )
 
 # Plugin internals
-from .__init__ import _, isDreamOS
+from .__init__ import _, isDreamOS, __version__
 from .lib import Utils, html_conv
 from .lib.Console import Console as xConsole
 
@@ -94,7 +94,6 @@ if sys.version_info >= (2, 7, 9):
         sslContext = None
 
 
-currversion = '2.0'
 PY3 = sys.version_info.major >= 3
 hostcategoryes = 'https://github.com/HasBahCa/IPTV-LIST/'
 github = 'https://raw.githubusercontent.com/HasBahCa/IPTV-LIST/main/'
@@ -463,7 +462,7 @@ class MainHasBahCa(Screen):
             return
         self.new_version = remote_version
         self.new_changelog = remote_changelog
-        if currversion < remote_version:
+        if __version__ < remote_version:
             self.Update = True
             # self['key_yellow'].show()
             self.session.open(
