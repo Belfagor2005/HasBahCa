@@ -378,9 +378,10 @@ class MainHasBahCa(Screen):
             [
                 'OkCancelActions',
                 'DirectionActions',
-                'HotkeyActions',
-                'InfobarEPGActions',
-                'ChannelSelectBaseActions'
+                'ColorActions',
+                'ButtonSetupActions',
+                # 'InfobarEPGActions',
+                # 'ChannelSelectBaseActions'
             ],
             {
                 'ok': self.okRun,
