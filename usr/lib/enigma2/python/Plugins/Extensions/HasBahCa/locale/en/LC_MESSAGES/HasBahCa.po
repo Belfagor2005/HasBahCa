@@ -1,0 +1,99 @@
+# HasBahCa translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: HasBahCa\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-02-03 15:31+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Access denied or wrong PIN"
+msgstr "Access denied or wrong PIN"
+
+msgid "Back"
+msgstr "Back"
+
+msgid "Congrats! You already have the latest version..."
+msgstr "Congrats! You already have the latest version..."
+
+msgid "Do you want to install update ( %s ) now?"
+msgstr "Do you want to install update ( %s ) now?"
+
+msgid "Download Failed!!!"
+msgstr "Download Failed!!!"
+
+msgid "Downloaded: %d files"
+msgstr "Downloaded: %d files"
+
+msgid "Downloading ALL playlists..."
+msgstr "Downloading ALL playlists..."
+
+msgid "Error checking version: %s"
+msgstr "Error checking version: %s"
+
+msgid "Exit"
+msgstr "Exit"
+
+msgid "Failed: %d files\n"
+msgstr "Failed: %d files\n"
+
+msgid "Filter this category..."
+msgstr "Filter this category..."
+
+msgid "Force Update (Developer)"
+msgstr "Force Update (Developer)"
+
+msgid "Give me a few seconds ... loading the data"
+msgstr "Give me a few seconds ... loading the data"
+
+msgid "HasBahCa Favorites List have been removed"
+msgstr "HasBahCa Favorites List have been removed"
+
+msgid "Loading data... Please wait"
+msgstr "Loading data... Please wait"
+
+msgid "Options"
+msgstr "Options"
+
+msgid "Please now select ..."
+msgstr "Please now select ..."
+
+msgid "Remove"
+msgstr "Remove"
+
+msgid "Remove all HasBahCa Favorite Bouquet ?"
+msgstr "Remove all HasBahCa Favorite Bouquet ?"
+
+msgid "Select"
+msgstr "Select"
+
+msgid "Select update type:"
+msgstr "Select update type:"
+
+msgid "Shuffle Favorite %s List in Progress"
+msgstr "Shuffle Favorite %s List in Progress"
+
+msgid "Successfully downloaded: %d files\n"
+msgstr "Successfully downloaded: %d files\n"
+
+msgid "Update Aborted!"
+msgstr "Update Aborted!"
+
+msgid "Update M3U Playlists from GitHub"
+msgstr "Update M3U Playlists from GitHub"
+
+msgid "Update Plugin to new version"
+msgstr "Update Plugin to new version"
+
+msgid "Wait please ..."
+msgstr "Wait please ..."
