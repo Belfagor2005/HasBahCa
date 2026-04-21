@@ -8,7 +8,7 @@
 [![Python package](https://github.com/Belfagor2005/HasBahCa/actions/workflows/pylint.yml/badge.svg)](https://github.com/Belfagor2005/HasBahCa/actions/workflows/pylint.yml) 
 [![Ruff Status](https://github.com/Belfagor2005/HasBahCa/actions/workflows/ruff.yml/badge.svg)](https://github.com/Belfagor2005/HasBahCa/actions/workflows/ruff.yml)
 [![GitHub stars](https://img.shields.io/github/stars/Belfagor2005/HasBahCa?style=social)](https://github.com/Belfagor2005/HasBahCa/stargazers)
-[![Donate](https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge)](Maintainers.md#maintainers "Donate")
+[![Donate](https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge)](https://ko-fi.com/lululla)
 
 
 ![HasBahCa Logo](https://github.com/Belfagor2005/HasBahCa/blob/main/usr/lib/enigma2/python/Plugins/Extensions/HasBahCa/logo.png?raw=true)
